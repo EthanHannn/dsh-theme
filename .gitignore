@@ -1,0 +1,5 @@
+node_modules/
+
+# Documentation lives in the working copy only — never committed.
+README.md
+docs/
