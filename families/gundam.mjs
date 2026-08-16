@@ -1,16 +1,24 @@
 // Gundam — RX-78-2 armor colors.
 //
 //   armor white  #EFEEE6   (paper, light theme)
-//   gundam blue  #1E3A8F   (brand, light) / #5B8CFF (brand, dark)
-//   gundam red   #C8102E   (error)        / #FF4D5E (dark)
+//   gundam blue  #1E4FD8   (brand, light) / #5B8CFF (brand, dark)
+//   gundam red   #D8000F   (error + signature accent) / #FF4D5E (dark)
 //   V-fin yellow #FFC72C   (warning; darkened to gold on the light theme
 //                           where pure yellow fails contrast)
 //   gunmetal     #2A3045   (ink)          / deep space navy #12141C (ground)
+//
+// The tricolor must be visible in daily use, not only in alerts: blue is
+// the focus (primary buttons, send key), red is the signature (sidebar
+// active accent, selected session title), yellow stays on warnings.
+// Light-theme brand red/blue are the brightest values that still hold
+// WCAG AA against the armor-white paper (verified by contrast check).
 
 export default {
   id: "gundam",
   names: { zh: "高达", en: "Gundam" },
   light: {
+    signatureAccent: "#D8000F",
+    deepAccent: "#FFC72C",
     ramp: {
       "00": "#EFEEE6",
       "60": "#E3E2D6",
@@ -24,12 +32,12 @@ export default {
       "900": "#363D52",
       "1000": "#2A3045",
     },
-    brand: "#1E3A8F",
-    brandSoft: "#5470C9",
-    brandHover: "#2A4FB8",
+    brand: "#1E4FD8",
+    brandSoft: "#6B8CF5",
+    brandHover: "#3D6BEE",
     brandText: "#F2F4FB",
-    blue: "#2E5AAC",
-    error: "#C8102E",
+    blue: "#2B62D6",
+    error: "#D8000F",
     success: "#3D7A44",
     amberSoft: "#D9A00F",
     amber: "#C98A04",
@@ -60,8 +68,8 @@ export default {
     interactive: {
       hover: "rgba(74, 81, 102, 0.10)",
       active: "rgba(74, 81, 102, 0.16)",
-      hoverAccent: "rgba(30, 58, 143, 0.10)",
-      hoverDanger: "rgba(200, 16, 46, 0.06)",
+      hoverAccent: "rgba(30, 79, 216, 0.10)",
+      hoverDanger: "rgba(216, 0, 15, 0.06)",
       hoverSolid: "#E3E2D6",
     },
     md: {
@@ -72,20 +80,20 @@ export default {
     },
     toastBg: "#CDCDBE",
     tooltipBg: "#BCBDAD",
-    separator: "rgba(30, 58, 143, 0.7)",
+    separator: "rgba(30, 79, 216, 0.7)",
     scrollbar: ["#CDCDBE", "#BCBDAD", "#A7A999"],
     maskDrop: "rgba(255, 255, 255, 0.7)",
     borderInverted: ["rgba(0, 0, 0, 0)", "rgba(0, 0, 0, 0)"],
     borderThin: "rgba(90, 98, 120, 0.35)",
     brandInvert: "#363D52",
-    infoHover: "#6C84D6",
+    infoHover: "#5B7FE8",
     toolbar: ["rgba(90, 98, 120, 0.5)", "rgba(90, 98, 120, 0.36)", "rgba(110, 118, 134, 0.6)"],
     labelForeground: "#EFEEE6",
     labelInverted: "#EFEEE6",
     sidebar: {
       fill: "#E3E2D6",
       active: "#BCBDAD",
-      activeAccent: "rgba(30, 58, 143, 0.2)",
+      activeAccent: "rgba(216, 0, 15, 0.18)",
       hover: "#CDCDBE",
     },
     bubbleHighlight: "#CDCDBE",
@@ -93,25 +101,27 @@ export default {
     loginInput: "#E3E2D6",
     selector: "#CDCDBE",
     signature: {
-      "--dsw-gnd-blue": "#1E3A8F",
-      "--dsw-gnd-red": "#C8102E",
+      "--dsw-gnd-blue": "#1E4FD8",
+      "--dsw-gnd-red": "#D8000F",
       "--dsw-gnd-yellow": "#D9A00F",
       "--dsw-gnd-white": "#EFEEE6",
     },
     shiki: {
       foreground: "#363D52",
       background: "#E3E2D6",
-      keyword: "#1E3A8F",
-      string: "#3D7A44",
-      constant: "#B45F06",
+      keyword: "#1E4FD8",
+      string: "#2F6B36",
+      constant: "#9A5205",
       parameter: "#C8102E",
-      function: "#2E5AAC",
+      function: "#2456C4",
       comment: "#7E8694",
       punctuation: "#5B6375",
-      link: "#8A6500",
+      link: "#7A5800",
     },
   },
   dark: {
+    signatureAccent: "#FF4D5E",
+    deepAccent: "#FFC72C",
     ramp: {
       "00": "#E4E6EF",
       "60": "#C6CBDA",
@@ -186,7 +196,7 @@ export default {
     sidebar: {
       fill: "#12141C",
       active: "#3A415A",
-      activeAccent: "rgba(91, 140, 255, 0.25)",
+      activeAccent: "rgba(255, 77, 94, 0.25)",
       hover: "#2E3549",
     },
     bubbleHighlight: "#3A415A",
@@ -210,6 +220,47 @@ export default {
       comment: "#7F87A0",
       punctuation: "#969DB3",
       link: "#FFD766",
+    },
+  },
+  // Vivid style: param-level overrides merged on top of the mode params
+  // before token expansion, so every derived alias stays consistent.
+  // Vivid drops the harness's restraint: brand-tinted papers at 88%
+  // opacity (the wallpaper veil sits behind the content and bleeds
+  // through, never covering text), a sidebar washed in the brand color —
+  // mid-tint on light skins (the global dark ink stays readable), deep
+  // brand on dark skins (the global light ink is already readable) —
+  // and `paper` gives the body a solid ground under the translucent
+  // surfaces.
+  vivid: {
+    light: {
+      paper: "#EBEEFA",
+      bgBase: "rgba(235, 238, 250, 0.8)",
+      layer1: "rgba(235, 238, 250, 0.8)",
+      layer2: "#DFE5F6",
+      layer3: "#C9D2EC",
+      overlay: "#EBEEFA",
+      inputMajor: "#EBEEFA",
+      loginInput: "#DFE5F6",
+      sidebar: {
+        fill: "#C9D7F5",
+        active: "rgba(30, 79, 216, 0.16)",
+        activeAccent: "#1E4FD8",
+        hover: "rgba(30, 79, 216, 0.08)",
+      },
+    },
+    dark: {
+      paper: "#0E1423",
+      bgBase: "rgba(18, 24, 41, 0.8)",
+      layer1: "rgba(14, 20, 35, 0.8)",
+      layer2: "#2B3355",
+      layer3: "#3A4368",
+      overlay: "#2B3355",
+      sidebar: {
+        fill: "#0C1C4A",
+        active: "rgba(255, 255, 255, 0.14)",
+        activeAccent: "#FFC72C",
+        hover: "rgba(255, 255, 255, 0.07)",
+      },
     },
   },
 };

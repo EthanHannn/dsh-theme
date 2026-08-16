@@ -89,6 +89,9 @@
     "--dsw-gnd-white": "#E4E6EF",
     "--dsw-pack-accent": "#5B8CFF",
     "--dsw-pack-accent-soft": "#8FB0FF",
+    "--dsw-pack-signature": "#FF4D5E",
+    "--dsw-pack-deep-accent": "#FFC72C",
+    "--dsw-pack-paper": "#171A26",
     "--dsw-alias-bg-base": "#171A26",
     "--dsw-alias-bg-layer-1": "#12141C",
     "--dsw-alias-bg-layer-2": "#2E3549",
@@ -170,7 +173,7 @@
     "--dsw-alias-label-primary-inverted": "#2E3549",
     "--dsw-specific-sidebar-fill": "#12141C",
     "--dsw-specific-sidebar-nav-item-active": "#3A415A",
-    "--dsw-specific-sidebar-nav-item-active-accent": "rgba(91, 140, 255, 0.25)",
+    "--dsw-specific-sidebar-nav-item-active-accent": "rgba(255, 77, 94, 0.25)",
     "--dsw-specific-sidebar-nav-item-hover": "#2E3549",
     "--dsw-specific-bubble": "#2E3549",
     "--dsw-specific-bubble-highlight": "#3A415A",
@@ -189,6 +192,10 @@
     "--shiki-token-function": "#6FB7FF",
     "--shiki-token-string-expression": "#8FD07F",
     "--shiki-token-punctuation": "#969DB3",
-    "--shiki-token-link": "#FFD766"
+    "--shiki-token-link": "#FFD766",
+    "--dsw-pack-wallpaper": "none",
+    "--dsw-pack-emblem": "none",
+    "--dsw-pack-folder": "none",
+    "--dsw-pack-folder-open": "none"
   }
 }

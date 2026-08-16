@@ -89,6 +89,9 @@
     "--dsw-csm-cream": "#EDE6DA",
     "--dsw-pack-accent": "#FF8A3D",
     "--dsw-pack-accent-soft": "#FFB37A",
+    "--dsw-pack-signature": "#FF5A5F",
+    "--dsw-pack-deep-accent": "#FFB930",
+    "--dsw-pack-paper": "#1D1915",
     "--dsw-alias-bg-base": "#1D1915",
     "--dsw-alias-bg-layer-1": "#16110E",
     "--dsw-alias-bg-layer-2": "#2A241E",
@@ -189,6 +192,10 @@
     "--shiki-token-function": "#F0655A",
     "--shiki-token-string-expression": "#8FC97F",
     "--shiki-token-punctuation": "#9B9081",
-    "--shiki-token-link": "#FFC53D"
+    "--shiki-token-link": "#FFC53D",
+    "--dsw-pack-wallpaper": "none",
+    "--dsw-pack-emblem": "none",
+    "--dsw-pack-folder": "none",
+    "--dsw-pack-folder-open": "none"
   }
 }

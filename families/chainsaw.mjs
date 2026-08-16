@@ -1,8 +1,9 @@
 // Chainsaw Man — the series' visual identity.
 //
 //   bone white      #F4EFE4   (paper, light theme)
-//   Pochita orange  #C24A00   (brand, light) / #FF8A3D (brand, dark)
-//   blood red       #B11E23   (error)        / #FF5A5F (dark)
+//   Pochita orange  #E85D04   (brand, light; dark text on it keeps AA)
+//                             / #FF8A3D (brand, dark)
+//   blood red       #B11E23   (error + signature accent) / #FF5A5F (dark)
 //   pull-cord gold  #FFB930   (warning; darkened on the light theme)
 //   charcoal        #28221B   (ink)          / warm black #16110E (ground)
 //
@@ -13,6 +14,8 @@ export default {
   id: "chainsaw",
   names: { zh: "电锯人", en: "Chainsaw Man" },
   light: {
+    signatureAccent: "#B11E23",
+    deepAccent: "#FFB930",
     ramp: {
       "00": "#F4EFE4",
       "60": "#E7E0D1",
@@ -26,11 +29,12 @@ export default {
       "900": "#332C24",
       "1000": "#28221B",
     },
-    brand: "#C24A00",
+    brand: "#E85D04",
     brandSoft: "#EE8F4D",
-    brandHover: "#E85D04",
-    brandText: "#FFF4EA",
-    blue: "#B5470F",
+    brandHover: "#F26A1B",
+    brandText: "#241108",
+    blue: "#C24A00",
+    blueCore: "#B5470F",
     error: "#B11E23",
     success: "#4A7C3A",
     amberSoft: "#D99A0F",
@@ -62,7 +66,7 @@ export default {
     interactive: {
       hover: "rgba(70, 63, 53, 0.10)",
       active: "rgba(70, 63, 53, 0.16)",
-      hoverAccent: "rgba(194, 74, 0, 0.10)",
+      hoverAccent: "rgba(232, 93, 4, 0.12)",
       hoverDanger: "rgba(177, 30, 35, 0.06)",
       hoverSolid: "#E7E0D1",
     },
@@ -74,7 +78,7 @@ export default {
     },
     toastBg: "#CFC6B3",
     tooltipBg: "#BEB4A0",
-    separator: "rgba(194, 74, 0, 0.7)",
+    separator: "rgba(232, 93, 4, 0.7)",
     scrollbar: ["#CFC6B3", "#BEB4A0", "#A79D8B"],
     maskDrop: "rgba(255, 255, 255, 0.7)",
     borderInverted: ["rgba(0, 0, 0, 0)", "rgba(0, 0, 0, 0)"],
@@ -87,7 +91,7 @@ export default {
     sidebar: {
       fill: "#E7E0D1",
       active: "#BEB4A0",
-      activeAccent: "rgba(194, 74, 0, 0.2)",
+      activeAccent: "rgba(232, 93, 4, 0.2)",
       hover: "#CFC6B3",
     },
     bubbleHighlight: "#CFC6B3",
@@ -95,7 +99,7 @@ export default {
     loginInput: "#E7E0D1",
     selector: "#CFC6B3",
     signature: {
-      "--dsw-csm-orange": "#C24A00",
+      "--dsw-csm-orange": "#E85D04",
       "--dsw-csm-red": "#B11E23",
       "--dsw-csm-gold": "#D99A0F",
       "--dsw-csm-cream": "#F4EFE4",
@@ -114,6 +118,8 @@ export default {
     },
   },
   dark: {
+    signatureAccent: "#FF5A5F",
+    deepAccent: "#FFB930",
     ramp: {
       "00": "#EDE6DA",
       "60": "#CFC6B8",
@@ -212,6 +218,47 @@ export default {
       comment: "#83796B",
       punctuation: "#9B9081",
       link: "#FFC53D",
+    },
+  },
+  // Vivid style: param-level overrides merged on top of the mode params
+  // before token expansion, so every derived alias stays consistent.
+  // Vivid drops the harness's restraint: brand-tinted papers at 88%
+  // opacity (the wallpaper veil sits behind the content and bleeds
+  // through, never covering text), a sidebar washed in the brand color —
+  // warm tan on light skins (the global dark ink stays readable), deep
+  // orange-brown on dark skins (the global light ink is already
+  // readable) — and `paper` gives the body a solid ground under the
+  // translucent surfaces.
+  vivid: {
+    light: {
+      paper: "#F8EDDB",
+      bgBase: "rgba(248, 237, 219, 0.8)",
+      layer1: "rgba(248, 237, 219, 0.8)",
+      layer2: "#F0E0C2",
+      layer3: "#E2CEA6",
+      overlay: "#F8EDDB",
+      inputMajor: "#F8EDDB",
+      loginInput: "#F0E0C2",
+      sidebar: {
+        fill: "#EEDCB4",
+        active: "rgba(194, 74, 0, 0.16)",
+        activeAccent: "#C24A00",
+        hover: "rgba(194, 74, 0, 0.08)",
+      },
+    },
+    dark: {
+      paper: "#181009",
+      bgBase: "rgba(30, 20, 16, 0.8)",
+      layer1: "rgba(24, 16, 9, 0.8)",
+      layer2: "#33241A",
+      layer3: "#453224",
+      overlay: "#33241A",
+      sidebar: {
+        fill: "#260F00",
+        active: "rgba(255, 255, 255, 0.14)",
+        activeAccent: "#FFB930",
+        hover: "rgba(255, 255, 255, 0.07)",
+      },
     },
   },
 };

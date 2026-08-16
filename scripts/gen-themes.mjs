@@ -13,7 +13,7 @@
 //
 // Usage: node scripts/gen-themes.mjs
 
-import { mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
@@ -84,14 +84,16 @@ function buildTokens(mode, p) {
   t["--dsw-static-deepseek-900"] = mix(p.brand, light ? 18 : 20, hi);
   t["--dsw-static-deepseek-700-delete"] = mix(p.brand, 45, hi);
 
-  // blue ramp (links / info)
+  // blue ramp (links / info). The 450/500 core follows the brand by
+  // default; families whose brand is too light for link text on the paper
+  // (e.g. chainsaw's Pochita orange) set `blueCore` to a text-safe variant.
   t["--dsw-static-blue-50"] = mix(p.blue, 55, lo);
   t["--dsw-static-blue-75"] = mix(p.blue, 35, lo);
   t["--dsw-static-blue-100"] = mix(p.blue, light ? 28 : 25, lo);
   t["--dsw-static-blue-300"] = mix(p.blue, light ? 78 : 75, light ? lo : hi);
   t["--dsw-static-blue-400"] = mix(p.blue, light ? 88 : 85, light ? lo : hi);
-  t["--dsw-static-blue-450"] = p.brand;
-  t["--dsw-static-blue-500"] = p.brand;
+  t["--dsw-static-blue-450"] = p.blueCore ?? p.brand;
+  t["--dsw-static-blue-500"] = p.blueCore ?? p.brand;
   t["--dsw-static-blue-600"] = mix(p.blue, 70, hi);
   t["--dsw-static-blue-800"] = mix(p.blue, 50, hi);
   t["--dsw-static-blue-900"] = mix(p.blue, 35, hi);
@@ -127,8 +129,20 @@ function buildTokens(mode, p) {
   }
   // Pack-wide generic accents: the surface-tint rules in lib/client.tpl.js
   // reference these so the rules work unchanged for every family.
+  // - accent:        the family brand (focus color)
+  // - accent-soft:   a lighter brand variant
+  // - signature:     the family's second signature color (gundam red,
+  //                  chainsaw blood red, …) — decorative accents, not
+  //                  state semantics
   t["--dsw-pack-accent"] = p.brand;
   t["--dsw-pack-accent-soft"] = p.brandSoft;
+  t["--dsw-pack-signature"] = p.signatureAccent;
+  // accent reserved for deep colored surfaces (the vivid sidebar): the
+  // one color guaranteed to pop on the family's dark fill
+  t["--dsw-pack-deep-accent"] = p.deepAccent;
+  // solid ground color painted on <body> by the vivid rules, underneath
+  // the (possibly translucent) bg-base surfaces and the wallpaper veil
+  t["--dsw-pack-paper"] = p.paper ?? p.bgBase;
 
   // -- alias layer ---------------------------------------------------------
   t["--dsw-alias-bg-base"] = p.bgBase;
@@ -252,17 +266,81 @@ if (familyFiles.length === 0) throw new Error("families/ holds no .mjs files");
 // design, so they are excluded from the comparison.
 const built = [];
 const catalog = [];
+
+/**
+ * Optional asset for a skin, embedded as a data URI:
+ * families/assets/<name>.webp. Returns the CSS url(...) value, or null
+ * when the asset does not exist. Wallpapers/emblems are transparent-
+ * background cutouts, so they composite cleanly on any surface tint.
+ */
+function assetValue(name) {
+  const file = join(familyDir, "assets", `${name}.webp`);
+  if (!existsSync(file)) return null;
+  return `url("data:image/webp;base64,${readFileSync(file).toString("base64")}")`;
+}
+
+/** One-level merge: plain-object values merge, everything else replaces. */
+function mergeParams(base, over) {
+  if (!over) return base;
+  const out = { ...base };
+  for (const [key, value] of Object.entries(over)) {
+    out[key] =
+      value !== null && typeof value === "object" && !Array.isArray(value) && typeof base[key] === "object" && base[key] !== null
+        ? { ...base[key], ...value }
+        : value;
+  }
+  return out;
+}
+
 for (const file of familyFiles) {
   const family = (await import(pathToFileURL(join(familyDir, file)).href)).default;
-  if (!family?.id || !family.names?.zh || !family.names?.en || !family.light || !family.dark) {
-    throw new Error(`families/${file}: must export { id, names: { zh, en }, light, dark }`);
+  if (
+    !family?.id ||
+    !family.names?.zh ||
+    !family.names?.en ||
+    !family.light?.signatureAccent ||
+    !family.dark?.signatureAccent ||
+    !family.light?.deepAccent ||
+    !family.dark?.deepAccent
+  ) {
+    throw new Error(`families/${file}: must export { id, names: { zh, en }, light, dark } with signatureAccent + deepAccent per mode`);
   }
-  const skins = ["light", "dark"].map((mode) => ({
-    id: `${family.id}-${mode}`,
-    name: `${family.names.en} ${mode === "light" ? "Light" : "Dark"}`,
-    colorScheme: mode,
-    tokens: buildTokens(mode, family[mode]),
-  }));
+  const skins = [];
+  for (const mode of ["light", "dark"]) {
+    const wallpaper = assetValue(`${family.id}-${mode}`);
+    const emblem = assetValue(`${family.id}-emblem`);
+    const folder = assetValue(`${family.id}-folder-${mode}`);
+    const folderOpen = assetValue(`${family.id}-folder-open-${mode}`);
+    // minimal skin: the restrained look, no imagery
+    skins.push({
+      id: `${family.id}-${mode}`,
+      name: `${family.names.en} ${mode === "light" ? "Light" : "Dark"}`,
+      colorScheme: mode,
+      tokens: {
+        ...buildTokens(mode, family[mode]),
+        "--dsw-pack-wallpaper": "none",
+        "--dsw-pack-emblem": "none",
+        "--dsw-pack-folder": "none",
+        "--dsw-pack-folder-open": "none",
+      },
+    });
+    // vivid skin: bolder params (tinted papers, brand sidebar) + imagery
+    skins.push({
+      id: `${family.id}-${mode}-vivid`,
+      name: `${family.names.en} ${mode === "light" ? "Light" : "Dark"} Vivid`,
+      colorScheme: mode,
+      tokens: {
+        ...buildTokens(mode, mergeParams(family[mode], family.vivid?.[mode])),
+        "--dsw-pack-wallpaper": wallpaper ?? "none",
+        "--dsw-pack-emblem": emblem ?? "none",
+        "--dsw-pack-folder": folder ?? "none",
+        "--dsw-pack-folder-open": folderOpen ?? folder ?? "none",
+      },
+    });
+    if (!wallpaper) {
+      console.warn(`warning: families/assets/${family.id}-${mode}.webp missing — ${family.id} vivid skins ship without a wallpaper`);
+    }
+  }
   for (const skin of skins) {
     built.push({ skin, signatureKeys: Object.keys(family[skin.colorScheme].signature) });
   }
@@ -300,3 +378,60 @@ const embedded = JSON.stringify(catalog, null, 2)
   .join("\n");
 writeFileSync(join(root, "lib", "client.js"), template.replace("__CATALOG__", embedded));
 console.log(`wrote lib/client.js (${catalog.length} families, ${catalog.reduce((n, f) => n + f.skins.length, 0)} skins)`);
+
+// ---------------------------------------------------------------------------
+// Local preview page (docs/ is gitignored — the file never leaves the
+// working copy). One card per skin: paper, layers, text ramp, brand
+// button, accent chips and a shiki sample, so palette taste can be judged
+// without installing the plugin.
+
+function previewCard(family, skin) {
+  const t = skin.tokens;
+  const chip = (label, color, text = "#fff") =>
+    `<span style="display:inline-block;padding:4px 10px;border-radius:6px;background:${color};color:${text};font-size:12px">${label}</span>`;
+  const line = (label, color) =>
+    `<div style="color:${color};font-size:14px;line-height:1.6">${label}</div>`;
+  const wallpaper = t["--dsw-pack-wallpaper"];
+  const wallpaperDiv = wallpaper === "none"
+    ? ""
+    : `<div style="margin-top:12px;height:180px;border-radius:10px;border:1px solid ${t["--dsw-alias-border-l2"]};background:${t["--dsw-alias-bg-base"]} ${wallpaper} no-repeat right bottom / auto 100%"></div>`;
+  return `
+  <section style="border-radius:12px;overflow:hidden;border:1px solid ${t["--dsw-alias-border-l2"]}">
+    <div style="background:${t["--dsw-alias-bg-base"]};padding:20px 24px">
+      <h2 style="margin:0 0 4px;color:${t["--dsw-alias-label-primary"]};font-size:18px">${family.names.zh} · ${skin.colorScheme === "light" ? "浅色" : "深色"}${skin.id.endsWith("-vivid") ? " · 氛围" : " · 简约"} <code style="font-size:12px;color:${t["--dsw-alias-label-secondary"]}">${skin.id}</code></h2>
+      ${line("正文文字 label-primary — The quick brown fox.", t["--dsw-alias-label-primary"])}
+      ${line("次要文字 label-secondary — jumped over the lazy dog.", t["--dsw-alias-label-secondary"])}
+      <div style="margin:12px 0;padding:14px 16px;border-radius:10px;background:${t["--dsw-alias-bg-layer-2"]};color:${t["--dsw-alias-label-primary"]};font-size:13px">
+        侧栏 / 气泡表面（layer-2），<a href="#" style="color:${t["--dsw-static-blue-500"]}">链接 link</a> 与
+        <span style="color:${t["--dsw-pack-signature"]}">签名色标题</span>。
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">
+        ${chip("主按钮 brand", t["--dsw-alias-brand-primary"], t["--dsw-alias-brand-text"])}
+        ${chip("悬停 hover", t["--dsw-alias-button-primary-hover"], t["--dsw-alias-brand-text"])}
+        ${chip("签名 signature", t["--dsw-pack-signature"])}
+        ${chip("错误 error", t["--dsw-alias-state-error-primary"])}
+        ${chip("警告 warn", t["--dsw-alias-state-warn-primary"], skin.colorScheme === "dark" ? "#241108" : "#fff")}
+        ${chip("成功 success", t["--dsw-alias-state-success-primary"])}
+      </div>
+      <pre style="margin:12px 0 0;padding:12px 16px;border-radius:10px;background:${t["--shiki-background"]};font-size:13px;line-height:1.7"><code><span style="color:${t["--shiki-token-keyword"]}">const</span> <span style="color:${t["--shiki-token-function"]}">sortie</span><span style="color:${t["--shiki-token-punctuation"]}"> =</span> <span style="color:${t["--shiki-token-parameter"]}">unit</span> <span style="color:${t["--shiki-token-punctuation"]}">=></span> <span style="color:${t["--shiki-token-string"]}">"RX-78-2"</span> <span style="color:${t["--shiki-token-comment"]}">// comment</span> <span style="color:${t["--shiki-token-constant"]}">42</span></code></pre>
+      ${wallpaperDiv}
+    </div>
+  </section>`;
+}
+
+function renderPreview() {
+  const cards = [];
+  for (const family of catalog) {
+    for (const skin of family.skins) cards.push(previewCard(family, skin));
+  }
+  return `<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>dsh-themes preview</title></head>
+<body style="margin:0;padding:24px;font-family:system-ui,sans-serif;background:#888;display:flex;flex-direction:column;gap:20px;max-width:860px">
+${cards.join("\n")}
+</body></html>
+`;
+}
+
+mkdirSync(join(root, "docs"), { recursive: true });
+writeFileSync(join(root, "docs", "preview.html"), renderPreview());
+console.log("wrote docs/preview.html (local only, gitignored)");

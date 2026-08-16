@@ -1,5 +1,9 @@
 node_modules/
 
+# Raw image-generation outputs are source material — only the compressed
+# webp wallpapers in families/assets/ are committed.
+families/assets/raw/
+
 # Documentation lives in the working copy only — never committed.
 README.md
 docs/
