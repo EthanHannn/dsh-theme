@@ -4,6 +4,5 @@ node_modules/
 # webp wallpapers in families/assets/ are committed.
 families/assets/raw/
 
-# Documentation lives in the working copy only — never committed.
-README.md
-docs/
+# Generated local palette preview — regenerate with scripts/gen-themes.mjs.
+docs/preview.html
