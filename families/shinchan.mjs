@@ -20,6 +20,15 @@ export default {
   // vivid only, matching the other IP families — if a restrained take on
   // this palette is ever wanted, it ships as its own neutral family
   styles: ["vivid"],
+  // Settings-entry character voice: shown in the speech bubble of the pal
+  // entry (sidebar.footer.action) instead of a plain "设置" label. One is
+  // picked at random each time the pal image cycles.
+  decor: {
+    phrases: {
+      zh: ["你回来啦～", "动感光波！哔哔哔——", "要吃巧克力饼吗？"],
+      en: ["You're back~", "Action Beam! Pew pew!", "Want some Chocobi?"],
+    },
+  },
   light: {
     signatureAccent: "#A66A00",
     deepAccent: "#FFC93D",

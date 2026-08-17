@@ -16,6 +16,15 @@ export default {
   // vivid only — the restrained palette ships as the standalone neutral
   // family "umber" (families/umber.mjs re-exports these mode params)
   styles: ["vivid"],
+  // Settings-entry character voice: shown in the speech bubble of the pal
+  // entry (sidebar.footer.action) instead of a plain "设置" label. One is
+  // picked at random each time the pal image cycles.
+  decor: {
+    phrases: {
+      zh: ["汪！", "拉绳一拉，烦恼清空", "电次，开工了"],
+      en: ["Woof!", "Pull the cord, clear the noise", "Denji, time to work"],
+    },
+  },
   light: {
     signatureAccent: "#B11E23",
     deepAccent: "#FFB930",

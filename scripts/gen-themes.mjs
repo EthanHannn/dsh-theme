@@ -271,13 +271,27 @@ const catalog = [];
 /**
  * Optional asset for a skin, embedded as a data URI:
  * families/assets/<name>.webp. Returns the CSS url(...) value, or null
- * when the asset does not exist. Wallpapers/emblems are transparent-
+ * when the asset does not exist. Wallpapers/panels/pals are transparent-
  * background cutouts, so they composite cleanly on any surface tint.
  */
-function assetValue(name) {
+function assetDataUri(name) {
   const file = join(familyDir, "assets", `${name}.webp`);
   if (!existsSync(file)) return null;
-  return `url("data:image/webp;base64,${readFileSync(file).toString("base64")}")`;
+  return `data:image/webp;base64,${readFileSync(file).toString("base64")}`;
+}
+
+function assetValue(name) {
+  const uri = assetDataUri(name);
+  return uri ? `url("${uri}")` : null;
+}
+
+/** All pal images of a family (assets/<id>-pal-N.webp), sorted, as data URIs. */
+function palDataUris(familyId) {
+  return readdirSync(join(familyDir, "assets"))
+    .filter((f) => f.startsWith(`${familyId}-pal-`) && f.endsWith(".webp"))
+    .sort()
+    .map((f) => assetDataUri(f.slice(0, -".webp".length)))
+    .filter(Boolean);
 }
 
 /** One-level merge: plain-object values merge, everything else replaces. */
@@ -314,7 +328,7 @@ for (const file of familyFiles) {
   for (const mode of ["light", "dark"]) {
     const modeLabel = mode === "light" ? "Light" : "Dark";
     const wallpaper = assetValue(`${family.id}-${mode}`);
-    const emblem = assetValue(`${family.id}-emblem`);
+    const panel = assetValue(`${family.id}-panel`);
     const folder = assetValue(`${family.id}-folder-${mode}`);
     const folderOpen = assetValue(`${family.id}-folder-open-${mode}`);
     // minimal skin: the restrained look, no imagery
@@ -326,7 +340,7 @@ for (const file of familyFiles) {
         tokens: {
           ...buildTokens(mode, family[mode]),
           "--dsw-pack-wallpaper": "none",
-          "--dsw-pack-emblem": "none",
+          "--dsw-pack-panel": "none",
           "--dsw-pack-folder": "none",
           "--dsw-pack-folder-open": "none",
         },
@@ -343,7 +357,7 @@ for (const file of familyFiles) {
         tokens: {
           ...buildTokens(mode, mergeParams(family[mode], family.vivid?.[mode])),
           "--dsw-pack-wallpaper": wallpaper ?? "none",
-          "--dsw-pack-emblem": emblem ?? "none",
+          "--dsw-pack-panel": panel ?? "none",
           "--dsw-pack-folder": folder ?? "none",
           "--dsw-pack-folder-open": folderOpen ?? folder ?? "none",
         },
@@ -351,12 +365,28 @@ for (const file of familyFiles) {
       if (!wallpaper) {
         console.warn(`warning: families/assets/${family.id}-${mode}.webp missing — ${family.id} vivid skins ship without a wallpaper`);
       }
+      if (!panel) {
+        console.warn(`warning: families/assets/${family.id}-panel.webp missing — ${family.id} vivid skins ship without a header panel`);
+      }
     }
   }
   for (const skin of skins) {
     built.push({ skin, signatureKeys: Object.keys(family[skin.colorScheme].signature) });
   }
-  catalog.push({ id: family.id, names: family.names, skins });
+  // Settings-entry character voice + pal images for the vivid style. The
+  // pal entry (sidebar.footer.action) needs these as component data, not
+  // CSS tokens, so they ride on the catalog entry, not on skins.
+  const pals = palDataUris(family.id);
+  const phrases = family.decor?.phrases;
+  if (famStyles.includes("vivid")) {
+    if (pals.length === 0) {
+      console.warn(`warning: families/assets/${family.id}-pal-*.webp missing — ${family.id} vivid skins ship without a settings pal entry`);
+    }
+    if (!Array.isArray(phrases?.zh) || phrases.zh.length === 0 || !Array.isArray(phrases?.en) || phrases.en.length === 0) {
+      console.warn(`warning: families/${file}: vivid family ships no decor.phrases { zh, en } — the pal entry stays silent`);
+    }
+  }
+  catalog.push({ id: family.id, names: family.names, decor: { pals, phrases: phrases ?? null }, skins });
 }
 
 const sharedKeys = ({ skin, signatureKeys }) =>

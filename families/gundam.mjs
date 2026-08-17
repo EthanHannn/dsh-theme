@@ -19,6 +19,15 @@ export default {
   // vivid only — the restrained palette ships as the standalone neutral
   // family "slate" (families/slate.mjs re-exports these mode params)
   styles: ["vivid"],
+  // Settings-entry character voice: shown in the speech bubble of the pal
+  // entry (sidebar.footer.action) instead of a plain "设置" label. One is
+  // picked at random each time the pal image cycles.
+  decor: {
+    phrases: {
+      zh: ["出击准备完毕！", "阿姆罗，出击！", "调整参数也是战斗"],
+      en: ["Ready for launch!", "Amuro, launching!", "Tuning is combat too"],
+    },
+  },
   light: {
     signatureAccent: "#D8000F",
     deepAccent: "#FFC72C",
