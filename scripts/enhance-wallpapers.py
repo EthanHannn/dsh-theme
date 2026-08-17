@@ -91,7 +91,23 @@ def chainsaw_dark():
     save(arr, "chainsaw-dark.webp", 72)
 
 
+def shinchan_light():
+    # full-color classic Shin-chan: red shirt / yellow shorts on cream
+    # paper already carry enough contrast — straight conversion
+    arr, _ = load(RAW / "shinchan-light-alpha.png")
+    save(arr, "shinchan-light.webp", 72)
+
+
+def shinchan_dark():
+    # neon line art: modest alpha boost so the tubes thicken a little
+    arr, _ = load(RAW / "shinchan-dark-alpha.png")
+    arr[..., 3] = arr[..., 3] * 1.3
+    save(arr, "shinchan-dark.webp", 72)
+
+
 if __name__ == "__main__":
     gundam_light()
     gundam_dark()
     chainsaw_dark()
+    shinchan_light()
+    shinchan_dark()
