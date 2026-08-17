@@ -1,6 +1,6 @@
 {
-  "id": "chainsaw-dark",
-  "name": "Chainsaw Man Dark",
+  "id": "umber-dark",
+  "name": "Umber Dark",
   "colorScheme": "dark",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #EDE6DA 50%, #CFC6B8)",

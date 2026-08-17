@@ -1,6 +1,6 @@
 {
-  "id": "gundam-light",
-  "name": "Gundam Light",
+  "id": "slate-light",
+  "name": "Slate Light",
   "colorScheme": "light",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #EFEEE6 50%, #E3E2D6)",

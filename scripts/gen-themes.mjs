@@ -2,7 +2,8 @@
 //
 // Single source of truth for every theme family in the pack. Each file in
 // families/ exports one family: `{ id, names: { zh, en }, light: {…params},
-// dark: {…params} }`. This script expands each family's parameters into the
+// dark: {…params} }` plus optional `styles: ["minimal", "vivid"]` (default
+// both) and optional `vivid: { light, dark }` param overrides. This script expands each family's parameters into the
 // full --dsw-* token vocabulary that the harness ThemeRuntime consumes
 // (neutral ramp + static accent ramps + alias layer + specific surfaces +
 // shiki syntax slots), writes per-skin token tables to themes/*.json, and
@@ -305,40 +306,51 @@ for (const file of familyFiles) {
   ) {
     throw new Error(`families/${file}: must export { id, names: { zh, en }, light, dark } with signatureAccent + deepAccent per mode`);
   }
+  // A family may restrict which styles it ships via `styles` (default:
+  // both). The IP families ship vivid only — their restrained palettes
+  // live on as the standalone neutral families (slate/umber).
+  const famStyles = family.styles ?? ["minimal", "vivid"];
   const skins = [];
   for (const mode of ["light", "dark"]) {
+    const modeLabel = mode === "light" ? "Light" : "Dark";
     const wallpaper = assetValue(`${family.id}-${mode}`);
     const emblem = assetValue(`${family.id}-emblem`);
     const folder = assetValue(`${family.id}-folder-${mode}`);
     const folderOpen = assetValue(`${family.id}-folder-open-${mode}`);
     // minimal skin: the restrained look, no imagery
-    skins.push({
-      id: `${family.id}-${mode}`,
-      name: `${family.names.en} ${mode === "light" ? "Light" : "Dark"}`,
-      colorScheme: mode,
-      tokens: {
-        ...buildTokens(mode, family[mode]),
-        "--dsw-pack-wallpaper": "none",
-        "--dsw-pack-emblem": "none",
-        "--dsw-pack-folder": "none",
-        "--dsw-pack-folder-open": "none",
-      },
-    });
-    // vivid skin: bolder params (tinted papers, brand sidebar) + imagery
-    skins.push({
-      id: `${family.id}-${mode}-vivid`,
-      name: `${family.names.en} ${mode === "light" ? "Light" : "Dark"} Vivid`,
-      colorScheme: mode,
-      tokens: {
-        ...buildTokens(mode, mergeParams(family[mode], family.vivid?.[mode])),
-        "--dsw-pack-wallpaper": wallpaper ?? "none",
-        "--dsw-pack-emblem": emblem ?? "none",
-        "--dsw-pack-folder": folder ?? "none",
-        "--dsw-pack-folder-open": folderOpen ?? folder ?? "none",
-      },
-    });
-    if (!wallpaper) {
-      console.warn(`warning: families/assets/${family.id}-${mode}.webp missing — ${family.id} vivid skins ship without a wallpaper`);
+    if (famStyles.includes("minimal")) {
+      skins.push({
+        id: `${family.id}-${mode}`,
+        name: `${family.names.en} ${modeLabel}`,
+        colorScheme: mode,
+        tokens: {
+          ...buildTokens(mode, family[mode]),
+          "--dsw-pack-wallpaper": "none",
+          "--dsw-pack-emblem": "none",
+          "--dsw-pack-folder": "none",
+          "--dsw-pack-folder-open": "none",
+        },
+      });
+    }
+    // vivid skin: bolder params (tinted papers, brand sidebar) + imagery.
+    // "Vivid" only goes into the name when the family also ships a minimal
+    // skin — otherwise the vivid look is the family's only one.
+    if (famStyles.includes("vivid")) {
+      skins.push({
+        id: `${family.id}-${mode}-vivid`,
+        name: `${family.names.en} ${modeLabel}${famStyles.includes("minimal") ? " Vivid" : ""}`,
+        colorScheme: mode,
+        tokens: {
+          ...buildTokens(mode, mergeParams(family[mode], family.vivid?.[mode])),
+          "--dsw-pack-wallpaper": wallpaper ?? "none",
+          "--dsw-pack-emblem": emblem ?? "none",
+          "--dsw-pack-folder": folder ?? "none",
+          "--dsw-pack-folder-open": folderOpen ?? folder ?? "none",
+        },
+      });
+      if (!wallpaper) {
+        console.warn(`warning: families/assets/${family.id}-${mode}.webp missing — ${family.id} vivid skins ship without a wallpaper`);
+      }
     }
   }
   for (const skin of skins) {

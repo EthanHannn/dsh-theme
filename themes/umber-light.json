@@ -1,6 +1,6 @@
 {
-  "id": "chainsaw-light",
-  "name": "Chainsaw Man Light",
+  "id": "umber-light",
+  "name": "Umber Light",
   "colorScheme": "light",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #F4EFE4 50%, #E7E0D1)",

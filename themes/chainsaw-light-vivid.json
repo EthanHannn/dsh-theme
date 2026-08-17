@@ -1,6 +1,6 @@
 {
   "id": "chainsaw-light-vivid",
-  "name": "Chainsaw Man Light Vivid",
+  "name": "Chainsaw Man Light",
   "colorScheme": "light",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #F4EFE4 50%, #E7E0D1)",
@@ -92,8 +92,8 @@
     "--dsw-pack-signature": "#B11E23",
     "--dsw-pack-deep-accent": "#FFB930",
     "--dsw-pack-paper": "#F8EDDB",
-    "--dsw-alias-bg-base": "rgba(248, 237, 219, 0.8)",
-    "--dsw-alias-bg-layer-1": "rgba(248, 237, 219, 0.8)",
+    "--dsw-alias-bg-base": "rgba(248, 237, 219, 0.72)",
+    "--dsw-alias-bg-layer-1": "rgba(248, 237, 219, 0.72)",
     "--dsw-alias-bg-layer-2": "#F0E0C2",
     "--dsw-alias-bg-layer-3": "#E2CEA6",
     "--dsw-alias-bg-overlay": "#F8EDDB",

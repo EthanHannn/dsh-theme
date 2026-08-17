@@ -16,6 +16,9 @@
 export default {
   id: "gundam",
   names: { zh: "高达", en: "Gundam" },
+  // vivid only — the restrained palette ships as the standalone neutral
+  // family "slate" (families/slate.mjs re-exports these mode params)
+  styles: ["vivid"],
   light: {
     signatureAccent: "#D8000F",
     deepAccent: "#FFC72C",
@@ -224,7 +227,7 @@ export default {
   },
   // Vivid style: param-level overrides merged on top of the mode params
   // before token expansion, so every derived alias stays consistent.
-  // Vivid drops the harness's restraint: brand-tinted papers at 88%
+  // Vivid drops the harness's restraint: brand-tinted papers at 72%
   // opacity (the wallpaper veil sits behind the content and bleeds
   // through, never covering text), a sidebar washed in the brand color —
   // mid-tint on light skins (the global dark ink stays readable), deep
@@ -234,8 +237,8 @@ export default {
   vivid: {
     light: {
       paper: "#EBEEFA",
-      bgBase: "rgba(235, 238, 250, 0.8)",
-      layer1: "rgba(235, 238, 250, 0.8)",
+      bgBase: "rgba(235, 238, 250, 0.72)",
+      layer1: "rgba(235, 238, 250, 0.72)",
       layer2: "#DFE5F6",
       layer3: "#C9D2EC",
       overlay: "#EBEEFA",
@@ -250,8 +253,8 @@ export default {
     },
     dark: {
       paper: "#0E1423",
-      bgBase: "rgba(18, 24, 41, 0.8)",
-      layer1: "rgba(14, 20, 35, 0.8)",
+      bgBase: "rgba(18, 24, 41, 0.72)",
+      layer1: "rgba(14, 20, 35, 0.72)",
       layer2: "#2B3355",
       layer3: "#3A4368",
       overlay: "#2B3355",

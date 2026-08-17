@@ -13,6 +13,9 @@
 export default {
   id: "chainsaw",
   names: { zh: "电锯人", en: "Chainsaw Man" },
+  // vivid only — the restrained palette ships as the standalone neutral
+  // family "umber" (families/umber.mjs re-exports these mode params)
+  styles: ["vivid"],
   light: {
     signatureAccent: "#B11E23",
     deepAccent: "#FFB930",
@@ -222,7 +225,7 @@ export default {
   },
   // Vivid style: param-level overrides merged on top of the mode params
   // before token expansion, so every derived alias stays consistent.
-  // Vivid drops the harness's restraint: brand-tinted papers at 88%
+  // Vivid drops the harness's restraint: brand-tinted papers at 72%
   // opacity (the wallpaper veil sits behind the content and bleeds
   // through, never covering text), a sidebar washed in the brand color —
   // warm tan on light skins (the global dark ink stays readable), deep
@@ -232,8 +235,8 @@ export default {
   vivid: {
     light: {
       paper: "#F8EDDB",
-      bgBase: "rgba(248, 237, 219, 0.8)",
-      layer1: "rgba(248, 237, 219, 0.8)",
+      bgBase: "rgba(248, 237, 219, 0.72)",
+      layer1: "rgba(248, 237, 219, 0.72)",
       layer2: "#F0E0C2",
       layer3: "#E2CEA6",
       overlay: "#F8EDDB",
@@ -248,8 +251,8 @@ export default {
     },
     dark: {
       paper: "#181009",
-      bgBase: "rgba(30, 20, 16, 0.8)",
-      layer1: "rgba(24, 16, 9, 0.8)",
+      bgBase: "rgba(30, 20, 16, 0.72)",
+      layer1: "rgba(24, 16, 9, 0.72)",
       layer2: "#33241A",
       layer3: "#453224",
       overlay: "#33241A",
