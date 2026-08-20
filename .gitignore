@@ -1,7 +1,8 @@
 node_modules/
 
-# Raw image-generation outputs are source material — only the compressed
-# webp wallpapers in families/assets/ are committed.
+# Raw image-generation sources are bulky source material, kept outside the
+# repo — only the compressed webp assets in families/assets/ are committed.
+# Keep ignoring the legacy in-repo path so nothing large slips back in.
 families/assets/raw/
 
 # Generated local palette preview — regenerate with scripts/gen-themes.mjs.
