@@ -33,6 +33,10 @@ JOBS = [
     # dark: smiling moon with the shooting star.
     ("shinchan-banner-light-src", "shinchan-banner-light", 6.0, 0.60),
     ("shinchan-banner-dark-src", "shinchan-banner-dark", 6.0, 0.31),
+    # hinamatsuri — light: peach blossoms and lanterns over the bridge;
+    # dark: lantern strings reflected on the night river.
+    ("hinamatsuri-banner-light-src", "hinamatsuri-banner-light", 6.0, 0.36),
+    ("hinamatsuri-banner-dark-src", "hinamatsuri-banner-dark", 6.0, 0.40),
 ]
 
 MAX_WIDTH = 1400
