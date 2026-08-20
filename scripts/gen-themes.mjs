@@ -287,6 +287,39 @@ function assetValue(name) {
   return uri ? `url("${uri}")` : null;
 }
 
+/**
+ * Header artwork geometry tokens. Both presentations paint through the same
+ * ::after layer on the title cluster:
+ * - "panel": the classic right-end manga panel (auto height, melts at the
+ *   bottom edge), plus the small accent chip behind its top corner;
+ * - "banner": a wide atmospheric scroll spanning the whole header strip
+ *   (cover, anchored right-center, fading in from the left over the text
+ *   zone, melting into the chat below). The accent chip steps aside — the
+ *   scroll carries the decoration on its own.
+ * Every skin emits the full set so the shared vocabulary check holds.
+ */
+function headerArtTokens(kind) {
+  if (kind === "banner") {
+    return {
+      "--dsw-pack-header-art-left": "0px",
+      "--dsw-pack-header-art-width": "auto",
+      "--dsw-pack-header-art-position": "right center",
+      "--dsw-pack-header-art-size": "cover",
+      "--dsw-pack-header-art-mask":
+        "linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.55) 30%, #000 52%, #000 82%, transparent 98%), linear-gradient(#000 55%, transparent 92%)",
+      "--dsw-pack-header-chip": "none",
+    };
+  }
+  return {
+    "--dsw-pack-header-art-left": "auto",
+    "--dsw-pack-header-art-width": "min(480px, 62%)",
+    "--dsw-pack-header-art-position": "right top",
+    "--dsw-pack-header-art-size": "auto 100%",
+    "--dsw-pack-header-art-mask": "linear-gradient(#000 62%, transparent 96%)",
+    "--dsw-pack-header-chip": "block",
+  };
+}
+
 /** All pal images of a family (assets/<id>-pal-N.webp), sorted, as data URIs. */
 function palDataUris(familyId) {
   return readdirSync(join(familyDir, "assets"))
@@ -331,6 +364,10 @@ for (const file of familyFiles) {
     const modeLabel = mode === "light" ? "Light" : "Dark";
     const wallpaper = assetValue(`${family.id}-${mode}`);
     const panel = assetValue(`${family.id}-panel`);
+    // Header scroll: <id>-banner-<mode>.webp, falling back to a shared
+    // <id>-banner.webp. When present it supersedes the manga panel as the
+    // skin's header artwork (the panel file itself stays in assets).
+    const banner = assetValue(`${family.id}-banner-${mode}`) ?? assetValue(`${family.id}-banner`);
     const folder = assetValue(`${family.id}-folder-${mode}`);
     const folderOpen = assetValue(`${family.id}-folder-open-${mode}`);
     // minimal skin: the restrained look, no imagery
@@ -345,6 +382,7 @@ for (const file of familyFiles) {
           "--dsw-pack-panel": "none",
           "--dsw-pack-folder": "none",
           "--dsw-pack-folder-open": "none",
+          ...headerArtTokens("panel"),
         },
       });
     }
@@ -359,15 +397,16 @@ for (const file of familyFiles) {
         tokens: {
           ...buildTokens(mode, mergeParams(family[mode], family.vivid?.[mode])),
           "--dsw-pack-wallpaper": wallpaper ?? "none",
-          "--dsw-pack-panel": panel ?? "none",
+          "--dsw-pack-panel": (banner ?? panel) ?? "none",
           "--dsw-pack-folder": folder ?? "none",
           "--dsw-pack-folder-open": folderOpen ?? folder ?? "none",
+          ...headerArtTokens(banner ? "banner" : "panel"),
         },
       });
       if (!wallpaper) {
         console.warn(`warning: families/assets/${family.id}-${mode}.webp missing — ${family.id} vivid skins ship without a wallpaper`);
       }
-      if (!panel) {
+      if (!banner && !panel) {
         console.warn(`warning: families/assets/${family.id}-panel.webp missing — ${family.id} vivid skins ship without a header panel`);
       }
     }
@@ -447,12 +486,32 @@ function previewCard(family, skin) {
     `<span style="display:inline-block;padding:4px 10px;border-radius:6px;background:${color};color:${text};font-size:12px">${label}</span>`;
   const line = (label, color) =>
     `<div style="color:${color};font-size:14px;line-height:1.6">${label}</div>`;
+  // Asset tokens are url("data:...") — the double quotes would terminate
+  // the style="" attribute, so strip them; a bare data URI is valid
+  // unquoted url() (base64 carries no whitespace, quotes or parens).
+  const bareUrl = (v) => v.replace(/^url\("(.+)"\)$/, "url($1)");
   const wallpaper = t["--dsw-pack-wallpaper"];
   const wallpaperDiv = wallpaper === "none"
     ? ""
-    : `<div style="margin-top:12px;height:180px;border-radius:10px;border:1px solid ${t["--dsw-alias-border-l2"]};background:${t["--dsw-alias-bg-base"]} ${wallpaper} no-repeat right bottom / auto 100%"></div>`;
+    : `<div style="margin-top:12px;height:180px;border-radius:10px;border:1px solid ${t["--dsw-alias-border-l2"]};background:${t["--dsw-alias-bg-base"]} ${bareUrl(wallpaper)} no-repeat right bottom / auto 100%"></div>`;
+  // Header artwork mock: a fake title bar (crumbs left, action pill right)
+  // with the panel/banner painted behind it exactly as client.js does —
+  // geometry and masks come from the skin's own header-art tokens, and the
+  // art overflows below the bar to show the melt into the chat area.
+  const headerArt = t["--dsw-pack-panel"];
+  const headerDiv = headerArt === "none" ? "" : `
+    <div style="margin-top:12px;border-radius:10px;border:1px solid ${t["--dsw-alias-border-l2"]};overflow:hidden">
+      <div style="position:relative;height:54px;display:flex;align-items:center;gap:10px;padding:0 14px;background:${t["--dsw-alias-bg-base"]}">
+        <div style="position:absolute;top:-2px;bottom:-34px;left:${t["--dsw-pack-header-art-left"]};right:4px;width:${t["--dsw-pack-header-art-width"]};background:${bareUrl(headerArt)} no-repeat ${t["--dsw-pack-header-art-position"]} / ${t["--dsw-pack-header-art-size"]};-webkit-mask-image:${t["--dsw-pack-header-art-mask"]};mask-image:${t["--dsw-pack-header-art-mask"]};-webkit-mask-composite:source-in;mask-composite:intersect;pointer-events:none"></div>
+        <span style="position:relative;z-index:1;color:${t["--dsw-alias-label-primary"]};font-size:13px;font-weight:600">新的会话</span>
+        <span style="position:relative;z-index:1;color:${t["--dsw-alias-label-secondary"]};font-size:12px">dsh-themes 演示会话</span>
+        <span style="flex:1"></span>
+        <span style="position:relative;z-index:1;padding:3px 10px;border-radius:999px;border:1px solid ${t["--dsw-alias-border-l2"]};color:${t["--dsw-alias-label-secondary"]};font-size:12px;background:${t["--dsw-alias-bg-layer-2"]}">会话日志</span>
+      </div>
+      <div style="height:44px;background:${t["--dsw-alias-bg-layer-2"]}"></div>
+    </div>`;
   return `
-  <section style="border-radius:12px;overflow:hidden;border:1px solid ${t["--dsw-alias-border-l2"]}">
+  <section id="skin-${skin.id}" style="border-radius:12px;overflow:hidden;border:1px solid ${t["--dsw-alias-border-l2"]}">
     <div style="background:${t["--dsw-alias-bg-base"]};padding:20px 24px">
       <h2 style="margin:0 0 4px;color:${t["--dsw-alias-label-primary"]};font-size:18px">${family.names.zh} · ${skin.colorScheme === "light" ? "浅色" : "深色"}${skin.id.endsWith("-vivid") ? " · 氛围" : " · 简约"} <code style="font-size:12px;color:${t["--dsw-alias-label-secondary"]}">${skin.id}</code></h2>
       ${line("正文文字 label-primary — The quick brown fox.", t["--dsw-alias-label-primary"])}
@@ -470,6 +529,7 @@ function previewCard(family, skin) {
         ${chip("成功 success", t["--dsw-alias-state-success-primary"])}
       </div>
       <pre style="margin:12px 0 0;padding:12px 16px;border-radius:10px;background:${t["--shiki-background"]};font-size:13px;line-height:1.7"><code><span style="color:${t["--shiki-token-keyword"]}">const</span> <span style="color:${t["--shiki-token-function"]}">sortie</span><span style="color:${t["--shiki-token-punctuation"]}"> =</span> <span style="color:${t["--shiki-token-parameter"]}">unit</span> <span style="color:${t["--shiki-token-punctuation"]}">=></span> <span style="color:${t["--shiki-token-string"]}">"RX-78-2"</span> <span style="color:${t["--shiki-token-comment"]}">// comment</span> <span style="color:${t["--shiki-token-constant"]}">42</span></code></pre>
+      ${headerDiv}
       ${wallpaperDiv}
     </div>
   </section>`;

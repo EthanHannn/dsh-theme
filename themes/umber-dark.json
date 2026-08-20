@@ -196,6 +196,12 @@
     "--dsw-pack-wallpaper": "none",
     "--dsw-pack-panel": "none",
     "--dsw-pack-folder": "none",
-    "--dsw-pack-folder-open": "none"
+    "--dsw-pack-folder-open": "none",
+    "--dsw-pack-header-art-left": "auto",
+    "--dsw-pack-header-art-width": "min(480px, 62%)",
+    "--dsw-pack-header-art-position": "right top",
+    "--dsw-pack-header-art-size": "auto 100%",
+    "--dsw-pack-header-art-mask": "linear-gradient(#000 62%, transparent 96%)",
+    "--dsw-pack-header-chip": "block"
   }
 }
