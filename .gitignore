@@ -6,3 +6,6 @@ families/assets/raw/
 
 # Generated local palette preview — regenerate with scripts/gen-themes.mjs.
 docs/preview.html
+
+# Design notes are kept locally (Obsidian), never committed.
+docs/DESIGN.md

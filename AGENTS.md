@@ -4,7 +4,7 @@
 
 This repository is a dependency-free, ESM-based theme pack for DeepSeek Harness. Theme definitions live in `families/*.mjs`; each module exports a family ID, localized names, and light/dark parameters. Committed WebP assets belong in `families/assets/`, while unprocessed image sources belong in the ignored `families/assets/raw/` directory.
 
-`scripts/gen-themes.mjs` expands family parameters into `themes/*.json` and embeds the catalog into `lib/client.js`. Treat both as generated outputs. Edit `lib/client.tpl.js` for runtime/UI behavior and regenerate. `lib/index.js` is the plugin entry point, `cordis.patch.yml` defines bundle integration, and `docs/DESIGN.md` documents architecture and theme constraints.
+`scripts/gen-themes.mjs` expands family parameters into `themes/*.json` and embeds the catalog into `lib/client.js`. Treat both as generated outputs. Edit `lib/client.tpl.js` for runtime/UI behavior and regenerate. `lib/index.js` is the plugin entry point and `cordis.patch.yml` defines bundle integration. Design rationale lives outside the repo (author's local notes); `docs/DESIGN.md` is gitignored — never commit it.
 
 ## Build, Test, and Development Commands
 
