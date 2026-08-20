@@ -37,6 +37,10 @@ JOBS = [
     # dark: lantern strings reflected on the night river.
     ("hinamatsuri-banner-light-src", "hinamatsuri-banner-light", 6.0, 0.36),
     ("hinamatsuri-banner-dark-src", "hinamatsuri-banner-dark", 6.0, 0.40),
+    # natsume — light: torii gate under the green maple; dark: stone
+    # lanterns and fireflies on the night shrine path.
+    ("natsume-banner-light-src", "natsume-banner-light", 6.0, 0.40),
+    ("natsume-banner-dark-src", "natsume-banner-dark", 6.0, 0.42),
 ]
 
 MAX_WIDTH = 1400
