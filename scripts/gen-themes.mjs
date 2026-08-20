@@ -3,7 +3,9 @@
 // Single source of truth for every theme family in the pack. Each file in
 // families/ exports one family: `{ id, names: { zh, en }, light: {…params},
 // dark: {…params} }` plus optional `styles: ["minimal", "vivid"]` (default
-// both) and optional `vivid: { light, dark }` param overrides. This script expands each family's parameters into the
+// both), optional `vivid: { light, dark }` param overrides, and optional
+// `kin: "<family-id>"` when the family re-exports another family's palette
+// (the settings row then renders the two as one palette group). This script expands each family's parameters into the
 // full --dsw-* token vocabulary that the harness ThemeRuntime consumes
 // (neutral ramp + static accent ramps + alias layer + specific surfaces +
 // shiki syntax slots), writes per-skin token tables to themes/*.json, and
@@ -386,7 +388,19 @@ for (const file of familyFiles) {
       console.warn(`warning: families/${file}: vivid family ships no decor.phrases { zh, en } — the pal entry stays silent`);
     }
   }
-  catalog.push({ id: family.id, names: family.names, decor: { pals, phrases: phrases ?? null }, skins });
+  catalog.push({ id: family.id, names: family.names, kin: family.kin ?? null, decor: { pals, phrases: phrases ?? null }, skins });
+}
+
+// A neutral family's `kin` declares the IP family whose palette it
+// re-exports; the settings row renders the pair as one palette group.
+// The reference must resolve to a family that actually ships.
+for (const entry of catalog) {
+  if (entry.kin !== null && !catalog.some((other) => other.id === entry.kin)) {
+    throw new Error(`${entry.id}: kin "${entry.kin}" does not match any family id`);
+  }
+  if (entry.kin !== null && catalog.some((other) => other !== entry && other.kin === entry.kin)) {
+    throw new Error(`${entry.id}: kin "${entry.kin}" is already claimed by another family — one kin per palette group`);
+  }
 }
 
 const sharedKeys = ({ skin, signatureKeys }) =>

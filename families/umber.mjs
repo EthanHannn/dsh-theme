@@ -10,6 +10,9 @@ import chainsaw from "./chainsaw.mjs";
 export default {
   id: "umber",
   names: { zh: "赭棕", en: "Umber" },
+  // palette kin: this family re-exports chainsaw's ramp — the settings row
+  // renders the two as one palette group (vivid / minimal halves)
+  kin: "chainsaw",
   styles: ["minimal"],
   light: chainsaw.light,
   dark: chainsaw.dark,

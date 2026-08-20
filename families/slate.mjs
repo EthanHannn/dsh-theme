@@ -10,6 +10,9 @@ import gundam from "./gundam.mjs";
 export default {
   id: "slate",
   names: { zh: "青灰", en: "Slate" },
+  // palette kin: this family re-exports gundam's ramp — the settings row
+  // renders the two as one palette group (vivid / minimal halves)
+  kin: "gundam",
   styles: ["minimal"],
   light: gundam.light,
   dark: gundam.dark,

@@ -10,6 +10,9 @@ import shinchan from "./shinchan.mjs";
 export default {
   id: "beeswax",
   names: { zh: "蜜蜡", en: "Beeswax" },
+  // palette kin: this family re-exports shinchan's ramp — the settings row
+  // renders the two as one palette group (vivid / minimal halves)
+  kin: "shinchan",
   styles: ["minimal"],
   light: shinchan.light,
   dark: shinchan.dark,

@@ -9,6 +9,9 @@ import frieren from "./frieren.mjs";
 export default {
   id: "celadon",
   names: { zh: "青瓷", en: "Celadon" },
+  // palette kin: this family re-exports frieren's ramp — the settings row
+  // renders the two as one palette group (vivid / minimal halves)
+  kin: "frieren",
   styles: ["minimal"],
   light: frieren.light,
   dark: frieren.dark,
