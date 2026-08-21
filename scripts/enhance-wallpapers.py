@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-"""Post-process the keyed wallpaper originals (families/assets/raw/*-alpha*.png)
-to fix visibility problems, then re-emit the webp assets.
+"""Post-process the keyed wallpaper originals (raw/*-alpha*.png in the
+OneDrive-synced scratch dir — see AGENTS.md) to fix visibility problems,
+then re-emit the webp assets.
 
 Why: the vivid wallpapers sit behind paper at 72% opacity (28% bleed-through),
 and three of the four read as near-invisible:
@@ -26,14 +27,35 @@ Usage: python3 scripts/enhance-wallpapers.py
 Then run: node scripts/gen-themes.mjs
 """
 
+import os
 from pathlib import Path
 
 import numpy as np
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parent.parent
-RAW = ROOT / "families" / "assets" / "raw"
 OUT = ROOT / "families" / "assets"
+
+
+def dev_dir():
+    candidates = [os.environ.get("DSH_THEME_DEV")]
+    for var in ("OneDrive", "OneDriveCommercial"):
+        root = os.environ.get(var)
+        if root:
+            candidates.append(os.path.join(root, "文档", "development", "dsh-theme"))
+    candidates.append(str(Path.home() / "OneDrive" / "文档" / "development" / "dsh-theme"))
+    for c in candidates:
+        if c and Path(c).is_dir():
+            return Path(c)
+    return None
+
+
+# Raw source dir: OneDrive scratch dir first, legacy in-repo dir as fallback.
+_dev = dev_dir()
+if _dev and (_dev / "raw").is_dir():
+    RAW = _dev / "raw"
+else:
+    RAW = ROOT / "families" / "assets" / "raw"
 
 
 def load(path):

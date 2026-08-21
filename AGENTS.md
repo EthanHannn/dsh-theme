@@ -2,9 +2,11 @@
 
 ## Project Structure & Module Organization
 
-This repository is a dependency-free, ESM-based theme pack for DeepSeek Harness. Theme definitions live in `families/*.mjs`; each module exports a family ID, localized names, and light/dark parameters. Committed WebP assets belong in `families/assets/`, while unprocessed image sources belong in the ignored `families/assets/raw/` directory.
+This repository is a dependency-free, ESM-based theme pack for DeepSeek Harness. Theme definitions live in `families/*.mjs`; each module exports a family ID, localized names, and light/dark parameters. Committed WebP assets belong in `families/assets/`.
 
-`scripts/gen-themes.mjs` expands family parameters into `themes/*.json` and embeds the catalog into `lib/client.js`. Treat both as generated outputs. Edit `lib/client.tpl.js` for runtime/UI behavior and regenerate. `scripts/build-banners.py` crops generated header-scroll sources into the shipped banner strips. `lib/index.js` is the plugin entry point and `cordis.patch.yml` defines bundle integration. Design rationale lives outside the repo (author's local notes); `docs/DESIGN.md` is gitignored — never commit it.
+Unprocessed image sources and process scripts do NOT live in the repo — they live in a OneDrive-synced scratch dir so work continues across machines: `<OneDrive>/文档/development/dsh-theme/` with `raw/` (green-screen sources, keyed alpha intermediates) and `outputs/` (per-family asset-build scripts `build-<family>-assets.py`, composite/visibility checks, preview screenshots). Resolution order for scripts: `$DSH_THEME_DEV`, then `$OneDrive` / `$OneDriveCommercial` / `~/OneDrive` + `文档/development/dsh-theme`. Run scratch-dir scripts from the repo root (they write webp into `families/assets/` relative to the cwd).
+
+`scripts/gen-themes.mjs` expands family parameters into `themes/*.json` and embeds the catalog into `lib/client.js`. Treat both as generated outputs. Edit `lib/client.tpl.js` for runtime/UI behavior and regenerate. `scripts/build-banners.py` crops header-scroll sources from the scratch dir's `raw/` into the shipped banner strips (falls back to a legacy in-repo `families/assets/raw/` if the scratch dir is absent). `lib/index.js` is the plugin entry point and `cordis.patch.yml` defines bundle integration. Design rationale lives outside the repo (author's local notes); `docs/DESIGN.md` is gitignored — never commit it.
 
 ## Build, Test, and Development Commands
 
