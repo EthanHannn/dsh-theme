@@ -1,0 +1,29 @@
+{
+  "formatVersion": 1,
+  "harness": {
+    "version": "0.1.3-alpha.1",
+    "tag": "dsh-v0.1.3-alpha.1"
+  },
+  "clientPackages": [
+    {
+      "name": "@deepseek-ai/dsh-client-store",
+      "manifest": "packages/client/store/package.json",
+      "export": "."
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-locale",
+      "manifest": "packages/client/locale/package.json",
+      "export": "./client"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-theme",
+      "manifest": "packages/client/ui-theme/package.json",
+      "export": "./client"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-renderer",
+      "manifest": "packages/client/ui-renderer/package.json",
+      "export": "./client"
+    }
+  ]
+}

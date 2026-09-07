@@ -12,10 +12,22 @@ Unprocessed image sources and process scripts do NOT live in the repo — they l
 
 - `npm run build` — generate all theme JSON files, `lib/client.js`, and the ignored `docs/preview.html`.
 - `npm run generate` — alias of the build command.
+- `npm run check` — regenerate and reject stale outputs, then validate the supported Harness checkout.
+- `npm run dsh:link` — build, link the repository into the `web` profile, and verify the effective configuration.
+- `npm run dsh:check` — validate Harness compatibility and confirm that the profile still contains the bundle.
+- `npm run dsh:repair` — reinstall profile dependencies when an existing `link:` target is broken, without adding a duplicate entry.
+- `npm run dsh:start` — run the validated profile through the same Harness source checkout used for linking.
 - `node scripts/gen-themes.mjs` — direct generator invocation; requires Node.js 20 or newer.
-- `dsh plugin --profile web add /absolute/path/to/dsh-themes` — link the pack into a local Harness profile. Restart with `dsh --profile web` after changes.
 
-There is no automated test suite or coverage threshold. A successful generator run is the baseline check. Review `docs/preview.html` in a browser, verify light/dark/system modes in Harness, and inspect generated diffs before committing. Visual changes should also be checked at narrow widths.
+The workflow commands resolve Harness from `--harness <path>`, then `DSH_HARNESS_ROOT`, then the sibling `../deepseek-harness` checkout. When working against source, use these commands or the source checkout's `pnpm dsh` consistently. Use the global `dsh` command only when both installation and startup use that installed CLI.
+
+There is no unit-test suite or coverage threshold. `npm run check` is the baseline automated check. Review `docs/preview.html` in a browser, verify light/dark/system modes in Harness, and inspect generated diffs before committing. Visual changes should also be checked at narrow widths.
+
+## Harness Compatibility Maintenance
+
+Harness plugin APIs are pre-stable. `compatibility.json` is the source of truth for the one Harness release currently supported and the client packages and exports consumed by this plugin. Keep its Harness version synchronized with the exact Harness client-package peer versions in `package.json` and the compatibility table in `README.md`; CI reads the tag directly from the compatibility file. An adaptation is complete only after the client code is updated and the supported-tag CI path builds Harness, links the profile, and boots the real Web application.
+
+The scheduled CI job checks Harness `master` every Monday. Treat its failure as an upstream compatibility alert: inspect upstream changes, adapt this repository, verify the new release or commit locally, and then advance all four declarations together. Do not loosen peer ranges or bypass `scripts/check-dsh-compat.mjs` to make an unverified Harness version appear supported.
 
 ## Coding Style & Naming Conventions
 

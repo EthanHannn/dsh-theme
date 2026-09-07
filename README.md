@@ -30,11 +30,49 @@
 - **角色化设置入口**：侧栏底部的「设置」按钮由该族角色替代——角色图 + 角色语录气泡（小新的「你回来啦～」、高达的「出击准备完毕！」、波奇塔的「汪！」；语录跟随设置里的界面语言，中文界面显示中文，否则显示英文）。悬停有摇摆小动画，点击弹跳一下、换一张角色图换一句台词，然后设置面板打开。中性简约家族和「默认」下保持原生设置按钮
 - **头部装饰**：会话头部右侧可以是一大块漫画分镜格场景图，从头部向下破格探出、底缘渐隐融进聊天区，图后角落还有签名色修饰色块；提供了横幅长卷（`<family>-banner-<mode>.webp`）的家族则升级为通栏氛围长卷——无框插画铺满整条头部，右实左虚、左侧渐隐让出文字区、底缘融化进聊天区。两种形态下文字和按钮始终压在图上层、清晰可辨、点击不受影响，窄窗口自动隐藏
 
+## 兼容性
+
+Harness 的插件 API 尚未稳定，本仓库只承诺通过自动化验证的版本，不用宽泛的预发布 semver 范围猜测兼容性。
+
+| dsh-themes | 已验证的 DeepSeek Harness | 状态 |
+| --- | --- | --- |
+| `0.2.x` | `0.1.3-alpha.1`（tag `dsh-v0.1.3-alpha.1`） | 当前支持 |
+
+[`compatibility.json`](compatibility.json) 是支持版本和所需客户端包的单一清单。CI 对当前支持 tag 做完整构建、profile 链接和真实 Web 启动测试，并在每周一检查 Harness `master`；上游变化会让预警任务失败，更新适配时必须同时修改兼容清单、`peerDependencies`、客户端适配代码和本表。
+
 ## 安装
 
+### 从 Harness 源码仓库运行（推荐用于本地开发）
+
+两个仓库同级放置为 `deepseek-harness/` 和 `dsh-theme/` 时，在主题仓库运行：
+
 ```sh
-dsh plugin --profile web add /path/to/dsh-themes
-dsh --profile web        # 重启 web 服务 → http://127.0.0.1:3080/
+npm run dsh:link       # 构建主题、链接进 web profile、验证有效配置
+npm run dsh:start      # 验证兼容性和 profile 后启动 Web
+```
+
+Harness 在其他位置时显式传入路径：
+
+```sh
+npm run dsh:link -- --harness /absolute/path/to/deepseek-harness
+npm run dsh:start -- --harness /absolute/path/to/deepseek-harness
+```
+
+等价的手动命令是：
+
+```sh
+cd /absolute/path/to/deepseek-harness
+pnpm dsh plugin --profile web add /absolute/path/to/dsh-theme
+pnpm dsh --profile web
+```
+
+安装和启动必须使用同一份 Harness CLI；不要用全局 `dsh` 安装后再用源码仓库的 `pnpm dsh` 启动。
+
+### 从已安装的 Harness 运行
+
+```sh
+dsh plugin --profile web add /absolute/path/to/dsh-theme
+dsh --profile web
 ```
 
 - 用绝对路径或相对路径均可（`dsh plugin` 会把相对路径锚定到当前目录）。也可以直接给 npm 包名 / git 源安装。
@@ -46,6 +84,30 @@ dsh --profile web        # 重启 web 服务 → http://127.0.0.1:3080/
 > ```sh
 > dsh plugin --profile web remove dsh-theme-gundam
 > ```
+
+## 更新与故障排查
+
+从 Harness 源码运行时，`git pull` 后需要重新构建 Harness；这是上游源码运行方式的要求，不表示主题被卸载。构建前先停止 Web 进程，避免旧 Host 进程和新 Client 产物混用：
+
+```sh
+cd /absolute/path/to/deepseek-harness
+git pull
+pnpm install --frozen-lockfile
+pnpm run build
+
+cd /absolute/path/to/dsh-theme
+git pull
+npm run build
+npm run dsh:check -- --harness /absolute/path/to/deepseek-harness
+npm run dsh:start -- --harness /absolute/path/to/deepseek-harness
+```
+
+正常更新不需要再次 `add`。按以下顺序定位：
+
+1. `npm run dsh:check` 同时验证 Harness 版本、所需客户端包、profile 的 `dsh-themes` 配置层；失败信息会指出需要更新适配还是重新链接。
+2. profile 依赖存在但链接损坏时运行 `npm run dsh:repair`，它执行 profile 自己的 `pnpm install` 并再次验证；不要重复 `add`。
+3. 配置检查通过但浏览器仍显示旧界面时，停止 Web 服务、重新运行 `npm run dsh:start`，再强制刷新页面。
+4. Harness 版本不受支持时不要只改版本号绕过检查；先让客户端适配和真实 Web smoke 通过，再同步更新兼容清单、精确 peer 和 README 表。CI 会直接读取兼容清单中的 tag。
 
 ## 使用
 
@@ -71,8 +133,12 @@ dsh --profile web        # 重启 web 服务，bundle 层完全卸载
 无第三方依赖，Node 20+：
 
 ```sh
-node scripts/gen-themes.mjs   # 扫描 families/，生成 themes/*.json 并嵌入 lib/client.js
+npm run build          # 生成 themes/*.json、lib/client.js 和本地预览
+npm run check          # 生成物 freshness + 当前 Harness 兼容性
+npm run dsh:check      # 再验证当前 web profile 已加载主题层
 ```
+
+`npm run check:compat -- --harness <path>` 可单独检查另一个 Harness checkout；未传路径时依次使用 `DSH_HARNESS_ROOT` 和同级 `../deepseek-harness`。`npm run dsh:start -- --no-open` 可禁止自动打开浏览器。
 
 **新增一个主题家族**：在 `families/` 下加一个 `.mjs` 文件，导出 `{ id, names: { zh, en }, light: {…params}, dark: {…params} }`（照抄 `gundam.mjs` 的参数结构改色值即可；可选 `styles: ["minimal", "vivid"]` 声明提供的风格、`vivid: { light, dark }` 做氛围参数覆写），然后跑一遍生成器——token 表、设置页卡片、跟随系统全部自动获得。设置页卡片按文件名顺序平铺；若新族是某 IP 族色板的简约再导出（照 `slate.mjs`），加 `kin: "<ip族id>"` 就会与该族相邻成对（显示为 `<IP族名>·氛围` / `<IP族名>·简约`），不加则以本名单卡平铺。
 

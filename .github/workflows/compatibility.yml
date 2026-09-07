@@ -1,0 +1,95 @@
+name: Compatibility
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "23 2 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  generated:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: npm run check:generated
+
+  harness:
+    if: matrix.track == 'supported' || github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - track: supported
+          - track: upstream
+    runs-on: ubuntu-latest
+    env:
+      DSH_HOME: ${{ github.workspace }}/.dsh-ci
+    steps:
+      - name: Check out dsh-themes
+        uses: actions/checkout@v4
+        with:
+          path: dsh-theme
+      - name: Read the supported Harness tag
+        id: compatibility
+        working-directory: dsh-theme
+        shell: bash
+        run: |
+          tag=$(node -e 'const tag = require("./compatibility.json").harness?.tag; if (!tag) process.exit(1); process.stdout.write(tag)')
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+      - name: Check out DeepSeek Harness
+        uses: actions/checkout@v4
+        with:
+          repository: deepseek-ai/deepseek-harness
+          ref: ${{ matrix.track == 'supported' && steps.compatibility.outputs.tag || 'master' }}
+          path: deepseek-harness
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.7.0
+      - name: Install Harness dependencies
+        working-directory: deepseek-harness
+        run: pnpm install --frozen-lockfile
+      - name: Build Harness
+        working-directory: deepseek-harness
+        run: pnpm run build
+      - name: Validate the supported client API
+        working-directory: dsh-theme
+        run: node scripts/check-dsh-compat.mjs --harness ../deepseek-harness
+      - name: Link and inspect the Web profile
+        working-directory: dsh-theme
+        run: node scripts/dsh-workflow.mjs link --harness ../deepseek-harness --profile web
+      - name: Boot the real Web profile
+        working-directory: deepseek-harness
+        shell: bash
+        run: |
+          set -euo pipefail
+          log="$RUNNER_TEMP/dsh-web.log"
+          index="$RUNNER_TEMP/dsh-index.html"
+          pnpm dsh --profile web --no-open >"$log" 2>&1 &
+          pid=$!
+          trap 'kill "$pid" 2>/dev/null || true' EXIT
+          url=""
+          for _ in $(seq 1 60); do
+            url=$(sed -n 's/^dsh web: //p' "$log" | head -n 1)
+            if [ -n "$url" ]; then break; fi
+            if ! kill -0 "$pid" 2>/dev/null; then
+              cat "$log"
+              exit 1
+            fi
+            sleep 0.5
+          done
+          if [ -z "$url" ]; then
+            cat "$log"
+            exit 1
+          fi
+          curl --fail --silent --show-error "$url" >"$index"
+          grep --fixed-strings --quiet '"id":"dsh-themes"' "$index"
