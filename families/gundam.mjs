@@ -23,6 +23,7 @@ export default {
   // entry (sidebar.footer.action) instead of a plain "设置" label. One is
   // picked at random each time the pal image cycles.
   decor: {
+    headerArt: { bakedHorizontalFade: true },
     phrases: {
       zh: ["出击准备完毕！", "阿姆罗，出击！", "调整参数也是战斗"],
       en: ["Ready for launch!", "Amuro, launching!", "Tuning is combat too"],

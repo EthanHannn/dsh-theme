@@ -376,6 +376,7 @@ for (const file of familyFiles) {
     const banner = assetValue(`${family.id}-banner-${mode}`) ?? assetValue(`${family.id}-banner`);
     const folder = assetValue(`${family.id}-folder-${mode}`);
     const folderOpen = assetValue(`${family.id}-folder-open-${mode}`);
+    const sceneProps = assetValue(`${family.id}-props-${mode}`) ?? assetValue(`${family.id}-props`);
     // minimal skin: the restrained look, no imagery
     if (famStyles.includes("minimal")) {
       skins.push({
@@ -388,6 +389,9 @@ for (const file of familyFiles) {
           "--dsw-pack-panel": "none",
           "--dsw-pack-folder": "none",
           "--dsw-pack-folder-open": "none",
+          "--dsw-pack-scene-props": "none",
+          "--dsw-pack-scene-props-secondary": "none",
+          "--dsw-pack-scene-props-size": "contain",
           ...headerArtTokens("panel"),
         },
       });
@@ -406,6 +410,9 @@ for (const file of familyFiles) {
           "--dsw-pack-panel": (banner ?? panel) ?? "none",
           "--dsw-pack-folder": folder ?? "none",
           "--dsw-pack-folder-open": folderOpen ?? folder ?? "none",
+          "--dsw-pack-scene-props": sceneProps ?? folderOpen ?? folder ?? "none",
+          "--dsw-pack-scene-props-secondary": sceneProps ? "none" : folder ?? "none",
+          "--dsw-pack-scene-props-size": sceneProps ? "contain" : "142px 142px",
           ...headerArtTokens(banner ? "banner" : "panel", family.decor?.headerArt?.bakedHorizontalFade === true),
         },
       });

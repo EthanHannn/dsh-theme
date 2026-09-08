@@ -153,7 +153,7 @@ npm run dsh:check      # 再验证当前 web profile 已加载主题层
 
 **新增一个主题家族**：在 `families/` 下加一个 `.mjs` 文件，导出 `{ id, names: { zh, en }, light: {…params}, dark: {…params} }`（照抄 `gundam.mjs` 的参数结构改色值即可；可选 `styles: ["minimal", "vivid"]` 声明提供的风格、`vivid: { light, dark }` 做氛围参数覆写），然后跑一遍生成器——token 表、设置页卡片、跟随系统全部自动获得。设置页卡片按文件名顺序平铺；若新族是某 IP 族色板的简约再导出（照 `slate.mjs`），加 `kin: "<ip族id>"` 就会与该族相邻成对（显示为 `<IP族名>·氛围` / `<IP族名>·简约`），不加则以本名单卡平铺。
 
-**角色氛围家族的图片资产**：往 `families/assets/` 放 `<family>-light.webp` / `<family>-dark.webp`（壁纸）、`<family>-pal-N.webp`（设置区角色图，N 从 1 起，可多张，透明底 ≤256px）、`<family>-panel.webp`（头部漫画分镜装饰，透明底 ≤600px 宽）、`<family>-banner-light.webp` / `<family>-banner-dark.webp`（头部通栏长卷，右实左虚的无框横幅，主体放在画面右侧与垂直中段，左右/下缘融向纸色；存在时取代分镜图成为头部装饰，也可用单色 `<family>-banner.webp` 通吃）、`<family>-folder[-open]-light/dark.webp`（文件夹关/开两态图标，深浅色各一），生成器会把它们以 data URI 嵌进该族的皮肤（角色图与语录则嵌进 catalog 的 `decor` 字段）。没有图片的家族照样能用，只是没有对应装饰。角色语录在家族文件的 `decor.phrases`（zh/en）里维护。
+**角色氛围家族的图片资产**：往 `families/assets/` 放 `<family>-light.webp` / `<family>-dark.webp`（壁纸）、`<family>-pal-N.webp`（设置区角色图，N 从 1 起，可多张，透明底 ≤256px）、`<family>-panel.webp`（头部漫画分镜装饰，透明底 ≤600px 宽）、`<family>-banner-light.webp` / `<family>-banner-dark.webp`（头部通栏长卷，右实左虚的无框横幅，主体放在画面右侧与垂直中段，左右/下缘融向纸色；存在时取代分镜图成为头部装饰，也可用单色 `<family>-banner.webp` 通吃）、`<family>-folder[-open]-light/dark.webp`（文件夹关/开两态图标，深浅色各一），生成器会把它们以 data URI 嵌进该族的皮肤（角色图与语录则嵌进 catalog 的 `decor` 字段）。左下角独立物件使用 `<family>-props.webp`（或 `-props-light.webp` / `-props-dark.webp`），不再复用箱盒式文件夹图标；未提供时保留原有文件夹组合。没有图片的家族照样能用，只是没有对应装饰。角色语录在家族文件的 `decor.phrases`（zh/en）里维护。
 
 **调色预览**：生成器会同时产出 `docs/preview.html`（本地文件，不提交），用浏览器打开即可逐套皮肤过目配色，不用装插件。
 

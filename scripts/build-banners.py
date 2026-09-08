@@ -50,10 +50,9 @@ JOBS = [
     # dark: amber moon with crows on the power lines.
     ("chainsaw-banner-light-src", "chainsaw-banner-light", 6.0, 0.58),
     ("chainsaw-banner-dark-src", "chainsaw-banner-dark", 6.0, 0.38),
-    # gundam — light: launch gantry mid-section with the contrail;
-    # dark: Earth's blue rim with the colony glint.
-    ("gundam-banner-light-src", "gundam-banner-light", 6.0, 0.48),
-    ("gundam-banner-dark-src", "gundam-banner-dark", 6.0, 0.33),
+    # gundam — orbital shipyard by day; Earth and a colony at night.
+    ("gundam-banner-light-v2", "gundam-banner-light", 6.0, 0.51),
+    ("gundam-banner-dark-v2", "gundam-banner-dark", 6.0, 0.50),
     # shinchan — light: crayon house and trees on the hill;
     # dark: smiling moon with the shooting star.
     ("shinchan-banner-light-src", "shinchan-banner-light", 6.0, 0.60),
@@ -101,6 +100,8 @@ JOBS = [
 # right fade start), expressed as fractions of the final strip width. Older
 # families keep their current output until their source artwork is regenerated.
 BAKED_HORIZONTAL_FADES = {
+    "gundam-banner-light": ("#EBEEFA", 0.65, 0.94),
+    "gundam-banner-dark": ("#0E1423", 0.65, 0.94),
     "daxia-banner-light": ("#F1EEE1", 0.25, 0.90),
     "daxia-banner-dark": ("#0E1418", 0.25, 0.90),
     "one-piece-banner-light": ("#FFF1D0", 0.25, 0.90),
@@ -163,6 +164,12 @@ for src_stem, out_stem, ratio, center_y in JOBS:
     band = src.crop((0, top, w, top + band_h))
     if out_stem in BAKED_HORIZONTAL_FADES:
         band = bake_horizontal_fades(band, *BAKED_HORIZONTAL_FADES[out_stem])
+    if out_stem.startswith("gundam-banner-"):
+        # Dissolve the lower edge into vivid paper even in Full wallpaper mode.
+        paper = BAKED_HORIZONTAL_FADES[out_stem][0]
+        mask = Image.new("L", (1, band.height))
+        mask.putdata([round(255 * smoothstep((1 - y / max(1, band.height - 1)) / 0.28)) for y in range(band.height)])
+        band = Image.composite(band, Image.new("RGB", band.size, paper), mask.resize(band.size))
     if band.width > MAX_WIDTH:
         band = band.resize((MAX_WIDTH, round(band.height * MAX_WIDTH / band.width)), Image.LANCZOS)
     band.save(OUT / f"{out_stem}.webp", "WEBP", quality=88, method=6)
