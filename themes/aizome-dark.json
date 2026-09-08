@@ -202,6 +202,7 @@
     "--dsw-pack-header-art-position": "right top",
     "--dsw-pack-header-art-size": "auto 100%",
     "--dsw-pack-header-art-mask": "linear-gradient(#000 62%, transparent 96%)",
+    "--dsw-pack-header-art-wide-mask": "linear-gradient(#000 62%, transparent 96%)",
     "--dsw-pack-header-chip": "block"
   }
 }

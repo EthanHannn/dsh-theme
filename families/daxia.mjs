@@ -17,6 +17,7 @@ export default {
   names: { zh: "大侠咕嘎与Doro", en: "Daxia Guga & Doro" },
   styles: ["vivid"],
   decor: {
+    headerArt: { bakedHorizontalFade: true },
     phrases: {
       // one set per pal: guga's lines never come out of doro's mouth
       zh: [["咕嘎。（压了压斗笠）", "江湖路远，跟紧咯。"], ["doro~doro~", "doro？（歪头）"]],
