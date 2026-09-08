@@ -348,6 +348,8 @@ function mergeParams(base, over) {
   return out;
 }
 
+const categories = JSON.parse(readFileSync(join(familyDir, "categories.json"), "utf8"));
+
 for (const file of familyFiles) {
   const family = (await import(pathToFileURL(join(familyDir, file)).href)).default;
   if (
@@ -440,7 +442,9 @@ for (const file of familyFiles) {
       console.warn(`warning: families/${file}: vivid family ships no decor.phrases { zh, en } — the pal entry stays silent`);
     }
   }
-  catalog.push({ id: family.id, names: family.names, kin: family.kin ?? null, decor: { pals, phrases: phrases ?? null }, skins });
+  const category = categories[family.kin ?? family.id];
+  if (!["anime", "game", "other"].includes(category)) throw new Error(`Missing category for ${family.id}`);
+  catalog.push({ category, id: family.id, names: family.names, kin: family.kin ?? null, decor: { pals, phrases: phrases ?? null }, skins });
 }
 
 // A neutral family's `kin` declares the IP family whose palette it
