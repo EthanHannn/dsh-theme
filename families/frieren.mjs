@@ -15,8 +15,18 @@ export default {
   styles: ["vivid"],
   decor: {
     phrases: {
-      zh: ["今天也去找魔法吧。", "这点时间，对精灵不算什么。", "宝箱……先检查一下。"],
-      en: ["Let's look for magic today.", "For an elf, this is no time at all.", "A chest... better check it first."],
+      zh: [
+        ["今天也去找魔法吧。", "这点时间，对精灵不算什么。", "宝箱……先检查一下。"],
+        ["今天也去找魔法吧。", "这点时间，对精灵不算什么。", "宝箱……先检查一下。"],
+        ["菲伦：该出发了。", "菲伦：别又睡过头了。"],
+        ["修塔尔克：我会顶住的。", "修塔尔克：休息一下也行吧。"],
+      ],
+      en: [
+        ["Let's look for magic today.", "For an elf, this is no time at all.", "A chest... better check it first."],
+        ["Let's look for magic today.", "For an elf, this is no time at all.", "A chest... better check it first."],
+        ["Fern: Time to leave.", "Fern: Do not oversleep again."],
+        ["Stark: I will hold the line.", "Stark: A little break is fine, right?"],
+      ],
     },
   },
   light: {

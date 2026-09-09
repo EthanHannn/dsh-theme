@@ -25,8 +25,20 @@ export default {
   decor: {
     headerArt: { bakedHorizontalFade: true },
     phrases: {
-      zh: ["出击准备完毕！", "阿姆罗，出击！", "调整参数也是战斗"],
-      en: ["Ready for launch!", "Amuro, launching!", "Tuning is combat too"],
+      zh: [
+        ["出击准备完毕！", "阿姆罗，出击！", "调整参数也是战斗"],
+        ["出击准备完毕！", "阿姆罗，出击！", "调整参数也是战斗"],
+        ["出击准备完毕！", "阿姆罗，出击！", "调整参数也是战斗"],
+        ["红色机体，准备出击。", "推进器状态正常。"],
+        ["哈啰！哈啰！", "哈啰，工作顺利！"],
+      ],
+      en: [
+        ["Ready for launch!", "Amuro, launching!", "Tuning is combat too"],
+        ["Ready for launch!", "Amuro, launching!", "Tuning is combat too"],
+        ["Ready for launch!", "Amuro, launching!", "Tuning is combat too"],
+        ["Red unit, ready to launch.", "Thrusters nominal."],
+        ["Haro! Haro!", "Haro! All systems go!"],
+      ],
     },
   },
   light: {

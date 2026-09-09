@@ -12,7 +12,7 @@ function load(saved, unavailable = false) {
   const document = { body, head:body, createElement:() => ({ isConnected:false, setAttribute() {}, remove() { this.isConnected = false; nodes.delete(this); } }) };
   const source = readFileSync(new URL("../lib/client.tpl.js", import.meta.url), "utf8")
     .replace("__CATALOG__", JSON.stringify(catalog))
-    .replace("    exports.CATALOG = CATALOG;", "    Object.assign(exports, { readPref, writePref, readDocument, appearanceFor, normalizeDocument, parseSkin, resolveSkin });");
+    .replace("    exports.CATALOG = CATALOG;", "    Object.assign(exports, { readPref, writePref, readDocument, appearanceFor, settingsFor, writeSettings, normalizeDocument, parseSkin, resolveSkin });");
   const window = { matchMedia:() => ({ matches:false, addEventListener() {}, removeEventListener() {} }), localStorage:{ getItem:() => raw, setItem:(_, value) => { if (unavailable) throw Error("blocked"); raw = value; } }, __ModuleLoader__:{ load:({ factory }) => { api = factory(() => ({ defineStore:(value) => value })); } } };
   vm.runInNewContext(source, { window, document, setTimeout:() => 1, clearTimeout() {} });
   return { api, document, nodes, raw:() => raw };
@@ -21,9 +21,9 @@ function load(saved, unavailable = false) {
 test("legacy clarity migrates to its family and survives default selection", () => {
   const { api, raw } = load(JSON.stringify({ family:"naruto", mode:"system", style:"vivid", wallpaper:"full" }));
   assert.equal(api.readPref().wallpaper, "full");
-  assert.equal(api.appearanceFor("gundam").wallpaper, "soft");
+  assert.equal(api.appearanceFor("gundam").wallpaper, "full");
   api.writePref(api.readPref());
-  assert.equal(JSON.parse(raw()).version, 2);
+  assert.equal(JSON.parse(raw()).version, 3);
   api.writePref(null);
   assert.equal(api.readPref(), null);
   assert.equal(api.appearanceFor("naruto").wallpaper, "full");
@@ -32,11 +32,13 @@ test("legacy clarity migrates to its family and survives default selection", () 
 test("family settings remain independent and reset affects only current family", () => {
   const { api } = load(null);
   api.writePref({ family:"naruto", mode:"dark", style:"vivid", props:false, pal:false, wallpaper:"full" });
-  api.writePref({ family:"gundam", mode:"light", style:"vivid", character:false });
+  api.writePref({ family:"gundam", mode:"light", style:"vivid", character:false, wallpaper:"soft" });
   assert.equal(api.appearanceFor("naruto").props, false);
   assert.equal(api.appearanceFor("gundam").props, true);
+  assert.equal(api.appearanceFor("gundam").wallpaper, "soft");
   api.writePref({ family:"gundam", mode:"system", style:"vivid", ...api.appearanceFor(null) });
   assert.equal(api.appearanceFor("gundam").character, true);
+  assert.equal(api.appearanceFor("gundam").wallpaper, "full");
   assert.equal(api.appearanceFor("naruto").pal, false);
 });
 
@@ -45,10 +47,32 @@ test("corrupt and obsolete fields normalize without admitting nonexistent skins"
   const { api } = load(JSON.stringify({ family:"naruto", mode:"garbage", style:"minimal", wallpaper:"broken" }));
   assert.equal(api.readPref().mode, "system");
   assert.equal(api.readPref().style, "vivid");
-  assert.equal(api.readPref().wallpaper, "soft");
+  assert.equal(api.readPref().wallpaper, "full");
   assert.equal(api.parseSkin("naruto-light"), null);
   assert.equal(api.resolveSkin(api.readPref()), "naruto-light-vivid");
   assert.equal(api.normalizeDocument({ version:2, selected:{family:"removed"}, families:{ naruto:{ props:false, header:"false" } } }).families.naruto.props, false);
+});
+
+test("v2 migration preserves the active mode and defaults other families to system", () => {
+  const { api } = load(JSON.stringify({ version:2, selected:{ family:"naruto", mode:"dark", style:"vivid" }, families:{ naruto:{ wallpaper:"soft" }, gundam:{ props:false } } }));
+  assert.equal(api.settingsFor("naruto").mode, "dark");
+  assert.equal(api.settingsFor("gundam").mode, "system");
+  assert.equal(api.settingsFor("naruto").wallpaper, "soft");
+});
+
+test("family settings auto-save across reload without changing the current theme", () => {
+  const { api, raw } = load(null);
+  api.writePref({ family:"naruto", mode:"dark", style:"vivid" });
+  api.writeSettings({ family:"gundam", mode:"light", wallpaper:"soft", props:false });
+  const reloaded = load(raw()).api;
+  assert.equal(reloaded.readPref().family, "naruto");
+  assert.equal(reloaded.readPref().mode, "dark");
+  assert.equal(reloaded.settingsFor("gundam").mode, "light");
+  assert.equal(reloaded.settingsFor("gundam").wallpaper, "soft");
+  assert.equal(reloaded.settingsFor("gundam").props, false);
+  reloaded.writeSettings({ family:"naruto", mode:"light", wallpaper:"soft" });
+  assert.equal(reloaded.readPref().family, "naruto");
+  assert.equal(reloaded.readPref().mode, "light");
 });
 
 test("blocked localStorage retains preferences for the session", () => {
@@ -58,7 +82,7 @@ test("blocked localStorage retains preferences for the session", () => {
 });
 
 test("section applies same-skin decorations, restores default, and tears down", () => {
-  const { api, document, nodes } = load(null);
+  const { api, document, nodes, raw } = load(null);
   const cleanups = [];
   const listeners = [];
   const registrations = [];
@@ -75,6 +99,36 @@ test("section applies same-skin decorations, restores default, and tears down", 
   assert.ok(section);
   assert.equal(registrations.some(({ meta }) => meta.name === "settings.general.item"), false);
   const actions = section.meta.inject({ sync() {} });
+  actions.applyDraft({ family:"naruto", mode:"dark", ...api.appearanceFor(null) });
+  const saved = raw();
+  actions.previewTheme({ family:"gundam", mode:"light", ...api.appearanceFor(null), props:false });
+  assert.equal(snapshot.preference, "gundam-light-vivid");
+  assert.equal(raw(), saved);
+  assert.equal(api.appearanceFor("gundam").props, true);
+  actions.previewTheme({ family:null, mode:"dark" });
+  assert.equal(snapshot.preference, "dsh-preview-dark");
+  assert.equal(raw(), saved);
+  actions.cancelPreview();
+  assert.equal(snapshot.preference, "naruto-dark-vivid");
+  assert.equal(raw(), saved);
+  actions.previewTheme({ family:"gundam", mode:"light", ...api.appearanceFor(null) });
+  actions.applyDraft({ family:"gundam", mode:"light", ...api.appearanceFor(null) });
+  actions.cancelPreview();
+  assert.equal(snapshot.preference, "gundam-light-vivid");
+  assert.equal(api.readPref().family, "gundam");
+  actions.applyDraft({ family:"naruto", mode:"dark", ...api.appearanceFor(null) });
+  actions.saveDraft({ family:"gundam", mode:"system", wallpaper:"soft", props:false });
+  assert.equal(api.readPref().family, "naruto");
+  assert.equal(api.settingsFor("gundam").mode, "system");
+  assert.equal(api.settingsFor("gundam").wallpaper, "soft");
+  actions.cancelPreview();
+  assert.equal(snapshot.preference, "naruto-dark-vivid");
+  assert.equal(api.settingsFor("gundam").props, false);
+  actions.saveDraft({ family:"naruto", mode:"light", wallpaper:"soft" });
+  const restored = actions.cancelPreview();
+  assert.equal(snapshot.preference, "naruto-light-vivid");
+  assert.equal(restored.mode, "light");
+  assert.equal(restored.wallpaper, "soft");
   actions.applyDraft({ family:"naruto", mode:"dark", ...api.appearanceFor(null) });
   const revision = snapshot.revision;
   actions.applyDraft({ family:"naruto", mode:"dark", props:false, character:false, header:false, pal:false, wallpaper:"full" });

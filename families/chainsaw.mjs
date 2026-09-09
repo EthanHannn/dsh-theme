@@ -21,8 +21,20 @@ export default {
   // picked at random each time the pal image cycles.
   decor: {
     phrases: {
-      zh: ["汪！", "拉绳一拉，烦恼清空", "电次，开工了"],
-      en: ["Woof!", "Pull the cord, clear the noise", "Denji, time to work"],
+      zh: [
+        ["汪！", "拉绳一拉，烦恼清空", "电次，开工了"],
+        ["汪！", "拉绳一拉，烦恼清空", "电次，开工了"],
+        ["汪！", "拉绳一拉，烦恼清空", "电次，开工了"],
+        ["帕瓦：交给本大爷！", "帕瓦：这功劳归我！"],
+        ["早川秋：先把事情做完。", "早川秋：咖啡要凉了。"],
+      ],
+      en: [
+        ["Woof!", "Pull the cord, clear the noise", "Denji, time to work"],
+        ["Woof!", "Pull the cord, clear the noise", "Denji, time to work"],
+        ["Woof!", "Pull the cord, clear the noise", "Denji, time to work"],
+        ["Power: Leave it to me!", "Power: I take the credit!"],
+        ["Aki: Finish the job first.", "Aki: The coffee is getting cold."],
+      ],
     },
   },
   light: {

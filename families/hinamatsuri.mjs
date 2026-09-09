@@ -16,8 +16,18 @@ export default {
   styles: ["vivid"],
   decor: {
     phrases: {
-      zh: ["我想吃鱼子。", "……哦。", "新田，我饿了。"],
-      en: ["I want salmon roe.", "...Oh.", "Nitta, I'm hungry."],
+      zh: [
+        ["我想吃鱼子。", "……哦。", "新田，我饿了。"],
+        ["我想吃鱼子。", "……哦。", "新田，我饿了。"],
+        ["瞳：怎么又变成我来负责了……", "瞳：先把杯子擦干净。"],
+        ["杏子：热腾腾的，趁热吃吧。", "杏子：今天也很充实呢。"],
+      ],
+      en: [
+        ["I want salmon roe.", "...Oh.", "Nitta, I'm hungry."],
+        ["I want salmon roe.", "...Oh.", "Nitta, I'm hungry."],
+        ["Hitomi: How am I in charge again?", "Hitomi: First, polish the glasses."],
+        ["Anzu: Eat while it is warm.", "Anzu: Another good day."],
+      ],
     },
   },
   light: {

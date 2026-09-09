@@ -8,10 +8,14 @@ export default createVividFamily({
     zh: [
       ["呆贼：潜行到位，准备开溜！", "这回真没贪那把匕首。"],
       ["猎人：别急，我先放个陷阱。", "箭带够了，方向也找对了！"],
+      ["猎人：这次陷阱放对了。", "猎人：别自己踩进去了。"],
+      ["呆贼：我就看一眼。", "呆贼：开箱前先看四周。"],
     ],
     en: [
       ["Daizei: Sneak in, sprint out!", "I wasn't eyeing that dagger. Honest."],
       ["Lieren: Let me set a trap first.", "Arrows packed. Right way this time!"],
+      ["Lieren: The trap is right this time.", "Lieren: Mind your own trap."],
+      ["Daizei: Just taking a look.", "Daizei: Look around before opening it."],
     ],
   },
   light: { paper: "#FFF1D8", vividPaper: "#F9E5C5", ink: "#3A3028", brand: "#A85A26", brandText: "#FFFFFF", signature: "#3C78A5", deepAccent: "#8B4324", success: "#5A8346", error: "#B13C32", warning: "#A66B1D" },

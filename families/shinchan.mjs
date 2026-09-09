@@ -25,8 +25,20 @@ export default {
   // picked at random each time the pal image cycles.
   decor: {
     phrases: {
-      zh: ["你回来啦～", "动感光波！哔哔哔——", "要吃巧克力饼吗？"],
-      en: ["You're back~", "Action Beam! Pew pew!", "Want some Chocobi?"],
+      zh: [
+        ["你回来啦～", "动感光波！哔哔哔——", "要吃巧克力饼吗？"],
+        ["你回来啦～", "动感光波！哔哔哔——", "要吃巧克力饼吗？"],
+        ["你回来啦～", "动感光波！哔哔哔——", "要吃巧克力饼吗？"],
+        ["小葵：呀呀！", "小葵：咿呀～"],
+        ["小白：汪！", "小白：汪汪！"],
+      ],
+      en: [
+        ["You're back~", "Action Beam! Pew pew!", "Want some Chocobi?"],
+        ["You're back~", "Action Beam! Pew pew!", "Want some Chocobi?"],
+        ["You're back~", "Action Beam! Pew pew!", "Want some Chocobi?"],
+        ["Himawari: Ba ba!", "Himawari: Aah~"],
+        ["Shiro: Woof!", "Shiro: Woof woof!"],
+      ],
     },
   },
   light: {

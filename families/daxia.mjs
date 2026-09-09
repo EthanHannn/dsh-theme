@@ -19,9 +19,18 @@ export default {
   decor: {
     headerArt: { bakedHorizontalFade: true },
     phrases: {
-      // one set per pal: guga's lines never come out of doro's mouth
-      zh: [["咕嘎。（压了压斗笠）", "江湖路远，跟紧咯。"], ["doro~doro~", "doro？（歪头）"]],
-      en: [["Guga. (tips his hat)", "The road is long — keep up."], ["doro~ doro~", "doro? (tilts her head)"]],
+      zh: [
+        ["咕嘎。（压了压斗笠）", "江湖路远，跟紧咯。"],
+        ["doro~doro~", "doro？（歪头）"],
+        ["咕嘎。先喝口茶。", "咕嘎。歇脚也是修行。"],
+        ["doro～雨停再赶路。", "doro？一起撑伞吗？"],
+      ],
+      en: [
+        ["Guga. (tips his hat)", "The road is long — keep up."],
+        ["doro~ doro~", "doro? (tilts her head)"],
+        ["Guga. Tea first.", "Guga. Rest is practice too."],
+        ["Doro~ Wait for the rain.", "Doro? Share an umbrella?"],
+      ],
     },
   },
   light: {
