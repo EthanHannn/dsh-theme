@@ -143,6 +143,7 @@ export function createVividFamily(config) {
     decor: {
       headerArt: { bakedHorizontalFade: true },
       phrases: config.phrases,
+      wallpaper: config.wallpaper,
     },
     light,
     dark,

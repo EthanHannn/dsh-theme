@@ -23,6 +23,8 @@ export default {
   // entry (sidebar.footer.action) instead of a plain "设置" label. One is
   // picked at random each time the pal image cycles.
   decor: {
+    // Square artwork needs its own desktop scale; retain the native aspect ratio.
+    wallpaper: { light: { size: "min(46vw, 660px, 80vh) auto", position: "right bottom" } },
     headerArt: { bakedHorizontalFade: true },
     phrases: {
       zh: [
