@@ -44,27 +44,27 @@ else:
 JOBS = [
     # frieren — light: meadow ridge with magic circles and flowers;
     # dark: full moon between stone markers.
-    ("frieren-banner-light-src", "frieren-banner-light", 6.0, 0.62),
-    ("frieren-banner-dark-src", "frieren-banner-dark", 6.0, 0.36),
+    ("frieren-banner-light-wide-v3-provider", "frieren-banner-light", 6.0, 0.50),
+    ("frieren-banner-dark-wide-v3-provider", "frieren-banner-dark", 6.0, 0.50),
     # chainsaw — light: golden-hour wires, rooftops and drifting leaves;
     # dark: amber moon with crows on the power lines.
-    ("chainsaw-banner-light-src", "chainsaw-banner-light", 6.0, 0.58),
-    ("chainsaw-banner-dark-src", "chainsaw-banner-dark", 6.0, 0.38),
+    ("chainsaw-banner-light-wide-v3-provider", "chainsaw-banner-light", 6.0, 0.50),
+    ("chainsaw-banner-dark-wide-v3-provider", "chainsaw-banner-dark", 6.0, 0.50),
     # gundam — orbital shipyard by day; Earth and a colony at night.
     ("gundam-banner-light-v2", "gundam-banner-light", 6.0, 0.51),
     ("gundam-banner-dark-v2", "gundam-banner-dark", 6.0, 0.50),
-    # shinchan — light: crayon house and trees on the hill;
-    # dark: smiling moon with the shooting star.
-    ("shinchan-banner-light-src", "shinchan-banner-light", 6.0, 0.60),
-    ("shinchan-banner-dark-src", "shinchan-banner-dark", 6.0, 0.31),
+    # shinchan — v4 aligns the sun with the house; lift the dark crop to keep
+    # the smiling moon intact above the crayon neighborhood.
+    ("shinchan-banner-light-wide-v4-provider", "shinchan-banner-light", 6.0, 0.55),
+    ("shinchan-banner-dark-wide-v3-provider", "shinchan-banner-dark", 6.0, 0.42),
     # hinamatsuri — light: peach blossoms and lanterns over the bridge;
     # dark: lantern strings reflected on the night river.
-    ("hinamatsuri-banner-light-src", "hinamatsuri-banner-light", 6.0, 0.36),
-    ("hinamatsuri-banner-dark-src", "hinamatsuri-banner-dark", 6.0, 0.40),
+    ("hinamatsuri-banner-light-wide-v3-provider", "hinamatsuri-banner-light", 6.0, 0.50),
+    ("hinamatsuri-banner-dark-wide-v3-provider", "hinamatsuri-banner-dark", 6.0, 0.50),
     # natsume — light: torii gate under the green maple; dark: stone
     # lanterns and fireflies on the night shrine path.
-    ("natsume-banner-light-src", "natsume-banner-light", 6.0, 0.40),
-    ("natsume-banner-dark-src", "natsume-banner-dark", 6.0, 0.42),
+    ("natsume-banner-light-wide-v3-provider", "natsume-banner-light", 6.0, 0.50),
+    ("natsume-banner-dark-wide-v3-provider", "natsume-banner-dark", 6.0, 0.50),
     # daxia — a character-free double-hero still life: two conical hats
     # and two sheathed swords on a bamboo mountain pass, by day / night.
     ("daxia-banner-light-src2-provider", "daxia-banner-light", 6.0, 0.57),
@@ -93,13 +93,23 @@ JOBS = [
     ("dragon-maid-banner-dark-src-provider", "dragon-maid-banner-dark", 6.0, 0.50),
 ]
 
-# New banners bake their horizontal edge dissolves into the pixels instead of
-# relying on a responsive CSS mask. Values are (paper color, left fade end,
-# right fade start), expressed as fractions of the final strip width. Older
-# families keep their current output until their source artwork is regenerated.
+# Banners bake their horizontal edge dissolves into the pixels instead of
+# relying on a responsive CSS mask in wide Full mode. Values are (paper color,
+# left fade end, right fade start), as fractions of the final strip width.
+# All families use Daxia's 25% left / 10% right edge treatment.
 BAKED_HORIZONTAL_FADES = {
-    "gundam-banner-light": ("#EBEEFA", 0.65, 0.94),
-    "gundam-banner-dark": ("#0E1423", 0.65, 0.94),
+    "frieren-banner-light": ("#F4F3E8", 0.25, 0.90),
+    "frieren-banner-dark": ("#0D1C20", 0.25, 0.90),
+    "chainsaw-banner-light": ("#F8EDDB", 0.25, 0.90),
+    "chainsaw-banner-dark": ("#181009", 0.25, 0.90),
+    "shinchan-banner-light": ("#FFF4DE", 0.25, 0.90),
+    "shinchan-banner-dark": ("#160D08", 0.25, 0.90),
+    "hinamatsuri-banner-light": ("#F5F0E7", 0.25, 0.90),
+    "hinamatsuri-banner-dark": ("#0F1622", 0.25, 0.90),
+    "natsume-banner-light": ("#F3F1E1", 0.25, 0.90),
+    "natsume-banner-dark": ("#0D150E", 0.25, 0.90),
+    "gundam-banner-light": ("#EBEEFA", 0.25, 0.90),
+    "gundam-banner-dark": ("#0E1423", 0.25, 0.90),
     "daxia-banner-light": ("#F1EEE1", 0.25, 0.90),
     "daxia-banner-dark": ("#0E1418", 0.25, 0.90),
     "one-piece-banner-light": ("#FFF1D0", 0.25, 0.90),

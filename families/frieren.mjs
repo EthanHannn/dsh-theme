@@ -14,6 +14,7 @@ export default {
   names: { zh: "芙莉莲", en: "Frieren" },
   styles: ["vivid"],
   decor: {
+    headerArt: { bakedHorizontalFade: true },
     phrases: {
       zh: [
         ["今天也去找魔法吧。", "这点时间，对精灵不算什么。", "宝箱……先检查一下。"],

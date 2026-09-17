@@ -24,6 +24,7 @@ export default {
   // entry (sidebar.footer.action) instead of a plain "设置" label. One is
   // picked at random each time the pal image cycles.
   decor: {
+    headerArt: { bakedHorizontalFade: true },
     phrases: {
       zh: [
         ["你回来啦～", "动感光波！哔哔哔——", "要吃巧克力饼吗？"],

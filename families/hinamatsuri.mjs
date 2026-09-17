@@ -15,6 +15,7 @@ export default {
   names: { zh: "超能力女儿", en: "Hinamatsuri" },
   styles: ["vivid"],
   decor: {
+    headerArt: { bakedHorizontalFade: true },
     phrases: {
       zh: [
         ["我想吃鱼子。", "……哦。", "新田，我饿了。"],

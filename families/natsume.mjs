@@ -15,6 +15,7 @@ export default {
   names: { zh: "夏目友人帐", en: "Natsume" },
   styles: ["vivid"],
   decor: {
+    headerArt: { bakedHorizontalFade: true },
     phrases: {
       zh: [
         ["把友人帐交出来！", "哼，不过是想吃七辻屋的馒头罢了。", "夏目，去给我买馒头！"],
