@@ -20,8 +20,6 @@ import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 
 import { dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
-import { webpSize, wallpaperSize } from "./wallpaper-layout.mjs";
-
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 
 /** Literal CSS color-mix string: `pct`% of `color` over `base`. */
@@ -373,7 +371,6 @@ for (const file of familyFiles) {
   for (const mode of ["light", "dark"]) {
     const modeLabel = mode === "light" ? "Light" : "Dark";
     const wallpaper = assetValue(`${family.id}-${mode}`);
-    const wallpaperDimensions = wallpaper ? webpSize(readFileSync(join(familyDir, "assets", `${family.id}-${mode}.webp`))) : null;
     const panel = assetValue(`${family.id}-panel`);
     // Header scroll: <id>-banner-<mode>.webp, falling back to a shared
     // <id>-banner.webp. When present it supersedes the manga panel as the
@@ -391,10 +388,6 @@ for (const file of familyFiles) {
         tokens: {
           ...buildTokens(mode, family[mode]),
           "--dsw-pack-wallpaper": "none",
-          "--dsw-pack-wallpaper-wide-size": "initial",
-          "--dsw-pack-wallpaper-hero-size": "initial",
-          "--dsw-pack-wallpaper-wide-position": "initial",
-          "--dsw-pack-wallpaper-wide-attachment": "initial",
           "--dsw-pack-panel": "none",
           "--dsw-pack-folder": "none",
           "--dsw-pack-folder-open": "none",
@@ -416,17 +409,12 @@ for (const file of familyFiles) {
         tokens: {
           ...buildTokens(mode, mergeParams(family[mode], family.vivid?.[mode])),
           "--dsw-pack-wallpaper": wallpaper ?? "none",
-          // initial leaves the runtime fallback active for uncustomized skins.
-          "--dsw-pack-wallpaper-wide-size": family.decor?.wallpaper?.[mode]?.size ?? (wallpaperDimensions ? wallpaperSize(wallpaperDimensions) : "initial"),
-          "--dsw-pack-wallpaper-hero-size": family.decor?.wallpaper?.[mode]?.heroSize ?? (family.decor?.wallpaper?.[mode]?.size ? "initial" : wallpaperDimensions ? wallpaperSize(wallpaperDimensions, 60) : "initial"),
-          "--dsw-pack-wallpaper-wide-position": family.decor?.wallpaper?.[mode]?.position ?? "initial",
-          "--dsw-pack-wallpaper-wide-attachment": family.decor?.wallpaper?.[mode] ? "fixed" : "initial",
           "--dsw-pack-panel": (banner ?? panel) ?? "none",
           "--dsw-pack-folder": folder ?? "none",
           "--dsw-pack-folder-open": folderOpen ?? folder ?? "none",
           "--dsw-pack-scene-props": sceneProps ?? folderOpen ?? folder ?? "none",
           "--dsw-pack-scene-props-secondary": sceneProps ? "none" : folder ?? "none",
-          "--dsw-pack-scene-props-size": sceneProps ? "contain" : "142px auto",
+          "--dsw-pack-scene-props-size": sceneProps ? "contain" : "142px 142px",
           ...headerArtTokens(banner ? "banner" : "panel", family.decor?.headerArt?.bakedHorizontalFade === true),
         },
       });

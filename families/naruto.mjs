@@ -4,8 +4,6 @@ export default createVividFamily({
   id: "naruto",
   signaturePrefix: "nrt",
   names: { zh: "火影忍者", en: "Naruto" },
-  // Square group artwork needs a larger desktop footprint than a solo portrait.
-  wallpaper: { light: { size: "min(50vw, 720px, 82vh) auto", heroSize: "min(48vw, 680px, 82vh) auto", position: "right -48px bottom" } },
   phrases: {
     zh: [
       ["说到做到，这就是我的忍道！", "影分身之术！"],

@@ -4,8 +4,6 @@ export default createVividFamily({
   id: "one-piece",
   signaturePrefix: "opc",
   names: { zh: "海贼王", en: "One Piece" },
-  // Square group artwork needs a larger desktop footprint than a solo portrait.
-  wallpaper: { light: { size: "min(48vw, 680px, 80vh) auto", heroSize: "min(44vw, 600px, 80vh) auto", position: "right bottom" } },
   phrases: {
     zh: [
       ["我是要成为海贼王的男人！", "出航啦！"],
