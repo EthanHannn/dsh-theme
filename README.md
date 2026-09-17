@@ -143,6 +143,8 @@ dsh --profile web        # 重启 web 服务，bundle 层完全卸载
 
 ## 开发
 
+原始图片、素材处理脚本和预览截图放在仓库外的本地目录，不使用 OneDrive 同步。通过 `DSH_THEME_DEV` 指定目录（包含 `raw/`、`outputs/`）；未设置时，Windows 优先查找 `D:/Documents/development/dsh-theme`，再查找 `~/Documents/development/dsh-theme`。素材脚本从仓库根目录运行。Harness 日常运行保持 `DSH_HOME` 未设置，使用默认的 `~/.dsh`；不要把运行数据放进素材目录或同步目录。
+
 无第三方依赖，Node 20+：
 
 ```sh

@@ -1,8 +1,8 @@
 # Crop the generated header-scroll artwork (raw/*-banner-*-src.png) into the
 # wide banner strips shipped as families/assets/<family>-banner-<mode>.webp.
 #
-# Raw sources live in the OneDrive-synced scratch dir (see AGENTS.md):
-# $DSH_THEME_DEV/raw, else <OneDrive>/文档/development/dsh-theme/raw, with a
+# Raw sources live in the local, non-synced scratch dir (see AGENTS.md):
+# $DSH_THEME_DEV/raw, else local Documents/development/dsh-theme/raw, with a
 # legacy in-repo families/assets/raw/ fallback so a fresh clone still runs.
 #
 # The header renders the banner with `background-size: cover` anchored
@@ -21,18 +21,16 @@ OUT = ROOT / "families" / "assets"
 
 def dev_dir():
     candidates = [os.environ.get("DSH_THEME_DEV")]
-    for var in ("OneDrive", "OneDriveCommercial"):
-        root = os.environ.get(var)
-        if root:
-            candidates.append(os.path.join(root, "文档", "development", "dsh-theme"))
-    candidates.append(str(Path.home() / "OneDrive" / "文档" / "development" / "dsh-theme"))
+    if os.name == "nt":
+        candidates.append("D:/Documents/development/dsh-theme")
+    candidates.append(str(Path.home() / "Documents" / "development" / "dsh-theme"))
     for c in candidates:
         if c and Path(c).is_dir():
             return Path(c)
     return None
 
 
-# Raw source dir: OneDrive scratch dir first, legacy in-repo dir as fallback.
+# Raw source dir: local scratch dir first, legacy in-repo dir as fallback.
 _dev = dev_dir()
 if _dev and (_dev / "raw").is_dir():
     RAW = _dev / "raw"

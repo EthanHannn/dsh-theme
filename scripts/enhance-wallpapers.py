@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Post-process the keyed wallpaper originals (raw/*-alpha*.png in the
-OneDrive-synced scratch dir — see AGENTS.md) to fix visibility problems,
+local, non-synced scratch dir — see AGENTS.md) to fix visibility problems,
 then re-emit the webp assets.
 
 Why: the vivid wallpapers sit behind paper at 72% opacity (28% bleed-through),
@@ -39,18 +39,16 @@ OUT = ROOT / "families" / "assets"
 
 def dev_dir():
     candidates = [os.environ.get("DSH_THEME_DEV")]
-    for var in ("OneDrive", "OneDriveCommercial"):
-        root = os.environ.get(var)
-        if root:
-            candidates.append(os.path.join(root, "文档", "development", "dsh-theme"))
-    candidates.append(str(Path.home() / "OneDrive" / "文档" / "development" / "dsh-theme"))
+    if os.name == "nt":
+        candidates.append("D:/Documents/development/dsh-theme")
+    candidates.append(str(Path.home() / "Documents" / "development" / "dsh-theme"))
     for c in candidates:
         if c and Path(c).is_dir():
             return Path(c)
     return None
 
 
-# Raw source dir: OneDrive scratch dir first, legacy in-repo dir as fallback.
+# Raw source dir: local scratch dir first, legacy in-repo dir as fallback.
 _dev = dev_dir()
 if _dev and (_dev / "raw").is_dir():
     RAW = _dev / "raw"
