@@ -21,13 +21,10 @@ jobs:
       - run: npm run check:generated
 
   harness:
-    if: matrix.track == 'supported' || github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
     strategy:
       fail-fast: false
       matrix:
-        include:
-          - track: supported
-          - track: upstream
+        track: ${{ fromJSON((github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') && '["supported","upstream"]' || '["supported"]') }}
     runs-on: ubuntu-latest
     env:
       DSH_HOME: ${{ github.workspace }}/.dsh-ci
