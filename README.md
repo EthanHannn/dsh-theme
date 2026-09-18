@@ -48,7 +48,7 @@ Harness 的插件 API 尚未稳定，本仓库只承诺通过自动化验证的�
 
 | dsh-themes | 已验证的 DeepSeek Harness | 状态 |
 | --- | --- | --- |
-| `0.2.x` | `0.1.5-alpha.2`（tag `dsh-v0.1.5-alpha.2`） | 当前支持 |
+| `0.2.x` | `0.1.6-alpha.2`（tag `dsh-v0.1.6-alpha.2`） | 当前支持 |
 
 [`compatibility.json`](compatibility.json) 是支持版本和所需客户端包的单一清单。CI 对当前支持 tag 做完整构建、profile 链接和真实 Web 启动测试，并在每周一检查 Harness `master`；上游变化会让预警任务失败，更新适配时必须同时修改兼容清单、`peerDependencies`、客户端适配代码和本表。
 
