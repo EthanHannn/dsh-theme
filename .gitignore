@@ -1,5 +1,8 @@
 node_modules/
 
+# Local agent tool state (Nezha) — machine-local config, never committed.
+.nezha/
+
 # Raw image-generation sources are bulky source material, kept outside the
 # repo — only the compressed webp assets in families/assets/ are committed.
 # Keep ignoring the legacy in-repo path so nothing large slips back in.
