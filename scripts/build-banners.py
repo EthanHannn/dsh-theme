@@ -40,6 +40,11 @@ else:
 # (source stem, output stem, ratio W:H, vertical band center as a fraction
 # of source height)
 JOBS = [
+    # Demon Slayer ensembles: wisteria travel road / Hashira courtyard.
+    ("kimetsu-20260920/kimetsu-bonds-banner-light-provider", "kimetsu-bonds-banner-light", 6.0, 0.50),
+    ("kimetsu-20260920/kimetsu-bonds-banner-dark-provider", "kimetsu-bonds-banner-dark", 6.0, 0.50),
+    ("kimetsu-20260920/kimetsu-hashira-banner-light-provider", "kimetsu-hashira-banner-light", 6.0, 0.50),
+    ("kimetsu-20260920/kimetsu-hashira-banner-dark-provider", "kimetsu-hashira-banner-dark", 6.0, 0.50),
     # frieren — light: meadow ridge with magic circles and flowers;
     # dark: full moon between stone markers.
     ("frieren-banner-light-wide-v3-provider", "frieren-banner-light", 6.0, 0.50),
@@ -98,6 +103,10 @@ JOBS = [
 # left fade end, right fade start), as fractions of the final strip width.
 # All families use Daxia's 25% left / 10% right edge treatment.
 BAKED_HORIZONTAL_FADES = {
+    "kimetsu-bonds-banner-light": ("#EAF2E9", 0.25, 0.90),
+    "kimetsu-bonds-banner-dark": ("#111F22", 0.25, 0.90),
+    "kimetsu-hashira-banner-light": ("#F5EDE4", 0.25, 0.90),
+    "kimetsu-hashira-banner-dark": ("#1B1928", 0.25, 0.90),
     "frieren-banner-light": ("#F4F3E8", 0.25, 0.90),
     "frieren-banner-dark": ("#0D1C20", 0.25, 0.90),
     "chainsaw-banner-light": ("#E8EEF1", 0.25, 0.90),
