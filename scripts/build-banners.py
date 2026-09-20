@@ -44,10 +44,12 @@ JOBS = [
     # dark: full moon between stone markers.
     ("frieren-banner-light-wide-v3-provider", "frieren-banner-light", 6.0, 0.50),
     ("frieren-banner-dark-wide-v3-provider", "frieren-banner-dark", 6.0, 0.50),
-    # chainsaw — light: golden-hour wires, rooftops and drifting leaves;
-    # dark: amber moon with crows on the power lines.
-    ("chainsaw-banner-light-wide-v3-provider", "chainsaw-banner-light", 6.0, 0.50),
-    ("chainsaw-banner-dark-wide-v3-provider", "chainsaw-banner-dark", 6.0, 0.50),
+    # Public Safety — silver morning / blue-hour Tokyo with muted red accents.
+    ("chainsaw-split-20260920/chainsaw-banner-light-v1-provider", "chainsaw-banner-light", 6.0, 0.50),
+    ("chainsaw-split-20260920/chainsaw-banner-dark-v1-provider", "chainsaw-banner-dark", 6.0, 0.50),
+    # Makima — ritual shrine in daylight; empty rooftop and crows at night.
+    ("chainsaw-split-20260920/makima-banner-light-v1-provider", "makima-banner-light", 6.0, 0.50),
+    ("chainsaw-split-20260920/makima-banner-dark-v1-provider", "makima-banner-dark", 6.0, 0.50),
     # gundam — orbital shipyard by day; Earth and a colony at night.
     ("gundam-banner-light-v2", "gundam-banner-light", 6.0, 0.51),
     ("gundam-banner-dark-v2", "gundam-banner-dark", 6.0, 0.50),
@@ -98,8 +100,10 @@ JOBS = [
 BAKED_HORIZONTAL_FADES = {
     "frieren-banner-light": ("#F4F3E8", 0.25, 0.90),
     "frieren-banner-dark": ("#0D1C20", 0.25, 0.90),
-    "chainsaw-banner-light": ("#F8EDDB", 0.25, 0.90),
-    "chainsaw-banner-dark": ("#181009", 0.25, 0.90),
+    "chainsaw-banner-light": ("#E8EEF1", 0.25, 0.90),
+    "chainsaw-banner-dark": ("#151C26", 0.25, 0.90),
+    "makima-banner-light": ("#F3E8E4", 0.25, 0.90),
+    "makima-banner-dark": ("#20121C", 0.25, 0.90),
     "shinchan-banner-light": ("#FFF4DE", 0.25, 0.90),
     "shinchan-banner-dark": ("#160D08", 0.25, 0.90),
     "hinamatsuri-banner-light": ("#F5F0E7", 0.25, 0.90),

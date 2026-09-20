@@ -1,289 +1,102 @@
-// Chainsaw Man — the series' visual identity.
-//
-//   bone white      #F4EFE4   (paper, light theme)
-//   Pochita orange  #E85D04   (brand, light; dark text on it keeps AA)
-//                             / #FF8A3D (brand, dark)
-//   blood red       #B11E23   (error + signature accent) / #FF5A5F (dark)
-//   pull-cord gold  #FFB930   (warning; darkened on the light theme)
-//   charcoal        #28221B   (ink)          / warm black #16110E (ground)
-//
-// The series' palette has no blue, so the harness's info/link ("blue")
-// ramp stays inside the orange family — the whole UI reads warm.
+import { createVividFamily } from "./create-vivid-family.js";
 
-export default {
+// Public Safety: shirt white, blue-gray uniforms, charcoal and restrained red.
+// Umber keeps its stable ID and re-exports these same mode palettes.
+const family = createVividFamily({
   id: "chainsaw",
-  names: { zh: "电锯人", en: "Chainsaw Man" },
-  // vivid only — the restrained palette ships as the standalone neutral
-  // family "umber" (families/umber.mjs re-exports these mode params)
-  styles: ["vivid"],
-  // Settings-entry character voice: shown in the speech bubble of the pal
-  // entry (sidebar.footer.action) instead of a plain "设置" label. One is
-  // picked at random each time the pal image cycles.
-  decor: {
-    headerArt: { bakedHorizontalFade: true },
-    phrases: {
-      zh: [
-        ["汪！", "拉绳一拉，烦恼清空", "电次，开工了"],
-        ["汪！", "拉绳一拉，烦恼清空", "电次，开工了"],
-        ["汪！", "拉绳一拉，烦恼清空", "电次，开工了"],
-        ["帕瓦：交给本大爷！", "帕瓦：这功劳归我！"],
-        ["早川秋：先把事情做完。", "早川秋：咖啡要凉了。"],
+  signaturePrefix: "csm",
+  names: { zh: "电锯人·特异课", en: "Chainsaw Man · Public Safety" },
+  // Original character-inspired lines, ordered Denji / Pochita / Makima / Power / Aki.
+  phrases: {
+    "zh": [
+      [
+        "电次：干完这票，吃顿好的！",
+        "电次：果酱要抹厚一点！",
+        "电次：今天也想过好日子。",
+        "电次：有早餐就有干劲！",
+        "电次：波奇塔，咱们上！"
       ],
-      en: [
-        ["Woof!", "Pull the cord, clear the noise", "Denji, time to work"],
-        ["Woof!", "Pull the cord, clear the noise", "Denji, time to work"],
-        ["Woof!", "Pull the cord, clear the noise", "Denji, time to work"],
-        ["Power: Leave it to me!", "Power: I take the credit!"],
-        ["Aki: Finish the job first.", "Aki: The coffee is getting cold."],
+      [
+        "波奇塔：汪！陪你一起。",
+        "波奇塔：汪汪！该歇一会儿啦。",
+        "波奇塔：今天的梦想是什么？",
+        "波奇塔：面包分你一半。",
+        "波奇塔：拉响今天的小小勇气！"
       ],
-    },
+      [
+        "玛奇玛：慢慢来，我在听。",
+        "玛奇玛：今天想从哪里开始？",
+        "玛奇玛：期待你的表现。",
+        "玛奇玛：先挑一个喜欢的颜色吧。",
+        "玛奇玛：辛苦了，喝杯咖啡？"
+      ],
+      [
+        "帕瓦：本大爷才是配色天才！",
+        "帕瓦：这份功劳归我！",
+        "帕瓦：先说好，肉都是我的！",
+        "帕瓦：今天也要威风登场！",
+        "帕瓦：喵子也说这个好看！"
+      ],
+      [
+        "早川秋：先把手头的事做完。",
+        "早川秋：咖啡还热，慢慢喝。",
+        "早川秋：出门前检查好装备。",
+        "早川秋：别吵，早餐马上好。",
+        "早川秋：今天也平安收工吧。"
+      ]
+    ],
+    "en": [
+      [
+        "Denji: Finish the job, feast later!",
+        "Denji: More jam on that toast!",
+        "Denji: Here's to the good life.",
+        "Denji: Breakfast gets me going!",
+        "Denji: Let's go, Pochita!"
+      ],
+      [
+        "Pochita: Woof! Right beside you.",
+        "Pochita: Woof! Time for a break.",
+        "Pochita: What's today's dream?",
+        "Pochita: Half my bread is yours.",
+        "Pochita: A little courage today!"
+      ],
+      [
+        "Makima: Take your time. I'm listening.",
+        "Makima: Where shall we begin?",
+        "Makima: I look forward to your work.",
+        "Makima: Pick a color you like.",
+        "Makima: Good work. Coffee?"
+      ],
+      [
+        "Power: Behold my color genius!",
+        "Power: All credit goes to me!",
+        "Power: The meat is mine!",
+        "Power: Time for my grand entrance!",
+        "Power: Meowy likes this one too!"
+      ],
+      [
+        "Aki: Finish what's in front of you.",
+        "Aki: The coffee's hot. Take your time.",
+        "Aki: Check your gear before we go.",
+        "Aki: Quiet. Breakfast is almost ready.",
+        "Aki: Let's all get home safely."
+      ]
+    ]
   },
   light: {
-    signatureAccent: "#B11E23",
-    deepAccent: "#FFB930",
-    ramp: {
-      "00": "#F4EFE4",
-      "60": "#E7E0D1",
-      "100": "#CFC6B3",
-      "200": "#BEB4A0",
-      "300": "#A79D8B",
-      "500": "#7D7466",
-      "600": "#6B6256",
-      "750": "#585044",
-      "850": "#463F35",
-      "900": "#332C24",
-      "1000": "#28221B",
-    },
-    brand: "#E85D04",
-    brandSoft: "#EE8F4D",
-    brandHover: "#F26A1B",
-    brandText: "#241108",
-    blue: "#C24A00",
-    blueCore: "#B5470F",
-    error: "#B11E23",
-    success: "#4A7C3A",
-    amberSoft: "#D99A0F",
-    amber: "#C98A04",
-    warn: "#B57A00",
-    warnLabel: "#8F6200",
-    bgBase: "#F4EFE4",
-    layer1: "#F4EFE4",
-    layer2: "#E7E0D1",
-    layer3: "#CFC6B3",
-    overlay: "#F4EFE4",
-    masks: ["rgba(216, 207, 188, 0.24)", "rgba(216, 207, 188, 0.12)", "rgba(216, 207, 188, 0.48)"],
-    skeleton: "rgba(70, 63, 53, 0.08)",
-    borders: [
-      "rgba(88, 80, 68, 0.28)",
-      "rgba(88, 80, 68, 0.45)",
-      "rgba(88, 80, 68, 0.58)",
-      "rgba(88, 80, 68, 0.72)",
-    ],
-    textPrimary: "#332C24",
-    textSecondary: "#585044",
-    textTertiary: "#463F35",
-    elevatedFill: "#F4EFE4",
-    floatingFill: "#F4EFE4",
-    floatingHover: "#E7E0D1",
-    ghostBorder: "#BEB4A0",
-    ghostFill: "#E7E0D1",
-    ghostHover: "#CFC6B3",
-    interactive: {
-      hover: "rgba(70, 63, 53, 0.10)",
-      active: "rgba(70, 63, 53, 0.16)",
-      hoverAccent: "rgba(232, 93, 4, 0.12)",
-      hoverDanger: "rgba(177, 30, 35, 0.06)",
-      hoverSolid: "#E7E0D1",
-    },
-    md: {
-      codeBlock: "#E7E0D1",
-      banner: "#E7E0D1",
-      segSelected: "#F4EFE4",
-      segUnselected: "#E7E0D1",
-    },
-    toastBg: "#CFC6B3",
-    tooltipBg: "#BEB4A0",
-    separator: "rgba(232, 93, 4, 0.7)",
-    scrollbar: ["#CFC6B3", "#BEB4A0", "#A79D8B"],
-    maskDrop: "rgba(255, 255, 255, 0.7)",
-    borderInverted: ["rgba(0, 0, 0, 0)", "rgba(0, 0, 0, 0)"],
-    borderThin: "rgba(88, 80, 68, 0.35)",
-    brandInvert: "#332C24",
-    infoHover: "#E87A2E",
-    toolbar: ["rgba(88, 80, 68, 0.5)", "rgba(88, 80, 68, 0.36)", "rgba(107, 98, 86, 0.6)"],
-    labelForeground: "#F4EFE4",
-    labelInverted: "#F4EFE4",
-    sidebar: {
-      fill: "#E7E0D1",
-      active: "#BEB4A0",
-      activeAccent: "rgba(232, 93, 4, 0.2)",
-      hover: "#CFC6B3",
-    },
-    bubbleHighlight: "#CFC6B3",
-    inputMajor: "#F4EFE4",
-    loginInput: "#E7E0D1",
-    selector: "#CFC6B3",
-    signature: {
-      "--dsw-csm-orange": "#E85D04",
-      "--dsw-csm-red": "#B11E23",
-      "--dsw-csm-gold": "#D99A0F",
-      "--dsw-csm-cream": "#F4EFE4",
-    },
-    shiki: {
-      foreground: "#332C24",
-      background: "#E7E0D1",
-      keyword: "#C24A00",
-      string: "#4A7C3A",
-      constant: "#8F6200",
-      parameter: "#8A4A2B",
-      function: "#9E2B25",
-      comment: "#7D7466",
-      punctuation: "#585044",
-      link: "#B11E23",
-    },
+    paper: "#F1F3F4", vividPaper: "#E8EEF1", ink: "#242C38",
+    brand: "#36556F", brandText: "#FFFFFF", signature: "#A33443",
+    deepAccent: "#943746", success: "#3B6858", error: "#AF3445", warning: "#82591F",
   },
   dark: {
-    signatureAccent: "#FF5A5F",
-    deepAccent: "#FFB930",
-    ramp: {
-      "00": "#EDE6DA",
-      "60": "#CFC6B8",
-      "100": "#B5AB9C",
-      "200": "#9B9081",
-      "300": "#83796B",
-      "500": "#5B5348",
-      "600": "#453E35",
-      "750": "#352F28",
-      "850": "#1D1915",
-      "900": "#16110E",
-      "1000": "#100C0A",
-    },
-    brand: "#FF8A3D",
-    brandSoft: "#FFB37A",
-    brandHover: "#FFA15C",
-    brandText: "#241108",
-    blue: "#FF8A3D",
-    error: "#FF5A5F",
-    success: "#8FC97F",
-    amberSoft: "#FFC53D",
-    amber: "#FFB930",
-    warn: "#FFB930",
-    warnLabel: "#FFC53D",
-    bgBase: "#1D1915",
-    layer1: "#16110E",
-    layer2: "#2A241E",
-    layer3: "#3A332B",
-    overlay: "#2A241E",
-    masks: ["rgba(16, 12, 10, 0.5)", "rgba(16, 12, 10, 0.2)", "rgba(16, 12, 10, 0.48)"],
-    skeleton: "rgba(58, 51, 43, 0.08)",
-    borders: [
-      "rgba(131, 121, 107, 0.25)",
-      "rgba(131, 121, 107, 0.45)",
-      "rgba(131, 121, 107, 0.55)",
-      "rgba(131, 121, 107, 0.7)",
-    ],
-    textPrimary: "#EDE6DA",
-    textSecondary: "#B5AB9C",
-    textTertiary: "#CFC6B8",
-    elevatedFill: "#2A241E",
-    floatingFill: "#3A332B",
-    floatingHover: "#5B5348",
-    ghostBorder: "#5B5348",
-    ghostFill: "#2A241E",
-    ghostHover: "#3A332B",
-    interactive: {
-      hover: "rgba(42, 36, 30, 0.45)",
-      active: "rgba(58, 51, 43, 0.55)",
-      hoverAccent: "rgba(255, 138, 61, 0.14)",
-      hoverDanger: "rgba(255, 90, 95, 0.15)",
-      hoverSolid: "#3A332B",
-    },
-    md: {
-      codeBlock: "#16110E",
-      banner: "#2A241E",
-      segSelected: "#2A241E",
-      segUnselected: "#16110E",
-    },
-    toastBg: "#16110E",
-    tooltipBg: "#2A241E",
-    separator: "rgba(255, 138, 61, 0.8)",
-    scrollbar: ["#2A241E", "#3A332B", "#5B5348"],
-    maskDrop: "rgba(29, 25, 21, 0.7)",
-    borderInverted: ["rgba(255, 255, 255, 0.06)", "rgba(255, 255, 255, 0.08)"],
-    borderThin: "rgba(131, 121, 107, 0.3)",
-    brandInvert: "#EDE6DA",
-    infoHover: "#8F4A1F",
-    toolbar: ["rgba(131, 121, 107, 0.5)", "rgba(131, 121, 107, 0.36)", "rgba(155, 144, 129, 0.6)"],
-    labelForeground: "#16110E",
-    labelInverted: "#2A241E",
-    sidebar: {
-      fill: "#16110E",
-      active: "#3A332B",
-      activeAccent: "rgba(255, 138, 61, 0.25)",
-      hover: "#2A241E",
-    },
-    bubbleHighlight: "#3A332B",
-    inputMajor: "#16110E",
-    loginInput: "#16110E",
-    selector: "#3A332B",
-    signature: {
-      "--dsw-csm-orange": "#FF8A3D",
-      "--dsw-csm-red": "#FF5A5F",
-      "--dsw-csm-gold": "#FFB930",
-      "--dsw-csm-cream": "#EDE6DA",
-    },
-    shiki: {
-      foreground: "#EDE6DA",
-      background: "#16110E",
-      keyword: "#FF8A3D",
-      string: "#8FC97F",
-      constant: "#FFB930",
-      parameter: "#D9A06B",
-      function: "#F0655A",
-      comment: "#83796B",
-      punctuation: "#9B9081",
-      link: "#FFC53D",
-    },
+    ground: "#11151C", vividPaper: "#151C26", text: "#E8EDF2",
+    brand: "#93B6CC", brandText: "#15212B", signature: "#F07982",
+    deepAccent: "#C2CDDE", success: "#92BEA9", error: "#FF8B92", warning: "#D6B576",
   },
-  // Vivid style: param-level overrides merged on top of the mode params
-  // before token expansion, so every derived alias stays consistent.
-  // Vivid drops the harness's restraint: brand-tinted papers at 72%
-  // opacity (the wallpaper veil sits behind the content and bleeds
-  // through, never covering text), a sidebar washed in the brand color —
-  // warm tan on light skins (the global dark ink stays readable), deep
-  // orange-brown on dark skins (the global light ink is already
-  // readable) — and `paper` gives the body a solid ground under the
-  // translucent surfaces.
-  vivid: {
-    light: {
-      paper: "#F8EDDB",
-      bgBase: "rgba(248, 237, 219, 0.72)",
-      layer1: "rgba(248, 237, 219, 0.72)",
-      layer2: "#F0E0C2",
-      layer3: "#E2CEA6",
-      overlay: "#F8EDDB",
-      inputMajor: "#F8EDDB",
-      loginInput: "#F0E0C2",
-      sidebar: {
-        fill: "#EEDCB4",
-        active: "rgba(194, 74, 0, 0.16)",
-        activeAccent: "#C24A00",
-        hover: "rgba(194, 74, 0, 0.08)",
-      },
-    },
-    dark: {
-      paper: "#181009",
-      bgBase: "rgba(30, 20, 16, 0.72)",
-      layer1: "rgba(24, 16, 9, 0.72)",
-      layer2: "#33241A",
-      layer3: "#453224",
-      overlay: "#33241A",
-      sidebar: {
-        fill: "#260F00",
-        active: "rgba(255, 255, 255, 0.14)",
-        activeAccent: "#FFB930",
-        hover: "rgba(255, 255, 255, 0.07)",
-      },
-    },
-  },
-};
+});
+
+// A larger square ensemble; retain a viewport-height cap in short windows.
+family.decor.wallpaperSize = "min(42vw, 540px, 50vh)";
+family.decor.heroTranslate = "0 calc(-1 * min(10vh, 100px))";
+
+export default family;

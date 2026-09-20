@@ -349,9 +349,11 @@ function mergeParams(base, over) {
 }
 
 const categories = JSON.parse(readFileSync(join(familyDir, "categories.json"), "utf8"));
+const familySortKeys = new Map();
 
 for (const file of familyFiles) {
   const family = (await import(pathToFileURL(join(familyDir, file)).href)).default;
+  familySortKeys.set(family.id, family.sortKey ?? family.id);
   if (
     !family?.id ||
     !family.names?.zh ||
@@ -444,8 +446,18 @@ for (const file of familyFiles) {
   }
   const category = categories[family.kin ?? family.id];
   if (!["anime", "game", "other"].includes(category)) throw new Error(`Missing category for ${family.id}`);
-  catalog.push({ category, id: family.id, names: family.names, kin: family.kin ?? null, decor: { pals, phrases: phrases ?? null }, skins });
+  catalog.push({ category, id: family.id, names: family.names, kin: family.kin ?? null, decor: {
+    pals,
+    phrases: phrases ?? null,
+    ...(family.decor?.wallpaperSize ? { wallpaperSize: family.decor.wallpaperSize } : {}),
+    ...(family.decor?.heroTranslate ? { heroTranslate: family.decor.heroTranslate } : {}),
+    ...(family.decor?.heroMaxWidth ? { heroMaxWidth: family.decor.heroMaxWidth } : {}),
+  }, skins });
 }
+
+// Explicit keys keep related IP families together regardless of filenames.
+// The picker inserts each minimal kin directly after its vivid family.
+catalog.sort((a, b) => familySortKeys.get(a.id).localeCompare(familySortKeys.get(b.id), "en"));
 
 // A neutral family's `kin` declares the IP family whose palette it
 // re-exports; the settings row renders the pair as one palette group.
