@@ -40,6 +40,9 @@ else:
 # (source stem, output stem, ratio W:H, vertical band center as a fraction
 # of source height)
 JOBS = [
+    # Mitsuri-led quartet: spring tea garden / plum-toned cherry night.
+    ("kimetsu-sakura-20260920/kimetsu-sakura-banner-light-provider", "kimetsu-sakura-banner-light", 6.0, 0.50),
+    ("kimetsu-sakura-20260920/kimetsu-sakura-banner-dark-provider", "kimetsu-sakura-banner-dark", 6.0, 0.50),
     # Demon Slayer ensembles: wisteria travel road / Hashira courtyard.
     ("kimetsu-20260920/kimetsu-bonds-banner-light-provider", "kimetsu-bonds-banner-light", 6.0, 0.50),
     ("kimetsu-20260920/kimetsu-bonds-banner-dark-provider", "kimetsu-bonds-banner-dark", 6.0, 0.50),
@@ -103,6 +106,8 @@ JOBS = [
 # left fade end, right fade start), as fractions of the final strip width.
 # All families use Daxia's 25% left / 10% right edge treatment.
 BAKED_HORIZONTAL_FADES = {
+    "kimetsu-sakura-banner-light": ("#F5E9ED", 0.25, 0.90),
+    "kimetsu-sakura-banner-dark": ("#231923", 0.25, 0.90),
     "kimetsu-bonds-banner-light": ("#EAF2E9", 0.25, 0.90),
     "kimetsu-bonds-banner-dark": ("#111F22", 0.25, 0.90),
     "kimetsu-hashira-banner-light": ("#F5EDE4", 0.25, 0.90),
