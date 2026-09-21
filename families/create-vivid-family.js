@@ -76,8 +76,10 @@ function modeParams(mode, palette, signatureKeys) {
     ghostFill: layer2,
     ghostHover: layer3,
     interactive: {
-      hover: rgba(tertiary, isDark ? 0.34 : 0.1),
-      active: rgba(tertiary, isDark ? 0.48 : 0.16),
+      // Dark interaction washes must come from surfaces, not near-white text:
+      // stacked hover layers otherwise erase secondary-label contrast.
+      hover: rgba(isDark ? layer2 : tertiary, isDark ? 0.55 : 0.1),
+      active: rgba(isDark ? layer3 : tertiary, isDark ? 0.65 : 0.16),
       hoverAccent: rgba(palette.brand, isDark ? 0.16 : 0.12),
       hoverDanger: rgba(palette.error, isDark ? 0.16 : 0.07),
       hoverSolid: isDark ? layer3 : neutral["60"],

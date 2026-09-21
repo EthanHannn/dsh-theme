@@ -3,9 +3,10 @@ import vm from "node:vm";
 import assert from "node:assert/strict";
 import test from "node:test";
 
-const catalog = ["naruto", "gundam"].map((id) => ({ id, names:{ zh:id, en:id }, skins:["light", "dark"].map((mode) => ({ id:`${id}-${mode}-vivid`, colorScheme:mode })) }));
+const catalog = ["naruto", "gundam"].map((id) => ({ id, category:"anime", names:{ zh:id, en:id }, skins:["light", "dark"].map((mode) => ({ id:`${id}-${mode}-vivid`, colorScheme:mode, tokens:{ "--dsw-pack-wallpaper":"url(test.webp)" } })) }));
+catalog.push({ id:"slate", kin:"gundam", category:"anime", names:{ zh:"青灰", en:"Slate" }, skins:["light", "dark"].map((mode) => ({ id:`slate-${mode}`, colorScheme:mode })) });
 catalog[0].decor = { wallpaperSize: "min(34vw, 420px, 40vh)", heroTranslate: "0 -80px", heroMaxWidth: "600px" };
-function load(saved, unavailable = false) {
+function load(saved, unavailable = false, reactApi = {}) {
   let raw = saved;
   let api;
   const nodes = new Set();
@@ -19,8 +20,8 @@ function load(saved, unavailable = false) {
   const document = { body, head:body, createElement:() => ({ isConnected:false, setAttribute() {}, remove() { this.isConnected = false; nodes.delete(this); } }) };
   const source = readFileSync(new URL("../lib/client.tpl.js", import.meta.url), "utf8")
     .replace("__CATALOG__", JSON.stringify(catalog))
-    .replace("    exports.CATALOG = CATALOG;", "    Object.assign(exports, { readPref, writePref, readDocument, appearanceFor, settingsFor, writeSettings, normalizeDocument, parseSkin, resolveSkin });");
-  const window = { matchMedia:() => ({ matches:false, addEventListener() {}, removeEventListener() {} }), localStorage:{ getItem:() => raw, setItem:(_, value) => { if (unavailable) throw Error("blocked"); raw = value; } }, __ModuleLoader__:{ load:({ factory }) => { api = factory(() => ({ defineStore:(value) => value })); } } };
+    .replace("    exports.CATALOG = CATALOG;", "    Object.assign(exports, { readPref, writePref, readDocument, appearanceFor, settingsFor, writeSettings, normalizeDocument, parseSkin, resolveSkin, filterCatalog, writeLibrarySettings, ThemeSection });");
+  const window = { matchMedia:() => ({ matches:false, addEventListener() {}, removeEventListener() {} }), localStorage:{ getItem:() => raw, setItem:(_, value) => { if (unavailable) throw Error("blocked"); raw = value; } }, __ModuleLoader__:{ load:({ factory }) => { api = factory((id) => id === "react" ? reactApi : ({ defineStore:(value) => value })); } } };
   vm.runInNewContext(source, { window, document, setTimeout:() => 1, clearTimeout() {} });
   return { api, document, nodes, raw:() => raw };
 }
@@ -86,6 +87,76 @@ test("blocked localStorage retains preferences for the session", () => {
   const { api } = load(null, true);
   api.writePref({ family:"naruto", mode:"dark", style:"vivid", props:false });
   assert.equal(api.readPref().props, false);
+});
+
+test("minimal visibility defaults on, persists, and never changes the selected theme", () => {
+  const { api, raw } = load(null);
+  assert.equal(api.readDocument().library.showMinimal, true);
+  assert.equal(api.normalizeDocument({ library:{ showMinimal:"false" } }).library.showMinimal, true);
+  api.writePref({ family:"slate", mode:"dark", style:"minimal", props:false });
+  api.writeLibrarySettings(false);
+  api.writeSettings({ family:"naruto", mode:"light", wallpaper:"soft" });
+  const reloaded = load(raw()).api;
+  assert.equal(reloaded.readDocument().library.showMinimal, false);
+  assert.equal(reloaded.resolveSkin(reloaded.readPref()), "slate-dark");
+  assert.equal(reloaded.appearanceFor("slate").props, false);
+  const blocked = load(null, true).api;
+  blocked.writeLibrarySettings(false);
+  assert.equal(blocked.readDocument().library.showMinimal, false);
+});
+
+test("search and category keep palette pairs together while minimal filtering only hides cards", () => {
+  const { api } = load(null);
+  const ids = (query, category, show) => Array.from(api.filterCatalog(query, category, show), (entry) => entry.id);
+  assert.deepEqual(ids("", "all", true), ["naruto", "gundam", "slate"]);
+  assert.deepEqual(ids(" 青灰 ", "anime", true), ["gundam", "slate"]);
+  assert.deepEqual(ids("SLATE", "anime", false), ["gundam"]);
+  assert.deepEqual(ids("", "game", false), []);
+  assert.deepEqual(ids("unknown", "all", true), []);
+});
+
+test("fine controls start collapsed and toggling them preserves artwork preferences", () => {
+  // Lightweight element/hook harness: exercise section callbacks without a DOM or browser.
+  const state = [];
+  let cursor = 0;
+  const reactApi = {
+    Fragment:"fragment",
+    createElement(type, props, ...children) {
+      if (typeof type === "function") return type({ ...props, children });
+      return { type, props:props ?? {}, children:children.flat(Infinity).filter((entry) => entry != null) };
+    },
+    useState(initial) {
+      const index = cursor++;
+      if (!(index in state)) state[index] = typeof initial === "function" ? initial() : initial;
+      return [state[index], (value) => { state[index] = typeof value === "function" ? value(state[index]) : value; }];
+    },
+    useId:() => `id-${cursor++}`,
+    useRef:() => ({ current:null }),
+    useEffect() {},
+  };
+  const { api } = load(null, false, reactApi);
+  let saved;
+  const props = { t:(key) => key === "theme.title" ? "主题" : key, useStore:(pick) => pick({ family:"naruto", mode:"light" }), saveDraft:(draft) => { saved = draft; }, previewTheme() {}, applyDraft() {}, cancelPreview() {} };
+  const render = () => { cursor = 0; return api.ThemeSection(props); };
+  const find = (node, predicate) => typeof node === "object" ? (predicate(node) ? node : node.children?.map((child) => find(child, predicate)).find(Boolean)) : undefined;
+  let tree = render();
+  const disclosure = (node) => node.props.className === "dsh-theme-advanced-toggle";
+  const character = (node) => node.props.role === "switch" && node.children[0]?.children[0] === "右下角角色";
+  assert.equal(find(tree, disclosure).props["aria-expanded"], false);
+  assert.equal(find(tree, character), undefined);
+  assert.equal(saved, undefined);
+  find(tree, disclosure).props.onClick();
+  tree = render();
+  assert.equal(find(tree, character).props["aria-checked"], true);
+  find(tree, character).props.onClick();
+  assert.equal(saved.character, false);
+  tree = render();
+  find(tree, disclosure).props.onClick();
+  tree = render();
+  assert.equal(find(tree, character), undefined);
+  find(tree, disclosure).props.onClick();
+  tree = render();
+  assert.equal(find(tree, character).props["aria-checked"], false);
 });
 
 test("section applies same-skin decorations, restores default, and tears down", () => {
