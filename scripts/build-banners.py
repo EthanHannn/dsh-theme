@@ -83,6 +83,10 @@ JOBS = [
     ("one-piece-banner-dark-src-provider", "one-piece-banner-dark", 6.0, 0.50),
     ("naruto-banner-light-src-provider", "naruto-banner-light", 6.0, 0.50),
     ("naruto-banner-dark-src-provider", "naruto-banner-dark", 6.0, 0.50),
+    # team-guy shares the Konoha scrolls with a different framing: sky and
+    # monument ridge by day, the full moon over the rooftops at night.
+    ("naruto-banner-light-src-provider", "team-guy-banner-light", 6.0, 0.40),
+    ("naruto-banner-dark-src-provider", "team-guy-banner-dark", 6.0, 0.31),
     ("slam-dunk-banner-light-src-provider", "slam-dunk-banner-light", 6.0, 0.50),
     ("slam-dunk-banner-dark-src-provider", "slam-dunk-banner-dark", 6.0, 0.50),
     ("minecraft-banner-light-src-provider", "minecraft-banner-light", 6.0, 0.50),
@@ -132,6 +136,8 @@ BAKED_HORIZONTAL_FADES = {
     "one-piece-banner-dark": ("#0B1824", 0.25, 0.90),
     "naruto-banner-light": ("#FCEBD2", 0.25, 0.90),
     "naruto-banner-dark": ("#121820", 0.25, 0.90),
+    "team-guy-banner-light": ("#EFF3DF", 0.25, 0.90),
+    "team-guy-banner-dark": ("#151D17", 0.25, 0.90),
     "slam-dunk-banner-light": ("#F8EEDF", 0.25, 0.90),
     "slam-dunk-banner-dark": ("#151719", 0.25, 0.90),
     "minecraft-banner-light": ("#EDE6CC", 0.25, 0.90),
