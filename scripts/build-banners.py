@@ -40,6 +40,9 @@ else:
 # (source stem, output stem, ratio W:H, vertical band center as a fraction
 # of source height)
 JOBS = [
+    # Conan: silver-blue morning / moonlit Beika streets after rain.
+    ("conan-20260923/conan-banner-light", "conan-banner-light", 6.0, 0.50),
+    ("conan-20260923/conan-banner-dark", "conan-banner-dark", 6.0, 0.50),
     # Mitsuri-led quartet: spring tea garden / plum-toned cherry night.
     ("kimetsu-sakura-20260920/kimetsu-sakura-banner-light-provider", "kimetsu-sakura-banner-light", 6.0, 0.50),
     ("kimetsu-sakura-20260920/kimetsu-sakura-banner-dark-provider", "kimetsu-sakura-banner-dark", 6.0, 0.50),
@@ -110,6 +113,8 @@ JOBS = [
 # left fade end, right fade start), as fractions of the final strip width.
 # All families use Daxia's 25% left / 10% right edge treatment.
 BAKED_HORIZONTAL_FADES = {
+    "conan-banner-light": ("#EDF2F7", 0.25, 0.90),
+    "conan-banner-dark": ("#101C30", 0.25, 0.90),
     "kimetsu-sakura-banner-light": ("#F5E9ED", 0.25, 0.90),
     "kimetsu-sakura-banner-dark": ("#231923", 0.25, 0.90),
     "kimetsu-bonds-banner-light": ("#EAF2E9", 0.25, 0.90),
