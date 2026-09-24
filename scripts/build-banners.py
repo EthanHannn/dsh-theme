@@ -40,6 +40,15 @@ else:
 # (source stem, output stem, ratio W:H, vertical band center as a fraction
 # of source height)
 JOBS = [
+    # Core Conan cast: familiar Beika streets / moonlit museum rooftops.
+    ("conan-ensemble-20260924/banner-light", "conan-ensemble-banner-light", 6.0, 0.50),
+    ("conan-ensemble-20260924/banner-dark", "conan-ensemble-banner-dark", 6.0, 0.50),
+    # Haibara: rain-cleared cafe / amber-lit research room.
+    ("conan-collection-20260924/haibara-banner-light-v2", "conan-haibara-banner-light", 6.0, 0.56),
+    ("conan-collection-20260924/haibara-banner-dark", "conan-haibara-banner-dark", 6.0, 0.50),
+    # Kid: pearl daylight clocktower / silver moon over museum rooftops.
+    ("conan-collection-20260924/kid-banner-light", "conan-kid-banner-light", 6.0, 0.485),
+    ("conan-collection-20260924/kid-banner-dark-v2", "conan-kid-banner-dark", 6.0, 0.43),
     # Conan: silver-blue morning / moonlit Beika streets after rain.
     ("conan-20260923/conan-banner-light", "conan-banner-light", 6.0, 0.50),
     ("conan-20260923/conan-banner-dark", "conan-banner-dark", 6.0, 0.50),
@@ -113,6 +122,12 @@ JOBS = [
 # left fade end, right fade start), as fractions of the final strip width.
 # All families use Daxia's 25% left / 10% right edge treatment.
 BAKED_HORIZONTAL_FADES = {
+    "conan-ensemble-banner-light": ("#EDF2F8", 0.25, 0.90),
+    "conan-ensemble-banner-dark": ("#142139", 0.25, 0.90),
+    "conan-haibara-banner-light": ("#EEF2E9", 0.25, 0.90),
+    "conan-haibara-banner-dark": ("#142321", 0.25, 0.90),
+    "conan-kid-banner-light": ("#EEF2FA", 0.25, 0.90),
+    "conan-kid-banner-dark": ("#141D35", 0.25, 0.90),
     "conan-banner-light": ("#EDF2F7", 0.25, 0.90),
     "conan-banner-dark": ("#101C30", 0.25, 0.90),
     "kimetsu-sakura-banner-light": ("#F5E9ED", 0.25, 0.90),
