@@ -40,6 +40,13 @@ else:
 # (source stem, output stem, ratio W:H, vertical band center as a fraction
 # of source height)
 JOBS = [
+    # Dragon Ball: Kame island, the Z warriors' valley and the original quest.
+    ("dragon-ball-20260924/dragon-ball-kame/banner-light", "dragon-ball-kame-banner-light", 6.0, 0.50),
+    ("dragon-ball-20260924/dragon-ball-kame/banner-dark", "dragon-ball-kame-banner-dark", 6.0, 0.50),
+    ("dragon-ball-20260924/dragon-ball-z/banner-light", "dragon-ball-z-banner-light", 6.0, 0.50),
+    ("dragon-ball-20260924/dragon-ball-z/banner-dark", "dragon-ball-z-banner-dark", 6.0, 0.50),
+    ("dragon-ball-20260924/dragon-ball-quest/banner-light", "dragon-ball-quest-banner-light", 6.0, 0.50),
+    ("dragon-ball-20260924/dragon-ball-quest/banner-dark", "dragon-ball-quest-banner-dark", 6.0, 0.50),
     # Core Conan cast: familiar Beika streets / moonlit museum rooftops.
     ("conan-ensemble-20260924/banner-light", "conan-ensemble-banner-light", 6.0, 0.50),
     ("conan-ensemble-20260924/banner-dark", "conan-ensemble-banner-dark", 6.0, 0.50),
@@ -122,6 +129,12 @@ JOBS = [
 # left fade end, right fade start), as fractions of the final strip width.
 # All families use Daxia's 25% left / 10% right edge treatment.
 BAKED_HORIZONTAL_FADES = {
+    "dragon-ball-kame-banner-light": ("#EDF5ED", 0.25, 0.90),
+    "dragon-ball-kame-banner-dark": ("#132A2B", 0.25, 0.90),
+    "dragon-ball-z-banner-light": ("#F0F1F8", 0.25, 0.90),
+    "dragon-ball-z-banner-dark": ("#191E37", 0.25, 0.90),
+    "dragon-ball-quest-banner-light": ("#F2F3E7", 0.25, 0.90),
+    "dragon-ball-quest-banner-dark": ("#142B25", 0.25, 0.90),
     "conan-ensemble-banner-light": ("#EDF2F8", 0.25, 0.90),
     "conan-ensemble-banner-dark": ("#142139", 0.25, 0.90),
     "conan-haibara-banner-light": ("#EEF2E9", 0.25, 0.90),
