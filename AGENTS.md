@@ -29,9 +29,9 @@ There is no unit-test suite or coverage threshold. `npm run check` is the baseli
 
 ## Harness Compatibility Maintenance
 
-Harness plugin APIs are pre-stable. `compatibility.json` is the source of truth for the one Harness release currently supported and the client packages and exports consumed by this plugin. Keep its Harness version synchronized with the exact Harness client-package peer versions in `package.json` and the compatibility table in `README.md`; CI reads the tag directly from the compatibility file. An adaptation is complete only after the client code is updated and the supported-tag CI path builds Harness, links the profile, and boots the real Web application.
+Harness plugin APIs are pre-stable. `compatibility.json` records the last fully verified Harness release plus the client packages and exports this plugin consumes; `scripts/check-dsh-compat.mjs` requires the current checkout to match it, so an upstream version bump fails the check and prompts re-verification. The four `@deepseek-ai/dsh-client-*` peer declarations in `package.json` are release-line ranges (`^0.1.6-alpha.2`), never exact pins — the runtime compatibility gate reads exactly these, so the range is what lets the bundle load on the current release line. An adaptation is complete only after the client adapter is re-checked and the supported-tag CI path builds Harness, links the profile, and boots the real Web application.
 
-The scheduled CI job checks Harness `master` every Monday. Treat its failure as an upstream compatibility alert: inspect upstream changes, adapt this repository, verify the new release or commit locally, and then advance all four declarations together. Do not loosen peer ranges or bypass `scripts/check-dsh-compat.mjs` to make an unverified Harness version appear supported.
+The scheduled CI job checks Harness `master` every Monday. Treat its failure as an upstream compatibility alert: inspect upstream changes, re-check the client adapter, then advance the verified baseline and the compatibility table together. Keep the peer ranges on the verified release line and never widen them across major/minor lines to make an unverified runtime load.
 
 ## Coding Style & Naming Conventions
 

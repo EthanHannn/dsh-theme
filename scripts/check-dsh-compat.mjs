@@ -35,6 +35,12 @@ function hasExport(manifest, name) {
   return manifest.exports && typeof manifest.exports === "object" && Object.hasOwn(manifest.exports, name);
 }
 
+/** The `major.minor` release line a version or a peer range belongs to (dependency-free). */
+function releaseLine(value) {
+  const match = /^\s*[\^~]?\s*(?:>=\s*)?(\d+)\.(\d+)\./.exec(String(value));
+  return match === null ? undefined : `${match[1]}.${match[2]}`;
+}
+
 /** Check the supported Harness release, required client packages, and theme manifest declarations. */
 export function checkDshCompatibility(harnessRoot) {
   const compatibility = readJson(join(themeRoot, "compatibility.json"));
@@ -94,8 +100,11 @@ export function checkDshCompatibility(harnessRoot) {
       if (!inject.includes(required.name)) {
         failures.push(`package.json dsh.client.inject is missing ${required.name}`);
       }
-      if (themeManifest.peerDependencies?.[required.name] !== supportedVersion) {
-        failures.push(`package.json peerDependencies must pin ${required.name} to ${supportedVersion}`);
+      const declared = themeManifest.peerDependencies?.[required.name];
+      if (typeof declared !== "string") {
+        failures.push(`package.json peerDependencies is missing ${required.name}`);
+      } else if (releaseLine(declared) !== releaseLine(supportedVersion)) {
+        failures.push(`package.json peerDependencies must keep ${required.name} on the ${releaseLine(supportedVersion)} release line, got ${declared}`);
       }
     }
   }

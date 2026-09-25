@@ -60,13 +60,13 @@
 
 ## 兼容性
 
-Harness 的插件 API 尚未稳定，本仓库只承诺通过自动化验证的版本，不用宽泛的预发布 semver 范围猜测兼容性。
+Harness 的插件 API 尚未稳定。`peerDependencies` 里的四个 `@deepseek-ai/dsh-client-*` 声明为 `^0.1.6-alpha.2`：跟着 **0.1.x 这条 release line** 走，不再逐版本锁死，因此同一条线上的 Harness 升级不会再把本插件静默跳过（运行时的版本门禁只读这里）。真正消耗客户端 API 的适配代码仍需在升级时重新核对。
 
-| dsh-themes | 已验证的 DeepSeek Harness | 状态 |
+| dsh-themes | 最近一次完整验证的 DeepSeek Harness | 状态 |
 | --- | --- | --- |
-| `0.2.x` | `0.1.6-alpha.2`（tag `dsh-v0.1.6-alpha.2`） | 当前支持 |
+| `0.2.x` | `0.1.7-rc.2`（tag `dsh-v0.1.7-rc.2`） | 当前支持 |
 
-[`compatibility.json`](compatibility.json) 是支持版本和所需客户端包的单一清单。CI 对当前支持 tag 做完整构建、profile 链接和真实 Web 启动测试，并在每周一检查 Harness `master`；上游变化会让预警任务失败，更新适配时必须同时修改兼容清单、`peerDependencies`、客户端适配代码和本表。
+[`compatibility.json`](compatibility.json) 记录最近一次完整验证的版本和所需客户端包，`npm run check:compat` 要求当前 checkout 与它一致——上游版本一变这个检查就会失败，提醒你先核对客户端适配再推进基线。CI 对基线 tag 做完整构建、profile 链接和真实 Web 启动测试，并在每周一检查 Harness `master`。能否加载只取决于 `peerDependencies` 的范围，所以基线暂时落后不会让插件被跳过。
 
 ## 安装
 
