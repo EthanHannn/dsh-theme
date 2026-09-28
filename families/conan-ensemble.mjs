@@ -1,7 +1,7 @@
 import { createVividFamily } from "./create-vivid-family.js";
 
-// A promotional ensemble, not a literal meeting of Conan and Shinichi.
-// The bow tie, midnight blue and silver card connect the core cast's stories.
+// A non-canonical ensemble: a cafe clue-board discussion becomes a moonlit
+// calling-card deduction. Conan and Shinichi deliberately share the vignette.
 const family = createVividFamily({
   id: "conan-ensemble",
   signaturePrefix: "beika",
