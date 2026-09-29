@@ -27,16 +27,16 @@ export default {
     headerArt: { bakedHorizontalFade: true },
     phrases: {
       zh: [
-        ["你回来啦～", "动感光波！哔哔哔——", "要吃巧克力饼吗？"],
-        ["你回来啦～", "动感光波！哔哔哔——", "要吃巧克力饼吗？"],
-        ["你回来啦～", "动感光波！哔哔哔——", "要吃巧克力饼吗？"],
+        ["你回来啦～", "嘿嘿，被你发现了。", "今天有什么好玩的？"],
+        ["动感光波！哔哔哔——", "动感超人，登场！", "看我的厉害！"],
+        ["巧克力饼，嘿嘿～", "只分你一块哦。", "吃完这口再说嘛！"],
         ["小葵：呀呀！", "小葵：咿呀～"],
         ["小白：汪！", "小白：汪汪！"],
       ],
       en: [
-        ["You're back~", "Action Beam! Pew pew!", "Want some Chocobi?"],
-        ["You're back~", "Action Beam! Pew pew!", "Want some Chocobi?"],
-        ["You're back~", "Action Beam! Pew pew!", "Want some Chocobi?"],
+        ["You're back~", "Hehe, you found me.", "What fun are we having today?"],
+        ["Action Beam! Pew pew!", "Action Mask is here!", "Watch this!"],
+        ["Chocobi, hehe~", "You can have just one.", "Let me finish this bite first!"],
         ["Himawari: Ba ba!", "Himawari: Aah~"],
         ["Shiro: Woof!", "Shiro: Woof woof!"],
       ],
