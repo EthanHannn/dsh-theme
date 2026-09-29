@@ -1,6 +1,6 @@
 {
   "id": "wow-dwarf-light-vivid",
-  "name": "WoW Dwarf Warrior Light",
+  "name": "WoW Dwarf Light",
   "colorScheme": "light",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #F5ECDD 50%, #EBE3D5)",

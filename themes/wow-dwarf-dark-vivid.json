@@ -1,6 +1,6 @@
 {
   "id": "wow-dwarf-dark-vivid",
-  "name": "WoW Dwarf Warrior Dark",
+  "name": "WoW Dwarf Dark",
   "colorScheme": "dark",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #F0E7D8 50%, #D5CEC1)",

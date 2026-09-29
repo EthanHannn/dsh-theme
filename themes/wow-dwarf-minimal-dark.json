@@ -1,6 +1,6 @@
 {
   "id": "wow-dwarf-minimal-dark",
-  "name": "WoW Dwarf Warrior · Minimal Dark",
+  "name": "WoW Dwarf · Minimal Dark",
   "colorScheme": "dark",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #F0E7D8 50%, #D5CEC1)",
