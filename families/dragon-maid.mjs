@@ -6,13 +6,13 @@ export default createVividFamily({
   names: { zh: "小林家的龙女仆", en: "Miss Kobayashi's Dragon Maid" },
   phrases: {
     zh: [
-      ["小林小姐，今天也交给我吧！", "要来一份蛋包饭吗？"],
-      ["托尔：今天也元气满满！", "托尔：餐点已经准备好了。"],
+      ["托尔：蛋包饭做好了，趁热吃吧！", "托尔：小林小姐，午餐交给我吧！"],
+      ["托尔：轻一点，康娜已经睡着了。", "托尔：餐盘擦好，今天也辛苦了。"],
       ["艾露玛：先吃一口。", "艾露玛：最后一口，真的。"],
     ],
     en: [
-      ["Miss Kobayashi, leave today to me!", "Would you like omurice?"],
-      ["Tohru: Full of energy today!", "Tohru: The meal is ready."],
+      ["Tohru: Omurice is ready. Enjoy it while it's hot!", "Tohru: Miss Kobayashi, leave lunch to me!"],
+      ["Tohru: Quietly now. Kanna is asleep.", "Tohru: Plates dried. You've worked hard today."],
       ["Elma: Just one bite first.", "Elma: Last bite. Really."],
     ],
   },
