@@ -41,6 +41,11 @@ else:
 # (source stem, output stem, ratio W:H, vertical band center as a fraction
 # of source height)
 JOBS = [
+    ("saint-seiya-20260929/bronze-banner-light", "saint-seiya-bronze-banner-light", 6.0, 0.50),
+    ("saint-seiya-20260929/bronze-banner-dark", "saint-seiya-bronze-banner-dark", 6.0, 0.50),
+    ("saint-seiya-20260929/gold-banner-light", "saint-seiya-gold-banner-light", 6.0, 0.50),
+    ("saint-seiya-20260929/gold-banner-dark", "saint-seiya-gold-banner-dark", 6.0, 0.50),
+
     # Dragon Ball: Kame island, the Z warriors' valley and the original quest.
     ("dragon-ball-20260924/dragon-ball-kame/banner-light", "dragon-ball-kame-banner-light", 6.0, 0.50),
     ("dragon-ball-20260924/dragon-ball-kame/banner-dark", "dragon-ball-kame-banner-dark", 6.0, 0.50),
@@ -129,6 +134,11 @@ JOBS = [
 # left fade end, right fade start), as fractions of the final strip width.
 # All families use Daxia's 25% left / 10% right edge treatment.
 BAKED_HORIZONTAL_FADES = {
+    "saint-seiya-bronze-banner-light": ("#EDF2F7", 0.25, 0.90),
+    "saint-seiya-bronze-banner-dark": ("#101B2C", 0.25, 0.90),
+    "saint-seiya-gold-banner-light": ("#F6EBD6", 0.25, 0.90),
+    "saint-seiya-gold-banner-dark": ("#19152A", 0.25, 0.90),
+
     "dragon-ball-kame-banner-light": ("#EDF5ED", 0.25, 0.90),
     "dragon-ball-kame-banner-dark": ("#132A2B", 0.25, 0.90),
     "dragon-ball-z-banner-light": ("#F0F1F8", 0.25, 0.90),
