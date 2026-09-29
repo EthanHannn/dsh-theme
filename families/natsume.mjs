@@ -18,14 +18,14 @@ export default {
     headerArt: { bakedHorizontalFade: true },
     phrases: {
       zh: [
-        ["把友人帐交出来！", "哼，不过是想吃七辻屋的馒头罢了。", "夏目，去给我买馒头！"],
-        ["把友人帐交出来！", "哼，不过是想吃七辻屋的馒头罢了。", "夏目，去给我买馒头！"],
+        ["把友人帐交出来！", "哼，有本大人在，怕什么。", "我可不是什么普通的猫。"],
+        ["七辻屋的馒头，果然不错。", "这个是我的，不许抢！", "看在点心的份上，就陪你走一趟。"],
         ["猫咪老师：点心呢？", "猫咪老师：再来一个！"],
         ["夏目：慢慢来就好。", "夏目：把名字还给你。"],
       ],
       en: [
-        ["Hand over the Book of Friends!", "Hmph, I merely want some manju.", "Natsume, buy me manju!"],
-        ["Hand over the Book of Friends!", "Hmph, I merely want some manju.", "Natsume, buy me manju!"],
+        ["Hand over the Book of Friends!", "Hmph, what is there to fear with me here?", "I am no ordinary cat."],
+        ["Nanatsujiya makes excellent manju.", "This one is mine. Paws off!", "For these snacks, I suppose I can come along."],
         ["Nyanko-sensei: Where are the snacks?", "Nyanko-sensei: One more!"],
         ["Natsume: Take your time.", "Natsume: Your name belongs to you."],
       ],
