@@ -7,12 +7,12 @@ export default createVividFamily({
   phrases: {
     zh: [
       ["愿大地母亲护佑你。", "聆听风与草木的低语。"],
-      ["愿大地母亲护佑你。", "种下一点新的希望。"],
+      ["愿每一颗种子都能生根。", "种下一点新的希望。"],
       ["咕咕，月光正好。", "月光下，伸个懒腰。"],
     ],
     en: [
       ["May the Earth Mother watch over you.", "Listen to the whispers of wind and leaf."],
-      ["May the Earth Mother guide you.", "Plant a little hope."],
+      ["May every seed take root.", "Plant a little hope."],
       ["Hoot. A fine moon tonight.", "A stretch in the moonlight."],
     ],
   },
