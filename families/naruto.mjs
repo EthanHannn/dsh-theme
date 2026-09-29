@@ -7,14 +7,16 @@ export default createVividFamily({
   names: { zh: "火影忍者·第七班", en: "Naruto · Team Seven" },
   phrases: {
     zh: [
-      ["鸣人：说到做到，这就是我的忍道！", "鸣人：影分身之术！", "鸣人：我要成为火影！"],
-      ["佐助：别挡我的路。", "佐助：我走的是自己的路。", "佐助：写轮眼，开。"],
-      ["小樱：这次我不会拖后腿！", "卡卡西：忍者要沉着冷静。", "卡卡西：团队合作就是第七班。"],
+      ["鸣人：说到做到，这就是我的忍道！", "鸣人：准备好了，一起上吧！", "鸣人：这次也一定能做到！"],
+      ["佐助：忍具检查完毕。", "佐助：出发前，先做好准备。", "佐助：这边交给我。"],
+      ["小樱：绷带备好了，别逞强。", "小樱：大家都要平安回来。", "小樱：需要帮忙就叫我。"],
+      ["卡卡西：先确认这次的任务。", "卡卡西：忍者要沉着冷静。", "卡卡西：团队合作就是第七班。"],
     ],
     en: [
-      ["Naruto: I never go back on my word!", "Naruto: Shadow Clone Jutsu!", "Naruto: I will be Hokage!"],
-      ["Sasuke: Out of my way.", "Sasuke: I walk my own path.", "Sasuke: Sharingan."],
-      ["Sakura: I won't hold you back this time!", "Kakashi: A ninja stays calm.", "Kakashi: Teamwork is Team Seven."],
+      ["Naruto: I never go back on my word!", "Naruto: Ready! Let's do this together!", "Naruto: We can do it this time too!"],
+      ["Sasuke: Ninja tools checked.", "Sasuke: Prepare before setting out.", "Sasuke: Leave this side to me."],
+      ["Sakura: Bandages ready. Don't push yourself.", "Sakura: Everyone comes home safely.", "Sakura: Call me if you need help."],
+      ["Kakashi: Let's review the mission first.", "Kakashi: A ninja stays calm.", "Kakashi: Teamwork is Team Seven."],
     ],
   },
   light: { paper: "#FFF3DE", vividPaper: "#FCEBD2", ink: "#282D3A", brand: "#D95F18", brandText: "#FFFFFF", signature: "#2F588C", deepAccent: "#B7412B", success: "#4D7C45", error: "#B93732", warning: "#A96818" },
