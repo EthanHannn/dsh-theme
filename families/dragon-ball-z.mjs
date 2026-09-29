@@ -8,18 +8,18 @@ const family = createVividFamily({
   phrases: {
     // Original lines: Goku, Vegeta, Gohan, Piccolo, Future Trunks.
     zh: [
-      ["悟空：来吧，再突破一次！", "悟空：遇到强手，才更有意思。", "悟空：还有力气，就继续试试。"],
+      ["悟空：来吧，一起开始下一轮！", "悟空：先站稳，再试着发力。", "悟空：做得不错，再试一次！"],
       ["贝吉塔：这点程度，还远远不够。", "贝吉塔：下一次，我会做得更好。", "贝吉塔：少分心，专注眼前的事。"],
-      ["悟饭：我想把这件事做好。", "悟饭：再难，也要勇敢试一次。", "悟饭：有大家在，我就不怕。"],
+      ["悟饭：先稳住气，再慢慢发力。", "悟饭：这一轮，我想再试一次。", "悟饭：我能控制住这股力量！"],
       ["比克：沉住气，看清对方的动作。", "比克：先稳住呼吸。", "比克：力量，也需要控制。"],
-      ["特兰克斯：未来还可以改变。", "特兰克斯：这一次，我们一起面对。", "特兰克斯：先做好眼前能做的事。"],
+      ["特兰克斯：剑带固定好了，随时可以开始。", "特兰克斯：这一次，我们一起面对。", "特兰克斯：下一轮对练，我准备好了。"],
     ],
     en: [
-      ["Goku: Let's push past our limits!", "Goku: A strong opponent makes it fun.", "Goku: Still got energy? Try again."],
+      ["Goku: Come on, let's start the next round!", "Goku: Get your footing before adding power.", "Goku: Nice work! Give it another try!"],
       ["Vegeta: That is nowhere near enough.", "Vegeta: I'll do better next time.", "Vegeta: Focus on what's in front of you."],
-      ["Gohan: I want to get this right.", "Gohan: It's hard, but I'll give it a try.", "Gohan: With everyone here, I'm not afraid."],
+      ["Gohan: Steady my ki, then build it up slowly.", "Gohan: I'd like to try this round again.", "Gohan: I can control this power!"],
       ["Piccolo: Stay calm. Watch their moves.", "Piccolo: Steady your breathing first.", "Piccolo: Power needs control."],
-      ["Trunks: The future can still change.", "Trunks: This time, we face it together.", "Trunks: Start with what we can do now."],
+      ["Trunks: Sword strap secured. Ready when you are.", "Trunks: This time, we face it together.", "Trunks: I'm ready for the next sparring round."],
     ],
   },
   light: {
