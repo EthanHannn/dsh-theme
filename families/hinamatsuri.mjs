@@ -16,16 +16,18 @@ export default {
   styles: ["vivid"],
   decor: {
     headerArt: { bakedHorizontalFade: true },
+    // Keep the seated lunch and closing-time portraits modest on both modes.
+    wallpaperSize: "min(30vw, 380px, 40vh)",
     phrases: {
       zh: [
-        ["我想吃鱼子。", "……哦。", "新田，我饿了。"],
-        ["我想吃鱼子。", "……哦。", "新田，我饿了。"],
+        ["……哦。", "新田，什么时候吃饭？", "今天也不想动。"],
+        ["鱼子饭。我的。", "再来一碗。", "吃完这个再说。"],
         ["瞳：怎么又变成我来负责了……", "瞳：先把杯子擦干净。"],
         ["杏子：热腾腾的，趁热吃吧。", "杏子：今天也很充实呢。"],
       ],
       en: [
-        ["I want salmon roe.", "...Oh.", "Nitta, I'm hungry."],
-        ["I want salmon roe.", "...Oh.", "Nitta, I'm hungry."],
+        ["...Oh.", "Nitta, when do we eat?", "I don't feel like moving today either."],
+        ["Salmon roe rice. Mine.", "Another bowl.", "Let me finish this first."],
         ["Hitomi: How am I in charge again?", "Hitomi: First, polish the glasses."],
         ["Anzu: Eat while it is warm.", "Anzu: Another good day."],
       ],

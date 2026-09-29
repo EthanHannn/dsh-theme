@@ -11,6 +11,7 @@
 # vertical crop cover then applies stays on subject. Character-free scenes
 # only: the family's character lives in the bottom-right wallpaper.
 import os
+import sys
 from pathlib import Path
 
 from PIL import Image
@@ -84,10 +85,9 @@ JOBS = [
     # the smiling moon intact above the crayon neighborhood.
     ("shinchan-banner-light-wide-v4-provider", "shinchan-banner-light", 6.0, 0.55),
     ("shinchan-banner-dark-wide-v3-provider", "shinchan-banner-dark", 6.0, 0.42),
-    # hinamatsuri — light: peach blossoms and lanterns over the bridge;
-    # dark: lantern strings reflected on the night river.
-    ("hinamatsuri-banner-light-wide-v3-provider", "hinamatsuri-banner-light", 6.0, 0.50),
-    ("hinamatsuri-banner-dark-wide-v3-provider", "hinamatsuri-banner-dark", 6.0, 0.50),
+    # Hinamatsuri: apartment lunch / quiet closing-time counter.
+    ("hinamatsuri-20260929/banner-light", "hinamatsuri-banner-light", 6.0, 0.50),
+    ("hinamatsuri-20260929/banner-dark", "hinamatsuri-banner-dark", 6.0, 0.50),
     # natsume — light: torii gate under the green maple; dark: stone
     # lanterns and fireflies on the night shrine path.
     ("natsume-banner-light-wide-v3-provider", "natsume-banner-light", 6.0, 0.50),
@@ -213,6 +213,9 @@ def bake_horizontal_fades(image, paper, left_end, right_start):
     return Image.composite(image, solid, mask)
 
 for src_stem, out_stem, ratio, center_y in JOBS:
+    # Optional family IDs limit a local rebuild without touching other banners.
+    if len(sys.argv) > 1 and not any(out_stem.startswith(f"{family}-banner-") for family in sys.argv[1:]):
+        continue
     src_path = RAW / f"{src_stem}.png"
     if not src_path.exists():
         print(f"skip {out_stem}: {src_path.name} missing")
