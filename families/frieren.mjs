@@ -11,20 +11,20 @@
 
 export default {
   id: "frieren",
-  names: { zh: "芙莉莲", en: "Frieren" },
+  names: { zh: "芙莉莲·花间研习", en: "Frieren · Flower Studies" },
   styles: ["vivid"],
   decor: {
     headerArt: { bakedHorizontalFade: true },
     phrases: {
       zh: [
-        ["今天也去找魔法吧。", "这点时间，对精灵不算什么。", "宝箱……先检查一下。"],
-        ["今天也去找魔法吧。", "这点时间，对精灵不算什么。", "宝箱……先检查一下。"],
+        ["今天也去找魔法吧。", "这朵花……以前好像见过。", "绕一点路，说不定会有发现。"],
+        ["让花绽放的魔法，再试一次。", "嗯，和书里记的一样。", "这样的小魔法，我也很喜欢。"],
         ["菲伦：该出发了。", "菲伦：别又睡过头了。"],
         ["修塔尔克：我会顶住的。", "修塔尔克：休息一下也行吧。"],
       ],
       en: [
-        ["Let's look for magic today.", "For an elf, this is no time at all.", "A chest... better check it first."],
-        ["Let's look for magic today.", "For an elf, this is no time at all.", "A chest... better check it first."],
+        ["Let's look for magic today.", "This flower... I think I've seen it before.", "A little detour might lead to a discovery."],
+        ["Let's try the flower-blooming spell again.", "Yes, just as the book describes.", "I'm fond of little spells like this, too."],
         ["Fern: Time to leave.", "Fern: Do not oversleep again."],
         ["Stark: I will hold the line.", "Stark: A little break is fine, right?"],
       ],
