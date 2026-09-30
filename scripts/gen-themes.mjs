@@ -450,6 +450,7 @@ for (const file of familyFiles) {
     pals,
     phrases: phrases ?? null,
     ...(family.decor?.wallpaperSize ? { wallpaperSize: family.decor.wallpaperSize } : {}),
+    ...(family.decor?.wallpaperPosition ? { wallpaperPosition: family.decor.wallpaperPosition } : {}),
     ...(family.decor?.heroTranslate ? { heroTranslate: family.decor.heroTranslate } : {}),
     ...(family.decor?.heroMaxWidth ? { heroMaxWidth: family.decor.heroMaxWidth } : {}),
   }, skins });

@@ -5,7 +5,7 @@ import test from "node:test";
 
 const catalog = ["naruto", "gundam"].map((id) => ({ id, category:"anime", names:{ zh:id, en:id }, skins:["light", "dark"].map((mode) => ({ id:`${id}-${mode}-vivid`, colorScheme:mode, tokens:{ "--dsw-pack-wallpaper":"url(test.webp)" } })) }));
 catalog.push({ id:"slate", kin:"gundam", category:"anime", names:{ zh:"青灰", en:"Slate" }, skins:["light", "dark"].map((mode) => ({ id:`slate-${mode}`, colorScheme:mode })) });
-catalog[0].decor = { wallpaperSize: "min(34vw, 420px, 40vh)", heroTranslate: "0 -80px", heroMaxWidth: "600px" };
+catalog[0].decor = { wallpaperPosition: "right 32px bottom 20px", wallpaperSize: "min(34vw, 420px, 40vh)", heroTranslate: "0 -80px", heroMaxWidth: "600px" };
 function load(saved, unavailable = false, reactApi = {}) {
   let raw = saved;
   let api;
@@ -179,11 +179,13 @@ test("section applies same-skin decorations, restores default, and tears down", 
   const actions = section.meta.inject({ sync() {} });
   actions.applyDraft({ family:"naruto", mode:"dark", ...api.appearanceFor(null) });
   assert.equal(document.body.style.getPropertyValue("--dsh-theme-wallpaper-size"), catalog[0].decor.wallpaperSize);
+  assert.equal(document.body.style.getPropertyValue("--dsh-theme-wallpaper-position"), catalog[0].decor.wallpaperPosition);
   assert.equal(document.body.style.getPropertyValue("--dsh-theme-hero-translate"), catalog[0].decor.heroTranslate);
   assert.equal(document.body.style.getPropertyValue("--dsh-theme-hero-max-width"), catalog[0].decor.heroMaxWidth);
   const saved = raw();
   actions.previewTheme({ family:"gundam", mode:"light", ...api.appearanceFor(null), props:false });
   assert.equal(document.body.style.getPropertyValue("--dsh-theme-wallpaper-size"), "");
+  assert.equal(document.body.style.getPropertyValue("--dsh-theme-wallpaper-position"), "");
   assert.equal(document.body.style.getPropertyValue("--dsh-theme-hero-translate"), "");
   assert.equal(document.body.style.getPropertyValue("--dsh-theme-hero-max-width"), "");
   assert.equal(snapshot.preference, "gundam-light-vivid");
@@ -195,6 +197,7 @@ test("section applies same-skin decorations, restores default, and tears down", 
   actions.cancelPreview();
   assert.equal(snapshot.preference, "naruto-dark-vivid");
   assert.equal(document.body.style.getPropertyValue("--dsh-theme-wallpaper-size"), catalog[0].decor.wallpaperSize);
+  assert.equal(document.body.style.getPropertyValue("--dsh-theme-wallpaper-position"), catalog[0].decor.wallpaperPosition);
   assert.equal(raw(), saved);
   actions.previewTheme({ family:"gundam", mode:"light", ...api.appearanceFor(null) });
   actions.applyDraft({ family:"gundam", mode:"light", ...api.appearanceFor(null) });
@@ -227,10 +230,12 @@ test("section applies same-skin decorations, restores default, and tears down", 
   actions.applyDraft({ family:null, mode:"light" });
   assert.equal(snapshot.preference, "light");
   assert.equal(document.body.style.getPropertyValue("--dsh-theme-wallpaper-size"), "");
+  assert.equal(document.body.style.getPropertyValue("--dsh-theme-wallpaper-position"), "");
   assert.equal(api.appearanceFor("naruto").props, false);
   actions.applyDraft({ family:"naruto", mode:"dark", ...api.appearanceFor(null) });
   for (const cleanup of cleanups.reverse()) cleanup?.();
   assert.equal(document.body.style.getPropertyValue("--dsh-theme-wallpaper-size"), "");
+  assert.equal(document.body.style.getPropertyValue("--dsh-theme-wallpaper-position"), "");
   assert.equal(nodes.size, 0);
   assert.equal(document.body.style.getPropertyValue("--dsh-theme-hero-translate"), "");
   assert.equal(document.body.style.getPropertyValue("--dsh-theme-hero-max-width"), "");
