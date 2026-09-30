@@ -80,5 +80,8 @@ const family = createVividFamily({
 });
 
 family.decor.headerArt = { bakedHorizontalFade: true };
-family.decor.wallpaperSize = "min(34vw, 440px, 44vh)";
+family.decor.wallpaperSize = "min(44vw, 560px, 56vh)";
+family.decor.wallpaperPosition = "right 32px bottom 20px";
+family.decor.heroTranslate = "calc(-0.4 * min(44vw, 560px, 56vh)) calc(-1 * min(8vh, 80px))";
+family.decor.heroMaxWidth = "calc(100vw - 280px - min(44vw, 560px, 56vh) - 64px)";
 export default family;

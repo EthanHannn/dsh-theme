@@ -56,7 +56,9 @@ const family = createVividFamily({
   }
 });
 
-// A compact portrait duo: size by height so faces stay large without a wide footprint.
-family.decor.wallpaperSize = "auto min(62vh, 620px, 92vw)";
+// Normalize optical artwork mass across modes; keep the central reading area clear.
+family.decor.wallpaperSize = "min(40vw, 520px, 52vh)";
 family.decor.wallpaperPosition = "right 32px bottom 20px";
+family.decor.heroTranslate = "calc(-0.35 * min(40vw, 520px, 52vh)) calc(-1 * min(8vh, 80px))";
+family.decor.heroMaxWidth = "calc(100vw - 280px - min(40vw, 520px, 52vh) - 64px)";
 export default family;
