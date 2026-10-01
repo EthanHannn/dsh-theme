@@ -87,74 +87,75 @@ Harness 的插件 API 尚未稳定。`peerDependencies` 里的四个 `@deepseek-
 
 [`compatibility.json`](compatibility.json) 记录最近一次完整验证的版本和所需客户端包，`npm run check:compat` 要求当前 checkout 与它一致——上游版本一变这个检查就会失败，提醒你先核对客户端适配再推进基线。CI 对基线 tag 做完整构建、profile 链接和真实 Web 启动测试，并在每周一检查 Harness `master`。能否加载只取决于 `peerDependencies` 的范围，所以基线暂时落后不会让插件被跳过。
 
-## 安装
+## 安装与更新（普通用户）
 
-### 从 Harness 源码仓库运行（推荐用于本地开发）
+通过 [GitHub Releases](https://github.com/EthanHannn/dsh-theme/releases) 分发，不发布到 npm。每个正式版本提供 `dsh-themes-<版本>.tgz` 和 `SHA256SUMS.txt`。首次 Release 发布前，先使用下方的源码安装方式。
 
-两个仓库同级放置为 `deepseek-harness/` 和 `dsh-theme/` 时，在主题仓库运行：
-
-```sh
-npm run dsh:link       # 构建主题、链接进 web profile、验证有效配置
-npm run dsh:start      # 验证兼容性和 profile 后启动 Web
-```
-
-Harness 在其他位置时显式传入路径：
+1. 确认 Release 标注的 Harness 兼容版本。
+2. 下载 Release 附件中的 `.tgz`，**无需解压**。GitHub 自动附带的 `Source code (zip/tar.gz)` 是源码，不是插件安装包。
+3. 使用启动 Harness 的同一份 CLI，将安装包加入实际使用的 profile。以下以 `web` 为例：
 
 ```sh
-npm run dsh:link -- --harness /absolute/path/to/deepseek-harness
-npm run dsh:start -- --harness /absolute/path/to/deepseek-harness
+# 示例文件名；替换为下载版本与实际绝对路径，路径有空格时保留引号。
+dsh plugin --profile web add "/absolute/path/to/dsh-themes-0.2.0.tgz"
 ```
 
-等价的手动命令是：
+Windows 示例：
 
-```sh
-cd /absolute/path/to/deepseek-harness
-pnpm dsh plugin --profile web add /absolute/path/to/dsh-theme
-pnpm dsh --profile web
+```powershell
+dsh plugin --profile web add "C:/Users/YourName/Downloads/dsh-themes-0.2.0.tgz"
 ```
 
-安装和启动必须使用同一份 Harness CLI；不要用全局 `dsh` 安装后再用源码仓库的 `pnpm dsh` 启动。
+Harness 源码用户在自己的 Harness 仓库中，将 `dsh` 替换为 `pnpm dsh`。安装和启动必须使用同一份 CLI、同一个 profile；不需要下载或构建主题源码，也不需要图片生成服务。
 
-### 从已安装的 Harness 运行
+安装包由 profile 的包管理器安装，不链接主题源码目录。建议把下载的 `.tgz` 保留在固定的本地目录，便于日后重装依赖和回退；本地文件依赖在重装时可能仍需要这个文件。
+
+首次安装也可通过 Harness 侧栏的「插件」页面提交安装包的绝对路径（该路径必须在 Harness 所在机器可访问）。当前页面会拦截已安装的同名包，**更新请使用上面的命令**。
+
+### 更新与回退
+
+下载新 Release 的 `.tgz`，把同一条 `add` 命令中的路径改成新文件；无需先卸载。回退时改成旧版文件。更新完成后，在合适的时候重启自己的 Harness 服务并刷新网页。启用 HMR 的环境可能即时应用配置变化，但不要把它当作所有版本都能热更新客户端代码的保证。
+
+主题选择与装饰偏好保存在浏览器本地，正常升级包不会清除；旧版不含新增主题时需要重新选择。不同版本使用不同的文件名，不要用同名文件覆盖旧包。GitHub 提交不会自动更新已安装版本。
+
+可用以下命令核对下载文件的 SHA-256，与 Release 的 `SHA256SUMS.txt` 对照：
+
+```powershell
+Get-FileHash "C:/Users/YourName/Downloads/dsh-themes-0.2.0.tgz" -Algorithm SHA256
+```
+
+Linux 可用 `sha256sum -c SHA256SUMS.txt`，macOS 可用 `shasum -a 256 <安装包路径>`。
+
+### 源码目录安装（开发者）
+
+克隆仓库后，目录需要一直留在原位；这种方式创建 `link:` 依赖。
 
 ```sh
 dsh plugin --profile web add /absolute/path/to/dsh-theme
-dsh --profile web
 ```
 
-- 用绝对路径或相对路径均可（`dsh plugin` 会把相对路径锚定到当前目录）。也可以直接给 npm 包名 / git 源安装。
-- 安装后**必须重启 web 服务**（`dsh --profile web`）——合集是 bundle 插件，bundle 层在启动时组合，运行中的进程不会热加载它。
-- 装的是**目录链接**（`link:` 依赖），主题源码目录要一直留在原位，删了它主题就解析不到了。
-
-> 早期装过独立主题插件（`dsh-theme-gundam`）的话，先卸载再装本合集，避免设置页出现多行入口：
->
-> ```sh
-> dsh plugin --profile web remove dsh-theme-gundam
-> ```
-
-## 更新与故障排查
-
-从 Harness 源码运行时，`git pull` 后需要重新构建 Harness；这是上游源码运行方式的要求，不表示主题被卸载。构建前先停止 Web 进程，避免旧 Host 进程和新 Client 产物混用：
+若从 Harness 源码运行，两仓库同级放置为 `deepseek-harness/` 和 `dsh-theme/`，在主题仓库运行：
 
 ```sh
-cd /absolute/path/to/deepseek-harness
-git pull
-pnpm install --frozen-lockfile
-pnpm run build
-
-cd /absolute/path/to/dsh-theme
-git pull
-npm run build
-npm run dsh:check -- --harness /absolute/path/to/deepseek-harness
-npm run dsh:start -- --harness /absolute/path/to/deepseek-harness
+npm run dsh:link
+npm run dsh:start
 ```
 
-正常更新不需要再次 `add`。按以下顺序定位：
+Harness 在其他位置时传入 `-- --harness /absolute/path/to/deepseek-harness`。这些开发命令会检查本地 Harness checkout，不是普通用户的安装步骤。
 
-1. `npm run dsh:check` 同时验证 Harness 版本、所需客户端包、profile 的 `dsh-themes` 配置层；失败信息会指出需要更新适配还是重新链接。
-2. profile 依赖存在但链接损坏时运行 `npm run dsh:repair`，它执行 profile 自己的 `pnpm install` 并再次验证；不要重复 `add`。
-3. 配置检查通过但浏览器仍显示旧界面时，停止 Web 服务、重新运行 `npm run dsh:start`，再强制刷新页面。
-4. Harness 版本不受支持时不要只改版本号绕过检查；先让客户端适配和真实 Web smoke 通过，再同步更新兼容清单、精确 peer 和 README 表。CI 会直接读取兼容清单中的 tag。
+源码用户更新主题后运行 `npm run build`。配置或依赖损坏时先运行 `npm run dsh:check`；本地链接损坏时运行 `npm run dsh:repair`，不要反复添加重复条目。Harness 升级不兼容时，应先验证客户端适配，不能只修改版本号绕过检查。
+
+早期独立主题包 `dsh-theme-gundam` 的用户，迁移到本合集前先用 `dsh plugin --profile web remove dsh-theme-gundam` 卸载旧包。
+
+## 制作 GitHub Release（维护者）
+
+1. 更新 `package.json` 版本；`compatibility.json` 只在完成 Harness 适配验证后更新。
+2. 运行 `npm run check` 和 `npm run release:pack`。`dist/` 中生成安装包、校验文件与基础发布说明，不提交到 Git。
+3. 提交源码及生成文件，再推送与版本一致的 `v<版本>` tag。
+4. Release workflow 验证生成结果、构建已验证版本的 Harness、安装真实 `.tgz` 并启动 Web，通过后创建 **GitHub Release 草稿**。它使用的就是经过验证的同一份附件，不会重新打包。
+5. 在草稿中补充新增主题、修复、兼容性变化，审阅后发布。
+
+仓库设置 `private: true` 防止误发 npm，不影响 `npm pack` 或 GitHub 附件安装。使用 `npm` 打包只是生成标准 `.tgz`，不会上传 npm registry。打包脚本检查文件清单及 tag/版本一致性；未通过验证不会生成 Release 草稿。
 
 ## 使用
 

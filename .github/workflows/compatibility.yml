@@ -6,6 +6,7 @@ on:
   schedule:
     - cron: "23 2 * * 1"
   workflow_dispatch:
+  workflow_call:
 
 permissions:
   contents: read
@@ -18,7 +19,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-      - run: npm run check:generated
+      - run: npm run test && npm run check:generated
 
   harness:
     strategy:
@@ -61,9 +62,18 @@ jobs:
       - name: Validate the supported client API
         working-directory: dsh-theme
         run: node scripts/check-dsh-compat.mjs --harness ../deepseek-harness
-      - name: Link and inspect the Web profile
+      - name: Build the release archive
         working-directory: dsh-theme
-        run: node scripts/dsh-workflow.mjs link --harness ../deepseek-harness --profile web
+        run: npm run release:pack
+      - name: Install the release archive into the Web profile
+        working-directory: deepseek-harness
+        shell: bash
+        run: |
+          set -euo pipefail
+          package=$(realpath ../dsh-theme/dist/dsh-themes-*.tgz)
+          pnpm dsh plugin --profile web add "$package"
+          pnpm dsh --profile web --dump-config > "$RUNNER_TEMP/dsh-config.yml"
+          grep --fixed-strings --quiet 'dsh-themes' "$RUNNER_TEMP/dsh-config.yml"
       - name: Boot the real Web profile
         working-directory: deepseek-harness
         shell: bash
@@ -71,9 +81,9 @@ jobs:
           set -euo pipefail
           log="$RUNNER_TEMP/dsh-web.log"
           index="$RUNNER_TEMP/dsh-index.html"
-          pnpm dsh --profile web --no-open >"$log" 2>&1 &
+          setsid pnpm dsh --profile web --port 0 --no-open >"$log" 2>&1 &
           pid=$!
-          trap 'kill "$pid" 2>/dev/null || true' EXIT
+          trap 'kill -- -"$pid" 2>/dev/null || true' EXIT
           url=""
           for _ in $(seq 1 60); do
             url=$(sed -n 's/^dsh web: //p' "$log" | head -n 1)
@@ -88,5 +98,16 @@ jobs:
             cat "$log"
             exit 1
           fi
-          curl --fail --silent --show-error "$url" >"$index"
+          curl --fail --silent --show-error --location \
+            --cookie-jar "$RUNNER_TEMP/dsh-cookies.txt" "$url" >"$index"
           grep --fixed-strings --quiet '"id":"dsh-themes"' "$index"
+      - name: Upload the verified release package
+        if: matrix.track == 'supported'
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-package
+          path: |
+            dsh-theme/dist/*.tgz
+            dsh-theme/dist/SHA256SUMS.txt
+            dsh-theme/dist/release-notes.md
+          if-no-files-found: error

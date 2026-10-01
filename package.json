@@ -1,6 +1,7 @@
 {
   "name": "dsh-themes",
   "version": "0.2.0",
+  "private": true,
   "description": "Theme pack for DeepSeek Harness: multiple theme families (Gundam, Chainsaw Man, …) in one plugin with a unified picker and system-following light/dark mode, registered into the built-in theme runtime",
   "license": "MIT",
   "author": "dsh-themes contributors",
@@ -68,6 +69,7 @@
     "dsh:link": "node scripts/dsh-workflow.mjs link",
     "dsh:repair": "node scripts/dsh-workflow.mjs repair",
     "dsh:start": "node scripts/dsh-workflow.mjs start",
+    "release:pack": "node scripts/pack-release.mjs",
     "prepack": "npm run build"
   }
 }

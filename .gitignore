@@ -1,4 +1,5 @@
 node_modules/
+dist/
 
 # Local agent tool state (Nezha) — machine-local config, never committed.
 .nezha/
