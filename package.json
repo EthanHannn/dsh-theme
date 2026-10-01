@@ -2,7 +2,7 @@
   "name": "dsh-themes",
   "version": "0.2.0",
   "private": true,
-  "description": "Theme pack for DeepSeek Harness: multiple theme families (Gundam, Chainsaw Man, …) in one plugin with a unified picker and system-following light/dark mode, registered into the built-in theme runtime",
+  "description": "Illustrated and minimal themes for DeepSeek Harness, with light, dark, and system modes",
   "license": "MIT",
   "author": "dsh-themes contributors",
   "repository": {

@@ -33,20 +33,20 @@ const digest = createHash("sha256").update(readFileSync(join(destination, pack.f
 writeFileSync(join(destination, "SHA256SUMS.txt"), `${digest}  ${pack.filename}\n`);
 writeFileSync(join(destination, "release-notes.md"), `# dsh-themes ${manifest.version}
 
-支持的 Harness：${compatibility.harness.version}（${compatibility.harness.tag}）。
+已验证的 Harness 版本：${compatibility.harness.version}。
 
-下载附件 \`${pack.filename}\`，无需解压或构建。不要下载 GitHub 自动生成的 Source code 压缩包。
+下载附件 \`${pack.filename}\`，无需解压或构建。
 
 安装或更新（将路径替换为下载文件的绝对路径）：
 
 \`\`\`sh
-dsh plugin --profile web add /absolute/path/to/${pack.filename}
+dsh plugin --profile web add "/absolute/path/to/${pack.filename}"
 \`\`\`
 
-使用同一份 Harness CLI 和 profile。更新后重启自己的 Harness 服务并刷新网页，在设置 → 主题与外观中选择主题。普通用户无需主题源码目录或图片生成服务。
+安装和启动应使用同一份 Harness CLI 和同一个 profile。从 Harness 源码运行时，使用 \`pnpm dsh\` 代替 \`dsh\`。安装或更新后重启 Harness 服务并刷新网页，在设置 → 主题与外观中选择主题。
 
-回退：下载旧 Release 的安装包，执行相同的 add 命令。浏览器中的主题偏好保留，但旧包可能不包含新主题。
+回退时，下载旧版本安装包并执行相同命令。浏览器中的主题偏好会保留；若旧版本没有当前主题，请重新选择。
 
-\`SHA256SUMS.txt\` 用于核对下载文件完整性。维护者发布前请补充本版更新内容。
+\`SHA256SUMS.txt\` 用于核对下载文件完整性。请将安装包保留在固定的本地目录，以便重装或回退。
 `);
 console.log(`Release archive: ${join(destination, pack.filename)} (${pack.size} bytes)`);
