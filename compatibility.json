@@ -1,8 +1,8 @@
 {
   "formatVersion": 1,
   "harness": {
-    "version": "0.1.7-rc.2",
-    "tag": "dsh-v0.1.7-rc.2"
+    "version": "0.2.0-rc.1",
+    "tag": "dsh-v0.2.0-rc.1"
   },
   "clientPackages": [
     {
