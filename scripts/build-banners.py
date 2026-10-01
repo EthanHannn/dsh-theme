@@ -41,6 +41,11 @@ else:
 # (source stem, output stem, ratio W:H, vertical band center as a fraction
 # of source height)
 JOBS = [
+    ("chiikawa-20261001/chiikawa-picnic-banner-light", "chiikawa-picnic-banner-light", 6.0, 0.46),
+    ("chiikawa-20261001/chiikawa-picnic-banner-dark", "chiikawa-picnic-banner-dark", 6.0, 0.46),
+    ("chiikawa-20261001/chiikawa-stargaze-banner-light", "chiikawa-stargaze-banner-light", 6.0, 0.46),
+    ("chiikawa-20261001/chiikawa-stargaze-banner-dark", "chiikawa-stargaze-banner-dark", 6.0, 0.46),
+
     ("collection-20260930/overwatch-tracer-banner-light", "overwatch-tracer-banner-light", 6.0, 0.50),
     ("collection-20260930/overwatch-tracer-banner-dark", "overwatch-tracer-banner-dark", 6.0, 0.50),
     ("collection-20260930/overwatch-mercy-banner-light", "overwatch-mercy-banner-light", 6.0, 0.50),
@@ -162,6 +167,11 @@ JOBS = [
 # left fade end, right fade start), as fractions of the final strip width.
 # All families use Daxia's 25% left / 10% right edge treatment.
 BAKED_HORIZONTAL_FADES = {
+    "chiikawa-picnic-banner-light": ("#FBEFF2", 0.25, 0.90),
+    "chiikawa-picnic-banner-dark": ("#2A202D", 0.25, 0.90),
+    "chiikawa-stargaze-banner-light": ("#EDF0FA", 0.25, 0.90),
+    "chiikawa-stargaze-banner-dark": ("#1E2540", 0.25, 0.90),
+
     "overwatch-tracer-banner-light": ("#F4ECDD", 0.25, 0.90),
     "overwatch-tracer-banner-dark": ("#202532", 0.25, 0.90),
     "overwatch-mercy-banner-light": ("#F3F0E1", 0.25, 0.90),
