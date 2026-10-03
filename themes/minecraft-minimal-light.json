@@ -194,6 +194,7 @@
     "--shiki-token-punctuation": "#5E6658",
     "--shiki-token-link": "#A66F22",
     "--dsw-pack-wallpaper": "none",
+    "--dsw-pack-wallpaper-ratio": "1",
     "--dsw-pack-panel": "none",
     "--dsw-pack-folder": "none",
     "--dsw-pack-folder-open": "none",

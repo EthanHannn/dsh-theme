@@ -19,6 +19,7 @@
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
+import { webpDimensions } from "./wallpaper-layout.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -373,6 +374,7 @@ for (const file of familyFiles) {
   for (const mode of ["light", "dark"]) {
     const modeLabel = mode === "light" ? "Light" : "Dark";
     const wallpaper = assetValue(`${family.id}-${mode}`);
+    const dimensions = wallpaper ? webpDimensions(readFileSync(join(familyDir, "assets", `${family.id}-${mode}.webp`))) : null;
     const panel = assetValue(`${family.id}-panel`);
     // Header scroll: <id>-banner-<mode>.webp, falling back to a shared
     // <id>-banner.webp. When present it supersedes the manga panel as the
@@ -390,6 +392,7 @@ for (const file of familyFiles) {
         tokens: {
           ...buildTokens(mode, family[mode]),
           "--dsw-pack-wallpaper": "none",
+          "--dsw-pack-wallpaper-ratio": "1",
           "--dsw-pack-panel": "none",
           "--dsw-pack-folder": "none",
           "--dsw-pack-folder-open": "none",
@@ -411,6 +414,7 @@ for (const file of familyFiles) {
         tokens: {
           ...buildTokens(mode, mergeParams(family[mode], family.vivid?.[mode])),
           "--dsw-pack-wallpaper": wallpaper ?? "none",
+          "--dsw-pack-wallpaper-ratio": dimensions ? String(dimensions.width / dimensions.height) : "1",
           "--dsw-pack-panel": (banner ?? panel) ?? "none",
           "--dsw-pack-folder": folder ?? "none",
           "--dsw-pack-folder-open": folderOpen ?? folder ?? "none",
