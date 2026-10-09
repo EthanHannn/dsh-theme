@@ -2,14 +2,15 @@
 
 为 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 提供角色插画与纯色主题。安装后，在**设置 → 主题与外观**中选择主题，并切换浅色、深色或跟随系统。
 
-共 65 组主题，每组包含氛围版和简约版，共 260 套浅深色外观。氛围版包含角色壁纸、场景横幅和侧栏伙伴；简约版保留配色，不显示图片装饰。
+共 66 组主题，每组包含氛围版和简约版，共 264 套浅深色外观。氛围版包含角色壁纸、场景横幅和侧栏伙伴；简约版保留配色，不显示图片装饰。
 
 ## 最新主题展示
 
-2026-10-09 新增的 17 套主题与重绘的「高达·RX-78-2」，浅色、深色直接展示。以下为 1920 × 1080 的 Harness 首页实拍，点击图片查看原尺寸。
+2026-10-09 新增的 18 套主题与重绘的「高达·RX-78-2」，浅色、深色直接展示。以下为 1920 × 1080 的 Harness 首页实拍，点击图片查看原尺寸。
 
 | 主题 | 浅色 | 深色 |
 | --- | --- | --- |
+| [间谍过家家·福杰家的休息日](docs/screenshots/README.md#theme-66) | [![间谍过家家·福杰家的休息日 · 浅色](docs/screenshots/66-spy-family-forgers-light.webp)](docs/screenshots/66-spy-family-forgers-light.webp) | [![间谍过家家·福杰家的休息日 · 深色](docs/screenshots/66-spy-family-forgers-dark.webp)](docs/screenshots/66-spy-family-forgers-dark.webp) |
 | [高达·ν高达](docs/screenshots/README.md#theme-49) | [![高达·ν高达 · 浅色](docs/screenshots/49-gundam-nu-light.webp)](docs/screenshots/49-gundam-nu-light.webp) | [![高达·ν高达 · 深色](docs/screenshots/49-gundam-nu-dark.webp)](docs/screenshots/49-gundam-nu-dark.webp) |
 | [高达·RX-78-2](docs/screenshots/README.md#theme-24) | [![高达·RX-78-2 · 浅色](docs/screenshots/24-gundam-light.webp)](docs/screenshots/24-gundam-light.webp) | [![高达·RX-78-2 · 深色](docs/screenshots/24-gundam-dark.webp)](docs/screenshots/24-gundam-dark.webp) |
 | [高达·巴巴托斯](docs/screenshots/README.md#theme-50) | [![高达·巴巴托斯 · 浅色](docs/screenshots/50-gundam-barbatos-light.webp)](docs/screenshots/50-gundam-barbatos-light.webp) | [![高达·巴巴托斯 · 深色](docs/screenshots/50-gundam-barbatos-dark.webp)](docs/screenshots/50-gundam-barbatos-dark.webp) |
@@ -29,7 +30,7 @@
 | [我叫MT·联盟值日生](docs/screenshots/README.md#theme-64) | [![我叫MT·联盟值日生 · 浅色](docs/screenshots/64-i-am-mt-alliance-duo-light.webp)](docs/screenshots/64-i-am-mt-alliance-duo-light.webp) | [![我叫MT·联盟值日生 · 深色](docs/screenshots/64-i-am-mt-alliance-duo-dark.webp)](docs/screenshots/64-i-am-mt-alliance-duo-dark.webp) |
 | [我叫MT·联盟补给站](docs/screenshots/README.md#theme-65) | [![我叫MT·联盟补给站 · 浅色](docs/screenshots/65-i-am-mt-alliance-camp-light.webp)](docs/screenshots/65-i-am-mt-alliance-camp-light.webp) | [![我叫MT·联盟补给站 · 深色](docs/screenshots/65-i-am-mt-alliance-camp-dark.webp)](docs/screenshots/65-i-am-mt-alliance-camp-dark.webp) |
 
-[查看全部 65 套氛围主题的浅深色预览](docs/screenshots/README.md)，可按动漫、游戏和其他分类跳转。
+[查看全部 66 套氛围主题的浅深色预览](docs/screenshots/README.md)，可按动漫、游戏和其他分类跳转。
 
 ## 兼容版本
 
@@ -113,8 +114,9 @@ Linux 可在安装包所在目录执行 `sha256sum -c SHA256SUMS.txt`；macOS �
 氛围版的配色和角色如下。完整效果见[截图画廊](docs/screenshots/README.md)。
 
 <details>
-<summary>展开全部 65 组主题</summary>
+<summary>展开全部 66 组主题</summary>
 
+- **间谍过家家·福杰家的休息日**：鼠尾草绿 / 家庭暖白 / 约尔红，黄昏、约尔、阿尼亚与邦德的休息日和晚归时光。
 - **高达·ν高达**：珍珠白 / 深海军蓝 / 黄铜金 / 微光绿，ν高达与单侧浮游炮的高挑站姿，浅深轨道船坞呼应。
 - **名侦探柯南·宝石谜夜**：象牙白 / 宝石蓝 / 月夜紫，柯南、灰原哀与怪盗基德的三人谜案，预告函与证物夹呼应。
 - **高达·巴巴托斯**：白甲 / 骨架蓝 / 火星砂岩，巴巴托斯第四形态的整备与出击，锤矛收拢成高挑竖向构图。

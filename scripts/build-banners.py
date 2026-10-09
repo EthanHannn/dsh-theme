@@ -41,6 +41,8 @@ else:
 # (source stem, output stem, ratio W:H, vertical band center as a fraction
 # of source height)
 JOBS = [
+    ("anime-five-20261009/spy-family-forgers/banner-light", "spy-family-forgers-banner-light", 6.0, 0.5),
+    ("anime-five-20261009/spy-family-forgers/banner-dark", "spy-family-forgers-banner-dark", 6.0, 0.5),
     ("gundam-showcase-20261009/gundam-nu/banner-light", "gundam-nu-banner-light", 6.0, 0.5),
     ("gundam-showcase-20261009/gundam-nu/banner-dark", "gundam-nu-banner-dark", 6.0, 0.5),
     ("additions-20261009/conan-jewel/banner-light", "conan-jewel-banner-light", 6.0, 0.5),
@@ -201,6 +203,8 @@ JOBS = [
 # left fade end, right fade start), as fractions of the final strip width.
 # All families use Daxia's 25% left / 10% right edge treatment.
 BAKED_HORIZONTAL_FADES = {
+    "spy-family-forgers-banner-light": ("#EEEFE3", 0.25, 0.90),
+    "spy-family-forgers-banner-dark": ("#1B2923", 0.25, 0.90),
     "gundam-nu-banner-light": ("#E8EFF0", 0.25, 0.90),
     "gundam-nu-banner-dark": ("#192B39", 0.25, 0.90),
     "conan-jewel-banner-light": ("#EAEFF7", 0.25, 0.90),
