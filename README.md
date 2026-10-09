@@ -2,14 +2,15 @@
 
 为 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 提供角色插画与纯色主题。安装后，在**设置 → 主题与外观**中选择主题，并切换浅色、深色或跟随系统。
 
-共 79 组主题，每组包含氛围版和简约版，共 316 套浅深色外观。氛围版包含角色壁纸、场景横幅和侧栏伙伴；简约版保留配色，不显示图片装饰。
+共 80 组主题，每组包含氛围版和简约版，共 320 套浅深色外观。氛围版包含角色壁纸、场景横幅和侧栏伙伴；简约版保留配色，不显示图片装饰。
 
 ## 最新主题展示
 
-2026-10-09 新增的 31 套主题与重绘的「高达·RX-78-2」，浅色、深色直接展示。以下为 1920 × 1080 的 Harness 首页实拍，点击图片查看原尺寸。
+2026-10-09 新增的 32 套主题与重绘的「高达·RX-78-2」，浅色、深色直接展示。以下为 1920 × 1080 的 Harness 首页实拍，点击图片查看原尺寸。
 
 | 主题 | 浅色 | 深色 |
 | --- | --- | --- |
+| [胆大党·夜巡同盟](docs/screenshots/README.md#theme-80) | [![胆大党·夜巡同盟 · 浅色](docs/screenshots/80-dandadan-nightwatch-light.webp)](docs/screenshots/80-dandadan-nightwatch-light.webp) | [![胆大党·夜巡同盟 · 深色](docs/screenshots/80-dandadan-nightwatch-dark.webp)](docs/screenshots/80-dandadan-nightwatch-dark.webp) |
 | [胆大党·灵能交锋](docs/screenshots/README.md#theme-79) | [![胆大党·灵能交锋 · 浅色](docs/screenshots/79-dandadan-awakening-light.webp)](docs/screenshots/79-dandadan-awakening-light.webp) | [![胆大党·灵能交锋 · 深色](docs/screenshots/79-dandadan-awakening-dark.webp)](docs/screenshots/79-dandadan-awakening-dark.webp) |
 | [胆大党·放学怪谈](docs/screenshots/README.md#theme-78) | [![胆大党·放学怪谈 · 浅色](docs/screenshots/78-dandadan-afterschool-light.webp)](docs/screenshots/78-dandadan-afterschool-light.webp) | [![胆大党·放学怪谈 · 深色](docs/screenshots/78-dandadan-afterschool-dark.webp)](docs/screenshots/78-dandadan-afterschool-dark.webp) |
 | [角落小伙伴·雨窗来信](docs/screenshots/README.md#theme-77) | [![角落小伙伴·雨窗来信 · 浅色](docs/screenshots/77-sumikko-rainy-light.webp)](docs/screenshots/77-sumikko-rainy-light.webp) | [![角落小伙伴·雨窗来信 · 深色](docs/screenshots/77-sumikko-rainy-dark.webp)](docs/screenshots/77-sumikko-rainy-dark.webp) |
@@ -43,7 +44,7 @@
 | [我叫MT·联盟值日生](docs/screenshots/README.md#theme-64) | [![我叫MT·联盟值日生 · 浅色](docs/screenshots/64-i-am-mt-alliance-duo-light.webp)](docs/screenshots/64-i-am-mt-alliance-duo-light.webp) | [![我叫MT·联盟值日生 · 深色](docs/screenshots/64-i-am-mt-alliance-duo-dark.webp)](docs/screenshots/64-i-am-mt-alliance-duo-dark.webp) |
 | [我叫MT·联盟补给站](docs/screenshots/README.md#theme-65) | [![我叫MT·联盟补给站 · 浅色](docs/screenshots/65-i-am-mt-alliance-camp-light.webp)](docs/screenshots/65-i-am-mt-alliance-camp-light.webp) | [![我叫MT·联盟补给站 · 深色](docs/screenshots/65-i-am-mt-alliance-camp-dark.webp)](docs/screenshots/65-i-am-mt-alliance-camp-dark.webp) |
 
-[查看全部 79 套氛围主题的浅深色预览](docs/screenshots/README.md)，可按动漫、游戏和其他分类跳转。
+[查看全部 80 套氛围主题的浅深色预览](docs/screenshots/README.md)，可按动漫、游戏和其他分类跳转。
 
 ## 兼容版本
 
@@ -127,8 +128,9 @@ Linux 可在安装包所在目录执行 `sha256sum -c SHA256SUMS.txt`；macOS �
 氛围版的配色和角色如下。完整效果见[截图画廊](docs/screenshots/README.md)。
 
 <details>
-<summary>展开全部 79 组主题</summary>
+<summary>展开全部 80 组主题</summary>
 
+- **胆大党·夜巡同盟**：旧宅青灰 / 夜巡石油蓝 / 灯笼金，小桃、厄卡伦、寺仁与星子的四人调查组。
 - **胆大党·灵能交锋**：灵能淡紫 / 夜幕靛蓝 / 珊瑚红，小桃与变身厄卡伦的高挑双人海报，招财猫婆婆相伴。
 - **胆大党·放学怪谈**：校服粉 / 怪谈蓝灰 / 夕照珊瑚，小桃、厄卡伦与招财猫婆婆的放学怪谈。
 - **角落小伙伴·雨窗来信**：雨窗浅青 / 信纸白 / 灯火暖黄，蜥蜴、白熊与企鹅？等雨读信。
