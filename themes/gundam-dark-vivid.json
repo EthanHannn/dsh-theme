@@ -1,6 +1,6 @@
 {
   "id": "gundam-dark-vivid",
-  "name": "Gundam Dark",
+  "name": "Gundam · RX-78-2 Dark",
   "colorScheme": "dark",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #E4E6EF 50%, #C6CBDA)",

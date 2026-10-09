@@ -1,6 +1,6 @@
 {
   "id": "conan-ensemble-light-vivid",
-  "name": "Conan · Beika Ensemble Light",
+  "name": "Detective Conan · Beika Ensemble Light",
   "colorScheme": "light",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #F7F9FC 50%, #EDEFF3)",

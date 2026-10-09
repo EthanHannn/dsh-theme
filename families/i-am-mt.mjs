@@ -3,7 +3,7 @@ import { createVividFamily } from "./create-vivid-family.js";
 export default createVividFamily({
   id: "i-am-mt",
   signaturePrefix: "imt",
-  names: { zh: "我叫MT", en: "I Am MT" },
+  names: { zh: "我叫MT·劣人与呆贼", en: "I Am MT · Lieren & Daizei" },
   phrases: {
     zh: [
       ["呆贼：潜行到位，准备开溜！", "这回真没贪那把匕首。"],

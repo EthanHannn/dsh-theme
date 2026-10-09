@@ -1,6 +1,6 @@
 {
   "id": "shinchan-dark-vivid",
-  "name": "Crayon Shin-chan Dark",
+  "name": "Shin-chan · Everyday Adventures Dark",
   "colorScheme": "dark",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #F1EADF 50%, #D3C9BA)",

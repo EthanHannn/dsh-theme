@@ -1,6 +1,6 @@
 {
   "id": "conan-ensemble-dark-vivid",
-  "name": "Conan · Beika Ensemble Dark",
+  "name": "Detective Conan · Beika Ensemble Dark",
   "colorScheme": "dark",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #EAF1FB 50%, #D0D7E3)",

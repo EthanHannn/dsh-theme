@@ -15,7 +15,7 @@
 
 export default {
   id: "gundam",
-  names: { zh: "高达", en: "Gundam" },
+  names: { zh: "高达·RX-78-2", en: "Gundam · RX-78-2" },
   // vivid only — the restrained palette ships as the standalone neutral
   // family "slate" (families/slate.mjs re-exports these mode params)
   styles: ["vivid"],

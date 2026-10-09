@@ -6,12 +6,12 @@
 
 ## 最新主题展示
 
-2026-10-09 新增的 17 套主题与重绘的「高达」，浅色、深色直接展示。以下为 1920 × 1080 的 Harness 首页实拍，点击图片查看原尺寸。
+2026-10-09 新增的 17 套主题与重绘的「高达·RX-78-2」，浅色、深色直接展示。以下为 1920 × 1080 的 Harness 首页实拍，点击图片查看原尺寸。
 
 | 主题 | 浅色 | 深色 |
 | --- | --- | --- |
 | [高达·ν高达](docs/screenshots/README.md#theme-49) | [![高达·ν高达 · 浅色](docs/screenshots/49-gundam-nu-light.webp)](docs/screenshots/49-gundam-nu-light.webp) | [![高达·ν高达 · 深色](docs/screenshots/49-gundam-nu-dark.webp)](docs/screenshots/49-gundam-nu-dark.webp) |
-| [高达](docs/screenshots/README.md#theme-24) | [![高达 · 浅色](docs/screenshots/24-gundam-light.webp)](docs/screenshots/24-gundam-light.webp) | [![高达 · 深色](docs/screenshots/24-gundam-dark.webp)](docs/screenshots/24-gundam-dark.webp) |
+| [高达·RX-78-2](docs/screenshots/README.md#theme-24) | [![高达·RX-78-2 · 浅色](docs/screenshots/24-gundam-light.webp)](docs/screenshots/24-gundam-light.webp) | [![高达·RX-78-2 · 深色](docs/screenshots/24-gundam-dark.webp)](docs/screenshots/24-gundam-dark.webp) |
 | [高达·巴巴托斯](docs/screenshots/README.md#theme-50) | [![高达·巴巴托斯 · 浅色](docs/screenshots/50-gundam-barbatos-light.webp)](docs/screenshots/50-gundam-barbatos-light.webp) | [![高达·巴巴托斯 · 深色](docs/screenshots/50-gundam-barbatos-dark.webp)](docs/screenshots/50-gundam-barbatos-dark.webp) |
 | [高达·自由与正义](docs/screenshots/README.md#theme-51) | [![高达·自由与正义 · 浅色](docs/screenshots/51-gundam-seed-light.webp)](docs/screenshots/51-gundam-seed-light.webp) | [![高达·自由与正义 · 深色](docs/screenshots/51-gundam-seed-dark.webp)](docs/screenshots/51-gundam-seed-dark.webp) |
 | [高达·独角兽觉醒](docs/screenshots/README.md#theme-52) | [![高达·独角兽觉醒 · 浅色](docs/screenshots/52-gundam-unicorn-light.webp)](docs/screenshots/52-gundam-unicorn-light.webp) | [![高达·独角兽觉醒 · 深色](docs/screenshots/52-gundam-unicorn-dark.webp)](docs/screenshots/52-gundam-unicorn-dark.webp) |
@@ -137,14 +137,14 @@ Linux 可在安装包所在目录执行 `sha256sum -c SHA256SUMS.txt`；macOS �
 - **名侦探柯南·月下追踪**：侦探蓝 / 蝴蝶结红 / 银白与午夜藏蓝。
 - **灰原哀·琥珀微光**：鼠尾草绿 / 茶棕 / 琥珀与深夜青。
 - **怪盗基德·月白预告**：象牙白 / 宝石蓝 / 月光银。
-- **柯南·米花协奏**：侦探蓝 / 领结红 / 月光银。
+- **名侦探柯南·米花协奏**：侦探蓝 / 领结红 / 月光银。
 - **七龙珠·龟仙流夏日**：海沫青 / 道服橙 / 珊瑚粉。
 - **七龙珠·金焰并肩**：护甲蓝 / 超赛金 / 深靛紫。
 - **七龙珠·神龙奇旅**：神龙翡翠 / 四星琥珀 / 地图纸色。
-- **高达**：装甲白、高达蓝、红色与明黄。
+- **高达·RX-78-2**：装甲白、高达蓝、红色与明黄。
 - **电锯人·特异课**：衬衫白 / 冷灰蓝 / 制服黑 / 暗红。
 - **电锯人·玛奇玛**：象牙白、绯红与墨黑，搭配玛奇玛角色插画。
-- **蜡笔小新**：红色、明黄与天蓝，搭配角色插画和巧克力饼文件夹图标。
+- **蜡笔小新·动感日常**：红色、明黄与天蓝，搭配角色插画和巧克力饼文件夹图标。
 - **芙莉莲·花间研习**：羊皮纸 / 魔力蓝青 / 记忆金 / 森林绿。
 - **芙莉莲·月下旅人**：蓝青与金色，搭配芙莉莲持杖旅行插画。
 - **超能力女儿**：米纸 / 小雏蓝 / 鲑鱼籽红 / 菱饼绿，深色版是夜祭灯笼与靛蓝河面。
@@ -178,12 +178,12 @@ Linux 可在安装包所在目录执行 `sha256sum -c SHA256SUMS.txt`；macOS �
 - **圣斗士·天马流星**：银蓝 / 青铜五人 / 星夜流星。
 - **圣斗士·黄金十二宫**：象牙金 / 圣域深紫 / 黄金圣衣。
 - **魔兽世界·矮人**：锻炉琥珀 / 山地蓝 / 铜须红 / 钢铁灰。
-- **我叫 MT**：MT 赭黄 / 副本紫 / 喜剧红 / 治疗青，劣人与呆贼并肩冒险。
+- **我叫MT·劣人与呆贼**：MT 赭黄 / 副本紫 / 喜剧红 / 治疗青，劣人与呆贼并肩冒险。
 - **小林家的龙女仆**：龙尾绿 / 龙焰橙 / 女仆藏青 / 奶油粉，托尔与暖厨房。
 
 </details>
 
-每组均有简约版，在主题列表中与对应氛围版相邻。青灰、冷墨、绯影、青瓷、蜜蜡、蓝染和抹茶分别对应高达、电锯人·特异课、玛奇玛、芙莉莲·花间研习、蜡笔小新、超能力女儿和夏目友人帐；其余简约版使用对应主题名称加“简约”标识。
+每组均有简约版，在主题列表中与对应氛围版相邻。青灰、冷墨、绯影、青瓷、蜜蜡、蓝染和抹茶分别对应高达·RX-78-2、电锯人·特异课、玛奇玛、芙莉莲·花间研习、蜡笔小新·动感日常、超能力女儿和夏目友人帐；其余简约版使用对应主题名称加“简约”标识。
 
 ## 卸载
 

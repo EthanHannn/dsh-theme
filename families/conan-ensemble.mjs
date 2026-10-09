@@ -5,7 +5,7 @@ import { createVividFamily } from "./create-vivid-family.js";
 const family = createVividFamily({
   id: "conan-ensemble",
   signaturePrefix: "beika",
-  names: { zh: "柯南·米花协奏", en: "Conan · Beika Ensemble" },
+  names: { zh: "名侦探柯南·米花协奏", en: "Detective Conan · Beika Ensemble" },
   phrases: {
     // Original lines, in asset order: Conan, Ran, Shinichi, Ai, Kogoro, Heiji, Kid.
     zh: [

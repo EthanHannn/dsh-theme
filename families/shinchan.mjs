@@ -16,7 +16,7 @@
 
 export default {
   id: "shinchan",
-  names: { zh: "蜡笔小新", en: "Crayon Shin-chan" },
+  names: { zh: "蜡笔小新·动感日常", en: "Shin-chan · Everyday Adventures" },
   // vivid only, matching the other IP families — if a restrained take on
   // this palette is ever wanted, it ships as its own neutral family
   styles: ["vivid"],

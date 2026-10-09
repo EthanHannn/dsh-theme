@@ -1,6 +1,6 @@
 {
   "id": "shinchan-light-vivid",
-  "name": "Crayon Shin-chan Light",
+  "name": "Shin-chan · Everyday Adventures Light",
   "colorScheme": "light",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #FDF6E9 50%, #F1E7D2)",

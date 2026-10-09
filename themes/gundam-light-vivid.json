@@ -1,6 +1,6 @@
 {
   "id": "gundam-light-vivid",
-  "name": "Gundam Light",
+  "name": "Gundam · RX-78-2 Light",
   "colorScheme": "light",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #EFEEE6 50%, #E3E2D6)",
