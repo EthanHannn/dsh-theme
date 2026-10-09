@@ -41,6 +41,8 @@ else:
 # (source stem, output stem, ratio W:H, vertical band center as a fraction
 # of source height)
 JOBS = [
+    ("expansion-20261009/lol-demacia/banner-light", "lol-demacia-banner-light", 6.0, 0.5),
+    ("expansion-20261009/lol-demacia/banner-dark", "lol-demacia-banner-dark", 6.0, 0.5),
     ("expansion-20261009/lol-ionia/banner-light", "lol-ionia-banner-light", 6.0, 0.5),
     ("expansion-20261009/lol-ionia/banner-dark", "lol-ionia-banner-dark", 6.0, 0.5),
     ("expansion-20261009/gundam-unicorn/banner-light", "gundam-unicorn-banner-light", 6.0, 0.5),
@@ -185,6 +187,8 @@ JOBS = [
 # left fade end, right fade start), as fractions of the final strip width.
 # All families use Daxia's 25% left / 10% right edge treatment.
 BAKED_HORIZONTAL_FADES = {
+    "lol-demacia-banner-light": ("#EFF0F8", 0.25, 0.90),
+    "lol-demacia-banner-dark": ("#18253C", 0.25, 0.90),
     "lol-ionia-banner-light": ("#EBF2E8", 0.25, 0.90),
     "lol-ionia-banner-dark": ("#19312C", 0.25, 0.90),
     "gundam-unicorn-banner-light": ("#EEF0F4", 0.25, 0.90),
