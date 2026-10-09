@@ -206,7 +206,7 @@
     "--dsw-pack-header-art-position": "right center",
     "--dsw-pack-header-art-size": "cover",
     "--dsw-pack-header-art-mask": "linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.55) 30%, #000 52%, #000 82%, transparent 98%), linear-gradient(#000 55%, transparent 92%)",
-    "--dsw-pack-header-art-wide-mask": "linear-gradient(#000 74%, transparent 98%)",
+    "--dsw-pack-header-art-wide-mask": "linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.18) 2%, rgba(0, 0, 0, 0.65) 5%, #000 9%, #000 86%, rgba(0, 0, 0, 0.65) 92%, rgba(0, 0, 0, 0.18) 97%, transparent 100%), linear-gradient(#000 74%, transparent 98%)",
     "--dsw-pack-header-chip": "none"
   }
 }

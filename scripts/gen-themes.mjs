@@ -302,17 +302,16 @@ function assetValue(name) {
 function headerArtTokens(kind, bakedHorizontalFade = false) {
   if (kind === "banner") {
     const softMask = "linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.55) 30%, #000 52%, #000 82%, transparent 98%), linear-gradient(#000 55%, transparent 92%)";
+    // Baked paper colors can still differ from the live header background.
+    // Feather both edges to transparency, keeping the central artwork clear.
+    const wideMask = "linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.18) 2%, rgba(0, 0, 0, 0.65) 5%, #000 9%, #000 86%, rgba(0, 0, 0, 0.65) 92%, rgba(0, 0, 0, 0.18) 97%, transparent 100%), linear-gradient(#000 74%, transparent 98%)";
     return {
       "--dsw-pack-header-art-left": "0px",
       "--dsw-pack-header-art-width": "auto",
       "--dsw-pack-header-art-position": "right center",
       "--dsw-pack-header-art-size": "cover",
       "--dsw-pack-header-art-mask": softMask,
-      // Once a banner carries its own horizontal dissolves, Full mode on a
-      // wide screen only needs to melt the part overflowing into the chat.
-      "--dsw-pack-header-art-wide-mask": bakedHorizontalFade
-        ? "linear-gradient(#000 74%, transparent 98%)"
-        : softMask,
+      "--dsw-pack-header-art-wide-mask": bakedHorizontalFade ? wideMask : softMask,
       "--dsw-pack-header-chip": "none",
     };
   }
