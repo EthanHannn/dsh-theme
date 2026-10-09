@@ -41,6 +41,8 @@ else:
 # (source stem, output stem, ratio W:H, vertical band center as a fraction
 # of source height)
 JOBS = [
+    ("expansion-20261009/chiikawa-rainy/banner-light", "chiikawa-rainy-banner-light", 6.0, 0.56),
+    ("expansion-20261009/chiikawa-rainy/banner-dark", "chiikawa-rainy-banner-dark", 6.0, 0.56),
     ("expansion-20261009/chiikawa-bakery/banner-light", "chiikawa-bakery-banner-light", 6.0, 0.6),
     ("expansion-20261009/chiikawa-bakery/banner-dark", "chiikawa-bakery-banner-dark", 6.0, 0.58),
     ("chiikawa-20261001/chiikawa-picnic-banner-light", "chiikawa-picnic-banner-light", 6.0, 0.46),
@@ -169,6 +171,8 @@ JOBS = [
 # left fade end, right fade start), as fractions of the final strip width.
 # All families use Daxia's 25% left / 10% right edge treatment.
 BAKED_HORIZONTAL_FADES = {
+    "chiikawa-rainy-banner-light": ("#EBF3F0", 0.25, 0.90),
+    "chiikawa-rainy-banner-dark": ("#14262B", 0.25, 0.90),
     "chiikawa-bakery-banner-light": ("#F7EEDF", 0.25, 0.90),
     "chiikawa-bakery-banner-dark": ("#2C211D", 0.25, 0.90),
     "chiikawa-picnic-banner-light": ("#FBEFF2", 0.25, 0.90),
