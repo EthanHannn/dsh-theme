@@ -41,6 +41,8 @@ else:
 # (source stem, output stem, ratio W:H, vertical band center as a fraction
 # of source height)
 JOBS = [
+    ("anime-five-20261009/doraemon-starlight/banner-light", "doraemon-starlight-banner-light", 6.0, 0.5),
+    ("anime-five-20261009/doraemon-starlight/banner-dark", "doraemon-starlight-banner-dark", 6.0, 0.5),
     ("anime-five-20261009/doraemon-afterschool/banner-light", "doraemon-afterschool-banner-light", 6.0, 0.5),
     ("anime-five-20261009/doraemon-afterschool/banner-dark", "doraemon-afterschool-banner-dark", 6.0, 0.5),
     ("anime-five-20261009/doraemon-pocket/banner-light", "doraemon-pocket-banner-light", 6.0, 0.5),
@@ -211,6 +213,8 @@ JOBS = [
 # left fade end, right fade start), as fractions of the final strip width.
 # All families use Daxia's 25% left / 10% right edge treatment.
 BAKED_HORIZONTAL_FADES = {
+    "doraemon-starlight-banner-light": ("#E8EBF6", 0.25, 0.90),
+    "doraemon-starlight-banner-dark": ("#1B2341", 0.25, 0.90),
     "doraemon-afterschool-banner-light": ("#F1EBDC", 0.25, 0.90),
     "doraemon-afterschool-banner-dark": ("#2B2529", 0.25, 0.90),
     "doraemon-pocket-banner-light": ("#E4F1F8", 0.25, 0.90),
