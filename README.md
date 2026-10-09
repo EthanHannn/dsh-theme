@@ -2,7 +2,7 @@
 
 为 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 提供角色插画与纯色主题。安装后，在**设置 → 主题与外观**中选择主题，并切换浅色、深色或跟随系统。
 
-共 48 组主题，每组包含氛围版和简约版，共 192 套浅深色外观。氛围版包含角色壁纸、场景横幅和侧栏伙伴；简约版保留配色，不显示图片装饰。
+共 49 组主题，每组包含氛围版和简约版，共 196 套浅深色外观。氛围版包含角色壁纸、场景横幅和侧栏伙伴；简约版保留配色，不显示图片装饰。
 
 ## 大屏效果
 
@@ -12,7 +12,7 @@
 | --- | --- |
 | [![大侠咕嘎与 Doro · 浅色](docs/screenshots/01-daxia-light.webp)](docs/screenshots/01-daxia-light.webp) | [![玛奇玛 · 深色](docs/screenshots/02-makima-dark.webp)](docs/screenshots/02-makima-dark.webp) |
 
-[查看全部 48 套氛围主题的浅深色对照](docs/screenshots/README.md)，可按动漫、游戏和其他分类跳转。
+[查看既有 48 套氛围主题的浅深色对照](docs/screenshots/README.md)，可按动漫、游戏和其他分类跳转。
 
 ## 兼容版本
 
@@ -96,8 +96,9 @@ Linux 可在安装包所在目录执行 `sha256sum -c SHA256SUMS.txt`；macOS �
 氛围版的配色和角色如下。完整效果见[截图画廊](docs/screenshots/README.md)。
 
 <details>
-<summary>展开全部 48 组主题</summary>
+<summary>展开全部 49 组主题</summary>
 
+- **吉伊卡哇·烘焙小队**：烤箱暖金 / 焦糖棕 / 奶油白，吉伊、小八与乌萨奇揉面、分面包的日夜小故事。
 - **吉伊卡哇·草原野餐**：草莓粉 / 嫩叶绿 / 暖金。
 - **吉伊卡哇·星夜漫游**：雾蓝 / 淡紫 / 星光金。
 - **名侦探柯南·月下追踪**：侦探蓝 / 蝴蝶结红 / 银白与午夜藏蓝。
