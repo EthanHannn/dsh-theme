@@ -2,16 +2,17 @@
 
 为 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 提供角色插画与纯色主题。安装后，在**设置 → 主题与外观**中选择主题，并切换浅色、深色或跟随系统。
 
-共 84 组主题，每组包含氛围版和简约版，共 336 套浅深色外观。氛围版包含角色壁纸、场景横幅和侧栏伙伴；简约版保留配色，不显示图片装饰。
+共 85 组主题，每组包含氛围版和简约版，共 340 套浅深色外观。氛围版包含角色壁纸、场景横幅和侧栏伙伴；简约版保留配色，不显示图片装饰。
 
 ## 最新主题展示
 
-2026-10-09 新增的 36 套主题与重绘的「高达·RX-78-2」，浅色、深色直接展示。以下为 1920 × 1080 的 Harness 首页实拍，点击图片查看原尺寸。
+2026-10-09 新增的 37 套主题与重绘的「高达·RX-78-2」，浅色、深色直接展示。以下为 1920 × 1080 的 Harness 首页实拍，点击图片查看原尺寸。
 
 「胆大党·放学怪谈」浅色插画已重绘，调整厄卡伦的面部和站姿，并缩小右下角人物。
 
 | 主题 | 浅色 | 深色 |
 | --- | --- | --- |
+| [崩坏：星穹铁道·星核夜话](docs/screenshots/README.md#theme-85) | [![崩坏：星穹铁道·星核夜话 · 浅色](docs/screenshots/85-hsr-hunters-light.webp)](docs/screenshots/85-hsr-hunters-light.webp) | [![崩坏：星穹铁道·星核夜话 · 深色](docs/screenshots/85-hsr-hunters-dark.webp)](docs/screenshots/85-hsr-hunters-dark.webp) |
 | [崩坏：星穹铁道·列车晨光](docs/screenshots/README.md#theme-84) | [![崩坏：星穹铁道·列车晨光 · 浅色](docs/screenshots/84-hsr-express-light.webp)](docs/screenshots/84-hsr-express-light.webp) | [![崩坏：星穹铁道·列车晨光 · 深色](docs/screenshots/84-hsr-express-dark.webp)](docs/screenshots/84-hsr-express-dark.webp) |
 | [原神·鸣神花信](docs/screenshots/README.md#theme-83) | [![原神·鸣神花信 · 浅色](docs/screenshots/83-genshin-inazuma-light.webp)](docs/screenshots/83-genshin-inazuma-light.webp) | [![原神·鸣神花信 · 深色](docs/screenshots/83-genshin-inazuma-dark.webp)](docs/screenshots/83-genshin-inazuma-dark.webp) |
 | [原神·净善书庭](docs/screenshots/README.md#theme-82) | [![原神·净善书庭 · 浅色](docs/screenshots/82-genshin-sumeru-light.webp)](docs/screenshots/82-genshin-sumeru-light.webp) | [![原神·净善书庭 · 深色](docs/screenshots/82-genshin-sumeru-dark.webp)](docs/screenshots/82-genshin-sumeru-dark.webp) |
@@ -50,7 +51,7 @@
 | [我叫MT·联盟值日生](docs/screenshots/README.md#theme-64) | [![我叫MT·联盟值日生 · 浅色](docs/screenshots/64-i-am-mt-alliance-duo-light.webp)](docs/screenshots/64-i-am-mt-alliance-duo-light.webp) | [![我叫MT·联盟值日生 · 深色](docs/screenshots/64-i-am-mt-alliance-duo-dark.webp)](docs/screenshots/64-i-am-mt-alliance-duo-dark.webp) |
 | [我叫MT·联盟补给站](docs/screenshots/README.md#theme-65) | [![我叫MT·联盟补给站 · 浅色](docs/screenshots/65-i-am-mt-alliance-camp-light.webp)](docs/screenshots/65-i-am-mt-alliance-camp-light.webp) | [![我叫MT·联盟补给站 · 深色](docs/screenshots/65-i-am-mt-alliance-camp-dark.webp)](docs/screenshots/65-i-am-mt-alliance-camp-dark.webp) |
 
-[查看全部 84 套氛围主题的浅深色预览](docs/screenshots/README.md)，可按动漫、游戏和其他分类跳转。
+[查看全部 85 套氛围主题的浅深色预览](docs/screenshots/README.md)，可按动漫、游戏和其他分类跳转。
 
 ## 兼容版本
 
@@ -134,8 +135,9 @@ Linux 可在安装包所在目录执行 `sha256sum -c SHA256SUMS.txt`；macOS �
 氛围版的配色和角色如下。完整效果见[截图画廊](docs/screenshots/README.md)。
 
 <details>
-<summary>展开全部 84 组主题</summary>
+<summary>展开全部 85 组主题</summary>
 
+- **崩坏：星穹铁道·星核夜话**：梅子紫 / 雾灰 / 霓虹青，卡芙卡、银狼与刃的任务间隙。
 - **崩坏：星穹铁道·列车晨光**：列车蓝 / 相片粉 / 黄铜金，三月七、丹恒与星的旅途晨光。
 - **原神·鸣神花信**：藤紫 / 樱花粉 / 神社朱红，雷电影与八重神子的鸣神茶歇。
 - **原神·净善书庭**：草叶绿 / 象牙白 / 书页金，纳西妲、艾尔海森与卡维的林间书庭。
