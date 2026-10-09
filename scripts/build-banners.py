@@ -41,6 +41,8 @@ else:
 # (source stem, output stem, ratio W:H, vertical band center as a fraction
 # of source height)
 JOBS = [
+    ("expansion-20261009/shinchan-friends/banner-light", "shinchan-friends-banner-light", 6.0, 0.5),
+    ("expansion-20261009/shinchan-friends/banner-dark", "shinchan-friends-banner-dark", 6.0, 0.5),
     ("expansion-20261009/lol-demacia/banner-light", "lol-demacia-banner-light", 6.0, 0.5),
     ("expansion-20261009/lol-demacia/banner-dark", "lol-demacia-banner-dark", 6.0, 0.5),
     ("expansion-20261009/lol-ionia/banner-light", "lol-ionia-banner-light", 6.0, 0.5),
@@ -187,6 +189,8 @@ JOBS = [
 # left fade end, right fade start), as fractions of the final strip width.
 # All families use Daxia's 25% left / 10% right edge treatment.
 BAKED_HORIZONTAL_FADES = {
+    "shinchan-friends-banner-light": ("#F4F0DC", 0.25, 0.90),
+    "shinchan-friends-banner-dark": ("#293639", 0.25, 0.90),
     "lol-demacia-banner-light": ("#EFF0F8", 0.25, 0.90),
     "lol-demacia-banner-dark": ("#18253C", 0.25, 0.90),
     "lol-ionia-banner-light": ("#EBF2E8", 0.25, 0.90),
