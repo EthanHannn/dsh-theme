@@ -41,6 +41,8 @@ else:
 # (source stem, output stem, ratio W:H, vertical band center as a fraction
 # of source height)
 JOBS = [
+    ("game-five-20261009/wukong-golden-sage/banner-light", "wukong-golden-sage-banner-light", 6.0, 0.5),
+    ("game-five-20261009/wukong-golden-sage/banner-dark", "wukong-golden-sage-banner-dark", 6.0, 0.5),
     ("game-five-20261009/wukong-meishan/banner-light", "wukong-meishan-banner-light", 6.0, 0.5),
     ("game-five-20261009/wukong-meishan/banner-dark", "wukong-meishan-banner-dark", 6.0, 0.5),
     ("game-five-20261009/wukong-pilgrimage/banner-light", "wukong-pilgrimage-banner-light", 6.0, 0.5),
@@ -259,6 +261,8 @@ JOBS = [
 # left fade end, right fade start), as fractions of the final strip width.
 # All families use Daxia's 25% left / 10% right edge treatment.
 BAKED_HORIZONTAL_FADES = {
+    "wukong-golden-sage-banner-light": ("#EEE3CF", 0.25, 0.90),
+    "wukong-golden-sage-banner-dark": ("#3B2A26", 0.25, 0.90),
     "wukong-meishan-banner-light": ("#E6ECF0", 0.25, 0.90),
     "wukong-meishan-banner-dark": ("#25303E", 0.25, 0.90),
     "wukong-pilgrimage-banner-light": ("#E8EBDD", 0.25, 0.90),
