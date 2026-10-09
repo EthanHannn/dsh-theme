@@ -41,6 +41,8 @@ else:
 # (source stem, output stem, ratio W:H, vertical band center as a fraction
 # of source height)
 JOBS = [
+    ("expansion-20261009/dragon-ball-family/banner-light", "dragon-ball-family-banner-light", 6.0, 0.5),
+    ("expansion-20261009/dragon-ball-family/banner-dark", "dragon-ball-family-banner-dark", 6.0, 0.5),
     ("expansion-20261009/conan-osaka/banner-light", "conan-osaka-banner-light", 6.0, 0.54),
     ("expansion-20261009/conan-osaka/banner-dark", "conan-osaka-banner-dark", 6.0, 0.54),
     ("expansion-20261009/conan-academy/banner-light", "conan-academy-banner-light", 6.0, 0.52),
@@ -175,6 +177,8 @@ JOBS = [
 # left fade end, right fade start), as fractions of the final strip width.
 # All families use Daxia's 25% left / 10% right edge treatment.
 BAKED_HORIZONTAL_FADES = {
+    "dragon-ball-family-banner-light": ("#F1F0DE", 0.25, 0.90),
+    "dragon-ball-family-banner-dark": ("#243029", 0.25, 0.90),
     "conan-osaka-banner-light": ("#F5EBD9", 0.25, 0.90),
     "conan-osaka-banner-dark": ("#193036", 0.25, 0.90),
     "conan-academy-banner-light": ("#F0EFE3", 0.25, 0.90),
