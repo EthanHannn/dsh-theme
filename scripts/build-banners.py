@@ -41,6 +41,8 @@ else:
 # (source stem, output stem, ratio W:H, vertical band center as a fraction
 # of source height)
 JOBS = [
+    ("additions-20261009/gundam-barbatos/banner-light", "gundam-barbatos-banner-light", 6.0, 0.5),
+    ("additions-20261009/gundam-barbatos/banner-dark", "gundam-barbatos-banner-dark", 6.0, 0.5),
     ("expansion-20261009/i-am-mt-alliance-camp/banner-light", "i-am-mt-alliance-camp-banner-light", 6.0, 0.5),
     ("expansion-20261009/i-am-mt-alliance-camp/banner-dark", "i-am-mt-alliance-camp-banner-dark", 6.0, 0.5),
     ("expansion-20261009/i-am-mt-alliance-duo/banner-light", "i-am-mt-alliance-duo-banner-light", 6.0, 0.5),
@@ -195,6 +197,8 @@ JOBS = [
 # left fade end, right fade start), as fractions of the final strip width.
 # All families use Daxia's 25% left / 10% right edge treatment.
 BAKED_HORIZONTAL_FADES = {
+    "gundam-barbatos-banner-light": ("#EEE6DA", 0.25, 0.90),
+    "gundam-barbatos-banner-dark": ("#242B34", 0.25, 0.90),
     "i-am-mt-alliance-camp-banner-light": ("#F5E9D7", 0.25, 0.90),
     "i-am-mt-alliance-camp-banner-dark": ("#3B2D28", 0.25, 0.90),
     "i-am-mt-alliance-duo-banner-light": ("#F0EEDF", 0.25, 0.90),
