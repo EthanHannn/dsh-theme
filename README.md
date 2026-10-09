@@ -2,14 +2,15 @@
 
 为 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 提供角色插画与纯色主题。安装后，在**设置 → 主题与外观**中选择主题，并切换浅色、深色或跟随系统。
 
-共 69 组主题，每组包含氛围版和简约版，共 276 套浅深色外观。氛围版包含角色壁纸、场景横幅和侧栏伙伴；简约版保留配色，不显示图片装饰。
+共 70 组主题，每组包含氛围版和简约版，共 280 套浅深色外观。氛围版包含角色壁纸、场景横幅和侧栏伙伴；简约版保留配色，不显示图片装饰。
 
 ## 最新主题展示
 
-2026-10-09 新增的 21 套主题与重绘的「高达·RX-78-2」，浅色、深色直接展示。以下为 1920 × 1080 的 Harness 首页实拍，点击图片查看原尺寸。
+2026-10-09 新增的 22 套主题与重绘的「高达·RX-78-2」，浅色、深色直接展示。以下为 1920 × 1080 的 Harness 首页实拍，点击图片查看原尺寸。
 
 | 主题 | 浅色 | 深色 |
 | --- | --- | --- |
+| [哆啦A梦·放学后的约定](docs/screenshots/README.md#theme-70) | [![哆啦A梦·放学后的约定 · 浅色](docs/screenshots/70-doraemon-afterschool-light.webp)](docs/screenshots/70-doraemon-afterschool-light.webp) | [![哆啦A梦·放学后的约定 · 深色](docs/screenshots/70-doraemon-afterschool-dark.webp)](docs/screenshots/70-doraemon-afterschool-dark.webp) |
 | [哆啦A梦·口袋奇遇](docs/screenshots/README.md#theme-69) | [![哆啦A梦·口袋奇遇 · 浅色](docs/screenshots/69-doraemon-pocket-light.webp)](docs/screenshots/69-doraemon-pocket-light.webp) | [![哆啦A梦·口袋奇遇 · 深色](docs/screenshots/69-doraemon-pocket-dark.webp)](docs/screenshots/69-doraemon-pocket-dark.webp) |
 | [间谍过家家·月下密语](docs/screenshots/README.md#theme-68) | [![间谍过家家·月下密语 · 浅色](docs/screenshots/68-spy-family-mission-light.webp)](docs/screenshots/68-spy-family-mission-light.webp) | [![间谍过家家·月下密语 · 深色](docs/screenshots/68-spy-family-mission-dark.webp)](docs/screenshots/68-spy-family-mission-dark.webp) |
 | [间谍过家家·伊甸星光](docs/screenshots/README.md#theme-67) | [![间谍过家家·伊甸星光 · 浅色](docs/screenshots/67-spy-family-eden-light.webp)](docs/screenshots/67-spy-family-eden-light.webp) | [![间谍过家家·伊甸星光 · 深色](docs/screenshots/67-spy-family-eden-dark.webp)](docs/screenshots/67-spy-family-eden-dark.webp) |
@@ -33,7 +34,7 @@
 | [我叫MT·联盟值日生](docs/screenshots/README.md#theme-64) | [![我叫MT·联盟值日生 · 浅色](docs/screenshots/64-i-am-mt-alliance-duo-light.webp)](docs/screenshots/64-i-am-mt-alliance-duo-light.webp) | [![我叫MT·联盟值日生 · 深色](docs/screenshots/64-i-am-mt-alliance-duo-dark.webp)](docs/screenshots/64-i-am-mt-alliance-duo-dark.webp) |
 | [我叫MT·联盟补给站](docs/screenshots/README.md#theme-65) | [![我叫MT·联盟补给站 · 浅色](docs/screenshots/65-i-am-mt-alliance-camp-light.webp)](docs/screenshots/65-i-am-mt-alliance-camp-light.webp) | [![我叫MT·联盟补给站 · 深色](docs/screenshots/65-i-am-mt-alliance-camp-dark.webp)](docs/screenshots/65-i-am-mt-alliance-camp-dark.webp) |
 
-[查看全部 69 套氛围主题的浅深色预览](docs/screenshots/README.md)，可按动漫、游戏和其他分类跳转。
+[查看全部 70 套氛围主题的浅深色预览](docs/screenshots/README.md)，可按动漫、游戏和其他分类跳转。
 
 ## 兼容版本
 
@@ -117,8 +118,9 @@ Linux 可在安装包所在目录执行 `sha256sum -c SHA256SUMS.txt`；macOS �
 氛围版的配色和角色如下。完整效果见[截图画廊](docs/screenshots/README.md)。
 
 <details>
-<summary>展开全部 69 组主题</summary>
+<summary>展开全部 70 组主题</summary>
 
+- **哆啦A梦·放学后的约定**：放学奶油色 / 河岸青绿 / 夕照橙，哆啦A梦、大雄与静香的放学约定。
 - **哆啦A梦·口袋奇遇**：口袋蓝 / 铜锣烧暖金 / 任意门粉，哆啦A梦、大雄与哆啦美的道具小冒险。
 - **间谍过家家·月下密语**：雾青 / 夜幕藏蓝 / 玫瑰红，黄昏、约尔与阿尼亚的紧凑秘密任务海报。
 - **间谍过家家·伊甸星光**：学院米白 / 砖红 / 星章金，阿尼亚、达米安与贝姬的放学小故事。
