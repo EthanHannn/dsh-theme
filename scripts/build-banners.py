@@ -41,6 +41,8 @@ else:
 # (source stem, output stem, ratio W:H, vertical band center as a fraction
 # of source height)
 JOBS = [
+    ("expansion-20261009/gundam-unicorn/banner-light", "gundam-unicorn-banner-light", 6.0, 0.5),
+    ("expansion-20261009/gundam-unicorn/banner-dark", "gundam-unicorn-banner-dark", 6.0, 0.5),
     ("expansion-20261009/gundam-seed/banner-light", "gundam-seed-banner-light", 6.0, 0.5),
     ("expansion-20261009/gundam-seed/banner-dark", "gundam-seed-banner-dark", 6.0, 0.5),
     ("expansion-20261009/dragon-ball-sweets/banner-light", "dragon-ball-sweets-banner-light", 6.0, 0.5),
@@ -181,6 +183,8 @@ JOBS = [
 # left fade end, right fade start), as fractions of the final strip width.
 # All families use Daxia's 25% left / 10% right edge treatment.
 BAKED_HORIZONTAL_FADES = {
+    "gundam-unicorn-banner-light": ("#EEF0F4", 0.25, 0.90),
+    "gundam-unicorn-banner-dark": ("#161F2D", 0.25, 0.90),
     "gundam-seed-banner-light": ("#EDF0FA", 0.25, 0.90),
     "gundam-seed-banner-dark": ("#16223A", 0.25, 0.90),
     "dragon-ball-sweets-banner-light": ("#F6E8EB", 0.25, 0.90),
