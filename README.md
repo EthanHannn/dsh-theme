@@ -4,15 +4,32 @@
 
 共 65 组主题，每组包含氛围版和简约版，共 260 套浅深色外观。氛围版包含角色壁纸、场景横幅和侧栏伙伴；简约版保留配色，不显示图片装饰。
 
-## 大屏效果
+## 最新主题展示
 
-以下为 1920 × 1080 的 Harness 首页截图。点击图片查看原尺寸。
+2026-10-09 新增的 17 套主题与重绘的「高达」，浅色、深色直接展示。以下为 1920 × 1080 的 Harness 首页实拍，点击图片查看原尺寸。
 
-| 大侠咕嘎与 Doro · 浅色 | 玛奇玛 · 深色 |
-| --- | --- |
-| [![大侠咕嘎与 Doro · 浅色](docs/screenshots/01-daxia-light.webp)](docs/screenshots/01-daxia-light.webp) | [![玛奇玛 · 深色](docs/screenshots/02-makima-dark.webp)](docs/screenshots/02-makima-dark.webp) |
+| 主题 | 浅色 | 深色 |
+| --- | --- | --- |
+| [高达·ν高达](docs/screenshots/README.md#theme-49) | [![高达·ν高达 · 浅色](docs/screenshots/49-gundam-nu-light.webp)](docs/screenshots/49-gundam-nu-light.webp) | [![高达·ν高达 · 深色](docs/screenshots/49-gundam-nu-dark.webp)](docs/screenshots/49-gundam-nu-dark.webp) |
+| [高达](docs/screenshots/README.md#theme-24) | [![高达 · 浅色](docs/screenshots/24-gundam-light.webp)](docs/screenshots/24-gundam-light.webp) | [![高达 · 深色](docs/screenshots/24-gundam-dark.webp)](docs/screenshots/24-gundam-dark.webp) |
+| [高达·巴巴托斯](docs/screenshots/README.md#theme-50) | [![高达·巴巴托斯 · 浅色](docs/screenshots/50-gundam-barbatos-light.webp)](docs/screenshots/50-gundam-barbatos-light.webp) | [![高达·巴巴托斯 · 深色](docs/screenshots/50-gundam-barbatos-dark.webp)](docs/screenshots/50-gundam-barbatos-dark.webp) |
+| [高达·自由与正义](docs/screenshots/README.md#theme-51) | [![高达·自由与正义 · 浅色](docs/screenshots/51-gundam-seed-light.webp)](docs/screenshots/51-gundam-seed-light.webp) | [![高达·自由与正义 · 深色](docs/screenshots/51-gundam-seed-dark.webp)](docs/screenshots/51-gundam-seed-dark.webp) |
+| [高达·独角兽觉醒](docs/screenshots/README.md#theme-52) | [![高达·独角兽觉醒 · 浅色](docs/screenshots/52-gundam-unicorn-light.webp)](docs/screenshots/52-gundam-unicorn-light.webp) | [![高达·独角兽觉醒 · 深色](docs/screenshots/52-gundam-unicorn-dark.webp)](docs/screenshots/52-gundam-unicorn-dark.webp) |
+| [名侦探柯南·宝石谜夜](docs/screenshots/README.md#theme-53) | [![名侦探柯南·宝石谜夜 · 浅色](docs/screenshots/53-conan-jewel-light.webp)](docs/screenshots/53-conan-jewel-light.webp) | [![名侦探柯南·宝石谜夜 · 深色](docs/screenshots/53-conan-jewel-dark.webp)](docs/screenshots/53-conan-jewel-dark.webp) |
+| [名侦探柯南·大阪同行](docs/screenshots/README.md#theme-54) | [![名侦探柯南·大阪同行 · 浅色](docs/screenshots/54-conan-osaka-light.webp)](docs/screenshots/54-conan-osaka-light.webp) | [![名侦探柯南·大阪同行 · 深色](docs/screenshots/54-conan-osaka-dark.webp)](docs/screenshots/54-conan-osaka-dark.webp) |
+| [吉伊卡哇·烘焙小队](docs/screenshots/README.md#theme-55) | [![吉伊卡哇·烘焙小队 · 浅色](docs/screenshots/55-chiikawa-bakery-light.webp)](docs/screenshots/55-chiikawa-bakery-light.webp) | [![吉伊卡哇·烘焙小队 · 深色](docs/screenshots/55-chiikawa-bakery-dark.webp)](docs/screenshots/55-chiikawa-bakery-dark.webp) |
+| [吉伊卡哇·雨后来信](docs/screenshots/README.md#theme-56) | [![吉伊卡哇·雨后来信 · 浅色](docs/screenshots/56-chiikawa-rainy-light.webp)](docs/screenshots/56-chiikawa-rainy-light.webp) | [![吉伊卡哇·雨后来信 · 深色](docs/screenshots/56-chiikawa-rainy-dark.webp)](docs/screenshots/56-chiikawa-rainy-dark.webp) |
+| [七龙珠·包子山家书](docs/screenshots/README.md#theme-57) | [![七龙珠·包子山家书 · 浅色](docs/screenshots/57-dragon-ball-family-light.webp)](docs/screenshots/57-dragon-ball-family-light.webp) | [![七龙珠·包子山家书 · 深色](docs/screenshots/57-dragon-ball-family-dark.webp)](docs/screenshots/57-dragon-ball-family-dark.webp) |
+| [七龙珠·布欧甜点屋](docs/screenshots/README.md#theme-58) | [![七龙珠·布欧甜点屋 · 浅色](docs/screenshots/58-dragon-ball-sweets-light.webp)](docs/screenshots/58-dragon-ball-sweets-light.webp) | [![七龙珠·布欧甜点屋 · 深色](docs/screenshots/58-dragon-ball-sweets-dark.webp)](docs/screenshots/58-dragon-ball-sweets-dark.webp) |
+| [英雄联盟·艾欧尼亚茶会](docs/screenshots/README.md#theme-59) | [![英雄联盟·艾欧尼亚茶会 · 浅色](docs/screenshots/59-lol-ionia-light.webp)](docs/screenshots/59-lol-ionia-light.webp) | [![英雄联盟·艾欧尼亚茶会 · 深色](docs/screenshots/59-lol-ionia-dark.webp)](docs/screenshots/59-lol-ionia-dark.webp) |
+| [英雄联盟·德玛西亚巡礼](docs/screenshots/README.md#theme-60) | [![英雄联盟·德玛西亚巡礼 · 浅色](docs/screenshots/60-lol-demacia-light.webp)](docs/screenshots/60-lol-demacia-light.webp) | [![英雄联盟·德玛西亚巡礼 · 深色](docs/screenshots/60-lol-demacia-dark.webp)](docs/screenshots/60-lol-demacia-dark.webp) |
+| [蜡笔小新·春日部探险队](docs/screenshots/README.md#theme-61) | [![蜡笔小新·春日部探险队 · 浅色](docs/screenshots/61-shinchan-friends-light.webp)](docs/screenshots/61-shinchan-friends-light.webp) | [![蜡笔小新·春日部探险队 · 深色](docs/screenshots/61-shinchan-friends-dark.webp)](docs/screenshots/61-shinchan-friends-dark.webp) |
+| [蜡笔小新·野原家的周末](docs/screenshots/README.md#theme-62) | [![蜡笔小新·野原家的周末 · 浅色](docs/screenshots/62-shinchan-family-light.webp)](docs/screenshots/62-shinchan-family-light.webp) | [![蜡笔小新·野原家的周末 · 深色](docs/screenshots/62-shinchan-family-dark.webp)](docs/screenshots/62-shinchan-family-dark.webp) |
+| [我叫MT·美屡的林间手札](docs/screenshots/README.md#theme-63) | [![我叫MT·美屡的林间手札 · 浅色](docs/screenshots/63-i-am-mt-huntress-light.webp)](docs/screenshots/63-i-am-mt-huntress-light.webp) | [![我叫MT·美屡的林间手札 · 深色](docs/screenshots/63-i-am-mt-huntress-dark.webp)](docs/screenshots/63-i-am-mt-huntress-dark.webp) |
+| [我叫MT·联盟值日生](docs/screenshots/README.md#theme-64) | [![我叫MT·联盟值日生 · 浅色](docs/screenshots/64-i-am-mt-alliance-duo-light.webp)](docs/screenshots/64-i-am-mt-alliance-duo-light.webp) | [![我叫MT·联盟值日生 · 深色](docs/screenshots/64-i-am-mt-alliance-duo-dark.webp)](docs/screenshots/64-i-am-mt-alliance-duo-dark.webp) |
+| [我叫MT·联盟补给站](docs/screenshots/README.md#theme-65) | [![我叫MT·联盟补给站 · 浅色](docs/screenshots/65-i-am-mt-alliance-camp-light.webp)](docs/screenshots/65-i-am-mt-alliance-camp-light.webp) | [![我叫MT·联盟补给站 · 深色](docs/screenshots/65-i-am-mt-alliance-camp-dark.webp)](docs/screenshots/65-i-am-mt-alliance-camp-dark.webp) |
 
-[查看既有 48 套氛围主题的浅深色对照](docs/screenshots/README.md)，可按动漫、游戏和其他分类跳转。
+[查看全部 65 套氛围主题的浅深色预览](docs/screenshots/README.md)，可按动漫、游戏和其他分类跳转。
 
 ## 兼容版本
 
@@ -73,7 +90,7 @@ dsh plugin --profile web add /absolute/path/to/dsh-theme
 
 ### 笔记本与小窗口
 
-窗口宽度不足 1440px 或高度不足 800px 时，主题自动缩小角色、隐藏左下角物件、收紧顶部横幅，并将首页输入框居中。宽度不超过 900px 时，隐藏顶部横幅和聊天页背景角色，首页仍保留角色插画。
+窗口宽度不超过 1680px 或高度不足 800px 时，主题自动缩小角色、隐藏左下角物件、收紧顶部横幅，并将首页输入框居中。宽度不超过 900px 时，隐藏顶部横幅和聊天页背景角色，首页仍保留角色插画。
 
 ## 更新与回退
 

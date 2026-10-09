@@ -1,20 +1,22 @@
 # 大屏主题实拍
 
-48 套氛围主题，浅色与深色各一张，共 96 张，点击图片查看 1920 × 1080 原尺寸。
+65 套氛围主题，浅色与深色各一张，共 130 张，点击图片查看 1920 × 1080 原尺寸。
 
-截图展示 Harness 0.2.0-rc.1 的首页，采用清晰模式和默认侧栏。会话顶部横幅仅在聊天页显示。
+截图来自独立的 Harness 演示环境，展示真实首页、清晰模式和默认侧栏；没有导入个人账号、历史会话或工作区数据。首页不显示会话顶部横幅。
+
+2026-10-09 新增及重制的 18 套使用 Harness 0.2.1-alpha.1 拍摄，其余 47 套保留 0.2.0-rc.1 的截图。截图运行版本不替代 [兼容版本说明](../../README.md#兼容版本)。
 
 ## 快速跳转
 
-按分类选择主题，跳转至浅深色对照图。
+按分类选择主题，跳转至浅深色预览。
 
 **动漫**
 
-[电锯人·玛奇玛](#theme-2) · [吉伊卡哇·草原野餐](#theme-3) · [柯南·米花协奏](#theme-4) · [七龙珠·金焰并肩](#theme-5) · [EVA·初号机·觉醒](#theme-6) · [芙莉莲·花间研习](#theme-7) · [火影忍者·第七班](#theme-8) · [死神·千本樱](#theme-11) · [死神·斩月](#theme-12) · [电锯人·特异课](#theme-13) · [吉伊卡哇·星夜漫游](#theme-14) · [名侦探柯南·月下追踪](#theme-15) · [灰原哀·琥珀微光](#theme-16) · [怪盗基德·月白预告](#theme-17) · [阿拉蕾·企鹅村](#theme-18) · [七龙珠·龟仙流夏日](#theme-19) · [七龙珠·神龙奇旅](#theme-20) · [小林家的龙女仆](#theme-21) · [EVA·二号机·烈焰](#theme-22) · [芙莉莲·月下旅人](#theme-23) · [高达](#theme-24) · [超能力女儿](#theme-25) · [我叫MT](#theme-26) · [鬼灭之刃·羁绊同行](#theme-27) · [鬼灭之刃·柱之誓约](#theme-28) · [鬼灭之刃·樱庭恋歌](#theme-29) · [夏目友人帐](#theme-30) · [海贼王](#theme-31) · [圣斗士·天马流星](#theme-32) · [圣斗士·黄金十二宫](#theme-33) · [蜡笔小新](#theme-34) · [灌篮高手](#theme-35) · [火影忍者·凯班](#theme-36) · [游戏王·决斗之魂](#theme-37)
+[电锯人·玛奇玛](#theme-2) · [吉伊卡哇·草原野餐](#theme-3) · [柯南·米花协奏](#theme-4) · [七龙珠·金焰并肩](#theme-5) · [EVA·初号机·觉醒](#theme-6) · [芙莉莲·花间研习](#theme-7) · [火影忍者·第七班](#theme-8) · [死神·千本樱](#theme-11) · [死神·斩月](#theme-12) · [电锯人·特异课](#theme-13) · [吉伊卡哇·星夜漫游](#theme-14) · [名侦探柯南·月下追踪](#theme-15) · [灰原哀·琥珀微光](#theme-16) · [怪盗基德·月白预告](#theme-17) · [阿拉蕾·企鹅村](#theme-18) · [七龙珠·龟仙流夏日](#theme-19) · [七龙珠·神龙奇旅](#theme-20) · [小林家的龙女仆](#theme-21) · [EVA·二号机·烈焰](#theme-22) · [芙莉莲·月下旅人](#theme-23) · [高达](#theme-24) · [超能力女儿](#theme-25) · [我叫MT](#theme-26) · [鬼灭之刃·羁绊同行](#theme-27) · [鬼灭之刃·柱之誓约](#theme-28) · [鬼灭之刃·樱庭恋歌](#theme-29) · [夏目友人帐](#theme-30) · [海贼王](#theme-31) · [圣斗士·天马流星](#theme-32) · [圣斗士·黄金十二宫](#theme-33) · [蜡笔小新](#theme-34) · [灌篮高手](#theme-35) · [火影忍者·凯班](#theme-36) · [游戏王·决斗之魂](#theme-37) · [高达·ν高达](#theme-49) · [高达·巴巴托斯](#theme-50) · [高达·自由与正义](#theme-51) · [高达·独角兽觉醒](#theme-52) · [名侦探柯南·宝石谜夜](#theme-53) · [名侦探柯南·大阪同行](#theme-54) · [吉伊卡哇·烘焙小队](#theme-55) · [吉伊卡哇·雨后来信](#theme-56) · [七龙珠·包子山家书](#theme-57) · [七龙珠·布欧甜点屋](#theme-58) · [蜡笔小新·春日部探险队](#theme-61) · [蜡笔小新·野原家的周末](#theme-62) · [我叫MT·美屡的林间手札](#theme-63) · [我叫MT·联盟值日生](#theme-64) · [我叫MT·联盟补给站](#theme-65)
 
 **游戏**
 
-[王者荣耀·绝世舞姬](#theme-9) · [魔兽世界·血精灵](#theme-10) · [炉石传说·冰霜法师](#theme-38) · [炉石传说·冰冠王座](#theme-39) · [王者荣耀·青莲剑仙](#theme-40) · [英雄联盟·九尾妖狐](#theme-41) · [英雄联盟·爆爆火花](#theme-42) · [我的世界](#theme-43) · [守望先锋·守护天使](#theme-44) · [守望先锋·时间跃迁](#theme-45) · [魔兽世界·矮人](#theme-46) · [魔兽世界·兽人战士](#theme-47) · [魔兽世界·牛头人德鲁伊](#theme-48)
+[王者荣耀·绝世舞姬](#theme-9) · [魔兽世界·血精灵](#theme-10) · [炉石传说·冰霜法师](#theme-38) · [炉石传说·冰冠王座](#theme-39) · [王者荣耀·青莲剑仙](#theme-40) · [英雄联盟·九尾妖狐](#theme-41) · [英雄联盟·爆爆火花](#theme-42) · [我的世界](#theme-43) · [守望先锋·守护天使](#theme-44) · [守望先锋·时间跃迁](#theme-45) · [魔兽世界·矮人](#theme-46) · [魔兽世界·兽人战士](#theme-47) · [魔兽世界·牛头人德鲁伊](#theme-48) · [英雄联盟·艾欧尼亚茶会](#theme-59) · [英雄联盟·德玛西亚巡礼](#theme-60)
 
 **其他**
 
@@ -22,11 +24,11 @@
 
 <a name="theme-1"></a>
 
-## 大侠咕嘎与 Doro
+## 大侠咕嘎与Doro
 
 | 浅色 | 深色 |
 | --- | --- |
-| [![大侠咕嘎与 Doro · 浅色](01-daxia-light.webp)](01-daxia-light.webp) | [![大侠咕嘎与 Doro · 深色](01-daxia-dark.webp)](01-daxia-dark.webp) |
+| [![大侠咕嘎与Doro · 浅色](01-daxia-light.webp)](01-daxia-light.webp) | [![大侠咕嘎与Doro · 深色](01-daxia-dark.webp)](01-daxia-dark.webp) |
 
 <a name="theme-2"></a>
 
@@ -54,11 +56,11 @@
 
 <a name="theme-5"></a>
 
-## 龙珠·金焰并肩
+## 七龙珠·金焰并肩
 
 | 浅色 | 深色 |
 | --- | --- |
-| [![龙珠·金焰并肩 · 浅色](05-dragon-ball-z-light.webp)](05-dragon-ball-z-light.webp) | [![龙珠·金焰并肩 · 深色](05-dragon-ball-z-dark.webp)](05-dragon-ball-z-dark.webp) |
+| [![七龙珠·金焰并肩 · 浅色](05-dragon-ball-z-light.webp)](05-dragon-ball-z-light.webp) | [![七龙珠·金焰并肩 · 深色](05-dragon-ball-z-dark.webp)](05-dragon-ball-z-dark.webp) |
 
 <a name="theme-6"></a>
 
@@ -403,3 +405,139 @@
 | 浅色 | 深色 |
 | --- | --- |
 | [![魔兽世界·牛头人德鲁伊 · 浅色](48-wow-tauren-light.webp)](48-wow-tauren-light.webp) | [![魔兽世界·牛头人德鲁伊 · 深色](48-wow-tauren-dark.webp)](48-wow-tauren-dark.webp) |
+
+<a name="theme-49"></a>
+
+## 高达·ν高达
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![高达·ν高达 · 浅色](49-gundam-nu-light.webp)](49-gundam-nu-light.webp) | [![高达·ν高达 · 深色](49-gundam-nu-dark.webp)](49-gundam-nu-dark.webp) |
+
+<a name="theme-50"></a>
+
+## 高达·巴巴托斯
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![高达·巴巴托斯 · 浅色](50-gundam-barbatos-light.webp)](50-gundam-barbatos-light.webp) | [![高达·巴巴托斯 · 深色](50-gundam-barbatos-dark.webp)](50-gundam-barbatos-dark.webp) |
+
+<a name="theme-51"></a>
+
+## 高达·自由与正义
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![高达·自由与正义 · 浅色](51-gundam-seed-light.webp)](51-gundam-seed-light.webp) | [![高达·自由与正义 · 深色](51-gundam-seed-dark.webp)](51-gundam-seed-dark.webp) |
+
+<a name="theme-52"></a>
+
+## 高达·独角兽觉醒
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![高达·独角兽觉醒 · 浅色](52-gundam-unicorn-light.webp)](52-gundam-unicorn-light.webp) | [![高达·独角兽觉醒 · 深色](52-gundam-unicorn-dark.webp)](52-gundam-unicorn-dark.webp) |
+
+<a name="theme-53"></a>
+
+## 名侦探柯南·宝石谜夜
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![名侦探柯南·宝石谜夜 · 浅色](53-conan-jewel-light.webp)](53-conan-jewel-light.webp) | [![名侦探柯南·宝石谜夜 · 深色](53-conan-jewel-dark.webp)](53-conan-jewel-dark.webp) |
+
+<a name="theme-54"></a>
+
+## 名侦探柯南·大阪同行
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![名侦探柯南·大阪同行 · 浅色](54-conan-osaka-light.webp)](54-conan-osaka-light.webp) | [![名侦探柯南·大阪同行 · 深色](54-conan-osaka-dark.webp)](54-conan-osaka-dark.webp) |
+
+<a name="theme-55"></a>
+
+## 吉伊卡哇·烘焙小队
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![吉伊卡哇·烘焙小队 · 浅色](55-chiikawa-bakery-light.webp)](55-chiikawa-bakery-light.webp) | [![吉伊卡哇·烘焙小队 · 深色](55-chiikawa-bakery-dark.webp)](55-chiikawa-bakery-dark.webp) |
+
+<a name="theme-56"></a>
+
+## 吉伊卡哇·雨后来信
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![吉伊卡哇·雨后来信 · 浅色](56-chiikawa-rainy-light.webp)](56-chiikawa-rainy-light.webp) | [![吉伊卡哇·雨后来信 · 深色](56-chiikawa-rainy-dark.webp)](56-chiikawa-rainy-dark.webp) |
+
+<a name="theme-57"></a>
+
+## 七龙珠·包子山家书
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![七龙珠·包子山家书 · 浅色](57-dragon-ball-family-light.webp)](57-dragon-ball-family-light.webp) | [![七龙珠·包子山家书 · 深色](57-dragon-ball-family-dark.webp)](57-dragon-ball-family-dark.webp) |
+
+<a name="theme-58"></a>
+
+## 七龙珠·布欧甜点屋
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![七龙珠·布欧甜点屋 · 浅色](58-dragon-ball-sweets-light.webp)](58-dragon-ball-sweets-light.webp) | [![七龙珠·布欧甜点屋 · 深色](58-dragon-ball-sweets-dark.webp)](58-dragon-ball-sweets-dark.webp) |
+
+<a name="theme-59"></a>
+
+## 英雄联盟·艾欧尼亚茶会
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![英雄联盟·艾欧尼亚茶会 · 浅色](59-lol-ionia-light.webp)](59-lol-ionia-light.webp) | [![英雄联盟·艾欧尼亚茶会 · 深色](59-lol-ionia-dark.webp)](59-lol-ionia-dark.webp) |
+
+<a name="theme-60"></a>
+
+## 英雄联盟·德玛西亚巡礼
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![英雄联盟·德玛西亚巡礼 · 浅色](60-lol-demacia-light.webp)](60-lol-demacia-light.webp) | [![英雄联盟·德玛西亚巡礼 · 深色](60-lol-demacia-dark.webp)](60-lol-demacia-dark.webp) |
+
+<a name="theme-61"></a>
+
+## 蜡笔小新·春日部探险队
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![蜡笔小新·春日部探险队 · 浅色](61-shinchan-friends-light.webp)](61-shinchan-friends-light.webp) | [![蜡笔小新·春日部探险队 · 深色](61-shinchan-friends-dark.webp)](61-shinchan-friends-dark.webp) |
+
+<a name="theme-62"></a>
+
+## 蜡笔小新·野原家的周末
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![蜡笔小新·野原家的周末 · 浅色](62-shinchan-family-light.webp)](62-shinchan-family-light.webp) | [![蜡笔小新·野原家的周末 · 深色](62-shinchan-family-dark.webp)](62-shinchan-family-dark.webp) |
+
+<a name="theme-63"></a>
+
+## 我叫MT·美屡的林间手札
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![我叫MT·美屡的林间手札 · 浅色](63-i-am-mt-huntress-light.webp)](63-i-am-mt-huntress-light.webp) | [![我叫MT·美屡的林间手札 · 深色](63-i-am-mt-huntress-dark.webp)](63-i-am-mt-huntress-dark.webp) |
+
+<a name="theme-64"></a>
+
+## 我叫MT·联盟值日生
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![我叫MT·联盟值日生 · 浅色](64-i-am-mt-alliance-duo-light.webp)](64-i-am-mt-alliance-duo-light.webp) | [![我叫MT·联盟值日生 · 深色](64-i-am-mt-alliance-duo-dark.webp)](64-i-am-mt-alliance-duo-dark.webp) |
+
+<a name="theme-65"></a>
+
+## 我叫MT·联盟补给站
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![我叫MT·联盟补给站 · 浅色](65-i-am-mt-alliance-camp-light.webp)](65-i-am-mt-alliance-camp-light.webp) | [![我叫MT·联盟补给站 · 深色](65-i-am-mt-alliance-camp-dark.webp)](65-i-am-mt-alliance-camp-dark.webp) |
