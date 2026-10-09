@@ -41,6 +41,8 @@ else:
 # (source stem, output stem, ratio W:H, vertical band center as a fraction
 # of source height)
 JOBS = [
+    ("game-five-20261009/ff7-seventh-heaven/banner-light", "ff7-seventh-heaven-banner-light", 6.0, 0.5),
+    ("game-five-20261009/ff7-seventh-heaven/banner-dark", "ff7-seventh-heaven-banner-dark", 6.0, 0.5),
     ("game-five-20261009/hsr-firefly/banner-light", "hsr-firefly-banner-light", 6.0, 0.5),
     ("game-five-20261009/hsr-firefly/banner-dark", "hsr-firefly-banner-dark", 6.0, 0.5),
     ("game-five-20261009/hsr-hunters/banner-light", "hsr-hunters-banner-light", 6.0, 0.5),
@@ -243,6 +245,8 @@ JOBS = [
 # left fade end, right fade start), as fractions of the final strip width.
 # All families use Daxia's 25% left / 10% right edge treatment.
 BAKED_HORIZONTAL_FADES = {
+    "ff7-seventh-heaven-banner-light": ("#EDE5D7", 0.25, 0.90),
+    "ff7-seventh-heaven-banner-dark": ("#303630", 0.25, 0.90),
     "hsr-firefly-banner-light": ("#E0EEE7", 0.25, 0.90),
     "hsr-firefly-banner-dark": ("#203A36", 0.25, 0.90),
     "hsr-hunters-banner-light": ("#EDE2EE", 0.25, 0.90),

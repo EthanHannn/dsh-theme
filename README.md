@@ -2,16 +2,17 @@
 
 为 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 提供角色插画与纯色主题。安装后，在**设置 → 主题与外观**中选择主题，并切换浅色、深色或跟随系统。
 
-共 86 组主题，每组包含氛围版和简约版，共 344 套浅深色外观。氛围版包含角色壁纸、场景横幅和侧栏伙伴；简约版保留配色，不显示图片装饰。
+共 87 组主题，每组包含氛围版和简约版，共 348 套浅深色外观。氛围版包含角色壁纸、场景横幅和侧栏伙伴；简约版保留配色，不显示图片装饰。
 
 ## 最新主题展示
 
-2026-10-09 新增的 38 套主题与重绘的「高达·RX-78-2」，浅色、深色直接展示。以下为 1920 × 1080 的 Harness 首页实拍，点击图片查看原尺寸。
+2026-10-09 新增的 39 套主题与重绘的「高达·RX-78-2」，浅色、深色直接展示。以下为 1920 × 1080 的 Harness 首页实拍，点击图片查看原尺寸。
 
 「胆大党·放学怪谈」浅色插画已重绘，调整厄卡伦的面部和站姿，并缩小右下角人物。
 
 | 主题 | 浅色 | 深色 |
 | --- | --- | --- |
+| [最终幻想VII·第七天堂](docs/screenshots/README.md#theme-87) | [![最终幻想VII·第七天堂 · 浅色](docs/screenshots/87-ff7-seventh-heaven-light.webp)](docs/screenshots/87-ff7-seventh-heaven-light.webp) | [![最终幻想VII·第七天堂 · 深色](docs/screenshots/87-ff7-seventh-heaven-dark.webp)](docs/screenshots/87-ff7-seventh-heaven-dark.webp) |
 | [崩坏：星穹铁道·萤火之约](docs/screenshots/README.md#theme-86) | [![崩坏：星穹铁道·萤火之约 · 浅色](docs/screenshots/86-hsr-firefly-light.webp)](docs/screenshots/86-hsr-firefly-light.webp) | [![崩坏：星穹铁道·萤火之约 · 深色](docs/screenshots/86-hsr-firefly-dark.webp)](docs/screenshots/86-hsr-firefly-dark.webp) |
 | [崩坏：星穹铁道·星核夜话](docs/screenshots/README.md#theme-85) | [![崩坏：星穹铁道·星核夜话 · 浅色](docs/screenshots/85-hsr-hunters-light.webp)](docs/screenshots/85-hsr-hunters-light.webp) | [![崩坏：星穹铁道·星核夜话 · 深色](docs/screenshots/85-hsr-hunters-dark.webp)](docs/screenshots/85-hsr-hunters-dark.webp) |
 | [崩坏：星穹铁道·列车晨光](docs/screenshots/README.md#theme-84) | [![崩坏：星穹铁道·列车晨光 · 浅色](docs/screenshots/84-hsr-express-light.webp)](docs/screenshots/84-hsr-express-light.webp) | [![崩坏：星穹铁道·列车晨光 · 深色](docs/screenshots/84-hsr-express-dark.webp)](docs/screenshots/84-hsr-express-dark.webp) |
@@ -52,7 +53,7 @@
 | [我叫MT·联盟值日生](docs/screenshots/README.md#theme-64) | [![我叫MT·联盟值日生 · 浅色](docs/screenshots/64-i-am-mt-alliance-duo-light.webp)](docs/screenshots/64-i-am-mt-alliance-duo-light.webp) | [![我叫MT·联盟值日生 · 深色](docs/screenshots/64-i-am-mt-alliance-duo-dark.webp)](docs/screenshots/64-i-am-mt-alliance-duo-dark.webp) |
 | [我叫MT·联盟补给站](docs/screenshots/README.md#theme-65) | [![我叫MT·联盟补给站 · 浅色](docs/screenshots/65-i-am-mt-alliance-camp-light.webp)](docs/screenshots/65-i-am-mt-alliance-camp-light.webp) | [![我叫MT·联盟补给站 · 深色](docs/screenshots/65-i-am-mt-alliance-camp-dark.webp)](docs/screenshots/65-i-am-mt-alliance-camp-dark.webp) |
 
-[查看全部 86 套氛围主题的浅深色预览](docs/screenshots/README.md)，可按动漫、游戏和其他分类跳转。
+[查看全部 87 套氛围主题的浅深色预览](docs/screenshots/README.md)，可按动漫、游戏和其他分类跳转。
 
 ## 兼容版本
 
@@ -136,8 +137,9 @@ Linux 可在安装包所在目录执行 `sha256sum -c SHA256SUMS.txt`；macOS �
 氛围版的配色和角色如下。完整效果见[截图画廊](docs/screenshots/README.md)。
 
 <details>
-<summary>展开全部 86 组主题</summary>
+<summary>展开全部 87 组主题</summary>
 
+- **最终幻想VII·第七天堂**：旧木棕 / 军绿 / 黄铜金，克劳德、蒂法与巴雷特的第七天堂休憩。
 - **崩坏：星穹铁道·萤火之约**：萤火青 / 奶油白 / 夜景金，流萤与星的屋顶约定。
 - **崩坏：星穹铁道·星核夜话**：梅子紫 / 雾灰 / 霓虹青，卡芙卡、银狼与刃的任务间隙。
 - **崩坏：星穹铁道·列车晨光**：列车蓝 / 相片粉 / 黄铜金，三月七、丹恒与星的旅途晨光。
