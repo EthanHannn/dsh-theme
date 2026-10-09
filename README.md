@@ -2,16 +2,17 @@
 
 为 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 提供角色插画与纯色主题。安装后，在**设置 → 主题与外观**中选择主题，并切换浅色、深色或跟随系统。
 
-共 92 组主题，每组包含氛围版和简约版，共 368 套浅深色外观。氛围版包含角色壁纸、场景横幅和侧栏伙伴；简约版保留配色，不显示图片装饰。
+共 93 组主题，每组包含氛围版和简约版，共 372 套浅深色外观。氛围版包含角色壁纸、场景横幅和侧栏伙伴；简约版保留配色，不显示图片装饰。
 
 ## 最新主题展示
 
-2026-10-09 新增的 44 套主题与重绘的「高达·RX-78-2」，浅色、深色直接展示。以下为 1920 × 1080 的 Harness 首页实拍，点击图片查看原尺寸。
+2026-10-09 新增的 45 套主题与重绘的「高达·RX-78-2」，浅色、深色直接展示。以下为 1920 × 1080 的 Harness 首页实拍，点击图片查看原尺寸。
 
 「胆大党·放学怪谈」浅色插画已重绘，调整厄卡伦的面部和站姿，并缩小右下角人物。
 
 | 主题 | 浅色 | 深色 |
 | --- | --- | --- |
+| [黑神话：悟空·古寺行旅](docs/screenshots/README.md#theme-93) | [![黑神话：悟空·古寺行旅 · 浅色](docs/screenshots/93-wukong-pilgrimage-light.webp)](docs/screenshots/93-wukong-pilgrimage-light.webp) | [![黑神话：悟空·古寺行旅 · 深色](docs/screenshots/93-wukong-pilgrimage-dark.webp)](docs/screenshots/93-wukong-pilgrimage-dark.webp) |
 | [绝区零·六课雪夜](docs/screenshots/README.md#theme-92) | [![绝区零·六课雪夜 · 浅色](docs/screenshots/92-zzz-section-six-light.webp)](docs/screenshots/92-zzz-section-six-light.webp) | [![绝区零·六课雪夜 · 深色](docs/screenshots/92-zzz-section-six-dark.webp)](docs/screenshots/92-zzz-section-six-dark.webp) |
 | [绝区零·维多利亚茶歇](docs/screenshots/README.md#theme-91) | [![绝区零·维多利亚茶歇 · 浅色](docs/screenshots/91-zzz-victoria-light.webp)](docs/screenshots/91-zzz-victoria-light.webp) | [![绝区零·维多利亚茶歇 · 深色](docs/screenshots/91-zzz-victoria-dark.webp)](docs/screenshots/91-zzz-victoria-dark.webp) |
 | [绝区零·六分街委托](docs/screenshots/README.md#theme-90) | [![绝区零·六分街委托 · 浅色](docs/screenshots/90-zzz-sixth-street-light.webp)](docs/screenshots/90-zzz-sixth-street-light.webp) | [![绝区零·六分街委托 · 深色](docs/screenshots/90-zzz-sixth-street-dark.webp)](docs/screenshots/90-zzz-sixth-street-dark.webp) |
@@ -58,7 +59,7 @@
 | [我叫MT·联盟值日生](docs/screenshots/README.md#theme-64) | [![我叫MT·联盟值日生 · 浅色](docs/screenshots/64-i-am-mt-alliance-duo-light.webp)](docs/screenshots/64-i-am-mt-alliance-duo-light.webp) | [![我叫MT·联盟值日生 · 深色](docs/screenshots/64-i-am-mt-alliance-duo-dark.webp)](docs/screenshots/64-i-am-mt-alliance-duo-dark.webp) |
 | [我叫MT·联盟补给站](docs/screenshots/README.md#theme-65) | [![我叫MT·联盟补给站 · 浅色](docs/screenshots/65-i-am-mt-alliance-camp-light.webp)](docs/screenshots/65-i-am-mt-alliance-camp-light.webp) | [![我叫MT·联盟补给站 · 深色](docs/screenshots/65-i-am-mt-alliance-camp-dark.webp)](docs/screenshots/65-i-am-mt-alliance-camp-dark.webp) |
 
-[查看全部 92 套氛围主题的浅深色预览](docs/screenshots/README.md)，可按动漫、游戏和其他分类跳转。
+[查看全部 93 套氛围主题的浅深色预览](docs/screenshots/README.md)，可按动漫、游戏和其他分类跳转。
 
 ## 兼容版本
 
@@ -142,8 +143,9 @@ Linux 可在安装包所在目录执行 `sha256sum -c SHA256SUMS.txt`；macOS �
 氛围版的配色和角色如下。完整效果见[截图画廊](docs/screenshots/README.md)。
 
 <details>
-<summary>展开全部 92 组主题</summary>
+<summary>展开全部 93 组主题</summary>
 
+- **黑神话：悟空·古寺行旅**：古松绿 / 石灰白 / 旧铜，天命人与八戒的古寺旅途。
 - **绝区零·六课雪夜**：雪雾蓝 / 制服黑 / 樱粉，星见雅、月城柳与苍角的巡逻小憩。
 - **绝区零·维多利亚茶歇**：银灰 / 茶点米白 / 莓红，艾莲、莱卡恩与丽娜的家政茶歇。
 - **绝区零·六分街委托**：荧光青柠 / 胶片灰 / 委托粉，妮可、安比与比利的六分街日常。
