@@ -2,14 +2,15 @@
 
 为 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 提供角色插画与纯色主题。安装后，在**设置 → 主题与外观**中选择主题，并切换浅色、深色或跟随系统。
 
-共 73 组主题，每组包含氛围版和简约版，共 292 套浅深色外观。氛围版包含角色壁纸、场景横幅和侧栏伙伴；简约版保留配色，不显示图片装饰。
+共 74 组主题，每组包含氛围版和简约版，共 296 套浅深色外观。氛围版包含角色壁纸、场景横幅和侧栏伙伴；简约版保留配色，不显示图片装饰。
 
 ## 最新主题展示
 
-2026-10-09 新增的 25 套主题与重绘的「高达·RX-78-2」，浅色、深色直接展示。以下为 1920 × 1080 的 Harness 首页实拍，点击图片查看原尺寸。
+2026-10-09 新增的 26 套主题与重绘的「高达·RX-78-2」，浅色、深色直接展示。以下为 1920 × 1080 的 Harness 首页实拍，点击图片查看原尺寸。
 
 | 主题 | 浅色 | 深色 |
 | --- | --- | --- |
+| [咒术回战·同窗并肩](docs/screenshots/README.md#theme-74) | [![咒术回战·同窗并肩 · 浅色](docs/screenshots/74-jujutsu-classmates-light.webp)](docs/screenshots/74-jujutsu-classmates-light.webp) | [![咒术回战·同窗并肩 · 深色](docs/screenshots/74-jujutsu-classmates-dark.webp)](docs/screenshots/74-jujutsu-classmates-dark.webp) |
 | [咒术回战·高专旧日](docs/screenshots/README.md#theme-73) | [![咒术回战·高专旧日 · 浅色](docs/screenshots/73-jujutsu-school-days-light.webp)](docs/screenshots/73-jujutsu-school-days-light.webp) | [![咒术回战·高专旧日 · 深色](docs/screenshots/73-jujutsu-school-days-dark.webp)](docs/screenshots/73-jujutsu-school-days-dark.webp) |
 | [咒术回战·一年级集结](docs/screenshots/README.md#theme-72) | [![咒术回战·一年级集结 · 浅色](docs/screenshots/72-jujutsu-first-years-light.webp)](docs/screenshots/72-jujutsu-first-years-light.webp) | [![咒术回战·一年级集结 · 深色](docs/screenshots/72-jujutsu-first-years-dark.webp)](docs/screenshots/72-jujutsu-first-years-dark.webp) |
 | [哆啦A梦·星空航路](docs/screenshots/README.md#theme-71) | [![哆啦A梦·星空航路 · 浅色](docs/screenshots/71-doraemon-starlight-light.webp)](docs/screenshots/71-doraemon-starlight-light.webp) | [![哆啦A梦·星空航路 · 深色](docs/screenshots/71-doraemon-starlight-dark.webp)](docs/screenshots/71-doraemon-starlight-dark.webp) |
@@ -37,7 +38,7 @@
 | [我叫MT·联盟值日生](docs/screenshots/README.md#theme-64) | [![我叫MT·联盟值日生 · 浅色](docs/screenshots/64-i-am-mt-alliance-duo-light.webp)](docs/screenshots/64-i-am-mt-alliance-duo-light.webp) | [![我叫MT·联盟值日生 · 深色](docs/screenshots/64-i-am-mt-alliance-duo-dark.webp)](docs/screenshots/64-i-am-mt-alliance-duo-dark.webp) |
 | [我叫MT·联盟补给站](docs/screenshots/README.md#theme-65) | [![我叫MT·联盟补给站 · 浅色](docs/screenshots/65-i-am-mt-alliance-camp-light.webp)](docs/screenshots/65-i-am-mt-alliance-camp-light.webp) | [![我叫MT·联盟补给站 · 深色](docs/screenshots/65-i-am-mt-alliance-camp-dark.webp)](docs/screenshots/65-i-am-mt-alliance-camp-dark.webp) |
 
-[查看全部 73 套氛围主题的浅深色预览](docs/screenshots/README.md)，可按动漫、游戏和其他分类跳转。
+[查看全部 74 套氛围主题的浅深色预览](docs/screenshots/README.md)，可按动漫、游戏和其他分类跳转。
 
 ## 兼容版本
 
@@ -121,8 +122,9 @@ Linux 可在安装包所在目录执行 `sha256sum -c SHA256SUMS.txt`；macOS �
 氛围版的配色和角色如下。完整效果见[截图画廊](docs/screenshots/README.md)。
 
 <details>
-<summary>展开全部 73 组主题</summary>
+<summary>展开全部 74 组主题</summary>
 
+- **咒术回战·同窗并肩**：训练场苔绿 / 乙骨白 / 木质暖金，乙骨、真希、狗卷与熊猫的同窗四人组。
 - **咒术回战·高专旧日**：夏日叶绿 / 冷茶青 / 回忆暖金，少年五条、夏油与硝子的高专旧日。
 - **咒术回战·一年级集结**：制服藏蓝 / 虎杖珊瑚红 / 高专石灰，虎杖、伏黑、钉崎与五条的四人竖向海报。
 - **哆啦A梦·星空航路**：星图淡蓝 / 宇宙靛紫 / 导航暖金，哆啦A梦、大雄与静香的星空探索。

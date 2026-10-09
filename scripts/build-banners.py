@@ -41,6 +41,8 @@ else:
 # (source stem, output stem, ratio W:H, vertical band center as a fraction
 # of source height)
 JOBS = [
+    ("anime-five-20261009/jujutsu-classmates/banner-light", "jujutsu-classmates-banner-light", 6.0, 0.5),
+    ("anime-five-20261009/jujutsu-classmates/banner-dark", "jujutsu-classmates-banner-dark", 6.0, 0.5),
     ("anime-five-20261009/jujutsu-school-days/banner-light", "jujutsu-school-days-banner-light", 6.0, 0.5),
     ("anime-five-20261009/jujutsu-school-days/banner-dark", "jujutsu-school-days-banner-dark", 6.0, 0.5),
     ("anime-five-20261009/jujutsu-first-years/banner-light", "jujutsu-first-years-banner-light", 6.0, 0.5),
@@ -217,6 +219,8 @@ JOBS = [
 # left fade end, right fade start), as fractions of the final strip width.
 # All families use Daxia's 25% left / 10% right edge treatment.
 BAKED_HORIZONTAL_FADES = {
+    "jujutsu-classmates-banner-light": ("#EDEDDD", 0.25, 0.90),
+    "jujutsu-classmates-banner-dark": ("#273026", 0.25, 0.90),
     "jujutsu-school-days-banner-light": ("#E8F0E5", 0.25, 0.90),
     "jujutsu-school-days-banner-dark": ("#20332E", 0.25, 0.90),
     "jujutsu-first-years-banner-light": ("#E6EBF1", 0.25, 0.90),
