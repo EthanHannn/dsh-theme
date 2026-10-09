@@ -41,6 +41,8 @@ else:
 # (source stem, output stem, ratio W:H, vertical band center as a fraction
 # of source height)
 JOBS = [
+    ("expansion-20261009/i-am-mt-huntress/banner-light", "i-am-mt-huntress-banner-light", 6.0, 0.5),
+    ("expansion-20261009/i-am-mt-huntress/banner-dark", "i-am-mt-huntress-banner-dark", 6.0, 0.5),
     ("expansion-20261009/shinchan-family/banner-light", "shinchan-family-banner-light", 6.0, 0.5),
     ("expansion-20261009/shinchan-family/banner-dark", "shinchan-family-banner-dark", 6.0, 0.5),
     ("expansion-20261009/shinchan-friends/banner-light", "shinchan-friends-banner-light", 6.0, 0.5),
@@ -191,6 +193,8 @@ JOBS = [
 # left fade end, right fade start), as fractions of the final strip width.
 # All families use Daxia's 25% left / 10% right edge treatment.
 BAKED_HORIZONTAL_FADES = {
+    "i-am-mt-huntress-banner-light": ("#EEF0DE", 0.25, 0.90),
+    "i-am-mt-huntress-banner-dark": ("#21352A", 0.25, 0.90),
     "shinchan-family-banner-light": ("#F7ECE1", 0.25, 0.90),
     "shinchan-family-banner-dark": ("#392F3D", 0.25, 0.90),
     "shinchan-friends-banner-light": ("#F4F0DC", 0.25, 0.90),
