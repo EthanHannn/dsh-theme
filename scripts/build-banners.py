@@ -41,6 +41,8 @@ else:
 # (source stem, output stem, ratio W:H, vertical band center as a fraction
 # of source height)
 JOBS = [
+    ("anime-five-20261009/dandadan-awakening/banner-light", "dandadan-awakening-banner-light", 6.0, 0.5),
+    ("anime-five-20261009/dandadan-awakening/banner-dark", "dandadan-awakening-banner-dark", 6.0, 0.5),
     ("anime-five-20261009/dandadan-afterschool/banner-light", "dandadan-afterschool-banner-light", 6.0, 0.5),
     ("anime-five-20261009/dandadan-afterschool/banner-dark", "dandadan-afterschool-banner-dark", 6.0, 0.5),
     ("anime-five-20261009/sumikko-rainy/banner-light", "sumikko-rainy-banner-light", 6.0, 0.5),
@@ -227,6 +229,8 @@ JOBS = [
 # left fade end, right fade start), as fractions of the final strip width.
 # All families use Daxia's 25% left / 10% right edge treatment.
 BAKED_HORIZONTAL_FADES = {
+    "dandadan-awakening-banner-light": ("#E8E5F1", 0.25, 0.90),
+    "dandadan-awakening-banner-dark": ("#222137", 0.25, 0.90),
     "dandadan-afterschool-banner-light": ("#F1E2DE", 0.25, 0.90),
     "dandadan-afterschool-banner-dark": ("#302236", 0.25, 0.90),
     "sumikko-rainy-banner-light": ("#E2F0F0", 0.25, 0.90),
