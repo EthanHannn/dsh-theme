@@ -41,6 +41,8 @@ else:
 # (source stem, output stem, ratio W:H, vertical band center as a fraction
 # of source height)
 JOBS = [
+    ("game-five-20261009/genshin-inazuma/banner-light", "genshin-inazuma-banner-light", 6.0, 0.5),
+    ("game-five-20261009/genshin-inazuma/banner-dark", "genshin-inazuma-banner-dark", 6.0, 0.5),
     ("game-five-20261009/genshin-sumeru/banner-light", "genshin-sumeru-banner-light", 6.0, 0.5),
     ("game-five-20261009/genshin-sumeru/banner-dark", "genshin-sumeru-banner-dark", 6.0, 0.5),
     ("game-five-20261009/genshin-fontaine/banner-light", "genshin-fontaine-banner-light", 6.0, 0.5),
@@ -235,6 +237,8 @@ JOBS = [
 # left fade end, right fade start), as fractions of the final strip width.
 # All families use Daxia's 25% left / 10% right edge treatment.
 BAKED_HORIZONTAL_FADES = {
+    "genshin-inazuma-banner-light": ("#EFE2EC", 0.25, 0.90),
+    "genshin-inazuma-banner-dark": ("#34263F", 0.25, 0.90),
     "genshin-sumeru-banner-light": ("#E8EEDB", 0.25, 0.90),
     "genshin-sumeru-banner-dark": ("#23352A", 0.25, 0.90),
     "genshin-fontaine-banner-light": ("#E4EDF5", 0.25, 0.90),
