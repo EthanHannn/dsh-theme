@@ -41,6 +41,8 @@ else:
 # (source stem, output stem, ratio W:H, vertical band center as a fraction
 # of source height)
 JOBS = [
+    ("game-five-20261009/zzz-sixth-street/banner-light-empty-v2", "zzz-sixth-street-banner-light", 6.0, 0.5),
+    ("game-five-20261009/zzz-sixth-street/banner-dark-empty-v2", "zzz-sixth-street-banner-dark", 6.0, 0.5),
     ("game-five-20261009/ff7-one-wing/banner-light", "ff7-one-wing-banner-light", 6.0, 0.5),
     ("game-five-20261009/ff7-one-wing/banner-dark", "ff7-one-wing-banner-dark", 6.0, 0.5),
     ("game-five-20261009/ff7-church/banner-light", "ff7-church-banner-light", 6.0, 0.5),
@@ -249,6 +251,8 @@ JOBS = [
 # left fade end, right fade start), as fractions of the final strip width.
 # All families use Daxia's 25% left / 10% right edge treatment.
 BAKED_HORIZONTAL_FADES = {
+    "zzz-sixth-street-banner-light": ("#E9EDD9", 0.25, 0.90),
+    "zzz-sixth-street-banner-dark": ("#303A28", 0.25, 0.90),
     "ff7-one-wing-banner-light": ("#E2E8EC", 0.25, 0.90),
     "ff7-one-wing-banner-dark": ("#233240", 0.25, 0.90),
     "ff7-church-banner-light": ("#F2E5DF", 0.25, 0.90),

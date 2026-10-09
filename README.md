@@ -2,16 +2,17 @@
 
 为 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 提供角色插画与纯色主题。安装后，在**设置 → 主题与外观**中选择主题，并切换浅色、深色或跟随系统。
 
-共 89 组主题，每组包含氛围版和简约版，共 356 套浅深色外观。氛围版包含角色壁纸、场景横幅和侧栏伙伴；简约版保留配色，不显示图片装饰。
+共 90 组主题，每组包含氛围版和简约版，共 360 套浅深色外观。氛围版包含角色壁纸、场景横幅和侧栏伙伴；简约版保留配色，不显示图片装饰。
 
 ## 最新主题展示
 
-2026-10-09 新增的 41 套主题与重绘的「高达·RX-78-2」，浅色、深色直接展示。以下为 1920 × 1080 的 Harness 首页实拍，点击图片查看原尺寸。
+2026-10-09 新增的 42 套主题与重绘的「高达·RX-78-2」，浅色、深色直接展示。以下为 1920 × 1080 的 Harness 首页实拍，点击图片查看原尺寸。
 
 「胆大党·放学怪谈」浅色插画已重绘，调整厄卡伦的面部和站姿，并缩小右下角人物。
 
 | 主题 | 浅色 | 深色 |
 | --- | --- | --- |
+| [绝区零·六分街委托](docs/screenshots/README.md#theme-90) | [![绝区零·六分街委托 · 浅色](docs/screenshots/90-zzz-sixth-street-light.webp)](docs/screenshots/90-zzz-sixth-street-light.webp) | [![绝区零·六分街委托 · 深色](docs/screenshots/90-zzz-sixth-street-dark.webp)](docs/screenshots/90-zzz-sixth-street-dark.webp) |
 | [最终幻想VII·片翼宿命](docs/screenshots/README.md#theme-89) | [![最终幻想VII·片翼宿命 · 浅色](docs/screenshots/89-ff7-one-wing-light.webp)](docs/screenshots/89-ff7-one-wing-light.webp) | [![最终幻想VII·片翼宿命 · 深色](docs/screenshots/89-ff7-one-wing-dark.webp)](docs/screenshots/89-ff7-one-wing-dark.webp) |
 | [最终幻想VII·教堂花信](docs/screenshots/README.md#theme-88) | [![最终幻想VII·教堂花信 · 浅色](docs/screenshots/88-ff7-church-light.webp)](docs/screenshots/88-ff7-church-light.webp) | [![最终幻想VII·教堂花信 · 深色](docs/screenshots/88-ff7-church-dark.webp)](docs/screenshots/88-ff7-church-dark.webp) |
 | [最终幻想VII·第七天堂](docs/screenshots/README.md#theme-87) | [![最终幻想VII·第七天堂 · 浅色](docs/screenshots/87-ff7-seventh-heaven-light.webp)](docs/screenshots/87-ff7-seventh-heaven-light.webp) | [![最终幻想VII·第七天堂 · 深色](docs/screenshots/87-ff7-seventh-heaven-dark.webp)](docs/screenshots/87-ff7-seventh-heaven-dark.webp) |
@@ -55,7 +56,7 @@
 | [我叫MT·联盟值日生](docs/screenshots/README.md#theme-64) | [![我叫MT·联盟值日生 · 浅色](docs/screenshots/64-i-am-mt-alliance-duo-light.webp)](docs/screenshots/64-i-am-mt-alliance-duo-light.webp) | [![我叫MT·联盟值日生 · 深色](docs/screenshots/64-i-am-mt-alliance-duo-dark.webp)](docs/screenshots/64-i-am-mt-alliance-duo-dark.webp) |
 | [我叫MT·联盟补给站](docs/screenshots/README.md#theme-65) | [![我叫MT·联盟补给站 · 浅色](docs/screenshots/65-i-am-mt-alliance-camp-light.webp)](docs/screenshots/65-i-am-mt-alliance-camp-light.webp) | [![我叫MT·联盟补给站 · 深色](docs/screenshots/65-i-am-mt-alliance-camp-dark.webp)](docs/screenshots/65-i-am-mt-alliance-camp-dark.webp) |
 
-[查看全部 89 套氛围主题的浅深色预览](docs/screenshots/README.md)，可按动漫、游戏和其他分类跳转。
+[查看全部 90 套氛围主题的浅深色预览](docs/screenshots/README.md)，可按动漫、游戏和其他分类跳转。
 
 ## 兼容版本
 
@@ -139,8 +140,9 @@ Linux 可在安装包所在目录执行 `sha256sum -c SHA256SUMS.txt`；macOS �
 氛围版的配色和角色如下。完整效果见[截图画廊](docs/screenshots/README.md)。
 
 <details>
-<summary>展开全部 89 组主题</summary>
+<summary>展开全部 90 组主题</summary>
 
+- **绝区零·六分街委托**：荧光青柠 / 胶片灰 / 委托粉，妮可、安比与比利的六分街日常。
 - **最终幻想VII·片翼宿命**：银灰 / 魔晄青 / 夜幕蓝，克劳德与萨菲罗斯的紧凑双人宿命海报。
 - **最终幻想VII·教堂花信**：花瓣粉 / 教堂米白 / 暖灯金，爱丽丝与扎克的花束与书信。
 - **最终幻想VII·第七天堂**：旧木棕 / 军绿 / 黄铜金，克劳德、蒂法与巴雷特的第七天堂休憩。
