@@ -642,6 +642,8 @@
 
 ## 胆大党·放学怪谈
 
+浅色插画已重绘，调整厄卡伦的面部和站姿，并缩小右下角人物。
+
 | 浅色 | 深色 |
 | --- | --- |
 | [![胆大党·放学怪谈 · 浅色](78-dandadan-afterschool-light.webp)](78-dandadan-afterschool-light.webp) | [![胆大党·放学怪谈 · 深色](78-dandadan-afterschool-dark.webp)](78-dandadan-afterschool-dark.webp) |

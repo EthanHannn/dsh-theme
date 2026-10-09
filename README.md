@@ -8,6 +8,8 @@
 
 2026-10-09 新增的 32 套主题与重绘的「高达·RX-78-2」，浅色、深色直接展示。以下为 1920 × 1080 的 Harness 首页实拍，点击图片查看原尺寸。
 
+「胆大党·放学怪谈」浅色插画已重绘，调整厄卡伦的面部和站姿，并缩小右下角人物。
+
 | 主题 | 浅色 | 深色 |
 | --- | --- | --- |
 | [胆大党·夜巡同盟](docs/screenshots/README.md#theme-80) | [![胆大党·夜巡同盟 · 浅色](docs/screenshots/80-dandadan-nightwatch-light.webp)](docs/screenshots/80-dandadan-nightwatch-light.webp) | [![胆大党·夜巡同盟 · 深色](docs/screenshots/80-dandadan-nightwatch-dark.webp)](docs/screenshots/80-dandadan-nightwatch-dark.webp) |
