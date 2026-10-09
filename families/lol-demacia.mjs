@@ -67,10 +67,10 @@ const family = createVividFamily({
 // Keep secondary labels readable on tinted hover surfaces.
 family.dark.textSecondary = "#B5BCC5";
 
-// Keep the group compact and the central reading area clear.
-family.decor.wallpaperSize = "min(36vw, 460px, 46vh)";
+// Use the portrait height while keeping its width within the reading gutter.
+family.decor.wallpaperSize = "min(29vw, 430px, calc(68vh * var(--dsw-pack-wallpaper-ratio, 0.67)), max(220px, calc((100vw - 1200px) / 2 - 24px)))";
 family.decor.wallpaperPosition = "right 24px bottom 20px";
-family.decor.heroTranslate = "calc(-0.3 * min(36vw, 460px, 46vh)) calc(-1 * min(6vh, 60px))";
-family.decor.heroMaxWidth = "calc(100vw - 280px - min(36vw, 460px, 46vh) - 64px)";
+family.decor.heroTranslate = "calc(-0.3 * min(29vw, 430px)) calc(-1 * min(6vh, 60px))";
+family.decor.heroMaxWidth = "calc(100vw - 280px - min(29vw, 430px) - 64px)";
 
 export default family;
