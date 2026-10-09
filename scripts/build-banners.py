@@ -41,6 +41,8 @@ else:
 # (source stem, output stem, ratio W:H, vertical band center as a fraction
 # of source height)
 JOBS = [
+    ("anime-five-20261009/sumikko-bakery/banner-light", "sumikko-bakery-banner-light", 6.0, 0.5),
+    ("anime-five-20261009/sumikko-bakery/banner-dark", "sumikko-bakery-banner-dark", 6.0, 0.5),
     ("anime-five-20261009/sumikko-teahouse/banner-light", "sumikko-teahouse-banner-light", 6.0, 0.5),
     ("anime-five-20261009/sumikko-teahouse/banner-dark", "sumikko-teahouse-banner-dark", 6.0, 0.5),
     ("anime-five-20261009/jujutsu-classmates/banner-light", "jujutsu-classmates-banner-light", 6.0, 0.5),
@@ -221,6 +223,8 @@ JOBS = [
 # left fade end, right fade start), as fractions of the final strip width.
 # All families use Daxia's 25% left / 10% right edge treatment.
 BAKED_HORIZONTAL_FADES = {
+    "sumikko-bakery-banner-light": ("#F7E8D0", 0.25, 0.90),
+    "sumikko-bakery-banner-dark": ("#352921", 0.25, 0.90),
     "sumikko-teahouse-banner-light": ("#F4EDD9", 0.25, 0.90),
     "sumikko-teahouse-banner-dark": ("#313327", 0.25, 0.90),
     "jujutsu-classmates-banner-light": ("#EDEDDD", 0.25, 0.90),
