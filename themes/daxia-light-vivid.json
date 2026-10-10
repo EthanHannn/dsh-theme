@@ -1,6 +1,6 @@
 {
   "id": "daxia-light-vivid",
-  "name": "Daxia Guga & Doro Light",
+  "name": "Guga & Doro · Jianghu Heroes Light",
   "colorScheme": "light",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #F5F2EA 50%, #EAE8DF)",

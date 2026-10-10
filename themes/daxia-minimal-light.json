@@ -1,6 +1,6 @@
 {
   "id": "daxia-minimal-light",
-  "name": "Daxia Guga & Doro · Minimal Light",
+  "name": "Guga & Doro · Jianghu Heroes · Minimal Light",
   "colorScheme": "light",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #F5F2EA 50%, #EAE8DF)",

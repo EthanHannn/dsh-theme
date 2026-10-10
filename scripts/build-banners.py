@@ -41,6 +41,10 @@ else:
 # (source stem, output stem, ratio W:H, vertical band center as a fraction
 # of source height)
 JOBS = [
+    ("guga-doro-20261010/guga-cozy/banner-light", "guga-cozy-banner-light", 6.0, 0.525),
+    ("guga-doro-20261010/guga-cozy/banner-dark", "guga-cozy-banner-dark", 6.0, 0.525),
+    ("guga-doro-20261010/doro-happy/banner-light", "doro-happy-banner-light", 6.0, 0.525),
+    ("guga-doro-20261010/doro-happy/banner-dark", "doro-happy-banner-dark", 6.0, 0.525),
     ("game-five-20261009/wukong-golden-sage/banner-light", "wukong-golden-sage-banner-light", 6.0, 0.5),
     ("game-five-20261009/wukong-golden-sage/banner-dark", "wukong-golden-sage-banner-dark", 6.0, 0.5),
     ("game-five-20261009/wukong-meishan/banner-light", "wukong-meishan-banner-light", 6.0, 0.5),
@@ -261,6 +265,10 @@ JOBS = [
 # left fade end, right fade start), as fractions of the final strip width.
 # All families use Daxia's 25% left / 10% right edge treatment.
 BAKED_HORIZONTAL_FADES = {
+    "guga-cozy-banner-light": ("#FFF0DA", 0.25, 0.90),
+    "guga-cozy-banner-dark": ("#28231F", 0.25, 0.90),
+    "doro-happy-banner-light": ("#FBE8EF", 0.25, 0.90),
+    "doro-happy-banner-dark": ("#2B2231", 0.25, 0.90),
     "wukong-golden-sage-banner-light": ("#EEE3CF", 0.25, 0.90),
     "wukong-golden-sage-banner-dark": ("#3B2A26", 0.25, 0.90),
     "wukong-meishan-banner-light": ("#E6ECF0", 0.25, 0.90),

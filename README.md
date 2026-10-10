@@ -10,6 +10,9 @@
 
 | 主题 | 浅色 | 深色 |
 | --- | --- | --- |
+| [咕嘎 Doro·江湖大侠](docs/screenshots/README.md#theme-1) | [![咕嘎 Doro·江湖大侠 · 浅色](docs/screenshots/01-daxia-light.webp)](docs/screenshots/01-daxia-light.webp) | [![咕嘎 Doro·江湖大侠 · 深色](docs/screenshots/01-daxia-dark.webp)](docs/screenshots/01-daxia-dark.webp) |
+| [咕嘎 Doro·暖阳小日子](docs/screenshots/README.md#theme-96) | [![咕嘎 Doro·暖阳小日子 · 浅色](docs/screenshots/96-guga-cozy-light.webp)](docs/screenshots/96-guga-cozy-light.webp) | [![咕嘎 Doro·暖阳小日子 · 深色](docs/screenshots/96-guga-cozy-dark.webp)](docs/screenshots/96-guga-cozy-dark.webp) |
+| [咕嘎 Doro·草莓幸福日](docs/screenshots/README.md#theme-97) | [![咕嘎 Doro·草莓幸福日 · 浅色](docs/screenshots/97-doro-happy-light.webp)](docs/screenshots/97-doro-happy-light.webp) | [![咕嘎 Doro·草莓幸福日 · 深色](docs/screenshots/97-doro-happy-dark.webp)](docs/screenshots/97-doro-happy-dark.webp) |
 | [黑神话：悟空·齐天金甲](docs/screenshots/README.md#theme-95) | [![黑神话：悟空·齐天金甲 · 浅色](docs/screenshots/95-wukong-golden-sage-light.webp)](docs/screenshots/95-wukong-golden-sage-light.webp) | [![黑神话：悟空·齐天金甲 · 深色](docs/screenshots/95-wukong-golden-sage-dark.webp)](docs/screenshots/95-wukong-golden-sage-dark.webp) |
 | [黑神话：悟空·梅山雪誓](docs/screenshots/README.md#theme-94) | [![黑神话：悟空·梅山雪誓 · 浅色](docs/screenshots/94-wukong-meishan-light.webp)](docs/screenshots/94-wukong-meishan-light.webp) | [![黑神话：悟空·梅山雪誓 · 深色](docs/screenshots/94-wukong-meishan-dark.webp)](docs/screenshots/94-wukong-meishan-dark.webp) |
 | [黑神话：悟空·古寺行旅](docs/screenshots/README.md#theme-93) | [![黑神话：悟空·古寺行旅 · 浅色](docs/screenshots/93-wukong-pilgrimage-light.webp)](docs/screenshots/93-wukong-pilgrimage-light.webp) | [![黑神话：悟空·古寺行旅 · 深色](docs/screenshots/93-wukong-pilgrimage-dark.webp)](docs/screenshots/93-wukong-pilgrimage-dark.webp) |
@@ -209,7 +212,9 @@ Linux 可在安装包所在目录执行 `sha256sum -c SHA256SUMS.txt`；macOS �
 - **芙莉莲·月下旅人**：蓝青与金色，搭配芙莉莲持杖旅行插画。
 - **超能力女儿**：米纸 / 小雏蓝 / 鲑鱼籽红 / 菱饼绿，深色版是夜祭灯笼与靛蓝河面。
 - **夏目友人帐**：稻草纸 / 帐本绿 / 三毛猫柿红 / 青枫绿，深色版是夜参道的石灯笼与萤火。
-- **大侠咕嘎与 Doro**：宣纸 / 天水碧 / 水墨金 / 竹青，深色版是冷墨夜色与鎏金剑气。
+- **咕嘎 Doro·江湖大侠**：宣纸 / 天水碧 / 水墨金 / 竹青，深色版是冷墨夜色与鎏金剑气。
+- **咕嘎 Doro·暖阳小日子**：暖杏 / 海盐青 / 蜂蜜金，咕嘎的阳台早餐与盖毯读书。
+- **咕嘎 Doro·草莓幸福日**：草莓奶粉 / 丁香紫 / 温暖灯光，Doro 的草莓野餐与在家烘焙。
 - **海贼王**：海洋蓝 / 海贼红 / 阳光金 / 暖羊皮纸，路飞、索隆、山治三人组与航海长卷。
 - **火影忍者·第七班**：查克拉橙 / 木叶蓝 / 暖纸色。
 - **火影忍者·凯班**：连体衣绿 / 旗袍粉 / 绑腿橙。

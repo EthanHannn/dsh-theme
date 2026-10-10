@@ -1,6 +1,6 @@
 {
   "id": "daxia-minimal-dark",
-  "name": "Daxia Guga & Doro · Minimal Dark",
+  "name": "Guga & Doro · Jianghu Heroes · Minimal Dark",
   "colorScheme": "dark",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #EBEEF0 50%, #C9CFD4)",

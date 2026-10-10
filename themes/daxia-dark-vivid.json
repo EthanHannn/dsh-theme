@@ -1,6 +1,6 @@
 {
   "id": "daxia-dark-vivid",
-  "name": "Daxia Guga & Doro Dark",
+  "name": "Guga & Doro · Jianghu Heroes Dark",
   "colorScheme": "dark",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #EBEEF0 50%, #C9CFD4)",

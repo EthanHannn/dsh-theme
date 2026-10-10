@@ -20,15 +20,35 @@
 
 **其他**
 
-[大侠咕嘎与Doro](#theme-1)
+咕嘎 Doro 系列：[江湖大侠](#theme-1) · [暖阳小日子](#theme-96) · [草莓幸福日](#theme-97)
 
 <a name="theme-1"></a>
 
-## 大侠咕嘎与Doro
+## 咕嘎 Doro·江湖大侠
 
 | 浅色 | 深色 |
 | --- | --- |
-| [![大侠咕嘎与Doro · 浅色](01-daxia-light.webp)](01-daxia-light.webp) | [![大侠咕嘎与Doro · 深色](01-daxia-dark.webp)](01-daxia-dark.webp) |
+| [![咕嘎 Doro·江湖大侠 · 浅色](01-daxia-light.webp)](01-daxia-light.webp) | [![咕嘎 Doro·江湖大侠 · 深色](01-daxia-dark.webp)](01-daxia-dark.webp) |
+
+<a name="theme-96"></a>
+
+## 咕嘎 Doro·暖阳小日子
+
+咕嘎的蜂蜜吐司、阳台早餐与盖毯读书，配以暖杏色、海盐青和晚间灯光。
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![咕嘎 Doro·暖阳小日子 · 浅色](96-guga-cozy-light.webp)](96-guga-cozy-light.webp) | [![咕嘎 Doro·暖阳小日子 · 深色](96-guga-cozy-dark.webp)](96-guga-cozy-dark.webp) |
+
+<a name="theme-97"></a>
+
+## 咕嘎 Doro·草莓幸福日
+
+Doro 的草莓野餐与在家烘焙，配以草莓奶粉、柔和丁香紫和温暖灯光。
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![咕嘎 Doro·草莓幸福日 · 浅色](97-doro-happy-light.webp)](97-doro-happy-light.webp) | [![咕嘎 Doro·草莓幸福日 · 深色](97-doro-happy-dark.webp)](97-doro-happy-dark.webp) |
 
 <a name="theme-2"></a>
 
