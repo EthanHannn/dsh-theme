@@ -20,7 +20,7 @@
 
 **其他**
 
-咕嘎 Doro 系列：[江湖大侠](#theme-1) · [暖阳小日子](#theme-96) · [草莓幸福日](#theme-97)
+咕嘎 Doro 系列：[江湖大侠](#theme-1) · [暖阳小日子](#theme-96) · [草莓幸福日](#theme-97) · [晴雨相伴](#theme-98)
 
 <a name="theme-1"></a>
 
@@ -49,6 +49,16 @@ Doro 的草莓野餐与在家烘焙，配以草莓奶粉、柔和丁香紫和温
 | 浅色 | 深色 |
 | --- | --- |
 | [![咕嘎 Doro·草莓幸福日 · 浅色](97-doro-happy-light.webp)](97-doro-happy-light.webp) | [![咕嘎 Doro·草莓幸福日 · 深色](97-doro-happy-dark.webp)](97-doro-happy-dark.webp) |
+
+<a name="theme-98"></a>
+
+## 咕嘎 Doro·晴雨相伴
+
+经典咕嘎与 Doro 在晴天一起种花，雨夜挤在沙发上共盖一条毯子、喝热可可。配以窗边雾蓝、奶油黄和暖灯金，咕嘎的夜间造型摘去企鹅帽，保留黑色齐刘海、交叉发夹与灰蓝眼睛。
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![咕嘎 Doro·晴雨相伴 · 浅色](98-guga-doro-together-light.webp)](98-guga-doro-together-light.webp) | [![咕嘎 Doro·晴雨相伴 · 深色](98-guga-doro-together-dark.webp)](98-guga-doro-together-dark.webp) |
 
 <a name="theme-2"></a>
 
