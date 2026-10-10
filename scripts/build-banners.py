@@ -41,6 +41,8 @@ else:
 # (source stem, output stem, ratio W:H, vertical band center as a fraction
 # of source height)
 JOBS = [
+    ("guga-doro-cafe-20261010/banner-light-matched-layout", "guga-doro-cafe-banner-light", 6.0, 0.51),
+    ("guga-doro-cafe-20261010/banner-dark-matched-layout", "guga-doro-cafe-banner-dark", 6.0, 0.51),
     ("guga-doro-starlamp-20261010/banner-light", "guga-doro-starlamp-banner-light", 6.0, 0.50),
     ("guga-doro-starlamp-20261010/banner-dark", "guga-doro-starlamp-banner-dark", 6.0, 0.525),
     ("guga-doro-together-20261010/banner-light", "guga-doro-together-banner-light", 6.0, 0.525),
@@ -269,6 +271,8 @@ JOBS = [
 # left fade end, right fade start), as fractions of the final strip width.
 # All families use Daxia's 25% left / 10% right edge treatment.
 BAKED_HORIZONTAL_FADES = {
+    "guga-doro-cafe-banner-light": ("#EEE7DC", 0.25, 0.90),
+    "guga-doro-cafe-banner-dark": ("#292624", 0.25, 0.90),
     "guga-doro-starlamp-banner-light": ("#F2E8D9", 0.25, 0.90),
     "guga-doro-starlamp-banner-dark": ("#302936", 0.25, 0.90),
     "guga-doro-together-banner-light": ("#EAF2F7", 0.25, 0.90),

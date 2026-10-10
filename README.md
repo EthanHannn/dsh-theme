@@ -17,6 +17,7 @@
 | [咕嘎 Doro·草莓幸福日](docs/screenshots/README.md#theme-97) | [![咕嘎 Doro·草莓幸福日 · 浅色](docs/screenshots/97-doro-happy-light.webp)](docs/screenshots/97-doro-happy-light.webp) | [![咕嘎 Doro·草莓幸福日 · 深色](docs/screenshots/97-doro-happy-dark.webp)](docs/screenshots/97-doro-happy-dark.webp) |
 | [咕嘎 Doro·晴雨相伴](docs/screenshots/README.md#theme-98) | [![咕嘎 Doro·晴雨相伴 · 浅色](docs/screenshots/98-guga-doro-together-light.webp)](docs/screenshots/98-guga-doro-together-light.webp) | [![咕嘎 Doro·晴雨相伴 · 深色](docs/screenshots/98-guga-doro-together-dark.webp)](docs/screenshots/98-guga-doro-together-dark.webp) |
 | [咕嘎 Doro·星灯小屋](docs/screenshots/README.md#theme-99) | [![咕嘎 Doro·星灯小屋 · 浅色](docs/screenshots/99-guga-doro-starlamp-light.webp)](docs/screenshots/99-guga-doro-starlamp-light.webp) | [![咕嘎 Doro·星灯小屋 · 深色](docs/screenshots/99-guga-doro-starlamp-dark.webp)](docs/screenshots/99-guga-doro-starlamp-dark.webp) |
+| [咕嘎 Doro·街角咖啡](docs/screenshots/README.md#theme-100) | [![咕嘎 Doro·街角咖啡 · 浅色](docs/screenshots/100-guga-doro-cafe-light.webp)](docs/screenshots/100-guga-doro-cafe-light.webp) | [![咕嘎 Doro·街角咖啡 · 深色](docs/screenshots/100-guga-doro-cafe-dark.webp)](docs/screenshots/100-guga-doro-cafe-dark.webp) |
 | [黑神话：悟空·齐天金甲](docs/screenshots/README.md#theme-95) | [![黑神话：悟空·齐天金甲 · 浅色](docs/screenshots/95-wukong-golden-sage-light.webp)](docs/screenshots/95-wukong-golden-sage-light.webp) | [![黑神话：悟空·齐天金甲 · 深色](docs/screenshots/95-wukong-golden-sage-dark.webp)](docs/screenshots/95-wukong-golden-sage-dark.webp) |
 | [黑神话：悟空·梅山雪誓](docs/screenshots/README.md#theme-94) | [![黑神话：悟空·梅山雪誓 · 浅色](docs/screenshots/94-wukong-meishan-light.webp)](docs/screenshots/94-wukong-meishan-light.webp) | [![黑神话：悟空·梅山雪誓 · 深色](docs/screenshots/94-wukong-meishan-dark.webp)](docs/screenshots/94-wukong-meishan-dark.webp) |
 | [黑神话：悟空·古寺行旅](docs/screenshots/README.md#theme-93) | [![黑神话：悟空·古寺行旅 · 浅色](docs/screenshots/93-wukong-pilgrimage-light.webp)](docs/screenshots/93-wukong-pilgrimage-light.webp) | [![黑神话：悟空·古寺行旅 · 深色](docs/screenshots/93-wukong-pilgrimage-dark.webp)](docs/screenshots/93-wukong-pilgrimage-dark.webp) |
@@ -249,6 +250,7 @@ Linux 可在安装包所在目录执行 `sha256sum -c SHA256SUMS.txt`；macOS �
 - **咕嘎 Doro·草莓幸福日**：草莓奶粉 / 丁香紫 / 温暖灯光，Doro 的草莓野餐与在家烘焙。
 - **咕嘎 Doro·晴雨相伴**：窗边雾蓝 / 奶油黄 / 暖灯金，经典咕嘎与 Doro 一起种花、共盖毯子喝热可可。
 - **咕嘎 Doro·星灯小屋**：暖米色 / 丁香紫 / 蜂蜜金，经典企鹅装咕嘎与毛绒 Doro 一起做纸星灯、在暖灯下读故事书。
+- **咕嘎 Doro·街角咖啡**：燕麦米色 / 鼠尾草绿 / 浓咖啡棕，毛绒经典咕嘎与 Doro 分享真实质感的可颂、相伴喝热饮，搭配透明场景素材与柔和咖啡横幅。
 - **海贼王**：海洋蓝 / 海贼红 / 阳光金 / 暖羊皮纸，路飞、索隆、山治三人组与航海长卷。
 - **火影忍者·第七班**：查克拉橙 / 木叶蓝 / 暖纸色。
 - **火影忍者·凯班**：连体衣绿 / 旗袍粉 / 绑腿橙。

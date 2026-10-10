@@ -20,7 +20,7 @@
 
 **其他**
 
-咕嘎 Doro 系列：[江湖大侠](#theme-1) · [暖阳小日子](#theme-96) · [草莓幸福日](#theme-97) · [晴雨相伴](#theme-98) · [星灯小屋](#theme-99)
+咕嘎 Doro 系列：[江湖大侠](#theme-1) · [暖阳小日子](#theme-96) · [草莓幸福日](#theme-97) · [晴雨相伴](#theme-98) · [星灯小屋](#theme-99) · [街角咖啡](#theme-100)
 
 <a name="theme-1"></a>
 
@@ -69,6 +69,16 @@ Doro 的草莓野餐与在家烘焙，配以草莓奶粉、柔和丁香紫和温
 | 浅色 | 深色 |
 | --- | --- |
 | [![咕嘎 Doro·星灯小屋 · 浅色](99-guga-doro-starlamp-light.webp)](99-guga-doro-starlamp-light.webp) | [![咕嘎 Doro·星灯小屋 · 深色](99-guga-doro-starlamp-dark.webp)](99-guga-doro-starlamp-dark.webp) |
+
+<a name="theme-100"></a>
+
+## 咕嘎 Doro·街角咖啡
+
+经典企鹅装咕嘎与毛绒 Doro 白天分享酥皮可颂，晚上靠在一起守着热可可。角色保留细腻毛绒质感，陶瓷釉面、面包酥皮和亚麻织物采用真实材质；前景抠成透明素材，头部搭配同样柔和暖光的咖啡小景。配以燕麦米色、鼠尾草绿和浓咖啡棕。
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![咕嘎 Doro·街角咖啡 · 浅色](100-guga-doro-cafe-light.webp)](100-guga-doro-cafe-light.webp) | [![咕嘎 Doro·街角咖啡 · 深色](100-guga-doro-cafe-dark.webp)](100-guga-doro-cafe-dark.webp) |
 
 <a name="theme-2"></a>
 
