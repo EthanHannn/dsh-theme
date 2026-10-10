@@ -74,6 +74,12 @@ Web 与 Desktop 的侧栏角色都直达“主题与外观”。主题等待 `se
 
 快捷键和原生菜单继续调用 Harness 的 `open` action；关闭设置时，设置壳会清除 `activeId`，因此下次通过这些入口打开时仍显示默认页面。角色按钮通过 `aria-label` 标明“主题与外观”，不设置 `title`，以免悬停提示遮挡角色短句。升级 Harness 时需复查共享 Store、`openSection`／`close` action 及侧栏两个插槽的 root scope。`tests/pal-settings.test.mjs` 覆盖两端角色选择主题页、可访问名称、原有按钮可见性和声明释放。Windows Desktop `0.2.1-alpha.2` 的实际验证与完整兼容基线分别记录在 README 中。
 
+### 桌面端的系统外观
+
+Electron 的 `nativeTheme.themeSource` 同时控制原生窗口外观和渲染器的 `prefers-color-scheme` 查询。Harness 根据 `html[data-ds-theme-source]` 同步该值；注册皮肤默认写入其解析后的浅深色。因此，主题在保存或预览模式为 `system` 时保持该属性为 `system`，再通过媒体查询选择对应皮肤；固定模式则同步当前皮肤的浅深色。
+
+适配仅作用于本包的当前主题和默认外观预览。模式改变但皮肤 ID 未变化时也需同步；属性观察用于保持 Harness 重绘后的系统模式，卸载时释放观察并交还已解析的外观。升级 Harness 时需复查该原生同步属性。`tests/preferences.test.mjs` 覆盖手动外观切回系统模式、系统外观变化、固定模式、预览取消及观察释放。
+
 ### 版本验证
 
 [`compatibility.json`](../compatibility.json) 记录已完整验证的 Harness 版本、客户端包和导出入口。`npm run check:compat` 要求本地 checkout 与该基线一致。

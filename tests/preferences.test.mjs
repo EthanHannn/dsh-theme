@@ -6,7 +6,7 @@ import test from "node:test";
 const catalog = ["naruto", "gundam"].map((id) => ({ id, category:"anime", names:{ zh:id, en:id }, skins:["light", "dark"].map((mode) => ({ id:`${id}-${mode}-vivid`, colorScheme:mode, tokens:{ "--dsw-pack-wallpaper":"url(test.webp)" } })) }));
 catalog.push({ id:"slate", kin:"gundam", category:"anime", names:{ zh:"青灰", en:"Slate" }, skins:["light", "dark"].map((mode) => ({ id:`slate-${mode}`, colorScheme:mode })) });
 catalog[0].decor = { wallpaperPosition: "right 32px bottom 20px", wallpaperSize: "min(34vw, 420px, 40vh)", heroTranslate: "0 -80px", heroMaxWidth: "600px" };
-function load(saved, unavailable = false, reactApi = {}) {
+function load(saved, unavailable = false, reactApi = {}, browser = {}) {
   let raw = saved;
   let api;
   const nodes = new Set();
@@ -22,7 +22,9 @@ function load(saved, unavailable = false, reactApi = {}) {
     .replace("__CATALOG__", JSON.stringify(catalog))
     .replace("    exports.CATALOG = CATALOG;", "    Object.assign(exports, { readPref, writePref, readDocument, appearanceFor, settingsFor, writeSettings, normalizeDocument, parseSkin, resolveSkin, filterCatalog, writeLibrarySettings, ThemeSection });");
   const window = { matchMedia:() => ({ matches:false, addEventListener() {}, removeEventListener() {} }), localStorage:{ getItem:() => raw, setItem:(_, value) => { if (unavailable) throw Error("blocked"); raw = value; } }, __ModuleLoader__:{ load:({ factory }) => { api = factory((id) => id === "react" ? reactApi : ({ defineStore:(value) => value })); } } };
-  vm.runInNewContext(source, { window, document, setTimeout:() => 1, clearTimeout() {} });
+  Object.assign(window, browser.window);
+  Object.assign(document, browser.document);
+  vm.runInNewContext(source, { window, document, MutationObserver:browser.MutationObserver, setTimeout:() => 1, clearTimeout() {} });
   return { api, document, nodes, raw:() => raw };
 }
 
@@ -35,6 +37,155 @@ test("legacy clarity migrates to its family and survives default selection", () 
   api.writePref(null);
   assert.equal(api.readPref(), null);
   assert.equal(api.appearanceFor("naruto").wallpaper, "full");
+});
+
+function desktopTheme(systemDark, mode = systemDark ? "light" : "dark") {
+  const tasks = [];
+  const mediaListeners = new Set();
+  const observers = new Set();
+  let nativeSource = "system";
+  let source = "system";
+  let pendingMutation = false;
+  const media = {
+    get matches() { return nativeSource === "system" ? systemDark : nativeSource === "dark"; },
+    addEventListener:(_, fn) => mediaListeners.add(fn),
+    removeEventListener:(_, fn) => mediaListeners.delete(fn),
+  };
+  const notifyMedia = () => tasks.push(() => {
+    for (const listener of mediaListeners) listener();
+  });
+  const root = {
+    getAttribute:() => source,
+    setAttribute(name, value) {
+      assert.equal(name, "data-ds-theme-source");
+      source = value;
+      if (pendingMutation) return;
+      pendingMutation = true;
+      tasks.push(() => {
+        pendingMutation = false;
+        for (const observer of observers) observer();
+      });
+    },
+  };
+  // Electron receives the DOM preference before notifying media-query listeners.
+  observers.add(() => {
+    const before = media.matches;
+    nativeSource = source;
+    if (before !== media.matches) notifyMedia();
+  });
+  class MutationObserver {
+    constructor(callback) { this.callback = callback; }
+    observe(target) { assert.equal(target, root); observers.add(this.callback); }
+    disconnect() { observers.delete(this.callback); }
+  }
+  const harness = load(JSON.stringify({ family:"naruto", mode, style:"vivid" }), false, {}, {
+    window:{ dshDesktop:{}, matchMedia:() => media },
+    document:{ documentElement:root },
+    MutationObserver,
+  });
+  const cleanups = [];
+  const listeners = new Set();
+  const sections = [];
+  const skins = new Map(["light", "dark"].map(colorScheme => [colorScheme, { colorScheme }]));
+  let snapshot = { preference:"system", active:{ colorScheme:media.matches ? "dark" : "light" }, revision:0 };
+  const ctx = {
+    theme:{
+      register(skin) { skins.set(skin.id, skin); return () => skins.delete(skin.id); },
+      getTheme:() => snapshot,
+      setTheme(preference) {
+        if (preference === snapshot.preference) return;
+        const active = skins.get(preference === "system" ? (media.matches ? "dark" : "light") : preference);
+        assert.ok(active, "The chosen theme must be registered");
+        snapshot = { preference, active, revision:snapshot.revision + 1 };
+        for (const listener of listeners) listener(snapshot);
+        root.setAttribute("data-ds-theme-source", preference === "system" ? "system" : active.colorScheme);
+      },
+    },
+    on:(_, fn) => { listeners.add(fn); return () => listeners.delete(fn); },
+    effect:fn => cleanups.push(fn()),
+    locale:{ register:() => () => {}, getLocale:() => ({ active:"zh" }) },
+    slots:{
+      inject:(_, fn) => fn(),
+      entriesOfSlot:() => [{ store:{} }],
+      register(meta) { if (meta.name === "settings.section") sections.push(meta); },
+    },
+  };
+  const flush = () => {
+    let count = 0;
+    while (tasks.length) {
+      assert.ok(++count < 100, "Native appearance and theme selection must settle");
+      tasks.shift()();
+    }
+  };
+  harness.api.apply(ctx);
+  flush();
+  return {
+    ...harness,
+    actions:sections[0].inject({ sync() {} }),
+    snapshot:() => snapshot,
+    source:() => source,
+    flush,
+    changeSystem(dark) {
+      const before = media.matches;
+      systemDark = dark;
+      if (media.matches !== before) notifyMedia();
+      flush();
+    },
+    presentAgain() {
+      root.setAttribute("data-ds-theme-source", snapshot.active.colorScheme);
+      flush();
+    },
+    dispose() {
+      for (const cleanup of cleanups.reverse()) cleanup?.();
+      flush();
+      assert.equal(observers.size, 1, "Only Electron's own observer remains");
+      assert.equal(mediaListeners.size, 0);
+    },
+  };
+}
+
+for (const systemDark of [true, false]) {
+  test("Desktop system mode follows the OS after an opposite manual appearance: " + (systemDark ? "dark OS" : "light OS"), () => {
+    const desktop = desktopTheme(systemDark);
+    const expected = systemDark ? "dark" : "light";
+    assert.notEqual(desktop.snapshot().active.colorScheme, expected);
+    desktop.actions.saveDraft({ family:"naruto", mode:"system", ...desktop.api.appearanceFor("naruto") });
+    desktop.flush();
+    assert.equal(desktop.source(), "system");
+    assert.equal(desktop.snapshot().active.colorScheme, expected);
+    desktop.actions.applyDraft({ family:"naruto", mode:"system", ...desktop.api.appearanceFor("naruto") });
+    desktop.flush();
+    desktop.presentAgain();
+    assert.equal(desktop.source(), "system");
+    assert.equal(desktop.api.readPref().mode, "system");
+    desktop.changeSystem(!systemDark);
+    assert.equal(desktop.snapshot().active.colorScheme, systemDark ? "light" : "dark");
+    assert.equal(desktop.api.readPref().mode, "system");
+    desktop.actions.saveDraft({ family:"naruto", mode:desktop.snapshot().active.colorScheme, ...desktop.api.appearanceFor("naruto") });
+    desktop.flush();
+    const pinned = desktop.snapshot().active.colorScheme;
+    assert.equal(desktop.source(), pinned);
+    desktop.changeSystem(systemDark);
+    assert.equal(desktop.snapshot().active.colorScheme, pinned);
+    desktop.dispose();
+  });
+}
+
+test("Desktop default-theme preview follows the OS and cancellation restores the selected family", () => {
+  const desktop = desktopTheme(true, "dark");
+  desktop.actions.previewTheme({ family:null, mode:"light" });
+  desktop.flush();
+  assert.equal(desktop.snapshot().active.colorScheme, "light");
+  desktop.actions.previewTheme({ family:null, mode:"system" });
+  desktop.flush();
+  assert.equal(desktop.snapshot().preference, "dsh-preview-dark");
+  assert.equal(desktop.source(), "system");
+  desktop.actions.cancelPreview();
+  desktop.flush();
+  assert.equal(desktop.snapshot().preference, "naruto-dark-vivid");
+  assert.equal(desktop.source(), "dark");
+  assert.equal(desktop.api.readPref().mode, "dark");
+  desktop.dispose();
 });
 
 test("family settings remain independent and reset affects only current family", () => {
