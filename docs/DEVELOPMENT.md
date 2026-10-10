@@ -68,6 +68,14 @@ npm run dsh:link -- --harness /absolute/path/to/deepseek-harness
 
 ## Harness 兼容性
 
+### 侧栏角色的设置入口
+
+Web 与 Desktop 的侧栏角色都直达“主题与外观”。主题等待 `settings.launcher` 声明后，将 `sidebar.settings` 当前有效注册的共享 Store handle 同时声明到角色所在的 `sidebar.footer.action`。渲染器管理实例并提供 `actions.openSection("themes")`；角色不自行创建 Store，也不模拟快捷键。Web 隐藏原有设置按钮，Desktop 保留账号菜单。设置声明撤销时，角色注册随之释放。
+
+快捷键和原生菜单继续调用 Harness 的 `open` action；关闭设置时，设置壳会清除 `activeId`，因此下次通过这些入口打开时仍显示默认页面。角色按钮通过 `aria-label` 标明“主题与外观”，不设置 `title`，以免悬停提示遮挡角色短句。升级 Harness 时需复查共享 Store、`openSection`／`close` action 及侧栏两个插槽的 root scope。`tests/pal-settings.test.mjs` 覆盖两端角色选择主题页、可访问名称、原有按钮可见性和声明释放。Windows Desktop `0.2.1-alpha.2` 的实际验证与完整兼容基线分别记录在 README 中。
+
+### 版本验证
+
 [`compatibility.json`](../compatibility.json) 记录已完整验证的 Harness 版本、客户端包和导出入口。`npm run check:compat` 要求本地 checkout 与该基线一致。
 
 `package.json` 中四个 `@deepseek-ai/dsh-client-*` 的 peer 范围供 Harness 判断运行时版本是否匹配。当前范围为 `^0.2.0-rc.1`，具体匹配遵循 semver 规则；版本匹配不代表已经完成兼容性验证。

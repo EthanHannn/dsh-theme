@@ -170,7 +170,11 @@ test("section applies same-skin decorations, restores default, and tears down", 
     on:(_, callback) => { listeners.push(callback); return () => {}; },
     effect:(fn) => cleanups.push(fn()),
     locale:{ register:() => () => {}, getLocale:() => ({ active:"zh" }) },
-    slots:{ inject:(_, fn) => fn(), register:(meta, component) => { registrations.push({ meta, component }); } },
+    slots:{
+      inject:(_, fn) => fn(),
+      entriesOfSlot:() => [{ store:{} }],
+      register:(meta, component) => { registrations.push({ meta, component }); },
+    },
   };
   api.apply(ctx);
   const section = registrations.find(({ meta }) => meta.name === "settings.section");
