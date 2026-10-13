@@ -12,6 +12,8 @@
 
 | 主题 | 浅色 | 深色 |
 | --- | --- | --- |
+| [咕嘎 Doro·戴夫种植队](docs/screenshots/README.md#theme-109) | [![咕嘎 Doro·戴夫种植队 · 浅色](docs/screenshots/109-guga-doro-pvz-garden-light.webp)](docs/screenshots/109-guga-doro-pvz-garden-light.webp) | [![咕嘎 Doro·戴夫种植队 · 深色](docs/screenshots/109-guga-doro-pvz-garden-dark.webp)](docs/screenshots/109-guga-doro-pvz-garden-dark.webp) |
+| [咕嘎 Doro·月夜守卫战](docs/screenshots/README.md#theme-110) | [![咕嘎 Doro·月夜守卫战 · 浅色](docs/screenshots/110-guga-doro-pvz-moonwatch-light.webp)](docs/screenshots/110-guga-doro-pvz-moonwatch-light.webp) | [![咕嘎 Doro·月夜守卫战 · 深色](docs/screenshots/110-guga-doro-pvz-moonwatch-dark.webp)](docs/screenshots/110-guga-doro-pvz-moonwatch-dark.webp) |
 | [咕嘎 Doro·江湖大侠](docs/screenshots/README.md#theme-1) | [![咕嘎 Doro·江湖大侠 · 浅色](docs/screenshots/01-daxia-light.webp)](docs/screenshots/01-daxia-light.webp) | [![咕嘎 Doro·江湖大侠 · 深色](docs/screenshots/01-daxia-dark.webp)](docs/screenshots/01-daxia-dark.webp) |
 | [咕嘎 Doro·暖阳小日子](docs/screenshots/README.md#theme-96) | [![咕嘎 Doro·暖阳小日子 · 浅色](docs/screenshots/96-guga-cozy-light.webp)](docs/screenshots/96-guga-cozy-light.webp) | [![咕嘎 Doro·暖阳小日子 · 深色](docs/screenshots/96-guga-cozy-dark.webp)](docs/screenshots/96-guga-cozy-dark.webp) |
 | [咕嘎 Doro·草莓幸福日](docs/screenshots/README.md#theme-97) | [![咕嘎 Doro·草莓幸福日 · 浅色](docs/screenshots/97-doro-happy-light.webp)](docs/screenshots/97-doro-happy-light.webp) | [![咕嘎 Doro·草莓幸福日 · 深色](docs/screenshots/97-doro-happy-dark.webp)](docs/screenshots/97-doro-happy-dark.webp) |
@@ -251,6 +253,8 @@ Linux 可在安装包所在目录执行 `sha256sum -c SHA256SUMS.txt`；macOS �
 - **咕嘎 Doro·晴雨相伴**：窗边雾蓝 / 奶油黄 / 暖灯金，经典咕嘎与 Doro 一起种花、共盖毯子喝热可可。
 - **咕嘎 Doro·星灯小屋**：暖米色 / 丁香紫 / 蜂蜜金，经典企鹅装咕嘎与毛绒 Doro 一起做纸星灯、在暖灯下读故事书。
 - **咕嘎 Doro·街角咖啡**：燕麦米色 / 鼠尾草绿 / 浓咖啡棕，毛绒经典咕嘎与 Doro 分享真实质感的可颂、相伴喝热饮，搭配透明场景素材与柔和咖啡横幅。
+- **咕嘎 Doro·戴夫种植队**：浅色里咕嘎扶苗、Doro 浇花；深色里咕嘎指挥豌豆射手、Doro 推坚果守住白天的成果。种子夹打开露出两种种卡，收好的阳光也出现在夜间道具里。
+- **咕嘎 Doro·月夜守卫战**：浅色里咕嘎看布防图、Doro 移栽小喷菇；深色里 Doro 提灯、咕嘎护住坚果，蘑菇阵迎战铁桶僵尸。布防夹打开展开路线，灯与地图也随昼夜更换状态。
 - **海贼王**：海洋蓝 / 海贼红 / 阳光金 / 暖羊皮纸，路飞、索隆、山治三人组与航海长卷。
 - **火影忍者·第七班**：查克拉橙 / 木叶蓝 / 暖纸色。
 - **火影忍者·凯班**：连体衣绿 / 旗袍粉 / 绑腿橙。

@@ -20,7 +20,7 @@
 
 **其他**
 
-咕嘎 Doro 系列：[江湖大侠](#theme-1) · [暖阳小日子](#theme-96) · [草莓幸福日](#theme-97) · [晴雨相伴](#theme-98) · [星灯小屋](#theme-99) · [街角咖啡](#theme-100)
+咕嘎 Doro 系列：[江湖大侠](#theme-1) · [暖阳小日子](#theme-96) · [草莓幸福日](#theme-97) · [晴雨相伴](#theme-98) · [星灯小屋](#theme-99) · [街角咖啡](#theme-100) · [戴夫种植队](#theme-109) · [月夜守卫战](#theme-110)
 
 <a name="theme-1"></a>
 
@@ -831,3 +831,23 @@ Doro 的草莓野餐与在家烘焙，配以草莓奶粉、柔和丁香紫和温
 | 浅色 | 深色 |
 | --- | --- |
 | [![黑神话：悟空·齐天金甲 · 浅色](95-wukong-golden-sage-light.webp)](95-wukong-golden-sage-light.webp) | [![黑神话：悟空·齐天金甲 · 深色](95-wukong-golden-sage-dark.webp)](95-wukong-golden-sage-dark.webp) |
+
+<a name="theme-109"></a>
+
+## 咕嘎 Doro·戴夫种植队
+
+浅色里咕嘎扶苗、Doro 浇花；深色里咕嘎指挥豌豆射手、Doro 推坚果守住白天的成果。种子夹打开露出两种种卡，收好的阳光也出现在夜间道具里。浅深采用独立场景设计，并校准角色可见尺寸；配有四款动作与台词对应的小伙伴、专属道具和连贯开合文件夹。
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![咕嘎 Doro·戴夫种植队 · 浅色](109-guga-doro-pvz-garden-light.webp)](109-guga-doro-pvz-garden-light.webp) | [![咕嘎 Doro·戴夫种植队 · 深色](109-guga-doro-pvz-garden-dark.webp)](109-guga-doro-pvz-garden-dark.webp) |
+
+<a name="theme-110"></a>
+
+## 咕嘎 Doro·月夜守卫战
+
+浅色里咕嘎看布防图、Doro 移栽小喷菇；深色里 Doro 提灯、咕嘎护住坚果，蘑菇阵迎战铁桶僵尸。布防夹打开展开路线，灯与地图也随昼夜更换状态。浅深采用独立场景设计，并校准角色可见尺寸；配有四款动作与台词对应的小伙伴、专属道具和连贯开合文件夹。
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![咕嘎 Doro·月夜守卫战 · 浅色](110-guga-doro-pvz-moonwatch-light.webp)](110-guga-doro-pvz-moonwatch-light.webp) | [![咕嘎 Doro·月夜守卫战 · 深色](110-guga-doro-pvz-moonwatch-dark.webp)](110-guga-doro-pvz-moonwatch-dark.webp) |
