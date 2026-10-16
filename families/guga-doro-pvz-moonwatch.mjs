@@ -52,7 +52,7 @@ const family = createVividFamily({
     ink: "#443953",
     brand: "#645182",
     brandText: "#FFFFFF",
-    signature: "#3D7181",
+    signature: "#315A67",
     deepAccent: "#645182",
     success: "#457260",
     error: "#AA4C69",

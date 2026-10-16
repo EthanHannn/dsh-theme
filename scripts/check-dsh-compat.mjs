@@ -109,6 +109,19 @@ export function checkDshCompatibility(harnessRoot) {
     }
   }
 
+  if (compatibility.moduleLoader) {
+    const required = compatibility.moduleLoader;
+    const manifestPath = join(harnessRoot, required.manifest);
+    if (!existsSync(manifestPath)) {
+      failures.push(`${required.name}: missing module loader manifest`);
+    } else {
+      const manifest = readJson(manifestPath);
+      if (manifest.name !== required.name || manifest.version !== supportedVersion || !hasExport(manifest, required.export)) {
+        failures.push(`${required.name}: package-local chunk loader must match Harness ${supportedVersion} and export ${required.export}`);
+      }
+    }
+  }
+
   if (!existsSync(join(themeRoot, "lib", "client.js"))) {
     failures.push("lib/client.js is missing; run npm run build");
   }

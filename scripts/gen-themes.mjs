@@ -16,10 +16,11 @@
 //
 // Usage: node scripts/gen-themes.mjs
 
-import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { webpDimensions } from "./wallpaper-layout.mjs";
+import { bundleCatalog } from "./catalog-bundle.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -500,12 +501,20 @@ const template = readFileSync(join(root, "lib", "client.tpl.js"), "utf8");
 if (!template.includes("__CATALOG__")) {
   throw new Error("lib/client.tpl.js is missing the __CATALOG__ placeholder");
 }
-const embedded = JSON.stringify(catalog, null, 2)
+const bundle = bundleCatalog(catalog);
+const libDir = join(root, "lib");
+for (const file of readdirSync(libDir)) {
+  if (/^client\.assets-[a-z0-9-]+-[a-f0-9]{12}\.js$/.test(file) && !bundle.chunks.has(file)) {
+    rmSync(join(libDir, file));
+  }
+}
+for (const [file, source] of bundle.chunks) writeFileSync(join(libDir, file), source);
+const embedded = bundle.source
   .split("\n")
   .map((line, i) => (i === 0 ? line : "    " + line))
   .join("\n");
 writeFileSync(join(root, "lib", "client.js"), template.replace("__CATALOG__", embedded));
-console.log(`wrote lib/client.js (${catalog.length} families, ${catalog.reduce((n, f) => n + f.skins.length, 0)} skins)`);
+console.log(`wrote lib/client.js (${catalog.length} families, ${catalog.reduce((n, f) => n + f.skins.length, 0)} skins, ${bundle.chunks.size} image chunks)`);
 
 // ---------------------------------------------------------------------------
 // Local preview page (docs/ is gitignored — the file never leaves the

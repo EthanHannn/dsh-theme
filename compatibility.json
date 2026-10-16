@@ -4,6 +4,12 @@
     "version": "0.2.0-rc.1",
     "tag": "dsh-v0.2.0-rc.1"
   },
+  "moduleLoader": {
+    "name": "@deepseek-ai/dsh-client-modules",
+    "manifest": "packages/client/modules/package.json",
+    "export": "./client",
+    "capabilities": ["ClientBundleRequire.async", "ClientBundleRegistration.chunk"]
+  },
   "clientPackages": [
     {
       "name": "@deepseek-ai/dsh-client-store",

@@ -16,11 +16,13 @@
 
 **游戏**
 
+[王者荣耀·云阙长歌](#theme-101) · [王者荣耀·花月幻境](#theme-102) · [王者荣耀·破晓机动](#theme-103) · [王者荣耀·孙悟空·无相](#theme-104) · [王者荣耀·貂蝉·馥梦繁花](#theme-105)
+
 [王者荣耀·绝世舞姬](#theme-9) · [魔兽世界·血精灵](#theme-10) · [炉石传说·冰霜法师](#theme-38) · [炉石传说·冰冠王座](#theme-39) · [王者荣耀·青莲剑仙](#theme-40) · [英雄联盟·九尾妖狐](#theme-41) · [英雄联盟·爆爆火花](#theme-42) · [我的世界](#theme-43) · [守望先锋·守护天使](#theme-44) · [守望先锋·时间跃迁](#theme-45) · [魔兽世界·矮人](#theme-46) · [魔兽世界·兽人战士](#theme-47) · [魔兽世界·牛头人德鲁伊](#theme-48) · [英雄联盟·艾欧尼亚茶会](#theme-59) · [英雄联盟·德玛西亚巡礼](#theme-60) · [原神·枫丹茶会](#theme-81) · [原神·净善书庭](#theme-82) · [原神·鸣神花信](#theme-83) · [崩坏：星穹铁道·列车晨光](#theme-84) · [崩坏：星穹铁道·星核夜话](#theme-85) · [崩坏：星穹铁道·萤火之约](#theme-86) · [最终幻想VII·第七天堂](#theme-87) · [最终幻想VII·教堂花信](#theme-88) · [最终幻想VII·片翼宿命](#theme-89) · [绝区零·六分街委托](#theme-90) · [绝区零·维多利亚茶歇](#theme-91) · [绝区零·六课雪夜](#theme-92) · [黑神话：悟空·古寺行旅](#theme-93) · [黑神话：悟空·梅山雪誓](#theme-94) · [黑神话：悟空·齐天金甲](#theme-95)
 
 **其他**
 
-咕嘎 Doro 系列：[江湖大侠](#theme-1) · [暖阳小日子](#theme-96) · [草莓幸福日](#theme-97) · [晴雨相伴](#theme-98) · [星灯小屋](#theme-99) · [街角咖啡](#theme-100) · [戴夫种植队](#theme-109) · [月夜守卫战](#theme-110)
+咕嘎 Doro 系列：[江湖大侠](#theme-1) · [暖阳小日子](#theme-96) · [草莓幸福日](#theme-97) · [晴雨相伴](#theme-98) · [星灯小屋](#theme-99) · [街角咖啡](#theme-100) · [咕嘟火锅](#theme-106) · [快乐开黑](#theme-107) · [湖畔露营](#theme-108) · [戴夫种植队](#theme-109) · [月夜守卫战](#theme-110) · [睡莲护航队](#theme-111) · [屋顶投手队](#theme-112)
 
 <a name="theme-1"></a>
 
@@ -832,6 +834,86 @@ Doro 的草莓野餐与在家烘焙，配以草莓奶粉、柔和丁香紫和温
 | --- | --- |
 | [![黑神话：悟空·齐天金甲 · 浅色](95-wukong-golden-sage-light.webp)](95-wukong-golden-sage-light.webp) | [![黑神话：悟空·齐天金甲 · 深色](95-wukong-golden-sage-dark.webp)](95-wukong-golden-sage-dark.webp) |
 
+<a name="theme-101"></a>
+
+## 王者荣耀·云阙长歌
+
+李白「凤求凰」、韩信「白龙吟」、诸葛亮「武陵仙君」、百里守约「朱雀志」。云白、青蓝与羽金，明暗款分别描绘出行前的相聚与月下休憩。
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![王者荣耀·云阙长歌 · 浅色](101-hok-cloud-reverie-light.webp)](101-hok-cloud-reverie-light.webp) | [![王者荣耀·云阙长歌 · 深色](101-hok-cloud-reverie-dark.webp)](101-hok-cloud-reverie-dark.webp) |
+
+<a name="theme-102"></a>
+
+## 王者荣耀·花月幻境
+
+貂蝉「仲夏夜之梦」、瑶「遇见神鹿」、大乔「白鹤梁神女」、公孙离「祈雪灵祝」。玉绿、月白与蝶紫，明暗款分别描绘花间相伴与月夜小聚。
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![王者荣耀·花月幻境 · 浅色](102-hok-moonlit-bloom-light.webp)](102-hok-moonlit-bloom-light.webp) | [![王者荣耀·花月幻境 · 深色](102-hok-moonlit-bloom-dark.webp)](102-hok-moonlit-bloom-dark.webp) |
+
+<a name="theme-103"></a>
+
+## 王者荣耀·破晓机动
+
+孙尚香「末日机甲」、赵云「引擎之心」、孙悟空「零号·赤焰」、铠「绛天战甲」。钢蓝、银白与赤橙，明暗款分别描绘晨光集结与机甲夜巡。
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![王者荣耀·破晓机动 · 浅色](103-hok-dawn-strike-light.webp)](103-hok-dawn-strike-light.webp) | [![王者荣耀·破晓机动 · 深色](103-hok-dawn-strike-dark.webp)](103-hok-dawn-strike-dark.webp) |
+
+<a name="theme-104"></a>
+
+## 王者荣耀·孙悟空·无相
+
+以孙悟空无双限定皮肤「无相」为造型参考，保留白色鬃毛、鎏金冠饰、米白长袍、淡紫衣摆和莲花金箍棒。明暗款分别呈现金莲晨光与墨金夜境，并配有两款悟空侧栏伙伴。[官方皮肤介绍](https://www.taptap.cn/moment/754831784436304136)。
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![王者荣耀·孙悟空·无相 · 浅色](104-hok-wukong-wuxiang-light.webp)](104-hok-wukong-wuxiang-light.webp) | [![王者荣耀·孙悟空·无相 · 深色](104-hok-wukong-wuxiang-dark.webp)](104-hok-wukong-wuxiang-dark.webp) |
+
+<a name="theme-105"></a>
+
+## 王者荣耀·貂蝉·馥梦繁花
+
+以慕夏联动珍品无双皮肤「馥梦繁花」为造型参考。浅色采用「繁花」形态的薄荷绿长发、花冠和白金裙装，深色采用「馥梦」形态的蓝紫编发、冰晶月冠和靛蓝银饰，配以春日花园、冬夜雪松横幅及两款侧栏伙伴。[官方皮肤介绍](https://bbs.4399.cn/thread-view-tid-49044756)。
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![王者荣耀·貂蝉·馥梦繁花 · 浅色](105-hok-diaochan-fumeng-light.webp)](105-hok-diaochan-fumeng-light.webp) | [![王者荣耀·貂蝉·馥梦繁花 · 深色](105-hok-diaochan-fumeng-dark.webp)](105-hok-diaochan-fumeng-dark.webp) |
+
+<a name="theme-106"></a>
+
+## 咕嘎 Doro·咕嘟火锅
+
+白天围锅尝鲜，夜晚换座盛汤；暖奶油、陶红与胡桃木串起小碗、蘑菇盘和折好餐巾的晚餐细节。深浅主图独立设计动作，并校准角色可见尺度；配有四款侧栏伙伴、专属道具与开合文件夹。
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![咕嘎 Doro·咕嘟火锅 · 浅色](106-guga-doro-hotpot-light.webp)](106-guga-doro-hotpot-light.webp) | [![咕嘎 Doro·咕嘟火锅 · 深色](106-guga-doro-hotpot-dark.webp)](106-guga-doro-hotpot-dark.webp) |
+
+<a name="theme-107"></a>
+
+## 咕嘎 Doro·快乐开黑
+
+白天并肩合作闯关，夜晚放下手柄击掌庆祝；雾蓝沙发、丁香紫手柄和爆米花把通关与休息串在一起。深浅主图独立设计动作，并校准角色可见尺度；配有四款侧栏伙伴、专属道具与开合文件夹。
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![咕嘎 Doro·快乐开黑 · 浅色](107-guga-doro-coop-light.webp)](107-guga-doro-coop-light.webp) | [![咕嘎 Doro·快乐开黑 · 深色](107-guga-doro-coop-dark.webp)](107-guga-doro-coop-dark.webp) |
+
+<a name="theme-108"></a>
+
+## 咕嘎 Doro·湖畔露营
+
+傍晚围炉烤棉花糖，夜晚换到长椅上裹毯观星；鼠尾草绿、燕麦米与营灯金呼应热饮、地图和营地灯火。深浅主图独立设计动作，并校准角色可见尺度；配有四款侧栏伙伴、专属道具与开合文件夹。
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![咕嘎 Doro·湖畔露营 · 浅色](108-guga-doro-camping-light.webp)](108-guga-doro-camping-light.webp) | [![咕嘎 Doro·湖畔露营 · 深色](108-guga-doro-camping-dark.webp)](108-guga-doro-camping-dark.webp) |
+
 <a name="theme-109"></a>
 
 ## 咕嘎 Doro·戴夫种植队
@@ -851,3 +933,23 @@ Doro 的草莓野餐与在家烘焙，配以草莓奶粉、柔和丁香紫和温
 | 浅色 | 深色 |
 | --- | --- |
 | [![咕嘎 Doro·月夜守卫战 · 浅色](110-guga-doro-pvz-moonwatch-light.webp)](110-guga-doro-pvz-moonwatch-light.webp) | [![咕嘎 Doro·月夜守卫战 · 深色](110-guga-doro-pvz-moonwatch-dark.webp)](110-guga-doro-pvz-moonwatch-dark.webp) |
+
+<a name="theme-111"></a>
+
+## 咕嘎 Doro·睡莲护航队
+
+大锅帽歪歪戴稳，Doro 的小白衬衣露出圆肚肚。浅色一起铺睡莲，深色咕嘎撑筏、Doro 提灯，与香蒲守住泳道；航线夹打开露出睡莲路线。浅深采用独立场景，并校准角色可见尺寸；配有四款动作与台词对应的小伙伴、专属道具和开合文件夹。
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![咕嘎 Doro·睡莲护航队 · 浅色](111-guga-doro-pvz-pool-light.webp)](111-guga-doro-pvz-pool-light.webp) | [![咕嘎 Doro·睡莲护航队 · 深色](111-guga-doro-pvz-pool-dark.webp)](111-guga-doro-pvz-pool-dark.webp) |
+
+<a name="theme-112"></a>
+
+## 咕嘎 Doro·屋顶投手队
+
+合头的大锅帽仍然歪戴，小白衬衣裹着 Doro 的圆身子。浅色搬盆栽玉米，深色咕嘎指挥投射、Doro 抱篮补给；瓦纹种卡夹打开是屋顶布阵图。浅深采用独立场景，并校准角色可见尺寸；配有四款动作与台词对应的小伙伴、专属道具和开合文件夹。
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![咕嘎 Doro·屋顶投手队 · 浅色](112-guga-doro-pvz-rooftop-light.webp)](112-guga-doro-pvz-rooftop-light.webp) | [![咕嘎 Doro·屋顶投手队 · 深色](112-guga-doro-pvz-rooftop-dark.webp)](112-guga-doro-pvz-rooftop-dark.webp) |

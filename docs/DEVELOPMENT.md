@@ -11,7 +11,9 @@ npm run build
 npm run check
 ```
 
-`build` 生成 `themes/*.json`、`lib/client.js` 和本地配色预览 `docs/preview.html`。`check` 运行测试、检查生成文件是否与源码一致，并验证 Harness checkout 的兼容性。提交时应包含更新后的生成文件；本地预览不提交。
+`build` 生成 `themes/*.json`、`lib/client.js`、`lib/client.assets-*.js` 和本地配色预览 `docs/preview.html`。`check` 运行测试、检查生成文件是否与源码一致，并验证 Harness checkout 的兼容性。提交时应包含更新后的生成文件；本地预览不提交。
+
+图片数据按主题写入带内容哈希的客户端分块，主文件保留目录与配色。激活插件前通过 Harness 的 `require.async` 加载分块，再注册完整皮肤；沿用同一包内的图片数据，画质与离线使用方式不变。分块适用于 Web 与 Desktop 的模块载入通道，避免单个生成文件超过 GitHub 的 100 MB 限制。`compatibility.json` 同时记录模块加载器及其分块能力；升级 Harness 时复查 `ClientBundleRequire.async` 和 `ClientBundleRegistration.chunk`。
 
 ## 连接 Harness 源码
 
@@ -44,7 +46,7 @@ npm run dsh:link -- --harness /absolute/path/to/deepseek-harness
 | `lib/index.js`、`cordis.patch.yml` | 插件入口与集成配置 |
 | `docs/screenshots/` | 公开展示截图 |
 
-修改客户端行为时，编辑 `lib/client.tpl.js` 后运行构建。`lib/client.js` 和 `themes/*.json` 为生成文件。
+修改客户端行为时，编辑 `lib/client.tpl.js` 后运行构建。`lib/client.js`、`lib/client.assets-*.js` 和 `themes/*.json` 为生成文件。
 
 原始图片、素材处理脚本和检查截图放在仓库外的本地目录，通过 `DSH_THEME_DEV` 指定。该目录包含 `raw/` 和 `outputs/`，素材处理脚本从仓库根目录运行。素材目录和 Harness 运行目录均应位于非同步磁盘目录中，分别存放。日常运行保持 `DSH_HOME` 未设置，使用 Harness 默认的 `~/.dsh`。
 
@@ -65,6 +67,8 @@ npm run dsh:link -- --harness /absolute/path/to/deepseek-harness
 氛围主题必须提供浅深色横幅。横幅使用无角色的场景插画，比例约为 6:1，主要景物位于右侧三分之一、靠近垂直中部，其余景物延伸至画面中部。左侧 0–25% 与右侧 90–100% 渐变至对应氛围主题的 `paper` 色，并设置 `decor.headerArt.bakedHorizontalFade: true`。使用 `scripts/build-banners.py` 裁切原始素材，分别调整浅深色图片的裁切位置。新增主题使用横幅；`<family>-panel.webp` 仅用于现有主题的兼容。
 
 使用本地 `docs/preview.html` 检查配色，并在 Harness 中检查浅色、深色、跟随系统及窄窗口效果。公开截图应使用无个人会话、路径或账户信息的演示环境。
+
+README 首页采用精选展示：保留用户指定的条目，其他作品与系列各选一套，优先群像。同系列新增主题更新[完整图库](screenshots/README.md)与 README 的折叠目录；新作品可补充一套精选代表。完整图库始终包含全部主题和浅深截图。
 
 ## Harness 兼容性
 

@@ -25,10 +25,16 @@ mkdirSync(destination, { recursive: true });
 if (!process.env.npm_execpath) throw new Error("Run this script with npm run release:pack");
 const [pack] = JSON.parse(run(process.execPath, [process.env.npm_execpath, "pack", "--ignore-scripts", "--json", "--pack-destination", destination], true));
 const required = new Set(["package.json", "LICENSE", "README.md", "compatibility.json", "cordis.patch.yml", "lib/index.js", "lib/client.js"]);
+let chunks = 0;
 for (const file of pack.files) {
+  if (/^lib\/client\.assets-[a-z0-9-]+-[a-f0-9]{12}\.js$/.test(file.path)) {
+    chunks++;
+    continue;
+  }
   if (!required.delete(file.path)) throw new Error(`Unexpected release file: ${file.path}`);
 }
 if (required.size) throw new Error(`Missing release files: ${[...required].join(", ")}`);
+if (chunks === 0) throw new Error("Release archive is missing theme image chunks");
 const digest = createHash("sha256").update(readFileSync(join(destination, pack.filename))).digest("hex");
 writeFileSync(join(destination, "SHA256SUMS.txt"), `${digest}  ${pack.filename}\n`);
 writeFileSync(join(destination, "release-notes.md"), `# dsh-themes ${manifest.version}
