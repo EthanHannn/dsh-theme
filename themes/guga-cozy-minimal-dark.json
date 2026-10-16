@@ -1,6 +1,6 @@
 {
   "id": "guga-cozy-minimal-dark",
-  "name": "Guga & Doro · Cozy Little Days · Minimal Dark",
+  "name": "Guga & Doro · Daily Life · Cozy Little Days · Minimal Dark",
   "colorScheme": "dark",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #FFF1DC 50%, #E4D8C5)",

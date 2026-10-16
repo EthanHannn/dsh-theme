@@ -4,10 +4,7 @@ import { createVividFamily } from "./create-vivid-family.js";
 const family = createVividFamily({
   id: "guga-doro-pvz-rooftop",
   signaturePrefix: "guga-doro-pvz-rooftop",
-  names: {
-    zh: "咕嘎 Doro·屋顶投手队",
-    en: "Guga & Doro · Rooftop Pult Crew",
-  },
+  names: { zh: "咕嘎和 Doro · 植物大战僵尸 · 屋顶投手队", en: "Guga & Doro · Plants vs. Zombies · Rooftop Pult Crew" },
   phrases: {
     zh: [
       [
@@ -72,7 +69,7 @@ const family = createVividFamily({
   },
 });
 
-family.sortKey = "guga-doro-13-pvz-rooftop";
+family.sortKey = "guga-doro-03-pvz-04-guga-doro-pvz-rooftop";
 family.light.textSecondary = "#6C5344";
 family.dark.textSecondary = "#E0C7B8";
 // Match apparent head scale while keeping each mode's own pose and story.

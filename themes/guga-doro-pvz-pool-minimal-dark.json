@@ -1,6 +1,6 @@
 {
   "id": "guga-doro-pvz-pool-minimal-dark",
-  "name": "Guga & Doro · Lily Pad Patrol · Minimal Dark",
+  "name": "Guga & Doro · Plants vs. Zombies · Lily Pad Patrol · Minimal Dark",
   "colorScheme": "dark",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #EDF8F3 50%, #D3E0DB)",

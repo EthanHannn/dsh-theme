@@ -1,6 +1,6 @@
 {
   "id": "guga-doro-camping-minimal-light",
-  "name": "Guga & Doro · Lakeside Camping · Minimal Light",
+  "name": "Guga & Doro · Daily Life · Lakeside Camping · Minimal Light",
   "colorScheme": "light",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #F6F6ED 50%, #ECEEE4)",

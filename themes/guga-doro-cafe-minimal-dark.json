@@ -1,6 +1,6 @@
 {
   "id": "guga-doro-cafe-minimal-dark",
-  "name": "Guga & Doro · Corner Cafe · Minimal Dark",
+  "name": "Guga & Doro · Daily Life · Corner Cafe · Minimal Dark",
   "colorScheme": "dark",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #F3EEE5 50%, #DAD5CD)",

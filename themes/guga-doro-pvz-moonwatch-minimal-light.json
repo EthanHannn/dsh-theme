@@ -1,6 +1,6 @@
 {
   "id": "guga-doro-pvz-moonwatch-minimal-light",
-  "name": "Guga & Doro · Moonlight Garden Defense · Minimal Light",
+  "name": "Guga & Doro · Plants vs. Zombies · Moonlight Garden Defense · Minimal Light",
   "colorScheme": "light",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #F8F5FC 50%, #EFECF4)",

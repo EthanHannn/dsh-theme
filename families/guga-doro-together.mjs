@@ -4,7 +4,7 @@ import { createVividFamily } from "./create-vivid-family.js";
 const family = createVividFamily({
   id: "guga-doro-together",
   signaturePrefix: "guga-doro-together",
-  names: { zh: "咕嘎 Doro·晴雨相伴", en: "Guga & Doro · Sunshine & Rain" },
+  names: { zh: "咕嘎和 Doro · 日常 · 晴雨相伴", en: "Guga & Doro · Daily Life · Sunshine & Rain" },
   phrases: {
     zh: [
       ["咕嘎。花开啦，你看。", "doro～这朵小花送给你！"],
@@ -43,7 +43,7 @@ const family = createVividFamily({
   },
 });
 
-family.sortKey = "guga-doro-04-together";
+family.sortKey = "guga-doro-02-daily-03-guga-doro-together";
 // Cool rainy-night layers need a clear secondary label on stacked hover fills.
 family.dark.textSecondary = "#BECBDC";
 family.decor.wallpaperSize = "min(30vw, 440px, calc(68vh * var(--dsw-pack-wallpaper-ratio, 0.85)), max(220px, calc((100vw - 1200px) / 2 - 24px)))";

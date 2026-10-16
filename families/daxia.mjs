@@ -14,8 +14,8 @@
 
 export default {
   id: "daxia",
-  sortKey: "guga-doro-01-daxia",
-  names: { zh: "咕嘎 Doro·江湖大侠", en: "Guga & Doro · Jianghu Heroes" },
+  sortKey: "guga-doro-01-jianghu-01-daxia",
+  names: { zh: "咕嘎和 Doro · 江湖 · 仗剑同行", en: "Guga & Doro · Jianghu · Wandering Heroes" },
   styles: ["vivid"],
   decor: {
     headerArt: { bakedHorizontalFade: true },

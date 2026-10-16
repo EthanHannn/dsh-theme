@@ -1,6 +1,6 @@
 {
   "id": "guga-doro-coop-minimal-dark",
-  "name": "Guga & Doro · Co-op Playtime · Minimal Dark",
+  "name": "Guga & Doro · Daily Life · Co-op Playtime · Minimal Dark",
   "colorScheme": "dark",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #EDF1FF 50%, #D4D8E7)",

@@ -4,10 +4,7 @@ import { createVividFamily } from "./create-vivid-family.js";
 const family = createVividFamily({
   id: "guga-doro-pvz-pool",
   signaturePrefix: "guga-doro-pvz-pool",
-  names: {
-    zh: "咕嘎 Doro·睡莲护航队",
-    en: "Guga & Doro · Lily Pad Patrol",
-  },
+  names: { zh: "咕嘎和 Doro · 植物大战僵尸 · 睡莲护航队", en: "Guga & Doro · Plants vs. Zombies · Lily Pad Patrol" },
   phrases: {
     zh: [
       [
@@ -72,7 +69,7 @@ const family = createVividFamily({
   },
 });
 
-family.sortKey = "guga-doro-12-pvz-pool";
+family.sortKey = "guga-doro-03-pvz-03-guga-doro-pvz-pool";
 family.light.textSecondary = "#48635D";
 family.dark.textSecondary = "#C3DDD4";
 // Match apparent head scale while keeping each mode's own pose and story.

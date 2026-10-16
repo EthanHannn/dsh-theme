@@ -1,6 +1,6 @@
 {
   "id": "guga-doro-starlamp-minimal-light",
-  "name": "Guga & Doro · Starlamp Cottage · Minimal Light",
+  "name": "Guga & Doro · Daily Life · Starlamp Cottage · Minimal Light",
   "colorScheme": "light",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #F9F3EA 50%, #EFE9E1)",

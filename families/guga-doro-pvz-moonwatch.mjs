@@ -4,10 +4,7 @@ import { createVividFamily } from "./create-vivid-family.js";
 const family = createVividFamily({
   id: "guga-doro-pvz-moonwatch",
   signaturePrefix: "guga-doro-pvz-moonwatch",
-  names: {
-    zh: "咕嘎 Doro·月夜守卫战",
-    en: "Guga & Doro · Moonlight Garden Defense",
-  },
+  names: { zh: "咕嘎和 Doro · 植物大战僵尸 · 月夜守卫战", en: "Guga & Doro · Plants vs. Zombies · Moonlight Garden Defense" },
   phrases: {
     zh: [
       [
@@ -72,7 +69,7 @@ const family = createVividFamily({
   },
 });
 
-family.sortKey = "guga-doro-11-pvz-moonwatch";
+family.sortKey = "guga-doro-03-pvz-02-guga-doro-pvz-moonwatch";
 family.light.textSecondary = "#615270";
 family.dark.textSecondary = "#D0C5E0";
 // Independent poses use matched head scale on a shared portrait canvas.

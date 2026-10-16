@@ -4,10 +4,7 @@ import { createVividFamily } from "./create-vivid-family.js";
 const family = createVividFamily({
   id: "guga-doro-pvz-garden",
   signaturePrefix: "guga-doro-pvz-garden",
-  names: {
-    zh: "咕嘎 Doro·戴夫种植队",
-    en: "Guga & Doro · Dave Garden Crew",
-  },
+  names: { zh: "咕嘎和 Doro · 植物大战僵尸 · 戴夫种植队", en: "Guga & Doro · Plants vs. Zombies · Dave Garden Crew" },
   phrases: {
     zh: [
       [
@@ -72,7 +69,7 @@ const family = createVividFamily({
   },
 });
 
-family.sortKey = "guga-doro-10-pvz-garden";
+family.sortKey = "guga-doro-03-pvz-01-guga-doro-pvz-garden";
 family.light.textSecondary = "#50603A";
 family.dark.textSecondary = "#C7D4B9";
 // Independent poses use matched head scale on a shared portrait canvas.

@@ -4,7 +4,7 @@ import { createVividFamily } from "./create-vivid-family.js";
 const family = createVividFamily({
   id: "guga-doro-starlamp",
   signaturePrefix: "guga-doro-starlamp",
-  names: { zh: "咕嘎 Doro·星灯小屋", en: "Guga & Doro · Starlamp Cottage" },
+  names: { zh: "咕嘎和 Doro · 日常 · 星灯小屋", en: "Guga & Doro · Daily Life · Starlamp Cottage" },
   phrases: {
     zh: [
       ["咕嘎。这颗小星星，送给你。", "doro～一起把星星折好呀！"],
@@ -43,7 +43,7 @@ const family = createVividFamily({
   },
 });
 
-family.sortKey = "guga-doro-05-starlamp";
+family.sortKey = "guga-doro-02-daily-04-guga-doro-starlamp";
 // Keep secondary text clear on the layered plum settings surfaces.
 family.dark.textSecondary = "#CEC0D2";
 family.decor.wallpaperSize = "min(30vw, 440px, calc(68vh * var(--dsw-pack-wallpaper-ratio, 1)), max(220px, calc((100vw - 1200px) / 2 - 24px)))";

@@ -4,10 +4,7 @@ import { createVividFamily } from "./create-vivid-family.js";
 const family = createVividFamily({
   id: "guga-doro-coop",
   signaturePrefix: "guga-doro-coop",
-  names: {
-    zh: "咕嘎 Doro·快乐开黑",
-    en: "Guga & Doro · Co-op Playtime",
-  },
+  names: { zh: "咕嘎和 Doro · 日常 · 快乐开黑", en: "Guga & Doro · Daily Life · Co-op Playtime" },
   phrases: {
     zh: [
       [
@@ -72,7 +69,7 @@ const family = createVividFamily({
   }
 });
 
-family.sortKey = "guga-doro-08-coop";
+family.sortKey = "guga-doro-02-daily-07-guga-doro-coop";
 family.light.textSecondary = "#465470";
 family.dark.textSecondary = "#C6CBE5";
 // Shared canvas dimensions retain layout; head widths are calibrated per scene.

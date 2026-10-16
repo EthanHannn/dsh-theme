@@ -1,6 +1,6 @@
 {
   "id": "guga-doro-pvz-garden-minimal-dark",
-  "name": "Guga & Doro · Dave Garden Crew · Minimal Dark",
+  "name": "Guga & Doro · Plants vs. Zombies · Dave Garden Crew · Minimal Dark",
   "colorScheme": "dark",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #F1F6E8 50%, #D7DDD0)",

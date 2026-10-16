@@ -4,10 +4,7 @@ import { createVividFamily } from "./create-vivid-family.js";
 const family = createVividFamily({
   id: "guga-doro-camping",
   signaturePrefix: "guga-doro-camping",
-  names: {
-    zh: "咕嘎 Doro·湖畔露营",
-    en: "Guga & Doro · Lakeside Camping",
-  },
+  names: { zh: "咕嘎和 Doro · 日常 · 湖畔露营", en: "Guga & Doro · Daily Life · Lakeside Camping" },
   phrases: {
     zh: [
       [
@@ -72,7 +69,7 @@ const family = createVividFamily({
   }
 });
 
-family.sortKey = "guga-doro-09-camping";
+family.sortKey = "guga-doro-02-daily-08-guga-doro-camping";
 family.light.textSecondary = "#455C4A";
 family.dark.textSecondary = "#BDD0C2";
 // Shared canvas dimensions retain layout; head widths are calibrated per scene.

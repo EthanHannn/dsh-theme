@@ -4,7 +4,7 @@ import family from "./daxia.mjs";
 export default {
   id: "daxia-minimal",
   sortKey: `${family.sortKey}-minimal`,
-  names: { zh: "咕嘎 Doro·江湖大侠·简约", en: "Guga & Doro · Jianghu Heroes · Minimal" },
+  names: { zh: `${family.names.zh} · 简约`, en: `${family.names.en} · Minimal` },
   kin: "daxia",
   styles: ["minimal"],
   light: family.light,

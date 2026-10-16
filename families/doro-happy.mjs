@@ -4,7 +4,7 @@ import { createVividFamily } from "./create-vivid-family.js";
 const family = createVividFamily({
   id: "doro-happy",
   signaturePrefix: "doro-happy",
-  names: { zh: "咕嘎 Doro·草莓幸福日", en: "Guga & Doro · Strawberry Happy Days" },
+  names: { zh: "咕嘎和 Doro · 日常 · 草莓幸福日", en: "Guga & Doro · Daily Life · Strawberry Happy Days" },
   phrases: {
     zh: [
       ["doro～最大颗的草莓留给你！", "doro，带上小蛋糕去野餐吧。"],
@@ -43,7 +43,7 @@ const family = createVividFamily({
   },
 });
 
-family.sortKey = "guga-doro-03-happy";
+family.sortKey = "guga-doro-02-daily-02-doro-happy";
 
 // Rose-tinted interaction layers need a brighter secondary label.
 family.dark.textSecondary = "#CAB8CB";

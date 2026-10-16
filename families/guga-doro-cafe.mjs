@@ -4,7 +4,7 @@ import { createVividFamily } from "./create-vivid-family.js";
 const family = createVividFamily({
   id: "guga-doro-cafe",
   signaturePrefix: "guga-doro-cafe",
-  names: { zh: "咕嘎 Doro·街角咖啡", en: "Guga & Doro · Corner Cafe" },
+  names: { zh: "咕嘎和 Doro · 日常 · 街角咖啡", en: "Guga & Doro · Daily Life · Corner Cafe" },
   phrases: {
     zh: [
       ["咕嘎。这块酥酥的，留给你。", "doro～一起吃才更香呀！"],
@@ -43,7 +43,7 @@ const family = createVividFamily({
   },
 });
 
-family.sortKey = "guga-doro-06-cafe";
+family.sortKey = "guga-doro-02-daily-05-guga-doro-cafe";
 family.dark.textSecondary = "#CEC5BA";
 // Keep the paired foreground scene clear beside the home-page composer.
 family.decor.wallpaperSize = "min(32vw, 460px, calc(68vh * var(--dsw-pack-wallpaper-ratio, 1)), max(250px, calc((100vw - 1160px) / 2 - 24px)))";

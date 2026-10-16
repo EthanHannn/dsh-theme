@@ -4,10 +4,7 @@ import { createVividFamily } from "./create-vivid-family.js";
 const family = createVividFamily({
   id: "guga-doro-hotpot",
   signaturePrefix: "guga-doro-hotpot",
-  names: {
-    zh: "咕嘎 Doro·咕嘟火锅",
-    en: "Guga & Doro · Hotpot Together",
-  },
+  names: { zh: "咕嘎和 Doro · 日常 · 咕嘟火锅", en: "Guga & Doro · Daily Life · Hotpot Together" },
   phrases: {
     zh: [
       [
@@ -72,7 +69,7 @@ const family = createVividFamily({
   }
 });
 
-family.sortKey = "guga-doro-07-hotpot";
+family.sortKey = "guga-doro-02-daily-06-guga-doro-hotpot";
 family.light.textSecondary = "#6A4A3D";
 family.dark.textSecondary = "#DBBEB0";
 // Shared canvas dimensions retain layout; head widths are calibrated per scene.

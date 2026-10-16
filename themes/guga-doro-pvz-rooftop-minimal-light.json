@@ -1,6 +1,6 @@
 {
   "id": "guga-doro-pvz-rooftop-minimal-light",
-  "name": "Guga & Doro · Rooftop Pult Crew · Minimal Light",
+  "name": "Guga & Doro · Plants vs. Zombies · Rooftop Pult Crew · Minimal Light",
   "colorScheme": "light",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #FCF7EF 50%, #F4EEE6)",

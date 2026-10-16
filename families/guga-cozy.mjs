@@ -4,7 +4,7 @@ import { createVividFamily } from "./create-vivid-family.js";
 const family = createVividFamily({
   id: "guga-cozy",
   signaturePrefix: "guga-cozy",
-  names: { zh: "咕嘎 Doro·暖阳小日子", en: "Guga & Doro · Cozy Little Days" },
+  names: { zh: "咕嘎和 Doro · 日常 · 暖阳小日子", en: "Guga & Doro · Daily Life · Cozy Little Days" },
   phrases: {
     zh: [
       ["咕嘎。吐司烤好了，分你一半。", "咕嘎，今天的太阳暖暖的。"],
@@ -44,7 +44,7 @@ const family = createVividFamily({
 });
 
 // Keep the daily-life branches beside the original Jianghu branch.
-family.sortKey = "guga-doro-02-cozy";
+family.sortKey = "guga-doro-02-daily-01-guga-cozy";
 
 // Give secondary labels enough contrast on warm hover surfaces.
 family.dark.textSecondary = "#C7BBAA";
