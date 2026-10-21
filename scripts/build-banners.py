@@ -41,6 +41,10 @@ else:
 # (source stem, output stem, ratio W:H, vertical band center as a fraction
 # of source height)
 JOBS = [
+    ("doro-pvz-garden-20261021/doro-pvz-cattail-rainpool/banner-dark-safe-provider", "doro-pvz-cattail-rainpool-banner-dark", 6.0, 0.504),
+    ("doro-pvz-garden-20261021/doro-pvz-cattail-rainpool/banner-light-safe-provider", "doro-pvz-cattail-rainpool-banner-light", 6.0, 0.531),
+    ("doro-pvz-garden-20261021/doro-pvz-pumpkin-shelter/banner-dark-safe-provider", "doro-pvz-pumpkin-shelter-banner-dark", 6.0, 0.535),
+    ("doro-pvz-garden-20261021/doro-pvz-pumpkin-shelter/banner-light-safe-provider", "doro-pvz-pumpkin-shelter-banner-light", 6.0, 0.531),
     ("doro-sword-immortal-20261016/doro-sword-cloud-retreat/banner-dark-safe-provider", "doro-sword-cloud-retreat-banner-dark", 6.0, 0.675),
     ("doro-sword-immortal-20261016/doro-sword-cloud-retreat/banner-light-provider", "doro-sword-cloud-retreat-banner-light", 6.0, 0.585),
     ("doro-pvz-life-20261016/doro-pvz-magnet-salvage/banner-dark-safe-provider", "doro-pvz-magnet-salvage-banner-dark", 6.0, 0.515),
@@ -329,6 +333,10 @@ JOBS = [
 # left fade end, right fade start), as fractions of the final strip width.
 # All families use Daxia's 25% left / 10% right edge treatment.
 BAKED_HORIZONTAL_FADES = {
+    "doro-pvz-cattail-rainpool-banner-dark": ("#314644", 0.25, 0.90),
+    "doro-pvz-cattail-rainpool-banner-light": ("#D9E8E1", 0.25, 0.90),
+    "doro-pvz-pumpkin-shelter-banner-dark": ("#443831", 0.25, 0.90),
+    "doro-pvz-pumpkin-shelter-banner-light": ("#EEE0CC", 0.25, 0.90),
     "doro-sword-cloud-retreat-banner-dark": ("#32464C", 0.25, 0.90),
     "doro-sword-cloud-retreat-banner-light": ("#E1EDE2", 0.25, 0.90),
     "doro-pvz-magnet-salvage-banner-dark": ("#49383C", 0.25, 0.90),

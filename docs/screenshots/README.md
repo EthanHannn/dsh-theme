@@ -26,7 +26,7 @@
 
 咕嘎和 Doro · 日常：[暖阳小日子](#theme-96) · [草莓幸福日](#theme-97) · [晴雨相伴](#theme-98) · [星灯小屋](#theme-99) · [街角咖啡](#theme-100) · [咕嘟火锅](#theme-106) · [快乐开黑](#theme-107) · [湖畔露营](#theme-108)
 
-咕嘎和 Doro · 植物大战僵尸：[戴夫种植队](#theme-109) · [月夜守卫战](#theme-110) · [睡莲护航队](#theme-111) · [屋顶投手队](#theme-112) · [阳光种子铺](#theme-119) · [雾庭菇灯](#theme-120) · [坚果修补铺](#theme-121) · [豌豆练习场](#theme-126) · [冰瓜凉饮铺](#theme-127) · [磁菇回收站](#theme-128)
+咕嘎和 Doro · 植物大战僵尸：[戴夫种植队](#theme-109) · [月夜守卫战](#theme-110) · [睡莲护航队](#theme-111) · [屋顶投手队](#theme-112) · [阳光种子铺](#theme-119) · [雾庭菇灯](#theme-120) · [坚果修补铺](#theme-121) · [豌豆练习场](#theme-126) · [冰瓜凉饮铺](#theme-127) · [磁菇回收站](#theme-128) · [南瓜守护屋](#theme-130) · [香蒲雨池](#theme-131)
 
 咕嘎和 Doro · 魔法师：[星露药房](#theme-116) · [云朵烘焙](#theme-117) · [月邮小屋](#theme-118) · [星月工坊](#theme-125)
 
@@ -1136,3 +1136,23 @@ Doro白天陪磁力菇把旧铁件分进木格箱，夜里坐在矮凳上挂好�
 | 浅色 | 深色 |
 | --- | --- |
 | [![咕嘎和 Doro · 剑仙 · 云岫剑庐 · 浅色](129-doro-sword-cloud-retreat-light.webp)](129-doro-sword-cloud-retreat-light.webp) | [![咕嘎和 Doro · 剑仙 · 云岫剑庐 · 深色](129-doro-sword-cloud-retreat-dark.webp)](129-doro-sword-cloud-retreat-dark.webp) |
+
+<a name="theme-130"></a>
+
+## 咕嘎和 Doro · 植物大战僵尸 · 南瓜守护屋
+
+戴夫 Doro 白天给南瓜守护壳铺好格纹小床，夜里捧着小茶杯陪幼苗歇息。叶扣夹打开露出小床和月牙卡，铺床工具收进木匣，守护壳里多了一份安心。采用精细手办与写实微缩场景质感，配有浅深无角色横幅、四款小伙伴、专属道具、开合文件夹和简约配对。
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![咕嘎和 Doro · 植物大战僵尸 · 南瓜守护屋 · 浅色](130-doro-pvz-pumpkin-shelter-light.webp)](130-doro-pvz-pumpkin-shelter-light.webp) | [![咕嘎和 Doro · 植物大战僵尸 · 南瓜守护屋 · 深色](130-doro-pvz-pumpkin-shelter-dark.webp)](130-doro-pvz-pumpkin-shelter-dark.webp) |
+
+<a name="theme-131"></a>
+
+## 咕嘎和 Doro · 植物大战僵尸 · 香蒲雨池
+
+戴夫 Doro 雨后在小池轻放折叶舟，入夜坐到岸边替香蒲擦干雨珠。叶舟夹打开藏着水纹航线，岸边的小托盘从备舟变成收舟，青瓷、湿石和叶脉贯穿整套。采用精细手办与写实微缩场景质感，配有浅深无角色横幅、四款小伙伴、专属道具、开合文件夹和简约配对。
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![咕嘎和 Doro · 植物大战僵尸 · 香蒲雨池 · 浅色](131-doro-pvz-cattail-rainpool-light.webp)](131-doro-pvz-cattail-rainpool-light.webp) | [![咕嘎和 Doro · 植物大战僵尸 · 香蒲雨池 · 深色](131-doro-pvz-cattail-rainpool-dark.webp)](131-doro-pvz-cattail-rainpool-dark.webp) |
