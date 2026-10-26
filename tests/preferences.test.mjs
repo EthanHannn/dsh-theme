@@ -24,7 +24,10 @@ function load(saved, unavailable = false, reactApi = {}, browser = {}) {
   const window = { matchMedia:() => ({ matches:false, addEventListener() {}, removeEventListener() {} }), localStorage:{ getItem:() => raw, setItem:(_, value) => { if (unavailable) throw Error("blocked"); raw = value; } }, __ModuleLoader__:{ load:({ factory }) => { api = factory((id) => id === "react" ? reactApi : ({ defineStore:(value) => value })); } } };
   Object.assign(window, browser.window);
   Object.assign(document, browser.document);
-  vm.runInNewContext(source, { window, document, MutationObserver:browser.MutationObserver, setTimeout:() => 1, clearTimeout() {} });
+  vm.runInNewContext(source, {
+    window, document, MutationObserver:browser.MutationObserver,
+    setTimeout:browser.setTimeout ?? (() => 1), clearTimeout:browser.clearTimeout ?? (() => {}),
+  });
   return { api, document, nodes, raw:() => raw };
 }
 
@@ -395,4 +398,106 @@ test("section applies same-skin decorations, restores default, and tears down", 
   assert.equal(document.body.style.getPropertyValue("--dsh-theme-hero-translate"), "");
   assert.equal(document.body.style.getPropertyValue("--dsh-theme-hero-max-width"), "");
   assert.equal(document.body.dataset.dshThemesPal, undefined);
+});
+
+/**
+ * The ThemeService adopts its durable Host preference and republishes
+ * "light"/"dark"/"system" whenever the settings document is refreshed; a model
+ * switch recomposes the profile and resubmits it. That transient used to look
+ * like another plugin's takeover and erased the stored skin permanently, and
+ * before the echo rule landed the pack also stopped taking the preference
+ * back once its fixed boot window closed.
+ */
+test("a built-in preference never erases the stored skin preference", () => {
+  let raw = JSON.stringify({ version:3, selected:{ family:"naruto", mode:"dark", style:"vivid" }, families:{ naruto:{ mode:"dark" } } });
+  const pending = [];
+  const { api } = load(null, false, {}, {
+    window:{ localStorage:{ getItem:() => raw, setItem:(_, value) => { raw = value; } } },
+    setTimeout:(fn) => { pending.push(fn); return pending.length; },
+    clearTimeout() {},
+  });
+  const listeners = [];
+  let snapshot = { preference:"naruto-dark-vivid", revision:0 };
+  const theme = { register:() => () => {}, getTheme:() => snapshot, setTheme(preference) {
+    if (preference === snapshot.preference) return;
+    snapshot = { preference, revision:snapshot.revision+1 };
+    for (const listener of listeners) listener(snapshot);
+  } };
+  const ctx = {
+    theme,
+    on:(_, callback) => { listeners.push(callback); return () => {}; },
+    effect:(fn) => fn(),
+    locale:{ register:() => () => {}, getLocale:() => ({ active:"en" }) },
+    slots:{ inject:(_, fn) => fn(), register() {}, entriesOfSlot:() => [{ store:{} }] },
+  };
+  // Let every deferred re-assert run, as it would on the real task queue.
+  const flush = () => {
+    while (pending.length > 0) for (const fn of pending.splice(0)) fn();
+  };
+  api.apply(ctx);
+  flush();
+  const before = raw;
+  assert.equal(api.readPref().family, "naruto");
+  assert.equal(snapshot.preference, "naruto-dark-vivid");
+
+  // The Host echo of its durable built-in preference lands long after the
+  // plugin's boot window: it must neither erase the skin nor win.
+  snapshot = { preference:"system", revision:snapshot.revision+1 };
+  for (const listener of listeners) listener(snapshot);
+  flush();
+  assert.equal(api.readPref().family, "naruto");
+  assert.equal(raw, before);
+  assert.equal(snapshot.preference, "naruto-dark-vivid");
+
+  // A real third-party takeover still drops this plugin's preference.
+  snapshot = { preference:"someone-elses-theme", revision:snapshot.revision+1 };
+  for (const listener of listeners) listener(snapshot);
+  flush();
+  assert.equal(api.readPref(), null);
+});
+
+test("picking the default appearance hands the preference back", () => {
+  let raw = JSON.stringify({ version:3, selected:{ family:"naruto", mode:"dark", style:"vivid" }, families:{ naruto:{ mode:"dark" } } });
+  const pending = [];
+  const { api } = load(null, false, {}, {
+    window:{ localStorage:{ getItem:() => raw, setItem:(_, value) => { raw = value; } } },
+    setTimeout:(fn) => { pending.push(fn); return pending.length; },
+    clearTimeout() {},
+  });
+  const listeners = [];
+  let snapshot = { preference:"naruto-dark-vivid", revision:0 };
+  const theme = { register:() => () => {}, getTheme:() => snapshot, setTheme(preference) {
+    if (preference === snapshot.preference) return;
+    snapshot = { preference, revision:snapshot.revision+1 };
+    for (const listener of listeners) listener(snapshot);
+  } };
+  const registrations = [];
+  const ctx = {
+    theme,
+    on:(_, callback) => { listeners.push(callback); return () => {}; },
+    effect:(fn) => fn(),
+    locale:{ register:() => () => {}, getLocale:() => ({ active:"en" }) },
+    slots:{
+      inject:(_, fn) => fn(),
+      register:(meta) => { registrations.push(meta); },
+      entriesOfSlot:() => [{ store:{} }],
+    },
+  };
+  const flush = () => {
+    while (pending.length > 0) for (const fn of pending.splice(0)) fn();
+  };
+  api.apply(ctx);
+  flush();
+  const actions = registrations.find(({ name }) => name === "settings.section").inject({ sync() {} });
+  // The user picks the built-in default: no family, so no stored skin remains.
+  actions.applyDraft({ family:null, mode:"light" });
+  flush();
+  assert.equal(api.readPref(), null);
+  assert.equal(snapshot.preference, "light");
+  // A later Host echo must not resurrect anything.
+  snapshot = { preference:"system", revision:snapshot.revision+1 };
+  for (const listener of listeners) listener(snapshot);
+  flush();
+  assert.equal(api.readPref(), null);
+  assert.equal(snapshot.preference, "system");
 });
