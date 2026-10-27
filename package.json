@@ -54,10 +54,10 @@
   "peerDependencies": {
     "react": "^18.2.0",
     "@deepseek-ai/cordis": "^4.0.1",
-    "@deepseek-ai/dsh-client-store": "^0.2.0-rc.1",
-    "@deepseek-ai/dsh-client-ui-theme": "^0.2.0-rc.1",
-    "@deepseek-ai/dsh-client-locale": "^0.2.0-rc.1",
-    "@deepseek-ai/dsh-client-ui-renderer": "^0.2.0-rc.1"
+    "@deepseek-ai/dsh-client-store": "^0.2.1-rc.3",
+    "@deepseek-ai/dsh-client-ui-theme": "^0.2.1-rc.3",
+    "@deepseek-ai/dsh-client-locale": "^0.2.1-rc.3",
+    "@deepseek-ai/dsh-client-ui-renderer": "^0.2.1-rc.3"
   },
   "scripts": {
     "build": "node scripts/gen-themes.mjs",

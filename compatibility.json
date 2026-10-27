@@ -1,8 +1,8 @@
 {
   "formatVersion": 1,
   "harness": {
-    "version": "0.2.0-rc.1",
-    "tag": "dsh-v0.2.0-rc.1"
+    "version": "0.2.1-rc.3",
+    "tag": "dsh-v0.2.1-rc.3"
   },
   "moduleLoader": {
     "name": "@deepseek-ai/dsh-client-modules",
