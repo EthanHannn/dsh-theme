@@ -58,12 +58,18 @@
 | [间谍过家家·福杰家的休息日](docs/screenshots/README.md#theme-66) | [![间谍过家家·福杰家的休息日 · 浅色](docs/screenshots/66-spy-family-forgers-light.webp)](docs/screenshots/66-spy-family-forgers-light.webp) | [![间谍过家家·福杰家的休息日 · 深色](docs/screenshots/66-spy-family-forgers-dark.webp)](docs/screenshots/66-spy-family-forgers-dark.webp) |
 | [哆啦A梦·口袋奇遇](docs/screenshots/README.md#theme-69) | [![哆啦A梦·口袋奇遇 · 浅色](docs/screenshots/69-doraemon-pocket-light.webp)](docs/screenshots/69-doraemon-pocket-light.webp) | [![哆啦A梦·口袋奇遇 · 深色](docs/screenshots/69-doraemon-pocket-dark.webp)](docs/screenshots/69-doraemon-pocket-dark.webp) |
 | [咒术回战·一年级集结](docs/screenshots/README.md#theme-72) | [![咒术回战·一年级集结 · 浅色](docs/screenshots/72-jujutsu-first-years-light.webp)](docs/screenshots/72-jujutsu-first-years-light.webp) | [![咒术回战·一年级集结 · 深色](docs/screenshots/72-jujutsu-first-years-dark.webp)](docs/screenshots/72-jujutsu-first-years-dark.webp) |
+| [咒术回战·高专旧日](docs/screenshots/README.md#theme-73) | [![咒术回战·高专旧日 · 浅色](docs/screenshots/73-jujutsu-school-days-light.webp)](docs/screenshots/73-jujutsu-school-days-light.webp) | [![咒术回战·高专旧日 · 深色](docs/screenshots/73-jujutsu-school-days-dark.webp)](docs/screenshots/73-jujutsu-school-days-dark.webp) |
+| [咒术回战·同窗并肩](docs/screenshots/README.md#theme-74) | [![咒术回战·同窗并肩 · 浅色](docs/screenshots/74-jujutsu-classmates-light.webp)](docs/screenshots/74-jujutsu-classmates-light.webp) | [![咒术回战·同窗并肩 · 深色](docs/screenshots/74-jujutsu-classmates-dark.webp)](docs/screenshots/74-jujutsu-classmates-dark.webp) |
+| [咒术回战 · 无量空处](docs/screenshots/README.md#theme-134) | [![咒术回战 · 无量空处 · 浅色](docs/screenshots/134-jujutsu-infinite-void-light.webp)](docs/screenshots/134-jujutsu-infinite-void-light.webp) | [![咒术回战 · 无量空处 · 深色](docs/screenshots/134-jujutsu-infinite-void-dark.webp)](docs/screenshots/134-jujutsu-infinite-void-dark.webp) |
+| [咒术回战 · 伏魔御厨子](docs/screenshots/README.md#theme-135) | [![咒术回战 · 伏魔御厨子 · 浅色](docs/screenshots/135-jujutsu-malevolent-shrine-light.webp)](docs/screenshots/135-jujutsu-malevolent-shrine-light.webp) | [![咒术回战 · 伏魔御厨子 · 深色](docs/screenshots/135-jujutsu-malevolent-shrine-dark.webp)](docs/screenshots/135-jujutsu-malevolent-shrine-dark.webp) |
+| [咒术回战 · 纯爱之约](docs/screenshots/README.md#theme-136) | [![咒术回战 · 纯爱之约 · 浅色](docs/screenshots/136-jujutsu-cursed-promise-light.webp)](docs/screenshots/136-jujutsu-cursed-promise-light.webp) | [![咒术回战 · 纯爱之约 · 深色](docs/screenshots/136-jujutsu-cursed-promise-dark.webp)](docs/screenshots/136-jujutsu-cursed-promise-dark.webp) |
 | [角落小伙伴·暖茶小憩](docs/screenshots/README.md#theme-75) | [![角落小伙伴·暖茶小憩 · 浅色](docs/screenshots/75-sumikko-teahouse-light.webp)](docs/screenshots/75-sumikko-teahouse-light.webp) | [![角落小伙伴·暖茶小憩 · 深色](docs/screenshots/75-sumikko-teahouse-dark.webp)](docs/screenshots/75-sumikko-teahouse-dark.webp) |
 | [原神·净善书庭](docs/screenshots/README.md#theme-82) | [![原神·净善书庭 · 浅色](docs/screenshots/82-genshin-sumeru-light.webp)](docs/screenshots/82-genshin-sumeru-light.webp) | [![原神·净善书庭 · 深色](docs/screenshots/82-genshin-sumeru-dark.webp)](docs/screenshots/82-genshin-sumeru-dark.webp) |
 | [崩坏：星穹铁道·列车晨光](docs/screenshots/README.md#theme-84) | [![崩坏：星穹铁道·列车晨光 · 浅色](docs/screenshots/84-hsr-express-light.webp)](docs/screenshots/84-hsr-express-light.webp) | [![崩坏：星穹铁道·列车晨光 · 深色](docs/screenshots/84-hsr-express-dark.webp)](docs/screenshots/84-hsr-express-dark.webp) |
 | [最终幻想VII·第七天堂](docs/screenshots/README.md#theme-87) | [![最终幻想VII·第七天堂 · 浅色](docs/screenshots/87-ff7-seventh-heaven-light.webp)](docs/screenshots/87-ff7-seventh-heaven-light.webp) | [![最终幻想VII·第七天堂 · 深色](docs/screenshots/87-ff7-seventh-heaven-dark.webp)](docs/screenshots/87-ff7-seventh-heaven-dark.webp) |
 | [绝区零·六分街委托](docs/screenshots/README.md#theme-90) | [![绝区零·六分街委托 · 浅色](docs/screenshots/90-zzz-sixth-street-light.webp)](docs/screenshots/90-zzz-sixth-street-light.webp) | [![绝区零·六分街委托 · 深色](docs/screenshots/90-zzz-sixth-street-dark.webp)](docs/screenshots/90-zzz-sixth-street-dark.webp) |
 | [黑神话：悟空·古寺行旅](docs/screenshots/README.md#theme-93) | [![黑神话：悟空·古寺行旅 · 浅色](docs/screenshots/93-wukong-pilgrimage-light.webp)](docs/screenshots/93-wukong-pilgrimage-light.webp) | [![黑神话：悟空·古寺行旅 · 深色](docs/screenshots/93-wukong-pilgrimage-dark.webp)](docs/screenshots/93-wukong-pilgrimage-dark.webp) |
+| [JOJO · 星尘远征](docs/screenshots/README.md#theme-137) | [![JOJO · 星尘远征 · 浅色](docs/screenshots/137-jojo-stardust-crusaders-light.webp)](docs/screenshots/137-jojo-stardust-crusaders-light.webp) | [![JOJO · 星尘远征 · 深色](docs/screenshots/137-jojo-stardust-crusaders-dark.webp)](docs/screenshots/137-jojo-stardust-crusaders-dark.webp) |
 
 [查看全部主题 →](docs/screenshots/README.md)
 
@@ -277,6 +283,8 @@ Linux 可在安装包所在目录执行 `sha256sum -c SHA256SUMS.txt`；macOS �
 - **咕嘎和 Doro · 植物大战僵尸 · 磁菇回收站**：Doro白天陪磁力菇把旧铁件分进木格箱，夜里坐在矮凳上挂好铁杯风铃。回收夹打开露出圆垫圈卡，散落的旧零件变成有用的小物件。
 - **咕嘎和 Doro · 植物大战僵尸 · 南瓜守护屋**：戴夫 Doro 白天给南瓜守护壳铺好格纹小床，夜里捧着小茶杯陪幼苗歇息。叶扣夹打开露出小床和月牙卡，铺床工具收进木匣，守护壳里多了一份安心。
 - **咕嘎和 Doro · 植物大战僵尸 · 香蒲雨池**：戴夫 Doro 雨后在小池轻放折叶舟，入夜坐到岸边替香蒲擦干雨珠。叶舟夹打开藏着水纹航线，岸边的小托盘从备舟变成收舟，青瓷、湿石和叶脉贯穿整套。
+- **咕嘎和 Doro · 植物大战僵尸 · 玉米黄油坊**：戴夫 Doro 在草地上的黄油小推车旁准备早餐，夜里坐在野餐布上与玉米投手分享吐司。玉米扣文件夹、奶油陶盘和鼠尾草格纹贯穿整套。
+- **咕嘎和 Doro · 植物大战僵尸 · 咖啡唤醒站**：戴夫 Doro 在燕麦布吊床里照看午睡的小喷菇，夜里起身与咖啡豆叫醒伙伴。蓝紫陶杯、铜咖啡壶与柔软布面连接整套素材。
 - **海贼王**：海洋蓝 / 海贼红 / 阳光金 / 暖羊皮纸，路飞、索隆、山治三人组与航海长卷。
 - **火影忍者·第七班**：查克拉橙 / 木叶蓝 / 暖纸色。
 - **火影忍者·凯班**：连体衣绿 / 旗袍粉 / 绑腿橙。
@@ -310,6 +318,13 @@ Linux 可在安装包所在目录执行 `sha256sum -c SHA256SUMS.txt`；macOS �
 - **魔兽世界·矮人**：锻炉琥珀 / 山地蓝 / 铜须红 / 钢铁灰。
 - **我叫MT·劣人与呆贼**：MT 赭黄 / 副本紫 / 喜剧红 / 治疗青，劣人与呆贼并肩冒险。
 - **小林家的龙女仆**：龙尾绿 / 龙焰橙 / 女仆藏青 / 奶油粉，托尔与暖厨房。
+
+- **咒术回战 · 无量空处**：五条悟的苍蓝与白发贯穿整套。浅色轻立碎石、深色摘下眼罩坐望星海，配以无角色星海横幅、喜久福道具和无穷扣文件夹。
+- **咒术回战 · 伏魔御厨子**：宿傩以粉发、咒纹与白色和服登场，浅色立于神社石阶，深色支颐而坐。朱砂、墨黑和古铜连接空寂神龛横幅、茶盏与铜铃扣文件夹。
+- **咒术回战 · 纯爱之约**：乙骨忧太与小小里香守护灵，以戒指与白山茶串起约定。浅色站立凝望戒指，深色单膝歇于庭阶，青瓷与月紫连接花庭横幅和银环扣文件夹。
+- **JOJO · 星尘远征**：承太郎、白金之星与伊奇同行，浅色整装出发，深色停驻沙漠旅箱旁。靛紫与黄铜呼应开罗远景、指南针、咖啡口香糖和旅行夹。
+- **JOJO · 杜王町晴日**：仗助、疯狂钻石与康一把杜王町过成轻快日常。浅色整理发型准备出门，深色街角歇脚修好小杯，薄荷绿与梅紫呼应小镇横幅和金心扣文件夹。
+- **JOJO · 黄金之风**：乔鲁诺、黄金体验与布加拉提，以金蝶和新芽展开那不勒斯旅程。浅色托蝶启程，深色坐在港阶照看幼苗，香槟金、玫瑰粉与瓢虫扣贯穿整套。
 
 </details>
 
