@@ -40,9 +40,17 @@ test("settings control text stays readable across every skin and interaction sta
   const apply = ".dsh-theme-page .dsh-theme-actions .dsh-theme-apply";
   const states = [
     ["segment rest", propertyToken(segment, "color"), propertyToken(".dsh-theme-segment", "background")],
+    ["library tabs", propertyToken(".dsh-theme-page .dsh-theme-tabs > button", "color"), propertyToken(".dsh-theme-tabs", "background")],
+    ["selected tab", propertyToken(".dsh-theme-page .dsh-theme-tabs > button[aria-selected=true]", "color"), propertyToken(".dsh-theme-page .dsh-theme-tabs > button[aria-selected=true]", "background")],
+    ["favorite star", propertyToken(".dsh-theme-page .dsh-theme-favorite", "color"), propertyToken(".dsh-theme-page .dsh-theme-favorite", "background")],
     ...[`${segment}:hover:not(:disabled)`, `${segment}[aria-pressed=true]`, ".dsh-theme-page button:hover:not(:disabled)", ".dsh-theme-page .dsh-theme-switch:hover:not(:disabled)", ".dsh-theme-help summary:hover", apply, `${apply}:hover:not(:disabled)`]
       .map((selector) => [selector, propertyToken(selector, "color"), propertyToken(selector, "background")]),
     ["card metadata hover", "--dsw-alias-label-secondary", propertyToken(".dsh-theme-page button:hover:not(:disabled)", "background")],
+    ["rotation panel", propertyToken(".dsh-theme-collection-panel", "color"), propertyToken(".dsh-theme-collection-panel", "background")],
+    ["rotation helper text", propertyToken(".dsh-theme-collection-note", "color"), propertyToken(".dsh-theme-collection-panel", "background")],
+    ["rotation select", propertyToken(".dsh-theme-page select", "color"), propertyToken(".dsh-theme-page select", "background")],
+    ...[".dsh-theme-collection > summary", ".dsh-theme-collection > summary:hover", ".dsh-theme-page select:hover"]
+      .map((selector) => [selector, propertyToken(selector, "color"), propertyToken(selector, "background")]),
   ];
   for (const skin of skins) {
     const tokens = skin.tokens;

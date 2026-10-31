@@ -21,6 +21,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { webpDimensions } from "./wallpaper-layout.mjs";
 import { bundleCatalog } from "./catalog-bundle.mjs";
+import { buildArtworkVariants } from "./artwork-variants.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -450,6 +451,12 @@ for (const file of familyFiles) {
   }
   const category = categories[family.kin ?? family.id];
   if (!["anime", "game", "other"].includes(category)) throw new Error(`Missing category for ${family.id}`);
+  const artworks = buildArtworkVariants(family, {
+    assetValue,
+    dimensions:(name) => webpDimensions(readFileSync(join(familyDir, "assets", `${name}.webp`))),
+    pals:palDataUris,
+    headerTokens:headerArtTokens,
+  });
   catalog.push({ category, id: family.id, names: family.names, kin: family.kin ?? null, decor: {
     pals,
     phrases: phrases ?? null,
@@ -457,7 +464,7 @@ for (const file of familyFiles) {
     ...(family.decor?.wallpaperPosition ? { wallpaperPosition: family.decor.wallpaperPosition } : {}),
     ...(family.decor?.heroTranslate ? { heroTranslate: family.decor.heroTranslate } : {}),
     ...(family.decor?.heroMaxWidth ? { heroMaxWidth: family.decor.heroMaxWidth } : {}),
-  }, skins });
+  }, ...(artworks.length ? { artworks } : {}), skins });
 }
 
 // Explicit keys keep related IP families together regardless of filenames.

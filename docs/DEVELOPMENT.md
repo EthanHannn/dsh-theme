@@ -86,6 +86,50 @@ npm run dsh:link -- --harness /absolute/path/to/deepseek-harness
 
 README 首页采用精选展示：保留用户指定的条目，其他作品与系列各选一套，优先群像。同系列新增主题更新[完整图库](screenshots/README.md)与 README 的折叠目录；新作品可补充一套精选代表。完整图库始终包含全部主题和浅深截图。
 
+## 收藏、主题轮换与同主题图片
+
+客户端偏好保存在 `dsh-themes:pref`，文档版本为 5，兼容旧版偏好迁移，保留各主题外观、图片和原轮换名单。根级 `favorites` 按收藏顺序保存稳定的主题 ID，去重并过滤失效条目；`library.tab` 保存主题库标签（`all` / `favorites`），`library.showMinimal` 保存简约可见性，更新时合并字段。
+
+“全部主题 / 我的收藏”是主题库中的常驻同级标签，独立于轮换开关。收藏页按最近收藏在前排列，支持搜索、分类、预览与应用；每页分别保留本次访问中的搜索和分类。收藏精确到单个条目，简约配对不会因分组搜索自动加入收藏结果；原生默认外观不参与收藏。卡片主体与星标使用并列按钮，避免按钮嵌套和收藏时误触预览。
+
+根级 `rotation` 保存主题池、开关、间隔和顺序，与收藏互不约束。轮换选择器的全部／收藏／已选标签共享临时勾选，搜索或切换范围不丢弃隐藏选择；完成后一次保存，取消、Esc、收起面板或离开外观页丢弃草稿。已有成员保留顺序，新成员追加。选择器独立维护浏览状态，不改变外部主题库标签；取消收藏不移出轮换，加入轮换不自动收藏，零收藏也可正常配置轮换。
+
+每个 `families[id].artwork` 独立保存 `variant` 和图片轮换配置。两层计时各自推进，切换图片不会推迟主题轮换；同时到期时优先切换主题，并重新计算目标主题的图片计时。
+
+自动轮换只在本包主题已应用时运行。主题外观页、未结束的预览、页面隐藏、最近 15 秒的输入和宿主 `[data-streaming="true"]` 回复期间暂停。关闭外观页、手动应用主题或页面恢复显示时重新计时，不补切后台错过的次数。随机模式排除当前项，列表少于两项时自动关闭轮换；插件卸载时释放计时器和监听。
+
+每个氛围主题自动包含保留 ID `original` 的原配图。后续在该主题的 `.mjs` 中声明额外变体，无需新增主题或皮肤 ID：
+
+```js
+artworks: [
+  {
+    id: "rain",
+    names: { zh: "雨中小憩", en: "Rest in the Rain" },
+    decor: {
+      wallpaperSize: "min(34vw, 420px, 40vh)",
+      wallpaperPosition: "right bottom",
+      headerArt: { bakedHorizontalFade: true },
+    },
+  },
+],
+```
+
+素材放入 `families/assets/`，前缀固定为 `<family>-<variant>`，例如 `gundam-rain-light.webp`、`gundam-rain-dark.webp`。变体 ID 使用小写英文与数字，以连字符分隔，同一主题内唯一，不得使用 `original`。
+
+| 变体素材 | 文件名 |
+| --- | --- |
+| 主壁纸 | `<family>-<variant>-light.webp`、`<family>-<variant>-dark.webp` |
+| 横幅 | `<family>-<variant>-banner-<mode>.webp`，或共用 `-banner.webp` |
+| 文件夹 | `<family>-<variant>-folder[-open]-<mode>.webp` |
+| 左下角物件 | `<family>-<variant>-props[-<mode>].webp` |
+| 设置角色 | `<family>-<variant>-pal-N.webp` |
+
+未提供的图片沿用原配图，可仅扩展主壁纸；没有任何有效素材、ID 重复或名称不完整时构建失败。主壁纸尺寸自动写入比例变量。浅深色分别检查；新横幅继续遵循无角色、对应主题纸色及两侧渐隐约定，不使用旧式 panel。
+
+`decor` 可覆盖四个构图字段 `wallpaperSize`、`wallpaperPosition`、`heroTranslate`、`heroMaxWidth`，以及双语 `phrases`；其余部分继承原主题。变体通过图片分块加载，运行时只允许覆盖图片和构图变量，不能覆盖配色。原配图、清晰度和四个装饰开关均可继续使用。
+
+本轮只实现切换能力，未补充新图片。增加素材后运行 `npm run build` 与 `npm run test`，并在 Harness 检查手动切换、自动轮换、浅深／系统模式、恢复原配图和窄屏。`tests/artwork-variants.test.mjs` 覆盖构建与分块还原；`tests/preferences.test.mjs` 覆盖偏好迁移、独立计时、暂停、图片覆盖和清理。
+
 ## Harness 兼容性
 
 ### 侧栏角色的设置入口
