@@ -24,6 +24,7 @@
 
 | 主题 | 浅色 | 深色 |
 | --- | --- | --- |
+| [药屋少女的呢喃 · 药香夜话](docs/screenshots/README.md#theme-140) | [![药屋少女的呢喃 · 药香夜话 · 浅色](docs/screenshots/140-apothecary-lantern-herbs-light.webp)](docs/screenshots/140-apothecary-lantern-herbs-light.webp) | [![药屋少女的呢喃 · 药香夜话 · 深色](docs/screenshots/140-apothecary-lantern-herbs-dark.webp)](docs/screenshots/140-apothecary-lantern-herbs-dark.webp) |
 | [咕嘎和 Doro · 江湖 · 仗剑同行](docs/screenshots/README.md#theme-1) | [![咕嘎和 Doro · 江湖 · 仗剑同行 · 浅色](docs/screenshots/01-daxia-light.webp)](docs/screenshots/01-daxia-light.webp) | [![咕嘎和 Doro · 江湖 · 仗剑同行 · 深色](docs/screenshots/01-daxia-dark.webp)](docs/screenshots/01-daxia-dark.webp) |
 | [咕嘎和 Doro · 日常 · 快乐开黑](docs/screenshots/README.md#theme-107) | [![咕嘎和 Doro · 日常 · 快乐开黑 · 浅色](docs/screenshots/107-guga-doro-coop-light.webp)](docs/screenshots/107-guga-doro-coop-light.webp) | [![咕嘎和 Doro · 日常 · 快乐开黑 · 深色](docs/screenshots/107-guga-doro-coop-dark.webp)](docs/screenshots/107-guga-doro-coop-dark.webp) |
 | [咕嘎和 Doro · 植物大战僵尸 · 雾庭菇灯](docs/screenshots/README.md#theme-120) | [![咕嘎和 Doro · 植物大战僵尸 · 雾庭菇灯 · 浅色](docs/screenshots/120-doro-pvz-fog-lantern-light.webp)](docs/screenshots/120-doro-pvz-fog-lantern-light.webp) | [![咕嘎和 Doro · 植物大战僵尸 · 雾庭菇灯 · 深色](docs/screenshots/120-doro-pvz-fog-lantern-dark.webp)](docs/screenshots/120-doro-pvz-fog-lantern-dark.webp) |
@@ -169,6 +170,8 @@ dsh plugin --profile web add /absolute/path/to/dsh-theme
 ### 笔记本与小窗口
 
 窗口宽度不超过 1680px 或高度不足 800px 时，主题自动缩小角色、隐藏左下角物件、收紧顶部横幅，并将首页输入框居中。宽度不超过 900px 时，隐藏顶部横幅和聊天页背景角色，首页仍保留角色插画。
+
+宽度不超过 600px 时，主题设置页的导航横向排列并可滚动，给搜索、预览和应用控件保留完整宽度。
 
 ## 更新与回退
 
@@ -335,6 +338,8 @@ Linux 可在安装包所在目录执行 `sha256sum -c SHA256SUMS.txt`；macOS �
 - **JOJO · 星尘远征**：承太郎、白金之星与伊奇同行，浅色整装出发，深色停驻沙漠旅箱旁。靛紫与黄铜呼应开罗远景、指南针、咖啡口香糖和旅行夹。
 - **JOJO · 杜王町晴日**：仗助、疯狂钻石与康一把杜王町过成轻快日常。浅色整理发型准备出门，深色街角歇脚修好小杯，薄荷绿与梅紫呼应小镇横幅和金心扣文件夹。
 - **JOJO · 黄金之风**：乔鲁诺、黄金体验与布加拉提，以金蝶和新芽展开那不勒斯旅程。浅色托蝶启程，深色坐在港阶照看幼苗，香槟金、玫瑰粉与瓢虫扣贯穿整套。
+
+- **药屋少女的呢喃 · 药香夜话**：猫猫与壬氏以辨叶、香囊和灯下药笺展开药房日常，鼠尾草绿、瓷白与梅紫连接手办、回廊横幅及叶扣文件夹。
 
 </details>
 

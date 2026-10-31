@@ -86,6 +86,8 @@ npm run dsh:link -- --harness /absolute/path/to/deepseek-harness
 
 README 首页采用精选展示：保留用户指定的条目，其他作品与系列各选一套，优先群像。同系列新增主题更新[完整图库](screenshots/README.md)与 README 的折叠目录；新作品可补充一套精选代表。完整图库始终包含全部主题和浅深截图。
 
+主题设置页在 `≤600px` 时把宿主导航改为横向滚动，按钮高度 44px，并为内容区保留完整宽度。规则只在设置弹窗包含 `.dsh-theme-page` 时生效；调整主题控件时检查 390px 和 320px 视口及导航滚动。
+
 ## 收藏、主题轮换与同主题图片
 
 客户端偏好保存在 `dsh-themes:pref`，文档版本为 5，兼容旧版偏好迁移，保留各主题外观、图片和原轮换名单。根级 `favorites` 按收藏顺序保存稳定的主题 ID，去重并过滤失效条目；`library.tab` 保存主题库标签（`all` / `favorites`），`library.showMinimal` 保存简约可见性，更新时合并字段。

@@ -41,6 +41,8 @@ else:
 # (source stem, output stem, ratio W:H, vertical band center as a fraction
 # of source height)
 JOBS = [
+    ("banner-light-provider", "apothecary-lantern-herbs-banner-light", 6.0, 0.5),
+    ("banner-dark-provider", "apothecary-lantern-herbs-banner-dark", 6.0, 0.5),
     ("jujutsu-jojo-20261029/jujutsu-infinite-void/banner-light-provider", "jujutsu-infinite-void-banner-light", 6.0, 0.5),
     ("jujutsu-jojo-20261029/jujutsu-infinite-void/banner-dark-provider", "jujutsu-infinite-void-banner-dark", 6.0, 0.5),
     ("jujutsu-jojo-20261029/jujutsu-malevolent-shrine/banner-light-provider", "jujutsu-malevolent-shrine-banner-light", 6.0, 0.5),
@@ -349,6 +351,8 @@ JOBS = [
 # left fade end, right fade start), as fractions of the final strip width.
 # All families use Daxia's 25% left / 10% right edge treatment.
 BAKED_HORIZONTAL_FADES = {
+    "apothecary-lantern-herbs-banner-light": ("#EDEFE3", 0.25, 0.90),
+    "apothecary-lantern-herbs-banner-dark": ("#1D2825", 0.25, 0.90),
     "jujutsu-infinite-void-banner-light": ("#E4EEF7", 0.25, 0.90),
     "jujutsu-infinite-void-banner-dark": ("#182A40", 0.25, 0.90),
     "jujutsu-malevolent-shrine-banner-light": ("#EEDFD4", 0.25, 0.90),
