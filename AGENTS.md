@@ -44,3 +44,7 @@ Header artwork requirement: every vivid family ships `<family>-banner-light.webp
 ## Commit & Pull Request Guidelines
 
 Recent history favors concise, imperative subjects with optional Conventional Commit prefixes such as `fix:` and `docs:`. Keep each commit focused and include regenerated artifacts with source changes. Pull requests should explain the user-visible result, identify affected families and modes, note manual checks, and include screenshots for palette, asset, layout, or interaction changes. Link relevant issues and call out any intentional compatibility tradeoffs.
+
+## IP Artwork Fidelity
+
+Unless the user explicitly requests a different art direction, preserve each anime or game IP's original visual language: canonical character proportions, faces, clothing, linework, coloring and rendering. Doro-specific figurine, plush and miniature preferences are scoped to their requested series and must not become defaults for unrelated IPs. Official references must guide both identity and visual style. Review original-IP resemblance before checking asset counts, layout or contrast.

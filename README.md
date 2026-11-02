@@ -24,6 +24,10 @@
 
 | 主题 | 浅色 | 深色 |
 | --- | --- | --- |
+| [我推的孩子 · 星幕候场](docs/screenshots/README.md#theme-141) | [![我推的孩子 · 星幕候场 · 浅色](docs/screenshots/141-oshi-backstage-starlight-light.webp)](docs/screenshots/141-oshi-backstage-starlight-light.webp) | [![我推的孩子 · 星幕候场 · 深色](docs/screenshots/141-oshi-backstage-starlight-dark.webp)](docs/screenshots/141-oshi-backstage-starlight-dark.webp) |
+| [我独自升级 · 影域巡行](docs/screenshots/README.md#theme-142) | [![我独自升级 · 影域巡行 · 浅色](docs/screenshots/142-solo-shadow-patrol-light.webp)](docs/screenshots/142-solo-shadow-patrol-light.webp) | [![我独自升级 · 影域巡行 · 深色](docs/screenshots/142-solo-shadow-patrol-dark.webp)](docs/screenshots/142-solo-shadow-patrol-dark.webp) |
+| [Re:从零开始的异世界生活 · 雪庭茶约](docs/screenshots/README.md#theme-143) | [![Re:从零开始的异世界生活 · 雪庭茶约 · 浅色](docs/screenshots/143-rezero-snow-tea-light.webp)](docs/screenshots/143-rezero-snow-tea-light.webp) | [![Re:从零开始的异世界生活 · 雪庭茶约 · 深色](docs/screenshots/143-rezero-snow-tea-dark.webp)](docs/screenshots/143-rezero-snow-tea-dark.webp) |
+| [坂本日常 · 街角补给](docs/screenshots/README.md#theme-144) | [![坂本日常 · 街角补给 · 浅色](docs/screenshots/144-sakamoto-corner-supply-light.webp)](docs/screenshots/144-sakamoto-corner-supply-light.webp) | [![坂本日常 · 街角补给 · 深色](docs/screenshots/144-sakamoto-corner-supply-dark.webp)](docs/screenshots/144-sakamoto-corner-supply-dark.webp) |
 | [药屋少女的呢喃 · 药香夜话](docs/screenshots/README.md#theme-140) | [![药屋少女的呢喃 · 药香夜话 · 浅色](docs/screenshots/140-apothecary-lantern-herbs-light.webp)](docs/screenshots/140-apothecary-lantern-herbs-light.webp) | [![药屋少女的呢喃 · 药香夜话 · 深色](docs/screenshots/140-apothecary-lantern-herbs-dark.webp)](docs/screenshots/140-apothecary-lantern-herbs-dark.webp) |
 | [咕嘎和 Doro · 江湖 · 仗剑同行](docs/screenshots/README.md#theme-1) | [![咕嘎和 Doro · 江湖 · 仗剑同行 · 浅色](docs/screenshots/01-daxia-light.webp)](docs/screenshots/01-daxia-light.webp) | [![咕嘎和 Doro · 江湖 · 仗剑同行 · 深色](docs/screenshots/01-daxia-dark.webp)](docs/screenshots/01-daxia-dark.webp) |
 | [咕嘎和 Doro · 日常 · 快乐开黑](docs/screenshots/README.md#theme-107) | [![咕嘎和 Doro · 日常 · 快乐开黑 · 浅色](docs/screenshots/107-guga-doro-coop-light.webp)](docs/screenshots/107-guga-doro-coop-light.webp) | [![咕嘎和 Doro · 日常 · 快乐开黑 · 深色](docs/screenshots/107-guga-doro-coop-dark.webp)](docs/screenshots/107-guga-doro-coop-dark.webp) |
@@ -339,7 +343,13 @@ Linux 可在安装包所在目录执行 `sha256sum -c SHA256SUMS.txt`；macOS �
 - **JOJO · 杜王町晴日**：仗助、疯狂钻石与康一把杜王町过成轻快日常。浅色整理发型准备出门，深色街角歇脚修好小杯，薄荷绿与梅紫呼应小镇横幅和金心扣文件夹。
 - **JOJO · 黄金之风**：乔鲁诺、黄金体验与布加拉提，以金蝶和新芽展开那不勒斯旅程。浅色托蝶启程，深色坐在港阶照看幼苗，香槟金、玫瑰粉与瓢虫扣贯穿整套。
 
-- **药屋少女的呢喃 · 药香夜话**：猫猫与壬氏以辨叶、香囊和灯下药笺展开药房日常，鼠尾草绿、瓷白与梅紫连接手办、回廊横幅及叶扣文件夹。
+- **药屋少女的呢喃 · 药香夜话**：猫猫与壬氏以原作动画的线稿、上色与人物比例展开辨叶、香囊和灯下药笺的药房日常，鼠尾草绿、瓷白与梅紫连接人物插画、回廊横幅及叶扣文件夹。
+
+- **我推的孩子 · 星幕候场**：露比与阿库亚保留原作动画的眼部特征、线条与赛璐璐上色，浅色持麦核对场记，深色检查星扣、递来热饮。莓粉与舞台靛贯穿人物插画、无人后台横幅、器材道具与星扣通告夹。
+- **我独自升级 · 影域巡行**：程肖宇与车海印以原作动画的修长比例、锐利线条与分明色块核对魔晶和地图，深色整理补给、提灯警戒。钢蓝与矿紫连接人物插画、无人石门横幅、猎人补给与魔晶扣任务夹。
+- **Re:从零开始的异世界生活 · 雪庭茶约**：爱蜜莉雅与蕾姆保留原作动画的脸型、服装与细致线稿，浅色捧杯与端盘，深色披毯续茶。月白、薰衣草紫与冰蓝连接人物插画、无人宅邸雪庭横幅、茶具与雪花扣收纳夹。
+- **坂本日常 · 街角补给**：坂本太郎与朝仓信保留原作动画的体型、面部特征和明快上色，浅色提纸袋与搬货箱，深色包好饭团、留下一瓶饮料。围裙绿、纸袋米与暖黄贯穿人物插画、无人街角横幅与饭团扣清单夹。
+
 
 </details>
 

@@ -12,6 +12,8 @@
 
 **动漫**
 
+[我推的孩子 · 星幕候场](#theme-141) · [我独自升级 · 影域巡行](#theme-142) · [Re:从零开始的异世界生活 · 雪庭茶约](#theme-143) · [坂本日常 · 街角补给](#theme-144)
+
 [药屋少女的呢喃 · 药香夜话](#theme-140)
 
 [咒术回战 · 无量空处](#theme-134) · [咒术回战 · 伏魔御厨子](#theme-135) · [咒术回战 · 纯爱之约](#theme-136) · [JOJO · 星尘远征](#theme-137) · [JOJO · 杜王町晴日](#theme-138) · [JOJO · 黄金之风](#theme-139)
@@ -1245,8 +1247,52 @@ Doro白天陪磁力菇把旧铁件分进木格箱，夜里坐在矮凳上挂好�
 
 ## 药屋少女的呢喃 · 药香夜话
 
-猫猫与壬氏在药房的两段日常：浅色辨叶与递香囊，深色灯下核对药笺。鼠尾草绿、瓷白和梅紫贯穿精细手办、无人药房回廊横幅、研钵与夜灯道具、叶扣开合文件夹。配有四款双语侧栏伙伴和简约配对。
+猫猫与壬氏以原作动画的线稿、上色和人物比例展开两段药房日常：浅色辨叶与递香囊，深色灯下核对药笺。鼠尾草绿、瓷白和梅紫贯穿人物插画、无人药房回廊横幅、研钵与夜灯道具、叶扣开合文件夹。配有四款原比例半身侧栏伙伴和简约配对。
 
 | 浅色 | 深色 |
 | --- | --- |
 | [![药屋少女的呢喃 · 药香夜话 · 浅色](140-apothecary-lantern-herbs-light.webp)](140-apothecary-lantern-herbs-light.webp) | [![药屋少女的呢喃 · 药香夜话 · 深色](140-apothecary-lantern-herbs-dark.webp)](140-apothecary-lantern-herbs-dark.webp) |
+
+
+<a name="theme-141"></a>
+
+## 我推的孩子 · 星幕候场
+
+露比与阿库亚保留原作动画的眼部特征、线条与赛璐璐上色，浅色持麦核对场记，深色检查星扣、递来热饮。莓粉与舞台靛贯穿人物插画、无人后台横幅、器材道具与星扣通告夹。配有四款原比例半身侧栏伙伴、浅深开合文件夹和简约配对。
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![我推的孩子 · 星幕候场 · 浅色](141-oshi-backstage-starlight-light.webp)](141-oshi-backstage-starlight-light.webp) | [![我推的孩子 · 星幕候场 · 深色](141-oshi-backstage-starlight-dark.webp)](141-oshi-backstage-starlight-dark.webp) |
+
+
+<a name="theme-142"></a>
+
+## 我独自升级 · 影域巡行
+
+程肖宇与车海印以原作动画的修长比例、锐利线条与分明色块核对魔晶和地图，深色整理补给、提灯警戒。钢蓝与矿紫连接人物插画、无人石门横幅、猎人补给与魔晶扣任务夹。配有四款原比例半身侧栏伙伴、浅深开合文件夹和简约配对。
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![我独自升级 · 影域巡行 · 浅色](142-solo-shadow-patrol-light.webp)](142-solo-shadow-patrol-light.webp) | [![我独自升级 · 影域巡行 · 深色](142-solo-shadow-patrol-dark.webp)](142-solo-shadow-patrol-dark.webp) |
+
+
+<a name="theme-143"></a>
+
+## Re:从零开始的异世界生活 · 雪庭茶约
+
+爱蜜莉雅与蕾姆保留原作动画的脸型、经典服装与细致线稿，浅色捧杯与端盘，深色披毯续茶。月白、薰衣草紫与冰蓝连接人物插画、无人宅邸雪庭横幅、茶具与雪花扣收纳夹。配有四款原比例半身侧栏伙伴、浅深开合文件夹和简约配对。
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![Re:从零开始的异世界生活 · 雪庭茶约 · 浅色](143-rezero-snow-tea-light.webp)](143-rezero-snow-tea-light.webp) | [![Re:从零开始的异世界生活 · 雪庭茶约 · 深色](143-rezero-snow-tea-dark.webp)](143-rezero-snow-tea-dark.webp) |
+
+
+<a name="theme-144"></a>
+
+## 坂本日常 · 街角补给
+
+坂本太郎与朝仓信保留原作动画的体型、面部特征和明快上色，浅色提纸袋与搬货箱，深色包好饭团、留下一瓶饮料。围裙绿、纸袋米与暖黄贯穿人物插画、无人街角横幅与饭团扣清单夹。配有四款原比例半身侧栏伙伴、浅深开合文件夹和简约配对。
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![坂本日常 · 街角补给 · 浅色](144-sakamoto-corner-supply-light.webp)](144-sakamoto-corner-supply-light.webp) | [![坂本日常 · 街角补给 · 深色](144-sakamoto-corner-supply-dark.webp)](144-sakamoto-corner-supply-dark.webp) |

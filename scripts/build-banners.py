@@ -41,6 +41,14 @@ else:
 # (source stem, output stem, ratio W:H, vertical band center as a fraction
 # of source height)
 JOBS = [
+    ("banner-light-provider", "oshi-backstage-starlight-banner-light", 6.0, 0.5),
+    ("banner-dark-provider", "oshi-backstage-starlight-banner-dark", 6.0, 0.5),
+    ("banner-light-provider", "solo-shadow-patrol-banner-light", 6.0, 0.5),
+    ("banner-dark-provider", "solo-shadow-patrol-banner-dark", 6.0, 0.5),
+    ("banner-light-provider", "rezero-snow-tea-banner-light", 6.0, 0.5),
+    ("banner-dark-provider", "rezero-snow-tea-banner-dark", 6.0, 0.5),
+    ("banner-light-provider", "sakamoto-corner-supply-banner-light", 6.0, 0.5),
+    ("banner-dark-provider", "sakamoto-corner-supply-banner-dark", 6.0, 0.5),
     ("banner-light-provider", "apothecary-lantern-herbs-banner-light", 6.0, 0.5),
     ("banner-dark-provider", "apothecary-lantern-herbs-banner-dark", 6.0, 0.5),
     ("jujutsu-jojo-20261029/jujutsu-infinite-void/banner-light-provider", "jujutsu-infinite-void-banner-light", 6.0, 0.5),
@@ -351,6 +359,14 @@ JOBS = [
 # left fade end, right fade start), as fractions of the final strip width.
 # All families use Daxia's 25% left / 10% right edge treatment.
 BAKED_HORIZONTAL_FADES = {
+    "oshi-backstage-starlight-banner-light": ("#F4EBF2", 0.25, 0.90),
+    "oshi-backstage-starlight-banner-dark": ("#272332", 0.25, 0.90),
+    "solo-shadow-patrol-banner-light": ("#E8EDF4", 0.25, 0.90),
+    "solo-shadow-patrol-banner-dark": ("#1C2334", 0.25, 0.90),
+    "rezero-snow-tea-banner-light": ("#ECF0F5", 0.25, 0.90),
+    "rezero-snow-tea-banner-dark": ("#232637", 0.25, 0.90),
+    "sakamoto-corner-supply-banner-light": ("#F1EEDC", 0.25, 0.90),
+    "sakamoto-corner-supply-banner-dark": ("#252B25", 0.25, 0.90),
     "apothecary-lantern-herbs-banner-light": ("#EDEFE3", 0.25, 0.90),
     "apothecary-lantern-herbs-banner-dark": ("#1D2825", 0.25, 0.90),
     "jujutsu-infinite-void-banner-light": ("#E4EEF7", 0.25, 0.90),
