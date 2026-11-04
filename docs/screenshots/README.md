@@ -1053,6 +1053,14 @@ Doro 斜戴合头大铁锅、穿露肚小白衬衣；浅色播种照料向日葵
 | --- | --- |
 | [![咕嘎和 Doro · 植物大战僵尸 · 雾庭菇灯 · 浅色](120-doro-pvz-fog-lantern-light.webp)](120-doro-pvz-fog-lantern-light.webp) | [![咕嘎和 Doro · 植物大战僵尸 · 雾庭菇灯 · 深色](120-doro-pvz-fog-lantern-dark.webp)](120-doro-pvz-fog-lantern-dark.webp) |
 
+同主题还可选择「蘑伞听雨」「推车运菇」「树洞晚安」，与原配图组成四组轮播。锅帽 Doro、紫色蘑菇与微缩材质保持统一，场地分别换成菌伞与落叶、小推车与草径、发光蘑菇照亮的树洞；浅深色各有动作与光照。主区域左下角同步换成雨珠叶盏、装菇木筐和卷叶小窝，侧栏伙伴沿用原素材。首次启用默认按列表每五分钟轮换，可在「主题与外观 → 同主题图片」手动选择或调整，已有轮换配置继续保留。查看[四组配图总览](120-doro-pvz-fog-lantern-artworks.webp)和[左下角物件总览](120-doro-pvz-fog-lantern-props.webp)。
+
+| 配图 | 浅色 | 深色 |
+| --- | --- | --- |
+| 蘑伞听雨 | [![雾庭菇灯 · 蘑伞听雨 · 浅色](120-doro-pvz-fog-lantern-mushroom-rain-light.webp)](120-doro-pvz-fog-lantern-mushroom-rain-light.webp) | [![雾庭菇灯 · 蘑伞听雨 · 深色](120-doro-pvz-fog-lantern-mushroom-rain-dark.webp)](120-doro-pvz-fog-lantern-mushroom-rain-dark.webp) |
+| 推车运菇 | [![雾庭菇灯 · 推车运菇 · 浅色](120-doro-pvz-fog-lantern-mushroom-cart-light.webp)](120-doro-pvz-fog-lantern-mushroom-cart-light.webp) | [![雾庭菇灯 · 推车运菇 · 深色](120-doro-pvz-fog-lantern-mushroom-cart-dark.webp)](120-doro-pvz-fog-lantern-mushroom-cart-dark.webp) |
+| 树洞晚安 | [![雾庭菇灯 · 树洞晚安 · 浅色](120-doro-pvz-fog-lantern-tree-hollow-light.webp)](120-doro-pvz-fog-lantern-tree-hollow-light.webp) | [![雾庭菇灯 · 树洞晚安 · 深色](120-doro-pvz-fog-lantern-tree-hollow-dark.webp)](120-doro-pvz-fog-lantern-tree-hollow-dark.webp) |
+
 <a name="theme-121"></a>
 
 ## 咕嘎和 Doro · 植物大战僵尸 · 坚果修补铺

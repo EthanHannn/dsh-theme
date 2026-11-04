@@ -247,7 +247,7 @@ function variantCatalog() {
   const entries = structuredClone(catalog);
   entries[0].artworks = [{
     id:"rain", names:{ zh:"雨景", en:"Rain" },
-    modes:{ light:{ "--dsw-pack-wallpaper":"url(rain-light.webp)", "--dsw-pack-paper":"red" }, dark:{ "--dsw-pack-wallpaper":"url(rain-dark.webp)", "--dsw-pack-wallpaper-ratio":"0.75" } },
+    modes:{ light:{ "--dsw-pack-wallpaper":"url(rain-light.webp)", "--dsw-pack-scene-props":"url(rain-props-light.webp)", "--dsw-pack-paper":"red" }, dark:{ "--dsw-pack-wallpaper":"url(rain-dark.webp)", "--dsw-pack-wallpaper-ratio":"0.75", "--dsw-pack-scene-props":"url(rain-props-dark.webp)" } },
     decor:{ wallpaperPosition:"right bottom", wallpaperSize:"360px" },
   }];
   return entries;
@@ -278,12 +278,13 @@ function fakeClock() {
   };
 }
 
-test("v3 migration adds opt-in rotation and scopes artwork to its own family", () => {
+test("v3 migration defaults multi-artwork rotation on and scopes artwork to its own family", () => {
   const { api, raw } = load(JSON.stringify({ version:3, selected:{ family:"naruto", mode:"dark", style:"vivid" }, families:{ naruto:{ mode:"dark", props:false } } }), false, {}, { catalog:variantCatalog() });
   assert.equal(api.readPref().mode, "dark");
   assert.equal(api.readPref().props, false);
   assert.equal(api.readDocument().rotation.enabled, false);
-  assert.equal(api.readPref().artwork.enabled, false);
+  assert.equal(api.readPref().artwork.enabled, true);
+  assert.equal(api.readPref().artwork.interval, 5);
   api.writeRotation({ enabled:true, pool:["naruto", "naruto", "missing", "gundam"], interval:1, order:"random" });
   assert.deepEqual(Array.from(api.readDocument().rotation.pool), ["naruto", "gundam"]);
   api.writeSettings({ ...api.readPref(), artwork:{ enabled:true, variant:"rain", pool:["original", "rain", "gundam"], interval:5 } });
@@ -299,6 +300,35 @@ test("v3 migration adds opt-in rotation and scopes artwork to its own family", (
   restored.writeRotation({ enabled:true, pool:["naruto"], interval:0 });
   assert.equal(restored.readDocument().rotation.enabled, false);
   assert.equal(restored.readDocument().rotation.interval, 30);
+});
+
+test("new multi-artwork themes rotate all pictures by default and retain manual preferences", () => {
+  const { api, raw } = load(null, false, {}, { catalog:variantCatalog() });
+  api.writePref({ family:"naruto", mode:"dark", style:"vivid" });
+  assert.equal(api.readPref().artwork.enabled, true);
+  assert.equal(api.readPref().artwork.interval, 5);
+  assert.equal(api.readPref().artwork.order, "sequence");
+  assert.deepEqual(Array.from(api.readPref().artwork.pool), ["original", "rain"]);
+  assert.equal(api.readDocument().rotation.enabled, false);
+  assert.equal(api.settingsFor("gundam").artwork.enabled, false);
+  api.writeSettings({ ...api.readPref(), artwork:{ enabled:false, interval:30, order:"random", pool:["rain", "original"], variant:"rain" } });
+  api.writePref({ family:"gundam", mode:"light", style:"vivid" });
+  const restored = load(raw(), false, {}, { catalog:variantCatalog() }).api;
+  restored.writePref({ family:"naruto", mode:"dark", style:"vivid" });
+  assert.equal(restored.readPref().artwork.enabled, false);
+  assert.equal(restored.readPref().artwork.interval, 30);
+  assert.equal(restored.readPref().artwork.order, "random");
+  assert.equal(restored.readPref().artwork.variant, "rain");
+  assert.deepEqual(Array.from(restored.readPref().artwork.pool), ["rain", "original"]);
+});
+
+test("saved artwork choices keep their switch, interval and pool when defaults change", () => {
+  const saved = { version:5, selected:{ family:"naruto", mode:"dark", style:"vivid" }, families:{ naruto:{ artwork:{ enabled:false, interval:15, pool:["original", "rain"], variant:"rain" } } } };
+  const { api } = load(JSON.stringify(saved), false, {}, { catalog:variantCatalog() });
+  assert.equal(api.readPref().artwork.enabled, false);
+  assert.equal(api.readPref().artwork.interval, 15);
+  assert.equal(api.readPref().artwork.variant, "rain");
+  assert.deepEqual(Array.from(api.readPref().artwork.pool), ["original", "rain"]);
 });
 
 test("rotation follows the pool order and random rotation never repeats the current item", () => {
@@ -360,6 +390,23 @@ function rotationRuntime(saved) {
   return { ...harness, time, events, actions:section.inject({ sync() {} }), snapshot:() => snapshot, streaming:(value) => { streaming = value; }, dispose:() => { for (const fn of cleanups.reverse()) fn?.(); } };
 }
 
+test("an active multi-artwork theme starts the default five-minute timer without stored family settings", () => {
+  const runtime = rotationRuntime({ version:5, selected:{ family:"naruto", mode:"dark", style:"vivid" } });
+  const initial = runtime.snapshot();
+  assert.equal(runtime.api.readPref().artwork.enabled, true);
+  assert.equal(runtime.api.readPref().artwork.interval, 5);
+  runtime.time.advance(299999);
+  assert.equal(runtime.api.readPref().artwork.variant, "original");
+  runtime.time.advance(1);
+  assert.equal(runtime.api.readPref().artwork.variant, "rain");
+  assert.equal(runtime.snapshot(), initial);
+  runtime.time.advance(300000);
+  assert.equal(runtime.api.readPref().artwork.variant, "original");
+  runtime.dispose();
+  runtime.time.advance(0);
+  assert.equal(runtime.time.count(), 0);
+});
+
 test("runtime rotates themes with the current mode, keeps per-family artwork, and pauses during appearance editing", () => {
   const runtime = rotationRuntime({ version:4, selected:{ family:"naruto", mode:"system", style:"vivid" }, rotation:{ enabled:true, pool:["naruto", "gundam"], interval:1 }, families:{ naruto:{ mode:"system", artwork:{ variant:"rain" } }, gundam:{ mode:"dark", props:false } } });
   runtime.actions.setEditing(true);
@@ -398,6 +445,7 @@ test("runtime switches artwork without changing skin, cleans overrides, and resp
   assert.equal(runtime.snapshot(), initial);
   const override = [...runtime.nodes].find((node) => node.id === "dsh-theme-decoration-overrides");
   assert.match(override.textContent, /rain-dark.webp/);
+  assert.match(override.textContent, /--dsw-pack-scene-props:url\(rain-props-dark.webp\)/);
   assert.doesNotMatch(override.textContent, /--dsw-pack-paper:/);
   assert.equal(runtime.document.body.style.getPropertyValue("--dsh-theme-wallpaper-size"), "360px");
   runtime.actions.previewTheme({ family:"gundam", mode:"light" });
