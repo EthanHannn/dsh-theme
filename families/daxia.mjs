@@ -12,7 +12,7 @@
 //
 // Ships vivid only, like the other IP families.
 
-export default {
+const family = {
   id: "daxia",
   sortKey: "guga-doro-01-jianghu-01-daxia",
   names: { zh: "咕嘎和 Doro · 江湖 · 仗剑同行", en: "Guga & Doro · Jianghu · Wandering Heroes" },
@@ -273,3 +273,96 @@ export default {
     },
   },
 };
+
+// 每组场景携带完整装饰，阅读配色保持一致。
+family.originalArtworkNames = { zh: "结伴赶路", en: "On the Road" };
+family.legacyFamilies = [
+  { id: "guga-doro-bamboo-tea", artwork: "bamboo-tea" },
+  { id: "guga-doro-rain-ferry", artwork: "rain-ferry" },
+  { id: "guga-doro-snow-inn", artwork: "snow-inn" },
+];
+family.artworks = [
+  {
+    id: "bamboo-tea",
+    names: { zh: "竹涧茶歇", en: "Bamboo Creek Tea" },
+    decor: {
+      headerArt: {
+        bakedHorizontalFade: true,
+      },
+      phrases: {
+        zh: [
+          ["咕嘎。火候慢一点，茶香会等人。", "咕嘎。这阵风，只借给小炉子。"],
+          ["doro～先吹三下，再喝一小口。", "doro？你的杯子，也温好啦。"],
+          ["咕嘎。最后这颗，已经剥好。", "咕嘎。赶路前，先把手心暖暖。"],
+          ["doro～两只杯子，一起收好。", "doro！下一个歇脚处，还泡这壶茶。"],
+        ],
+        en: [
+          ["Guga. Easy with the fire. Tea can wait.", "Guga. This breeze is for the little stove."],
+          ["Doro~ Three little blows, then one sip.", "Doro? Your cup is warm too."],
+          ["Guga. The last chestnut. Peeled for you.", "Guga. Warm your paws before the road."],
+          ["Doro~ Two cups, packed together.", "Doro! Same tea at our next stop."],
+        ],
+      },
+      wallpaperSize: "min(32vw, 460px, calc(68vh * var(--dsw-pack-wallpaper-ratio, 1)), max(250px, calc((100vw - 1160px) / 2 - 24px)))",
+      wallpaperPosition: "right 16px bottom 12px",
+      heroTranslate: "calc(-0.3 * min(32vw, 460px)) calc(-1 * min(6vh, 60px))",
+      heroMaxWidth: "calc(100vw - 280px - min(32vw, 460px) - 64px)",
+    },
+  },
+  {
+    id: "rain-ferry",
+    names: { zh: "烟雨摆渡", en: "Rainy River Ferry" },
+    decor: {
+      headerArt: {
+        bakedHorizontalFade: true,
+      },
+      phrases: {
+        zh: [
+          ["咕嘎。结打牢，雨就进不来。", "咕嘎。这一小段绳，护一船干燥。"],
+          ["doro～小纸船，替我们先探路。", "doro？它也想去对岸看看。"],
+          ["咕嘎。桨声轻些，别惊着晚风。", "咕嘎。慢慢划，靠岸前再歇一歇。"],
+          ["doro～灯往这边，包袱不会湿。", "doro！你顾桨，我顾回家的光。"],
+        ],
+        en: [
+          ["Guga. A good knot keeps the rain out.", "Guga. One little rope, one dry boat."],
+          ["Doro~ Little paper boat, scout ahead.", "Doro? It wants to see the far bank too."],
+          ["Guga. Gentle strokes for a quiet river.", "Guga. Slowly. One more rest before shore."],
+          ["Doro~ Light this way. The bundle stays dry.", "Doro! You row. I will keep our light."],
+        ],
+      },
+      wallpaperSize: "min(32vw, 460px, calc(68vh * var(--dsw-pack-wallpaper-ratio, 1)), max(250px, calc((100vw - 1160px) / 2 - 24px)))",
+      wallpaperPosition: "right 16px bottom 12px",
+      heroTranslate: "calc(-0.3 * min(32vw, 460px)) calc(-1 * min(6vh, 60px))",
+      heroMaxWidth: "calc(100vw - 280px - min(32vw, 460px) - 64px)",
+    },
+  },
+  {
+    id: "snow-inn",
+    names: { zh: "雪驿围炉", en: "Snowbound Hearth" },
+    decor: {
+      headerArt: {
+        bakedHorizontalFade: true,
+      },
+      phrases: {
+        zh: [
+          ["咕嘎。扫出一条路，等你回门。", "咕嘎。门槛干净，今晚睡得踏实。"],
+          ["doro～三根小柴，够暖两双手。", "doro！柴抱回来啦，围巾也没丢。"],
+          ["咕嘎。再翻一面，甜味就出来。", "咕嘎。别急，炉火比脚步慢一点。"],
+          ["doro～一人一半，最甜的都在中间。", "doro！雪再大，也冻不着这一口。"],
+        ],
+        en: [
+          ["Guga. A clear path for your way back.", "Guga. Clean doorstep, peaceful sleep."],
+          ["Doro~ Three little logs for four warm paws.", "Doro! Wood is here. Scarf is safe too."],
+          ["Guga. One more turn brings out the sweet.", "Guga. Easy. The hearth takes its time."],
+          ["Doro~ Half for each. Sweetest in the middle.", "Doro! No snow can chill this bite."],
+        ],
+      },
+      wallpaperSize: "min(32vw, 460px, calc(68vh * var(--dsw-pack-wallpaper-ratio, 1)), max(250px, calc((100vw - 1160px) / 2 - 24px)))",
+      wallpaperPosition: "right 16px bottom 12px",
+      heroTranslate: "calc(-0.3 * min(32vw, 460px)) calc(-1 * min(6vh, 60px))",
+      heroMaxWidth: "calc(100vw - 280px - min(32vw, 460px) - 64px)",
+    },
+  },
+];
+
+export default family;

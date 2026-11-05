@@ -10,12 +10,14 @@ function fixture() {
     ["forest-rain-dark", 'url("data:image/webp;base64,ZGFyaw==")'],
     ["forest-rain-banner-light", "url(banner-light.webp)"],
     ["forest-rain-props", "url(props.webp)"],
+    ["forest-rain-folder-light", "url(folder.webp)"],
+    ["forest-rain-folder-open-light", "url(folder-open.webp)"],
   ]);
   const family = { id:"forest", styles:["vivid"], decor:{ headerArt:{ bakedHorizontalFade:true } }, artworks:[{ id:"rain", names:{ zh:"雨景", en:"Rain" }, decor:{ wallpaperSize:"360px", phrases:{ zh:["下雨了。"], en:["Rain is falling."] } } }] };
   const helpers = {
     assetValue:(name) => assets.get(name) ?? null,
     dimensions:() => ({ width:600, height:800 }),
-    pals:() => [],
+    pals:(prefix) => prefix === "forest-rain" ? ["rain-pal.webp"] : [],
     headerTokens:(kind, faded) => ({ "--dsw-pack-header-art-size":kind === "banner" ? "cover" : "contain", "--dsw-pack-header-art-mask":faded ? "fade" : "none" }),
   };
   return { family, helpers, assets };
@@ -31,6 +33,9 @@ test("artwork variants build paired mode assets and inherit missing artwork with
   assert.equal(variant.modes.light["--dsw-pack-header-art-mask"], "fade");
   assert.equal(variant.modes.dark["--dsw-pack-panel"], undefined);
   assert.equal(variant.modes.dark["--dsw-pack-scene-props"], "url(props.webp)");
+  assert.equal(variant.modes.light["--dsw-pack-folder"], "url(folder.webp)");
+  assert.equal(variant.modes.light["--dsw-pack-folder-open"], "url(folder-open.webp)");
+  assert.equal(variant.decor.pals[0], "rain-pal.webp");
   assert.equal(variant.decor.wallpaperSize, "360px");
   assert.equal(variant.decor.phrases.zh[0], "下雨了。");
   assert.equal(Object.keys(variant.modes.light).some((key) => /paper|accent|signature/.test(key.replace("wallpaper", ""))), false);
@@ -44,7 +49,7 @@ test("invalid variants fail the build instead of shipping broken selections", ()
     ({ family }) => { family.artworks[0].id = "../outside"; },
     ({ family }) => { delete family.artworks[0].names.en; },
     ({ family }) => { family.styles = ["minimal"]; },
-    ({ assets }) => { assets.clear(); },
+    ({ assets, helpers }) => { assets.clear(); helpers.pals = () => []; },
     ({ helpers }) => { helpers.dimensions = () => null; },
   ]) {
     const data = fixture();

@@ -14,9 +14,9 @@
 
 主题轮换可按列表或随机播放，也可点击“下一套主题”。支持 1、5、15、30、60、180 分钟间隔，切换时沿用当前的浅色、深色或跟随系统模式。
 
-**同主题图片**用于固定配色、切换当前主题的图片，支持独立的轮换列表和间隔。多图主题首次启用时默认按列表每五分钟轮换全部配图，可自行关闭、调整间隔、顺序和名单。「雾庭菇灯」提供原配图、蘑伞听雨、推车运菇、树洞晚安共四组浅深配图，主区域左下角物件与当前场景同步切换。单图主题保持静态；选择简约或默认外观时提示先选择带配图的主题。
+**同主题图片**用于固定配色、切换当前主题的图片，支持独立的轮换列表和间隔。多图主题首次启用时默认按列表每五分钟轮换全部配图，可自行关闭、调整间隔、顺序和名单。「雾庭菇灯」提供原配图、蘑伞听雨、推车运菇、树洞晚安共四组浅深配图，主区域左下角物件与当前场景同步切换。「仗剑同行」收录结伴赶路、竹涧茶歇、烟雨摆渡、雪驿围炉四组完整场景，主图、物件、顶部横幅、文件夹开合、侧栏角色与语录同步切换；原独立江湖主题的使用状态、收藏及主题轮换名单自动归并。单图主题保持静态；选择简约或默认外观时提示先选择带配图的主题。
 
-主题轮换默认关闭，同主题多图轮换采用上述默认值；已有保存的开关、间隔和名单继续保留。配置自动保存在当前浏览器或桌面端。调整外观、预览主题、输入文字及生成回复时暂停自动切换；页面隐藏时暂停，重新显示后从完整间隔重新计时。切回默认外观后停止自动轮换。
+主题轮换默认关闭。多图主题默认勾选全部配图，旧版单图主题扩展后也会自动全选并开启五分钟轮播；后续新增配图默认加入名单。手动取消的已有图片及自定义开关、间隔和顺序会记住，切回主题时继续使用。配置自动保存在当前浏览器或桌面端。调整外观、预览主题、输入文字及生成回复时暂停自动切换；页面隐藏时暂停，重新显示后从完整间隔重新计时。切回默认外观后停止自动轮换。
 
 ## 精选主题
 
@@ -32,8 +32,6 @@
 | [咕嘎和 Doro · 江湖 · 仗剑同行](docs/screenshots/README.md#theme-1) | [![咕嘎和 Doro · 江湖 · 仗剑同行 · 浅色](docs/screenshots/01-daxia-light.webp)](docs/screenshots/01-daxia-light.webp) | [![咕嘎和 Doro · 江湖 · 仗剑同行 · 深色](docs/screenshots/01-daxia-dark.webp)](docs/screenshots/01-daxia-dark.webp) |
 | [咕嘎和 Doro · 日常 · 快乐开黑](docs/screenshots/README.md#theme-107) | [![咕嘎和 Doro · 日常 · 快乐开黑 · 浅色](docs/screenshots/107-guga-doro-coop-light.webp)](docs/screenshots/107-guga-doro-coop-light.webp) | [![咕嘎和 Doro · 日常 · 快乐开黑 · 深色](docs/screenshots/107-guga-doro-coop-dark.webp)](docs/screenshots/107-guga-doro-coop-dark.webp) |
 | [咕嘎和 Doro · 植物大战僵尸 · 雾庭菇灯](docs/screenshots/README.md#theme-120) | [![咕嘎和 Doro · 植物大战僵尸 · 雾庭菇灯 · 浅色](docs/screenshots/120-doro-pvz-fog-lantern-light.webp)](docs/screenshots/120-doro-pvz-fog-lantern-light.webp) | [![咕嘎和 Doro · 植物大战僵尸 · 雾庭菇灯 · 深色](docs/screenshots/120-doro-pvz-fog-lantern-dark.webp)](docs/screenshots/120-doro-pvz-fog-lantern-dark.webp) |
-| [咕嘎和 Doro · 江湖 · 竹涧茶歇](docs/screenshots/README.md#theme-113) | [![咕嘎和 Doro · 江湖 · 竹涧茶歇 · 浅色](docs/screenshots/113-guga-doro-bamboo-tea-light.webp)](docs/screenshots/113-guga-doro-bamboo-tea-light.webp) | [![咕嘎和 Doro · 江湖 · 竹涧茶歇 · 深色](docs/screenshots/113-guga-doro-bamboo-tea-dark.webp)](docs/screenshots/113-guga-doro-bamboo-tea-dark.webp) |
-| [咕嘎和 Doro · 江湖 · 烟雨摆渡](docs/screenshots/README.md#theme-114) | [![咕嘎和 Doro · 江湖 · 烟雨摆渡 · 浅色](docs/screenshots/114-guga-doro-rain-ferry-light.webp)](docs/screenshots/114-guga-doro-rain-ferry-light.webp) | [![咕嘎和 Doro · 江湖 · 烟雨摆渡 · 深色](docs/screenshots/114-guga-doro-rain-ferry-dark.webp)](docs/screenshots/114-guga-doro-rain-ferry-dark.webp) |
 | [咕嘎和 Doro · 植物大战僵尸 · 戴夫种植队](docs/screenshots/README.md#theme-109) | [![咕嘎和 Doro · 植物大战僵尸 · 戴夫种植队 · 浅色](docs/screenshots/109-guga-doro-pvz-garden-light.webp)](docs/screenshots/109-guga-doro-pvz-garden-light.webp) | [![咕嘎和 Doro · 植物大战僵尸 · 戴夫种植队 · 深色](docs/screenshots/109-guga-doro-pvz-garden-dark.webp)](docs/screenshots/109-guga-doro-pvz-garden-dark.webp) |
 | [咕嘎和 Doro · 植物大战僵尸 · 睡莲护航队](docs/screenshots/README.md#theme-111) | [![咕嘎和 Doro · 植物大战僵尸 · 睡莲护航队 · 浅色](docs/screenshots/111-guga-doro-pvz-pool-light.webp)](docs/screenshots/111-guga-doro-pvz-pool-light.webp) | [![咕嘎和 Doro · 植物大战僵尸 · 睡莲护航队 · 深色](docs/screenshots/111-guga-doro-pvz-pool-dark.webp)](docs/screenshots/111-guga-doro-pvz-pool-dark.webp) |
 | [咕嘎和 Doro · 植物大战僵尸 · 坚果修补铺](docs/screenshots/README.md#theme-121) | [![咕嘎和 Doro · 植物大战僵尸 · 坚果修补铺 · 浅色](docs/screenshots/121-doro-pvz-walnut-workshop-light.webp)](docs/screenshots/121-doro-pvz-walnut-workshop-light.webp) | [![咕嘎和 Doro · 植物大战僵尸 · 坚果修补铺 · 深色](docs/screenshots/121-doro-pvz-walnut-workshop-dark.webp)](docs/screenshots/121-doro-pvz-walnut-workshop-dark.webp) |

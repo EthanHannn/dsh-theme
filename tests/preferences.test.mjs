@@ -247,11 +247,92 @@ function variantCatalog() {
   const entries = structuredClone(catalog);
   entries[0].artworks = [{
     id:"rain", names:{ zh:"雨景", en:"Rain" },
-    modes:{ light:{ "--dsw-pack-wallpaper":"url(rain-light.webp)", "--dsw-pack-scene-props":"url(rain-props-light.webp)", "--dsw-pack-paper":"red" }, dark:{ "--dsw-pack-wallpaper":"url(rain-dark.webp)", "--dsw-pack-wallpaper-ratio":"0.75", "--dsw-pack-scene-props":"url(rain-props-dark.webp)" } },
-    decor:{ wallpaperPosition:"right bottom", wallpaperSize:"360px" },
+    modes:{ light:{ "--dsw-pack-wallpaper":"url(rain-light.webp)", "--dsw-pack-scene-props":"url(rain-props-light.webp)", "--dsw-pack-paper":"red" }, dark:{ "--dsw-pack-wallpaper":"url(rain-dark.webp)", "--dsw-pack-wallpaper-ratio":"0.75", "--dsw-pack-scene-props":"url(rain-props-dark.webp)", "--dsw-pack-panel":"url(rain-banner-dark.webp)", "--dsw-pack-folder":"url(rain-folder-dark.webp)", "--dsw-pack-folder-open":"url(rain-folder-open-dark.webp)" } },
+    decor:{ wallpaperPosition:"right bottom", wallpaperSize:"360px", pals:["rain-pal.webp"], phrases:{ zh:[["渡船靠岸啦。"]], en:[["Our ferry is home."]] } },
   }];
   return entries;
 }
+
+function mergedCatalog() {
+  const entries = variantCatalog();
+  entries[0].originalArtworkNames = { zh:"结伴赶路", en:"On the Road" };
+  entries[0].legacyFamilies = [{ id:"old-rain", artwork:"rain" }];
+  entries[2].legacyFamilies = [{ id:"old-rain-minimal" }];
+  return entries;
+}
+
+test("merged families preserve the active scene, decoration choices, favorites and rotation order", () => {
+  const saved = { version:5, selected:{ family:"old-rain", mode:"dark", style:"vivid" }, favorites:["old-rain", "gundam", "naruto"], rotation:{ enabled:true, pool:["old-rain", "naruto", "gundam"], interval:30, order:"random" }, families:{ "old-rain":{ props:false, header:false }, naruto:{ artwork:{ enabled:false, interval:15, order:"random", pool:["rain", "original"] } } } };
+  const { api } = load(JSON.stringify(saved), false, {}, { catalog:mergedCatalog() });
+  const doc = api.readDocument();
+  assert.equal(api.readPref().family, "naruto");
+  assert.equal(api.readPref().mode, "dark");
+  assert.equal(api.readPref().props, false);
+  assert.equal(api.readPref().header, false);
+  assert.equal(api.readPref().artwork.variant, "rain");
+  assert.equal(api.readPref().artwork.enabled, false);
+  assert.equal(api.readPref().artwork.interval, 15);
+  assert.deepEqual(Array.from(api.readPref().artwork.pool), ["rain", "original"]);
+  assert.deepEqual(Array.from(doc.favorites), ["naruto", "gundam"]);
+  assert.deepEqual(Array.from(doc.rotation.pool), ["naruto", "gundam"]);
+  assert.equal(doc.rotation.order, "random");
+  assert.equal(doc.rotation.interval, 30);
+  assert.equal(Object.hasOwn(doc.families, "old-rain"), false);
+  assert.deepEqual(JSON.parse(JSON.stringify(api.normalizeDocument(doc))), JSON.parse(JSON.stringify(doc)));
+  assert.equal(api.artworkVariantsFor("naruto")[0].names.zh, "结伴赶路");
+  assert.deepEqual(Array.from(api.filterCatalog("雨景", "all", false), (entry) => entry.id), ["naruto"]);
+  assert.equal(api.filterCatalog("old-rain", "all", false).some((entry) => entry.id === "naruto"), true);
+});
+
+test("a former single-picture family starts the merged scene defaults and persists the migration", () => {
+  const saved = { version:5, selected:{ family:"old-rain", mode:"system", style:"vivid" }, families:{ "old-rain":{ pal:false, artwork:{ enabled:false, interval:15, pool:["original"], variant:"original" } } } };
+  const { api, raw } = load(JSON.stringify(saved), false, {}, { catalog:mergedCatalog() });
+  assert.equal(api.readPref().artwork.variant, "rain");
+  assert.equal(api.readPref().artwork.enabled, true);
+  assert.equal(api.readPref().artwork.interval, 5);
+  assert.equal(api.readPref().pal, false);
+  assert.deepEqual(Array.from(api.readPref().artwork.pool), ["original", "rain"]);
+  assert.equal(JSON.parse(raw()).selected.family, "naruto");
+  assert.equal(Object.hasOwn(JSON.parse(raw()).families, "old-rain"), false);
+  api.writePref(api.readPref());
+  const restored = load(raw(), false, {}, { catalog:mergedCatalog() }).api;
+  assert.equal(restored.readPref().artwork.variant, "rain");
+  assert.equal(Object.hasOwn(restored.readDocument().families, "old-rain"), false);
+});
+
+test("legacy flat preferences and minimal families retain their appearance after a merge", () => {
+  for (const saved of [
+    { family:"old-rain", mode:"dark", style:"vivid", props:false, wallpaper:"soft" },
+    { version:2, selected:{ family:"old-rain", mode:"dark", style:"vivid" }, families:{ "old-rain":{ props:false, wallpaper:"soft" } } },
+  ]) {
+    const { api } = load(JSON.stringify(saved), false, {}, { catalog:mergedCatalog() });
+    assert.equal(api.readPref().family, "naruto");
+    assert.equal(api.readPref().mode, "dark");
+    assert.equal(api.readPref().props, false);
+    assert.equal(api.readPref().wallpaper, "soft");
+    assert.equal(api.readPref().artwork.variant, "rain");
+  }
+  const { api } = load(JSON.stringify({ version:5, selected:{ family:"old-rain-minimal", mode:"light", style:"minimal" }, favorites:["old-rain-minimal", "slate"] }), false, {}, { catalog:mergedCatalog() });
+  assert.equal(api.readPref().family, "slate");
+  assert.equal(api.resolveSkin(api.readPref()), "slate-light");
+  assert.equal(api.readPref().artwork.enabled, false);
+  assert.deepEqual(Array.from(api.readDocument().favorites), ["slate"]);
+  const mixed = load(JSON.stringify({ version:2, selected:{ family:"gundam", mode:"dark", style:"vivid" }, favorites:["old-rain"], families:{ gundam:{ props:false } } }), false, {}, { catalog:mergedCatalog() }).api;
+  assert.equal(mixed.readPref().mode, "dark");
+  assert.equal(mixed.readPref().props, false);
+});
+
+test("inactive merged entries cannot replace current settings and a collapsed theme pool stops rotating", () => {
+  const saved = { version:5, selected:{ family:"naruto", mode:"light", style:"vivid" }, families:{ naruto:{ props:true, artwork:{ variant:"original", enabled:false } }, "old-rain":{ props:false } }, rotation:{ enabled:true, pool:["old-rain", "naruto"], interval:60 } };
+  const { api } = load(JSON.stringify(saved), false, {}, { catalog:mergedCatalog() });
+  assert.equal(api.readPref().props, true);
+  assert.equal(api.readPref().artwork.variant, "original");
+  assert.equal(api.readPref().artwork.enabled, false);
+  assert.equal(api.readDocument().rotation.enabled, false);
+  assert.equal(api.readDocument().rotation.interval, 60);
+  assert.deepEqual(Array.from(api.readDocument().rotation.pool), ["naruto"]);
+  for (const malformed of [{ favorites:"old-rain" }, { rotation:{ pool:123 } }]) assert.doesNotThrow(() => api.normalizeDocument(malformed));
+});
 
 function fakeClock() {
   let time = 0;
@@ -329,6 +410,51 @@ test("saved artwork choices keep their switch, interval and pool when defaults c
   assert.equal(api.readPref().artwork.interval, 15);
   assert.equal(api.readPref().artwork.variant, "rain");
   assert.deepEqual(Array.from(api.readPref().artwork.pool), ["original", "rain"]);
+});
+
+test("expanding a saved single-picture theme selects every scene and starts the five-minute defaults", () => {
+  const original = load(null);
+  original.api.writePref({ family:"naruto", mode:"dark", style:"vivid", props:false });
+  assert.deepEqual(Array.from(original.api.readPref().artwork.known), ["original"]);
+  assert.equal(original.api.readPref().artwork.enabled, false);
+  const expanded = load(original.raw(), false, {}, { catalog:variantCatalog() });
+  assert.deepEqual(Array.from(expanded.api.readPref().artwork.pool), ["original", "rain"]);
+  assert.deepEqual(Array.from(expanded.api.readPref().artwork.known), ["original", "rain"]);
+  assert.equal(expanded.api.readPref().artwork.enabled, true);
+  assert.equal(expanded.api.readPref().artwork.interval, 5);
+  assert.equal(expanded.api.readPref().mode, "dark");
+  assert.equal(expanded.api.readPref().props, false);
+  assert.deepEqual(JSON.parse(expanded.raw()).families.naruto.artwork.known, ["original", "rain"]);
+});
+
+test("legacy original-only defaults are repaired once without resetting the current scene", () => {
+  const saved = { version:5, selected:{ family:"naruto", mode:"system", style:"vivid" }, families:{ naruto:{ artwork:{ enabled:false, interval:5, order:"sequence", pool:["original"], variant:"rain" } } } };
+  const migrated = load(JSON.stringify(saved), false, {}, { catalog:variantCatalog() });
+  assert.deepEqual(Array.from(migrated.api.readPref().artwork.pool), ["original", "rain"]);
+  assert.equal(migrated.api.readPref().artwork.enabled, true);
+  assert.equal(migrated.api.readPref().artwork.variant, "rain");
+  migrated.api.writeSettings({ ...migrated.api.readPref(), artwork:{ ...migrated.api.readPref().artwork, pool:["original"], enabled:false, interval:15 } });
+  const restored = load(migrated.raw(), false, {}, { catalog:variantCatalog() });
+  assert.deepEqual(Array.from(restored.api.readPref().artwork.pool), ["original"]);
+  assert.equal(restored.api.readPref().artwork.enabled, false);
+  assert.equal(restored.api.readPref().artwork.interval, 15);
+});
+
+test("new pictures join the pool while previous manual exclusions, order and settings survive", () => {
+  const saved = { version:5, selected:{ family:"naruto", mode:"dark", style:"vivid" }, families:{ naruto:{ artwork:{ enabled:false, interval:30, order:"random", pool:["rain"], known:["original", "rain"], variant:"rain" } } } };
+  const entries = variantCatalog();
+  entries[0].artworks.push({ id:"sun", names:{ zh:"晴景", en:"Sun" }, modes:{ light:{ "--dsw-pack-wallpaper":"url(sun.webp)" } } });
+  const expanded = load(JSON.stringify(saved), false, {}, { catalog:entries });
+  assert.deepEqual(Array.from(expanded.api.readPref().artwork.pool), ["rain", "sun"]);
+  assert.deepEqual(Array.from(expanded.api.readPref().artwork.known), ["original", "rain", "sun"]);
+  assert.equal(expanded.api.readPref().artwork.enabled, false);
+  assert.equal(expanded.api.readPref().artwork.interval, 30);
+  assert.equal(expanded.api.readPref().artwork.order, "random");
+  const restored = load(expanded.raw(), false, {}, { catalog:entries });
+  assert.deepEqual(Array.from(restored.api.readPref().artwork.pool), ["rain", "sun"]);
+  const empty = structuredClone(saved);
+  empty.families.naruto.artwork.pool = [];
+  assert.deepEqual(Array.from(load(JSON.stringify(empty), false, {}, { catalog:variantCatalog() }).api.readPref().artwork.pool), []);
 });
 
 test("rotation follows the pool order and random rotation never repeats the current item", () => {
@@ -446,6 +572,10 @@ test("runtime switches artwork without changing skin, cleans overrides, and resp
   const override = [...runtime.nodes].find((node) => node.id === "dsh-theme-decoration-overrides");
   assert.match(override.textContent, /rain-dark.webp/);
   assert.match(override.textContent, /--dsw-pack-scene-props:url\(rain-props-dark.webp\)/);
+  assert.match(override.textContent, /--dsw-pack-panel:url\(rain-banner-dark.webp\)/);
+  assert.match(override.textContent, /--dsw-pack-folder-open:url\(rain-folder-open-dark.webp\)/);
+  assert.equal(runtime.api.artworkDecorFor("naruto").pals[0], "rain-pal.webp");
+  assert.equal(runtime.api.artworkDecorFor("naruto").phrases.zh[0][0], "渡船靠岸啦。");
   assert.doesNotMatch(override.textContent, /--dsw-pack-paper:/);
   assert.equal(runtime.document.body.style.getPropertyValue("--dsh-theme-wallpaper-size"), "360px");
   runtime.actions.previewTheme({ family:"gundam", mode:"light" });

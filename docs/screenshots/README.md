@@ -28,7 +28,7 @@
 
 **其他**
 
-咕嘎和 Doro · 江湖：[仗剑同行](#theme-1) · [竹涧茶歇](#theme-113) · [烟雨摆渡](#theme-114) · [雪驿围炉](#theme-115)
+咕嘎和 Doro · 江湖：[仗剑同行 · 四组场景](#theme-1)
 
 咕嘎和 Doro · 日常：[暖阳小日子](#theme-96) · [草莓幸福日](#theme-97) · [晴雨相伴](#theme-98) · [星灯小屋](#theme-99) · [街角咖啡](#theme-100) · [咕嘟火锅](#theme-106) · [快乐开黑](#theme-107) · [湖畔露营](#theme-108)
 
@@ -47,39 +47,16 @@
 
 ## 咕嘎和 Doro · 江湖 · 仗剑同行
 
-| 浅色 | 深色 |
-| --- | --- |
-| [![咕嘎和 Doro · 江湖 · 仗剑同行 · 浅色](01-daxia-light.webp)](01-daxia-light.webp) | [![咕嘎和 Doro · 江湖 · 仗剑同行 · 深色](01-daxia-dark.webp)](01-daxia-dark.webp) |
+结伴赶路、竹涧茶歇、烟雨摆渡、雪驿围炉合为一个主题，浅深各四组完整场景。主图、左下物件、顶部横幅、文件夹开合、侧栏伙伴和双语语录同步切换，统一使用宣纸米色／墨青阅读配色。首次使用及旧单图升级时默认勾选全部配图，按列表每五分钟轮播，可固定某组或调整名单与间隔；之后的自定义设置与各部位显示开关继续保留。原三套独立主题的使用状态、收藏及轮换名单会自动迁移。
 
-<a name="theme-113"></a>
+| 场景 | 浅色 | 深色 |
+| --- | --- | --- |
+| 结伴赶路 | [![仗剑同行 · 结伴赶路 · 浅色](01-daxia-light.webp)](01-daxia-light.webp) | [![仗剑同行 · 结伴赶路 · 深色](01-daxia-dark.webp)](01-daxia-dark.webp) |
+| <a name="theme-113"></a>竹涧茶歇 | [![仗剑同行 · 竹涧茶歇 · 浅色](01-daxia-bamboo-tea-light.webp)](01-daxia-bamboo-tea-light.webp) | [![仗剑同行 · 竹涧茶歇 · 深色](01-daxia-bamboo-tea-dark.webp)](01-daxia-bamboo-tea-dark.webp) |
+| <a name="theme-114"></a>烟雨摆渡 | [![仗剑同行 · 烟雨摆渡 · 浅色](01-daxia-rain-ferry-light.webp)](01-daxia-rain-ferry-light.webp) | [![仗剑同行 · 烟雨摆渡 · 深色](01-daxia-rain-ferry-dark.webp)](01-daxia-rain-ferry-dark.webp) |
+| <a name="theme-115"></a>雪驿围炉 | [![仗剑同行 · 雪驿围炉 · 浅色](01-daxia-snow-inn-light.webp)](01-daxia-snow-inn-light.webp) | [![仗剑同行 · 雪驿围炉 · 深色](01-daxia-snow-inn-dark.webp)](01-daxia-snow-inn-dark.webp) |
 
-## 咕嘎和 Doro · 江湖 · 竹涧茶歇
-
-浅色在竹涧扇炉温杯，深色捧茶分栗。竹编茶笈打开露出两只茶杯与叶形茶笺，侧栏伙伴各有煮茶与分享的小动作。浅深采用独立场景，并校准角色可见尺寸；配有四款动作与台词对应的小伙伴、专属道具和开合文件夹。
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![咕嘎和 Doro · 江湖 · 竹涧茶歇 · 浅色](113-guga-doro-bamboo-tea-light.webp)](113-guga-doro-bamboo-tea-light.webp) | [![咕嘎和 Doro · 江湖 · 竹涧茶歇 · 深色](113-guga-doro-bamboo-tea-dark.webp)](113-guga-doro-bamboo-tea-dark.webp) |
-
-<a name="theme-114"></a>
-
-## 咕嘎和 Doro · 江湖 · 烟雨摆渡
-
-浅色系篷绳、放纸船，深色划桨与提灯。渡票夹打开，去程河线接上归程；油纸伞与干燥行囊把小小渡船过成家。浅深采用独立场景，并校准角色可见尺寸；配有四款动作与台词对应的小伙伴、专属道具和开合文件夹。
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![咕嘎和 Doro · 江湖 · 烟雨摆渡 · 浅色](114-guga-doro-rain-ferry-light.webp)](114-guga-doro-rain-ferry-light.webp) | [![咕嘎和 Doro · 江湖 · 烟雨摆渡 · 深色](114-guga-doro-rain-ferry-dark.webp)](114-guga-doro-rain-ferry-dark.webp) |
-
-<a name="theme-115"></a>
-
-## 咕嘎和 Doro · 江湖 · 雪驿围炉
-
-浅色扫雪拾柴，深色围炉分烤薯。驿站毡布夹打开露出两双小暖袜；炉灰、缺了一角的烤薯和靠在一起的斗笠记录歇脚时光。浅深采用独立场景，并校准角色可见尺寸；配有四款动作与台词对应的小伙伴、专属道具和开合文件夹。
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![咕嘎和 Doro · 江湖 · 雪驿围炉 · 浅色](115-guga-doro-snow-inn-light.webp)](115-guga-doro-snow-inn-light.webp) | [![咕嘎和 Doro · 江湖 · 雪驿围炉 · 深色](115-guga-doro-snow-inn-dark.webp)](115-guga-doro-snow-inn-dark.webp) |
+竹涧茶歇包含扇炉温杯／捧茶分栗与竹编茶笈；烟雨摆渡包含系篷绳放纸船／划桨提灯与渡票夹；雪驿围炉包含扫雪拾柴／围炉分烤薯与藏有两双暖袜的毡布夹。每组原有配套和故事均保留。
 
 <a name="theme-96"></a>
 

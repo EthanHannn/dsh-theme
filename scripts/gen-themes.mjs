@@ -464,12 +464,28 @@ for (const file of familyFiles) {
     ...(family.decor?.wallpaperPosition ? { wallpaperPosition: family.decor.wallpaperPosition } : {}),
     ...(family.decor?.heroTranslate ? { heroTranslate: family.decor.heroTranslate } : {}),
     ...(family.decor?.heroMaxWidth ? { heroMaxWidth: family.decor.heroMaxWidth } : {}),
-  }, ...(artworks.length ? { artworks } : {}), skins });
+  }, ...(family.originalArtworkNames ? { originalArtworkNames:family.originalArtworkNames } : {}), ...(family.legacyFamilies ? { legacyFamilies:family.legacyFamilies } : {}), ...(artworks.length ? { artworks } : {}), skins });
 }
 
 // Explicit keys keep related IP families together regardless of filenames.
 // The picker inserts each minimal kin directly after its vivid family.
 catalog.sort((a, b) => familySortKeys.get(a.id).localeCompare(familySortKeys.get(b.id), "en"));
+
+// 旧入口必须唯一，且指向实际存在的场景，避免静默丢失使用偏好。
+const legacyFamilyIds = new Set();
+for (const family of catalog) {
+  if (family.originalArtworkNames && !["zh", "en"].every((lang) => typeof family.originalArtworkNames[lang] === "string" && family.originalArtworkNames[lang].trim())) {
+    throw new Error(`${family.id}: originalArtworkNames needs bilingual names`);
+  }
+  if (family.legacyFamilies !== undefined && !Array.isArray(family.legacyFamilies)) throw new Error(`${family.id}: legacyFamilies must be an array`);
+  for (const legacy of family.legacyFamilies ?? []) {
+    if (!legacy || typeof legacy.id !== "string" || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(legacy.id) || catalog.some((entry) => entry.id === legacy.id) || legacyFamilyIds.has(legacy.id)) {
+      throw new Error(`${family.id}: legacy family ids must be unique and no longer shipped`);
+    }
+    if (legacy.artwork !== undefined && !family.artworks?.some((entry) => entry.id === legacy.artwork)) throw new Error(`${legacy.id}: missing target artwork`);
+    legacyFamilyIds.add(legacy.id);
+  }
+}
 
 // A neutral family's `kin` declares the IP family whose palette it
 // re-exports; the settings row renders the pair as one palette group.
