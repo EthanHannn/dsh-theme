@@ -706,6 +706,14 @@ Doro 的草莓野餐与在家烘焙，配以草莓奶粉、柔和丁香紫和温
 | --- | --- |
 | [![间谍过家家·伊甸星光 · 浅色](67-spy-family-eden-light.webp)](67-spy-family-eden-light.webp) | [![间谍过家家·伊甸星光 · 深色](67-spy-family-eden-dark.webp)](67-spy-family-eden-dark.webp) |
 
+保留「星章时刻」，新增「纸翼小队」「温室观察」「庭院点心」，组成四组浅深场景。三位同学保持原作二维画风与黑金校服，各组分别展开折纸与试飞、照料与压叶、分享点心与收拾的故事；主图、左下物件、无角色横幅、文件夹开合、侧栏角色和双语语录整套切换。首次启用默认全选、每五分钟按列表轮换，旧单图配置自动补齐，可自行调整。查看[四组配图总览](67-spy-family-eden-artworks.webp)。
+
+| 配图 | 浅色 | 深色 |
+| --- | --- | --- |
+| 纸翼小队 | [![伊甸星光 · 纸翼小队 · 浅色](67-spy-family-eden-paper-wings-light.webp)](67-spy-family-eden-paper-wings-light.webp) | [![伊甸星光 · 纸翼小队 · 深色](67-spy-family-eden-paper-wings-dark.webp)](67-spy-family-eden-paper-wings-dark.webp) |
+| 温室观察 | [![伊甸星光 · 温室观察 · 浅色](67-spy-family-eden-greenhouse-light.webp)](67-spy-family-eden-greenhouse-light.webp) | [![伊甸星光 · 温室观察 · 深色](67-spy-family-eden-greenhouse-dark.webp)](67-spy-family-eden-greenhouse-dark.webp) |
+| 庭院点心 | [![伊甸星光 · 庭院点心 · 浅色](67-spy-family-eden-garden-snack-light.webp)](67-spy-family-eden-garden-snack-light.webp) | [![伊甸星光 · 庭院点心 · 深色](67-spy-family-eden-garden-snack-dark.webp)](67-spy-family-eden-garden-snack-dark.webp) |
+
 <a name="theme-68"></a>
 
 ## 间谍过家家·月下密语
