@@ -79,7 +79,6 @@
 | [角落小伙伴·暖茶小憩](docs/screenshots/README.md#theme-75) | [![角落小伙伴·暖茶小憩 · 浅色](docs/screenshots/75-sumikko-teahouse-light.webp)](docs/screenshots/75-sumikko-teahouse-light.webp) | [![角落小伙伴·暖茶小憩 · 深色](docs/screenshots/75-sumikko-teahouse-dark.webp)](docs/screenshots/75-sumikko-teahouse-dark.webp) |
 | [原神·净善书庭](docs/screenshots/README.md#theme-82) | [![原神·净善书庭 · 浅色](docs/screenshots/82-genshin-sumeru-light.webp)](docs/screenshots/82-genshin-sumeru-light.webp) | [![原神·净善书庭 · 深色](docs/screenshots/82-genshin-sumeru-dark.webp)](docs/screenshots/82-genshin-sumeru-dark.webp) |
 | [崩坏：星穹铁道·列车晨光](docs/screenshots/README.md#theme-84) | [![崩坏：星穹铁道·列车晨光 · 浅色](docs/screenshots/84-hsr-express-light.webp)](docs/screenshots/84-hsr-express-light.webp) | [![崩坏：星穹铁道·列车晨光 · 深色](docs/screenshots/84-hsr-express-dark.webp)](docs/screenshots/84-hsr-express-dark.webp) |
-| [最终幻想VII·第七天堂](docs/screenshots/README.md#theme-87) | [![最终幻想VII·第七天堂 · 浅色](docs/screenshots/87-ff7-seventh-heaven-light.webp)](docs/screenshots/87-ff7-seventh-heaven-light.webp) | [![最终幻想VII·第七天堂 · 深色](docs/screenshots/87-ff7-seventh-heaven-dark.webp)](docs/screenshots/87-ff7-seventh-heaven-dark.webp) |
 | [绝区零·六分街委托](docs/screenshots/README.md#theme-90) | [![绝区零·六分街委托 · 浅色](docs/screenshots/90-zzz-sixth-street-light.webp)](docs/screenshots/90-zzz-sixth-street-light.webp) | [![绝区零·六分街委托 · 深色](docs/screenshots/90-zzz-sixth-street-dark.webp)](docs/screenshots/90-zzz-sixth-street-dark.webp) |
 | [黑神话：悟空·古寺行旅](docs/screenshots/README.md#theme-93) | [![黑神话：悟空·古寺行旅 · 浅色](docs/screenshots/93-wukong-pilgrimage-light.webp)](docs/screenshots/93-wukong-pilgrimage-light.webp) | [![黑神话：悟空·古寺行旅 · 深色](docs/screenshots/93-wukong-pilgrimage-dark.webp)](docs/screenshots/93-wukong-pilgrimage-dark.webp) |
 | [JOJO · 星尘远征](docs/screenshots/README.md#theme-137) | [![JOJO · 星尘远征 · 浅色](docs/screenshots/137-jojo-stardust-crusaders-light.webp)](docs/screenshots/137-jojo-stardust-crusaders-light.webp) | [![JOJO · 星尘远征 · 深色](docs/screenshots/137-jojo-stardust-crusaders-dark.webp)](docs/screenshots/137-jojo-stardust-crusaders-dark.webp) |
@@ -208,9 +207,6 @@ Linux 可在安装包所在目录执行 `sha256sum -c SHA256SUMS.txt`；macOS �
 - **绝区零·六课雪夜**：雪雾蓝 / 制服黑 / 樱粉，星见雅、月城柳与苍角的巡逻小憩。
 - **绝区零·维多利亚茶歇**：银灰 / 茶点米白 / 莓红，艾莲、莱卡恩与丽娜的家政茶歇。
 - **绝区零·六分街委托**：荧光青柠 / 胶片灰 / 委托粉，妮可、安比与比利的六分街日常。
-- **最终幻想VII·片翼宿命**：银灰 / 魔晄青 / 夜幕蓝，克劳德与萨菲罗斯的紧凑双人宿命海报。
-- **最终幻想VII·教堂花信**：花瓣粉 / 教堂米白 / 暖灯金，爱丽丝与扎克的花束与书信。
-- **最终幻想VII·第七天堂**：旧木棕 / 军绿 / 黄铜金，克劳德、蒂法与巴雷特的第七天堂休憩。
 - **崩坏：星穹铁道·萤火之约**：萤火青 / 奶油白 / 夜景金，流萤与星的屋顶约定。
 - **崩坏：星穹铁道·星核夜话**：梅子紫 / 雾灰 / 霓虹青，卡芙卡、银狼与刃的任务间隙。
 - **崩坏：星穹铁道·列车晨光**：列车蓝 / 相片粉 / 黄铜金，三月七、丹恒与星的旅途晨光。
