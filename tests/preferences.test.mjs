@@ -3,7 +3,7 @@ import vm from "node:vm";
 import assert from "node:assert/strict";
 import test from "node:test";
 
-const catalog = ["naruto", "gundam"].map((id) => ({ id, category:"anime", names:{ zh:id, en:id }, skins:["light", "dark"].map((mode) => ({ id:`${id}-${mode}-vivid`, colorScheme:mode, tokens:{ "--dsw-pack-wallpaper":"url(test.webp)" } })) }));
+const catalog = ["naruto", "gundam"].map((id) => ({ id, category:"anime", names:{ zh:id, en:id }, skins:["light", "dark"].map((mode) => ({ id:`${id}-${mode}-vivid`, colorScheme:mode, tokens:{ "--dsw-pack-wallpaper":"url(test.webp)", "--dsw-pack-panel":"url(banner.webp)" } })) }));
 catalog.push({ id:"slate", kin:"gundam", category:"anime", names:{ zh:"青灰", en:"Slate" }, skins:["light", "dark"].map((mode) => ({ id:`slate-${mode}`, colorScheme:mode })) });
 catalog[0].decor = { wallpaperPosition: "right 32px bottom 20px", wallpaperSize: "min(34vw, 420px, 40vh)", heroTranslate: "0 -80px", heroMaxWidth: "600px" };
 function load(saved, unavailable = false, reactApi = {}, browser = {}) {
@@ -36,7 +36,7 @@ test("legacy clarity migrates to its family and survives default selection", () 
   assert.equal(api.readPref().wallpaper, "full");
   assert.equal(api.appearanceFor("gundam").wallpaper, "full");
   api.writePref(api.readPref());
-  assert.equal(JSON.parse(raw()).version, 5);
+  assert.equal(JSON.parse(raw()).version, 6);
   api.writePref(null);
   assert.equal(api.readPref(), null);
   assert.equal(api.appearanceFor("naruto").wallpaper, "full");
@@ -191,17 +191,67 @@ test("Desktop default-theme preview follows the OS and cancellation restores the
   desktop.dispose();
 });
 
-test("family settings remain independent and reset affects only current family", () => {
-  const { api } = load(null);
-  api.writePref({ family:"naruto", mode:"dark", style:"vivid", props:false, pal:false, wallpaper:"full" });
+test("fine controls follow every theme while mode, clarity, and artwork remain family preferences", () => {
+  const { api, raw } = load(null, false, {}, { catalog:variantCatalog() });
+  api.writePref({ family:"naruto", mode:"dark", style:"vivid", props:false, pal:false, headerRange:"title", wallpaper:"full", artwork:{ variant:"rain", enabled:false } });
   api.writePref({ family:"gundam", mode:"light", style:"vivid", character:false, wallpaper:"soft" });
-  assert.equal(api.appearanceFor("naruto").props, false);
-  assert.equal(api.appearanceFor("gundam").props, true);
+  for (const family of ["naruto", "gundam", "slate", null]) {
+    const appearance = api.appearanceFor(family);
+    assert.equal(appearance.props, false);
+    assert.equal(appearance.pal, false);
+    assert.equal(appearance.character, false);
+    assert.equal(appearance.headerRange, "title");
+  }
+  assert.equal(api.settingsFor("naruto").mode, "dark");
+  assert.equal(api.settingsFor("gundam").mode, "light");
+  assert.equal(api.appearanceFor("naruto").wallpaper, "full");
   assert.equal(api.appearanceFor("gundam").wallpaper, "soft");
-  api.writePref({ family:"gundam", mode:"system", style:"vivid", ...api.appearanceFor(null) });
-  assert.equal(api.appearanceFor("gundam").character, true);
-  assert.equal(api.appearanceFor("gundam").wallpaper, "full");
-  assert.equal(api.appearanceFor("naruto").pal, false);
+  assert.equal(api.settingsFor("naruto").artwork.variant, "rain");
+  assert.equal(api.settingsFor("gundam").artwork.variant, "original");
+  api.writePref({ family:"naruto", mode:"dark", style:"vivid" });
+  const restored = load(raw(), false, {}, { catalog:variantCatalog() }).api;
+  assert.equal(restored.readPref().props, false);
+  assert.equal(restored.readPref().headerRange, "title");
+  assert.equal(restored.readPref().artwork.variant, "rain");
+  for (const settings of Object.values(restored.readDocument().families)) {
+    for (const key of ["header", "character", "props", "pal", "headerRange"]) assert.equal(Object.hasOwn(settings, key), false);
+  }
+});
+
+test("legacy fine controls migrate from the selected family and remain stable after normalization and reload", () => {
+  for (const version of [2, 3, 4, 5]) {
+    const saved = { version, selected:{ family:"naruto", mode:"dark", style:"vivid" }, families:{ naruto:{ mode:"dark", header:false, character:false, props:false, pal:false }, gundam:{ header:true, character:true, props:true, pal:true } } };
+    const { api, raw } = load(JSON.stringify(saved));
+    const doc = api.readDocument();
+    assert.equal(doc.version, 6);
+    assert.deepEqual(JSON.parse(JSON.stringify(doc.appearance)), { header:false, character:false, props:false, pal:false, headerRange:"extend" });
+    assert.deepEqual(JSON.parse(JSON.stringify(api.normalizeDocument(doc))), JSON.parse(JSON.stringify(doc)));
+    assert.equal(JSON.parse(raw()).version, 6);
+    const restored = load(raw()).api;
+    restored.writePref({ family:"gundam", mode:"light", style:"vivid" });
+    assert.equal(restored.readPref().character, false);
+    assert.equal(restored.readPref().header, false);
+  }
+  const legacy = load(JSON.stringify({ family:"naruto", mode:"dark", style:"vivid", header:false, pal:false })).api;
+  assert.equal(legacy.appearanceFor("gundam").header, false);
+  assert.equal(legacy.appearanceFor(null).pal, false);
+});
+
+test("native-theme migration uses its own controls and explicit global controls override stale family fields", () => {
+  const native = load(JSON.stringify({ version:5, selected:null, families:{ default:{ props:false, pal:false }, naruto:{ header:false } } })).api;
+  assert.equal(native.appearanceFor("naruto").props, false);
+  assert.equal(native.appearanceFor("naruto").pal, false);
+  assert.equal(native.appearanceFor("naruto").header, true);
+  const globals = load(JSON.stringify({ version:6, selected:{ family:"naruto", mode:"dark", style:"vivid" }, appearance:{ header:true, character:false, props:true, pal:false, headerRange:"title" }, families:{ naruto:{ header:false, character:true, props:false, pal:true } } })).api;
+  assert.equal(globals.readPref().header, true);
+  assert.equal(globals.readPref().character, false);
+  assert.equal(globals.readPref().props, true);
+  assert.equal(globals.readPref().pal, false);
+  assert.equal(globals.readPref().headerRange, "title");
+  const normalized = globals.normalizeDocument({ version:6, appearance:{ header:"false", character:null, headerRange:"broken" } });
+  assert.equal(normalized.appearance.header, true);
+  assert.equal(normalized.appearance.character, true);
+  assert.equal(normalized.appearance.headerRange, "extend");
 });
 
 test("corrupt and obsolete fields normalize without admitting nonexistent skins", () => {
@@ -212,7 +262,9 @@ test("corrupt and obsolete fields normalize without admitting nonexistent skins"
   assert.equal(api.readPref().wallpaper, "full");
   assert.equal(api.parseSkin("naruto-light"), null);
   assert.equal(api.resolveSkin(api.readPref()), "naruto-light-vivid");
-  assert.equal(api.normalizeDocument({ version:2, selected:{family:"removed"}, families:{ naruto:{ props:false, header:"false" } } }).families.naruto.props, false);
+  const normalized = api.normalizeDocument({ version:2, selected:{family:"removed"}, families:{ naruto:{ props:false, header:"false" } } });
+  assert.equal(Object.hasOwn(normalized.families.naruto, "props"), false);
+  assert.equal(normalized.appearance.props, true);
 });
 
 test("v2 migration preserves the active mode and defaults other families to system", () => {
@@ -222,7 +274,7 @@ test("v2 migration preserves the active mode and defaults other families to syst
   assert.equal(api.settingsFor("naruto").wallpaper, "soft");
 });
 
-test("family settings auto-save across reload without changing the current theme", () => {
+test("family and global settings auto-save across reload without changing the current theme", () => {
   const { api, raw } = load(null);
   api.writePref({ family:"naruto", mode:"dark", style:"vivid" });
   api.writeSettings({ family:"gundam", mode:"light", wallpaper:"soft", props:false });
@@ -232,9 +284,11 @@ test("family settings auto-save across reload without changing the current theme
   assert.equal(reloaded.settingsFor("gundam").mode, "light");
   assert.equal(reloaded.settingsFor("gundam").wallpaper, "soft");
   assert.equal(reloaded.settingsFor("gundam").props, false);
+  assert.equal(reloaded.readPref().props, false);
   reloaded.writeSettings({ family:"naruto", mode:"light", wallpaper:"soft" });
   assert.equal(reloaded.readPref().family, "naruto");
   assert.equal(reloaded.readPref().mode, "light");
+  assert.equal(reloaded.readPref().props, false);
 });
 
 test("blocked localStorage retains preferences for the session", () => {
@@ -516,6 +570,68 @@ function rotationRuntime(saved) {
   return { ...harness, time, events, actions:section.inject({ sync() {} }), snapshot:() => snapshot, streaming:(value) => { streaming = value; }, dispose:() => { for (const fn of cleanups.reverse()) fn?.(); } };
 }
 
+test("preview cancellation restores unsaved controls and retains global changes that were automatically saved", () => {
+  const runtime = rotationRuntime({ version:6, selected:{ family:"naruto", mode:"dark", style:"vivid" }, appearance:{ props:false, character:false, headerRange:"title" } });
+  const range = () => runtime.document.body["data-dsh-themes-header-range"];
+  try {
+    assert.equal(range(), "title");
+    const saved = runtime.raw();
+    runtime.actions.previewTheme({ family:"gundam", mode:"light" });
+    assert.equal(range(), "title");
+    assert.equal(runtime.api.readPref().family, "naruto");
+    assert.equal(runtime.raw(), saved);
+    runtime.actions.previewTheme({ family:"gundam", mode:"light", props:true, headerRange:"extend" });
+    assert.equal(range(), undefined);
+    assert.equal(runtime.raw(), saved);
+    runtime.actions.cancelPreview();
+    assert.equal(range(), "title");
+    assert.equal(runtime.api.readPref().props, false);
+    runtime.actions.saveDraft({ family:"gundam", mode:"light", character:true, headerRange:"extend" });
+    const restored = runtime.actions.cancelPreview();
+    assert.equal(restored.family, "naruto");
+    assert.equal(restored.character, true);
+    assert.equal(restored.props, false);
+    assert.equal(restored.headerRange, "extend");
+    assert.equal(range(), undefined);
+    const reloaded = load(runtime.raw(), false, {}, { catalog:variantCatalog() }).api;
+    assert.equal(reloaded.readPref().character, true);
+    assert.equal(reloaded.settingsFor("gundam").headerRange, "extend");
+    assert.equal(reloaded.settingsFor("slate").props, false);
+  } finally {
+    runtime.dispose();
+  }
+});
+
+test("title-only artwork tracks header visibility, theme style, native mode, and teardown", () => {
+  const runtime = rotationRuntime({ version:6, selected:{ family:"naruto", mode:"dark", style:"vivid" }, appearance:{ headerRange:"title" } });
+  const range = () => runtime.document.body["data-dsh-themes-header-range"];
+  try {
+    assert.equal(range(), "title");
+    runtime.actions.applyDraft({ family:"gundam", mode:"light" });
+    assert.equal(range(), "title");
+    runtime.actions.saveDraft({ family:"gundam", mode:"light", header:false });
+    assert.equal(range(), undefined);
+    assert.equal(runtime.api.readPref().headerRange, "title");
+    runtime.actions.saveDraft({ family:"gundam", mode:"light", header:true });
+    assert.equal(range(), "title");
+    runtime.actions.applyDraft({ family:"slate", mode:"dark" });
+    assert.equal(range(), undefined);
+    assert.equal(runtime.api.readPref().headerRange, "title");
+    runtime.actions.applyDraft({ family:null, mode:"light" });
+    assert.equal(range(), undefined);
+    assert.equal(runtime.api.appearanceFor(null).headerRange, "title");
+    runtime.actions.applyDraft({ family:"naruto", mode:"dark" });
+    assert.equal(range(), "title");
+    runtime.actions.saveDraft({ family:"naruto", mode:"dark", headerRange:"extend" });
+    assert.equal(range(), undefined);
+    runtime.actions.saveDraft({ family:"naruto", mode:"dark", headerRange:"title" });
+    assert.equal(range(), "title");
+  } finally {
+    runtime.dispose();
+  }
+  assert.equal(range(), undefined);
+});
+
 test("an active multi-artwork theme starts the default five-minute timer without stored family settings", () => {
   const runtime = rotationRuntime({ version:5, selected:{ family:"naruto", mode:"dark", style:"vivid" } });
   const initial = runtime.snapshot();
@@ -533,8 +649,8 @@ test("an active multi-artwork theme starts the default five-minute timer without
   assert.equal(runtime.time.count(), 0);
 });
 
-test("runtime rotates themes with the current mode, keeps per-family artwork, and pauses during appearance editing", () => {
-  const runtime = rotationRuntime({ version:4, selected:{ family:"naruto", mode:"system", style:"vivid" }, rotation:{ enabled:true, pool:["naruto", "gundam"], interval:1 }, families:{ naruto:{ mode:"system", artwork:{ variant:"rain" } }, gundam:{ mode:"dark", props:false } } });
+test("runtime rotates themes with the current mode and global controls, keeps family artwork, and pauses during editing", () => {
+  const runtime = rotationRuntime({ version:4, selected:{ family:"naruto", mode:"system", style:"vivid" }, rotation:{ enabled:true, pool:["naruto", "gundam"], interval:1 }, families:{ naruto:{ mode:"system", props:false, artwork:{ variant:"rain" } }, gundam:{ mode:"dark", props:true } } });
   runtime.actions.setEditing(true);
   runtime.time.advance(120000);
   assert.equal(runtime.api.readPref().family, "naruto");
@@ -548,6 +664,7 @@ test("runtime rotates themes with the current mode, keeps per-family artwork, an
   runtime.actions.nextTheme();
   assert.equal(runtime.api.readPref().family, "naruto");
   assert.equal(runtime.api.readPref().artwork.variant, "rain");
+  assert.equal(runtime.api.readPref().props, false);
   runtime.actions.applyDraft({ family:null, mode:"dark" });
   runtime.time.advance(120000);
   assert.equal(runtime.api.readPref(), null);
@@ -650,10 +767,10 @@ function elementRenderer() {
   return { reactApi, render:(component, props) => { cursor = 0; return component(props); }, all, find:(node, predicate) => all(node, predicate)[0] };
 }
 
-test("v4 migration preserves appearance, artwork, and rotation while adding an independent empty library", () => {
+test("v4 migration preserves global controls, family artwork, and rotation while adding an independent empty library", () => {
   const saved = { version:4, selected:{ family:"naruto", mode:"dark", style:"vivid" }, library:{ showMinimal:false }, families:{ naruto:{ mode:"dark", props:false, artwork:{ variant:"rain", enabled:true, pool:["original", "rain"], interval:5 } } }, rotation:{ enabled:true, pool:["gundam", "naruto"], interval:60, order:"random" } };
   const { api, raw } = load(JSON.stringify(saved), false, {}, { catalog:variantCatalog() });
-  assert.equal(api.readDocument().version, 5);
+  assert.equal(api.readDocument().version, 6);
   assert.equal(api.readDocument().favorites.length, 0);
   assert.equal(api.readDocument().library.tab, "all");
   api.writeLibrarySettings({ tab:"favorites" });
@@ -823,6 +940,42 @@ test("fine controls start collapsed and toggling them preserves artwork preferen
   find(tree, disclosure).props.onClick();
   tree = render();
   assert.equal(find(tree, character).props["aria-checked"], false);
+});
+
+test("fine controls expose shared header range and reset only global controls", () => {
+  const renderer = elementRenderer();
+  const saved = { version:6, selected:{ family:"naruto", mode:"dark", style:"vivid" }, appearance:{ header:false, character:false, props:false, pal:false, headerRange:"title" }, families:{ naruto:{ mode:"dark", wallpaper:"soft", artwork:{ variant:"rain", enabled:false, interval:15, order:"random", pool:["rain"], known:["original", "rain"] } } } };
+  const { api } = load(JSON.stringify(saved), false, renderer.reactApi, { catalog:variantCatalog() });
+  const props = { t:(key) => key === "theme.title" ? "主题" : key, useStore:(pick) => pick({ family:"naruto", mode:"dark" }), saveDraft:(draft) => api.writeSettings(draft), previewTheme() {}, applyDraft() {}, cancelPreview() {} };
+  const render = () => renderer.render(api.ThemeSection, props);
+  const button = (tree, label) => renderer.find(tree, (node) => node.type === "button" && node.children[0] === label);
+  let tree = render();
+  renderer.find(tree, (node) => node.props.className === "dsh-theme-advanced-toggle").props.onClick();
+  tree = render();
+  assert.ok(renderer.find(tree, (node) => node.children.includes("应用于所有主题")));
+  assert.ok(renderer.find(tree, (node) => node.children.includes("横幅范围")));
+  assert.equal(button(tree, "限于标题栏").props.disabled, true);
+  assert.equal(button(tree, "向下延展").props.disabled, true);
+  const artwork = JSON.stringify(api.settingsFor("naruto").artwork);
+  const reset = button(tree, "恢复默认");
+  assert.equal(reset.props.title, "恢复所有主题的精细控制默认值");
+  reset.props.onClick();
+  assert.deepEqual(JSON.parse(JSON.stringify(api.readDocument().appearance)), { header:true, character:true, props:true, pal:true, headerRange:"extend" });
+  assert.equal(api.settingsFor("naruto").wallpaper, "soft");
+  assert.equal(api.settingsFor("naruto").mode, "dark");
+  assert.equal(JSON.stringify(api.settingsFor("naruto").artwork), artwork);
+  tree = render();
+  assert.equal(button(tree, "限于标题栏").props.disabled, false);
+  assert.equal(button(tree, "向下延展").props["aria-pressed"], true);
+  button(tree, "限于标题栏").props.onClick();
+  tree = render();
+  assert.equal(button(tree, "限于标题栏").props["aria-pressed"], true);
+  assert.equal(api.appearanceFor("gundam").headerRange, "title");
+  const header = renderer.find(tree, (node) => node.props.role === "switch" && node.children[0]?.children[0] === "头部横幅");
+  header.props.onClick();
+  tree = render();
+  assert.equal(button(tree, "限于标题栏").props.disabled, true);
+  assert.equal(api.appearanceFor("gundam").headerRange, "title");
 });
 
 test("section applies same-skin decorations, restores default, and tears down", () => {

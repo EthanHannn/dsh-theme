@@ -291,9 +291,8 @@ function assetValue(name) {
 }
 
 /**
- * Header artwork geometry tokens. Both presentations paint through the same
- * ::before layer on the title row (the first non-clipping box above the
- * header's title cluster):
+ * 头部装饰构图参数。延展时绘制在标题行，限于标题时保留原图绘制尺寸，
+ * 由标题容器裁切可见范围；两种范围共用横幅与旧式漫画图的构图参数。
  * - "panel": the classic right-end manga panel (auto height, melts at the
  *   bottom edge), plus the small accent chip behind its top corner;
  * - "banner": a wide atmospheric scroll spanning the whole header strip

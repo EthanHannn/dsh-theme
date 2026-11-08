@@ -68,18 +68,17 @@ test("shipped class selectors still match a bare, uncomposed class", () => {
   }
 });
 
-test("header artwork anchors above the clipped title cluster", () => {
-  // Harness 0.2.2 clips overflow on the title cluster to contain header
-  // actions. Decorative artwork must stay on the title row, otherwise the
-  // banner is cut down to the title strip.
+test("extended artwork avoids clipping and only title-only artwork uses the title cluster", () => {
+  // 延展模式避开宿主裁切，标题模式则保留旧版由容器裁切的绘制范围。
   assert.ok(
     source.includes('[class$="_titleRow"]:has(> [class$="_titleCluster"])::before'),
     "client.js must paint header artwork through the title row",
   );
-  assert.ok(
-    !source.includes('[class$="_titleCluster"]::after'),
-    "header artwork must not paint through the clipped title cluster",
-  );
+  const clippedSelectors = source.split("\n").filter((line) => line.includes('[class$="_titleCluster"]::after'));
+  assert.ok(clippedSelectors.length > 0, "title-only artwork must use the host's title clip");
+  for (const selector of clippedSelectors) {
+    assert.ok(selector.includes('[data-dsh-themes-header-range="title"]'), "clipped artwork must be restricted to title-only mode");
+  }
 });
 
 test("composed-class selectors do not over-match neighbouring class names", () => {
