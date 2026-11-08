@@ -68,6 +68,20 @@ test("shipped class selectors still match a bare, uncomposed class", () => {
   }
 });
 
+test("header artwork anchors above the clipped title cluster", () => {
+  // Harness 0.2.2 clips overflow on the title cluster to contain header
+  // actions. Decorative artwork must stay on the title row, otherwise the
+  // banner is cut down to the title strip.
+  assert.ok(
+    source.includes('[class$="_titleRow"]:has(> [class$="_titleCluster"])::before'),
+    "client.js must paint header artwork through the title row",
+  );
+  assert.ok(
+    !source.includes('[class$="_titleCluster"]::after'),
+    "header artwork must not paint through the clipped title cluster",
+  );
+});
+
 test("composed-class selectors do not over-match neighbouring class names", () => {
   // `_newSessionLabel` and `_newSessionLabelMask` share a prefix, so a bare
   // contains-match would leak the label's ink onto the mask wrapper.

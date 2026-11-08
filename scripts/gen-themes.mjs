@@ -292,7 +292,8 @@ function assetValue(name) {
 
 /**
  * Header artwork geometry tokens. Both presentations paint through the same
- * ::after layer on the title cluster:
+ * ::before layer on the title row (the first non-clipping box above the
+ * header's title cluster):
  * - "panel": the classic right-end manga panel (auto height, melts at the
  *   bottom edge), plus the small accent chip behind its top corner;
  * - "banner": a wide atmospheric scroll spanning the whole header strip
