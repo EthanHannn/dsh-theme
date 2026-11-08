@@ -1,0 +1,17 @@
+Asset type: premium square app icon for a DeepSeek Harness plugin called "DSH Themes", which provides illustrated and minimal themes.
+
+Primary request: a refined, tactile icon about color and atmosphere, not a generic paint bucket.
+
+Subject: three overlapping rounded color cards fanned like a small deck: deep indigo, muted plum, and warm ivory, each with a subtle paper texture. A thin gold circular arc cuts across the cards, suggesting a light/dark theme toggle. A tiny vermilion square seal sits at the lower right.
+
+Style/medium: modern East Asian editorial design, minimal flat vector with subtle embossed depth, precise line work, generous negative space, crisp edges.
+
+Background: deep charcoal-black with faint warm paper grain and a soft vignette. A thin muted antique-gold circular ring behind the cards.
+
+Composition: perfectly centered, strong silhouette, designed to stay legible at 256 px and 16 px.
+
+Color palette: deep indigo, muted plum, warm ivory, charcoal black, muted antique gold, one small vermilion accent.
+
+Constraints: no text, no letters, no numbers, no watermark, no logo, no photorealistic objects, no 3D plastic render, no glossy bevel, no drop shadow.
+
+Square 1:1 icon.

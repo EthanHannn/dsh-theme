@@ -1,6 +1,6 @@
 {
   "id": "doro-mage-potions-light-vivid",
-  "name": "Guga & Doro · Wizard Life · Dewdrop Apothecary Light",
+  "name": "Guga & Doro · Wizard Life · Everyday Wonders Light",
   "colorScheme": "light",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #F1F6EF 50%, #E8EDE6)",

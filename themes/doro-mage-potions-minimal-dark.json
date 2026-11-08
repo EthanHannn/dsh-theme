@@ -1,6 +1,6 @@
 {
   "id": "doro-mage-potions-minimal-dark",
-  "name": "Guga & Doro · Wizard Life · Dewdrop Apothecary · Minimal Dark",
+  "name": "Guga & Doro · Wizard Life · Everyday Wonders · Minimal Dark",
   "colorScheme": "dark",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #EFF7E9 50%, #D6DFD2)",

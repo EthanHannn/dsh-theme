@@ -30,11 +30,11 @@
 
 咕嘎和 Doro · 江湖：[仗剑同行 · 四组场景](#theme-1)
 
-咕嘎和 Doro · 日常：[暖阳小日子](#theme-96) · [草莓幸福日](#theme-97) · [晴雨相伴](#theme-98) · [星灯小屋](#theme-99) · [街角咖啡](#theme-100) · [咕嘟火锅](#theme-106) · [快乐开黑](#theme-107) · [湖畔露营](#theme-108)
+咕嘎和 Doro · 日常：[暖阳小日子](#theme-96) · [草莓幸福日](#theme-97) · [相伴小日子 · 六组场景](#theme-98)
 
-咕嘎和 Doro · 植物大战僵尸：[戴夫种植队](#theme-109) · [月夜守卫战](#theme-110) · [睡莲护航队](#theme-111) · [屋顶投手队](#theme-112) · [阳光种子铺](#theme-119) · [雾庭菇灯](#theme-120) · [坚果修补铺](#theme-121) · [豌豆练习场](#theme-126) · [冰瓜凉饮铺](#theme-127) · [磁菇回收站](#theme-128) · [南瓜守护屋](#theme-130) · [香蒲雨池](#theme-131) · [玉米黄油坊](#theme-132) · [咖啡唤醒站](#theme-133)
+咕嘎和 Doro · 植物大战僵尸：[庭院守卫队 · 四组场景](#theme-109) · [阳光种子铺](#theme-119) · [雾庭菇灯](#theme-120) · [坚果修补铺](#theme-121) · [豌豆练习场](#theme-126) · [冰瓜凉饮铺](#theme-127) · [磁菇回收站](#theme-128) · [南瓜守护屋](#theme-130) · [香蒲雨池](#theme-131) · [玉米黄油坊](#theme-132) · [咖啡唤醒站](#theme-133)
 
-咕嘎和 Doro · 魔法师：[星露药房](#theme-116) · [云朵烘焙](#theme-117) · [月邮小屋](#theme-118) · [星月工坊](#theme-125)
+咕嘎和 Doro · 魔法师：[奇妙日常 · 三组场景](#theme-116) · [星月工坊](#theme-125)
 
 咕嘎和 Doro · 魔法部落：[灵兽营地](#theme-122)
 
@@ -80,103 +80,39 @@ Doro 的草莓野餐与在家烘焙，配以草莓奶粉、柔和丁香紫和温
 
 <a name="theme-98"></a>
 
-## 咕嘎和 Doro · 日常 · 晴雨相伴
+## 咕嘎和 Doro · 日常 · 相伴小日子
 
-经典咕嘎与 Doro 在晴天一起种花，雨夜挤在沙发上共盖一条毯子、喝热可可。配以窗边雾蓝、奶油黄和暖灯金，咕嘎的夜间造型摘去企鹅帽，保留黑色齐刘海、交叉发夹与灰蓝眼睛。
+晴雨相伴、星灯小屋、街角咖啡、咕嘟火锅、快乐开黑、湖畔露营合为一个主题，浅深各六组完整场景。经典咕嘎与毛绒 Doro 的种花、做灯、热饮、火锅、游戏和露营各有故事，统一使用雾蓝／深灰蓝阅读配色。主图、左下物件、无角色横幅、文件夹开合、侧栏伙伴与双语语录成套切换；早期场景保留三款伙伴，其余场景保留四款。首次启用和旧单图升级默认全选、每五分钟轮播，自定义设置继续保留，旧入口的当前场景、收藏及主题轮换名单自动迁移。
 
-| 浅色 | 深色 |
-| --- | --- |
-| [![咕嘎和 Doro · 日常 · 晴雨相伴 · 浅色](98-guga-doro-together-light.webp)](98-guga-doro-together-light.webp) | [![咕嘎和 Doro · 日常 · 晴雨相伴 · 深色](98-guga-doro-together-dark.webp)](98-guga-doro-together-dark.webp) |
+| 场景 | 浅色 | 深色 |
+| --- | --- | --- |
+| 晴雨相伴 | [![咕嘎和 Doro · 日常 · 相伴小日子 · 晴雨相伴 · 浅色](98-guga-doro-together-light.webp)](98-guga-doro-together-light.webp) | [![咕嘎和 Doro · 日常 · 相伴小日子 · 晴雨相伴 · 深色](98-guga-doro-together-dark.webp)](98-guga-doro-together-dark.webp) |
+| <a name="theme-99"></a>星灯小屋 | [![咕嘎和 Doro · 日常 · 相伴小日子 · 星灯小屋 · 浅色](98-guga-doro-together-starlamp-light.webp)](98-guga-doro-together-starlamp-light.webp) | [![咕嘎和 Doro · 日常 · 相伴小日子 · 星灯小屋 · 深色](98-guga-doro-together-starlamp-dark.webp)](98-guga-doro-together-starlamp-dark.webp) |
+| <a name="theme-100"></a>街角咖啡 | [![咕嘎和 Doro · 日常 · 相伴小日子 · 街角咖啡 · 浅色](98-guga-doro-together-cafe-light.webp)](98-guga-doro-together-cafe-light.webp) | [![咕嘎和 Doro · 日常 · 相伴小日子 · 街角咖啡 · 深色](98-guga-doro-together-cafe-dark.webp)](98-guga-doro-together-cafe-dark.webp) |
+| <a name="theme-106"></a>咕嘟火锅 | [![咕嘎和 Doro · 日常 · 相伴小日子 · 咕嘟火锅 · 浅色](98-guga-doro-together-hotpot-light.webp)](98-guga-doro-together-hotpot-light.webp) | [![咕嘎和 Doro · 日常 · 相伴小日子 · 咕嘟火锅 · 深色](98-guga-doro-together-hotpot-dark.webp)](98-guga-doro-together-hotpot-dark.webp) |
+| <a name="theme-107"></a>快乐开黑 | [![咕嘎和 Doro · 日常 · 相伴小日子 · 快乐开黑 · 浅色](98-guga-doro-together-coop-light.webp)](98-guga-doro-together-coop-light.webp) | [![咕嘎和 Doro · 日常 · 相伴小日子 · 快乐开黑 · 深色](98-guga-doro-together-coop-dark.webp)](98-guga-doro-together-coop-dark.webp) |
+| <a name="theme-108"></a>湖畔露营 | [![咕嘎和 Doro · 日常 · 相伴小日子 · 湖畔露营 · 浅色](98-guga-doro-together-camping-light.webp)](98-guga-doro-together-camping-light.webp) | [![咕嘎和 Doro · 日常 · 相伴小日子 · 湖畔露营 · 深色](98-guga-doro-together-camping-dark.webp)](98-guga-doro-together-camping-dark.webp) |
 
-<a name="theme-99"></a>
+晴雨相伴从一起种花到共盖毯子喝可可；星灯小屋从折纸星灯到灯下读书；街角咖啡从分享可颂到相伴喝热饮；咕嘟火锅从围锅尝鲜到换座盛汤；快乐开黑从合作闯关到击掌庆祝；湖畔露营从烤棉花糖到裹毯观星。各组浅深动作与原有毛绒细节均保留。
 
-## 咕嘎和 Doro · 日常 · 星灯小屋
-
-经典企鹅装咕嘎与毛绒 Doro 在白天一起折纸星灯，晚上坐在灯下读同一本故事书。配以暖米色、丁香紫和蜂蜜金，保留咕嘎的交叉发夹、灰蓝眼睛，以及 Doro 的玫瑰卷发、紫色蝴蝶结和奶白毛绒身体。
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![咕嘎和 Doro · 日常 · 星灯小屋 · 浅色](99-guga-doro-starlamp-light.webp)](99-guga-doro-starlamp-light.webp) | [![咕嘎和 Doro · 日常 · 星灯小屋 · 深色](99-guga-doro-starlamp-dark.webp)](99-guga-doro-starlamp-dark.webp) |
-
-<a name="theme-100"></a>
-
-## 咕嘎和 Doro · 日常 · 街角咖啡
-
-经典企鹅装咕嘎与毛绒 Doro 白天分享酥皮可颂，晚上靠在一起守着热可可。角色保留细腻毛绒质感，陶瓷釉面、面包酥皮和亚麻织物采用真实材质；前景抠成透明素材，头部搭配同样柔和暖光的咖啡小景。配以燕麦米色、鼠尾草绿和浓咖啡棕。
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![咕嘎和 Doro · 日常 · 街角咖啡 · 浅色](100-guga-doro-cafe-light.webp)](100-guga-doro-cafe-light.webp) | [![咕嘎和 Doro · 日常 · 街角咖啡 · 深色](100-guga-doro-cafe-dark.webp)](100-guga-doro-cafe-dark.webp) |
-
-<a name="theme-106"></a>
-
-## 咕嘎和 Doro · 日常 · 咕嘟火锅
-
-白天围锅尝鲜，夜晚换座盛汤；暖奶油、陶红与胡桃木串起小碗、蘑菇盘和折好餐巾的晚餐细节。深浅主图独立设计动作，并校准角色可见尺度；配有四款侧栏伙伴、专属道具与开合文件夹。
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![咕嘎和 Doro · 日常 · 咕嘟火锅 · 浅色](106-guga-doro-hotpot-light.webp)](106-guga-doro-hotpot-light.webp) | [![咕嘎和 Doro · 日常 · 咕嘟火锅 · 深色](106-guga-doro-hotpot-dark.webp)](106-guga-doro-hotpot-dark.webp) |
-
-<a name="theme-107"></a>
-
-## 咕嘎和 Doro · 日常 · 快乐开黑
-
-白天并肩合作闯关，夜晚放下手柄击掌庆祝；雾蓝沙发、丁香紫手柄和爆米花把通关与休息串在一起。深浅主图独立设计动作，并校准角色可见尺度；配有四款侧栏伙伴、专属道具与开合文件夹。
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![咕嘎和 Doro · 日常 · 快乐开黑 · 浅色](107-guga-doro-coop-light.webp)](107-guga-doro-coop-light.webp) | [![咕嘎和 Doro · 日常 · 快乐开黑 · 深色](107-guga-doro-coop-dark.webp)](107-guga-doro-coop-dark.webp) |
-
-<a name="theme-108"></a>
-
-## 咕嘎和 Doro · 日常 · 湖畔露营
-
-傍晚围炉烤棉花糖，夜晚换到长椅上裹毯观星；鼠尾草绿、燕麦米与营灯金呼应热饮、地图和营地灯火。深浅主图独立设计动作，并校准角色可见尺度；配有四款侧栏伙伴、专属道具与开合文件夹。
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![咕嘎和 Doro · 日常 · 湖畔露营 · 浅色](108-guga-doro-camping-light.webp)](108-guga-doro-camping-light.webp) | [![咕嘎和 Doro · 日常 · 湖畔露营 · 深色](108-guga-doro-camping-dark.webp)](108-guga-doro-camping-dark.webp) |
+[![咕嘎和 Doro · 日常 · 相伴小日子 · 场景与横幅总览](98-guga-doro-together-artworks.webp)](98-guga-doro-together-artworks.webp)
 
 <a name="theme-109"></a>
 
-## 咕嘎和 Doro · 植物大战僵尸 · 戴夫种植队
+## 咕嘎和 Doro · 植物大战僵尸 · 庭院守卫队
 
-浅色里咕嘎扶苗、Doro 浇花；深色里咕嘎指挥豌豆射手、Doro 推坚果守住白天的成果。种子夹打开露出两种种卡，收好的阳光也出现在夜间道具里。浅深采用独立场景设计，并校准角色可见尺寸；配有四款动作与台词对应的小伙伴、专属道具和连贯开合文件夹。
+戴夫种植队、月夜守卫战、睡莲护航队、屋顶投手队合为一个主题，浅深各四组完整场景。企鹅装咕嘎与小锅帽 Doro 保留原有毛绒与手工微缩质感，统一使用浅草绿／深苔绿阅读配色。主图、左下物件、无角色横幅、文件夹开合、侧栏伙伴与双语语录成套切换。首次启用和旧单图升级均默认勾选全部配图、每五分钟轮播；自定义名单、间隔、顺序和装饰开关继续保留，原独立入口的当前场景、收藏与主题轮换名单自动迁移。
 
-| 浅色 | 深色 |
-| --- | --- |
-| [![咕嘎和 Doro · 植物大战僵尸 · 戴夫种植队 · 浅色](109-guga-doro-pvz-garden-light.webp)](109-guga-doro-pvz-garden-light.webp) | [![咕嘎和 Doro · 植物大战僵尸 · 戴夫种植队 · 深色](109-guga-doro-pvz-garden-dark.webp)](109-guga-doro-pvz-garden-dark.webp) |
+| 场景 | 浅色 | 深色 |
+| --- | --- | --- |
+| 戴夫种植队 | [![咕嘎和 Doro · 植物大战僵尸 · 庭院守卫队 · 戴夫种植队 · 浅色](109-guga-doro-pvz-garden-light.webp)](109-guga-doro-pvz-garden-light.webp) | [![咕嘎和 Doro · 植物大战僵尸 · 庭院守卫队 · 戴夫种植队 · 深色](109-guga-doro-pvz-garden-dark.webp)](109-guga-doro-pvz-garden-dark.webp) |
+| <a name="theme-110"></a>月夜守卫战 | [![咕嘎和 Doro · 植物大战僵尸 · 庭院守卫队 · 月夜守卫战 · 浅色](109-guga-doro-pvz-garden-moonwatch-light.webp)](109-guga-doro-pvz-garden-moonwatch-light.webp) | [![咕嘎和 Doro · 植物大战僵尸 · 庭院守卫队 · 月夜守卫战 · 深色](109-guga-doro-pvz-garden-moonwatch-dark.webp)](109-guga-doro-pvz-garden-moonwatch-dark.webp) |
+| <a name="theme-111"></a>睡莲护航队 | [![咕嘎和 Doro · 植物大战僵尸 · 庭院守卫队 · 睡莲护航队 · 浅色](109-guga-doro-pvz-garden-pool-light.webp)](109-guga-doro-pvz-garden-pool-light.webp) | [![咕嘎和 Doro · 植物大战僵尸 · 庭院守卫队 · 睡莲护航队 · 深色](109-guga-doro-pvz-garden-pool-dark.webp)](109-guga-doro-pvz-garden-pool-dark.webp) |
+| <a name="theme-112"></a>屋顶投手队 | [![咕嘎和 Doro · 植物大战僵尸 · 庭院守卫队 · 屋顶投手队 · 浅色](109-guga-doro-pvz-garden-rooftop-light.webp)](109-guga-doro-pvz-garden-rooftop-light.webp) | [![咕嘎和 Doro · 植物大战僵尸 · 庭院守卫队 · 屋顶投手队 · 深色](109-guga-doro-pvz-garden-rooftop-dark.webp)](109-guga-doro-pvz-garden-rooftop-dark.webp) |
 
-<a name="theme-110"></a>
+戴夫种植队从扶苗浇花变为夜间守家，种子夹收好两种种卡；月夜守卫战从布防移菇变为提灯护阵，路线夹接上夜巡小路；睡莲护航队从铺睡莲变为撑筏提灯，航线夹露出睡莲路线；屋顶投手队从搬盆栽玉米变为指挥投射与补给，瓦纹种卡夹打开是屋顶布阵图。原有浅深动作、体型校准与配套细节均保留。
 
-## 咕嘎和 Doro · 植物大战僵尸 · 月夜守卫战
-
-浅色里咕嘎看布防图、Doro 移栽小喷菇；深色里 Doro 提灯、咕嘎护住坚果，蘑菇阵迎战铁桶僵尸。布防夹打开展开路线，灯与地图也随昼夜更换状态。浅深采用独立场景设计，并校准角色可见尺寸；配有四款动作与台词对应的小伙伴、专属道具和连贯开合文件夹。
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![咕嘎和 Doro · 植物大战僵尸 · 月夜守卫战 · 浅色](110-guga-doro-pvz-moonwatch-light.webp)](110-guga-doro-pvz-moonwatch-light.webp) | [![咕嘎和 Doro · 植物大战僵尸 · 月夜守卫战 · 深色](110-guga-doro-pvz-moonwatch-dark.webp)](110-guga-doro-pvz-moonwatch-dark.webp) |
-
-<a name="theme-111"></a>
-
-## 咕嘎和 Doro · 植物大战僵尸 · 睡莲护航队
-
-大锅帽歪歪戴稳，Doro 的小白衬衣露出圆肚肚。浅色一起铺睡莲，深色咕嘎撑筏、Doro 提灯，与香蒲守住泳道；航线夹打开露出睡莲路线。浅深采用独立场景，并校准角色可见尺寸；配有四款动作与台词对应的小伙伴、专属道具和开合文件夹。
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![咕嘎和 Doro · 植物大战僵尸 · 睡莲护航队 · 浅色](111-guga-doro-pvz-pool-light.webp)](111-guga-doro-pvz-pool-light.webp) | [![咕嘎和 Doro · 植物大战僵尸 · 睡莲护航队 · 深色](111-guga-doro-pvz-pool-dark.webp)](111-guga-doro-pvz-pool-dark.webp) |
-
-<a name="theme-112"></a>
-
-## 咕嘎和 Doro · 植物大战僵尸 · 屋顶投手队
-
-合头的大锅帽仍然歪戴，小白衬衣裹着 Doro 的圆身子。浅色搬盆栽玉米，深色咕嘎指挥投射、Doro 抱篮补给；瓦纹种卡夹打开是屋顶布阵图。浅深采用独立场景，并校准角色可见尺寸；配有四款动作与台词对应的小伙伴、专属道具和开合文件夹。
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![咕嘎和 Doro · 植物大战僵尸 · 屋顶投手队 · 浅色](112-guga-doro-pvz-rooftop-light.webp)](112-guga-doro-pvz-rooftop-light.webp) | [![咕嘎和 Doro · 植物大战僵尸 · 屋顶投手队 · 深色](112-guga-doro-pvz-rooftop-dark.webp)](112-guga-doro-pvz-rooftop-dark.webp) |
+[![咕嘎和 Doro · 植物大战僵尸 · 庭院守卫队 · 场景与横幅总览](109-guga-doro-pvz-garden-artworks.webp)](109-guga-doro-pvz-garden-artworks.webp)
 
 <a name="theme-2"></a>
 
@@ -966,33 +902,19 @@ Doro 的草莓野餐与在家烘焙，配以草莓奶粉、柔和丁香紫和温
 
 <a name="theme-116"></a>
 
-## 咕嘎和 Doro · 魔法师 · 星露药房
+## 咕嘎和 Doro · 魔法师 · 奇妙日常
 
-浅色搅拌晨露药剂，深色坐着封好安睡小瓶。叶扣配方夹打开露出压叶与配方卡；四款魔法师伙伴记录调配、闻香和收工。尖顶巫师帽与短斗篷贯穿浅深独立活动，配有四款动作与台词对应的小伙伴、专属道具和开合文件夹。
+星露药房、云朵烘焙、月邮小屋合为一个主题，浅深各三组完整场景。毛绒魔法师 Doro 在调配药剂、烘焙和送信之间切换，帽子与斗篷随场景变化，阅读区统一使用草木绿／深林绿配色。主图、左下物件、无角色横幅、文件夹开合、四款侧栏伙伴及双语语录一起切换；首次启用和旧单图升级默认全选、每五分钟轮播，后续自定义设置保留，旧入口、收藏与主题轮换名单自动迁移。
 
-| 浅色 | 深色 |
-| --- | --- |
-| [![咕嘎和 Doro · 魔法师 · 星露药房 · 浅色](116-doro-mage-potions-light.webp)](116-doro-mage-potions-light.webp) | [![咕嘎和 Doro · 魔法师 · 星露药房 · 深色](116-doro-mage-potions-dark.webp)](116-doro-mage-potions-dark.webp) |
+| 场景 | 浅色 | 深色 |
+| --- | --- | --- |
+| 星露药房 | [![咕嘎和 Doro · 魔法师 · 奇妙日常 · 星露药房 · 浅色](116-doro-mage-potions-light.webp)](116-doro-mage-potions-light.webp) | [![咕嘎和 Doro · 魔法师 · 奇妙日常 · 星露药房 · 深色](116-doro-mage-potions-dark.webp)](116-doro-mage-potions-dark.webp) |
+| <a name="theme-117"></a>云朵烘焙 | [![咕嘎和 Doro · 魔法师 · 奇妙日常 · 云朵烘焙 · 浅色](116-doro-mage-potions-cloud-bakery-light.webp)](116-doro-mage-potions-cloud-bakery-light.webp) | [![咕嘎和 Doro · 魔法师 · 奇妙日常 · 云朵烘焙 · 深色](116-doro-mage-potions-cloud-bakery-dark.webp)](116-doro-mage-potions-cloud-bakery-dark.webp) |
+| <a name="theme-118"></a>月邮小屋 | [![咕嘎和 Doro · 魔法师 · 奇妙日常 · 月邮小屋 · 浅色](116-doro-mage-potions-moonmail-light.webp)](116-doro-mage-potions-moonmail-light.webp) | [![咕嘎和 Doro · 魔法师 · 奇妙日常 · 月邮小屋 · 深色](116-doro-mage-potions-moonmail-dark.webp)](116-doro-mage-potions-moonmail-dark.webp) |
 
-<a name="theme-117"></a>
+星露药房从搅拌晨露到封好安睡小瓶，叶扣夹藏着压叶与配方卡；云朵烘焙从托起面包到点糖霜装盒，食谱夹收着星形模具；月邮小屋从封信整理邮包到乘小扫帚送信，邮路夹展开月牙路线。每组保留自己的四款动作与对应短句。精细手办造型的「星月工坊」继续独立。
 
-## 咕嘎和 Doro · 魔法师 · 云朵烘焙
-
-浅色用魔杖托起云朵面包，深色点好星星糖霜饼干再装盒。食谱夹打开露出云朵食谱和星形模具，面粉小爪印留在收工的布巾上。尖顶巫师帽与短斗篷贯穿浅深独立活动，配有四款动作与台词对应的小伙伴、专属道具和开合文件夹。
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![咕嘎和 Doro · 魔法师 · 云朵烘焙 · 浅色](117-doro-mage-cloud-bakery-light.webp)](117-doro-mage-cloud-bakery-light.webp) | [![咕嘎和 Doro · 魔法师 · 云朵烘焙 · 深色](117-doro-mage-cloud-bakery-dark.webp)](117-doro-mage-cloud-bakery-dark.webp) |
-
-<a name="theme-118"></a>
-
-## 咕嘎和 Doro · 魔法师 · 月邮小屋
-
-浅色封信整理邮包，深色乘贴身小扫帚送出月光来信。邮路夹打开露出月牙路线和信封，四款小伙伴从盖蜡封到送达各有短句。尖顶巫师帽与短斗篷贯穿浅深独立活动，配有四款动作与台词对应的小伙伴、专属道具和开合文件夹。
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![咕嘎和 Doro · 魔法师 · 月邮小屋 · 浅色](118-doro-mage-moonmail-light.webp)](118-doro-mage-moonmail-light.webp) | [![咕嘎和 Doro · 魔法师 · 月邮小屋 · 深色](118-doro-mage-moonmail-dark.webp)](118-doro-mage-moonmail-dark.webp) |
+[![咕嘎和 Doro · 魔法师 · 奇妙日常 · 场景与横幅总览](116-doro-mage-potions-artworks.webp)](116-doro-mage-potions-artworks.webp)
 
 <a name="theme-119"></a>
 

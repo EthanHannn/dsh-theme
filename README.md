@@ -14,7 +14,7 @@
 
 主题轮换可按列表或随机播放，也可点击“下一套主题”。支持 1、5、15、30、60、180 分钟间隔，切换时沿用当前的浅色、深色或跟随系统模式。
 
-**同主题图片**用于固定配色、切换当前主题的图片，支持独立的轮换列表和间隔。多图主题首次启用时默认按列表每五分钟轮换全部配图，可自行关闭、调整间隔、顺序和名单。「雾庭菇灯」提供原配图、蘑伞听雨、推车运菇、树洞晚安共四组浅深配图，主区域左下角物件与当前场景同步切换。「仗剑同行」收录结伴赶路、竹涧茶歇、烟雨摆渡、雪驿围炉四组完整场景，主图、物件、顶部横幅、文件夹开合、侧栏角色与语录同步切换；原独立江湖主题的使用状态、收藏及主题轮换名单自动归并。「伊甸星光」保留星章时刻，加入纸翼小队、温室观察、庭院点心，同样整套切换配图与语录。单图主题保持静态；选择简约或默认外观时提示先选择带配图的主题。
+**同主题图片**用于固定配色、切换当前主题的图片，支持独立的轮换列表和间隔。多图主题首次启用时默认按列表每五分钟轮换全部配图，可自行关闭、调整间隔、顺序和名单。「雾庭菇灯」提供原配图、蘑伞听雨、推车运菇、树洞晚安共四组浅深配图，主区域左下角物件与当前场景同步切换。「仗剑同行」收录结伴赶路、竹涧茶歇、烟雨摆渡、雪驿围炉四组完整场景，主图、物件、顶部横幅、文件夹开合、侧栏角色与语录同步切换；原独立江湖主题的使用状态、收藏及主题轮换名单自动归并。「伊甸星光」保留星章时刻，加入纸翼小队、温室观察、庭院点心，同样整套切换配图与语录。「庭院守卫队」「奇妙日常」「相伴小日子」分别收录四、三、六组原有场景，沿用整套联动与旧入口迁移。单图主题保持静态；选择简约或默认外观时提示先选择带配图的主题。
 
 主题轮换默认关闭。多图主题默认勾选全部配图，旧版单图主题扩展后也会自动全选并开启五分钟轮播；后续新增配图默认加入名单。手动取消的已有图片及自定义开关、间隔和顺序会记住，切回主题时继续使用。配置自动保存在当前浏览器或桌面端。调整外观、预览主题、输入文字及生成回复时暂停自动切换；页面隐藏时暂停，重新显示后从完整间隔重新计时。切回默认外观后停止自动轮换。
 
@@ -30,12 +30,12 @@
 | [坂本日常 · 街角补给](docs/screenshots/README.md#theme-144) | [![坂本日常 · 街角补给 · 浅色](docs/screenshots/144-sakamoto-corner-supply-light.webp)](docs/screenshots/144-sakamoto-corner-supply-light.webp) | [![坂本日常 · 街角补给 · 深色](docs/screenshots/144-sakamoto-corner-supply-dark.webp)](docs/screenshots/144-sakamoto-corner-supply-dark.webp) |
 | [药屋少女的呢喃 · 药香夜话](docs/screenshots/README.md#theme-140) | [![药屋少女的呢喃 · 药香夜话 · 浅色](docs/screenshots/140-apothecary-lantern-herbs-light.webp)](docs/screenshots/140-apothecary-lantern-herbs-light.webp) | [![药屋少女的呢喃 · 药香夜话 · 深色](docs/screenshots/140-apothecary-lantern-herbs-dark.webp)](docs/screenshots/140-apothecary-lantern-herbs-dark.webp) |
 | [咕嘎和 Doro · 江湖 · 仗剑同行](docs/screenshots/README.md#theme-1) | [![咕嘎和 Doro · 江湖 · 仗剑同行 · 浅色](docs/screenshots/01-daxia-light.webp)](docs/screenshots/01-daxia-light.webp) | [![咕嘎和 Doro · 江湖 · 仗剑同行 · 深色](docs/screenshots/01-daxia-dark.webp)](docs/screenshots/01-daxia-dark.webp) |
-| [咕嘎和 Doro · 日常 · 快乐开黑](docs/screenshots/README.md#theme-107) | [![咕嘎和 Doro · 日常 · 快乐开黑 · 浅色](docs/screenshots/107-guga-doro-coop-light.webp)](docs/screenshots/107-guga-doro-coop-light.webp) | [![咕嘎和 Doro · 日常 · 快乐开黑 · 深色](docs/screenshots/107-guga-doro-coop-dark.webp)](docs/screenshots/107-guga-doro-coop-dark.webp) |
+| [咕嘎和 Doro · 日常 · 相伴小日子（快乐开黑）](docs/screenshots/README.md#theme-107) | [![咕嘎和 Doro · 日常 · 相伴小日子（快乐开黑） · 浅色](docs/screenshots/98-guga-doro-together-coop-light.webp)](docs/screenshots/98-guga-doro-together-coop-light.webp) | [![咕嘎和 Doro · 日常 · 相伴小日子（快乐开黑） · 深色](docs/screenshots/98-guga-doro-together-coop-dark.webp)](docs/screenshots/98-guga-doro-together-coop-dark.webp) |
 | [咕嘎和 Doro · 植物大战僵尸 · 雾庭菇灯](docs/screenshots/README.md#theme-120) | [![咕嘎和 Doro · 植物大战僵尸 · 雾庭菇灯 · 浅色](docs/screenshots/120-doro-pvz-fog-lantern-light.webp)](docs/screenshots/120-doro-pvz-fog-lantern-light.webp) | [![咕嘎和 Doro · 植物大战僵尸 · 雾庭菇灯 · 深色](docs/screenshots/120-doro-pvz-fog-lantern-dark.webp)](docs/screenshots/120-doro-pvz-fog-lantern-dark.webp) |
-| [咕嘎和 Doro · 植物大战僵尸 · 戴夫种植队](docs/screenshots/README.md#theme-109) | [![咕嘎和 Doro · 植物大战僵尸 · 戴夫种植队 · 浅色](docs/screenshots/109-guga-doro-pvz-garden-light.webp)](docs/screenshots/109-guga-doro-pvz-garden-light.webp) | [![咕嘎和 Doro · 植物大战僵尸 · 戴夫种植队 · 深色](docs/screenshots/109-guga-doro-pvz-garden-dark.webp)](docs/screenshots/109-guga-doro-pvz-garden-dark.webp) |
-| [咕嘎和 Doro · 植物大战僵尸 · 睡莲护航队](docs/screenshots/README.md#theme-111) | [![咕嘎和 Doro · 植物大战僵尸 · 睡莲护航队 · 浅色](docs/screenshots/111-guga-doro-pvz-pool-light.webp)](docs/screenshots/111-guga-doro-pvz-pool-light.webp) | [![咕嘎和 Doro · 植物大战僵尸 · 睡莲护航队 · 深色](docs/screenshots/111-guga-doro-pvz-pool-dark.webp)](docs/screenshots/111-guga-doro-pvz-pool-dark.webp) |
+| [咕嘎和 Doro · 植物大战僵尸 · 庭院守卫队（戴夫种植队）](docs/screenshots/README.md#theme-109) | [![咕嘎和 Doro · 植物大战僵尸 · 庭院守卫队（戴夫种植队） · 浅色](docs/screenshots/109-guga-doro-pvz-garden-light.webp)](docs/screenshots/109-guga-doro-pvz-garden-light.webp) | [![咕嘎和 Doro · 植物大战僵尸 · 庭院守卫队（戴夫种植队） · 深色](docs/screenshots/109-guga-doro-pvz-garden-dark.webp)](docs/screenshots/109-guga-doro-pvz-garden-dark.webp) |
+| [咕嘎和 Doro · 植物大战僵尸 · 庭院守卫队（睡莲护航队）](docs/screenshots/README.md#theme-111) | [![咕嘎和 Doro · 植物大战僵尸 · 庭院守卫队（睡莲护航队） · 浅色](docs/screenshots/109-guga-doro-pvz-garden-pool-light.webp)](docs/screenshots/109-guga-doro-pvz-garden-pool-light.webp) | [![咕嘎和 Doro · 植物大战僵尸 · 庭院守卫队（睡莲护航队） · 深色](docs/screenshots/109-guga-doro-pvz-garden-pool-dark.webp)](docs/screenshots/109-guga-doro-pvz-garden-pool-dark.webp) |
 | [咕嘎和 Doro · 植物大战僵尸 · 坚果修补铺](docs/screenshots/README.md#theme-121) | [![咕嘎和 Doro · 植物大战僵尸 · 坚果修补铺 · 浅色](docs/screenshots/121-doro-pvz-walnut-workshop-light.webp)](docs/screenshots/121-doro-pvz-walnut-workshop-light.webp) | [![咕嘎和 Doro · 植物大战僵尸 · 坚果修补铺 · 深色](docs/screenshots/121-doro-pvz-walnut-workshop-dark.webp)](docs/screenshots/121-doro-pvz-walnut-workshop-dark.webp) |
-| [咕嘎和 Doro · 魔法师 · 星露药房](docs/screenshots/README.md#theme-116) | [![咕嘎和 Doro · 魔法师 · 星露药房 · 浅色](docs/screenshots/116-doro-mage-potions-light.webp)](docs/screenshots/116-doro-mage-potions-light.webp) | [![咕嘎和 Doro · 魔法师 · 星露药房 · 深色](docs/screenshots/116-doro-mage-potions-dark.webp)](docs/screenshots/116-doro-mage-potions-dark.webp) |
+| [咕嘎和 Doro · 魔法师 · 奇妙日常（星露药房）](docs/screenshots/README.md#theme-116) | [![咕嘎和 Doro · 魔法师 · 奇妙日常（星露药房） · 浅色](docs/screenshots/116-doro-mage-potions-light.webp)](docs/screenshots/116-doro-mage-potions-light.webp) | [![咕嘎和 Doro · 魔法师 · 奇妙日常（星露药房） · 深色](docs/screenshots/116-doro-mage-potions-dark.webp)](docs/screenshots/116-doro-mage-potions-dark.webp) |
 | [咕嘎和 Doro · 魔法师 · 星月工坊](docs/screenshots/README.md#theme-125) | [![咕嘎和 Doro · 魔法师 · 星月工坊 · 浅色](docs/screenshots/125-doro-mage-starmoon-atelier-light.webp)](docs/screenshots/125-doro-mage-starmoon-atelier-light.webp) | [![咕嘎和 Doro · 魔法师 · 星月工坊 · 深色](docs/screenshots/125-doro-mage-starmoon-atelier-dark.webp)](docs/screenshots/125-doro-mage-starmoon-atelier-dark.webp) |
 | [咕嘎和 Doro · 魔法部落 · 灵兽营地](docs/screenshots/README.md#theme-122) | [![咕嘎和 Doro · 魔法部落 · 灵兽营地 · 浅色](docs/screenshots/122-doro-tribe-beastkeeper-light.webp)](docs/screenshots/122-doro-tribe-beastkeeper-light.webp) | [![咕嘎和 Doro · 魔法部落 · 灵兽营地 · 深色](docs/screenshots/122-doro-tribe-beastkeeper-dark.webp)](docs/screenshots/122-doro-tribe-beastkeeper-dark.webp) |
 | [咕嘎和 Doro · 中东土豪 · 金穗绿洲](docs/screenshots/README.md#theme-123) | [![咕嘎和 Doro · 中东土豪 · 金穗绿洲 · 浅色](docs/screenshots/123-doro-oasis-gold-light.webp)](docs/screenshots/123-doro-oasis-gold-light.webp) | [![咕嘎和 Doro · 中东土豪 · 金穗绿洲 · 深色](docs/screenshots/123-doro-oasis-gold-dark.webp)](docs/screenshots/123-doro-oasis-gold-dark.webp) |
@@ -91,10 +91,10 @@
 
 | 主题包版本 | 已验证的 Harness 版本 | 验证范围 |
 | --- | --- | --- |
-| 0.2.0 | 0.2.1-rc.3 | Web；自动化兼容基线 |
-| 0.2.0（本地源码） | 0.2.1-rc.3 | Windows 桌面版；界面安装本地目录、主题显示、点击侧栏角色直达主题与外观 |
+| 0.2.0 | 0.2.2-rc.1 | Web；自动化兼容基线 |
+| 0.2.0（本地源码） | 0.2.2-rc.1 | Windows 桌面版；界面安装本地目录、主题显示、顶部横幅跨行显示、点击侧栏角色直达主题与外观 |
 
-Windows 桌面版已于 2026-10-10 经实际使用验证，并于 2026-10-27 在 `0.2.1-rc.3` 上复核头部名牌布局。自动化兼容基线已推进至 `0.2.1-rc.3`。
+Windows 桌面版已于 2026-10-10 经实际使用验证，并于 2026-11-08 在 `0.2.2-rc.1` 上复核头部横幅布局。自动化兼容基线已推进至 `0.2.2-rc.1`。
 
 ## 安装
 
@@ -268,24 +268,14 @@ Linux 可在安装包所在目录执行 `sha256sum -c SHA256SUMS.txt`；macOS �
 - **咕嘎和 Doro · 江湖 · 雪驿围炉**：浅色扫雪拾柴，深色围炉分烤薯。驿站毡布夹打开露出两双小暖袜；炉灰、缺了一角的烤薯和靠在一起的斗笠记录歇脚时光。
 - **咕嘎和 Doro · 日常 · 暖阳小日子**：暖杏 / 海盐青 / 蜂蜜金，咕嘎的阳台早餐与盖毯读书。
 - **咕嘎和 Doro · 日常 · 草莓幸福日**：草莓奶粉 / 丁香紫 / 温暖灯光，Doro 的草莓野餐与在家烘焙。
-- **咕嘎和 Doro · 日常 · 晴雨相伴**：窗边雾蓝 / 奶油黄 / 暖灯金，经典咕嘎与 Doro 一起种花、共盖毯子喝热可可。
-- **咕嘎和 Doro · 日常 · 星灯小屋**：暖米色 / 丁香紫 / 蜂蜜金，经典企鹅装咕嘎与毛绒 Doro 一起做纸星灯、在暖灯下读故事书。
-- **咕嘎和 Doro · 日常 · 街角咖啡**：燕麦米色 / 鼠尾草绿 / 浓咖啡棕，毛绒经典咕嘎与 Doro 分享真实质感的可颂、相伴喝热饮，搭配透明场景素材与柔和咖啡横幅。
-- **咕嘎和 Doro · 日常 · 咕嘟火锅**：白天围锅尝鲜，夜晚换座盛汤；暖奶油、陶红与胡桃木串起小碗、蘑菇盘和折好餐巾的晚餐细节。
-- **咕嘎和 Doro · 日常 · 快乐开黑**：白天并肩合作闯关，夜晚放下手柄击掌庆祝；雾蓝沙发、丁香紫手柄和爆米花把通关与休息串在一起。
-- **咕嘎和 Doro · 日常 · 湖畔露营**：傍晚围炉烤棉花糖，夜晚换到长椅上裹毯观星；鼠尾草绿、燕麦米与营灯金呼应热饮、地图和营地灯火。
-- **咕嘎和 Doro · 植物大战僵尸 · 戴夫种植队**：浅色里咕嘎扶苗、Doro 浇花；深色里咕嘎指挥豌豆射手、Doro 推坚果守住白天的成果。种子夹打开露出两种种卡，收好的阳光也出现在夜间道具里。
-- **咕嘎和 Doro · 植物大战僵尸 · 月夜守卫战**：浅色里咕嘎看布防图、Doro 移栽小喷菇；深色里 Doro 提灯、咕嘎护住坚果，蘑菇阵迎战铁桶僵尸。布防夹打开展开路线，灯与地图也随昼夜更换状态。
-- **咕嘎和 Doro · 魔法师 · 星露药房**：浅色搅拌晨露药剂，深色坐着封好安睡小瓶。叶扣配方夹打开露出压叶与配方卡；四款魔法师伙伴记录调配、闻香和收工。
-- **咕嘎和 Doro · 魔法师 · 云朵烘焙**：浅色用魔杖托起云朵面包，深色点好星星糖霜饼干再装盒。食谱夹打开露出云朵食谱和星形模具，面粉小爪印留在收工的布巾上。
-- **咕嘎和 Doro · 魔法师 · 月邮小屋**：浅色封信整理邮包，深色乘贴身小扫帚送出月光来信。邮路夹打开露出月牙路线和信封，四款小伙伴从盖蜡封到送达各有短句。
+- **咕嘎和 Doro · 日常 · 相伴小日子**：雾蓝／深灰蓝统一阅读配色，晴雨相伴、星灯小屋、街角咖啡、咕嘟火锅、快乐开黑、湖畔露营六组完整场景，保留每组毛绒搭档、动作与配套。
+- **咕嘎和 Doro · 植物大战僵尸 · 庭院守卫队**：浅草绿／深苔绿统一阅读配色，戴夫种植队、月夜守卫战、睡莲护航队、屋顶投手队四组完整场景，保留原有浅深动作与毛绒双人配套。
+- **咕嘎和 Doro · 魔法师 · 奇妙日常**：草木绿／深林绿统一阅读配色，星露药房、云朵烘焙、月邮小屋三组完整场景，调配、烘焙与送信各有独立浅深故事。
 - **咕嘎和 Doro · 魔法师 · 星月工坊**：沿用华贵星月帽与金线斗篷的 Doro，在微缩工坊装配小月灯，夜里带到露台调校黄铜星镜。星图夹打开露出月相卡，工具从散放装配变为收妥观测。
 - **咕嘎和 Doro · 魔法部落 · 灵兽营地**：戴叶饰琥珀额环、披苔青短斗篷的 Doro 经营灵兽营地；白天用果子训练幼龙，夜里照料幼狮鹫。月角兔和小史莱姆也参与日常，饲育夹打开能看到各自的食粮。
 - **咕嘎和 Doro · 中东土豪 · 金穗绿洲**：白头巾、黑色双圈头箍和金边小披袍的 Doro，在绿洲庭院倒咖啡、分椰枣，夜里坐上锦垫整理宝石。金穗账夹开合露出待客清单，浅深道具从满盘招待变成收妥的小箱。
 - **咕嘎和 Doro · 厨师 · 暖锅小馆**：戴白厨师帽、系鼠尾草绿领巾的 Doro，白天揉面做小餐包，夜里守着铜锅尝暖汤。食谱夹打开露出汤碗与餐包卡，道具从面粉木板变成洗净收好的工具。
 - **咕嘎和 Doro · 剑仙 · 云岫剑庐**：月白青衬小仙袍Doro在云间石台练御剑，小飞剑悬空托起一瓣落花；夜里坐在石阶接过莲叶点心。青玉剑谱夹开合露出御剑路线，拭剑布与小玉匣从练习变成收妥。
-- **咕嘎和 Doro · 植物大战僵尸 · 睡莲护航队**：大锅帽歪歪戴稳，Doro 的小白衬衣露出圆肚肚。浅色一起铺睡莲，深色咕嘎撑筏、Doro 提灯，与香蒲守住泳道；航线夹打开露出睡莲路线。
-- **咕嘎和 Doro · 植物大战僵尸 · 屋顶投手队**：合头的大锅帽仍然歪戴，小白衬衣裹着 Doro 的圆身子。浅色搬盆栽玉米，深色咕嘎指挥投射、Doro 抱篮补给；瓦纹种卡夹打开是屋顶布阵图。
 - **咕嘎和 Doro · 植物大战僵尸 · 阳光种子铺**：Doro 斜戴合头大铁锅、穿露肚小白衬衣；浅色播种照料向日葵，深色坐着收存阳光。种袋夹打开露出备好的种卡，四款小伙伴把播种、浇水和存阳光串成一天。
 - **咕嘎和 Doro · 植物大战僵尸 · 雾庭菇灯**：精细手办 Doro 穿戴统一的戴夫小套装；浅色安顿睡着的菇苗，深色提灯陪醒来的小喷菇巡路。菇苗夹打开显出月牙路线，四款小伙伴把移栽、点灯和夜巡接起来。
 - **咕嘎和 Doro · 植物大战僵尸 · 坚果修补铺**：斜锅帽 Doro 白天认真给坚果贴布带，深色推着小板车护送它归队。修补夹打开藏着宽布带和盾形卡，四款小伙伴从量补丁到送归队各有对应短句。
