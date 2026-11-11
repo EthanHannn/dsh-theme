@@ -41,6 +41,14 @@ else:
 # (source stem, output stem, ratio W:H, vertical band center as a fraction
 # of source height)
 JOBS = [
+    ("hufflepuff-diary-20261111/banner-common-room-provider", "doro-hufflepuff-banner-light", 6.0, 0.25),
+    ("hufflepuff-diary-20261111/banner-common-room-provider", "doro-hufflepuff-banner-dark", 6.0, 0.75),
+    ("hufflepuff-diary-20261111/banner-greenhouse-provider", "doro-hufflepuff-greenhouse-banner-light", 6.0, 0.25),
+    ("hufflepuff-diary-20261111/banner-greenhouse-provider", "doro-hufflepuff-greenhouse-banner-dark", 6.0, 0.75),
+    ("hufflepuff-diary-20261111/banner-library-provider", "doro-hufflepuff-library-banner-light", 6.0, 0.25),
+    ("hufflepuff-diary-20261111/banner-library-provider", "doro-hufflepuff-library-banner-dark", 6.0, 0.75),
+    ("hufflepuff-diary-20261111/banner-charms-provider", "doro-hufflepuff-charms-banner-light", 6.0, 0.25),
+    ("hufflepuff-diary-20261111/banner-charms-provider", "doro-hufflepuff-charms-banner-dark", 6.0, 0.75),
     ("banner-light-provider", "oshi-backstage-starlight-banner-light", 6.0, 0.5),
     ("banner-dark-provider", "oshi-backstage-starlight-banner-dark", 6.0, 0.5),
     ("banner-light-provider", "solo-shadow-patrol-banner-light", 6.0, 0.5),
@@ -359,6 +367,14 @@ JOBS = [
 # left fade end, right fade start), as fractions of the final strip width.
 # All families use Daxia's 25% left / 10% right edge treatment.
 BAKED_HORIZONTAL_FADES = {
+    "doro-hufflepuff-banner-light": ("#F4E6C5", 0.25, 0.90),
+    "doro-hufflepuff-banner-dark": ("#25221C", 0.25, 0.90),
+    "doro-hufflepuff-greenhouse-banner-light": ("#F4E6C5", 0.25, 0.90),
+    "doro-hufflepuff-greenhouse-banner-dark": ("#25221C", 0.25, 0.90),
+    "doro-hufflepuff-library-banner-light": ("#F4E6C5", 0.25, 0.90),
+    "doro-hufflepuff-library-banner-dark": ("#25221C", 0.25, 0.90),
+    "doro-hufflepuff-charms-banner-light": ("#F4E6C5", 0.25, 0.90),
+    "doro-hufflepuff-charms-banner-dark": ("#25221C", 0.25, 0.90),
     "oshi-backstage-starlight-banner-light": ("#F4EBF2", 0.25, 0.90),
     "oshi-backstage-starlight-banner-dark": ("#272332", 0.25, 0.90),
     "solo-shadow-patrol-banner-light": ("#E8EDF4", 0.25, 0.90),

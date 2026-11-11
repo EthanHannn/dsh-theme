@@ -34,7 +34,7 @@
 
 咕嘎和 Doro · 植物大战僵尸：[庭院守卫队 · 四组场景](#theme-109) · [阳光种子铺](#theme-119) · [雾庭菇灯](#theme-120) · [坚果修补铺](#theme-121) · [豌豆练习场](#theme-126) · [冰瓜凉饮铺](#theme-127) · [磁菇回收站](#theme-128) · [南瓜守护屋](#theme-130) · [香蒲雨池](#theme-131) · [玉米黄油坊](#theme-132) · [咖啡唤醒站](#theme-133)
 
-咕嘎和 Doro · 魔法师：[奇妙日常 · 三组场景](#theme-116) · [星月工坊](#theme-125)
+咕嘎和 Doro · 魔法师：[奇妙日常 · 三组场景](#theme-116) · [星月工坊](#theme-125) · [赫奇帕奇日记 · 四组场景](#theme-145)
 
 咕嘎和 Doro · 魔法部落：[灵兽营地](#theme-122)
 
@@ -1187,3 +1187,23 @@ Doro白天陪磁力菇把旧铁件分进木格箱，夜里坐在矮凳上挂好�
 | 浅色 | 深色 |
 | --- | --- |
 | [![坂本日常 · 街角补给 · 浅色](144-sakamoto-corner-supply-light.webp)](144-sakamoto-corner-supply-light.webp) | [![坂本日常 · 街角补给 · 深色](144-sakamoto-corner-supply-dark.webp)](144-sakamoto-corner-supply-dark.webp) |
+
+
+<a name="theme-145"></a>
+
+## 咕嘎和 Doro · 魔法师 · 赫奇帕奇日记
+
+赫奇帕奇学生 Doro 保留粉发紫瞳、角色左侧玫瑰发髻与淡紫蝴蝶结、白色短绒和黄黑校服，以蜂蜜奶油／暖炭黑统一阅读配色。炉边点心、温室新芽、书页微光、星夜习咒组成四组浅深场景，右下主图、左下物件与无角色横幅同步切换；黑金獾徽文件夹和四款侧栏伙伴共用，伙伴短句随场景变化。首次启用默认勾选全部配图、每五分钟按列表轮换，可自行调整，简约版保持静态。
+
+| 场景 | 浅色 | 深色 |
+| --- | --- | --- |
+| 炉边点心 | [![赫奇帕奇日记 · 炉边点心 · 浅色](145-doro-hufflepuff-light.webp)](145-doro-hufflepuff-light.webp) | [![赫奇帕奇日记 · 炉边点心 · 深色](145-doro-hufflepuff-dark.webp)](145-doro-hufflepuff-dark.webp) |
+| 温室新芽 | [![赫奇帕奇日记 · 温室新芽 · 浅色](145-doro-hufflepuff-greenhouse-light.webp)](145-doro-hufflepuff-greenhouse-light.webp) | [![赫奇帕奇日记 · 温室新芽 · 深色](145-doro-hufflepuff-greenhouse-dark.webp)](145-doro-hufflepuff-greenhouse-dark.webp) |
+| 书页微光 | [![赫奇帕奇日记 · 书页微光 · 浅色](145-doro-hufflepuff-library-light.webp)](145-doro-hufflepuff-library-light.webp) | [![赫奇帕奇日记 · 书页微光 · 深色](145-doro-hufflepuff-library-dark.webp)](145-doro-hufflepuff-library-dark.webp) |
+| 星夜习咒 | [![赫奇帕奇日记 · 星夜习咒 · 浅色](145-doro-hufflepuff-charms-light.webp)](145-doro-hufflepuff-charms-light.webp) | [![赫奇帕奇日记 · 星夜习咒 · 深色](145-doro-hufflepuff-charms-dark.webp)](145-doro-hufflepuff-charms-dark.webp) |
+
+炉边从分享饼干到捧杯休息，温室从浇水育苗到灯下护芽，书房从翻读课本到整理笔记，石台从练习光环到挥杖点亮星光。浅深色分别保留对应动作、表情与道具布置。
+
+[![赫奇帕奇日记 · 四组主图总览](145-doro-hufflepuff-artworks.webp)](145-doro-hufflepuff-artworks.webp)
+
+上方总览为主题主图拼接；表格中的八张图片为真实 Harness 演示环境截图。
