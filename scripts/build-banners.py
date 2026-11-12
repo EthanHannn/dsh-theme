@@ -41,6 +41,16 @@ else:
 # (source stem, output stem, ratio W:H, vertical band center as a fraction
 # of source height)
 JOBS = [
+    ("naruto-duo-20261112/banner-original-provider", "guga-doro-naruto-banner-light", 6.0, 0.25),
+    ("naruto-duo-20261112/banner-original-provider", "guga-doro-naruto-banner-dark", 6.0, 0.75),
+    ("naruto-duo-20261112/banner-training-provider", "guga-doro-naruto-training-banner-light", 6.0, 0.25),
+    ("naruto-duo-20261112/banner-training-provider", "guga-doro-naruto-training-banner-dark", 6.0, 0.75),
+    ("naruto-duo-20261112/banner-rain-provider", "guga-doro-naruto-rain-banner-light", 6.0, 0.25),
+    ("naruto-duo-20261112/banner-rain-provider", "guga-doro-naruto-rain-banner-dark", 6.0, 0.75),
+    ("naruto-duo-20261112/banner-rooftop-provider", "guga-doro-naruto-rooftop-banner-light", 6.0, 0.25),
+    ("naruto-duo-20261112/banner-rooftop-provider", "guga-doro-naruto-rooftop-banner-dark", 6.0, 0.75),
+    ("naruto-duo-20261112/banner-battle-provider", "guga-doro-naruto-battle-banner-light", 6.0, 0.25),
+    ("naruto-duo-20261112/banner-battle-provider", "guga-doro-naruto-battle-banner-dark", 6.0, 0.75),
     ("hufflepuff-diary-20261111/banner-common-room-provider", "doro-hufflepuff-banner-light", 6.0, 0.25),
     ("hufflepuff-diary-20261111/banner-common-room-provider", "doro-hufflepuff-banner-dark", 6.0, 0.75),
     ("hufflepuff-diary-20261111/banner-greenhouse-provider", "doro-hufflepuff-greenhouse-banner-light", 6.0, 0.25),
@@ -367,6 +377,16 @@ JOBS = [
 # left fade end, right fade start), as fractions of the final strip width.
 # All families use Daxia's 25% left / 10% right edge treatment.
 BAKED_HORIZONTAL_FADES = {
+    "guga-doro-naruto-banner-light": ("#F1E9D6", 0.25, 0.90),
+    "guga-doro-naruto-banner-dark": ("#1C222B", 0.25, 0.90),
+    "guga-doro-naruto-training-banner-light": ("#F1E9D6", 0.25, 0.90),
+    "guga-doro-naruto-training-banner-dark": ("#1C222B", 0.25, 0.90),
+    "guga-doro-naruto-rain-banner-light": ("#F1E9D6", 0.25, 0.90),
+    "guga-doro-naruto-rain-banner-dark": ("#1C222B", 0.25, 0.90),
+    "guga-doro-naruto-rooftop-banner-light": ("#F1E9D6", 0.25, 0.90),
+    "guga-doro-naruto-rooftop-banner-dark": ("#1C222B", 0.25, 0.90),
+    "guga-doro-naruto-battle-banner-light": ("#F1E9D6", 0.25, 0.90),
+    "guga-doro-naruto-battle-banner-dark": ("#1C222B", 0.25, 0.90),
     "doro-hufflepuff-banner-light": ("#F4E6C5", 0.25, 0.90),
     "doro-hufflepuff-banner-dark": ("#25221C", 0.25, 0.90),
     "doro-hufflepuff-greenhouse-banner-light": ("#F4E6C5", 0.25, 0.90),

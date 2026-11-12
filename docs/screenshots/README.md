@@ -36,6 +36,8 @@
 
 咕嘎和 Doro · 魔法师：[奇妙日常 · 三组场景](#theme-116) · [星月工坊](#theme-125) · [赫奇帕奇日记 · 四组场景](#theme-145)
 
+咕嘎和 Doro · 火影忍者：[木叶传奇搭档 · 五组场景](#theme-146)
+
 咕嘎和 Doro · 魔法部落：[灵兽营地](#theme-122)
 
 咕嘎和 Doro · 中东土豪：[金穗绿洲](#theme-123)
@@ -1207,3 +1209,24 @@ Doro白天陪磁力菇把旧铁件分进木格箱，夜里坐在矮凳上挂好�
 [![赫奇帕奇日记 · 四组主图总览](145-doro-hufflepuff-artworks.webp)](145-doro-hufflepuff-artworks.webp)
 
 上方总览为主题主图拼接；表格中的八张图片为真实 Harness 演示环境截图。
+
+
+<a name="theme-146"></a>
+
+## 咕嘎和 Doro · 火影忍者 · 木叶传奇搭档
+
+森罗仙人 Doro 身穿柱间式暗红分片战甲，双瞳行者咕嘎改穿灰紫立领忍服与粗紫绳腰带，双眼统一为红色永恒万花筒。五组浅深场景覆盖木叶日常、共同修行与木龙／紫色须佐联手战斗，保留正式三视图的圆胖比例与柔软立体材质。
+
+浅色采用暖纸森林绿，深色采用夜幕靛紫；右下主图、左下物件、无角色横幅与双语短句同步切换，木叶任务文件夹和四款伙伴共用。首次启用默认五场景全选、每五分钟按列表轮换，可自行调整；简约版保留配色。
+
+| 场景 | 浅色 | 深色 |
+| --- | --- | --- |
+| 木叶拉面 | [![木叶传奇搭档 · 木叶拉面 · 浅色](146-guga-doro-naruto-light.webp)](146-guga-doro-naruto-light.webp) | [![木叶传奇搭档 · 木叶拉面 · 深色](146-guga-doro-naruto-dark.webp)](146-guga-doro-naruto-dark.webp) |
+| 木遁修行 | [![木叶传奇搭档 · 木遁修行 · 浅色](146-guga-doro-naruto-training-light.webp)](146-guga-doro-naruto-training-light.webp) | [![木叶传奇搭档 · 木遁修行 · 深色](146-guga-doro-naruto-training-dark.webp)](146-guga-doro-naruto-training-dark.webp) |
+| 雨巷归途 | [![木叶传奇搭档 · 雨巷归途 · 浅色](146-guga-doro-naruto-rain-light.webp)](146-guga-doro-naruto-rain-light.webp) | [![木叶传奇搭档 · 雨巷归途 · 深色](146-guga-doro-naruto-rain-dark.webp)](146-guga-doro-naruto-rain-dark.webp) |
+| 月下巡村 | [![木叶传奇搭档 · 月下巡村 · 浅色](146-guga-doro-naruto-rooftop-light.webp)](146-guga-doro-naruto-rooftop-light.webp) | [![木叶传奇搭档 · 月下巡村 · 深色](146-guga-doro-naruto-rooftop-dark.webp)](146-guga-doro-naruto-rooftop-dark.webp) |
+| 森罗并肩 | [![木叶传奇搭档 · 森罗并肩 · 浅色](146-guga-doro-naruto-battle-light.webp)](146-guga-doro-naruto-battle-light.webp) | [![木叶传奇搭档 · 森罗并肩 · 深色](146-guga-doro-naruto-battle-dark.webp)](146-guga-doro-naruto-battle-dark.webp) |
+
+[![木叶传奇搭档 · 五场景主图与横幅总览](146-guga-doro-naruto-artworks.webp)](146-guga-doro-naruto-artworks.webp)
+
+上方总览为主图与横幅拼接；表格中十张图片为 1920 × 1080 的 Harness 首页实拍。
