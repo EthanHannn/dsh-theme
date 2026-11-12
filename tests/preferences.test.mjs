@@ -439,6 +439,9 @@ test("v3 migration defaults multi-artwork rotation on and scopes artwork to its 
   // 单款名单保留开关意图，间隔回退默认；跨主题由节目单按名单数把关。
   assert.equal(restored.readDocument().rotation.enabled, true);
   assert.equal(restored.readDocument().rotation.interval, 30);
+  // 加密后的低档间隔：2、3 分钟等细粒度值原样保留。
+  restored.writeRotation({ enabled:true, pool:["naruto", "gundam"], interval:3 });
+  assert.equal(restored.readDocument().rotation.interval, 3);
 });
 
 test("new multi-artwork themes rotate all pictures by default and retain manual preferences", () => {
