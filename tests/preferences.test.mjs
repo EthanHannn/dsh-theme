@@ -555,6 +555,24 @@ test("fixed rotation splits the theme window across scenes and never starves art
   assert.equal(time.count(), 0);
 });
 
+test("on-schedule rotation lets quick themes finish early instead of filling the window", () => {
+  const { api } = load(null);
+  const time = fakeClock();
+  // 两张场景各 1 分钟，窗口 30 分钟：播完一轮（2 分钟）就提前跨主题。
+  const doc = { selected:{ family:"naruto" }, rotation:{ enabled:true, pool:["naruto", "gundam"], interval:30, order:"sequence", mode:"fixed" }, families:{ naruto:{ artwork:{ enabled:true, pool:["original", "rain"], interval:1, order:"sequence" } } } };
+  const events = [];
+  const clock = api.createRotationClock({ read:() => doc, onAdvance:(kind) => { events.push(kind); if (kind === "theme") doc.selected.family = doc.selected.family === "naruto" ? "gundam" : "naruto"; }, blocked:() => false, now:time.now, schedule:time.schedule, cancel:time.cancel });
+  time.advance(60000);
+  assert.deepEqual(events, ["artwork"]);
+  time.advance(60000);
+  assert.deepEqual(events, ["artwork", "theme"]);
+  // gundam 只有原配图：播完自己的插图间隔（默认 5 分钟）即切回，不待满窗口。
+  time.advance(300000);
+  assert.deepEqual(events, ["artwork", "theme", "theme"]);
+  clock.destroy();
+  assert.equal(time.count(), 0);
+});
+
 test("full-cycle rotation plays every checked scene before switching themes", () => {
   const { api } = load(null);
   const time = fakeClock();
@@ -743,6 +761,29 @@ test("rotation arrival starts each theme at the next scene instead of repeating 
     assert.equal(runtime.api.readPref().family, "naruto");
     assert.equal(runtime.api.readPref().artwork.variant, "original");
     runtime.time.advance(150000);
+    assert.equal(runtime.api.readPref().family, "gundam");
+  } finally {
+    runtime.dispose();
+    assert.equal(runtime.time.count(), 0);
+  }
+});
+
+test("pausing and resuming keeps the round progress instead of restarting it", () => {
+  const runtime = rotationRuntime({ version:7, selected:{ family:"naruto", mode:"dark", style:"vivid" }, rotation:{ enabled:true, pool:["naruto", "gundam"], interval:1, mode:"cycle" }, families:{ naruto:{ mode:"dark", artwork:{ enabled:true, pool:["original", "rain"], interval:1, variant:"original" } }, gundam:{ mode:"dark" } } });
+  try {
+    // 播完再换：naruto 两张场景各 1 分钟，第二张播完（2 分钟）才跨主题。
+    runtime.time.advance(60000);
+    assert.equal(runtime.api.readPref().artwork.variant, "rain");
+    assert.equal(runtime.api.readPref().family, "naruto");
+    // 隐藏再显示：当前场景重新计一拍，但本轮进度（还剩一张）必须保留。
+    runtime.document.hidden = true;
+    runtime.events.get("visibilitychange")();
+    runtime.time.advance(10000);
+    runtime.document.hidden = false;
+    runtime.events.get("visibilitychange")();
+    runtime.time.advance(59999);
+    assert.equal(runtime.api.readPref().family, "naruto");
+    runtime.time.advance(1);
     assert.equal(runtime.api.readPref().family, "gundam");
   } finally {
     runtime.dispose();

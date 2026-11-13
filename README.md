@@ -12,7 +12,7 @@
 
 **主题轮换**与**同主题图片**合并在外观设置底部的一个**轮换**面板中。面板顶部的「主题轮换」总开关决定是否跨主题播放：关闭时只保留当前主题的场景设置，选什么主题就是什么主题；开启后面板分为左右两栏，分别管理跨主题播放与主题内场景播放。在**设置 → 主题与外观 → 轮换 → 选择轮换主题**中批量勾选主题，可混选收藏和未收藏主题，通过“全部主题 / 我的收藏 / 已选”查看，点击“完成选择”保存名单。收藏与轮换名单分别管理，取消收藏不移出轮换，加入轮换也不自动收藏。
 
-主题轮换可按列表或随机播放，也可点击“下一套主题”，切换时沿用当前的浅色、深色或跟随系统模式。播法二选一：**播完再换**让每个主题播完整套勾选场景再切换，每图停留该主题的插图间隔；**到点就换**支持 1、2、3、5、10、15、30、60、180 分钟固定窗口，场景在窗口内均分播出，窗口播不完的场景下次轮到该主题时接着播。切到新主题会立即从上次停播的下一张场景开始，不会重复老面孔。
+主题轮换可按列表或随机播放，也可点击“下一套主题”，切换时沿用当前的浅色、深色或跟随系统模式。播法二选一：**播完再换**让每个主题播完整套勾选场景再切换，每图停留该主题的插图间隔；**到点就换**支持 1、2、3、5、10、15、30、60、180 分钟窗口上限：按各主题的插图间隔播完一轮就提前切换，单图主题播完仅有的一张即走、不待满窗口；一轮装不下窗口时在窗口内均分播出，播不完的场景下次轮到该主题时接着播。切到新主题会立即从上次停播的下一张场景开始，不会重复老面孔。
 
 **同主题图片**用于固定配色、切换当前主题的图片，支持独立的轮换列表和间隔。开启主题轮换后，点击左侧轮换名单里的主题卡片，或用同主题图片一栏顶部的「配置主题」下拉，即可原地调整其他主题的场景，无需切换当前主题。多图主题首次启用时默认按列表每五分钟轮换全部配图，可自行关闭、调整间隔、顺序和名单。「雾庭菇灯」提供原配图、蘑伞听雨、推车运菇、树洞晚安共四组浅深配图，主区域左下角物件与当前场景同步切换。「仗剑同行」收录结伴赶路、竹涧茶歇、烟雨摆渡、雪驿围炉四组完整场景，主图、物件、顶部横幅、文件夹开合、侧栏角色与语录同步切换；原独立江湖主题的使用状态、收藏及主题轮换名单自动归并。「伊甸星光」保留星章时刻，加入纸翼小队、温室观察、庭院点心，同样整套切换配图与语录。「庭院守卫队」「奇妙日常」「相伴小日子」分别收录四、三、六组原有场景，沿用整套联动与旧入口迁移。单图主题保持静态，其插图间隔在面板中显示为「停留」，即主题轮换「播完再换」经过该主题时的播放时长；选择简约或默认外观时提示先选择带配图的主题。
 
@@ -44,7 +44,7 @@
 | [名侦探柯南·米花协奏](docs/screenshots/README.md#theme-4) | [![名侦探柯南·米花协奏 · 浅色](docs/screenshots/04-conan-ensemble-light.webp)](docs/screenshots/04-conan-ensemble-light.webp) | [![名侦探柯南·米花协奏 · 深色](docs/screenshots/04-conan-ensemble-dark.webp)](docs/screenshots/04-conan-ensemble-dark.webp) |
 | [吉伊卡哇·烘焙小队](docs/screenshots/README.md#theme-55) | [![吉伊卡哇·烘焙小队 · 浅色](docs/screenshots/55-chiikawa-bakery-light.webp)](docs/screenshots/55-chiikawa-bakery-light.webp) | [![吉伊卡哇·烘焙小队 · 深色](docs/screenshots/55-chiikawa-bakery-dark.webp)](docs/screenshots/55-chiikawa-bakery-dark.webp) |
 | [胆大党·灵能交锋](docs/screenshots/README.md#theme-79) | [![胆大党·灵能交锋 · 浅色](docs/screenshots/79-dandadan-awakening-light.webp)](docs/screenshots/79-dandadan-awakening-light.webp) | [![胆大党·灵能交锋 · 深色](docs/screenshots/79-dandadan-awakening-dark.webp)](docs/screenshots/79-dandadan-awakening-dark.webp) |
-| [七龙珠·龟仙流夏日](docs/screenshots/README.md#theme-19) | [![七龙珠·龟仙流夏日 · 浅色](docs/screenshots/19-dragon-ball-kame-light.webp)](docs/screenshots/19-dragon-ball-kame-light.webp) | [![七龙珠·龟仙流夏日 · 深色](docs/screenshots/19-dragon-ball-kame-dark.webp)](docs/screenshots/19-dragon-ball-kame-dark.webp) |
+| [七龙珠 · 龟仙流夏日](docs/screenshots/README.md#theme-19) | [![七龙珠 · 龟仙流夏日 · 浅色](docs/screenshots/19-dragon-ball-kame-light.webp)](docs/screenshots/19-dragon-ball-kame-light.webp) | [![七龙珠 · 龟仙流夏日 · 深色](docs/screenshots/19-dragon-ball-kame-dark.webp)](docs/screenshots/19-dragon-ball-kame-dark.webp) |
 | [EVA·初号机·觉醒](docs/screenshots/README.md#theme-6) | [![EVA·初号机·觉醒 · 浅色](docs/screenshots/06-eva-unit-01-light.webp)](docs/screenshots/06-eva-unit-01-light.webp) | [![EVA·初号机·觉醒 · 深色](docs/screenshots/06-eva-unit-01-dark.webp)](docs/screenshots/06-eva-unit-01-dark.webp) |
 | [芙莉莲·花间研习](docs/screenshots/README.md#theme-7) | [![芙莉莲·花间研习 · 浅色](docs/screenshots/07-frieren-light.webp)](docs/screenshots/07-frieren-light.webp) | [![芙莉莲·花间研习 · 深色](docs/screenshots/07-frieren-dark.webp)](docs/screenshots/07-frieren-dark.webp) |
 | [我叫MT·劣人与呆贼](docs/screenshots/README.md#theme-26) | [![我叫MT·劣人与呆贼 · 浅色](docs/screenshots/26-i-am-mt-light.webp)](docs/screenshots/26-i-am-mt-light.webp) | [![我叫MT·劣人与呆贼 · 深色](docs/screenshots/26-i-am-mt-dark.webp)](docs/screenshots/26-i-am-mt-dark.webp) |
@@ -251,7 +251,7 @@ Linux 可在安装包所在目录执行 `sha256sum -c SHA256SUMS.txt`；macOS �
 - **灰原哀·琥珀微光**：鼠尾草绿 / 茶棕 / 琥珀与深夜青。
 - **怪盗基德·月白预告**：象牙白 / 宝石蓝 / 月光银。
 - **名侦探柯南·米花协奏**：侦探蓝 / 领结红 / 月光银。
-- **七龙珠·龟仙流夏日**：海沫青 / 道服橙 / 珊瑚粉。
+- **七龙珠 · 龟仙流夏日**：海沫青 / 道服橙 / 珊瑚粉；海岛修行、龟壳晨练、海边垂钓、西瓜小憩四组配图，可切换或轮换。
 - **七龙珠·金焰并肩**：护甲蓝 / 超赛金 / 深靛紫。
 - **七龙珠·神龙奇旅**：神龙翡翠 / 四星琥珀 / 地图纸色。
 - **高达·RX-78-2**：装甲白、高达蓝、红色与明黄。
