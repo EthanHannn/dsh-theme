@@ -41,6 +41,10 @@ else:
 # (source stem, output stem, ratio W:H, vertical band center as a fraction
 # of source height)
 JOBS = [
+    ("kame-summer-20261113/seaside-fishing-banner-provider", "dragon-ball-kame-seaside-fishing-banner-light", 6.0, 0.25),
+    ("kame-summer-20261113/seaside-fishing-banner-provider", "dragon-ball-kame-seaside-fishing-banner-dark", 6.0, 0.75),
+    ("kame-summer-20261113/watermelon-break-banner-provider", "dragon-ball-kame-watermelon-break-banner-light", 6.0, 0.25),
+    ("kame-summer-20261113/watermelon-break-banner-provider", "dragon-ball-kame-watermelon-break-banner-dark", 6.0, 0.75),
     ("naruto-duo-20261112/banner-original-provider", "guga-doro-naruto-banner-light", 6.0, 0.25),
     ("naruto-duo-20261112/banner-original-provider", "guga-doro-naruto-banner-dark", 6.0, 0.75),
     ("naruto-duo-20261112/banner-training-provider", "guga-doro-naruto-training-banner-light", 6.0, 0.25),
@@ -377,6 +381,10 @@ JOBS = [
 # left fade end, right fade start), as fractions of the final strip width.
 # All families use Daxia's 25% left / 10% right edge treatment.
 BAKED_HORIZONTAL_FADES = {
+    "dragon-ball-kame-seaside-fishing-banner-light": ("#EDF5ED", 0.25, 0.90),
+    "dragon-ball-kame-seaside-fishing-banner-dark": ("#132A2B", 0.25, 0.90),
+    "dragon-ball-kame-watermelon-break-banner-light": ("#EDF5ED", 0.25, 0.90),
+    "dragon-ball-kame-watermelon-break-banner-dark": ("#132A2B", 0.25, 0.90),
     "guga-doro-naruto-banner-light": ("#F1E9D6", 0.25, 0.90),
     "guga-doro-naruto-banner-dark": ("#1C222B", 0.25, 0.90),
     "guga-doro-naruto-training-banner-light": ("#F1E9D6", 0.25, 0.90),
