@@ -3,7 +3,7 @@ import { readFileSync } from "node:fs";
 import test from "node:test";
 import vm from "node:vm";
 
-function loadPal({ desktop, trigger = null, lang = "zh" }) {
+function loadPal({ desktop, trigger = null, lang = "zh", storeMissing = false }) {
   let api;
   const timers = [];
   const effects = [];
@@ -54,7 +54,7 @@ function loadPal({ desktop, trigger = null, lang = "zh" }) {
     theme: { getTheme: () => ({ preference: "test-dark-vivid" }) },
     on: () => () => {},
     slots: {
-      entriesOfSlot(name) { assert.equal(name, "sidebar.settings"); return [{ store }]; },
+      entriesOfSlot(name) { assert.equal(name, "sidebar.settings"); return storeMissing ? [] : [{ store }]; },
       inject(name, callback) {
         declarations.set(name, callback);
         return () => declarations.delete(name);
@@ -117,4 +117,12 @@ test("Web pal selects Themes & Appearance while replacing the plain settings but
   assert.equal(pal.registrations[0].removed, true);
   pal.dispose();
   assert.equal(pal.declarations.size, 0);
+});
+
+test("a missing settings store during hot reload is skipped instead of crashing", () => {
+  const pal = loadPal({ desktop: true, storeMissing: true });
+  const remove = pal.declarations.get("settings.launcher");
+  assert.doesNotThrow(() => remove());
+  assert.equal(pal.registrations.length, 0);
+  pal.dispose();
 });

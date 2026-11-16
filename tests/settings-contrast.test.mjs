@@ -76,3 +76,21 @@ test("dark interaction washes do not wash out secondary text when nested", () =>
     assert.ok(ratio >= 4.5, `${skin.name}: nested dark hover = ${ratio.toFixed(2)}:1`);
   }
 });
+
+test("fine-control help popover anchors to the full-width row, not the 28px question button", () => {
+  const rule = (selector) => {
+    const body = css.split(`${selector} {`)[1]?.split("}")[0];
+    assert.ok(body, `Missing rule: ${selector}`);
+    return body;
+  };
+  assert.match(rule(".dsh-theme-advanced-clarity"), /position:relative/);
+  assert.doesNotMatch(rule(".dsh-theme-help"), /position:relative/);
+  assert.match(rule(".dsh-theme-clarity-help"), /width:min\(280px,100%\)/);
+});
+
+test("theme count sits before the filter switch so the switch never shifts", () => {
+  const rule = css.split(".dsh-theme-count {")[1]?.split("}")[0];
+  assert.ok(rule, "Missing .dsh-theme-count rule");
+  assert.match(rule, /order:-1/);
+  assert.match(rule, /flex:none/);
+});

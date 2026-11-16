@@ -636,7 +636,7 @@ function rotationRuntime(saved) {
   };
   harness.api.apply(ctx);
   time.advance(0);
-  return { ...harness, time, events, actions:section.inject({ sync() {} }), snapshot:() => snapshot, streaming:(value) => { streaming = value; }, dispose:() => { for (const fn of cleanups.reverse()) fn?.(); } };
+  return { ...harness, time, events, actions:section.inject({ sync() {} }), snapshot:() => snapshot, streaming:(value) => { streaming = value; }, setThemes:(themes) => { snapshot = { ...snapshot, themes }; }, dispose:() => { for (const fn of cleanups.reverse()) fn?.(); } };
 }
 
 test("preview cancellation restores unsaved controls and retains global changes that were automatically saved", () => {
@@ -666,6 +666,18 @@ test("preview cancellation restores unsaved controls and retains global changes 
     assert.equal(reloaded.readPref().character, true);
     assert.equal(reloaded.settingsFor("gundam").headerRange, "extend");
     assert.equal(reloaded.settingsFor("slate").props, false);
+  } finally {
+    runtime.dispose();
+  }
+});
+
+test("preview cancellation tolerates skins unregistered during plugin teardown", () => {
+  const runtime = rotationRuntime({ version:6, selected:{ family:"naruto", mode:"dark", style:"vivid" } });
+  try {
+    runtime.actions.previewTheme({ family:"gundam", mode:"light" });
+    // Hot reload disposes the old instance's skin registrations before its ThemeSection cleanup runs.
+    runtime.setThemes([]);
+    assert.doesNotThrow(() => runtime.actions.cancelPreview());
   } finally {
     runtime.dispose();
   }
@@ -858,6 +870,14 @@ test("search and category keep palette pairs together while minimal filtering on
   assert.deepEqual(ids("unknown", "all", true), []);
 });
 
+test("multi filter lists only themes with switchable artwork", () => {
+  const { api } = load(null, false, {}, { catalog:variantCatalog() });
+  const ids = (category, show) => Array.from(api.filterCatalog("", category, show), (entry) => entry.id);
+  assert.deepEqual(ids("multi", false), ["naruto"]);
+  assert.deepEqual(ids("multi", true), ["naruto"]);
+  assert.deepEqual(ids("all", false), ["naruto", "gundam"]);
+});
+
 function elementRenderer() {
   // 用轻量元素树驱动真实回调；浏览器检查负责布局、焦点和原生事件。
   const state = [];
@@ -1016,6 +1036,20 @@ test("rotation picker mixes favorites and other themes, keeps hidden selections,
   renderer.find(tree, (node) => node.type === "button" && node.children[0] === "取消").props.onClick();
   assert.equal(cancelled, true);
   assert.equal(JSON.stringify(api.readDocument()), before);
+});
+
+test("clicking a rotation-pool theme switches the live theme directly", () => {
+  const renderer = elementRenderer();
+  const saved = { version:7, selected:{ family:"naruto", mode:"dark", style:"vivid" }, rotation:{ enabled:true, pool:["naruto", "gundam"], interval:30, mode:"cycle" } };
+  const { api } = load(JSON.stringify(saved), false, renderer.reactApi);
+  let applied;
+  const props = { t:(key) => key === "theme.title" ? "主题" : key, useStore:(pick) => pick({ family:"naruto", mode:"dark" }), saveDraft() {}, previewTheme() {}, applyDraft:(draft) => { applied = draft; }, cancelPreview() {} };
+  const tree = renderer.render(api.ThemeSection, props);
+  const poolButton = renderer.find(tree, (node) => node.type === "button" && node.props.className === "dsh-theme-pool-name" && node.children[0] === "family.gundam");
+  assert.ok(poolButton);
+  poolButton.props.onClick();
+  assert.equal(applied.family, "gundam");
+  assert.equal(applied.mode, "dark");
 });
 
 test("artwork panel configures rotation-pool themes in place without switching to them", () => {
