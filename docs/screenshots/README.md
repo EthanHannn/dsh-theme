@@ -118,11 +118,15 @@ Doro 的草莓野餐与在家烘焙，配以草莓奶粉、柔和丁香紫和温
 
 <a name="theme-2"></a>
 
-## 电锯人·玛奇玛
+## 电锯人 · 玛奇玛
+
+四组场景：神社密令、公安日程、与犬相伴、电影之约。浅深色分别采用八幅独立画面，动作、服装、镜头与情境随日常和工作变化，横幅和物件同步切换。默认每五分钟按列表轮换，可单独选择场景。
+
+[![玛奇玛 · 四景浅深色总览](02-makima-artworks.webp)](02-makima-artworks.webp)
 
 | 浅色 | 深色 |
 | --- | --- |
-| [![电锯人·玛奇玛 · 浅色](02-makima-light.webp)](02-makima-light.webp) | [![电锯人·玛奇玛 · 深色](02-makima-dark.webp)](02-makima-dark.webp) |
+| [![电锯人 · 玛奇玛 · 浅色](02-makima-light.webp)](02-makima-light.webp) | [![电锯人 · 玛奇玛 · 深色](02-makima-dark.webp)](02-makima-dark.webp) |
 
 <a name="theme-3"></a>
 
