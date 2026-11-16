@@ -48,3 +48,13 @@ Recent history favors concise, imperative subjects with optional Conventional Co
 ## IP Artwork Fidelity
 
 Unless the user explicitly requests a different art direction, preserve each anime or game IP's original visual language: canonical character proportions, faces, clothing, linework, coloring and rendering. Doro-specific figurine, plush and miniature preferences are scoped to their requested series and must not become defaults for unrelated IPs. Official references must guide both identity and visual style. Review original-IP resemblance before checking asset counts, layout or contrast.
+
+## Expanding an Existing Single-Artwork Theme
+
+以下要求仅适用于用户要求把已有单图主题拓展成多图主题。从零设计新主题时，按该主题自身的创意与需求设计，不套用本节的扩展流程。
+
+- 原配图保留作比较，新增配图默认设计为独立场景；不得自行要求每张全员出场、相同站位、相同视角或相同画面比例。
+- 制作前先比较各组的人物组合与人数、镜头视角、整体轮廓、空间关系、动作节奏和叙事重心，让不同场景在多项维度上形成清晰差异。更换道具、表情或光照本身不足以构成合格拓展；不规定每组必须使用不同人数。
+- 参考图须注明用于人物身份、服装或画风。除非用户要求延续构图，不继承原配图的站位和镜头；可裁出单人身份参考，避免整张群像把新增场景锁回原布局。
+- 提示词逐场景编写，不共用会固定人数、前后站位或群像比例的构图模板。主题配色、装饰位置和原作辨识度可以保持一致，场景构图应有独立设计。
+- 验收时将原图与全部扩展图并排比较，先检查场景差异、原作辨识与人体结构，再检查透明边缘和界面效果。浅深色分别核对关节连接、遮挡、重心及道具接触；技术检查通过不能代替视觉验收。
