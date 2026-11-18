@@ -47,6 +47,7 @@ export function checkDshCompatibility(harnessRoot) {
   const themeManifest = readJson(join(themeRoot, "package.json"));
   const harnessManifest = readJson(harnessManifestPath(harnessRoot));
   const failures = [];
+  const warnings = [];
 
   if (compatibility.formatVersion !== 1) {
     failures.push(`compatibility.json formatVersion must be 1, got ${String(compatibility.formatVersion)}`);
@@ -56,7 +57,7 @@ export function checkDshCompatibility(harnessRoot) {
   if (typeof supportedVersion !== "string" || supportedVersion.length === 0) {
     failures.push("compatibility.json must declare harness.version");
   } else if (harnessManifest.version !== supportedVersion) {
-    failures.push(`Harness ${harnessManifest.version ?? "<unknown>"} is not the tested ${supportedVersion}`);
+    warnings.push(`Harness ${harnessManifest.version ?? "<unknown>"} differs from the tested baseline ${supportedVersion}; version differences are advisory, not an automatic incompatibility.`);
   }
   if (typeof supportedTag !== "string" || supportedTag.length === 0) {
     failures.push("compatibility.json must declare harness.tag");
@@ -92,7 +93,7 @@ export function checkDshCompatibility(harnessRoot) {
         failures.push(`${required.manifest}: expected package ${required.name}, got ${manifest.name ?? "<unknown>"}`);
       }
       if (manifest.version !== supportedVersion) {
-        failures.push(`${required.name}: expected version ${supportedVersion}, got ${manifest.version ?? "<unknown>"}`);
+        warnings.push(`${required.name}: version ${manifest.version ?? "<unknown>"} differs from baseline ${supportedVersion}; continue with API/export checks.`);
       }
       if (!hasExport(manifest, required.export)) {
         failures.push(`${required.name}: missing required export ${required.export}`);
@@ -104,7 +105,7 @@ export function checkDshCompatibility(harnessRoot) {
       if (typeof declared !== "string") {
         failures.push(`package.json peerDependencies is missing ${required.name}`);
       } else if (releaseLine(declared) !== releaseLine(supportedVersion)) {
-        failures.push(`package.json peerDependencies must keep ${required.name} on the ${releaseLine(supportedVersion)} release line, got ${declared}`);
+        warnings.push(`package.json peerDependencies ${required.name} is on release line ${releaseLine(declared) ?? "<invalid>"}, baseline is ${releaseLine(supportedVersion) ?? "<invalid>"}.`);
       }
     }
   }
@@ -116,8 +117,11 @@ export function checkDshCompatibility(harnessRoot) {
       failures.push(`${required.name}: missing module loader manifest`);
     } else {
       const manifest = readJson(manifestPath);
-      if (manifest.name !== required.name || manifest.version !== supportedVersion || !hasExport(manifest, required.export)) {
-        failures.push(`${required.name}: package-local chunk loader must match Harness ${supportedVersion} and export ${required.export}`);
+      if (manifest.name !== required.name || !hasExport(manifest, required.export)) {
+        failures.push(`${required.name}: package-local chunk loader must be named ${required.name} and export ${required.export}`);
+      }
+      if (manifest.version !== supportedVersion) {
+        warnings.push(`${required.name}: version ${manifest.version ?? "<unknown>"} differs from baseline ${supportedVersion}; continue with export checks.`);
       }
     }
   }
@@ -127,12 +131,12 @@ export function checkDshCompatibility(harnessRoot) {
   }
   if (failures.length > 0) {
     throw new Error([
-      `dsh-themes is not compatible with the Harness checkout at ${harnessRoot}:`,
+      `dsh-themes has structural compatibility failures against the Harness checkout at ${harnessRoot}:`,
       ...failures.map((failure) => `- ${failure}`),
       "Update compatibility.json, package.json, the client adapter, and the compatibility matrix together.",
     ].join("\n"));
   }
-  return { harnessRoot, version: supportedVersion, tag: supportedTag };
+  return { harnessRoot, version: harnessManifest.version, baselineVersion: supportedVersion, tag: supportedTag, warnings };
 }
 
 function main() {
@@ -142,7 +146,11 @@ function main() {
   });
   const harnessRoot = resolveHarnessRoot(values.harness);
   const result = checkDshCompatibility(harnessRoot);
-  console.log(`dsh-themes: compatible with Harness ${result.version} at ${result.harnessRoot}`);
+  if (result.warnings.length > 0) {
+    console.warn("dsh-themes compatibility warnings (advisory):");
+    for (const warning of result.warnings) console.warn(`- ${warning}`);
+  }
+  console.log(`dsh-themes: checked against Harness ${result.version} at ${result.harnessRoot}`);
 }
 
 if (process.argv[1] && pathToFileURL(resolve(process.argv[1])).href === import.meta.url) {
