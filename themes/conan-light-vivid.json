@@ -1,6 +1,6 @@
 {
   "id": "conan-light-vivid",
-  "name": "Detective Conan · Moonlit Trail Light",
+  "name": "Detective Conan · Moonlit Mysteries Light",
   "colorScheme": "light",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #F5F7FA 50%, #EAEDF1)",

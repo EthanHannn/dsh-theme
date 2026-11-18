@@ -41,6 +41,10 @@ else:
 # (source stem, output stem, ratio W:H, vertical band center as a fraction
 # of source height)
 JOBS = [
+    ("conan-moonlit-expansion-20261118/rail-trace-banner-provider", "conan-rail-trace-banner-light", 6.0, 0.25),
+    ("conan-moonlit-expansion-20261118/rail-trace-banner-provider", "conan-rail-trace-banner-dark", 6.0, 0.75),
+    ("conan-moonlit-expansion-20261118/clocktower-code-banner-provider", "conan-clocktower-code-banner-light", 6.0, 0.25),
+    ("conan-moonlit-expansion-20261118/clocktower-code-banner-provider", "conan-clocktower-code-banner-dark", 6.0, 0.75),
     ("i-am-mt-five-scenes-20261117/woodland-tracking-banner-provider", "i-am-mt-banner-light", 6.0, 0.25),
     ("i-am-mt-five-scenes-20261117/woodland-tracking-banner-provider", "i-am-mt-banner-dark", 6.0, 0.75),
     ("i-am-mt-five-scenes-20261117/rangers-contest-banner-provider", "i-am-mt-rangers-contest-banner-light", 6.0, 0.25),
@@ -243,8 +247,8 @@ JOBS = [
     ("anime-five-20261009/spy-family-forgers/banner-dark", "spy-family-forgers-banner-dark", 6.0, 0.5),
     ("gundam-showcase-20261009/gundam-nu/banner-light", "gundam-nu-banner-light", 6.0, 0.5),
     ("gundam-showcase-20261009/gundam-nu/banner-dark", "gundam-nu-banner-dark", 6.0, 0.5),
-    ("additions-20261009/conan-jewel/banner-light", "conan-jewel-banner-light", 6.0, 0.5),
-    ("additions-20261009/conan-jewel/banner-dark", "conan-jewel-banner-dark", 6.0, 0.5),
+    ("additions-20261009/conan-jewel/banner-light", "conan-jewel-mystery-banner-light", 6.0, 0.5),
+    ("additions-20261009/conan-jewel/banner-dark", "conan-jewel-mystery-banner-dark", 6.0, 0.5),
     ("additions-20261009/gundam-barbatos/banner-light", "gundam-barbatos-banner-light", 6.0, 0.5),
     ("additions-20261009/gundam-barbatos/banner-dark", "gundam-barbatos-banner-dark", 6.0, 0.5),
     ("expansion-20261009/i-am-mt-alliance-camp/banner-light", "i-am-mt-alliance-camp-banner-light", 6.0, 0.5),
@@ -422,6 +426,10 @@ JOBS = [
 # left fade end, right fade start), as fractions of the final strip width.
 # All families use Daxia's 25% left / 10% right edge treatment.
 BAKED_HORIZONTAL_FADES = {
+    "conan-rail-trace-banner-light": ("#EDF2F7", 0.25, 0.90),
+    "conan-rail-trace-banner-dark": ("#101C30", 0.25, 0.90),
+    "conan-clocktower-code-banner-light": ("#EDF2F7", 0.25, 0.90),
+    "conan-clocktower-code-banner-dark": ("#101C30", 0.25, 0.90),
     "i-am-mt-rangers-contest-banner-light": ("#F9E5C5", 0.25, 0.90),
     "i-am-mt-rangers-contest-banner-dark": ("#191411", 0.25, 0.90),
     "i-am-mt-camp-mishap-banner-light": ("#F9E5C5", 0.25, 0.90),
@@ -624,8 +632,8 @@ BAKED_HORIZONTAL_FADES = {
     "spy-family-forgers-banner-dark": ("#1B2923", 0.25, 0.90),
     "gundam-nu-banner-light": ("#E8EFF0", 0.25, 0.90),
     "gundam-nu-banner-dark": ("#192B39", 0.25, 0.90),
-    "conan-jewel-banner-light": ("#EAEFF7", 0.25, 0.90),
-    "conan-jewel-banner-dark": ("#202B42", 0.25, 0.90),
+    "conan-jewel-mystery-banner-light": ("#EDF2F7", 0.25, 0.90),
+    "conan-jewel-mystery-banner-dark": ("#101C30", 0.25, 0.90),
     "gundam-barbatos-banner-light": ("#EEE6DA", 0.25, 0.90),
     "gundam-barbatos-banner-dark": ("#242B34", 0.25, 0.90),
     "i-am-mt-alliance-camp-banner-light": ("#F5E9D7", 0.25, 0.90),

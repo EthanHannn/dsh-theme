@@ -349,6 +349,44 @@ test("Star Rail legacy entries retain their selected scene, mode and collection 
   }
 });
 
+test("Conan jewel entrance and its minimal pair retain preferences after merging", async () => {
+  const groups = [["conan", [["conan-jewel", "jewel-mystery"]]]];
+  for (const [target, sources, minimal = `${target}-minimal`] of groups) {
+    const families = await Promise.all([target, minimal].map(async (id) => (await import(`../families/${id}.mjs`)).default));
+    const entries = [...catalog, ...families.map((family) => ({
+      ...family,
+      artworks:(family.artworks ?? []).map((scene) => ({ ...scene, modes:{ light:{}, dark:{} } })),
+      skins:["light", "dark"].map((mode) => ({ id:`${family.id}-${mode}${family.kin ? "" : "-vivid"}`, colorScheme:mode, tokens:{} })),
+    }))];
+    for (const [source, variant] of sources) {
+      for (const mode of ["light", "dark", "system"]) {
+        const saved = {
+          version:7, selected:{ family:source, mode, style:"vivid" },
+          favorites:[source, target, `${source}-minimal`],
+          rotation:{ enabled:true, pool:[source, target, "naruto"] },
+          appearance:{ props:false, header:false, character:true, pal:true },
+          families:{ [source]:{ wallpaper:"soft", artwork:{ variant:"original", enabled:false } } },
+        };
+        const { api, raw } = load(JSON.stringify(saved), false, {}, { catalog:entries });
+        assert.equal(api.readPref().family, target, source);
+        assert.equal(api.readPref().mode, mode);
+        assert.equal(api.readPref().wallpaper, "soft");
+        assert.equal(api.readPref().props, false);
+        assert.equal(api.readPref().header, false);
+        assert.equal(api.readPref().artwork.variant, variant);
+        assert.deepEqual(Array.from(api.readDocument().favorites), [target, minimal]);
+        assert.deepEqual(Array.from(api.readDocument().rotation.pool), [target, "naruto"]);
+        assert.equal(load(raw(), false, {}, { catalog:entries }).api.readPref().artwork.variant, variant);
+      }
+      const saved = { version:7, selected:{ family:`${source}-minimal`, mode:"dark", style:"minimal" }, favorites:[`${source}-minimal`] };
+      const { api } = load(JSON.stringify(saved), false, {}, { catalog:entries });
+      assert.equal(api.readPref().family, minimal);
+      assert.equal(api.resolveSkin(api.readPref()), `${minimal}-dark`);
+      assert.deepEqual(Array.from(api.readDocument().favorites), [minimal]);
+    }
+  }
+});
+
 test("merged families preserve the active scene, decoration choices, favorites and rotation order", () => {
   const saved = { version:5, selected:{ family:"old-rain", mode:"dark", style:"vivid" }, favorites:["old-rain", "gundam", "naruto"], rotation:{ enabled:true, pool:["old-rain", "naruto", "gundam"], interval:30, order:"random" }, families:{ "old-rain":{ props:false, header:false }, naruto:{ artwork:{ enabled:false, interval:15, order:"random", pool:["rain", "original"] } } } };
   const { api } = load(JSON.stringify(saved), false, {}, { catalog:mergedCatalog() });

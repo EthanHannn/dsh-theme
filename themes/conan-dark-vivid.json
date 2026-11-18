@@ -1,6 +1,6 @@
 {
   "id": "conan-dark-vivid",
-  "name": "Detective Conan · Moonlit Trail Dark",
+  "name": "Detective Conan · Moonlit Mysteries Dark",
   "colorScheme": "dark",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #E6EDF7 50%, #CCD3DE)",
