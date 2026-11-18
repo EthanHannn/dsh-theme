@@ -1,6 +1,6 @@
 {
   "id": "hsr-express-light-vivid",
-  "name": "Honkai Star Rail · Express Morning Light",
+  "name": "Honkai: Star Rail Light",
   "colorScheme": "light",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #F2F7FB 50%, #E8EDF2)",

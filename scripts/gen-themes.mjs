@@ -351,11 +351,9 @@ function mergeParams(base, over) {
 }
 
 const categories = JSON.parse(readFileSync(join(familyDir, "categories.json"), "utf8"));
-const familySortKeys = new Map();
 
 for (const file of familyFiles) {
   const family = (await import(pathToFileURL(join(familyDir, file)).href)).default;
-  familySortKeys.set(family.id, family.sortKey ?? family.id);
   if (
     !family?.id ||
     !family.names?.zh ||
@@ -467,9 +465,9 @@ for (const file of familyFiles) {
   }, ...(family.originalArtworkNames ? { originalArtworkNames:family.originalArtworkNames } : {}), ...(family.legacyFamilies ? { legacyFamilies:family.legacyFamilies } : {}), ...(artworks.length ? { artworks } : {}), skins });
 }
 
-// Explicit keys keep related IP families together regardless of filenames.
-// The picker inserts each minimal kin directly after its vivid family.
-catalog.sort((a, b) => familySortKeys.get(a.id).localeCompare(familySortKeys.get(b.id), "en"));
+// 按中文显示名的拼音顺序排列，数字按数值比较；简约配对仍由选择器紧随主主题。
+const familyNameOrder = new Intl.Collator("zh-CN-u-co-pinyin", { numeric: true });
+catalog.sort((a, b) => familyNameOrder.compare(a.names.zh, b.names.zh) || a.id.localeCompare(b.id, "en"));
 
 // 旧入口必须唯一，且指向实际存在的场景，避免静默丢失使用偏好。
 const legacyFamilyIds = new Set();

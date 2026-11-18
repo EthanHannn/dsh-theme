@@ -315,6 +315,40 @@ function mergedCatalog() {
   return entries;
 }
 
+test("Star Rail legacy entries retain their selected scene, mode and collection membership", async () => {
+  const families = await Promise.all(["hsr-express", "hsr-express-minimal"].map(async (id) => (await import(`../families/${id}.mjs`)).default));
+  const entries = families.map((family) => ({
+    ...family,
+    category:"game",
+    artworks:(family.artworks ?? []).map((scene) => ({ ...scene, modes:{ light:{}, dark:{} } })),
+    skins:["light", "dark"].map((mode) => ({ id:`${family.id}-${mode}${family.kin ? "" : "-vivid"}`, colorScheme:mode, tokens:{} })),
+  }));
+  for (const [legacy, variant] of [["hsr-hunters", "hunters-after-hours"], ["hsr-firefly", "firefly-promise"]]) {
+    for (const mode of ["light", "dark", "system"]) {
+      const saved = {
+        version:7, selected:{ family:legacy, mode, style:"vivid" },
+        favorites:["hsr-express", "hsr-hunters", "hsr-firefly", "hsr-firefly-minimal"],
+        rotation:{ enabled:true, pool:["hsr-hunters", "hsr-firefly", "hsr-express"] },
+        families:{ [legacy]:{ wallpaper:"soft", artwork:{ variant:"original", enabled:false } } },
+      };
+      const { api, raw } = load(JSON.stringify(saved), false, {}, { catalog:entries });
+      assert.equal(api.readPref().family, "hsr-express");
+      assert.equal(api.readPref().mode, mode);
+      assert.equal(api.readPref().wallpaper, "soft");
+      assert.equal(api.readPref().artwork.variant, variant);
+      assert.deepEqual(Array.from(api.readDocument().favorites), ["hsr-express", "hsr-express-minimal"]);
+      assert.deepEqual(Array.from(api.readDocument().rotation.pool), ["hsr-express"]);
+      assert.deepEqual(Array.from(api.artworkVariantsFor("hsr-express"), (scene) => scene.id), ["original", "hunters-after-hours", "firefly-promise", "luofu-leisure"]);
+      assert.equal(load(raw(), false, {}, { catalog:entries }).api.readPref().artwork.variant, variant);
+    }
+    const saved = { version:7, selected:{ family:`${legacy}-minimal`, mode:"dark", style:"minimal" }, favorites:[`${legacy}-minimal`] };
+    const { api } = load(JSON.stringify(saved), false, {}, { catalog:entries });
+    assert.equal(api.readPref().family, "hsr-express-minimal");
+    assert.equal(api.resolveSkin(api.readPref()), "hsr-express-minimal-dark");
+    assert.deepEqual(Array.from(api.readDocument().favorites), ["hsr-express-minimal"]);
+  }
+});
+
 test("merged families preserve the active scene, decoration choices, favorites and rotation order", () => {
   const saved = { version:5, selected:{ family:"old-rain", mode:"dark", style:"vivid" }, favorites:["old-rain", "gundam", "naruto"], rotation:{ enabled:true, pool:["old-rain", "naruto", "gundam"], interval:30, order:"random" }, families:{ "old-rain":{ props:false, header:false }, naruto:{ artwork:{ enabled:false, interval:15, order:"random", pool:["rain", "original"] } } } };
   const { api } = load(JSON.stringify(saved), false, {}, { catalog:mergedCatalog() });

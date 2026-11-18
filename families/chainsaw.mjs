@@ -1,12 +1,12 @@
 import { createVividFamily } from "./create-vivid-family.js";
 
-// Public Safety: shirt white, blue-gray uniforms, charcoal and restrained red.
-// Umber keeps its stable ID and re-exports these same mode palettes.
+// 衬衫白、冷灰蓝、炭黑与暗红串联日常、雨夜和战斗。
+// 冷墨保留稳定标识，继续复用本家族的阅读配色。
 const family = createVividFamily({
   id: "chainsaw",
   signaturePrefix: "csm",
-  names: { zh: "电锯人·特异课", en: "Chainsaw Man · Public Safety" },
-  // Original character-inspired lines, ordered Denji / Pochita / Makima / Power / Aki.
+  names: { zh: "电锯人 · 人间愿望", en: "Chainsaw Man · Human Wishes" },
+  // 短句按电次、波奇塔、玛奇玛、帕瓦、秋的侧栏顺序排列。
   phrases: {
     "zh": [
       [
@@ -95,8 +95,103 @@ const family = createVividFamily({
   },
 });
 
-// A larger square ensemble; retain a viewport-height cap in short windows.
-family.decor.wallpaperSize = "min(42vw, 540px, 50vh)";
-family.decor.heroTranslate = "0 calc(-1 * min(10vh, 100px))";
+// 五组故事共用稳定家族标识，浅深色分别延续获准的独立构图。
+family.sortKey = "chainsaw-human-wishes";
+family.originalArtworkNames = { zh: "面包与梦", en: "Bread and a Dream" };
+family.decor.wallpaperSize = "min(36vw, 460px, calc(52vh * var(--dsw-pack-wallpaper-ratio, 1)))";
+family.decor.wallpaperPosition = "right 28px bottom 16px";
+family.decor.heroTranslate = "calc(-0.30 * min(36vw, 460px)) calc(-1 * min(8vh, 80px))";
+family.decor.heroMaxWidth = "calc(100vw - 280px - min(36vw, 460px) - 64px)";
+
+family.artworks = [
+  {
+    id: "noisy-way-home",
+    names: { zh: "吵闹归途", en: "Noisy Way Home" },
+    decor: {
+      phrases: {
+        zh: [
+          ["电次：买了什么好吃的？", "电次：我的那份可别忘了！"],
+          ["波奇塔：汪！一起回家。", "波奇塔：晚饭的香味，闻到了。"],
+          ["玛奇玛：今天也平安收工了。", "玛奇玛：回去好好休息吧。"],
+          ["帕瓦：本大爷还要吃肉！", "帕瓦：喵子说这条路归我管！"],
+          ["早川秋：先把东西拿稳。", "早川秋：别闹，苹果又掉了。"],
+        ],
+        en: [
+          ["Denji: What good stuff did you buy?", "Denji: Do not forget my share!"],
+          ["Pochita: Woof! Let us go home.", "Pochita: I can smell dinner already."],
+          ["Makima: Everyone made it home today.", "Makima: Get some rest."],
+          ["Power: I demand more meat!", "Power: Meowy says this street is mine!"],
+          ["Aki: Hold the bags properly.", "Aki: Easy. There goes another apple."],
+        ],
+      },
+    },
+  },
+  {
+    id: "midnight-screening",
+    names: { zh: "午夜放映", en: "Midnight Screening" },
+    decor: {
+      phrases: {
+        zh: [
+          ["电次：电影散场后，吃点什么？", "电次：原来电影还能这么看。"],
+          ["波奇塔：陪你把故事看完。", "波奇塔：汪，别急着走。"],
+          ["玛奇玛：有些片段，会留很久。", "玛奇玛：散场了，再坐一会儿吧。"],
+          ["帕瓦：本大爷看得懂！", "帕瓦：爆米花还剩多少？"],
+          ["早川秋：开场前，把手机收好。", "早川秋：回去的车还赶得上。"],
+        ],
+        en: [
+          ["Denji: What are we eating after the film?", "Denji: So this is what movies can be."],
+          ["Pochita: I will stay until the story ends.", "Pochita: Woof. No need to rush."],
+          ["Makima: Some scenes stay with you.", "Makima: It is over. Stay a little longer."],
+          ["Power: Of course I understood it!", "Power: How much popcorn is left?"],
+          ["Aki: Put your phone away before it starts.", "Aki: We can still catch the last train."],
+        ],
+      },
+    },
+  },
+  {
+    id: "meeting-in-rain",
+    names: { zh: "雨中偶遇", en: "Meeting in the Rain" },
+    decor: {
+      phrases: {
+        zh: [
+          ["电次：这雨，再下一会儿也行。", "电次：热的，拿好了。"],
+          ["波奇塔：汪！别淋湿啦。", "波奇塔：等雨停了再出发。"],
+          ["玛奇玛：今天遇见谁了？", "玛奇玛：路上小心。"],
+          ["帕瓦：下雨也拦不住本大爷！", "帕瓦：给喵子留个干地方！"],
+          ["早川秋：伞记得带回来。", "早川秋：别站在风口。"],
+        ],
+        en: [
+          ["Denji: I would not mind a little more rain.", "Denji: It is warm. Hold it carefully."],
+          ["Pochita: Woof! Stay dry.", "Pochita: We can leave when the rain stops."],
+          ["Makima: Who did you meet today?", "Makima: Take care on your way."],
+          ["Power: A little rain cannot stop me!", "Power: Keep a dry spot for Meowy!"],
+          ["Aki: Bring the umbrella back.", "Aki: Stay out of the wind."],
+        ],
+      },
+    },
+  },
+  {
+    id: "chainsaw-dawn",
+    names: { zh: "锯刃破晓", en: "Chainsaw Dawn" },
+    decor: {
+      phrases: {
+        zh: [
+          ["电次：拉响了，就一口气冲过去！", "电次：等收工，我要吃顿好的！"],
+          ["波奇塔：把你的梦，做给我看吧。", "波奇塔：汪！一起向前。"],
+          ["玛奇玛：让我看看你的本事。", "玛奇玛：接下来，交给你了。"],
+          ["帕瓦：可别抢走本大爷的风头！", "帕瓦：这场面，勉强够看！"],
+          ["早川秋：落脚前，看清楚下面。", "早川秋：活着回来，听见没有。"],
+        ],
+        en: [
+          ["Denji: Pull the cord and go all the way!", "Denji: A big meal when this is over!"],
+          ["Pochita: Show me your dreams.", "Pochita: Woof! Forward, together."],
+          ["Makima: Show me what you can do.", "Makima: I leave the rest to you."],
+          ["Power: Do not steal my glory!", "Power: That is almost impressive!"],
+          ["Aki: Check your landing first.", "Aki: Come back alive. Understood?"],
+        ],
+      },
+    },
+  },
+];
 
 export default family;

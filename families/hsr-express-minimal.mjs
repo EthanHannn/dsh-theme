@@ -2,8 +2,9 @@ import family from "./hsr-express.mjs";
 
 export default {
   id: "hsr-express-minimal",
-  names: { zh: "崩坏：星穹铁道·列车晨光·简约", en: "Honkai Star Rail · Express Morning · Minimal" },
+  names: { zh: `${family.names.zh} · 简约`, en: `${family.names.en} · Minimal` },
   kin: "hsr-express",
+  legacyFamilies: [{ id: "hsr-hunters-minimal" }, { id: "hsr-firefly-minimal" }],
   styles: ["minimal"],
   light: family.light,
   dark: family.dark,

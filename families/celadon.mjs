@@ -12,6 +12,7 @@ export default {
   // palette kin: this family re-exports frieren's ramp — the settings row
   // renders the two as one palette group (vivid / minimal halves)
   kin: "frieren",
+  legacyFamilies: [{ id: "frieren-moonlit-minimal" }],
   styles: ["minimal"],
   light: frieren.light,
   dark: frieren.dark,

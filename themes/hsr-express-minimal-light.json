@@ -1,6 +1,6 @@
 {
   "id": "hsr-express-minimal-light",
-  "name": "Honkai Star Rail · Express Morning · Minimal Light",
+  "name": "Honkai: Star Rail · Minimal Light",
   "colorScheme": "light",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #F2F7FB 50%, #E8EDF2)",

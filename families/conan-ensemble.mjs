@@ -47,4 +47,40 @@ family.decor.wallpaperSize = "min(44vw, 560px, 56vh)";
 family.decor.heroTranslate = "calc(-0.4 * min(44vw, 560px, 56vh)) calc(-1 * min(8vh, 80px))";
 family.decor.heroMaxWidth = "calc(100vw - 280px - min(44vw, 560px, 56vh) - 64px)";
 
+family.artworks = [
+  {
+    id: "window-deduction",
+    names: { zh: "窗边暗号", en: "Clues by the Window" },
+    decor: {
+      // 双人场景收窄占位，浅深色分别保留长凳与地毯构图。
+      wallpaperSize: "min(34vw, 420px, calc(62vh * var(--dsw-pack-wallpaper-ratio, 1)))",
+      wallpaperPosition: "right 16px bottom 12px",
+      heroTranslate: "calc(-0.3 * min(34vw, 420px)) calc(-1 * min(6vh, 60px))",
+      heroMaxWidth: "calc(100vw - 280px - min(34vw, 420px) - 64px)",
+    },
+  },
+  {
+    id: "rain-alley",
+    names: { zh: "雨巷取证", en: "Evidence in the Rain" },
+    decor: {
+      // 撑伞行进与围拢取证共用场景入口，各自保留完整伞沿和落脚处。
+      wallpaperSize: "min(38vw, 500px, calc(66vh * var(--dsw-pack-wallpaper-ratio, 1)))",
+      wallpaperPosition: "right 16px bottom 12px",
+      heroTranslate: "calc(-0.3 * min(38vw, 500px)) calc(-1 * min(6vh, 60px))",
+      heroMaxWidth: "calc(100vw - 280px - min(38vw, 500px) - 64px)",
+    },
+  },
+  {
+    id: "rooftop-faceoff",
+    names: { zh: "天台追踪", en: "Rooftop Pursuit" },
+    decor: {
+      // 天台追逐需要较宽空间，避免披风与足球挤入人物轮廓。
+      wallpaperSize: "min(40vw, 520px, calc(68vh * var(--dsw-pack-wallpaper-ratio, 1)))",
+      wallpaperPosition: "right 16px bottom 12px",
+      heroTranslate: "calc(-0.3 * min(40vw, 520px)) calc(-1 * min(6vh, 60px))",
+      heroMaxWidth: "calc(100vw - 280px - min(40vw, 520px) - 64px)",
+    },
+  },
+];
+
 export default family;

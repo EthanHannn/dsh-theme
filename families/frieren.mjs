@@ -9,24 +9,22 @@
 // The restrained form of this palette ships separately as Celadon. This
 // family keeps only the character-rich vivid presentation.
 
-export default {
+const family = {
   id: "frieren",
-  names: { zh: "芙莉莲·花间研习", en: "Frieren · Flower Studies" },
+  names: { zh: "葬送的芙莉莲", en: "Frieren: Beyond Journey's End" },
   styles: ["vivid"],
   decor: {
     headerArt: { bakedHorizontalFade: true },
+    wallpaperSize: "min(32vw, 400px, calc(53vh * var(--dsw-pack-wallpaper-ratio, 1)))",
+    wallpaperPosition: "right 16px bottom 12px",
+    heroTranslate: "calc(-0.3 * min(32vw, 400px)) calc(-1 * min(6vh, 64px))",
+    heroMaxWidth: "calc(100vw - 280px - min(32vw, 400px) - 64px)",
     phrases: {
       zh: [
         ["今天也去找魔法吧。", "这朵花……以前好像见过。", "绕一点路，说不定会有发现。"],
-        ["让花绽放的魔法，再试一次。", "嗯，和书里记的一样。", "这样的小魔法，我也很喜欢。"],
-        ["菲伦：该出发了。", "菲伦：别又睡过头了。"],
-        ["修塔尔克：我会顶住的。", "修塔尔克：休息一下也行吧。"],
       ],
       en: [
         ["Let's look for magic today.", "This flower... I think I've seen it before.", "A little detour might lead to a discovery."],
-        ["Let's try the flower-blooming spell again.", "Yes, just as the book describes.", "I'm fond of little spells like this, too."],
-        ["Fern: Time to leave.", "Fern: Do not oversleep again."],
-        ["Stark: I will hold the line.", "Stark: A little break is fine, right?"],
       ],
     },
   },
@@ -269,3 +267,86 @@ export default {
     },
   },
 };
+
+// 五组配图分别设计浅深场景，旧旅人入口归入山路同行。
+family.originalArtworkNames = { zh: "花间研习", en: "Flower Studies" };
+family.legacyFamilies = [{ id: "frieren-moonlit", artwork: "northern-road" }];
+
+function sceneDecor(phrases, width = 500) {
+  const size = `min(40vw, ${width}px, calc(56vh * var(--dsw-pack-wallpaper-ratio, 1)))`;
+  return {
+    headerArt: { bakedHorizontalFade: true },
+    wallpaperSize: size,
+    wallpaperPosition: "right 16px bottom 12px",
+    heroTranslate: `calc(-0.3 * min(40vw, ${width}px)) calc(-1 * min(6vh, 64px))`,
+    heroMaxWidth: `calc(100vw - 280px - min(40vw, ${width}px) - 64px)`,
+    phrases,
+  };
+}
+
+family.artworks = [
+  {
+    id: "northern-road",
+    names: { zh: "山路同行", en: "The Northern Road" },
+    decor: sceneDecor({
+      zh: [
+        ["芙莉莲：绕一点路，也许能找到新魔法。", "芙莉莲：只睡一小会儿……"],
+        ["菲伦：路线确认好了，请跟紧。", "菲伦：夜里会冷，把毯子盖好。"],
+        ["修塔尔克：前面这段路，我来探。", "修塔尔克：你们先歇着，我看着灯。"],
+      ],
+      en: [
+        ["Frieren: A detour might lead to a new spell.", "Frieren: Just a little nap..."],
+        ["Fern: Route checked. Stay close, please.", "Fern: It gets cold. Keep the blanket on."],
+        ["Stark: I will scout the path ahead.", "Stark: Rest a while. I will watch the light."],
+      ],
+    }),
+  },
+  {
+    id: "mimic-trouble",
+    names: { zh: "宝箱惊魂", en: "Mimic Trouble" },
+    decor: sceneDecor({
+      zh: [
+        ["芙莉莲：里面说不定有稀有魔法书。", "芙莉莲：看吧，还是找到书了。"],
+        ["菲伦：请不要再把头伸进去了。", "菲伦：下次先让我检查。"],
+      ],
+      en: [
+        ["Frieren: There might be a rare grimoire inside.", "Frieren: See? I did find a book."],
+        ["Fern: Please keep your head out of the chest.", "Fern: Let me check first next time."],
+      ],
+    }),
+  },
+  {
+    id: "blue-moon-promise",
+    names: { zh: "苍月草约定", en: "A Blue-Moon Promise" },
+    decor: sceneDecor({
+      zh: [
+        ["芙莉莲：这枚戒指，我一直留着。", "芙莉莲：原来，那时的花是这个意思。"],
+        ["辛美尔：这朵花，很适合你。", "辛美尔：以后，也一起去看吧。"],
+      ],
+      en: [
+        ["Frieren: I have kept this ring all along.", "Frieren: So that is what those flowers meant."],
+        ["Himmel: This flower suits you.", "Himmel: Let us see them again someday."],
+      ],
+    }, 460),
+  },
+  {
+    id: "old-friends-meteors",
+    names: { zh: "流星下的旧友", en: "Meteors with Old Friends" },
+    decor: sceneDecor({
+      zh: [
+        ["芙莉莲：那天的流星，我还记得。", "芙莉莲：和大家一起看的，果然不一样。"],
+        ["辛美尔：看，那边又有一颗。", "辛美尔：下一次，也要一起看。"],
+        ["海塔：今晚，就多聊一会儿吧。", "海塔：有热茶，长夜也不难熬。"],
+        ["艾泽：火还暖着。", "艾泽：休息好了，明天再赶路。"],
+      ],
+      en: [
+        ["Frieren: I still remember those meteors.", "Frieren: They look different with everyone here."],
+        ["Himmel: Look, another one over there.", "Himmel: Let us watch together next time too."],
+        ["Heiter: Stay and talk a little longer tonight.", "Heiter: Hot tea makes a long night pleasant."],
+        ["Eisen: The fire is still warm.", "Eisen: Rest well. We travel again tomorrow."],
+      ],
+    }),
+  },
+];
+
+export default family;

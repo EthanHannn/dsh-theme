@@ -16,6 +16,10 @@
 
 **同主题图片**用于固定配色、切换当前主题的图片，支持独立的轮换列表和间隔。开启主题轮换后，点击左侧轮换名单里的主题卡片会直接切换到该主题；需要编辑其他主题的场景时，使用同主题图片一栏顶部的「配置主题」下拉，无需切换当前主题。多图主题首次启用时默认按列表每五分钟轮换全部配图，可自行关闭、调整间隔、顺序和名单。「雾庭菇灯」提供原配图、蘑伞听雨、推车运菇、树洞晚安共四组浅深配图，主区域左下角物件与当前场景同步切换。「仗剑同行」收录结伴赶路、竹涧茶歇、烟雨摆渡、雪驿围炉四组完整场景，主图、物件、顶部横幅、文件夹开合、侧栏角色与语录同步切换；原独立江湖主题的使用状态、收藏及主题轮换名单自动归并。「伊甸星光」保留星章时刻，加入纸翼小队、温室观察、庭院点心，同样整套切换配图与语录。「庭院守卫队」「奇妙日常」「相伴小日子」分别收录四、三、六组原有场景，沿用整套联动与旧入口迁移。单图主题保持静态，其插图间隔在面板中显示为「停留」，即主题轮换「播完再换」经过该主题时的播放时长；选择简约或默认外观时提示先选择带配图的主题。
 
+「咒术回战 · 咒缘纪事」整合原高专旧日、纯爱之约和伏魔御厨子，重新设计高专盛夏、殊途回声、纯爱共战、诅咒王座四组配图。每组浅深场景分别绘制，切换时联动主图、无人物横幅、物件、侧栏角色和语录；原有选择、收藏及轮换名单自动归并。
+
+「崩坏：星穹铁道」将列车晨光、星核夜话、萤火之约合为同一主题，并新增「罗浮闲局」：浅色是景元与彦卿庭中对弈，深色是景元倚榻听雀。四组场景联动主图、无人物横幅、左下物件、文件夹与侧栏角色，统一采用列车蓝与相片粉阅读配色；旧入口的浅深模式、装饰偏好、收藏和轮换名单自动迁移。
+
 主题轮换默认关闭。多图主题默认勾选全部配图，旧版单图主题扩展后也会自动全选并开启五分钟轮播；后续新增配图默认加入名单。手动取消的已有图片及自定义开关、间隔和顺序会记住，切回主题时继续使用。配置自动保存在当前浏览器或桌面端。调整外观、预览主题、输入文字及生成回复时暂停自动切换；页面隐藏时暂停，重新显示后从完整间隔重新计时。切回默认外观后停止自动轮换。
 
 ## 精选主题
@@ -46,9 +50,9 @@
 | [胆大党·灵能交锋](docs/screenshots/README.md#theme-79) | [![胆大党·灵能交锋 · 浅色](docs/screenshots/79-dandadan-awakening-light.webp)](docs/screenshots/79-dandadan-awakening-light.webp) | [![胆大党·灵能交锋 · 深色](docs/screenshots/79-dandadan-awakening-dark.webp)](docs/screenshots/79-dandadan-awakening-dark.webp) |
 | [七龙珠 · 龟仙流夏日](docs/screenshots/README.md#theme-19) | [![七龙珠 · 龟仙流夏日 · 浅色](docs/screenshots/19-dragon-ball-kame-light.webp)](docs/screenshots/19-dragon-ball-kame-light.webp) | [![七龙珠 · 龟仙流夏日 · 深色](docs/screenshots/19-dragon-ball-kame-dark.webp)](docs/screenshots/19-dragon-ball-kame-dark.webp) |
 | [EVA·初号机·觉醒](docs/screenshots/README.md#theme-6) | [![EVA·初号机·觉醒 · 浅色](docs/screenshots/06-eva-unit-01-light.webp)](docs/screenshots/06-eva-unit-01-light.webp) | [![EVA·初号机·觉醒 · 深色](docs/screenshots/06-eva-unit-01-dark.webp)](docs/screenshots/06-eva-unit-01-dark.webp) |
-| [芙莉莲·花间研习](docs/screenshots/README.md#theme-7) | [![芙莉莲·花间研习 · 浅色](docs/screenshots/07-frieren-light.webp)](docs/screenshots/07-frieren-light.webp) | [![芙莉莲·花间研习 · 深色](docs/screenshots/07-frieren-dark.webp)](docs/screenshots/07-frieren-dark.webp) |
-| [我叫MT·劣人与呆贼](docs/screenshots/README.md#theme-26) | [![我叫MT·劣人与呆贼 · 浅色](docs/screenshots/26-i-am-mt-light.webp)](docs/screenshots/26-i-am-mt-light.webp) | [![我叫MT·劣人与呆贼 · 深色](docs/screenshots/26-i-am-mt-dark.webp)](docs/screenshots/26-i-am-mt-dark.webp) |
-| [电锯人·特异课](docs/screenshots/README.md#theme-13) | [![电锯人·特异课 · 浅色](docs/screenshots/13-chainsaw-light.webp)](docs/screenshots/13-chainsaw-light.webp) | [![电锯人·特异课 · 深色](docs/screenshots/13-chainsaw-dark.webp)](docs/screenshots/13-chainsaw-dark.webp) |
+| [葬送的芙莉莲](docs/screenshots/README.md#theme-7) | [![葬送的芙莉莲 · 浅色](docs/screenshots/07-frieren-light.webp)](docs/screenshots/07-frieren-light.webp) | [![葬送的芙莉莲 · 深色](docs/screenshots/07-frieren-dark.webp)](docs/screenshots/07-frieren-dark.webp) |
+| [我叫MT · 部落冒险](docs/screenshots/README.md#theme-26) | [![我叫MT · 部落冒险 · 浅色](docs/screenshots/26-i-am-mt-light.webp)](docs/screenshots/26-i-am-mt-light.webp) | [![我叫MT · 部落冒险 · 深色](docs/screenshots/26-i-am-mt-dark.webp)](docs/screenshots/26-i-am-mt-dark.webp) |
+| [电锯人 · 人间愿望](docs/screenshots/README.md#theme-13) | [![电锯人 · 人间愿望 · 浅色](docs/screenshots/13-chainsaw-light.webp)](docs/screenshots/13-chainsaw-light.webp) | [![电锯人 · 人间愿望 · 深色](docs/screenshots/13-chainsaw-dark.webp)](docs/screenshots/13-chainsaw-dark.webp) |
 | [火影忍者·第七班](docs/screenshots/README.md#theme-8) | [![火影忍者·第七班 · 浅色](docs/screenshots/08-naruto-light.webp)](docs/screenshots/08-naruto-light.webp) | [![火影忍者·第七班 · 深色](docs/screenshots/08-naruto-dark.webp)](docs/screenshots/08-naruto-dark.webp) |
 | [王者荣耀·云阙长歌](docs/screenshots/README.md#theme-101) | [![王者荣耀·云阙长歌 · 浅色](docs/screenshots/101-hok-cloud-reverie-light.webp)](docs/screenshots/101-hok-cloud-reverie-light.webp) | [![王者荣耀·云阙长歌 · 深色](docs/screenshots/101-hok-cloud-reverie-dark.webp)](docs/screenshots/101-hok-cloud-reverie-dark.webp) |
 | [魔兽世界·血精灵](docs/screenshots/README.md#theme-10) | [![魔兽世界·血精灵 · 浅色](docs/screenshots/10-wow-blood-elf-light.webp)](docs/screenshots/10-wow-blood-elf-light.webp) | [![魔兽世界·血精灵 · 深色](docs/screenshots/10-wow-blood-elf-dark.webp)](docs/screenshots/10-wow-blood-elf-dark.webp) |
@@ -71,14 +75,12 @@
 | [间谍过家家·福杰家的休息日](docs/screenshots/README.md#theme-66) | [![间谍过家家·福杰家的休息日 · 浅色](docs/screenshots/66-spy-family-forgers-light.webp)](docs/screenshots/66-spy-family-forgers-light.webp) | [![间谍过家家·福杰家的休息日 · 深色](docs/screenshots/66-spy-family-forgers-dark.webp)](docs/screenshots/66-spy-family-forgers-dark.webp) |
 | [哆啦A梦·口袋奇遇](docs/screenshots/README.md#theme-69) | [![哆啦A梦·口袋奇遇 · 浅色](docs/screenshots/69-doraemon-pocket-light.webp)](docs/screenshots/69-doraemon-pocket-light.webp) | [![哆啦A梦·口袋奇遇 · 深色](docs/screenshots/69-doraemon-pocket-dark.webp)](docs/screenshots/69-doraemon-pocket-dark.webp) |
 | [咒术回战·一年级集结](docs/screenshots/README.md#theme-72) | [![咒术回战·一年级集结 · 浅色](docs/screenshots/72-jujutsu-first-years-light.webp)](docs/screenshots/72-jujutsu-first-years-light.webp) | [![咒术回战·一年级集结 · 深色](docs/screenshots/72-jujutsu-first-years-dark.webp)](docs/screenshots/72-jujutsu-first-years-dark.webp) |
-| [咒术回战·高专旧日](docs/screenshots/README.md#theme-73) | [![咒术回战·高专旧日 · 浅色](docs/screenshots/73-jujutsu-school-days-light.webp)](docs/screenshots/73-jujutsu-school-days-light.webp) | [![咒术回战·高专旧日 · 深色](docs/screenshots/73-jujutsu-school-days-dark.webp)](docs/screenshots/73-jujutsu-school-days-dark.webp) |
+| [咒术回战 · 咒缘纪事](docs/screenshots/README.md#theme-73) | [![咒术回战 · 咒缘纪事 · 浅色](docs/screenshots/73-jujutsu-school-days-light.webp)](docs/screenshots/73-jujutsu-school-days-light.webp) | [![咒术回战 · 咒缘纪事 · 深色](docs/screenshots/73-jujutsu-school-days-dark.webp)](docs/screenshots/73-jujutsu-school-days-dark.webp) |
 | [咒术回战·同窗并肩](docs/screenshots/README.md#theme-74) | [![咒术回战·同窗并肩 · 浅色](docs/screenshots/74-jujutsu-classmates-light.webp)](docs/screenshots/74-jujutsu-classmates-light.webp) | [![咒术回战·同窗并肩 · 深色](docs/screenshots/74-jujutsu-classmates-dark.webp)](docs/screenshots/74-jujutsu-classmates-dark.webp) |
 | [咒术回战 · 无量空处](docs/screenshots/README.md#theme-134) | [![咒术回战 · 无量空处 · 浅色](docs/screenshots/134-jujutsu-infinite-void-light.webp)](docs/screenshots/134-jujutsu-infinite-void-light.webp) | [![咒术回战 · 无量空处 · 深色](docs/screenshots/134-jujutsu-infinite-void-dark.webp)](docs/screenshots/134-jujutsu-infinite-void-dark.webp) |
-| [咒术回战 · 伏魔御厨子](docs/screenshots/README.md#theme-135) | [![咒术回战 · 伏魔御厨子 · 浅色](docs/screenshots/135-jujutsu-malevolent-shrine-light.webp)](docs/screenshots/135-jujutsu-malevolent-shrine-light.webp) | [![咒术回战 · 伏魔御厨子 · 深色](docs/screenshots/135-jujutsu-malevolent-shrine-dark.webp)](docs/screenshots/135-jujutsu-malevolent-shrine-dark.webp) |
-| [咒术回战 · 纯爱之约](docs/screenshots/README.md#theme-136) | [![咒术回战 · 纯爱之约 · 浅色](docs/screenshots/136-jujutsu-cursed-promise-light.webp)](docs/screenshots/136-jujutsu-cursed-promise-light.webp) | [![咒术回战 · 纯爱之约 · 深色](docs/screenshots/136-jujutsu-cursed-promise-dark.webp)](docs/screenshots/136-jujutsu-cursed-promise-dark.webp) |
 | [角落小伙伴·暖茶小憩](docs/screenshots/README.md#theme-75) | [![角落小伙伴·暖茶小憩 · 浅色](docs/screenshots/75-sumikko-teahouse-light.webp)](docs/screenshots/75-sumikko-teahouse-light.webp) | [![角落小伙伴·暖茶小憩 · 深色](docs/screenshots/75-sumikko-teahouse-dark.webp)](docs/screenshots/75-sumikko-teahouse-dark.webp) |
 | [原神·净善书庭](docs/screenshots/README.md#theme-82) | [![原神·净善书庭 · 浅色](docs/screenshots/82-genshin-sumeru-light.webp)](docs/screenshots/82-genshin-sumeru-light.webp) | [![原神·净善书庭 · 深色](docs/screenshots/82-genshin-sumeru-dark.webp)](docs/screenshots/82-genshin-sumeru-dark.webp) |
-| [崩坏：星穹铁道·列车晨光](docs/screenshots/README.md#theme-84) | [![崩坏：星穹铁道·列车晨光 · 浅色](docs/screenshots/84-hsr-express-light.webp)](docs/screenshots/84-hsr-express-light.webp) | [![崩坏：星穹铁道·列车晨光 · 深色](docs/screenshots/84-hsr-express-dark.webp)](docs/screenshots/84-hsr-express-dark.webp) |
+| [崩坏：星穹铁道 · 四组场景](docs/screenshots/README.md#theme-84) | [![崩坏：星穹铁道 · 列车晨光 · 浅色](docs/screenshots/84-hsr-express-light.webp)](docs/screenshots/84-hsr-express-light.webp) | [![崩坏：星穹铁道 · 列车晨光 · 深色](docs/screenshots/84-hsr-express-dark.webp)](docs/screenshots/84-hsr-express-dark.webp) |
 | [绝区零·六分街委托](docs/screenshots/README.md#theme-90) | [![绝区零·六分街委托 · 浅色](docs/screenshots/90-zzz-sixth-street-light.webp)](docs/screenshots/90-zzz-sixth-street-light.webp) | [![绝区零·六分街委托 · 深色](docs/screenshots/90-zzz-sixth-street-dark.webp)](docs/screenshots/90-zzz-sixth-street-dark.webp) |
 | [黑神话：悟空·古寺行旅](docs/screenshots/README.md#theme-93) | [![黑神话：悟空·古寺行旅 · 浅色](docs/screenshots/93-wukong-pilgrimage-light.webp)](docs/screenshots/93-wukong-pilgrimage-light.webp) | [![黑神话：悟空·古寺行旅 · 深色](docs/screenshots/93-wukong-pilgrimage-dark.webp)](docs/screenshots/93-wukong-pilgrimage-dark.webp) |
 | [JOJO · 星尘远征](docs/screenshots/README.md#theme-137) | [![JOJO · 星尘远征 · 浅色](docs/screenshots/137-jojo-stardust-crusaders-light.webp)](docs/screenshots/137-jojo-stardust-crusaders-light.webp) | [![JOJO · 星尘远征 · 深色](docs/screenshots/137-jojo-stardust-crusaders-dark.webp)](docs/screenshots/137-jojo-stardust-crusaders-dark.webp) |
@@ -91,10 +93,15 @@
 
 | 主题包版本 | 已验证的 Harness 版本 | 验证范围 |
 | --- | --- | --- |
-| 0.2.0 | 0.2.2-rc.1 | Web；自动化兼容基线 |
-| 0.2.0（本地源码） | 0.2.2-rc.1 | Windows 桌面版；界面安装本地目录、主题显示、顶部横幅跨行显示、点击侧栏角色直达主题与外观 |
+| 0.2.0 | 0.2.2-rc.4 | Web；自动化兼容基线 |
+| 0.2.0（本地源码） | 0.2.2-rc.4 | Windows 桌面版；界面安装本地目录、主题显示、顶部横幅跨行显示、点击侧栏角色直达主题与外观 |
 
-Windows 桌面版已于 2026-10-10 经实际使用验证，并于 2026-11-08 在 `0.2.2-rc.1` 上复核头部横幅布局。自动化兼容基线已推进至 `0.2.2-rc.1`。
+Windows 桌面版已于 2026-10-10 经实际使用验证，并于 2026-11-18 在 `0.2.2-rc.4` 上复核。自动化兼容基线已推进至 `0.2.2-rc.4`。
+
+> [!note] 兼容性提示
+> `compatibility.json` 的版本只是验证基线提示；版本号不同不代表一定不兼容，实际以客户端 API 检查、构建和真实界面验证结果为准。
+
+「米花协奏」提供原配图、窗边暗号、雨巷取证、天台追踪四组配图，主图与左下角物件同步切换。新增三组的浅深色分别设计：窗边围读与夜读暗号、雨巷追线与雨夜拾证、天台交锋与天台追逐各有不同的动作与构图。
 
 ## 安装
 
@@ -207,9 +214,7 @@ Linux 可在安装包所在目录执行 `sha256sum -c SHA256SUMS.txt`；macOS �
 - **绝区零·六课雪夜**：雪雾蓝 / 制服黑 / 樱粉，星见雅、月城柳与苍角的巡逻小憩。
 - **绝区零·维多利亚茶歇**：银灰 / 茶点米白 / 莓红，艾莲、莱卡恩与丽娜的家政茶歇。
 - **绝区零·六分街委托**：荧光青柠 / 胶片灰 / 委托粉，妮可、安比与比利的六分街日常。
-- **崩坏：星穹铁道·萤火之约**：萤火青 / 奶油白 / 夜景金，流萤与星的屋顶约定。
-- **崩坏：星穹铁道·星核夜话**：梅子紫 / 雾灰 / 霓虹青，卡芙卡、银狼与刃的任务间隙。
-- **崩坏：星穹铁道·列车晨光**：列车蓝 / 相片粉 / 黄铜金，三月七、丹恒与星的旅途晨光。
+- **崩坏：星穹铁道**：列车蓝 / 相片粉 / 黄铜金，包含列车晨光、星核夜话、萤火之约、罗浮闲局四组浅深场景；新增景元与彦卿对弈及景元倚榻听雀，保留原三套配图与旧入口迁移。
 - **原神·鸣神花信**：藤紫 / 樱花粉 / 神社朱红，雷电影与八重神子的鸣神茶歇。
 - **原神·净善书庭**：草叶绿 / 象牙白 / 书页金，纳西妲、艾尔海森与卡维的林间书庭。
 - **原神·枫丹茶会**：水蓝 / 奶油白 / 剧场金，芙宁娜与那维莱特的枫丹茶歇。
@@ -220,7 +225,7 @@ Linux 可在安装包所在目录执行 `sha256sum -c SHA256SUMS.txt`；macOS �
 - **角落小伙伴·面包房值日**：面包奶油 / 烤炉焦糖 / 亚麻暖棕，炸猪排、炸虾尾与猫咪的烘焙值日。
 - **角落小伙伴·暖茶小憩**：暖茶米白 / 茶叶鼠尾草绿 / 木质浅棕，白熊、企鹅？与猫咪的安静茶屋。
 - **咒术回战·同窗并肩**：训练场苔绿 / 乙骨白 / 木质暖金，乙骨、真希、狗卷与熊猫的同窗四人组。
-- **咒术回战·高专旧日**：夏日叶绿 / 冷茶青 / 回忆暖金，少年五条、夏油与硝子的高专旧日。
+- **咒术回战 · 咒缘纪事**：象牙白 / 灰蓝 / 绛红，高专盛夏、殊途回声、纯爱共战、诅咒王座四组浅深独立场景。
 - **咒术回战·一年级集结**：制服藏蓝 / 虎杖珊瑚红 / 高专石灰，虎杖、伏黑、钉崎与五条的四人竖向海报。
 - **哆啦A梦·星空航路**：星图淡蓝 / 宇宙靛紫 / 导航暖金，哆啦A梦、大雄与静香的星空探索。
 - **哆啦A梦·放学后的约定**：放学奶油色 / 河岸青绿 / 夕照橙，哆啦A梦、大雄与静香的放学约定。
@@ -255,10 +260,10 @@ Linux 可在安装包所在目录执行 `sha256sum -c SHA256SUMS.txt`；macOS �
 - **七龙珠·金焰并肩**：护甲蓝 / 超赛金 / 深靛紫。
 - **七龙珠·神龙奇旅**：神龙翡翠 / 四星琥珀 / 地图纸色。
 - **高达·RX-78-2**：装甲白、高达蓝、红色与明黄。
-- **电锯人·特异课**：衬衫白 / 冷灰蓝 / 制服黑 / 暗红。
+- **电锯人 · 人间愿望**：衬衫白 / 冷灰蓝 / 制服黑 / 暗红；面包与梦、吵闹归途、午夜放映、雨中偶遇、锯刃破晓五组独立浅深场景。
 - **电锯人·玛奇玛**：象牙白、绯红与墨黑，搭配玛奇玛角色插画。
 - **蜡笔小新·动感日常**：红色、明黄与天蓝，搭配角色插画和巧克力饼文件夹图标。
-- **芙莉莲·花间研习**：羊皮纸 / 魔力蓝青 / 记忆金 / 森林绿。
+- **葬送的芙莉莲**：羊皮纸 / 魔力蓝青 / 记忆金 / 森林绿。
 - **芙莉莲·月下旅人**：蓝青与金色，搭配芙莉莲持杖旅行插画。
 - **超能力女儿**：米纸 / 小雏蓝 / 鲑鱼籽红 / 菱饼绿，深色版是夜祭灯笼与靛蓝河面。
 - **夏目友人帐**：稻草纸 / 帐本绿 / 三毛猫柿红 / 青枫绿，深色版是夜参道的石灯笼与萤火。
@@ -319,12 +324,10 @@ Linux 可在安装包所在目录执行 `sha256sum -c SHA256SUMS.txt`；macOS �
 - **圣斗士·天马流星**：银蓝 / 青铜五人 / 星夜流星。
 - **圣斗士·黄金十二宫**：象牙金 / 圣域深紫 / 黄金圣衣。
 - **魔兽世界·矮人**：锻炉琥珀 / 山地蓝 / 铜须红 / 钢铁灰。
-- **我叫MT·劣人与呆贼**：MT 赭黄 / 副本紫 / 喜剧红 / 治疗青，劣人与呆贼并肩冒险。
+- **我叫MT · 部落冒险**：赭黄 / 副本紫 / 治疗青，五组浅深配图「林间追猎、猎手较量、营地插曲、遗迹探路、原版劣人与呆贼」在同一主题内切换；新增场景仅含劣人、呆贼、美屡与沐丝，原版作为第五组保留。
 - **小林家的龙女仆**：龙尾绿 / 龙焰橙 / 女仆藏青 / 奶油粉，托尔与暖厨房。
 
 - **咒术回战 · 无量空处**：五条悟的苍蓝与白发贯穿整套。浅色轻立碎石、深色摘下眼罩坐望星海，配以无角色星海横幅、喜久福道具和无穷扣文件夹。
-- **咒术回战 · 伏魔御厨子**：宿傩以粉发、咒纹与白色和服登场，浅色立于神社石阶，深色支颐而坐。朱砂、墨黑和古铜连接空寂神龛横幅、茶盏与铜铃扣文件夹。
-- **咒术回战 · 纯爱之约**：乙骨忧太与小小里香守护灵，以戒指与白山茶串起约定。浅色站立凝望戒指，深色单膝歇于庭阶，青瓷与月紫连接花庭横幅和银环扣文件夹。
 - **JOJO · 星尘远征**：承太郎、白金之星与伊奇同行，浅色整装出发，深色停驻沙漠旅箱旁。靛紫与黄铜呼应开罗远景、指南针、咖啡口香糖和旅行夹。
 - **JOJO · 杜王町晴日**：仗助、疯狂钻石与康一把杜王町过成轻快日常。浅色整理发型准备出门，深色街角歇脚修好小杯，薄荷绿与梅紫呼应小镇横幅和金心扣文件夹。
 - **JOJO · 黄金之风**：乔鲁诺、黄金体验与布加拉提，以金蝶和新芽展开那不勒斯旅程。浅色托蝶启程，深色坐在港阶照看幼苗，香槟金、玫瑰粉与瓢虫扣贯穿整套。
@@ -339,7 +342,7 @@ Linux 可在安装包所在目录执行 `sha256sum -c SHA256SUMS.txt`；macOS �
 
 </details>
 
-每组均有简约版，在主题列表中与对应氛围版相邻。青灰、冷墨、绯影、青瓷、蜜蜡、蓝染和抹茶分别对应高达·RX-78-2、电锯人·特异课、玛奇玛、芙莉莲·花间研习、蜡笔小新·动感日常、超能力女儿和夏目友人帐；其余简约版使用对应主题名称加“简约”标识。
+每组均有简约版，在主题列表中与对应氛围版相邻。青灰、冷墨、绯影、青瓷、蜜蜡、蓝染和抹茶分别对应高达·RX-78-2、电锯人 · 人间愿望、玛奇玛、葬送的芙莉莲、蜡笔小新·动感日常、超能力女儿和夏目友人帐；其余简约版使用对应主题名称加“简约”标识。
 
 ## 卸载
 

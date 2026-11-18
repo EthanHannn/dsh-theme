@@ -16,15 +16,15 @@
 
 [药屋少女的呢喃 · 药香夜话](#theme-140)
 
-[咒术回战 · 无量空处](#theme-134) · [咒术回战 · 伏魔御厨子](#theme-135) · [咒术回战 · 纯爱之约](#theme-136) · [JOJO · 星尘远征](#theme-137) · [JOJO · 杜王町晴日](#theme-138) · [JOJO · 黄金之风](#theme-139)
+[咒术回战 · 无量空处](#theme-134) · [JOJO · 星尘远征](#theme-137) · [JOJO · 杜王町晴日](#theme-138) · [JOJO · 黄金之风](#theme-139)
 
-[电锯人·玛奇玛](#theme-2) · [吉伊卡哇·草原野餐](#theme-3) · [名侦探柯南·米花协奏](#theme-4) · [七龙珠·金焰并肩](#theme-5) · [EVA·初号机·觉醒](#theme-6) · [芙莉莲·花间研习](#theme-7) · [火影忍者·第七班](#theme-8) · [死神·千本樱](#theme-11) · [死神·斩月](#theme-12) · [电锯人·特异课](#theme-13) · [吉伊卡哇·星夜漫游](#theme-14) · [名侦探柯南·月下追踪](#theme-15) · [灰原哀·琥珀微光](#theme-16) · [怪盗基德·月白预告](#theme-17) · [阿拉蕾·企鹅村](#theme-18) · [七龙珠 · 龟仙流夏日](#theme-19) · [七龙珠·神龙奇旅](#theme-20) · [小林家的龙女仆](#theme-21) · [EVA·二号机·烈焰](#theme-22) · [芙莉莲·月下旅人](#theme-23) · [高达·RX-78-2](#theme-24) · [超能力女儿](#theme-25) · [我叫MT·劣人与呆贼](#theme-26) · [鬼灭之刃·羁绊同行](#theme-27) · [鬼灭之刃·柱之誓约](#theme-28) · [鬼灭之刃·樱庭恋歌](#theme-29) · [夏目友人帐](#theme-30) · [海贼王](#theme-31) · [圣斗士·天马流星](#theme-32) · [圣斗士·黄金十二宫](#theme-33) · [蜡笔小新·动感日常](#theme-34) · [灌篮高手](#theme-35) · [火影忍者·凯班](#theme-36) · [游戏王·决斗之魂](#theme-37) · [高达·ν高达](#theme-49) · [高达·巴巴托斯](#theme-50) · [高达·自由与正义](#theme-51) · [高达·独角兽觉醒](#theme-52) · [名侦探柯南·宝石谜夜](#theme-53) · [名侦探柯南·大阪同行](#theme-54) · [吉伊卡哇·烘焙小队](#theme-55) · [吉伊卡哇·雨后来信](#theme-56) · [七龙珠·包子山家书](#theme-57) · [七龙珠·布欧甜点屋](#theme-58) · [蜡笔小新·春日部探险队](#theme-61) · [蜡笔小新·野原家的周末](#theme-62) · [我叫MT·美屡的林间手札](#theme-63) · [我叫MT·联盟值日生](#theme-64) · [我叫MT·联盟补给站](#theme-65) · [间谍过家家·福杰家的休息日](#theme-66) · [间谍过家家·伊甸星光](#theme-67) · [间谍过家家·月下密语](#theme-68) · [哆啦A梦·口袋奇遇](#theme-69) · [哆啦A梦·放学后的约定](#theme-70) · [哆啦A梦·星空航路](#theme-71) · [咒术回战·一年级集结](#theme-72) · [咒术回战·高专旧日](#theme-73) · [咒术回战·同窗并肩](#theme-74) · [角落小伙伴·暖茶小憩](#theme-75) · [角落小伙伴·面包房值日](#theme-76) · [角落小伙伴·雨窗来信](#theme-77) · [胆大党·放学怪谈](#theme-78) · [胆大党·灵能交锋](#theme-79) · [胆大党·夜巡同盟](#theme-80)
+[电锯人·玛奇玛](#theme-2) · [吉伊卡哇·草原野餐](#theme-3) · [名侦探柯南·米花协奏](#theme-4) · [七龙珠·金焰并肩](#theme-5) · [EVA·初号机·觉醒](#theme-6) · [葬送的芙莉莲](#theme-7) · [火影忍者·第七班](#theme-8) · [死神·千本樱](#theme-11) · [死神·斩月](#theme-12) · [电锯人 · 人间愿望](#theme-13) · [吉伊卡哇·星夜漫游](#theme-14) · [名侦探柯南·月下追踪](#theme-15) · [灰原哀·琥珀微光](#theme-16) · [怪盗基德·月白预告](#theme-17) · [阿拉蕾·企鹅村](#theme-18) · [七龙珠 · 龟仙流夏日](#theme-19) · [七龙珠·神龙奇旅](#theme-20) · [小林家的龙女仆](#theme-21) · [EVA·二号机·烈焰](#theme-22) · [高达·RX-78-2](#theme-24) · [超能力女儿](#theme-25) · [我叫MT · 部落冒险](#theme-26) · [鬼灭之刃·羁绊同行](#theme-27) · [鬼灭之刃·柱之誓约](#theme-28) · [鬼灭之刃·樱庭恋歌](#theme-29) · [夏目友人帐](#theme-30) · [海贼王](#theme-31) · [圣斗士·天马流星](#theme-32) · [圣斗士·黄金十二宫](#theme-33) · [蜡笔小新·动感日常](#theme-34) · [灌篮高手](#theme-35) · [火影忍者·凯班](#theme-36) · [游戏王·决斗之魂](#theme-37) · [高达·ν高达](#theme-49) · [高达·巴巴托斯](#theme-50) · [高达·自由与正义](#theme-51) · [高达·独角兽觉醒](#theme-52) · [名侦探柯南·宝石谜夜](#theme-53) · [名侦探柯南·大阪同行](#theme-54) · [吉伊卡哇·烘焙小队](#theme-55) · [吉伊卡哇·雨后来信](#theme-56) · [七龙珠·包子山家书](#theme-57) · [七龙珠·布欧甜点屋](#theme-58) · [蜡笔小新·春日部探险队](#theme-61) · [蜡笔小新·野原家的周末](#theme-62) · [我叫MT·美屡的林间手札](#theme-63) · [我叫MT·联盟值日生](#theme-64) · [我叫MT·联盟补给站](#theme-65) · [间谍过家家·福杰家的休息日](#theme-66) · [间谍过家家·伊甸星光](#theme-67) · [间谍过家家·月下密语](#theme-68) · [哆啦A梦·口袋奇遇](#theme-69) · [哆啦A梦·放学后的约定](#theme-70) · [哆啦A梦·星空航路](#theme-71) · [咒术回战·一年级集结](#theme-72) · [咒术回战 · 咒缘纪事](#theme-73) · [咒术回战·同窗并肩](#theme-74) · [角落小伙伴·暖茶小憩](#theme-75) · [角落小伙伴·面包房值日](#theme-76) · [角落小伙伴·雨窗来信](#theme-77) · [胆大党·放学怪谈](#theme-78) · [胆大党·灵能交锋](#theme-79) · [胆大党·夜巡同盟](#theme-80)
 
 **游戏**
 
 [王者荣耀·云阙长歌](#theme-101) · [王者荣耀·花月幻境](#theme-102) · [王者荣耀·破晓机动](#theme-103) · [王者荣耀·孙悟空·无相](#theme-104) · [王者荣耀·貂蝉·馥梦繁花](#theme-105)
 
-[王者荣耀·绝世舞姬](#theme-9) · [魔兽世界·血精灵](#theme-10) · [炉石传说·冰霜法师](#theme-38) · [炉石传说·冰冠王座](#theme-39) · [王者荣耀·青莲剑仙](#theme-40) · [英雄联盟·九尾妖狐](#theme-41) · [英雄联盟·爆爆火花](#theme-42) · [我的世界](#theme-43) · [守望先锋·守护天使](#theme-44) · [守望先锋·时间跃迁](#theme-45) · [魔兽世界·矮人](#theme-46) · [魔兽世界·兽人战士](#theme-47) · [魔兽世界·牛头人德鲁伊](#theme-48) · [英雄联盟·艾欧尼亚茶会](#theme-59) · [英雄联盟·德玛西亚巡礼](#theme-60) · [原神·枫丹茶会](#theme-81) · [原神·净善书庭](#theme-82) · [原神·鸣神花信](#theme-83) · [崩坏：星穹铁道·列车晨光](#theme-84) · [崩坏：星穹铁道·星核夜话](#theme-85) · [崩坏：星穹铁道·萤火之约](#theme-86) · [绝区零·六分街委托](#theme-90) · [绝区零·维多利亚茶歇](#theme-91) · [绝区零·六课雪夜](#theme-92) · [黑神话：悟空·古寺行旅](#theme-93) · [黑神话：悟空·梅山雪誓](#theme-94) · [黑神话：悟空·齐天金甲](#theme-95)
+[王者荣耀·绝世舞姬](#theme-9) · [魔兽世界·血精灵](#theme-10) · [炉石传说·冰霜法师](#theme-38) · [炉石传说·冰冠王座](#theme-39) · [王者荣耀·青莲剑仙](#theme-40) · [英雄联盟·九尾妖狐](#theme-41) · [英雄联盟·爆爆火花](#theme-42) · [我的世界](#theme-43) · [守望先锋·守护天使](#theme-44) · [守望先锋·时间跃迁](#theme-45) · [魔兽世界·矮人](#theme-46) · [魔兽世界·兽人战士](#theme-47) · [魔兽世界·牛头人德鲁伊](#theme-48) · [英雄联盟·艾欧尼亚茶会](#theme-59) · [英雄联盟·德玛西亚巡礼](#theme-60) · [原神·枫丹茶会](#theme-81) · [原神·净善书庭](#theme-82) · [原神·鸣神花信](#theme-83) · [崩坏：星穹铁道 · 四组场景](#theme-84) · [绝区零·六分街委托](#theme-90) · [绝区零·维多利亚茶歇](#theme-91) · [绝区零·六课雪夜](#theme-92) · [黑神话：悟空·古寺行旅](#theme-93) · [黑神话：悟空·梅山雪誓](#theme-94) · [黑神话：悟空·齐天金甲](#theme-95)
 
 **其他**
 
@@ -140,9 +140,14 @@ Doro 的草莓野餐与在家烘焙，配以草莓奶粉、柔和丁香紫和温
 
 ## 名侦探柯南·米花协奏
 
-| 浅色 | 深色 |
-| --- | --- |
-| [![名侦探柯南·米花协奏 · 浅色](04-conan-ensemble-light.webp)](04-conan-ensemble-light.webp) | [![名侦探柯南·米花协奏 · 深色](04-conan-ensemble-dark.webp)](04-conan-ensemble-dark.webp) |
+保留原七人群像，新增窗边暗号、雨巷取证、天台追踪，共四套配图。新增三套的浅深色分别设计动作、构图与场景，左下角物件随配图同步切换；支持手动切换和五分钟轮换。
+
+| 场景 | 浅色 | 深色 |
+| --- | --- | --- |
+| 原配图 | [![名侦探柯南·米花协奏 · 原配图 · 浅色](04-conan-ensemble-light.webp)](04-conan-ensemble-light.webp) | [![名侦探柯南·米花协奏 · 原配图 · 深色](04-conan-ensemble-dark.webp)](04-conan-ensemble-dark.webp) |
+| 窗边暗号 | [![窗边暗号 · 浅色](04-conan-ensemble-window-deduction-light.webp)](04-conan-ensemble-window-deduction-light.webp) | [![窗边暗号 · 深色](04-conan-ensemble-window-deduction-dark.webp)](04-conan-ensemble-window-deduction-dark.webp) |
+| 雨巷取证 | [![雨巷取证 · 浅色](04-conan-ensemble-rain-alley-light.webp)](04-conan-ensemble-rain-alley-light.webp) | [![雨巷取证 · 深色](04-conan-ensemble-rain-alley-dark.webp)](04-conan-ensemble-rain-alley-dark.webp) |
+| 天台追踪 | [![天台追踪 · 浅色](04-conan-ensemble-rooftop-faceoff-light.webp)](04-conan-ensemble-rooftop-faceoff-light.webp) | [![天台追踪 · 深色](04-conan-ensemble-rooftop-faceoff-dark.webp)](04-conan-ensemble-rooftop-faceoff-dark.webp) |
 
 <a name="theme-5"></a>
 
@@ -162,11 +167,15 @@ Doro 的草莓野餐与在家烘焙，配以草莓奶粉、柔和丁香紫和温
 
 <a name="theme-7"></a>
 
-## 芙莉莲·花间研习
+## 葬送的芙莉莲
 
 | 浅色 | 深色 |
 | --- | --- |
-| [![芙莉莲·花间研习 · 浅色](07-frieren-light.webp)](07-frieren-light.webp) | [![芙莉莲·花间研习 · 深色](07-frieren-dark.webp)](07-frieren-dark.webp) |
+| [![葬送的芙莉莲 · 浅色](07-frieren-light.webp)](07-frieren-light.webp) | [![葬送的芙莉莲 · 深色](07-frieren-dark.webp)](07-frieren-dark.webp) |
+
+五组场景：花间研习、山路同行、宝箱惊魂、苍月草约定、流星下的旧友。每组浅深色采用独立画面，可按五分钟轮换。
+
+[![五组浅深色成品对照](07-frieren-artworks.webp)](07-frieren-artworks.webp)
 
 <a name="theme-8"></a>
 
@@ -210,11 +219,23 @@ Doro 的草莓野餐与在家烘焙，配以草莓奶粉、柔和丁香紫和温
 
 <a name="theme-13"></a>
 
-## 电锯人·特异课
+## 电锯人 · 人间愿望
+
+五组场景：面包与梦、吵闹归途、午夜放映、雨中偶遇、锯刃破晓。每组浅深色使用独立主图与对应的无角色横幅、左下物件；可在同一主题中选择或轮换。
 
 | 浅色 | 深色 |
 | --- | --- |
-| [![电锯人·特异课 · 浅色](13-chainsaw-light.webp)](13-chainsaw-light.webp) | [![电锯人·特异课 · 深色](13-chainsaw-dark.webp)](13-chainsaw-dark.webp) |
+| [![电锯人 · 人间愿望 · 浅色](13-chainsaw-light.webp)](13-chainsaw-light.webp) | [![电锯人 · 人间愿望 · 深色](13-chainsaw-dark.webp)](13-chainsaw-dark.webp) |
+
+| 场景 | 浅色实拍 | 深色实拍 |
+| --- | --- | --- |
+| 面包与梦 | [分享面包](13-chainsaw-light.webp) | [腿上安眠](13-chainsaw-dark.webp) |
+| 吵闹归途 | [提菜回家](13-chainsaw-noisy-way-home-light.webp) | [拾起苹果](13-chainsaw-noisy-way-home-dark.webp) |
+| 午夜放映 | [坐看银幕](13-chainsaw-midnight-screening-light.webp) | [散场回望](13-chainsaw-midnight-screening-dark.webp) |
+| 雨中偶遇 | [伞下并肩](13-chainsaw-meeting-in-rain-light.webp) | [门阶热饮](13-chainsaw-meeting-in-rain-dark.webp) |
+| 锯刃破晓 | [跃起出击](13-chainsaw-chainsaw-dawn-light.webp) | [低伏蓄势](13-chainsaw-chainsaw-dawn-dark.webp) |
+
+[![五组浅深场景与配套](13-chainsaw-artworks.webp)](13-chainsaw-artworks.webp)
 
 <a name="theme-14"></a>
 
@@ -299,11 +320,9 @@ Doro 的草莓野餐与在家烘焙，配以草莓奶粉、柔和丁香紫和温
 
 <a name="theme-23"></a>
 
-## 芙莉莲·月下旅人
+## 葬送的芙莉莲 · 旧入口
 
-| 浅色 | 深色 |
-| --- | --- |
-| [![芙莉莲·月下旅人 · 浅色](23-frieren-moonlit-light.webp)](23-frieren-moonlit-light.webp) | [![芙莉莲·月下旅人 · 深色](23-frieren-moonlit-dark.webp)](23-frieren-moonlit-dark.webp) |
+「月下旅人」已合并至[葬送的芙莉莲](#theme-7)，旧偏好自动迁入「山路同行」。
 
 <a name="theme-24"></a>
 
@@ -323,11 +342,15 @@ Doro 的草莓野餐与在家烘焙，配以草莓奶粉、柔和丁香紫和温
 
 <a name="theme-26"></a>
 
-## 我叫MT·劣人与呆贼
+## 我叫MT · 部落冒险
+
+五组十幅独立浅深配图：林间追猎、猎手较量、营地插曲、遗迹探路、原版劣人与呆贼。主图、无人横幅与物件随场景联动；第五组保留原版素材。
+
+[![五组浅深配图总览](26-i-am-mt-artworks.webp)](26-i-am-mt-artworks.webp)
 
 | 浅色 | 深色 |
 | --- | --- |
-| [![我叫MT·劣人与呆贼 · 浅色](26-i-am-mt-light.webp)](26-i-am-mt-light.webp) | [![我叫MT·劣人与呆贼 · 深色](26-i-am-mt-dark.webp)](26-i-am-mt-dark.webp) |
+| [![我叫MT · 部落冒险 · 浅色](26-i-am-mt-light.webp)](26-i-am-mt-light.webp) | [![我叫MT · 部落冒险 · 深色](26-i-am-mt-dark.webp)](26-i-am-mt-dark.webp) |
 
 <a name="theme-27"></a>
 
@@ -706,12 +729,21 @@ Doro 的草莓野餐与在家烘焙，配以草莓奶粉、柔和丁香紫和温
 | [![咒术回战·一年级集结 · 浅色](72-jujutsu-first-years-light.webp)](72-jujutsu-first-years-light.webp) | [![咒术回战·一年级集结 · 深色](72-jujutsu-first-years-dark.webp)](72-jujutsu-first-years-dark.webp) |
 
 <a name="theme-73"></a>
+<a name="theme-135"></a>
+<a name="theme-136"></a>
 
-## 咒术回战·高专旧日
+## 咒术回战 · 咒缘纪事
 
-| 浅色 | 深色 |
-| --- | --- |
-| [![咒术回战·高专旧日 · 浅色](73-jujutsu-school-days-light.webp)](73-jujutsu-school-days-light.webp) | [![咒术回战·高专旧日 · 深色](73-jujutsu-school-days-dark.webp)](73-jujutsu-school-days-dark.webp) |
+将原「高专旧日」「纯爱之约」「伏魔御厨子」重设计为四章故事，统一象牙白、灰蓝和绛红配色。八幅主图沿用原作动画比例，浅深模式分别设计动作、镜头和人物关系；主图、无人物横幅、物件、侧栏角色与语录随场景切换，共用浅深开合文件夹。旧主题的使用偏好、收藏和轮换名单自动迁移，简约版同步更新。
+
+[![四组浅深色正式素材总览](73-jujutsu-school-days-artworks.webp)](73-jujutsu-school-days-artworks.webp)
+
+| 场景 | 浅色 | 深色 |
+| --- | --- | --- |
+| 高专盛夏 | [![高专盛夏 · 浅色](73-jujutsu-school-days-light.webp)](73-jujutsu-school-days-light.webp) | [![高专盛夏 · 深色](73-jujutsu-school-days-dark.webp)](73-jujutsu-school-days-dark.webp) |
+| 殊途回声 | [![殊途回声 · 浅色](73-jujutsu-school-days-parting-echoes-light.webp)](73-jujutsu-school-days-parting-echoes-light.webp) | [![殊途回声 · 深色](73-jujutsu-school-days-parting-echoes-dark.webp)](73-jujutsu-school-days-parting-echoes-dark.webp) |
+| 纯爱共战 | [![纯爱共战 · 浅色](73-jujutsu-school-days-pure-love-light.webp)](73-jujutsu-school-days-pure-love-light.webp) | [![纯爱共战 · 深色](73-jujutsu-school-days-pure-love-dark.webp)](73-jujutsu-school-days-pure-love-dark.webp) |
+| 诅咒王座 | [![诅咒王座 · 浅色](73-jujutsu-school-days-cursed-throne-light.webp)](73-jujutsu-school-days-cursed-throne-light.webp) | [![诅咒王座 · 深色](73-jujutsu-school-days-cursed-throne-dark.webp)](73-jujutsu-school-days-cursed-throne-dark.webp) |
 
 <a name="theme-74"></a>
 
@@ -795,27 +827,41 @@ Doro 的草莓野餐与在家烘焙，配以草莓奶粉、柔和丁香紫和温
 
 <a name="theme-84"></a>
 
-## 崩坏：星穹铁道·列车晨光
+## 崩坏：星穹铁道
+
+同一个入口收录列车晨光、星核夜话、萤火之约、罗浮闲局四组场景，统一阅读配色；旧主题选择、收藏与轮换名单自动迁移。
+
+![崩坏：星穹铁道四组浅深场景](84-hsr-express-artworks.webp)
+
+### 列车晨光
 
 | 浅色 | 深色 |
 | --- | --- |
-| [![崩坏：星穹铁道·列车晨光 · 浅色](84-hsr-express-light.webp)](84-hsr-express-light.webp) | [![崩坏：星穹铁道·列车晨光 · 深色](84-hsr-express-dark.webp)](84-hsr-express-dark.webp) |
+| [![崩坏：星穹铁道 · 列车晨光 · 浅色](84-hsr-express-light.webp)](84-hsr-express-light.webp) | [![崩坏：星穹铁道 · 列车晨光 · 深色](84-hsr-express-dark.webp)](84-hsr-express-dark.webp) |
 
 <a name="theme-85"></a>
 
-## 崩坏：星穹铁道·星核夜话
+### 星核夜话
 
 | 浅色 | 深色 |
 | --- | --- |
-| [![崩坏：星穹铁道·星核夜话 · 浅色](85-hsr-hunters-light.webp)](85-hsr-hunters-light.webp) | [![崩坏：星穹铁道·星核夜话 · 深色](85-hsr-hunters-dark.webp)](85-hsr-hunters-dark.webp) |
+| [![崩坏：星穹铁道 · 星核夜话 · 浅色](84-hsr-express-hunters-after-hours-light.webp)](84-hsr-express-hunters-after-hours-light.webp) | [![崩坏：星穹铁道 · 星核夜话 · 深色](84-hsr-express-hunters-after-hours-dark.webp)](84-hsr-express-hunters-after-hours-dark.webp) |
 
 <a name="theme-86"></a>
 
-## 崩坏：星穹铁道·萤火之约
+### 萤火之约
 
 | 浅色 | 深色 |
 | --- | --- |
-| [![崩坏：星穹铁道·萤火之约 · 浅色](86-hsr-firefly-light.webp)](86-hsr-firefly-light.webp) | [![崩坏：星穹铁道·萤火之约 · 深色](86-hsr-firefly-dark.webp)](86-hsr-firefly-dark.webp) |
+| [![崩坏：星穹铁道 · 萤火之约 · 浅色](84-hsr-express-firefly-promise-light.webp)](84-hsr-express-firefly-promise-light.webp) | [![崩坏：星穹铁道 · 萤火之约 · 深色](84-hsr-express-firefly-promise-dark.webp)](84-hsr-express-firefly-promise-dark.webp) |
+
+### 罗浮闲局
+
+浅色「庭中对弈」由景元与彦卿错位围坐，深色「枕月听雀」改为景元单人倚榻，两种模式采用独立构图。
+
+| 浅色 | 深色 |
+| --- | --- |
+| [![崩坏：星穹铁道 · 罗浮闲局 · 浅色](84-hsr-express-luofu-leisure-light.webp)](84-hsr-express-luofu-leisure-light.webp) | [![崩坏：星穹铁道 · 罗浮闲局 · 深色](84-hsr-express-luofu-leisure-dark.webp)](84-hsr-express-luofu-leisure-dark.webp) |
 
 <a name="theme-90"></a>
 
@@ -1098,26 +1144,6 @@ Doro白天陪磁力菇把旧铁件分进木格箱，夜里坐在矮凳上挂好�
 | 浅色 | 深色 |
 | --- | --- |
 | [![咒术回战 · 无量空处 · 浅色](134-jujutsu-infinite-void-light.webp)](134-jujutsu-infinite-void-light.webp) | [![咒术回战 · 无量空处 · 深色](134-jujutsu-infinite-void-dark.webp)](134-jujutsu-infinite-void-dark.webp) |
-
-<a name="theme-135"></a>
-
-## 咒术回战 · 伏魔御厨子
-
-宿傩以粉发、咒纹与白色和服登场，浅色立于神社石阶，深色支颐而坐。朱砂、墨黑和古铜连接空寂神龛横幅、茶盏与铜铃扣文件夹。配有四款侧栏伙伴、浅深无角色横幅、专属道具、开合文件夹和简约配对。
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![咒术回战 · 伏魔御厨子 · 浅色](135-jujutsu-malevolent-shrine-light.webp)](135-jujutsu-malevolent-shrine-light.webp) | [![咒术回战 · 伏魔御厨子 · 深色](135-jujutsu-malevolent-shrine-dark.webp)](135-jujutsu-malevolent-shrine-dark.webp) |
-
-<a name="theme-136"></a>
-
-## 咒术回战 · 纯爱之约
-
-乙骨忧太与小小里香守护灵，以戒指与白山茶串起约定。浅色站立凝望戒指，深色单膝歇于庭阶，青瓷与月紫连接花庭横幅和银环扣文件夹。配有四款侧栏伙伴、浅深无角色横幅、专属道具、开合文件夹和简约配对。
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![咒术回战 · 纯爱之约 · 浅色](136-jujutsu-cursed-promise-light.webp)](136-jujutsu-cursed-promise-light.webp) | [![咒术回战 · 纯爱之约 · 深色](136-jujutsu-cursed-promise-dark.webp)](136-jujutsu-cursed-promise-dark.webp) |
 
 <a name="theme-137"></a>
 
