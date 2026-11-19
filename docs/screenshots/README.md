@@ -545,11 +545,18 @@ Doro 的草莓野餐与在家烘焙，配以草莓奶粉、柔和丁香紫和温
 
 <a name="theme-50"></a>
 
-## 高达·巴巴托斯
+## 高达 · 巴巴托斯
 
-| 浅色 | 深色 |
-| --- | --- |
-| [![高达·巴巴托斯 · 浅色](50-gundam-barbatos-light.webp)](50-gundam-barbatos-light.webp) | [![高达·巴巴托斯 · 深色](50-gundam-barbatos-dark.webp)](50-gundam-barbatos-dark.webp) |
+四组浅深配图：持锤待命、太刀近战、机库整备、滑膛炮出击。保留原有持锤组，新增三组依据确认总览逐张制作；近战浅深为低架防御与跃起蓄斩，整备为坐台检查与单膝检修，持炮为地面架炮与轨道漂浮。第四形态机体与原作机械画风一致，配套横幅、物件及短句随场景切换，文件夹、侧栏角色与阅读配色沿用原主题。
+
+| 场景 | 浅色 | 深色 |
+| --- | --- | --- |
+| 持锤待命 | [![持锤待命 · 浅色](50-gundam-barbatos-light.webp)](50-gundam-barbatos-light.webp) | [![持锤待命 · 深色](50-gundam-barbatos-dark.webp)](50-gundam-barbatos-dark.webp) |
+| 太刀近战 | [![太刀近战 · 浅色](50-gundam-barbatos-tachi-combat-light.webp)](50-gundam-barbatos-tachi-combat-light.webp) | [![太刀近战 · 深色](50-gundam-barbatos-tachi-combat-dark.webp)](50-gundam-barbatos-tachi-combat-dark.webp) |
+| 机库整备 | [![机库整备 · 浅色](50-gundam-barbatos-hangar-service-light.webp)](50-gundam-barbatos-hangar-service-light.webp) | [![机库整备 · 深色](50-gundam-barbatos-hangar-service-dark.webp)](50-gundam-barbatos-hangar-service-dark.webp) |
+| 滑膛炮出击 | [![滑膛炮出击 · 浅色](50-gundam-barbatos-smoothbore-sortie-light.webp)](50-gundam-barbatos-smoothbore-sortie-light.webp) | [![滑膛炮出击 · 深色](50-gundam-barbatos-smoothbore-sortie-dark.webp)](50-gundam-barbatos-smoothbore-sortie-dark.webp) |
+
+[![四组浅深正式主图总览](50-gundam-barbatos-artworks.webp)](50-gundam-barbatos-artworks.webp)
 
 <a name="theme-51"></a>
 

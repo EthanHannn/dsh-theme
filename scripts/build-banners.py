@@ -41,6 +41,12 @@ else:
 # (source stem, output stem, ratio W:H, vertical band center as a fraction
 # of source height)
 JOBS = [
+    ("barbatos-expansion-20261118/tachi-combat-banner-provider", "gundam-barbatos-tachi-combat-banner-light", 6.0, 0.25),
+    ("barbatos-expansion-20261118/tachi-combat-banner-provider", "gundam-barbatos-tachi-combat-banner-dark", 6.0, 0.75),
+    ("barbatos-expansion-20261118/hangar-service-banner-provider", "gundam-barbatos-hangar-service-banner-light", 6.0, 0.25),
+    ("barbatos-expansion-20261118/hangar-service-banner-provider", "gundam-barbatos-hangar-service-banner-dark", 6.0, 0.75),
+    ("barbatos-expansion-20261118/smoothbore-sortie-banner-provider", "gundam-barbatos-smoothbore-sortie-banner-light", 6.0, 0.25),
+    ("barbatos-expansion-20261118/smoothbore-sortie-banner-provider", "gundam-barbatos-smoothbore-sortie-banner-dark", 6.0, 0.75),
     ("conan-moonlit-expansion-20261118/rail-trace-banner-provider", "conan-rail-trace-banner-light", 6.0, 0.25),
     ("conan-moonlit-expansion-20261118/rail-trace-banner-provider", "conan-rail-trace-banner-dark", 6.0, 0.75),
     ("conan-moonlit-expansion-20261118/clocktower-code-banner-provider", "conan-clocktower-code-banner-light", 6.0, 0.25),
@@ -426,6 +432,12 @@ JOBS = [
 # left fade end, right fade start), as fractions of the final strip width.
 # All families use Daxia's 25% left / 10% right edge treatment.
 BAKED_HORIZONTAL_FADES = {
+    "gundam-barbatos-tachi-combat-banner-light": ("#EEE6DA", 0.25, 0.90),
+    "gundam-barbatos-tachi-combat-banner-dark": ("#242B34", 0.25, 0.90),
+    "gundam-barbatos-hangar-service-banner-light": ("#EEE6DA", 0.25, 0.90),
+    "gundam-barbatos-hangar-service-banner-dark": ("#242B34", 0.25, 0.90),
+    "gundam-barbatos-smoothbore-sortie-banner-light": ("#EEE6DA", 0.25, 0.90),
+    "gundam-barbatos-smoothbore-sortie-banner-dark": ("#242B34", 0.25, 0.90),
     "conan-rail-trace-banner-light": ("#EDF2F7", 0.25, 0.90),
     "conan-rail-trace-banner-dark": ("#101C30", 0.25, 0.90),
     "conan-clocktower-code-banner-light": ("#EDF2F7", 0.25, 0.90),
