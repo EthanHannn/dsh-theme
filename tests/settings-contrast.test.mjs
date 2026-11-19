@@ -77,6 +77,21 @@ test("dark interaction washes do not wash out secondary text when nested", () =>
   }
 });
 
+test("tooltip and toast text stays readable on their theme surfaces", () => {
+  for (const skin of skins) {
+    const tokens = skin.tokens;
+    const paper = color(tokens["--dsw-pack-paper"]);
+    for (const [surface, label] of [
+      ["--dsw-alias-tooltip-bg", "--dsw-alias-tooltip-label"],
+      ["--dsw-alias-toast-bg", "--dsw-alias-toast-label"],
+    ]) {
+      const back = over(color(tokens[surface]), paper);
+      const ratio = contrast(over(color(tokens[label]), back), back);
+      assert.ok(ratio >= 4.5, `${skin.name}: ${label} on ${surface} = ${ratio.toFixed(2)}:1`);
+    }
+  }
+});
+
 test("fine-control help popover anchors to the full-width row, not the 28px question button", () => {
   const rule = (selector) => {
     const body = css.split(`${selector} {`)[1]?.split("}")[0];

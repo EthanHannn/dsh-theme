@@ -100,3 +100,22 @@ test("composed-class selectors do not over-match neighbouring class names", () =
     `no iconButton selector matches ${COMPOSED_BUTTON}`,
   );
 });
+
+test("folder artwork only targets icon containers, including the Session panel row", () => {
+  // A bare `[class*="_folder"]` also matches the Session panel's path text:
+  // its CSS-module class is `vmaIBq_folder`, while the icon sits in a
+  // `[data-row-part="icon"]` slot with no `_folder` class.
+  assert.doesNotMatch(
+    source,
+    /\[class\*="_folder"\](?!:has\()/,
+    "a bare _folder selector would paint the Session panel's path text",
+  );
+  assert.ok(
+    source.includes('[data-row-key^="workspace:"] [class*="_folder"]:has(> svg)'),
+    "the sidebar workspace folder rule must stay scoped to icon containers",
+  );
+  assert.ok(
+    source.includes('[data-session-panel-project] [data-row-part="icon"]'),
+    "the Session panel working-folder icon slot needs its own themed rule",
+  );
+});

@@ -206,7 +206,9 @@ function buildTokens(mode, p) {
   t["--dsw-alias-markdown-placeholder"] = p.layer2;
   t["--dsw-alias-markdown-tag"] = p.layer2;
   t["--dsw-alias-toast-bg"] = p.toastBg;
+  t["--dsw-alias-toast-label"] = p.textPrimary;
   t["--dsw-alias-tooltip-bg"] = p.tooltipBg;
+  t["--dsw-alias-tooltip-label"] = p.textPrimary;
   t["--dsw-alias-separator-primary"] = p.separator;
   t["--dsw-alias-scrollbar-bg-l1"] = p.scrollbar[0];
   t["--dsw-alias-scrollbar-bg-l2"] = p.scrollbar[1];
