@@ -704,27 +704,16 @@ Doro 的草莓野餐与在家烘焙，配以草莓奶粉、柔和丁香紫和温
 
 <a name="theme-69"></a>
 
-## 哆啦A梦·口袋奇遇
+## 哆啦A梦 · 奇妙同行
 
-| 浅色 | 深色 |
-| --- | --- |
-| [![哆啦A梦·口袋奇遇 · 浅色](69-doraemon-pocket-light.webp)](69-doraemon-pocket-light.webp) | [![哆啦A梦·口袋奇遇 · 深色](69-doraemon-pocket-dark.webp)](69-doraemon-pocket-dark.webp) |
+口袋奇遇、放学约定、星空航路、海底探险共四组浅深场景，每组分别设计人物组合、动作与镜头。保留原作二维动画风格，海底浅色为哆啦A梦观察珍珠贝，深色为三人驾驶迷你潜艇。主图、物件、无人物横幅、文件夹、侧栏角色与语录随场景切换；旧入口的当前场景、明暗模式、收藏和轮换名单自动迁移。
 
-<a name="theme-70"></a>
-
-## 哆啦A梦·放学后的约定
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![哆啦A梦·放学后的约定 · 浅色](70-doraemon-afterschool-light.webp)](70-doraemon-afterschool-light.webp) | [![哆啦A梦·放学后的约定 · 深色](70-doraemon-afterschool-dark.webp)](70-doraemon-afterschool-dark.webp) |
-
-<a name="theme-71"></a>
-
-## 哆啦A梦·星空航路
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![哆啦A梦·星空航路 · 浅色](71-doraemon-starlight-light.webp)](71-doraemon-starlight-light.webp) | [![哆啦A梦·星空航路 · 深色](71-doraemon-starlight-dark.webp)](71-doraemon-starlight-dark.webp) |
+| 场景 | 浅色 | 深色 |
+| --- | --- | --- |
+| 口袋奇遇 | [![哆啦A梦 · 奇妙同行 · 口袋奇遇 · 浅色](69-doraemon-pocket-light.webp)](69-doraemon-pocket-light.webp) | [![哆啦A梦 · 奇妙同行 · 口袋奇遇 · 深色](69-doraemon-pocket-dark.webp)](69-doraemon-pocket-dark.webp) |
+| <a name="theme-70"></a>放学约定 | [![哆啦A梦 · 奇妙同行 · 放学约定 · 浅色](69-doraemon-pocket-afterschool-light.webp)](69-doraemon-pocket-afterschool-light.webp) | [![哆啦A梦 · 奇妙同行 · 放学约定 · 深色](69-doraemon-pocket-afterschool-dark.webp)](69-doraemon-pocket-afterschool-dark.webp) |
+| <a name="theme-71"></a>星空航路 | [![哆啦A梦 · 奇妙同行 · 星空航路 · 浅色](69-doraemon-pocket-starlight-light.webp)](69-doraemon-pocket-starlight-light.webp) | [![哆啦A梦 · 奇妙同行 · 星空航路 · 深色](69-doraemon-pocket-starlight-dark.webp)](69-doraemon-pocket-starlight-dark.webp) |
+| 海底探险 | [![哆啦A梦 · 奇妙同行 · 海底探险 · 浅色](69-doraemon-pocket-undersea-light.webp)](69-doraemon-pocket-undersea-light.webp) | [![哆啦A梦 · 奇妙同行 · 海底探险 · 深色](69-doraemon-pocket-undersea-dark.webp)](69-doraemon-pocket-undersea-dark.webp) |
 
 <a name="theme-72"></a>
 

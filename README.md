@@ -73,7 +73,7 @@
 | [我的世界](docs/screenshots/README.md#theme-43) | [![我的世界 · 浅色](docs/screenshots/43-minecraft-light.webp)](docs/screenshots/43-minecraft-light.webp) | [![我的世界 · 深色](docs/screenshots/43-minecraft-dark.webp)](docs/screenshots/43-minecraft-dark.webp) |
 | [守望先锋·时间跃迁](docs/screenshots/README.md#theme-45) | [![守望先锋·时间跃迁 · 浅色](docs/screenshots/45-overwatch-tracer-light.webp)](docs/screenshots/45-overwatch-tracer-light.webp) | [![守望先锋·时间跃迁 · 深色](docs/screenshots/45-overwatch-tracer-dark.webp)](docs/screenshots/45-overwatch-tracer-dark.webp) |
 | [间谍过家家·福杰家的休息日](docs/screenshots/README.md#theme-66) | [![间谍过家家·福杰家的休息日 · 浅色](docs/screenshots/66-spy-family-forgers-light.webp)](docs/screenshots/66-spy-family-forgers-light.webp) | [![间谍过家家·福杰家的休息日 · 深色](docs/screenshots/66-spy-family-forgers-dark.webp)](docs/screenshots/66-spy-family-forgers-dark.webp) |
-| [哆啦A梦·口袋奇遇](docs/screenshots/README.md#theme-69) | [![哆啦A梦·口袋奇遇 · 浅色](docs/screenshots/69-doraemon-pocket-light.webp)](docs/screenshots/69-doraemon-pocket-light.webp) | [![哆啦A梦·口袋奇遇 · 深色](docs/screenshots/69-doraemon-pocket-dark.webp)](docs/screenshots/69-doraemon-pocket-dark.webp) |
+| [哆啦A梦 · 奇妙同行](docs/screenshots/README.md#theme-69) | [![哆啦A梦 · 奇妙同行 · 浅色](docs/screenshots/69-doraemon-pocket-light.webp)](docs/screenshots/69-doraemon-pocket-light.webp) | [![哆啦A梦 · 奇妙同行 · 深色](docs/screenshots/69-doraemon-pocket-dark.webp)](docs/screenshots/69-doraemon-pocket-dark.webp) |
 | [咒术回战·一年级集结](docs/screenshots/README.md#theme-72) | [![咒术回战·一年级集结 · 浅色](docs/screenshots/72-jujutsu-first-years-light.webp)](docs/screenshots/72-jujutsu-first-years-light.webp) | [![咒术回战·一年级集结 · 深色](docs/screenshots/72-jujutsu-first-years-dark.webp)](docs/screenshots/72-jujutsu-first-years-dark.webp) |
 | [咒术回战 · 咒缘纪事](docs/screenshots/README.md#theme-73) | [![咒术回战 · 咒缘纪事 · 浅色](docs/screenshots/73-jujutsu-school-days-light.webp)](docs/screenshots/73-jujutsu-school-days-light.webp) | [![咒术回战 · 咒缘纪事 · 深色](docs/screenshots/73-jujutsu-school-days-dark.webp)](docs/screenshots/73-jujutsu-school-days-dark.webp) |
 | [咒术回战·同窗并肩](docs/screenshots/README.md#theme-74) | [![咒术回战·同窗并肩 · 浅色](docs/screenshots/74-jujutsu-classmates-light.webp)](docs/screenshots/74-jujutsu-classmates-light.webp) | [![咒术回战·同窗并肩 · 深色](docs/screenshots/74-jujutsu-classmates-dark.webp)](docs/screenshots/74-jujutsu-classmates-dark.webp) |
@@ -227,9 +227,7 @@ Linux 可在安装包所在目录执行 `sha256sum -c SHA256SUMS.txt`；macOS �
 - **咒术回战·同窗并肩**：训练场苔绿 / 乙骨白 / 木质暖金，乙骨、真希、狗卷与熊猫的同窗四人组。
 - **咒术回战 · 咒缘纪事**：象牙白 / 灰蓝 / 绛红，高专盛夏、殊途回声、纯爱共战、诅咒王座四组浅深独立场景。
 - **咒术回战·一年级集结**：制服藏蓝 / 虎杖珊瑚红 / 高专石灰，虎杖、伏黑、钉崎与五条的四人竖向海报。
-- **哆啦A梦·星空航路**：星图淡蓝 / 宇宙靛紫 / 导航暖金，哆啦A梦、大雄与静香的星空探索。
-- **哆啦A梦·放学后的约定**：放学奶油色 / 河岸青绿 / 夕照橙，哆啦A梦、大雄与静香的放学约定。
-- **哆啦A梦·口袋奇遇**：口袋蓝 / 铜锣烧暖金 / 任意门粉，哆啦A梦、大雄与哆啦美的道具小冒险。
+- **哆啦A梦 · 奇妙同行**：口袋蓝 / 铜锣烧暖金 / 任意门粉，收录口袋奇遇、放学约定、星空航路、海底探险四组浅深场景，整套配图随场景切换。
 - **间谍过家家·月下密语**：雾青 / 夜幕藏蓝 / 玫瑰红，黄昏、约尔与阿尼亚的紧凑秘密任务海报。
 - **间谍过家家·伊甸星光**：学院米白 / 砖红 / 星章金，阿尼亚、达米安与贝姬的星章、折纸、温室与庭院点心四组校园故事，浅深配套整组轮换。
 - **间谍过家家·福杰家的休息日**：鼠尾草绿 / 家庭暖白 / 约尔红，黄昏、约尔、阿尼亚与邦德的休息日和晚归时光。

@@ -1,6 +1,6 @@
 {
   "id": "doraemon-pocket-minimal-light",
-  "name": "Doraemon · Pocket Wonders · Minimal Light",
+  "name": "Doraemon · Everyday Adventures · Minimal Light",
   "colorScheme": "light",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #F1F8FC 50%, #E7EEF3)",

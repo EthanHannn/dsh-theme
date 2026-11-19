@@ -41,6 +41,8 @@ else:
 # (source stem, output stem, ratio W:H, vertical band center as a fraction
 # of source height)
 JOBS = [
+    ("doraemon-four-scenes-20261118/undersea-banner-provider", "doraemon-pocket-undersea-banner-light", 6.0, 0.25),
+    ("doraemon-four-scenes-20261118/undersea-banner-provider", "doraemon-pocket-undersea-banner-dark", 6.0, 0.75),
     ("barbatos-expansion-20261118/tachi-combat-banner-provider", "gundam-barbatos-tachi-combat-banner-light", 6.0, 0.25),
     ("barbatos-expansion-20261118/tachi-combat-banner-provider", "gundam-barbatos-tachi-combat-banner-dark", 6.0, 0.75),
     ("barbatos-expansion-20261118/hangar-service-banner-provider", "gundam-barbatos-hangar-service-banner-light", 6.0, 0.25),
@@ -233,10 +235,10 @@ JOBS = [
     ("anime-five-20261009/jujutsu-classmates/banner-dark", "jujutsu-classmates-banner-dark", 6.0, 0.5),
     ("anime-five-20261009/jujutsu-first-years/banner-light", "jujutsu-first-years-banner-light", 6.0, 0.5),
     ("anime-five-20261009/jujutsu-first-years/banner-dark", "jujutsu-first-years-banner-dark", 6.0, 0.5),
-    ("anime-five-20261009/doraemon-starlight/banner-light", "doraemon-starlight-banner-light", 6.0, 0.5),
-    ("anime-five-20261009/doraemon-starlight/banner-dark", "doraemon-starlight-banner-dark", 6.0, 0.5),
-    ("anime-five-20261009/doraemon-afterschool/banner-light", "doraemon-afterschool-banner-light", 6.0, 0.5),
-    ("anime-five-20261009/doraemon-afterschool/banner-dark", "doraemon-afterschool-banner-dark", 6.0, 0.5),
+    ("anime-five-20261009/doraemon-starlight/banner-light", "doraemon-pocket-starlight-banner-light", 6.0, 0.5),
+    ("anime-five-20261009/doraemon-starlight/banner-dark", "doraemon-pocket-starlight-banner-dark", 6.0, 0.5),
+    ("anime-five-20261009/doraemon-afterschool/banner-light", "doraemon-pocket-afterschool-banner-light", 6.0, 0.5),
+    ("anime-five-20261009/doraemon-afterschool/banner-dark", "doraemon-pocket-afterschool-banner-dark", 6.0, 0.5),
     ("anime-five-20261009/doraemon-pocket/banner-light", "doraemon-pocket-banner-light", 6.0, 0.5),
     ("anime-five-20261009/doraemon-pocket/banner-dark", "doraemon-pocket-banner-dark", 6.0, 0.5),
     ("anime-five-20261009/spy-family-mission/banner-light", "spy-family-mission-banner-light", 6.0, 0.5),
@@ -432,6 +434,8 @@ JOBS = [
 # left fade end, right fade start), as fractions of the final strip width.
 # All families use Daxia's 25% left / 10% right edge treatment.
 BAKED_HORIZONTAL_FADES = {
+    "doraemon-pocket-undersea-banner-light": ("#E4F1F8", 0.25, 0.90),
+    "doraemon-pocket-undersea-banner-dark": ("#192D43", 0.25, 0.90),
     "gundam-barbatos-tachi-combat-banner-light": ("#EEE6DA", 0.25, 0.90),
     "gundam-barbatos-tachi-combat-banner-dark": ("#242B34", 0.25, 0.90),
     "gundam-barbatos-hangar-service-banner-light": ("#EEE6DA", 0.25, 0.90),
@@ -624,10 +628,10 @@ BAKED_HORIZONTAL_FADES = {
     "jujutsu-school-days-cursed-throne-banner-dark": ("#151D29", 0.25, 0.90),
     "jujutsu-first-years-banner-light": ("#E6EBF1", 0.25, 0.90),
     "jujutsu-first-years-banner-dark": ("#1C2638", 0.25, 0.90),
-    "doraemon-starlight-banner-light": ("#E8EBF6", 0.25, 0.90),
-    "doraemon-starlight-banner-dark": ("#1B2341", 0.25, 0.90),
-    "doraemon-afterschool-banner-light": ("#F1EBDC", 0.25, 0.90),
-    "doraemon-afterschool-banner-dark": ("#2B2529", 0.25, 0.90),
+    "doraemon-pocket-starlight-banner-light": ("#E4F1F8", 0.25, 0.90),
+    "doraemon-pocket-starlight-banner-dark": ("#192D43", 0.25, 0.90),
+    "doraemon-pocket-afterschool-banner-light": ("#E4F1F8", 0.25, 0.90),
+    "doraemon-pocket-afterschool-banner-dark": ("#192D43", 0.25, 0.90),
     "doraemon-pocket-banner-light": ("#E4F1F8", 0.25, 0.90),
     "doraemon-pocket-banner-dark": ("#192D43", 0.25, 0.90),
     "spy-family-mission-banner-light": ("#E3EBE7", 0.25, 0.90),

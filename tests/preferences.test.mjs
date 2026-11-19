@@ -349,8 +349,11 @@ test("Star Rail legacy entries retain their selected scene, mode and collection 
   }
 });
 
-test("Conan jewel entrance and its minimal pair retain preferences after merging", async () => {
-  const groups = [["conan", [["conan-jewel", "jewel-mystery"]]]];
+test("Conan and Doraemon entrances retain preferences after merging", async () => {
+  const groups = [
+    ["conan", [["conan-jewel", "jewel-mystery"]]],
+    ["doraemon-pocket", [["doraemon-afterschool", "afterschool"], ["doraemon-starlight", "starlight"]]],
+  ];
   for (const [target, sources, minimal = `${target}-minimal`] of groups) {
     const families = await Promise.all([target, minimal].map(async (id) => (await import(`../families/${id}.mjs`)).default));
     const entries = [...catalog, ...families.map((family) => ({
