@@ -173,6 +173,8 @@ artworks: [
 
 `families/chainsaw.mjs` 保留 `chainsaw` 家族、浅深皮肤与 `umber` 简约配对的稳定标识，显示名改为「电锯人 · 人间愿望」。默认「面包与梦」，另有「吵闹归途」「午夜放映」「雨中偶遇」「锯刃破晓」四款变体；十幅主图逐格依据获准的 `scene-sheet-v02.png` 制作，浅深色分别呈现分享面包／腿上小憩、拌嘴归途／收拾食材、独坐观影／散场回望、撑伞偶遇／檐下热饮、跃起战斗／落地蓄势。每组提供浅深色无角色横幅、左下物件和双语短句，侧栏五角色与文件夹沿用既有素材，阅读配色保持一致。总览、确认记录、精确提示词、原图、透明中间图、尺寸与来源摘要均保存于本地素材目录的 `raw/chainsaw-five-scenes-20261116/` 与 `outputs/chainsaw-five-scenes-20261116/`，旧素材保留作比较；通过 `outputs/build-chainsaw-assets.py` 重建配套。
 
+`families/doro-oasis-gold.mjs` 以「金穗绿洲」为默认配图，另有「宫苑闲游」「沙丘度假」「海湾假日」。六张新增主图逐格采用确认稿的放花／秋千、越野／宿营、游艇／海边庆祝构图。各场景配套浅深色无角色横幅、左下角物件和双语短句，共用金穗绿洲的文件夹、侧栏角色与阅读配色。确认稿和素材原图位于本地素材目录的 `raw/doro-oasis-expansion-20261119/`，运行 `uv run --no-project --with pillow --with numpy --with scipy <素材目录>/outputs/build-doro-oasis-expansion-assets.py` 可重建新增素材。
+
 ### 完整场景与旧主题合并
 
 `families/hsr-express.mjs` 保留主家族与浅深皮肤标识，显示名统一为「崩坏：星穹铁道」，以「列车晨光」为默认，收录「星核夜话」「萤火之约」「罗浮闲局」三个变体。旧 `hsr-hunters`、`hsr-firefly` 分别迁入对应场景，两套旧简约入口迁入 `hsr-express-minimal`，明暗模式、装饰、收藏和轮换名单随之归并。原三组主图、物件、文件夹和侧栏角色保留原字节，横幅从原始素材重新裁切并烘焙到统一的列车蓝纸色。「罗浮闲局」按用户确认的 `scene-sheet-v01.png` 逐格制作：浅色景元与彦卿庭中对弈，补清棋桌后的腿脚连接；深色景元独自倚榻听雀，保持独立的低角度构图。新场景配套无人物横幅、物件、双角色侧栏与双语短句，文件夹沿用列车系列。原图、确认稿、逐张提示词、透明中间图、旧素材备份和验收记录保存在非同步素材目录的 `raw/hsr-collection-20261118/` 与 `outputs/hsr-collection-20261118/`；通过 `outputs/build-hsr-assets.py` 重建，横幅用 `scripts/build-banners.py` 裁切。
