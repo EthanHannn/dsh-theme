@@ -1,9 +1,9 @@
 import family from "./slam-dunk.mjs";
 
-// Share the base palette; vivid surface overrides and artwork stay with the parent.
+// 简约外观沿用主主题名称与阅读配色。
 export default {
   id: "slam-dunk-minimal",
-  names: { zh: "灌篮高手·简约", en: "Slam Dunk · Minimal" },
+  names: { zh: `${family.names.zh} · 简约`, en: `${family.names.en} · Minimal` },
   kin: "slam-dunk",
   styles: ["minimal"],
   light: family.light,
