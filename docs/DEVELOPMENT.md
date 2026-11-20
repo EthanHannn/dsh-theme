@@ -175,6 +175,8 @@ artworks: [
 
 `families/doro-oasis-gold.mjs` 以「金穗绿洲」为默认配图，另有「宫苑闲游」「沙丘度假」「海湾假日」。六张新增主图逐格采用确认稿的放花／秋千、越野／宿营、游艇／海边庆祝构图。各场景配套浅深色无角色横幅、左下角物件和双语短句，共用金穗绿洲的文件夹、侧栏角色与阅读配色。确认稿和素材原图位于本地素材目录的 `raw/doro-oasis-expansion-20261119/`，运行 `uv run --no-project --with pillow --with numpy --with scipy <素材目录>/outputs/build-doro-oasis-expansion-assets.py` 可重建新增素材。
 
+`families/gundam.mjs` 保留「元祖待命」原组与青灰简约配对，加入「白色基地出击」「Side 7 初醒」「赤色彗星相遇」。新增六张浅深主图逐张依据确认总览制作，保留原版动画的机体比例、线条和配色。横幅、左下物件与双语短句跟随场景切换，文件夹和侧栏角色沿用原素材。总览、逐格参考、原图和制作记录位于本地素材目录 `raw/gundam-rx78-2-expansion-20261119/`。在仓库根目录使用 `uv run --no-project --with pillow <素材目录>/outputs/build-gundam-rx78-2-assets.py` 重建主图和物件，再用 `scripts/build-banners.py gundam-catapult-launch gundam-side-seven-awakening gundam-red-comet-encounter` 重裁新增横幅。
+
 ### 完整场景与旧主题合并
 
 `families/hsr-express.mjs` 保留主家族与浅深皮肤标识，显示名统一为「崩坏：星穹铁道」，以「列车晨光」为默认，收录「星核夜话」「萤火之约」「罗浮闲局」三个变体。旧 `hsr-hunters`、`hsr-firefly` 分别迁入对应场景，两套旧简约入口迁入 `hsr-express-minimal`，明暗模式、装饰、收藏和轮换名单随之归并。原三组主图、物件、文件夹和侧栏角色保留原字节，横幅从原始素材重新裁切并烘焙到统一的列车蓝纸色。「罗浮闲局」按用户确认的 `scene-sheet-v01.png` 逐格制作：浅色景元与彦卿庭中对弈，补清棋桌后的腿脚连接；深色景元独自倚榻听雀，保持独立的低角度构图。新场景配套无人物横幅、物件、双角色侧栏与双语短句，文件夹沿用列车系列。原图、确认稿、逐张提示词、透明中间图、旧素材备份和验收记录保存在非同步素材目录的 `raw/hsr-collection-20261118/` 与 `outputs/hsr-collection-20261118/`；通过 `outputs/build-hsr-assets.py` 重建，横幅用 `scripts/build-banners.py` 裁切。

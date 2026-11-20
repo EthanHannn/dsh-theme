@@ -398,6 +398,12 @@ JOBS = [
     # gundam — orbital shipyard by day; Earth and a colony at night.
     ("gundam-banner-light-v2", "gundam-banner-light", 6.0, 0.51),
     ("gundam-banner-dark-v2", "gundam-banner-dark", 6.0, 0.50),
+    ("gundam-rx78-2-expansion-20261119/catapult-launch-banner-provider", "gundam-catapult-launch-banner-light", 6.0, 0.25),
+    ("gundam-rx78-2-expansion-20261119/catapult-launch-banner-provider", "gundam-catapult-launch-banner-dark", 6.0, 0.75),
+    ("gundam-rx78-2-expansion-20261119/side-seven-awakening-banner-provider", "gundam-side-seven-awakening-banner-light", 6.0, 0.25),
+    ("gundam-rx78-2-expansion-20261119/side-seven-awakening-banner-provider", "gundam-side-seven-awakening-banner-dark", 6.0, 0.75),
+    ("gundam-rx78-2-expansion-20261119/red-comet-encounter-banner-provider", "gundam-red-comet-encounter-banner-light", 6.0, 0.25),
+    ("gundam-rx78-2-expansion-20261119/red-comet-encounter-banner-provider", "gundam-red-comet-encounter-banner-dark", 6.0, 0.75),
     # shinchan — v4 aligns the sun with the house; lift the dark crop to keep
     # the smiling moon intact above the crayon neighborhood.
     ("shinchan-banner-light-wide-v4-provider", "shinchan-banner-light", 6.0, 0.55),
@@ -798,6 +804,12 @@ BAKED_HORIZONTAL_FADES = {
     "natsume-banner-dark": ("#0D150E", 0.25, 0.90),
     "gundam-banner-light": ("#EBEEFA", 0.25, 0.90),
     "gundam-banner-dark": ("#0E1423", 0.25, 0.90),
+    "gundam-catapult-launch-banner-light": ("#EBEEFA", 0.25, 0.90),
+    "gundam-catapult-launch-banner-dark": ("#0E1423", 0.25, 0.90),
+    "gundam-side-seven-awakening-banner-light": ("#EBEEFA", 0.25, 0.90),
+    "gundam-side-seven-awakening-banner-dark": ("#0E1423", 0.25, 0.90),
+    "gundam-red-comet-encounter-banner-light": ("#EBEEFA", 0.25, 0.90),
+    "gundam-red-comet-encounter-banner-dark": ("#0E1423", 0.25, 0.90),
     "daxia-banner-light": ("#F1EEE1", 0.25, 0.90),
     "daxia-banner-dark": ("#0E1418", 0.25, 0.90),
     "one-piece-banner-light": ("#FFF1D0", 0.25, 0.90),

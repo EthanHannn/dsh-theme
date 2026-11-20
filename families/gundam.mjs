@@ -16,6 +16,91 @@
 export default {
   id: "gundam",
   names: { zh: "高达·RX-78-2", en: "Gundam · RX-78-2" },
+  originalArtworkNames: { zh: "元祖待命", en: "RX-78-2 Standing By" },
+  artworks: [
+    {
+      id: "catapult-launch",
+      names: { zh: "白色基地出击", en: "White Base Launch" },
+      decor: {
+        headerArt: { bakedHorizontalFade: true },
+        wallpaperSize: "min(34vw, 460px, calc(60vh * var(--dsw-pack-wallpaper-ratio, 1)), max(280px, calc((100vw - 1160px) / 2 + 32px)))",
+        wallpaperPosition: "right 16px bottom 14px",
+        heroTranslate: "calc(-0.3 * min(34vw, 460px)) calc(-1 * min(6vh, 60px))",
+        heroMaxWidth: "calc(100vw - 280px - min(34vw, 460px) - 64px)",
+        phrases: {
+          zh: [
+            ["白色基地：弹射轨道已清空。", "白色基地：离舰窗口开启。"],
+            ["哈啰！轨道确认！", "哈啰，前方净空！"],
+            ["RX-78-2，离开弹射座。", "RX-78-2，正在调整姿态。"],
+            ["白色基地前方净空。", "沿回收灯返回甲板。"],
+            ["哈啰！起飞完成！", "哈啰，航线正常！"],
+          ],
+          en: [
+            ["White Base: Catapult track clear.", "White Base: Launch window open."],
+            ["Haro! Track checked!", "Haro! Clear ahead!"],
+            ["RX-78-2, clearing the catapult.", "RX-78-2, adjusting attitude."],
+            ["All clear ahead of White Base.", "Follow the recovery lights back to the deck."],
+            ["Haro! Launch complete!", "Haro! Course confirmed!"],
+          ],
+        },
+      },
+    },
+    {
+      id: "side-seven-awakening",
+      names: { zh: "Side 7 初醒", en: "Awakening at Side 7" },
+      decor: {
+        headerArt: { bakedHorizontalFade: true },
+        wallpaperSize: "min(33vw, 435px, calc(61vh * var(--dsw-pack-wallpaper-ratio, 0.9)), max(270px, calc((100vw - 1160px) / 2 + 16px)))",
+        wallpaperPosition: "right 18px bottom 12px",
+        heroTranslate: "calc(-0.3 * min(33vw, 435px)) calc(-1 * min(6vh, 60px))",
+        heroMaxWidth: "calc(100vw - 280px - min(33vw, 435px) - 64px)",
+        phrases: {
+          zh: [
+            ["整备记录：运输架已解锁。", "整备记录：地面人员已清点。"],
+            ["哈啰！检修灯开了！", "哈啰，走道在这边。"],
+            ["RX-78-2，关节开始响应。", "RX-78-2，重心稳定。"],
+            ["等机体站稳，再靠近。", "检修走道可以通行。"],
+            ["哈啰！工具已归位。", "哈啰，整备完成！"],
+          ],
+          en: [
+            ["Maintenance: Transport cradle unlocked.", "Maintenance: Ground crew accounted for."],
+            ["Haro! The work light is on!", "Haro! The catwalk is this way."],
+            ["RX-78-2, joints responding.", "RX-78-2, balance steady."],
+            ["Wait for the mobile suit to steady itself.", "The inspection catwalk is clear."],
+            ["Haro! Tools stowed.", "Haro! Service complete!"],
+          ],
+        },
+      },
+    },
+    {
+      id: "red-comet-encounter",
+      names: { zh: "赤色彗星相遇", en: "Encounter with the Red Comet" },
+      decor: {
+        headerArt: { bakedHorizontalFade: true },
+        // 双机横向对峙需要保留岩脊和机体之间的距离。
+        wallpaperSize: "min(37vw, 520px, calc(60vh * var(--dsw-pack-wallpaper-ratio, 1)), max(290px, calc((100vw - 1160px) / 2 + 54px)))",
+        wallpaperPosition: "right 14px bottom 14px",
+        heroTranslate: "calc(-0.3 * min(37vw, 520px)) calc(-1 * min(6vh, 60px))",
+        heroMaxWidth: "calc(100vw - 280px - min(37vw, 520px) - 64px)",
+        phrases: {
+          zh: [
+            ["监测记录：岩脊另一侧有回波。", "监测记录：两条轨迹正在接近。"],
+            ["哈啰！发现红色信号！", "哈啰，注意相对位置。"],
+            ["RX-78-2，目视确认红色机体。", "RX-78-2，已越过月面阴影。"],
+            ["赤色彗星已越过岩脊。", "红色机体的轨迹正在偏转。"],
+            ["哈啰！信号已分开！", "哈啰，月面地标已记录。"],
+          ],
+          en: [
+            ["Tracking log: A return beyond the ridge.", "Tracking log: Two paths are converging."],
+            ["Haro! Red contact detected!", "Haro! Watch the relative position."],
+            ["RX-78-2, visual contact with the red unit.", "RX-78-2, clear of the lunar shadow."],
+            ["The Red Comet has crossed the ridge.", "The red unit is changing course."],
+            ["Haro! Contacts have separated!", "Haro! Lunar landmark recorded."],
+          ],
+        },
+      },
+    },
+  ],
   // vivid only — the restrained palette ships as the standalone neutral
   // family "slate" (families/slate.mjs re-exports these mode params)
   styles: ["vivid"],

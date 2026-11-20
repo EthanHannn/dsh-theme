@@ -18,7 +18,7 @@
 
 [咒术回战 · 无量空处](#theme-134) · [JOJO · 星尘远征](#theme-137) · [JOJO · 杜王町晴日](#theme-138) · [JOJO · 黄金之风](#theme-139)
 
-[电锯人·玛奇玛](#theme-2) · [吉伊卡哇·草原野餐](#theme-3) · [名侦探柯南·米花协奏](#theme-4) · [七龙珠·金焰并肩](#theme-5) · [EVA·初号机·觉醒](#theme-6) · [葬送的芙莉莲](#theme-7) · [火影忍者·第七班](#theme-8) · [死神·千本樱](#theme-11) · [死神·斩月](#theme-12) · [电锯人 · 人间愿望](#theme-13) · [吉伊卡哇·星夜漫游](#theme-14) · [名侦探柯南 · 月下谜踪 · 4 组场景](#theme-15) · [灰原哀·琥珀微光](#theme-16) · [怪盗基德·月白预告](#theme-17) · [阿拉蕾 · 企鹅村 · 4 组场景](#theme-18) · [七龙珠 · 龟仙流夏日](#theme-19) · [七龙珠·神龙奇旅](#theme-20) · [小林家的龙女仆](#theme-21) · [EVA·二号机·烈焰](#theme-22) · [高达·RX-78-2](#theme-24) · [超能力女儿](#theme-25) · [我叫MT · 部落冒险](#theme-26) · [鬼灭之刃·羁绊同行](#theme-27) · [鬼灭之刃·柱之誓约](#theme-28) · [鬼灭之刃·樱庭恋歌](#theme-29) · [夏目友人帐](#theme-30) · [海贼王](#theme-31) · [圣斗士·天马流星](#theme-32) · [圣斗士·黄金十二宫](#theme-33) · [蜡笔小新·动感日常](#theme-34) · [灌篮高手](#theme-35) · [火影忍者·凯班](#theme-36) · [游戏王·决斗之魂](#theme-37) · [高达·ν高达](#theme-49) · [高达·巴巴托斯](#theme-50) · [高达·自由与正义](#theme-51) · [高达·独角兽觉醒](#theme-52) · [名侦探柯南·大阪同行](#theme-54) · [吉伊卡哇·烘焙小队](#theme-55) · [吉伊卡哇·雨后来信](#theme-56) · [七龙珠·包子山家书](#theme-57) · [七龙珠·布欧甜点屋](#theme-58) · [蜡笔小新·春日部探险队](#theme-61) · [蜡笔小新·野原家的周末](#theme-62) · [我叫MT·美屡的林间手札](#theme-63) · [我叫MT·联盟值日生](#theme-64) · [我叫MT·联盟补给站](#theme-65) · [间谍过家家·福杰家的休息日](#theme-66) · [间谍过家家·伊甸星光](#theme-67) · [间谍过家家·月下密语](#theme-68) · [哆啦A梦·口袋奇遇](#theme-69) · [哆啦A梦·放学后的约定](#theme-70) · [哆啦A梦·星空航路](#theme-71) · [咒术回战·一年级集结](#theme-72) · [咒术回战 · 咒缘纪事](#theme-73) · [咒术回战·同窗并肩](#theme-74) · [角落小伙伴·暖茶小憩](#theme-75) · [角落小伙伴·面包房值日](#theme-76) · [角落小伙伴·雨窗来信](#theme-77) · [胆大党·放学怪谈](#theme-78) · [胆大党·灵能交锋](#theme-79) · [胆大党·夜巡同盟](#theme-80)
+[电锯人·玛奇玛](#theme-2) · [吉伊卡哇·草原野餐](#theme-3) · [名侦探柯南·米花协奏](#theme-4) · [七龙珠·金焰并肩](#theme-5) · [EVA·初号机·觉醒](#theme-6) · [葬送的芙莉莲](#theme-7) · [火影忍者·第七班](#theme-8) · [死神·千本樱](#theme-11) · [死神·斩月](#theme-12) · [电锯人 · 人间愿望](#theme-13) · [吉伊卡哇·星夜漫游](#theme-14) · [名侦探柯南 · 月下谜踪 · 4 组场景](#theme-15) · [灰原哀·琥珀微光](#theme-16) · [怪盗基德·月白预告](#theme-17) · [阿拉蕾 · 企鹅村 · 4 组场景](#theme-18) · [七龙珠 · 龟仙流夏日](#theme-19) · [七龙珠·神龙奇旅](#theme-20) · [小林家的龙女仆](#theme-21) · [EVA·二号机·烈焰](#theme-22) · [高达·RX-78-2 · 4 组场景](#theme-24) · [超能力女儿](#theme-25) · [我叫MT · 部落冒险](#theme-26) · [鬼灭之刃·羁绊同行](#theme-27) · [鬼灭之刃·柱之誓约](#theme-28) · [鬼灭之刃·樱庭恋歌](#theme-29) · [夏目友人帐](#theme-30) · [海贼王](#theme-31) · [圣斗士·天马流星](#theme-32) · [圣斗士·黄金十二宫](#theme-33) · [蜡笔小新·动感日常](#theme-34) · [灌篮高手](#theme-35) · [火影忍者·凯班](#theme-36) · [游戏王·决斗之魂](#theme-37) · [高达·ν高达](#theme-49) · [高达·巴巴托斯](#theme-50) · [高达·自由与正义](#theme-51) · [高达·独角兽觉醒](#theme-52) · [名侦探柯南·大阪同行](#theme-54) · [吉伊卡哇·烘焙小队](#theme-55) · [吉伊卡哇·雨后来信](#theme-56) · [七龙珠·包子山家书](#theme-57) · [七龙珠·布欧甜点屋](#theme-58) · [蜡笔小新·春日部探险队](#theme-61) · [蜡笔小新·野原家的周末](#theme-62) · [我叫MT·美屡的林间手札](#theme-63) · [我叫MT·联盟值日生](#theme-64) · [我叫MT·联盟补给站](#theme-65) · [间谍过家家·福杰家的休息日](#theme-66) · [间谍过家家·伊甸星光](#theme-67) · [间谍过家家·月下密语](#theme-68) · [哆啦A梦·口袋奇遇](#theme-69) · [哆啦A梦·放学后的约定](#theme-70) · [哆啦A梦·星空航路](#theme-71) · [咒术回战·一年级集结](#theme-72) · [咒术回战 · 咒缘纪事](#theme-73) · [咒术回战·同窗并肩](#theme-74) · [角落小伙伴·暖茶小憩](#theme-75) · [角落小伙伴·面包房值日](#theme-76) · [角落小伙伴·雨窗来信](#theme-77) · [胆大党·放学怪谈](#theme-78) · [胆大党·灵能交锋](#theme-79) · [胆大党·夜巡同盟](#theme-80)
 
 **游戏**
 
@@ -340,9 +340,16 @@ Doro 的草莓野餐与在家烘焙，配以草莓奶粉、柔和丁香紫和温
 
 ## 高达·RX-78-2
 
-| 浅色 | 深色 |
-| --- | --- |
-| [![高达·RX-78-2 · 浅色](24-gundam-light.webp)](24-gundam-light.webp) | [![高达·RX-78-2 · 深色](24-gundam-dark.webp)](24-gundam-dark.webp) |
+在「主题与外观」的「轮换」中可以固定或轮换四组场景。切换时主图、横幅、左下物件和侧栏短句同步更新。
+
+| 场景 | 浅色 | 深色 |
+| --- | --- | --- |
+| 元祖待命 | [![元祖待命 · 浅色](24-gundam-light.webp)](24-gundam-light.webp) | [![元祖待命 · 深色](24-gundam-dark.webp)](24-gundam-dark.webp) |
+| 白色基地出击 | [![白色基地出击 · 浅色](24-gundam-catapult-launch-light.webp)](24-gundam-catapult-launch-light.webp) | [![白色基地出击 · 深色](24-gundam-catapult-launch-dark.webp)](24-gundam-catapult-launch-dark.webp) |
+| Side 7 初醒 | [![Side 7 初醒 · 浅色](24-gundam-side-seven-awakening-light.webp)](24-gundam-side-seven-awakening-light.webp) | [![Side 7 初醒 · 深色](24-gundam-side-seven-awakening-dark.webp)](24-gundam-side-seven-awakening-dark.webp) |
+| 赤色彗星相遇 | [![赤色彗星相遇 · 浅色](24-gundam-red-comet-encounter-light.webp)](24-gundam-red-comet-encounter-light.webp) | [![赤色彗星相遇 · 深色](24-gundam-red-comet-encounter-dark.webp)](24-gundam-red-comet-encounter-dark.webp) |
+
+[![四组浅深主图总览](24-gundam-artworks.webp)](24-gundam-artworks.webp)
 
 <a name="theme-25"></a>
 
