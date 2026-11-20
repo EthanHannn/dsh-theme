@@ -165,6 +165,8 @@ artworks: [
 
 `decor` 可覆盖四个构图字段 `wallpaperSize`、`wallpaperPosition`、`heroTranslate`、`heroMaxWidth`，以及双语 `phrases`；其余部分继承原主题。变体通过图片分块加载，运行时只允许覆盖图片和构图变量，不能覆盖配色。原配图、清晰度和四个装饰开关均可继续使用。
 
+`families/dragon-ball-sweets.mjs` 将「七龙珠 · 甜点日常」的四组配图放在同一入口。默认「布欧甜点屋」，其余为「海滨冰站」「胶囊烘焙实验」「破坏神下午茶」。四组使用独立的浅深主图、无角色横幅与左下角物件，设置角色和双语短句跟随场景，文件夹与阅读配色共用。确认总览、原配图和构建记录保存在本地素材目录 `outputs/dragon-ball-sweets-expansion-20261120/`。在仓库根目录用 `uv run --no-project --with pillow --with numpy --with scipy <素材目录>/outputs/dragon-ball-sweets-expansion-20261120/build-dragon-ball-sweets-assets.py` 重建主图、物件和设置角色。重裁横幅时，向 `scripts/build-banners.py` 传入 `dragon-ball-sweets`、`dragon-ball-sweets-boardwalk-ice`、`dragon-ball-sweets-capsule-baking` 与 `dragon-ball-sweets-divine-tea`。
+
 已接入的多图主题可参照 `families/doro-pvz-fog-lantern.mjs`，其中每个变体均提供浅深色主壁纸与对应的左下角物件，并按场景覆盖伙伴短句；横向构图单独调整壁纸宽度，侧栏角色沿用原主题素材。增加素材后运行 `npm run build` 与 `npm run test`，并在 Harness 检查首次应用默认五分钟轮换、自定义配置保留、主图与物件同步、浅深／系统模式、恢复原配图、装饰关闭和窄屏。`tests/artwork-variants.test.mjs` 覆盖构建与分块还原；`tests/preferences.test.mjs` 覆盖偏好迁移、独立计时、暂停、图片覆盖和清理。
 
 `families/makima.mjs` 保留主题与场景的稳定 ID，以「神社密令」为默认配图，并提供「公安日程」「与犬相伴」「电影之约」三款变体。四组浅深色使用八幅独立主图：日间结印／夜间行动、案卷整理／深夜来电、公园遛犬／居家照料、午后赴约／银幕余韵。服装随工作和日常情境变化，保留人物面部、红辫、圈纹眼及原作画风；不以同一主图的亮度调整代替浅深差异。每组分别提供浅深色无角色横幅、左下角物件和场景短句，文件夹与侧栏角色沿用原素材。纸白、朱红、炭黑阅读配色同时用于对应简约主题。新素材及八图对照保存在本地素材目录的 `raw/makima-life-work-20261116/` 与 `outputs/makima-life-work-20261116/`，前版素材保留作比较；通过 `outputs/build-makima-assets.py` 重建正式素材。
