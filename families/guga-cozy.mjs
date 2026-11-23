@@ -4,7 +4,7 @@ import { createVividFamily } from "./create-vivid-family.js";
 const family = createVividFamily({
   id: "guga-cozy",
   signaturePrefix: "guga-cozy",
-  names: { zh: "咕嘎和 Doro · 日常 · 暖阳小日子", en: "Guga & Doro · Daily Life · Cozy Little Days" },
+  names: { zh: "咕嘎和 Doro · 日常 · 独处小日子", en: "Guga & Doro · Daily Life · Little Days of Our Own" },
   phrases: {
     zh: [
       ["咕嘎。吐司烤好了，分你一半。", "咕嘎，今天的太阳暖暖的。"],
@@ -54,5 +54,38 @@ family.decor.wallpaperSize = "min(29vw, 430px, calc(68vh * var(--dsw-pack-wallpa
 family.decor.wallpaperPosition = "right 24px bottom 20px";
 family.decor.heroTranslate = "calc(-0.3 * min(29vw, 430px)) calc(-1 * min(6vh, 60px))";
 family.decor.heroMaxWidth = "calc(100vw - 280px - min(29vw, 430px) - 64px)";
+
+// 合并入口保留稳定标识，各场景沿用原有构图与整套配图。
+family.originalArtworkNames = { zh: "暖阳小日子", en: "Cozy Little Days" };
+family.legacyFamilies = [
+  { id: "doro-happy", artwork: "strawberry-day" },
+];
+family.artworks = [
+  {
+    id: "strawberry-day",
+    names: { zh: "草莓幸福日", en: "Strawberry Happy Days" },
+    decor: {
+      headerArt: {
+        bakedHorizontalFade: true,
+      },
+      phrases: {
+        zh: [
+          ["doro～最大颗的草莓留给你！", "doro，带上小蛋糕去野餐吧。"],
+          ["doro！饼干出炉啦。", "doro～这颗小爱心是你的。"],
+          ["doro～抱着软软的靠垫。", "doro，今天也过得甜甜的。"],
+        ],
+        en: [
+          ["Doro~ The biggest strawberry is for you!", "Doro. Cake packed, picnic time!"],
+          ["Doro! The cookies are ready.", "Doro~ This little heart is yours."],
+          ["Doro~ A soft cushion and a cuddle.", "Doro. Another sweet little day."],
+        ],
+      },
+      wallpaperSize: "min(29vw, 430px, calc(68vh * var(--dsw-pack-wallpaper-ratio, 0.67)), max(220px, calc((100vw - 1200px) / 2 - 24px)))",
+      wallpaperPosition: "right 24px bottom 20px",
+      heroTranslate: "calc(-0.3 * min(29vw, 430px)) calc(-1 * min(6vh, 60px))",
+      heroMaxWidth: "calc(100vw - 280px - min(29vw, 430px) - 64px)",
+    },
+  },
+];
 
 export default family;

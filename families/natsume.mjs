@@ -10,7 +10,7 @@
 //
 // Ships vivid only, like the other IP families.
 
-export default {
+const family = {
   id: "natsume",
   names: { zh: "夏目友人帐", en: "Natsume" },
   styles: ["vivid"],
@@ -18,16 +18,16 @@ export default {
     headerArt: { bakedHorizontalFade: true },
     phrases: {
       zh: [
-        ["把友人帐交出来！", "哼，有本大人在，怕什么。", "我可不是什么普通的猫。"],
-        ["七辻屋的馒头，果然不错。", "这个是我的，不许抢！", "看在点心的份上，就陪你走一趟。"],
-        ["猫咪老师：点心呢？", "猫咪老师：再来一个！"],
-        ["夏目：慢慢来就好。", "夏目：把名字还给你。"],
+        ["伞撑稳一点，别让本大人淋湿了。", "有同行的人，雨天也没那么长。"],
+        ["毛巾再暖一点，就原谅这场雨。", "到了屋檐下，就慢慢歇一会儿。"],
+        ["猫咪老师：雨停之前，点心先拿出来。", "猫咪老师：本大人可不怕这点雨。"],
+        ["夏目：路还长，一起慢慢走吧。", "夏目：先把身上的雨擦干。"],
       ],
       en: [
-        ["Hand over the Book of Friends!", "Hmph, what is there to fear with me here?", "I am no ordinary cat."],
-        ["Nanatsujiya makes excellent manju.", "This one is mine. Paws off!", "For these snacks, I suppose I can come along."],
-        ["Nyanko-sensei: Where are the snacks?", "Nyanko-sensei: One more!"],
-        ["Natsume: Take your time.", "Natsume: Your name belongs to you."],
+        ["Keep that umbrella steady. I refuse to get wet.", "Rainy roads feel shorter with company."],
+        ["A warmer towel might make up for this rain.", "Rest a while now that we are under the eaves."],
+        ["Nyanko-sensei: Bring out the snacks before the rain stops.", "Nyanko-sensei: A little rain cannot scare me."],
+        ["Natsume: There is no hurry. Let us walk together.", "Natsume: Let us dry you off first."],
       ],
     },
   },
@@ -270,3 +270,90 @@ export default {
     },
   },
 };
+
+// 首组替换旧独立猫图，家族、皮肤和抹茶简约配对保持原标识。
+family.originalArtworkNames = { zh: "雨宿同行", en: "Sheltering Together" };
+family.decor.wallpaperSize = "min(30vw, 380px, calc(62vh * var(--dsw-pack-wallpaper-ratio, 0.85)))";
+family.decor.wallpaperPosition = "right 18px bottom 14px";
+family.decor.heroTranslate = "calc(-0.3 * min(30vw, 380px)) calc(-1 * min(6vh, 60px))";
+family.decor.heroMaxWidth = "calc(100vw - 280px - min(30vw, 380px) - 64px)";
+family.artworks = [
+  {
+    id: "engawa-rest",
+    names: { zh: "缘侧小憩", en: "Engawa Rest" },
+    decor: {
+      headerArt: { bakedHorizontalFade: true },
+      wallpaperSize: "min(34vw, 420px, calc(60vh * var(--dsw-pack-wallpaper-ratio, 1)))",
+      wallpaperPosition: "right 18px bottom 14px",
+      heroTranslate: "calc(-0.3 * min(34vw, 420px)) calc(-1 * min(6vh, 60px))",
+      heroMaxWidth: "calc(100vw - 280px - min(34vw, 420px) - 64px)",
+      phrases: {
+        zh: [
+          ["这块点心，本大人先尝。", "你也坐下来，茶还温着。"],
+          ["午睡的时候，不许偷吃。", "风铃响了，就再歇一小会儿。"],
+          ["猫咪老师：再来一个馒头。", "猫咪老师：今天的缘侧归我了。"],
+          ["夏目：留一点给大家吧。", "夏目：这样的下午，真好。"],
+        ],
+        en: [
+          ["I shall taste this one first.", "Sit down. The tea is still warm."],
+          ["No stealing snacks while I nap.", "One more rest beneath the wind chime."],
+          ["Nyanko-sensei: One more manju.", "Nyanko-sensei: This porch is mine today."],
+          ["Natsume: Save some for everyone.", "Natsume: What a peaceful afternoon."],
+        ],
+      },
+    },
+  },
+  {
+    id: "forest-names",
+    names: { zh: "森林还名", en: "Names in the Forest" },
+    decor: {
+      headerArt: { bakedHorizontalFade: true },
+      wallpaperSize: "min(28vw, 350px, calc(64vh * var(--dsw-pack-wallpaper-ratio, 0.8)))",
+      wallpaperPosition: "right 18px bottom 14px",
+      heroTranslate: "calc(-0.3 * min(28vw, 350px)) calc(-1 * min(6vh, 60px))",
+      heroMaxWidth: "calc(100vw - 280px - min(28vw, 350px) - 64px)",
+      phrases: {
+        zh: [
+          ["名字还完了，就回家吃饭。", "跟紧本大人，别走错路。"],
+          ["这条石阶，我认得。", "别光顾着看萤火，脚下也要看。"],
+          ["猫咪老师：本大人就在前面。", "猫咪老师：回去该有点心了吧。"],
+          ["夏目：把属于你的名字还给你。", "夏目：回家的路，也有人陪着。"],
+        ],
+        en: [
+          ["Return the name, then home for dinner.", "Stay close. I know the way."],
+          ["I remember these stone steps.", "Watch your feet as well as the fireflies."],
+          ["Nyanko-sensei: I am right ahead.", "Nyanko-sensei: There had better be snacks at home."],
+          ["Natsume: Your name belongs to you.", "Natsume: There is company on the way home, too."],
+        ],
+      },
+    },
+  },
+  {
+    id: "madara-companion",
+    names: { zh: "斑影同行", en: "Alongside Madara" },
+    decor: {
+      headerArt: { bakedHorizontalFade: true },
+      // 白狐全身与尾部展开时采用横向占位，保留与输入区的距离。
+      wallpaperSize: "min(40vw, 520px, calc(52vh * var(--dsw-pack-wallpaper-ratio, 1.5)))",
+      wallpaperPosition: "right 16px bottom 14px",
+      heroTranslate: "calc(-0.3 * min(40vw, 520px)) calc(-1 * min(6vh, 60px))",
+      heroMaxWidth: "calc(100vw - 280px - min(40vw, 520px) - 64px)",
+      phrases: {
+        zh: [
+          ["抓稳了，本大人要走了。", "有我在，就不必害怕。"],
+          ["偶尔看看远处，也不算浪费时间。", "这片草坡，倒适合歇脚。"],
+          ["猫咪老师：这才是本大人的本事。", "猫咪老师：回去以后记得买点心。"],
+          ["夏目：谢谢你，一直在这里。", "夏目：原来从这里看，路会这样远。"],
+        ],
+        en: [
+          ["Hold tight. We are leaving.", "There is nothing to fear while I am here."],
+          ["Looking into the distance is time well spent.", "This grassy slope will do for a rest."],
+          ["Nyanko-sensei: Now you see what I can do.", "Nyanko-sensei: Remember the snacks afterward."],
+          ["Natsume: Thank you for always being here.", "Natsume: The road looks so long from up here."],
+        ],
+      },
+    },
+  },
+];
+
+export default family;

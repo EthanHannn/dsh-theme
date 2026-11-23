@@ -1,6 +1,6 @@
 {
   "id": "sumikko-teahouse-light-vivid",
-  "name": "Sumikko Gurashi · Cozy Tea Corner Light",
+  "name": "Sumikko Gurashi · Cozy Corner Days Light",
   "colorScheme": "light",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #FCF7ED 50%, #F2EDE4)",

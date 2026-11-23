@@ -1,6 +1,6 @@
 {
   "id": "sumikko-teahouse-minimal-light",
-  "name": "Sumikko Gurashi · Cozy Tea Corner · Minimal Light",
+  "name": "Sumikko Gurashi · Cozy Corner Days · Minimal Light",
   "colorScheme": "light",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #FCF7ED 50%, #F2EDE4)",

@@ -78,11 +78,12 @@ family.decor.wallpaperPosition = "right 16px bottom 12px";
 family.decor.heroTranslate = "calc(-0.3 * min(32vw, 460px)) calc(-1 * min(6vh, 60px))";
 family.decor.heroMaxWidth = "calc(100vw - 280px - min(32vw, 460px) - 64px)";
 
-// 场景整套切换，稳定入口与阅读配色由集合统一保留。
+// 合并入口保留稳定标识，各场景沿用原有构图与整套配图。
 family.originalArtworkNames = { zh: "星露药房", en: "Dewdrop Apothecary" };
 family.legacyFamilies = [
   { id: "doro-mage-cloud-bakery", artwork: "cloud-bakery" },
   { id: "doro-mage-moonmail", artwork: "moonmail" },
+  { id: "doro-mage-starmoon-atelier", artwork: "starmoon-atelier" },
 ];
 family.artworks = [
   {
@@ -131,6 +132,33 @@ family.artworks = [
           ["Doro! One little hello, addressed to you.", "Doro~ Small mailbag, so many warm thoughts."],
           ["Doro~ Little broom, fly gently tonight.", "Doro! Next stop: that warmly lit window."],
           ["Doro~ The very last letter arrived safely.", "Doro! Empty mailbag. Such a full day."],
+        ],
+      },
+      wallpaperSize: "min(32vw, 460px, calc(68vh * var(--dsw-pack-wallpaper-ratio, 1)), max(250px, calc((100vw - 1160px) / 2 - 24px)))",
+      wallpaperPosition: "right 16px bottom 12px",
+      heroTranslate: "calc(-0.3 * min(32vw, 460px)) calc(-1 * min(6vh, 60px))",
+      heroMaxWidth: "calc(100vw - 280px - min(32vw, 460px) - 64px)",
+    },
+  },
+  {
+    id: "starmoon-atelier",
+    names: { zh: "星月工坊", en: "Starmoon Atelier" },
+    decor: {
+      headerArt: {
+        bakedHorizontalFade: true,
+      },
+      phrases: {
+        zh: [
+          ["doro～把这颗小星星，嵌进月亮里。", "doro？再转半圈，星晶就坐稳啦。"],
+          ["doro！白天做的小月灯，终于亮啦。", "doro～留一小格月光，陪你到很晚。"],
+          ["doro？这条星线，是不是通往月亮？", "doro～星镜调好，今晚慢慢看。"],
+          ["doro～帽尖也困了，今天先看到这里。", "doro！星图收好，明晚还来呀。"],
+        ],
+        en: [
+          ["Doro~ A little star, tucked inside the moon.", "Doro? Half a turn. The star crystal fits."],
+          ["Doro! The moon lamp we made is glowing!", "Doro~ A little moonlight to keep you company."],
+          ["Doro? Does this star trail lead to the moon?", "Doro~ Telescope ready. Take your time tonight."],
+          ["Doro~ Even my hat tip is sleepy now.", "Doro! Charts packed. See you tomorrow night."],
         ],
       },
       wallpaperSize: "min(32vw, 460px, calc(68vh * var(--dsw-pack-wallpaper-ratio, 1)), max(250px, calc((100vw - 1160px) / 2 - 24px)))",

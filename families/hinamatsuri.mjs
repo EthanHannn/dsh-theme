@@ -1,35 +1,74 @@
-// Hinamatsuri — Hina's pale hair blue, salmon-roe red, hishi-mochi green,
-// and doll-festival gold on warm rice paper; the dark skin is the night
-// festival: deep indigo water with lantern-warm accents.
-//
-//   rice paper        #FAF5EF   (paper, light theme)
-//   Hina blue         #3E6E9E   (brand, light) / #9CC6E8 (brand, dark)
-//   ikura red         #B14A2E   (signature accent) / #F09A78 (dark)
-//   hishi green       #4F7D5A   (success) / #8FC9A2 (dark)
-//   night indigo      #2C313C   (ink) / #0D1420 (ground)
-//
-// Ships vivid only, like the other IP families.
+// 四组场景沿用米纸、雏蓝与鲑鱼子红，深色以靛蓝承托画面。
+// 按透明主图的宽高比限高，兼顾双人横景与单人竖景。
+const wallpaperSize = "min(34vw, 440px, calc(47vh * var(--dsw-pack-wallpaper-ratio, 1)), max(220px, calc((100vw - 1200px) / 2 - 24px)))";
 
 export default {
   id: "hinamatsuri",
   names: { zh: "超能力女儿", en: "Hinamatsuri" },
   styles: ["vivid"],
+  originalArtworkNames: { zh: "新田家的日常", en: "Life at Nitta’s" },
+  artworks: [
+    {
+      id: "anzu",
+      names: { zh: "杏子的归处", en: "A Place for Anzu" },
+      decor: {
+        phrases: {
+          zh: [
+            ["杏子：这个罐子也能换钱。", "杏子：再捡一个就回去。"],
+            ["杏子：热面来啦，碗有点烫！", "杏子：今天把柜台也擦干净了。"],
+          ],
+          en: [
+            ["Anzu: This can is worth something too.", "Anzu: One more, then I’ll head back."],
+            ["Anzu: Noodles are ready. The bowl is hot!", "Anzu: I cleaned the counter today too."],
+          ],
+        },
+      },
+    },
+    {
+      id: "hitomi",
+      names: { zh: "三岛瞳的两班", en: "Hitomi’s Two Shifts" },
+      decor: {
+        phrases: {
+          zh: [
+            ["瞳：我先把练习本送去办公室。", "瞳：这张纸是谁落下的？"],
+            ["诗子：账本在这儿，零钱数完了吗？", "诗子：好，今天就到这里。"],
+          ],
+          en: [
+            ["Hitomi: I’ll take these to the staff room.", "Hitomi: Did someone drop this page?"],
+            ["Utako: Here’s the ledger. Done counting the change?", "Utako: All right, we’re done for today."],
+          ],
+        },
+      },
+    },
+    {
+      id: "psychic",
+      names: { zh: "超能力少女", en: "Psychic Girls" },
+      decor: {
+        phrases: {
+          zh: [
+            ["杏子：这次我一定赢！", "杏子：石头剪刀布，再来一次！"],
+            ["真绪：来，今天多了一个椰子。", "真绪：你们俩也说句话嘛。"],
+          ],
+          en: [
+            ["Anzu: I’m winning this time!", "Anzu: Rock, paper, scissors. Again!"],
+            ["Mao: Look, we have another coconut today.", "Mao: Come on, you two. Say something."],
+          ],
+        },
+      },
+    },
+  ],
   decor: {
     headerArt: { bakedHorizontalFade: true },
-    // Keep the seated lunch and closing-time portraits modest on both modes.
-    wallpaperSize: "min(30vw, 380px, 40vh)",
+    wallpaperSize,
+    wallpaperPosition: "right 24px bottom 16px",
     phrases: {
       zh: [
-        ["……哦。", "新田，什么时候吃饭？", "今天也不想动。"],
-        ["鱼子饭。我的。", "再来一碗。", "吃完这个再说。"],
-        ["瞳：怎么又变成我来负责了……", "瞳：先把杯子擦干净。"],
-        ["杏子：热腾腾的，趁热吃吧。", "杏子：今天也很充实呢。"],
+        ["雏：新田，什么时候吃饭？", "雏：鱼子饭。我的。"],
+        ["新田：雏，慢慢把那个壶放下。", "新田：先把手腾出来再说。"],
       ],
       en: [
-        ["...Oh.", "Nitta, when do we eat?", "I don't feel like moving today either."],
-        ["Salmon roe rice. Mine.", "Another bowl.", "Let me finish this first."],
-        ["Hitomi: How am I in charge again?", "Hitomi: First, polish the glasses."],
-        ["Anzu: Eat while it is warm.", "Anzu: Another good day."],
+        ["Hina: Nitta, when do we eat?", "Hina: Salmon roe rice. Mine."],
+        ["Nitta: Hina, put that vase down slowly.", "Nitta: Give me a second to free my hands."],
       ],
     },
   },

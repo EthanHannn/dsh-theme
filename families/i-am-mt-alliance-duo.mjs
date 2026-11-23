@@ -4,10 +4,7 @@ import { createVividFamily } from "./create-vivid-family.js";
 const family = createVividFamily({
   "id": "i-am-mt-alliance-duo",
   "signaturePrefix": "i-am-mt-alliance-duo",
-  "names": {
-    "zh": "我叫MT·联盟值日生",
-    "en": "I Am MT · Alliance Watch Partners",
-  },
+  names: { zh: "我叫MT · 联盟日记", en: "I Am MT · Alliance Diaries" },
   "phrases": {
     "zh": [
       [
@@ -60,5 +57,38 @@ family.decor.wallpaperSize = "min(36vw, 460px, 46vh)";
 family.decor.wallpaperPosition = "right 24px bottom 20px";
 family.decor.heroTranslate = "calc(-0.3 * min(36vw, 460px, 46vh)) calc(-1 * min(6vh, 60px))";
 family.decor.heroMaxWidth = "calc(100vw - 280px - min(36vw, 460px, 46vh) - 64px)";
+
+// 合并入口保留稳定标识，各场景沿用原有构图与整套配图。
+family.originalArtworkNames = { zh: "联盟值日生", en: "Alliance Watch Partners" };
+family.legacyFamilies = [
+  { id: "i-am-mt-alliance-camp", artwork: "supply-camp" },
+];
+family.artworks = [
+  {
+    id: "supply-camp",
+    names: { zh: "联盟补给站", en: "Alliance Camp Break" },
+    decor: {
+      headerArt: {
+        bakedHorizontalFade: true,
+      },
+      phrases: {
+        zh: [
+          ["方砖：补给齐了，法力也快回来了。"],
+          ["大小姐：每个人都有份，别抢。"],
+          ["暗夜男：下一站，我来带路。"],
+        ],
+        en: [
+          ["Fangzhuan: Supplies ready. Mana almost back."],
+          ["Daxiaojie: There is enough for everyone."],
+          ["Anyenan: I will lead the next stretch."],
+        ],
+      },
+      wallpaperSize: "min(36vw, 460px, 46vh)",
+      wallpaperPosition: "right 24px bottom 20px",
+      heroTranslate: "calc(-0.3 * min(36vw, 460px, 46vh)) calc(-1 * min(6vh, 60px))",
+      heroMaxWidth: "calc(100vw - 280px - min(36vw, 460px, 46vh) - 64px)",
+    },
+  },
+];
 
 export default family;

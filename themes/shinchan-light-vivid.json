@@ -1,6 +1,6 @@
 {
   "id": "shinchan-light-vivid",
-  "name": "Shin-chan · Everyday Adventures Light",
+  "name": "Shin-chan · Days in Kasukabe Light",
   "colorScheme": "light",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #FDF6E9 50%, #F1E7D2)",

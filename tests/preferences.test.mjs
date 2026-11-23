@@ -349,10 +349,21 @@ test("Star Rail legacy entries retain their selected scene, mode and collection 
   }
 });
 
-test("Conan and Doraemon entrances retain preferences after merging", async () => {
+test("sibling collections migrate every retired entrance and its minimal pair", async () => {
   const groups = [
-    ["conan", [["conan-jewel", "jewel-mystery"]]],
+    ["chiikawa-picnic", [["chiikawa-stargaze", "stargaze"], ["chiikawa-bakery", "bakery"], ["chiikawa-rainy", "rainy-letter"]]],
+    ["sumikko-teahouse", [["sumikko-bakery", "bakery"], ["sumikko-rainy", "rainy-letter"]]],
     ["doraemon-pocket", [["doraemon-afterschool", "afterschool"], ["doraemon-starlight", "starlight"]]],
+    ["shinchan", [["shinchan-family", "family-weekend"], ["shinchan-friends", "exploration-team"]], "beeswax"],
+    ["dandadan-afterschool", [["dandadan-awakening", "awakening"], ["dandadan-nightwatch", "nightwatch"]]],
+    ["spy-family-forgers", [["spy-family-mission", "moonlit-mission"]]],
+    ["i-am-mt-alliance-duo", [["i-am-mt-alliance-camp", "supply-camp"]]],
+    ["hok-diao-chan", [["hok-diaochan-fumeng", "fragrant-dream"]]],
+    ["doro-mage-potions", [["doro-mage-starmoon-atelier", "starmoon-atelier"]]],
+    ["conan", [["conan-jewel", "jewel-mystery"]]],
+    ["doro-pvz-sunseed", [["doro-pvz-pea-practice", "pea-practice"], ["doro-pvz-walnut-workshop", "walnut-workshop"], ["doro-pvz-magnet-salvage", "magnet-salvage"]]],
+    ["doro-pvz-coffee-wakeup", [["doro-pvz-kernel-butter", "kernel-butter"], ["doro-pvz-winter-melon", "winter-melon"]]],
+    ["guga-cozy", [["doro-happy", "strawberry-day"]]],
   ];
   for (const [target, sources, minimal = `${target}-minimal`] of groups) {
     const families = await Promise.all([target, minimal].map(async (id) => (await import(`../families/${id}.mjs`)).default));

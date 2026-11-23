@@ -14,9 +14,9 @@
 // Light-theme brand red is the brightest value that still holds WCAG AA
 // against the cream paper.
 
-export default {
+const family = {
   id: "shinchan",
-  names: { zh: "蜡笔小新·动感日常", en: "Shin-chan · Everyday Adventures" },
+  names: { zh: "蜡笔小新 · 春日部日常", en: "Shin-chan · Days in Kasukabe" },
   // vivid only, matching the other IP families — if a restrained take on
   // this palette is ever wanted, it ships as its own neutral family
   styles: ["vivid"],
@@ -291,3 +291,72 @@ export default {
     },
   },
 };
+
+// 合并入口保留稳定标识，各场景沿用原有构图与整套配图。
+family.originalArtworkNames = { zh: "动感日常", en: "Everyday Adventures" };
+family.legacyFamilies = [
+  { id: "shinchan-family", artwork: "family-weekend" },
+  { id: "shinchan-friends", artwork: "exploration-team" },
+];
+family.artworks = [
+  {
+    id: "family-weekend",
+    names: { zh: "野原家的周末", en: "Nohara Family Weekend" },
+    decor: {
+      headerArt: {
+        bakedHorizontalFade: true,
+      },
+      phrases: {
+        zh: [
+          ["小新：周末就要慢慢过嘛。"],
+          ["广志：一家人一起，就挺好。"],
+          ["美冴：便当带好了，准备出门。"],
+          ["小葵：哒呀呀！"],
+          ["小白：汪！"],
+        ],
+        en: [
+          ["Shinchan: Weekends are for taking it easy."],
+          ["Hiroshi: Together is a good place to be."],
+          ["Misae: Lunch packed. Ready to go!"],
+          ["Himawari: Da-ya-ya!"],
+          ["Shiro: Woof!"],
+        ],
+      },
+      wallpaperSize: "min(36vw, 460px, 46vh)",
+      wallpaperPosition: "right 24px bottom 20px",
+      heroTranslate: "calc(-0.3 * min(36vw, 460px, 46vh)) calc(-1 * min(6vh, 60px))",
+      heroMaxWidth: "calc(100vw - 280px - min(36vw, 460px, 46vh) - 64px)",
+    },
+  },
+  {
+    id: "exploration-team",
+    names: { zh: "春日部探险队", en: "Kasukabe Explorers" },
+    decor: {
+      headerArt: {
+        bakedHorizontalFade: true,
+      },
+      phrases: {
+        zh: [
+          ["小新：春日部探险队，出发！"],
+          ["风间：先看清楚地图啦。"],
+          ["妮妮：这次轮到我来安排。"],
+          ["正男：大家等等我嘛。"],
+          ["阿呆：这块石头，很特别。"],
+        ],
+        en: [
+          ["Shinchan: Kasukabe explorers, move out!"],
+          ["Kazama: Read the map first!"],
+          ["Nene: My turn to make the plan."],
+          ["Masao: Wait for me, everyone!"],
+          ["Bo: This stone is special."],
+        ],
+      },
+      wallpaperSize: "min(36vw, 460px, 46vh)",
+      wallpaperPosition: "right 24px bottom 20px",
+      heroTranslate: "calc(-0.3 * min(36vw, 460px, 46vh)) calc(-1 * min(6vh, 60px))",
+      heroMaxWidth: "calc(100vw - 280px - min(36vw, 460px, 46vh) - 64px)",
+    },
+  },
+];
+
+export default family;

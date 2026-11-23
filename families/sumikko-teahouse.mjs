@@ -4,10 +4,7 @@ import { createVividFamily } from "./create-vivid-family.js";
 const family = createVividFamily({
   "id": "sumikko-teahouse",
   "signaturePrefix": "sumikko-teahouse",
-  "names": {
-    "zh": "角落小伙伴·暖茶小憩",
-    "en": "Sumikko Gurashi · Cozy Tea Corner",
-  },
+  names: { zh: "角落小伙伴 · 角落慢时光", en: "Sumikko Gurashi · Cozy Corner Days" },
   "phrases": {
     "zh": [
       [
@@ -72,5 +69,64 @@ family.decor.wallpaperSize = "min(29vw, 430px, calc(68vh * var(--dsw-pack-wallpa
 family.decor.wallpaperPosition = "right 24px bottom 20px";
 family.decor.heroTranslate = "calc(-0.3 * min(29vw, 430px)) calc(-1 * min(6vh, 60px))";
 family.decor.heroMaxWidth = "calc(100vw - 280px - min(29vw, 430px) - 64px)";
+
+// 合并入口保留稳定标识，各场景沿用原有构图与整套配图。
+family.originalArtworkNames = { zh: "暖茶小憩", en: "Cozy Tea Corner" };
+family.legacyFamilies = [
+  { id: "sumikko-bakery", artwork: "bakery" },
+  { id: "sumikko-rainy", artwork: "rainy-letter" },
+];
+family.artworks = [
+  {
+    id: "bakery",
+    names: { zh: "面包房值日", en: "Bakery Helpers" },
+    decor: {
+      headerArt: {
+        bakedHorizontalFade: true,
+      },
+      phrases: {
+        zh: [
+          ["炸猪排：面包还热着呢。", "今天也有我的一份吗？"],
+          ["炸虾尾：这颗小面包给你。", "围裙已经收好了。"],
+          ["猫咪：慢慢揉，别着急。", "最后一盘也烤好了。"],
+        ],
+        en: [
+          ["Tonkatsu: The bread is still warm.", "Is there a little share for me?"],
+          ["Ebifurai: This little roll is for you.", "The apron is put away."],
+          ["Neko: Knead slowly, there is no rush.", "The last tray is ready too."],
+        ],
+      },
+      wallpaperSize: "min(29vw, 430px, calc(68vh * var(--dsw-pack-wallpaper-ratio, 0.67)), max(220px, calc((100vw - 1200px) / 2 - 24px)))",
+      wallpaperPosition: "right 24px bottom 20px",
+      heroTranslate: "calc(-0.3 * min(29vw, 430px)) calc(-1 * min(6vh, 60px))",
+      heroMaxWidth: "calc(100vw - 280px - min(29vw, 430px) - 64px)",
+    },
+  },
+  {
+    id: "rainy-letter",
+    names: { zh: "雨窗来信", en: "Rainy Window Letters" },
+    decor: {
+      headerArt: {
+        bakedHorizontalFade: true,
+      },
+      phrases: {
+        zh: [
+          ["蜥蜴：雨停了就出发。", "信要好好收着。"],
+          ["白熊：收到一封暖暖的信。", "这里可以躲一会儿雨。"],
+          ["企鹅？：毯子分你一半。", "等雨小一点再走吧。"],
+        ],
+        en: [
+          ["Tokage: We can leave when the rain stops.", "Keep the letter safe."],
+          ["Shirokuma: A letter full of warmth.", "You can shelter here for a while."],
+          ["Penguin?: Half the blanket is yours.", "Let us wait for lighter rain."],
+        ],
+      },
+      wallpaperSize: "min(29vw, 430px, calc(68vh * var(--dsw-pack-wallpaper-ratio, 0.67)), max(220px, calc((100vw - 1200px) / 2 - 24px)))",
+      wallpaperPosition: "right 24px bottom 20px",
+      heroTranslate: "calc(-0.3 * min(29vw, 430px)) calc(-1 * min(6vh, 60px))",
+      heroMaxWidth: "calc(100vw - 280px - min(29vw, 430px) - 64px)",
+    },
+  },
+];
 
 export default family;

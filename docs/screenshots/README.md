@@ -18,23 +18,23 @@
 
 [咒术回战 · 无量空处](#theme-134) · [JOJO · 星尘远征](#theme-137) · [JOJO · 杜王町晴日](#theme-138) · [JOJO · 黄金之风](#theme-139)
 
-[电锯人·玛奇玛](#theme-2) · [吉伊卡哇·草原野餐](#theme-3) · [名侦探柯南·米花协奏](#theme-4) · [七龙珠·金焰并肩](#theme-5) · [EVA·初号机·觉醒](#theme-6) · [葬送的芙莉莲](#theme-7) · [火影忍者·第七班](#theme-8) · [死神·千本樱](#theme-11) · [死神·斩月](#theme-12) · [电锯人 · 人间愿望](#theme-13) · [吉伊卡哇·星夜漫游](#theme-14) · [名侦探柯南 · 月下谜踪 · 4 组场景](#theme-15) · [灰原哀·琥珀微光](#theme-16) · [怪盗基德·月白预告](#theme-17) · [阿拉蕾 · 企鹅村 · 4 组场景](#theme-18) · [七龙珠 · 龟仙流夏日](#theme-19) · [七龙珠·神龙奇旅](#theme-20) · [小林家的龙女仆](#theme-21) · [EVA·二号机·烈焰](#theme-22) · [高达·RX-78-2 · 4 组场景](#theme-24) · [超能力女儿](#theme-25) · [我叫MT · 部落冒险](#theme-26) · [鬼灭之刃·羁绊同行](#theme-27) · [鬼灭之刃·柱之誓约](#theme-28) · [鬼灭之刃·樱庭恋歌](#theme-29) · [夏目友人帐](#theme-30) · [海贼王 · 4 组场景](#theme-31) · [圣斗士·天马流星](#theme-32) · [圣斗士·黄金十二宫](#theme-33) · [蜡笔小新·动感日常](#theme-34) · [灌篮高手 · 4 组场景](#theme-35) · [火影忍者·凯班](#theme-36) · [游戏王·决斗之魂](#theme-37) · [高达·ν高达](#theme-49) · [高达·巴巴托斯](#theme-50) · [高达·自由与正义](#theme-51) · [高达·独角兽觉醒](#theme-52) · [名侦探柯南·大阪同行](#theme-54) · [吉伊卡哇·烘焙小队](#theme-55) · [吉伊卡哇·雨后来信](#theme-56) · [七龙珠·包子山家书](#theme-57) · [七龙珠 · 甜点日常 · 4 组场景](#theme-58) · [蜡笔小新·春日部探险队](#theme-61) · [蜡笔小新·野原家的周末](#theme-62) · [我叫MT·美屡的林间手札](#theme-63) · [我叫MT·联盟值日生](#theme-64) · [我叫MT·联盟补给站](#theme-65) · [间谍过家家·福杰家的休息日](#theme-66) · [间谍过家家·伊甸星光](#theme-67) · [间谍过家家·月下密语](#theme-68) · [哆啦A梦·口袋奇遇](#theme-69) · [哆啦A梦·放学后的约定](#theme-70) · [哆啦A梦·星空航路](#theme-71) · [咒术回战·一年级集结](#theme-72) · [咒术回战 · 咒缘纪事](#theme-73) · [咒术回战·同窗并肩](#theme-74) · [角落小伙伴·暖茶小憩](#theme-75) · [角落小伙伴·面包房值日](#theme-76) · [角落小伙伴·雨窗来信](#theme-77) · [胆大党·放学怪谈](#theme-78) · [胆大党·灵能交锋](#theme-79) · [胆大党·夜巡同盟](#theme-80)
+[电锯人·玛奇玛](#theme-2) · [吉伊卡哇 · 小小生活 · 4 组场景](#theme-3) · [名侦探柯南·米花协奏](#theme-4) · [七龙珠·金焰并肩](#theme-5) · [EVA·初号机·觉醒](#theme-6) · [葬送的芙莉莲](#theme-7) · [火影忍者·第七班](#theme-8) · [死神·千本樱](#theme-11) · [死神·斩月](#theme-12) · [电锯人 · 人间愿望](#theme-13) · [名侦探柯南 · 月下谜踪 · 4 组场景](#theme-15) · [灰原哀·琥珀微光](#theme-16) · [怪盗基德·月白预告](#theme-17) · [阿拉蕾 · 企鹅村 · 4 组场景](#theme-18) · [七龙珠 · 龟仙流夏日](#theme-19) · [七龙珠·神龙奇旅](#theme-20) · [小林家的龙女仆](#theme-21) · [EVA·二号机·烈焰](#theme-22) · [高达·RX-78-2 · 4 组场景](#theme-24) · [超能力女儿 · 4 组场景](#theme-25) · [我叫MT · 部落冒险](#theme-26) · [鬼灭之刃·羁绊同行](#theme-27) · [鬼灭之刃·柱之誓约](#theme-28) · [鬼灭之刃·樱庭恋歌](#theme-29) · [夏目友人帐](#theme-30) · [海贼王 · 4 组场景](#theme-31) · [圣斗士·天马流星](#theme-32) · [圣斗士·黄金十二宫](#theme-33) · [蜡笔小新 · 春日部日常 · 3 组场景](#theme-34) · [灌篮高手 · 4 组场景](#theme-35) · [火影忍者·凯班](#theme-36) · [游戏王·决斗之魂](#theme-37) · [高达·ν高达](#theme-49) · [高达·巴巴托斯](#theme-50) · [高达·自由与正义](#theme-51) · [高达·独角兽觉醒](#theme-52) · [名侦探柯南·大阪同行](#theme-54) · [七龙珠·包子山家书](#theme-57) · [七龙珠 · 甜点日常 · 4 组场景](#theme-58) · [我叫MT·美屡的林间手札](#theme-63) · [我叫MT · 联盟日记 · 2 组场景](#theme-64) · [间谍过家家 · 福杰一家 · 2 组场景](#theme-66) · [间谍过家家·伊甸星光](#theme-67) · [哆啦A梦 · 奇妙同行 · 3 组场景](#theme-69) · [咒术回战·一年级集结](#theme-72) · [咒术回战 · 咒缘纪事](#theme-73) · [咒术回战·同窗并肩](#theme-74) · [角落小伙伴 · 角落慢时光 · 3 组场景](#theme-75) · [胆大党 · 怪奇同盟 · 3 组场景](#theme-78)
 
 **游戏**
 
-[王者荣耀·云阙长歌](#theme-101) · [王者荣耀·花月幻境](#theme-102) · [王者荣耀·破晓机动](#theme-103) · [王者荣耀·孙悟空·无相](#theme-104) · [王者荣耀·貂蝉·馥梦繁花](#theme-105)
+[王者荣耀·云阙长歌](#theme-101) · [王者荣耀·花月幻境](#theme-102) · [王者荣耀·破晓机动](#theme-103) · [王者荣耀·孙悟空·无相](#theme-104)
 
-[王者荣耀·绝世舞姬](#theme-9) · [魔兽世界·血精灵](#theme-10) · [炉石传说·冰霜法师](#theme-38) · [炉石传说·冰冠王座](#theme-39) · [王者荣耀·青莲剑仙](#theme-40) · [英雄联盟·九尾妖狐](#theme-41) · [英雄联盟·爆爆火花](#theme-42) · [我的世界](#theme-43) · [守望先锋·守护天使](#theme-44) · [守望先锋·时间跃迁](#theme-45) · [魔兽世界·矮人](#theme-46) · [魔兽世界·兽人战士](#theme-47) · [魔兽世界·牛头人德鲁伊](#theme-48) · [英雄联盟·艾欧尼亚茶会](#theme-59) · [英雄联盟·德玛西亚巡礼](#theme-60) · [原神·枫丹茶会](#theme-81) · [原神·净善书庭](#theme-82) · [原神·鸣神花信](#theme-83) · [崩坏：星穹铁道 · 四组场景](#theme-84) · [绝区零·六分街委托](#theme-90) · [绝区零·维多利亚茶歇](#theme-91) · [绝区零·六课雪夜](#theme-92) · [黑神话：悟空·古寺行旅](#theme-93) · [黑神话：悟空·梅山雪誓](#theme-94) · [黑神话：悟空·齐天金甲](#theme-95)
+[王者荣耀 · 貂蝉 · 花间舞梦 · 2 组场景](#theme-9) · [魔兽世界·血精灵](#theme-10) · [炉石传说·冰霜法师](#theme-38) · [炉石传说·冰冠王座](#theme-39) · [王者荣耀·青莲剑仙](#theme-40) · [英雄联盟·九尾妖狐](#theme-41) · [英雄联盟·爆爆火花](#theme-42) · [我的世界](#theme-43) · [守望先锋·守护天使](#theme-44) · [守望先锋·时间跃迁](#theme-45) · [魔兽世界·矮人](#theme-46) · [魔兽世界·兽人战士](#theme-47) · [魔兽世界·牛头人德鲁伊](#theme-48) · [英雄联盟·艾欧尼亚茶会](#theme-59) · [英雄联盟·德玛西亚巡礼](#theme-60) · [原神·枫丹茶会](#theme-81) · [原神·净善书庭](#theme-82) · [原神·鸣神花信](#theme-83) · [崩坏：星穹铁道 · 四组场景](#theme-84) · [绝区零·六分街委托](#theme-90) · [绝区零·维多利亚茶歇](#theme-91) · [绝区零·六课雪夜](#theme-92) · [黑神话：悟空 · 山河四劫 · 4 组场景](#theme-93) · [黑神话：悟空 · 天命西行 · 4 组场景](#theme-94)
 
 **其他**
 
 咕嘎和 Doro · 江湖：[仗剑同行 · 四组场景](#theme-1)
 
-咕嘎和 Doro · 日常：[暖阳小日子](#theme-96) · [草莓幸福日](#theme-97) · [相伴小日子 · 六组场景](#theme-98)
+咕嘎和 Doro · 日常：[独处小日子 · 2 组场景](#theme-96) · [相伴小日子 · 六组场景](#theme-98)
 
-咕嘎和 Doro · 植物大战僵尸：[庭院守卫队 · 四组场景](#theme-109) · [阳光种子铺](#theme-119) · [雾庭菇灯](#theme-120) · [坚果修补铺](#theme-121) · [豌豆练习场](#theme-126) · [冰瓜凉饮铺](#theme-127) · [磁菇回收站](#theme-128) · [南瓜守护屋](#theme-130) · [香蒲雨池](#theme-131) · [玉米黄油坊](#theme-132) · [咖啡唤醒站](#theme-133)
+咕嘎和 Doro · 植物大战僵尸：[庭院守卫队 · 四组场景](#theme-109) · [庭院营造记 · 4 组场景](#theme-119) · [雾庭菇灯](#theme-120) · [南瓜守护屋](#theme-130) · [香蒲雨池](#theme-131) · [植物小食铺 · 3 组场景](#theme-133)
 
-咕嘎和 Doro · 魔法师：[奇妙日常 · 三组场景](#theme-116) · [星月工坊](#theme-125) · [赫奇帕奇日记 · 四组场景](#theme-145)
+咕嘎和 Doro · 魔法师：[奇妙日常 · 4 组场景](#theme-116) · [赫奇帕奇日记 · 四组场景](#theme-145)
 
 咕嘎和 Doro · 火影忍者：[木叶传奇搭档 · 五组场景](#theme-146)
 
@@ -62,23 +62,14 @@
 
 <a name="theme-96"></a>
 
-## 咕嘎和 Doro · 日常 · 暖阳小日子
+## 咕嘎和 Doro · 日常 · 独处小日子
 
-咕嘎的蜂蜜吐司、阳台早餐与盖毯读书，配以暖杏色、海盐青和晚间灯光。
+暖阳小日子、草莓幸福日合为一个主题，共 2 组浅深配图。沿用原有主图、动作与角色造型，统一使用原主入口的阅读配色；主图、物件、无人物横幅、文件夹、侧栏角色与语录随场景切换。旧入口的当前场景、明暗模式、收藏和轮换名单自动迁移。
 
-| 浅色 | 深色 |
-| --- | --- |
-| [![咕嘎和 Doro · 日常 · 暖阳小日子 · 浅色](96-guga-cozy-light.webp)](96-guga-cozy-light.webp) | [![咕嘎和 Doro · 日常 · 暖阳小日子 · 深色](96-guga-cozy-dark.webp)](96-guga-cozy-dark.webp) |
-
-<a name="theme-97"></a>
-
-## 咕嘎和 Doro · 日常 · 草莓幸福日
-
-Doro 的草莓野餐与在家烘焙，配以草莓奶粉、柔和丁香紫和温暖灯光。
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![咕嘎和 Doro · 日常 · 草莓幸福日 · 浅色](97-doro-happy-light.webp)](97-doro-happy-light.webp) | [![咕嘎和 Doro · 日常 · 草莓幸福日 · 深色](97-doro-happy-dark.webp)](97-doro-happy-dark.webp) |
+| 场景 | 浅色 | 深色 |
+| --- | --- | --- |
+| 暖阳小日子 | [![咕嘎和 Doro · 日常 · 独处小日子 · 暖阳小日子 · 浅色](96-guga-cozy-light.webp)](96-guga-cozy-light.webp) | [![咕嘎和 Doro · 日常 · 独处小日子 · 暖阳小日子 · 深色](96-guga-cozy-dark.webp)](96-guga-cozy-dark.webp) |
+| <a name="theme-97"></a>草莓幸福日 | [![咕嘎和 Doro · 日常 · 独处小日子 · 草莓幸福日 · 浅色](96-guga-cozy-strawberry-day-light.webp)](96-guga-cozy-strawberry-day-light.webp) | [![咕嘎和 Doro · 日常 · 独处小日子 · 草莓幸福日 · 深色](96-guga-cozy-strawberry-day-dark.webp)](96-guga-cozy-strawberry-day-dark.webp) |
 
 <a name="theme-98"></a>
 
@@ -130,11 +121,16 @@ Doro 的草莓野餐与在家烘焙，配以草莓奶粉、柔和丁香紫和温
 
 <a name="theme-3"></a>
 
-## 吉伊卡哇·草原野餐
+## 吉伊卡哇 · 小小生活
 
-| 浅色 | 深色 |
-| --- | --- |
-| [![吉伊卡哇·草原野餐 · 浅色](03-chiikawa-picnic-light.webp)](03-chiikawa-picnic-light.webp) | [![吉伊卡哇·草原野餐 · 深色](03-chiikawa-picnic-dark.webp)](03-chiikawa-picnic-dark.webp) |
+草原野餐、星夜漫游、烘焙小队、雨后来信合为一个主题，共 4 组浅深配图。沿用原有主图、动作与角色造型，统一使用原主入口的阅读配色；主图、物件、无人物横幅、文件夹、侧栏角色与语录随场景切换。旧入口的当前场景、明暗模式、收藏和轮换名单自动迁移。
+
+| 场景 | 浅色 | 深色 |
+| --- | --- | --- |
+| 草原野餐 | [![吉伊卡哇 · 小小生活 · 草原野餐 · 浅色](03-chiikawa-picnic-light.webp)](03-chiikawa-picnic-light.webp) | [![吉伊卡哇 · 小小生活 · 草原野餐 · 深色](03-chiikawa-picnic-dark.webp)](03-chiikawa-picnic-dark.webp) |
+| <a name="theme-14"></a>星夜漫游 | [![吉伊卡哇 · 小小生活 · 星夜漫游 · 浅色](03-chiikawa-picnic-stargaze-light.webp)](03-chiikawa-picnic-stargaze-light.webp) | [![吉伊卡哇 · 小小生活 · 星夜漫游 · 深色](03-chiikawa-picnic-stargaze-dark.webp)](03-chiikawa-picnic-stargaze-dark.webp) |
+| <a name="theme-55"></a>烘焙小队 | [![吉伊卡哇 · 小小生活 · 烘焙小队 · 浅色](03-chiikawa-picnic-bakery-light.webp)](03-chiikawa-picnic-bakery-light.webp) | [![吉伊卡哇 · 小小生活 · 烘焙小队 · 深色](03-chiikawa-picnic-bakery-dark.webp)](03-chiikawa-picnic-bakery-dark.webp) |
+| <a name="theme-56"></a>雨后来信 | [![吉伊卡哇 · 小小生活 · 雨后来信 · 浅色](03-chiikawa-picnic-rainy-letter-light.webp)](03-chiikawa-picnic-rainy-letter-light.webp) | [![吉伊卡哇 · 小小生活 · 雨后来信 · 深色](03-chiikawa-picnic-rainy-letter-dark.webp)](03-chiikawa-picnic-rainy-letter-dark.webp) |
 
 <a name="theme-4"></a>
 
@@ -187,11 +183,14 @@ Doro 的草莓野餐与在家烘焙，配以草莓奶粉、柔和丁香紫和温
 
 <a name="theme-9"></a>
 
-## 王者荣耀·绝世舞姬
+## 王者荣耀 · 貂蝉 · 花间舞梦
 
-| 浅色 | 深色 |
-| --- | --- |
-| [![王者荣耀·绝世舞姬 · 浅色](09-hok-diao-chan-light.webp)](09-hok-diao-chan-light.webp) | [![王者荣耀·绝世舞姬 · 深色](09-hok-diao-chan-dark.webp)](09-hok-diao-chan-dark.webp) |
+绝世舞姬、馥梦繁花合为一个主题，共 2 组浅深配图。沿用原有主图、动作与角色造型，统一使用原主入口的阅读配色；主图、物件、无人物横幅、文件夹、侧栏角色与语录随场景切换。旧入口的当前场景、明暗模式、收藏和轮换名单自动迁移。
+
+| 场景 | 浅色 | 深色 |
+| --- | --- | --- |
+| 绝世舞姬 | [![王者荣耀 · 貂蝉 · 花间舞梦 · 绝世舞姬 · 浅色](09-hok-diao-chan-light.webp)](09-hok-diao-chan-light.webp) | [![王者荣耀 · 貂蝉 · 花间舞梦 · 绝世舞姬 · 深色](09-hok-diao-chan-dark.webp)](09-hok-diao-chan-dark.webp) |
+| <a name="theme-105"></a>馥梦繁花 | [![王者荣耀 · 貂蝉 · 花间舞梦 · 馥梦繁花 · 浅色](09-hok-diao-chan-fragrant-dream-light.webp)](09-hok-diao-chan-fragrant-dream-light.webp) | [![王者荣耀 · 貂蝉 · 花间舞梦 · 馥梦繁花 · 深色](09-hok-diao-chan-fragrant-dream-dark.webp)](09-hok-diao-chan-fragrant-dream-dark.webp) |
 
 <a name="theme-10"></a>
 
@@ -237,13 +236,6 @@ Doro 的草莓野餐与在家烘焙，配以草莓奶粉、柔和丁香紫和温
 
 [![五组浅深场景与配套](13-chainsaw-artworks.webp)](13-chainsaw-artworks.webp)
 
-<a name="theme-14"></a>
-
-## 吉伊卡哇·星夜漫游
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![吉伊卡哇·星夜漫游 · 浅色](14-chiikawa-stargaze-light.webp)](14-chiikawa-stargaze-light.webp) | [![吉伊卡哇·星夜漫游 · 深色](14-chiikawa-stargaze-dark.webp)](14-chiikawa-stargaze-dark.webp) |
 
 <a name="theme-15"></a>
 
@@ -355,9 +347,14 @@ Doro 的草莓野餐与在家烘焙，配以草莓奶粉、柔和丁香紫和温
 
 ## 超能力女儿
 
-| 浅色 | 深色 |
-| --- | --- |
-| [![超能力女儿 · 浅色](25-hinamatsuri-light.webp)](25-hinamatsuri-light.webp) | [![超能力女儿 · 深色](25-hinamatsuri-dark.webp)](25-hinamatsuri-dark.webp) |
+四组场景各有独立的浅深配图。可在主题与外观的「轮换」中选取单组场景或开启自动轮换，横幅、角落物件、文件夹和侧栏角色随场景切换。
+
+| 场景 | 浅色 | 深色 |
+| --- | --- | --- |
+| 新田家的日常 | [![超能力女儿 · 新田家的日常 · 浅色](25-hinamatsuri-light.webp)](25-hinamatsuri-light.webp) | [![超能力女儿 · 新田家的日常 · 深色](25-hinamatsuri-dark.webp)](25-hinamatsuri-dark.webp) |
+| 杏子的归处 | [![超能力女儿 · 杏子的归处 · 浅色](25-hinamatsuri-anzu-light.webp)](25-hinamatsuri-anzu-light.webp) | [![超能力女儿 · 杏子的归处 · 深色](25-hinamatsuri-anzu-dark.webp)](25-hinamatsuri-anzu-dark.webp) |
+| 三岛瞳的两班 | [![超能力女儿 · 三岛瞳的两班 · 浅色](25-hinamatsuri-hitomi-light.webp)](25-hinamatsuri-hitomi-light.webp) | [![超能力女儿 · 三岛瞳的两班 · 深色](25-hinamatsuri-hitomi-dark.webp)](25-hinamatsuri-hitomi-dark.webp) |
+| 超能力少女 | [![超能力女儿 · 超能力少女 · 浅色](25-hinamatsuri-psychic-light.webp)](25-hinamatsuri-psychic-light.webp) | [![超能力女儿 · 超能力少女 · 深色](25-hinamatsuri-psychic-dark.webp)](25-hinamatsuri-psychic-dark.webp) |
 
 <a name="theme-26"></a>
 
@@ -399,9 +396,16 @@ Doro 的草莓野餐与在家烘焙，配以草莓奶粉、柔和丁香紫和温
 
 ## 夏目友人帐
 
-| 浅色 | 深色 |
-| --- | --- |
-| [![夏目友人帐 · 浅色](30-natsume-light.webp)](30-natsume-light.webp) | [![夏目友人帐 · 深色](30-natsume-dark.webp)](30-natsume-dark.webp) |
+四组场景分别提供浅色与深色主图，配套横幅、物件及语录随场景切换；原独立猫咪老师图已替换。
+
+[![夏目友人帐 · 四场景主图](30-natsume-artworks.webp)](30-natsume-artworks.webp)
+
+| 场景 | 浅色 | 深色 |
+| --- | --- | --- |
+| 雨宿同行 | [![夏目友人帐 · 雨宿同行 · 浅色](30-natsume-light.webp)](30-natsume-light.webp) | [![夏目友人帐 · 雨宿同行 · 深色](30-natsume-dark.webp)](30-natsume-dark.webp) |
+| 缘侧小憩 | [![夏目友人帐 · 缘侧小憩 · 浅色](30-natsume-engawa-rest-light.webp)](30-natsume-engawa-rest-light.webp) | [![夏目友人帐 · 缘侧小憩 · 深色](30-natsume-engawa-rest-dark.webp)](30-natsume-engawa-rest-dark.webp) |
+| 森林还名 | [![夏目友人帐 · 森林还名 · 浅色](30-natsume-forest-names-light.webp)](30-natsume-forest-names-light.webp) | [![夏目友人帐 · 森林还名 · 深色](30-natsume-forest-names-dark.webp)](30-natsume-forest-names-dark.webp) |
+| 斑影同行 | [![夏目友人帐 · 斑影同行 · 浅色](30-natsume-madara-companion-light.webp)](30-natsume-madara-companion-light.webp) | [![夏目友人帐 · 斑影同行 · 深色](30-natsume-madara-companion-dark.webp)](30-natsume-madara-companion-dark.webp) |
 
 <a name="theme-31"></a>
 
@@ -432,11 +436,15 @@ Doro 的草莓野餐与在家烘焙，配以草莓奶粉、柔和丁香紫和温
 
 <a name="theme-34"></a>
 
-## 蜡笔小新·动感日常
+## 蜡笔小新 · 春日部日常
 
-| 浅色 | 深色 |
-| --- | --- |
-| [![蜡笔小新·动感日常 · 浅色](34-shinchan-light.webp)](34-shinchan-light.webp) | [![蜡笔小新·动感日常 · 深色](34-shinchan-dark.webp)](34-shinchan-dark.webp) |
+动感日常、野原家的周末、春日部探险队合为一个主题，共 3 组浅深配图。沿用原有主图、动作与角色造型，统一使用原主入口的阅读配色；主图、物件、无人物横幅、文件夹、侧栏角色与语录随场景切换。旧入口的当前场景、明暗模式、收藏和轮换名单自动迁移。
+
+| 场景 | 浅色 | 深色 |
+| --- | --- | --- |
+| 动感日常 | [![蜡笔小新 · 春日部日常 · 动感日常 · 浅色](34-shinchan-light.webp)](34-shinchan-light.webp) | [![蜡笔小新 · 春日部日常 · 动感日常 · 深色](34-shinchan-dark.webp)](34-shinchan-dark.webp) |
+| <a name="theme-62"></a>野原家的周末 | [![蜡笔小新 · 春日部日常 · 野原家的周末 · 浅色](34-shinchan-family-weekend-light.webp)](34-shinchan-family-weekend-light.webp) | [![蜡笔小新 · 春日部日常 · 野原家的周末 · 深色](34-shinchan-family-weekend-dark.webp)](34-shinchan-family-weekend-dark.webp) |
+| <a name="theme-61"></a>春日部探险队 | [![蜡笔小新 · 春日部日常 · 春日部探险队 · 浅色](34-shinchan-exploration-team-light.webp)](34-shinchan-exploration-team-light.webp) | [![蜡笔小新 · 春日部日常 · 春日部探险队 · 深色](34-shinchan-exploration-team-dark.webp)](34-shinchan-exploration-team-dark.webp) |
 
 <a name="theme-35"></a>
 
@@ -594,6 +602,7 @@ Doro 的草莓野餐与在家烘焙，配以草莓奶粉、柔和丁香紫和温
 | --- | --- |
 | [![高达·独角兽觉醒 · 浅色](52-gundam-unicorn-light.webp)](52-gundam-unicorn-light.webp) | [![高达·独角兽觉醒 · 深色](52-gundam-unicorn-dark.webp)](52-gundam-unicorn-dark.webp) |
 
+
 <a name="theme-54"></a>
 
 ## 名侦探柯南·大阪同行
@@ -602,21 +611,7 @@ Doro 的草莓野餐与在家烘焙，配以草莓奶粉、柔和丁香紫和温
 | --- | --- |
 | [![名侦探柯南·大阪同行 · 浅色](54-conan-osaka-light.webp)](54-conan-osaka-light.webp) | [![名侦探柯南·大阪同行 · 深色](54-conan-osaka-dark.webp)](54-conan-osaka-dark.webp) |
 
-<a name="theme-55"></a>
 
-## 吉伊卡哇·烘焙小队
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![吉伊卡哇·烘焙小队 · 浅色](55-chiikawa-bakery-light.webp)](55-chiikawa-bakery-light.webp) | [![吉伊卡哇·烘焙小队 · 深色](55-chiikawa-bakery-dark.webp)](55-chiikawa-bakery-dark.webp) |
-
-<a name="theme-56"></a>
-
-## 吉伊卡哇·雨后来信
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![吉伊卡哇·雨后来信 · 浅色](56-chiikawa-rainy-light.webp)](56-chiikawa-rainy-light.webp) | [![吉伊卡哇·雨后来信 · 深色](56-chiikawa-rainy-dark.webp)](56-chiikawa-rainy-dark.webp) |
 
 <a name="theme-57"></a>
 
@@ -653,21 +648,6 @@ Doro 的草莓野餐与在家烘焙，配以草莓奶粉、柔和丁香紫和温
 | --- | --- |
 | [![英雄联盟·德玛西亚巡礼 · 浅色](60-lol-demacia-light.webp)](60-lol-demacia-light.webp) | [![英雄联盟·德玛西亚巡礼 · 深色](60-lol-demacia-dark.webp)](60-lol-demacia-dark.webp) |
 
-<a name="theme-61"></a>
-
-## 蜡笔小新·春日部探险队
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![蜡笔小新·春日部探险队 · 浅色](61-shinchan-friends-light.webp)](61-shinchan-friends-light.webp) | [![蜡笔小新·春日部探险队 · 深色](61-shinchan-friends-dark.webp)](61-shinchan-friends-dark.webp) |
-
-<a name="theme-62"></a>
-
-## 蜡笔小新·野原家的周末
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![蜡笔小新·野原家的周末 · 浅色](62-shinchan-family-light.webp)](62-shinchan-family-light.webp) | [![蜡笔小新·野原家的周末 · 深色](62-shinchan-family-dark.webp)](62-shinchan-family-dark.webp) |
 
 <a name="theme-63"></a>
 
@@ -679,27 +659,25 @@ Doro 的草莓野餐与在家烘焙，配以草莓奶粉、柔和丁香紫和温
 
 <a name="theme-64"></a>
 
-## 我叫MT·联盟值日生
+## 我叫MT · 联盟日记
 
-| 浅色 | 深色 |
-| --- | --- |
-| [![我叫MT·联盟值日生 · 浅色](64-i-am-mt-alliance-duo-light.webp)](64-i-am-mt-alliance-duo-light.webp) | [![我叫MT·联盟值日生 · 深色](64-i-am-mt-alliance-duo-dark.webp)](64-i-am-mt-alliance-duo-dark.webp) |
+联盟值日生、联盟补给站合为一个主题，共 2 组浅深配图。沿用原有主图、动作与角色造型，统一使用原主入口的阅读配色；主图、物件、无人物横幅、文件夹、侧栏角色与语录随场景切换。旧入口的当前场景、明暗模式、收藏和轮换名单自动迁移。
 
-<a name="theme-65"></a>
-
-## 我叫MT·联盟补给站
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![我叫MT·联盟补给站 · 浅色](65-i-am-mt-alliance-camp-light.webp)](65-i-am-mt-alliance-camp-light.webp) | [![我叫MT·联盟补给站 · 深色](65-i-am-mt-alliance-camp-dark.webp)](65-i-am-mt-alliance-camp-dark.webp) |
+| 场景 | 浅色 | 深色 |
+| --- | --- | --- |
+| 联盟值日生 | [![我叫MT · 联盟日记 · 联盟值日生 · 浅色](64-i-am-mt-alliance-duo-light.webp)](64-i-am-mt-alliance-duo-light.webp) | [![我叫MT · 联盟日记 · 联盟值日生 · 深色](64-i-am-mt-alliance-duo-dark.webp)](64-i-am-mt-alliance-duo-dark.webp) |
+| <a name="theme-65"></a>联盟补给站 | [![我叫MT · 联盟日记 · 联盟补给站 · 浅色](64-i-am-mt-alliance-duo-supply-camp-light.webp)](64-i-am-mt-alliance-duo-supply-camp-light.webp) | [![我叫MT · 联盟日记 · 联盟补给站 · 深色](64-i-am-mt-alliance-duo-supply-camp-dark.webp)](64-i-am-mt-alliance-duo-supply-camp-dark.webp) |
 
 <a name="theme-66"></a>
 
-## 间谍过家家·福杰家的休息日
+## 间谍过家家 · 福杰一家
 
-| 浅色 | 深色 |
-| --- | --- |
-| [![间谍过家家·福杰家的休息日 · 浅色](66-spy-family-forgers-light.webp)](66-spy-family-forgers-light.webp) | [![间谍过家家·福杰家的休息日 · 深色](66-spy-family-forgers-dark.webp)](66-spy-family-forgers-dark.webp) |
+福杰家的休息日、月下密语合为一个主题，共 2 组浅深配图。沿用原有主图、动作与角色造型，统一使用原主入口的阅读配色；主图、物件、无人物横幅、文件夹、侧栏角色与语录随场景切换。旧入口的当前场景、明暗模式、收藏和轮换名单自动迁移。
+
+| 场景 | 浅色 | 深色 |
+| --- | --- | --- |
+| 福杰家的休息日 | [![间谍过家家 · 福杰一家 · 福杰家的休息日 · 浅色](66-spy-family-forgers-light.webp)](66-spy-family-forgers-light.webp) | [![间谍过家家 · 福杰一家 · 福杰家的休息日 · 深色](66-spy-family-forgers-dark.webp)](66-spy-family-forgers-dark.webp) |
+| <a name="theme-68"></a>月下密语 | [![间谍过家家 · 福杰一家 · 月下密语 · 浅色](66-spy-family-forgers-moonlit-mission-light.webp)](66-spy-family-forgers-moonlit-mission-light.webp) | [![间谍过家家 · 福杰一家 · 月下密语 · 深色](66-spy-family-forgers-moonlit-mission-dark.webp)](66-spy-family-forgers-moonlit-mission-dark.webp) |
 
 <a name="theme-67"></a>
 
@@ -717,13 +695,6 @@ Doro 的草莓野餐与在家烘焙，配以草莓奶粉、柔和丁香紫和温
 | 温室观察 | [![伊甸星光 · 温室观察 · 浅色](67-spy-family-eden-greenhouse-light.webp)](67-spy-family-eden-greenhouse-light.webp) | [![伊甸星光 · 温室观察 · 深色](67-spy-family-eden-greenhouse-dark.webp)](67-spy-family-eden-greenhouse-dark.webp) |
 | 庭院点心 | [![伊甸星光 · 庭院点心 · 浅色](67-spy-family-eden-garden-snack-light.webp)](67-spy-family-eden-garden-snack-light.webp) | [![伊甸星光 · 庭院点心 · 深色](67-spy-family-eden-garden-snack-dark.webp)](67-spy-family-eden-garden-snack-dark.webp) |
 
-<a name="theme-68"></a>
-
-## 间谍过家家·月下密语
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![间谍过家家·月下密语 · 浅色](68-spy-family-mission-light.webp)](68-spy-family-mission-light.webp) | [![间谍过家家·月下密语 · 深色](68-spy-family-mission-dark.webp)](68-spy-family-mission-dark.webp) |
 
 <a name="theme-69"></a>
 
@@ -773,51 +744,27 @@ Doro 的草莓野餐与在家烘焙，配以草莓奶粉、柔和丁香紫和温
 
 <a name="theme-75"></a>
 
-## 角落小伙伴·暖茶小憩
+## 角落小伙伴 · 角落慢时光
 
-| 浅色 | 深色 |
-| --- | --- |
-| [![角落小伙伴·暖茶小憩 · 浅色](75-sumikko-teahouse-light.webp)](75-sumikko-teahouse-light.webp) | [![角落小伙伴·暖茶小憩 · 深色](75-sumikko-teahouse-dark.webp)](75-sumikko-teahouse-dark.webp) |
+暖茶小憩、面包房值日、雨窗来信合为一个主题，共 3 组浅深配图。沿用原有主图、动作与角色造型，统一使用原主入口的阅读配色；主图、物件、无人物横幅、文件夹、侧栏角色与语录随场景切换。旧入口的当前场景、明暗模式、收藏和轮换名单自动迁移。
 
-<a name="theme-76"></a>
-
-## 角落小伙伴·面包房值日
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![角落小伙伴·面包房值日 · 浅色](76-sumikko-bakery-light.webp)](76-sumikko-bakery-light.webp) | [![角落小伙伴·面包房值日 · 深色](76-sumikko-bakery-dark.webp)](76-sumikko-bakery-dark.webp) |
-
-<a name="theme-77"></a>
-
-## 角落小伙伴·雨窗来信
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![角落小伙伴·雨窗来信 · 浅色](77-sumikko-rainy-light.webp)](77-sumikko-rainy-light.webp) | [![角落小伙伴·雨窗来信 · 深色](77-sumikko-rainy-dark.webp)](77-sumikko-rainy-dark.webp) |
+| 场景 | 浅色 | 深色 |
+| --- | --- | --- |
+| 暖茶小憩 | [![角落小伙伴 · 角落慢时光 · 暖茶小憩 · 浅色](75-sumikko-teahouse-light.webp)](75-sumikko-teahouse-light.webp) | [![角落小伙伴 · 角落慢时光 · 暖茶小憩 · 深色](75-sumikko-teahouse-dark.webp)](75-sumikko-teahouse-dark.webp) |
+| <a name="theme-76"></a>面包房值日 | [![角落小伙伴 · 角落慢时光 · 面包房值日 · 浅色](75-sumikko-teahouse-bakery-light.webp)](75-sumikko-teahouse-bakery-light.webp) | [![角落小伙伴 · 角落慢时光 · 面包房值日 · 深色](75-sumikko-teahouse-bakery-dark.webp)](75-sumikko-teahouse-bakery-dark.webp) |
+| <a name="theme-77"></a>雨窗来信 | [![角落小伙伴 · 角落慢时光 · 雨窗来信 · 浅色](75-sumikko-teahouse-rainy-letter-light.webp)](75-sumikko-teahouse-rainy-letter-light.webp) | [![角落小伙伴 · 角落慢时光 · 雨窗来信 · 深色](75-sumikko-teahouse-rainy-letter-dark.webp)](75-sumikko-teahouse-rainy-letter-dark.webp) |
 
 <a name="theme-78"></a>
 
-## 胆大党·放学怪谈
+## 胆大党 · 怪奇同盟
 
-| 浅色 | 深色 |
-| --- | --- |
-| [![胆大党·放学怪谈 · 浅色](78-dandadan-afterschool-light.webp)](78-dandadan-afterschool-light.webp) | [![胆大党·放学怪谈 · 深色](78-dandadan-afterschool-dark.webp)](78-dandadan-afterschool-dark.webp) |
+放学怪谈、灵能交锋、夜巡同盟合为一个主题，共 3 组浅深配图。沿用原有主图、动作与角色造型，统一使用原主入口的阅读配色；主图、物件、无人物横幅、文件夹、侧栏角色与语录随场景切换。旧入口的当前场景、明暗模式、收藏和轮换名单自动迁移。
 
-<a name="theme-79"></a>
-
-## 胆大党·灵能交锋
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![胆大党·灵能交锋 · 浅色](79-dandadan-awakening-light.webp)](79-dandadan-awakening-light.webp) | [![胆大党·灵能交锋 · 深色](79-dandadan-awakening-dark.webp)](79-dandadan-awakening-dark.webp) |
-
-<a name="theme-80"></a>
-
-## 胆大党·夜巡同盟
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![胆大党·夜巡同盟 · 浅色](80-dandadan-nightwatch-light.webp)](80-dandadan-nightwatch-light.webp) | [![胆大党·夜巡同盟 · 深色](80-dandadan-nightwatch-dark.webp)](80-dandadan-nightwatch-dark.webp) |
+| 场景 | 浅色 | 深色 |
+| --- | --- | --- |
+| 放学怪谈 | [![胆大党 · 怪奇同盟 · 放学怪谈 · 浅色](78-dandadan-afterschool-light.webp)](78-dandadan-afterschool-light.webp) | [![胆大党 · 怪奇同盟 · 放学怪谈 · 深色](78-dandadan-afterschool-dark.webp)](78-dandadan-afterschool-dark.webp) |
+| <a name="theme-79"></a>灵能交锋 | [![胆大党 · 怪奇同盟 · 灵能交锋 · 浅色](78-dandadan-afterschool-awakening-light.webp)](78-dandadan-afterschool-awakening-light.webp) | [![胆大党 · 怪奇同盟 · 灵能交锋 · 深色](78-dandadan-afterschool-awakening-dark.webp)](78-dandadan-afterschool-awakening-dark.webp) |
+| <a name="theme-80"></a>夜巡同盟 | [![胆大党 · 怪奇同盟 · 夜巡同盟 · 浅色](78-dandadan-afterschool-nightwatch-light.webp)](78-dandadan-afterschool-nightwatch-light.webp) | [![胆大党 · 怪奇同盟 · 夜巡同盟 · 深色](78-dandadan-afterschool-nightwatch-dark.webp)](78-dandadan-afterschool-nightwatch-dark.webp) |
 
 <a name="theme-81"></a>
 
@@ -907,27 +854,33 @@ Doro 的草莓野餐与在家烘焙，配以草莓奶粉、柔和丁香紫和温
 
 <a name="theme-93"></a>
 
-## 黑神话：悟空·古寺行旅
+## 黑神话：悟空 · 山河四劫
 
-| 浅色 | 深色 |
-| --- | --- |
-| [![黑神话：悟空·古寺行旅 · 浅色](93-wukong-pilgrimage-light.webp)](93-wukong-pilgrimage-light.webp) | [![黑神话：悟空·古寺行旅 · 深色](93-wukong-pilgrimage-dark.webp)](93-wukong-pilgrimage-dark.webp) |
+广智、黄风大圣、黄眉和四妹分别出现在黑风山、黄风岭、小西天与盘丝岭。四组共用石灰米白、炭墨和古铜金配色及经卷匣文件夹，主图、无人物横幅、左下物件、侧栏角色和短句随场景切换。
+
+| 场景 | 浅色 | 深色 |
+| --- | --- | --- |
+| 黑风山 · 广智 | [![广智 · 林间扶灯](93-wukong-four-trials-light.webp)](93-wukong-four-trials-light.webp) | [![广智 · 山门执火](93-wukong-four-trials-dark.webp)](93-wukong-four-trials-dark.webp) |
+| 黄风岭 · 黄风大圣 | [![黄风大圣 · 登阶回望](93-wukong-four-trials-yellow-wind-light.webp)](93-wukong-four-trials-yellow-wind-light.webp) | [![黄风大圣 · 掌下聚沙](93-wukong-four-trials-yellow-wind-dark.webp)](93-wukong-four-trials-yellow-wind-dark.webp) |
+| 小西天 · 黄眉 | [![黄眉 · 雪寺盘坐](93-wukong-four-trials-new-west-light.webp)](93-wukong-four-trials-new-west-light.webp) | [![黄眉 · 提袋出寺](93-wukong-four-trials-new-west-dark.webp)](93-wukong-four-trials-new-west-dark.webp) |
+| 盘丝岭 · 四妹 | [![四妹 · 石桥扶栏](93-wukong-four-trials-webbed-hollow-light.webp)](93-wukong-four-trials-webbed-hollow-light.webp) | [![四妹 · 俯身提灯](93-wukong-four-trials-webbed-hollow-dark.webp)](93-wukong-four-trials-webbed-hollow-dark.webp) |
+
+[查看八幅正式主图](93-wukong-four-trials-artworks.webp)
 
 <a name="theme-94"></a>
 
-## 黑神话：悟空·梅山雪誓
+## 黑神话：悟空 · 天命西行
 
-| 浅色 | 深色 |
-| --- | --- |
-| [![黑神话：悟空·梅山雪誓 · 浅色](94-wukong-meishan-light.webp)](94-wukong-meishan-light.webp) | [![黑神话：悟空·梅山雪誓 · 深色](94-wukong-meishan-dark.webp)](94-wukong-meishan-dark.webp) |
+天命人行经黑风山、黄风岭、小西天和盘丝岭，以苔灰、松墨和铜金贯穿四组场景。右下主图、横幅、左下物件和侧栏角色随场景切换。
 
-<a name="theme-95"></a>
+| 场景 | 浅色 | 深色 |
+| --- | --- | --- |
+| 黑风山 | [![黑风山 · 土地庙上香](94-wukong-destined-journey-light.webp)](94-wukong-destined-journey-light.webp) | [![黑风山 · 林间对阵广智](94-wukong-destined-journey-dark.webp)](94-wukong-destined-journey-dark.webp) |
+| 黄风岭 | [![黄风岭 · 攀岩阶看石刻](94-wukong-destined-journey-yellow-wind-light.webp)](94-wukong-destined-journey-yellow-wind-light.webp) | [![黄风岭 · 沙门村门廊避风](94-wukong-destined-journey-yellow-wind-dark.webp)](94-wukong-destined-journey-yellow-wind-dark.webp) |
+| 小西天 | [![小西天 · 拄棍试冰](94-wukong-destined-journey-new-west-light.webp)](94-wukong-destined-journey-new-west-light.webp) | [![小西天 · 雪寺廊下盘坐](94-wukong-destined-journey-new-west-dark.webp)](94-wukong-destined-journey-new-west-dark.webp) |
+| 盘丝岭 | [![盘丝岭 · 俯身拨开蛛丝](94-wukong-destined-journey-webbed-hollow-light.webp)](94-wukong-destined-journey-webbed-hollow-light.webp) | [![盘丝岭 · 洞底仰视百足虫](94-wukong-destined-journey-webbed-hollow-dark.webp)](94-wukong-destined-journey-webbed-hollow-dark.webp) |
 
-## 黑神话：悟空·齐天金甲
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![黑神话：悟空·齐天金甲 · 浅色](95-wukong-golden-sage-light.webp)](95-wukong-golden-sage-light.webp) | [![黑神话：悟空·齐天金甲 · 深色](95-wukong-golden-sage-dark.webp)](95-wukong-golden-sage-dark.webp) |
+[查看八幅正式主图](94-wukong-destined-journey-artworks.webp)
 
 <a name="theme-101"></a>
 
@@ -969,41 +922,32 @@ Doro 的草莓野餐与在家烘焙，配以草莓奶粉、柔和丁香紫和温
 | --- | --- |
 | [![王者荣耀·孙悟空·无相 · 浅色](104-hok-wukong-wuxiang-light.webp)](104-hok-wukong-wuxiang-light.webp) | [![王者荣耀·孙悟空·无相 · 深色](104-hok-wukong-wuxiang-dark.webp)](104-hok-wukong-wuxiang-dark.webp) |
 
-<a name="theme-105"></a>
-
-## 王者荣耀·貂蝉·馥梦繁花
-
-以慕夏联动珍品无双皮肤「馥梦繁花」为造型参考。浅色采用「繁花」形态的薄荷绿长发、花冠和白金裙装，深色采用「馥梦」形态的蓝紫编发、冰晶月冠和靛蓝银饰，配以春日花园、冬夜雪松横幅及两款侧栏伙伴。[官方皮肤介绍](https://bbs.4399.cn/thread-view-tid-49044756)。
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![王者荣耀·貂蝉·馥梦繁花 · 浅色](105-hok-diaochan-fumeng-light.webp)](105-hok-diaochan-fumeng-light.webp) | [![王者荣耀·貂蝉·馥梦繁花 · 深色](105-hok-diaochan-fumeng-dark.webp)](105-hok-diaochan-fumeng-dark.webp) |
 
 <a name="theme-116"></a>
 
 ## 咕嘎和 Doro · 魔法师 · 奇妙日常
 
-星露药房、云朵烘焙、月邮小屋合为一个主题，浅深各三组完整场景。毛绒魔法师 Doro 在调配药剂、烘焙和送信之间切换，帽子与斗篷随场景变化，阅读区统一使用草木绿／深林绿配色。主图、左下物件、无角色横幅、文件夹开合、四款侧栏伙伴及双语语录一起切换；首次启用和旧单图升级默认全选、每五分钟轮播，后续自定义设置保留，旧入口、收藏与主题轮换名单自动迁移。
+星露药房、云朵烘焙、月邮小屋、星月工坊合为一个主题，共 4 组浅深配图。沿用原有主图、动作与角色造型，统一使用原主入口的阅读配色；主图、物件、无人物横幅、文件夹、侧栏角色与语录随场景切换。旧入口的当前场景、明暗模式、收藏和轮换名单自动迁移。
 
 | 场景 | 浅色 | 深色 |
 | --- | --- | --- |
 | 星露药房 | [![咕嘎和 Doro · 魔法师 · 奇妙日常 · 星露药房 · 浅色](116-doro-mage-potions-light.webp)](116-doro-mage-potions-light.webp) | [![咕嘎和 Doro · 魔法师 · 奇妙日常 · 星露药房 · 深色](116-doro-mage-potions-dark.webp)](116-doro-mage-potions-dark.webp) |
 | <a name="theme-117"></a>云朵烘焙 | [![咕嘎和 Doro · 魔法师 · 奇妙日常 · 云朵烘焙 · 浅色](116-doro-mage-potions-cloud-bakery-light.webp)](116-doro-mage-potions-cloud-bakery-light.webp) | [![咕嘎和 Doro · 魔法师 · 奇妙日常 · 云朵烘焙 · 深色](116-doro-mage-potions-cloud-bakery-dark.webp)](116-doro-mage-potions-cloud-bakery-dark.webp) |
 | <a name="theme-118"></a>月邮小屋 | [![咕嘎和 Doro · 魔法师 · 奇妙日常 · 月邮小屋 · 浅色](116-doro-mage-potions-moonmail-light.webp)](116-doro-mage-potions-moonmail-light.webp) | [![咕嘎和 Doro · 魔法师 · 奇妙日常 · 月邮小屋 · 深色](116-doro-mage-potions-moonmail-dark.webp)](116-doro-mage-potions-moonmail-dark.webp) |
-
-星露药房从搅拌晨露到封好安睡小瓶，叶扣夹藏着压叶与配方卡；云朵烘焙从托起面包到点糖霜装盒，食谱夹收着星形模具；月邮小屋从封信整理邮包到乘小扫帚送信，邮路夹展开月牙路线。每组保留自己的四款动作与对应短句。精细手办造型的「星月工坊」继续独立。
-
-[![咕嘎和 Doro · 魔法师 · 奇妙日常 · 场景与横幅总览](116-doro-mage-potions-artworks.webp)](116-doro-mage-potions-artworks.webp)
+| <a name="theme-125"></a>星月工坊 | [![咕嘎和 Doro · 魔法师 · 奇妙日常 · 星月工坊 · 浅色](116-doro-mage-potions-starmoon-atelier-light.webp)](116-doro-mage-potions-starmoon-atelier-light.webp) | [![咕嘎和 Doro · 魔法师 · 奇妙日常 · 星月工坊 · 深色](116-doro-mage-potions-starmoon-atelier-dark.webp)](116-doro-mage-potions-starmoon-atelier-dark.webp) |
 
 <a name="theme-119"></a>
 
-## 咕嘎和 Doro · 植物大战僵尸 · 阳光种子铺
+## 咕嘎和 Doro · 植物大战僵尸 · 庭院营造记
 
-Doro 斜戴合头大铁锅、穿露肚小白衬衣；浅色播种照料向日葵，深色坐着收存阳光。种袋夹打开露出备好的种卡，四款小伙伴把播种、浇水和存阳光串成一天。采用精细手办与写实微缩场景质感，配有无角色横幅、专属道具、开合文件夹和简约配对。
+阳光种子铺、豌豆练习场、坚果修补铺、磁菇回收站合为一个主题，共 4 组浅深配图。沿用原有主图、动作与角色造型，统一使用原主入口的阅读配色；主图、物件、无人物横幅、文件夹、侧栏角色与语录随场景切换。旧入口的当前场景、明暗模式、收藏和轮换名单自动迁移。
 
-| 浅色 | 深色 |
-| --- | --- |
-| [![咕嘎和 Doro · 植物大战僵尸 · 阳光种子铺 · 浅色](119-doro-pvz-sunseed-light.webp)](119-doro-pvz-sunseed-light.webp) | [![咕嘎和 Doro · 植物大战僵尸 · 阳光种子铺 · 深色](119-doro-pvz-sunseed-dark.webp)](119-doro-pvz-sunseed-dark.webp) |
+| 场景 | 浅色 | 深色 |
+| --- | --- | --- |
+| 阳光种子铺 | [![咕嘎和 Doro · 植物大战僵尸 · 庭院营造记 · 阳光种子铺 · 浅色](119-doro-pvz-sunseed-light.webp)](119-doro-pvz-sunseed-light.webp) | [![咕嘎和 Doro · 植物大战僵尸 · 庭院营造记 · 阳光种子铺 · 深色](119-doro-pvz-sunseed-dark.webp)](119-doro-pvz-sunseed-dark.webp) |
+| <a name="theme-126"></a>豌豆练习场 | [![咕嘎和 Doro · 植物大战僵尸 · 庭院营造记 · 豌豆练习场 · 浅色](119-doro-pvz-sunseed-pea-practice-light.webp)](119-doro-pvz-sunseed-pea-practice-light.webp) | [![咕嘎和 Doro · 植物大战僵尸 · 庭院营造记 · 豌豆练习场 · 深色](119-doro-pvz-sunseed-pea-practice-dark.webp)](119-doro-pvz-sunseed-pea-practice-dark.webp) |
+| <a name="theme-121"></a>坚果修补铺 | [![咕嘎和 Doro · 植物大战僵尸 · 庭院营造记 · 坚果修补铺 · 浅色](119-doro-pvz-sunseed-walnut-workshop-light.webp)](119-doro-pvz-sunseed-walnut-workshop-light.webp) | [![咕嘎和 Doro · 植物大战僵尸 · 庭院营造记 · 坚果修补铺 · 深色](119-doro-pvz-sunseed-walnut-workshop-dark.webp)](119-doro-pvz-sunseed-walnut-workshop-dark.webp) |
+| <a name="theme-128"></a>磁菇回收站 | [![咕嘎和 Doro · 植物大战僵尸 · 庭院营造记 · 磁菇回收站 · 浅色](119-doro-pvz-sunseed-magnet-salvage-light.webp)](119-doro-pvz-sunseed-magnet-salvage-light.webp) | [![咕嘎和 Doro · 植物大战僵尸 · 庭院营造记 · 磁菇回收站 · 深色](119-doro-pvz-sunseed-magnet-salvage-dark.webp)](119-doro-pvz-sunseed-magnet-salvage-dark.webp) |
 
 <a name="theme-120"></a>
 
@@ -1023,15 +967,6 @@ Doro 斜戴合头大铁锅、穿露肚小白衬衣；浅色播种照料向日葵
 | 推车运菇 | [![雾庭菇灯 · 推车运菇 · 浅色](120-doro-pvz-fog-lantern-mushroom-cart-light.webp)](120-doro-pvz-fog-lantern-mushroom-cart-light.webp) | [![雾庭菇灯 · 推车运菇 · 深色](120-doro-pvz-fog-lantern-mushroom-cart-dark.webp)](120-doro-pvz-fog-lantern-mushroom-cart-dark.webp) |
 | 树洞晚安 | [![雾庭菇灯 · 树洞晚安 · 浅色](120-doro-pvz-fog-lantern-tree-hollow-light.webp)](120-doro-pvz-fog-lantern-tree-hollow-light.webp) | [![雾庭菇灯 · 树洞晚安 · 深色](120-doro-pvz-fog-lantern-tree-hollow-dark.webp)](120-doro-pvz-fog-lantern-tree-hollow-dark.webp) |
 
-<a name="theme-121"></a>
-
-## 咕嘎和 Doro · 植物大战僵尸 · 坚果修补铺
-
-斜锅帽 Doro 白天认真给坚果贴布带，深色推着小板车护送它归队。修补夹打开藏着宽布带和盾形卡，四款小伙伴从量补丁到送归队各有对应短句。采用精细手办与写实微缩场景质感，配有无角色横幅、专属道具、开合文件夹和简约配对。
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![咕嘎和 Doro · 植物大战僵尸 · 坚果修补铺 · 浅色](121-doro-pvz-walnut-workshop-light.webp)](121-doro-pvz-walnut-workshop-light.webp) | [![咕嘎和 Doro · 植物大战僵尸 · 坚果修补铺 · 深色](121-doro-pvz-walnut-workshop-dark.webp)](121-doro-pvz-walnut-workshop-dark.webp) |
 
 <a name="theme-122"></a>
 
@@ -1063,45 +998,8 @@ Doro 斜戴合头大铁锅、穿露肚小白衬衣；浅色播种照料向日葵
 | --- | --- |
 | [![咕嘎和 Doro · 厨师 · 暖锅小馆 · 浅色](124-doro-chef-hearth-light.webp)](124-doro-chef-hearth-light.webp) | [![咕嘎和 Doro · 厨师 · 暖锅小馆 · 深色](124-doro-chef-hearth-dark.webp)](124-doro-chef-hearth-dark.webp) |
 
-<a name="theme-125"></a>
 
-## 咕嘎和 Doro · 魔法师 · 星月工坊
 
-沿用华贵星月帽与金线斗篷的 Doro，在微缩工坊装配小月灯，夜里带到露台调校黄铜星镜。星图夹打开露出月相卡，工具从散放装配变为收妥观测。采用精细手办与写实微缩场景质感，配有无角色横幅、专属道具、开合文件夹和简约配对。
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![咕嘎和 Doro · 魔法师 · 星月工坊 · 浅色](125-doro-mage-starmoon-atelier-light.webp)](125-doro-mage-starmoon-atelier-light.webp) | [![咕嘎和 Doro · 魔法师 · 星月工坊 · 深色](125-doro-mage-starmoon-atelier-dark.webp)](125-doro-mage-starmoon-atelier-dark.webp) |
-
-<a name="theme-126"></a>
-
-## 咕嘎和 Doro · 植物大战僵尸 · 豌豆练习场
-
-Doro歪戴合头大锅帽、穿露肚小白衬衣；白天调整草圈靶陪豌豆射手练习，夜里坐在石阶上颁小奖牌。靶标夹打开露出练习路线，散放的小豌豆收回木盒。采用精细手办与写实微缩场景质感，配有无角色横幅、专属道具、开合文件夹和简约配对。
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![咕嘎和 Doro · 植物大战僵尸 · 豌豆练习场 · 浅色](126-doro-pvz-pea-practice-light.webp)](126-doro-pvz-pea-practice-light.webp) | [![咕嘎和 Doro · 植物大战僵尸 · 豌豆练习场 · 深色](126-doro-pvz-pea-practice-dark.webp)](126-doro-pvz-pea-practice-dark.webp) |
-
-<a name="theme-127"></a>
-
-## 咕嘎和 Doro · 植物大战僵尸 · 冰瓜凉饮铺
-
-小白衬衣Doro在蓝瓷冰台前舀冰盛杯，夜里抱着小冰棒和冰西瓜歇脚。冷饮夹打开藏着冰晶杯卡，量勺和杯垫从备料变成收妥。采用精细手办与写实微缩场景质感，配有无角色横幅、专属道具、开合文件夹和简约配对。
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![咕嘎和 Doro · 植物大战僵尸 · 冰瓜凉饮铺 · 浅色](127-doro-pvz-winter-melon-light.webp)](127-doro-pvz-winter-melon-light.webp) | [![咕嘎和 Doro · 植物大战僵尸 · 冰瓜凉饮铺 · 深色](127-doro-pvz-winter-melon-dark.webp)](127-doro-pvz-winter-melon-dark.webp) |
-
-<a name="theme-128"></a>
-
-## 咕嘎和 Doro · 植物大战僵尸 · 磁菇回收站
-
-Doro白天陪磁力菇把旧铁件分进木格箱，夜里坐在矮凳上挂好铁杯风铃。回收夹打开露出圆垫圈卡，散落的旧零件变成有用的小物件。采用精细手办与写实微缩场景质感，配有无角色横幅、专属道具、开合文件夹和简约配对。
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![咕嘎和 Doro · 植物大战僵尸 · 磁菇回收站 · 浅色](128-doro-pvz-magnet-salvage-light.webp)](128-doro-pvz-magnet-salvage-light.webp) | [![咕嘎和 Doro · 植物大战僵尸 · 磁菇回收站 · 深色](128-doro-pvz-magnet-salvage-dark.webp)](128-doro-pvz-magnet-salvage-dark.webp) |
 
 <a name="theme-129"></a>
 
@@ -1133,25 +1031,18 @@ Doro白天陪磁力菇把旧铁件分进木格箱，夜里坐在矮凳上挂好�
 | --- | --- |
 | [![咕嘎和 Doro · 植物大战僵尸 · 香蒲雨池 · 浅色](131-doro-pvz-cattail-rainpool-light.webp)](131-doro-pvz-cattail-rainpool-light.webp) | [![咕嘎和 Doro · 植物大战僵尸 · 香蒲雨池 · 深色](131-doro-pvz-cattail-rainpool-dark.webp)](131-doro-pvz-cattail-rainpool-dark.webp) |
 
-<a name="theme-132"></a>
-
-## 咕嘎和 Doro · 植物大战僵尸 · 玉米黄油坊
-
-戴夫 Doro 在草地上的黄油小推车旁准备早餐，夜里坐在野餐布上与玉米投手分享吐司。玉米扣文件夹、奶油陶盘和鼠尾草格纹贯穿整套。采用精细手办与写实微缩场景质感，配有浅深无角色横幅、四款小伙伴、专属道具、开合文件夹和简约配对。
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![咕嘎和 Doro · 植物大战僵尸 · 玉米黄油坊 · 浅色](132-doro-pvz-kernel-butter-light.webp)](132-doro-pvz-kernel-butter-light.webp) | [![咕嘎和 Doro · 植物大战僵尸 · 玉米黄油坊 · 深色](132-doro-pvz-kernel-butter-dark.webp)](132-doro-pvz-kernel-butter-dark.webp) |
 
 <a name="theme-133"></a>
 
-## 咕嘎和 Doro · 植物大战僵尸 · 咖啡唤醒站
+## 咕嘎和 Doro · 植物大战僵尸 · 植物小食铺
 
-戴夫 Doro 在燕麦布吊床里照看午睡的小喷菇，夜里起身与咖啡豆叫醒伙伴。蓝紫陶杯、铜咖啡壶与柔软布面连接整套素材。采用精细手办与写实微缩场景质感，配有浅深无角色横幅、四款小伙伴、专属道具、开合文件夹和简约配对。
+咖啡唤醒站、玉米黄油坊、冰瓜凉饮铺合为一个主题，共 3 组浅深配图。沿用原有主图、动作与角色造型，统一使用原主入口的阅读配色；主图、物件、无人物横幅、文件夹、侧栏角色与语录随场景切换。旧入口的当前场景、明暗模式、收藏和轮换名单自动迁移。
 
-| 浅色 | 深色 |
-| --- | --- |
-| [![咕嘎和 Doro · 植物大战僵尸 · 咖啡唤醒站 · 浅色](133-doro-pvz-coffee-wakeup-light.webp)](133-doro-pvz-coffee-wakeup-light.webp) | [![咕嘎和 Doro · 植物大战僵尸 · 咖啡唤醒站 · 深色](133-doro-pvz-coffee-wakeup-dark.webp)](133-doro-pvz-coffee-wakeup-dark.webp) |
+| 场景 | 浅色 | 深色 |
+| --- | --- | --- |
+| 咖啡唤醒站 | [![咕嘎和 Doro · 植物大战僵尸 · 植物小食铺 · 咖啡唤醒站 · 浅色](133-doro-pvz-coffee-wakeup-light.webp)](133-doro-pvz-coffee-wakeup-light.webp) | [![咕嘎和 Doro · 植物大战僵尸 · 植物小食铺 · 咖啡唤醒站 · 深色](133-doro-pvz-coffee-wakeup-dark.webp)](133-doro-pvz-coffee-wakeup-dark.webp) |
+| <a name="theme-132"></a>玉米黄油坊 | [![咕嘎和 Doro · 植物大战僵尸 · 植物小食铺 · 玉米黄油坊 · 浅色](133-doro-pvz-coffee-wakeup-kernel-butter-light.webp)](133-doro-pvz-coffee-wakeup-kernel-butter-light.webp) | [![咕嘎和 Doro · 植物大战僵尸 · 植物小食铺 · 玉米黄油坊 · 深色](133-doro-pvz-coffee-wakeup-kernel-butter-dark.webp)](133-doro-pvz-coffee-wakeup-kernel-butter-dark.webp) |
+| <a name="theme-127"></a>冰瓜凉饮铺 | [![咕嘎和 Doro · 植物大战僵尸 · 植物小食铺 · 冰瓜凉饮铺 · 浅色](133-doro-pvz-coffee-wakeup-winter-melon-light.webp)](133-doro-pvz-coffee-wakeup-winter-melon-light.webp) | [![咕嘎和 Doro · 植物大战僵尸 · 植物小食铺 · 冰瓜凉饮铺 · 深色](133-doro-pvz-coffee-wakeup-winter-melon-dark.webp)](133-doro-pvz-coffee-wakeup-winter-melon-dark.webp) |
 
 <a name="theme-134"></a>
 

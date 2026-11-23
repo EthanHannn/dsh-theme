@@ -1,6 +1,6 @@
 {
   "id": "doro-pvz-sunseed-minimal-dark",
-  "name": "Guga & Doro · Plants vs. Zombies · Sunshine Seed Shop · Minimal Dark",
+  "name": "Guga & Doro · Plants vs. Zombies · Garden Workshop Days · Minimal Dark",
   "colorScheme": "dark",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #F6F0D9 50%, #DDD8C2)",

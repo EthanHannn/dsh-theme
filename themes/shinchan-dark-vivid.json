@@ -1,6 +1,6 @@
 {
   "id": "shinchan-dark-vivid",
-  "name": "Shin-chan · Everyday Adventures Dark",
+  "name": "Shin-chan · Days in Kasukabe Dark",
   "colorScheme": "dark",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #F1EADF 50%, #D3C9BA)",
