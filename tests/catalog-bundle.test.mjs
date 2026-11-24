@@ -40,6 +40,31 @@ test("image chunks restore the exact catalog before theme registration", async (
   assert.equal(requests, 1);
 });
 
+test("large image entries split into bounded chunks and restore in order", async () => {
+  const big = (suffix) => `data:image/webp;base64,${"A".repeat(700 * 1024)}${suffix}`;
+  const largeCatalog = [{
+    id: "large",
+    skins: [{ tokens: { wallpaper: `url("${big("1")}")`, panel: `url("${big("2")}")` } }],
+  }];
+  const bundle = bundleCatalog(largeCatalog);
+  assert.equal(bundle.chunks.size, 2);
+  for (const [name, source] of bundle.chunks) {
+    assert.ok(Buffer.byteLength(source) < 800 * 1024, `${name} stays below 800 KiB`);
+  }
+  const requested = [];
+  const entries = load(bundle, async (file) => {
+    requested.push(file);
+    let assets;
+    vm.runInNewContext(bundle.chunks.get(file.slice(2)), {
+      window: { __ModuleLoader__: { load: ({ factory }) => { assets = factory(); } } },
+    });
+    return assets;
+  });
+  await entries.loadAssets();
+  assert.equal(requested.length, 2);
+  assert.deepEqual(JSON.parse(JSON.stringify(entries)), largeCatalog);
+});
+
 test("failed chunk loads remain retryable and content names remain stable", async () => {
   const bundle = bundleCatalog(catalog);
   assert.deepEqual(bundle, bundleCatalog(catalog));

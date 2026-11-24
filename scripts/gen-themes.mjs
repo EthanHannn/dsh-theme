@@ -292,6 +292,50 @@ function assetValue(name) {
   return uri ? `url("${uri}")` : null;
 }
 
+const FLUID_MODES = new Set(["sway", "flame", "water", "spark"]);
+const GLOW_A_MODES = new Set(["beacon", "breathe", "beam", "screen"]);
+
+function buildWallpaperMotion(family, artworks) {
+  if (!family.wallpaperMotion) return {};
+  if (typeof family.wallpaperMotion !== "object") {
+    throw new Error(`${family.id}: wallpaperMotion must be a scene map with WebGL mask specs`);
+  }
+  const scenes = [["original", family.id], ...artworks.map(({ id }) => [id, `${family.id}-${id}`])];
+  const validIds = new Set(scenes.map(([id]) => id));
+  for (const key of Object.keys(family.wallpaperMotion)) {
+    if (!validIds.has(key)) throw new Error(`${family.id}: wallpaperMotion references unknown scene "${key}"`);
+  }
+  const entries = {};
+  for (const [id, prefix] of scenes) {
+    const sceneSpec = family.wallpaperMotion[id];
+    if (!sceneSpec) continue;
+    const modes = {};
+    for (const mode of ["light", "dark"]) {
+      const spec = sceneSpec[mode];
+      if (!spec) continue;
+      const maskName = `${prefix}-motion-mask-${mode}`;
+      const maskFile = join(familyDir, "assets", `${maskName}.webp`);
+      const dims = webpDimensions(readFileSync(maskFile));
+      if (dims.width < 32 || dims.height < 32 || dims.width > 512 || dims.height > 512) {
+        throw new Error(`${maskFile}: motion mask should be a compact RGB control mask (32–512 px)`);
+      }
+      if (spec.fluid && !FLUID_MODES.has(spec.fluid.mode)) {
+        throw new Error(`${family.id}/${id}/${mode}: unknown fluid mode "${spec.fluid.mode}"`);
+      }
+      if (spec.glowA && !GLOW_A_MODES.has(spec.glowA.mode)) {
+        throw new Error(`${family.id}/${id}/${mode}: unknown glowA mode "${spec.glowA.mode}"`);
+      }
+      if (spec.floaters && (!Array.isArray(spec.floaters) || spec.floaters.length > 4)) {
+        throw new Error(`${family.id}/${id}/${mode}: floaters must be an array of at most 4 regions`);
+      }
+      modes[mode] = { mask: assetDataUri(maskName), ...spec };
+    }
+    if (Object.keys(modes).length) entries[id] = modes;
+  }
+  if (!Object.keys(entries).length) throw new Error(`${family.id}: wallpaperMotion has no valid scene specs`);
+  return { wallpaperMotion: entries };
+}
+
 /**
  * 头部装饰构图参数。延展时绘制在标题行，限于标题时保留原图绘制尺寸，
  * 由标题容器裁切可见范围；两种范围共用横幅与旧式漫画图的构图参数。
@@ -464,7 +508,7 @@ for (const file of familyFiles) {
     ...(family.decor?.wallpaperPosition ? { wallpaperPosition: family.decor.wallpaperPosition } : {}),
     ...(family.decor?.heroTranslate ? { heroTranslate: family.decor.heroTranslate } : {}),
     ...(family.decor?.heroMaxWidth ? { heroMaxWidth: family.decor.heroMaxWidth } : {}),
-  }, ...(family.originalArtworkNames ? { originalArtworkNames:family.originalArtworkNames } : {}), ...(family.legacyFamilies ? { legacyFamilies:family.legacyFamilies } : {}), ...(artworks.length ? { artworks } : {}), skins });
+  }, ...(family.originalArtworkNames ? { originalArtworkNames:family.originalArtworkNames } : {}), ...(family.legacyFamilies ? { legacyFamilies:family.legacyFamilies } : {}), ...(artworks.length ? { artworks } : {}), ...buildWallpaperMotion(family, artworks), skins });
 }
 
 // 按中文显示名的拼音顺序排列，数字按数值比较；简约配对仍由选择器紧随主主题。

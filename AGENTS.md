@@ -35,7 +35,7 @@ The scheduled CI job checks Harness `master` every Monday. Treat its failure as 
 
 ## Coding Style & Naming Conventions
 
-Follow existing JavaScript style: two-space indentation, double quotes, semicolons, trailing commas, ESM imports, `camelCase` identifiers, and short explanatory comments for non-obvious token decisions. Family filenames and IDs use lowercase kebab case, for example `chainsaw.mjs` and `chainsaw-dark-vivid`. Name assets `<family>-<mode>.webp`, `<family>-pal-N.webp`, `<family>-panel.webp`, `<family>-banner[-<mode>].webp` (wide header scroll; supersedes the panel as header artwork when present), or `<family>-folder[-open]-<mode>.webp`.
+Follow existing JavaScript style: two-space indentation, double quotes, semicolons, trailing commas, ESM imports, `camelCase` identifiers, and short explanatory comments for non-obvious token decisions. Family filenames and IDs use lowercase kebab case, for example `chainsaw.mjs` and `chainsaw-dark-vivid`. Name assets `<family>-<mode>.webp`, `<family>-pal-N.webp`, `<family>-panel.webp`, `<family>-banner[-<mode>].webp` (wide header scroll; supersedes the panel as header artwork when present), `<family>-folder[-open]-<mode>.webp`, or `<family>[-<variant>]-motion-mask-<mode>.webp` (compact 256×256 RGB WebGL motion control mask).
 
 Display names follow `主题 · 子主题 · 名字` / `Theme · Subtheme · Name` when a series has an established subtheme. Use spaces around `·`; for example, `咕嘎和 Doro · 江湖 · 竹涧茶歇` and `Guga & Doro · Jianghu · Bamboo Creek Tea`. Keep shared subthemes consistent (`江湖` / `Jianghu`, `日常` / `Daily Life`, `植物大战僵尸` / `Plants vs. Zombies`, `魔法师` / `Wizard Life`). Without an established subtheme, retain `主题 · 名字` rather than inventing a level. Minimal is an appearance suffix (` · 简约` / ` · Minimal`), and light/dark are appearance modes. 主题库按中文显示名的拼音顺序排列，数字按数值比较，`sortKey` 不再参与排序；默认主题固定在最前，简约项紧随父主题。Keep family/skin IDs, assets, and `kin` stable during display-name changes. See `docs/DEVELOPMENT.md` for the full convention.
 
@@ -48,6 +48,19 @@ Recent history favors concise, imperative subjects with optional Conventional Co
 ## IP Artwork Fidelity
 
 Unless the user explicitly requests a different art direction, preserve each anime or game IP's original visual language: canonical character proportions, faces, clothing, linework, coloring and rendering. Doro-specific figurine, plush and miniature preferences are scoped to their requested series and must not become defaults for unrelated IPs. Official references must guide both identity and visual style. Review original-IP resemblance before checking asset counts, layout or contrast.
+
+- **高达模型风格**（高达胶模机设，赛璐珞动画风）参考高达拼装模型的机体比例、装甲分件和轮廓，用高达动画的线条、配色与赛璐珞阴影表现作品世界里的战斗、训练或日常场景。以「高达 · 重装机动」为例，宽肩、厚胸与扎实的腿甲来自机设参考，画面沿用动画画法。
+- **现实模型风格 / 真实模型风格**（实体高达模型摄影风）指以真实照片的观感呈现现实场景中的实体拼装模型，强调塑料或涂装质感、真实光影和镜头景深。
+
+## Subtle Motion for Corner Artwork
+
+用户要求「克制的动态」时，以透明静态主图为底，固定镜头、主体姿态和构图，只让少量已有细节有节奏地变化。成组的灯光可以短暂同步亮起再回落，附着于物体或地面的元素保留接触点，独立悬浮于透明空白区的飞行器或道具做缓慢低幅悬停。循环无缝自然，正常阅读时动效留在余光里。
+
+技术上统一采用 **原分辨率静态主图 + 256×256 RGB 控制遮罩（`<family>[-<variant>]-motion-mask-<mode>.webp`，约 1–2 KB）+ 零依赖原生 WebGL 片段着色器**，不再使用大体积整图预渲染动画 WebP：
+- **通道约定**：`R` = 流体/火焰/烟尘/水面/火花权重（接触点为 0、自由端为 1），`G` = 主发光（警示灯、光束、屏幕、喷口），`B` = 次发光（眼部、窗灯、辅助指示灯）；独立悬浮刚体通过 `floaters` 包围盒与支点直接从静态原图采样变换，不重复打包底图。
+- **验收要求**：生成遮罩后必须先输出叠加调试图逐张目视核验，确认无溢出到人物/机体装甲、手指、脚尖或固定接触面；渲染保持严格合法的预乘 Alpha，确保浅深色底均无黑边或白边；运行时限 30 fps 并在后台或 `prefers-reduced-motion` 下自动回退静态原图。
+
+完整通道参数、配置写法与制作流程参见 [开发指南：右下角主图的克制动效](docs/DEVELOPMENT.md#右下角主图的克制动效)。
 
 ## Expanding an Existing Single-Artwork Theme
 

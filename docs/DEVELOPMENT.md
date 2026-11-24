@@ -13,7 +13,7 @@ npm run check
 
 `build` 生成 `themes/*.json`、`lib/client.js`、`lib/client.assets-*.js` 和本地配色预览 `docs/preview.html`。`check` 运行测试、检查生成文件是否与源码一致，并验证 Harness checkout 的兼容性。提交时应包含更新后的生成文件；本地预览不提交。
 
-图片数据按主题写入带内容哈希的客户端分块，主文件保留目录与配色。激活插件前通过 Harness 的 `require.async` 加载分块，再注册完整皮肤；沿用同一包内的图片数据，画质与离线使用方式不变。分块适用于 Web 与 Desktop 的模块载入通道，避免单个生成文件超过 GitHub 的 100 MB 限制。`compatibility.json` 同时记录模块加载器及其分块能力；升级 Harness 时复查 `ClientBundleRequire.async` 和 `ClientBundleRegistration.chunk`。
+图片数据按主题写入带内容哈希的客户端分块，主文件保留目录与配色。激活插件前通过 Harness 的 `require.async` 加载分块，再注册完整皮肤；沿用同一包内的图片数据，画质与离线使用方式不变。分块适用于 Web 与 Desktop 的模块载入通道，避免单个生成文件超过 GitHub 的 100 MB 限制；单个分块控制在约 1 MB 以内，避免 Windows Defender 把含大量 base64 图片的单行脚本误报为 `Trojan:Script/ObfusScript.A!ml` 并隔离，导致 `loadAssets()` 因缺少分块而拒绝、整个主题插件加载失败。`compatibility.json` 同时记录模块加载器及其分块能力；升级 Harness 时复查 `ClientBundleRequire.async` 和 `ClientBundleRegistration.chunk`。
 
 ## 连接 Harness 源码
 
@@ -85,6 +85,68 @@ npm run dsh:link -- --harness /absolute/path/to/deepseek-harness
 
 总览版本、提示词、场景与模式编号、确认记录放入仓库外的素材目录，例如 `raw/<family>/scene-sheet-v01.png`；保留明确的确认版本供后续制作引用。
 
+## 右下角主图的克制动效
+
+沿用透明主图的构图、镜头和主体姿态，把动效放在画面已有的少量细节上。让亮度变化有起落和间歇，让有接触点的元素在原位摆动并保持接触关系，让位于透明空白区的独立飞行器或悬浮道具按缓慢非对称周期轻轻悬停。正常阅读时动效留在余光里，不抢夺正文注意力。
+
+### 技术方案：静态原图 + RGB 控制遮罩 + 原生 WebGL
+
+为避免整图预渲染动画 WebP 造成的包体膨胀（单套主题动辄 10+ MB）与降采样清晰度损失，本项目统一采用 **静态原图 + 256×256 RGB 控制遮罩 + 零依赖原生 WebGL 着色器** 方案：
+
+- **零额外主图体积**：运行时直接复用现有的满分辨率静态主图（`--dsw-pack-wallpaper`），每个动态场景仅额外提交一张 256×256 的 RGB WebP 遮罩 `<family>[-<variant>]-motion-mask-<mode>.webp`（通常仅 1–2 KB，四景八图总增量仅 ~10 KB）。
+- **单 WebGL 上下文 + 省电与回退**：
+  - 在 `#dsh-themes-veil` 内挂载单一 `<canvas id="dsh-themes-motion-canvas">`，帧率上限锁定 **30 fps**，输出严格合法的预乘 Alpha（`rgb <= alpha`），确保浅深纸底均无杂边。
+  - 宽屏清晰模式下，通过轻量 2D 镜像画布（`.dsh-themes-motion-composer`）将底部帧同步绘制到输入框保护渐隐之上、输入框控件之下，不创建第二个 WebGL 上下文。
+  - 页面切到后台（`document.hidden`）、系统启用「减少动态效果」（`prefers-reduced-motion: reduce`）、视口收窄至 `≤900px`、或宿主不支持 WebGL 时自动停帧并无缝回退到静态主图；关闭右下角角色时隐藏主图。
+  - 在主题的「精细控制 → 主图动效」提供「静态 / 动态」切换，默认动态，按主题持久化并随场景及浅深模式切换。
+
+### 遮罩通道与参数规范
+
+256×256 RGB 遮罩图三个通道各司其职（0 = 静止，255 = 最大权重）：
+
+| 通道 / 字段 | 负责对象 | 常用模式与要点 |
+| :--- | :--- | :--- |
+| **`R` 通道（`fluid`）** | 火焰、烟尘、云雾、水面波纹、火花 | `sway`（烟尘/云雾/布料，接触点权重 0、尖端 1）、`flame`（向上滚动噪声 + 暖色微闪）、`water`（纯水平波纹轻荡，船身/岸边留安全边距）、`spark`（高频微幅光斑颤动）。着色器只在遮罩邻域内采样，不拉扯周边刚体。 |
+| **`G` 通道（`glowA`）** | 警示灯、光束、战术屏幕、喷口、飞行器镜头 | `beacon`（每 4 秒同步短亮至高光再回落至暗色，沿用 ZZ 小样节奏）、`breathe`（柔和呼吸）、`beam`（光束能量波纹流动）、`screen`（终端扫描线与柔和呼吸）。 |
+| **`B` 通道（`glowB`）** | 机体眼部、建筑/船舱窗灯、辅助灯带 | 独立缓慢正弦呼吸（`breathe`），与主发光错开周期避免机械同步。 |
+| **`floaters`（最多 4 组）** | 位于透明空白区的独立飞行器、浮游炮、悬浮物 | 在配置中提供归一化包围盒 `rect: [u0, v0, u1, v1]` 与支点 `pivot: [cx, cy]`，着色器直接将原位挖空并用双非整数倍正弦波做平滑上下浮动、水平漂移与微倾角（`ampX`、`ampY`、`ampRot`、`speed`、`phase`、`glowSpeed`），无需复制底图或单独切小图。若悬浮物与主体有遮挡重叠，则需先在仓库外素材目录拆层并用 LaMa/IOPaint 补底。 |
+
+在 `families/<family>.mjs` 中按场景 ID 与浅深模式声明 `wallpaperMotion`（生成器 `scripts/gen-themes.mjs` 会自动校验对应 `<prefix>-motion-mask-<mode>.webp` 并将其并入该主题的图片分块）：
+
+```js
+wallpaperMotion: {
+  original: {
+    light: {
+      floaters: [
+        { rect: [0.11189, 0.19556, 0.24913, 0.33333], pivot: [0.18861, 0.27259], ampX: 0.0032, ampY: 0.0115, ampRot: 0.032, speed: 1.18, glowSpeed: 1.85 },
+      ],
+      fluid: { mode: "sway", ampX: 0.0042, ampY: 0.0024, freq: 16, speed: 0.85 },
+      glowA: { mode: "beacon", color: [1, 0.78, 0.3], haloColor: [1, 0.58, 0.14], period: 4, intensity: 0.75, dim: 0.68 },
+      glowB: { mode: "breathe", color: [1, 0.92, 0.42], period: 5.5, intensity: 0.48 },
+    },
+    dark: { /* ... */ },
+  },
+}
+```
+
+### 制作与验收步骤
+
+1. **分析场景要素**：在静态透明主图上用连通域与色域分析，区分「独立透明区刚体（`floaters`）」「软体/流体（`R`）」「主发光（`G`）」「次发光（`B`）」。每个场景只挑 2–4 处已有细节，保持主体构图绝对稳定。
+2. **生成遮罩并目视核验**：先生成全分辨率通道权重再缩放为 256×256 RGB WebP 写入 `families/assets/<prefix>-motion-mask-<mode>.webp`。**必须同步输出调试叠层图**，逐张核对：
+   - 流体遮罩（`R`）与手指、脚尖、装甲边缘、船体或地面接触点之间无溢出；
+   - 悬浮包围盒（`floaters.rect`）四周有充足透明留边且与主体零重叠；
+   - 发光遮罩（`G`/`B`）不误伤相邻同色涂装或地标虚线。
+3. **接入配置与测试**：在 `families/<family>.mjs` 补齐 `wallpaperMotion` 参数后运行 `npm run build`、`npm run check`，并在 Harness 实测浅色/深色、柔和/清晰、空会话 Hero 页与长对话页、输入框遮挡层、窄屏回退及「静态 / 动态」切换。
+
+### 参考实现：「高达 · 重装机动」（四景八图，总增量 10.3 KB）
+
+| 场景 | 浅色动效（`light`） | 深色动效（`dark`） |
+| :--- | :--- | :--- |
+| **Hi-ν 高达**（`original`） | 左上角球形飞行器缓慢悬停与微倾角 + 镜头独立呼吸；两盏橙色着舰警示灯 4 秒同步亮落；停机坪三处烟尘贴地轻摆；双眼微光 | 浮游炮绿色光束能量流光与微颤；红蓝轨迹弧光与双眼柔和呼吸 |
+| **沙扎比**（`sazabi`） | 盾顶粉色光束撞击核心脉冲与飞溅火花微闪；独眼微光 | 左侧橙色战术终端扫描线与柔和呼吸；头顶悬臂工作灯、右侧底座状态条与独眼静谧呼吸 |
+| **ZZ 高达**（`zz`） | 坡道两盏立柱计时灯 4 秒同步短亮回落；后脚旁尘层底部贴坡道、上部轻摆；跑道嵌入式灯带与绿眼微光 | 光束军刀与无人机光束对撞核心火花闪烁；无人机橙眼、顶部对接窗灯与绿眼呼吸 |
+| **Ξ 高达**（`xi`） | 四处高空浅蓝云带与伴飞机尾流顺风轻曳；绿眼微光 | 码头三盏系泊灯与补给船桅杆顶灯 4 秒同步亮落；海面与船灯倒影水平水波轻荡（脚尖与船身零形变）；船舱窗灯与绿眼呼吸 |
+
 ## 添加主题
 
 在 `families/` 中创建小写连字符命名的 `.mjs` 文件，参考现有主题导出 `id`、`names`、`light`、`dark` 和装饰参数。每个氛围主题都应提供简约配对；简约主题复用基础配色，通过 `kin` 指向氛围主题，并在设置列表中相邻显示。同步更新分类后运行构建。
@@ -98,6 +160,7 @@ npm run dsh:link -- --harness /absolute/path/to/deepseek-harness
 | 场景横幅 | `<family>-banner-light.webp`、`<family>-banner-dark.webp` |
 | 文件夹图标 | `<family>-folder[-open]-<mode>.webp` |
 | 左下角物件 | `<family>-props.webp` 或 `<family>-props-<mode>.webp` |
+| 主图动效遮罩 | `<family>[-<variant>]-motion-mask-<mode>.webp`（256×256 RGB，可选） |
 
 氛围主题必须提供浅深色横幅。横幅使用无角色的场景插画，比例约为 6:1，主要景物位于右侧三分之一、靠近垂直中部，其余景物延伸至画面中部。左侧 0–25% 与右侧 90–100% 渐变至对应氛围主题的 `paper` 色，并设置 `decor.headerArt.bakedHorizontalFade: true`。使用 `scripts/build-banners.py` 裁切原始素材，分别调整浅深色图片的裁切位置。新增主题使用横幅；`<family>-panel.webp` 仅用于现有主题的兼容。
 

@@ -26,6 +26,7 @@ function load(saved, unavailable = false, reactApi = {}, browser = {}) {
   Object.assign(document, browser.document);
   vm.runInNewContext(source, {
     window, document, MutationObserver:browser.MutationObserver, Date:browser.Date ?? Date,
+    atob, Blob, URL,
     setTimeout:browser.setTimeout ?? (() => 1), clearTimeout:browser.clearTimeout ?? (() => {}),
   });
   return { api, document, nodes, raw:() => raw };
@@ -697,12 +698,12 @@ test("v6 rotation configs migrate to on-schedule mode while new configs default 
   assert.equal("mode" in load(JSON.stringify({ version:7, selected:{ family:"naruto", mode:"dark", style:"vivid" } }), false, {}, { catalog:variantCatalog() }).api.readPref().artwork, false);
 });
 
-function rotationRuntime(saved) {
+function rotationRuntime(saved, entries = variantCatalog()) {
   const time = fakeClock();
   const events = new Map();
   let streaming = false;
   const harness = load(JSON.stringify(saved), false, {}, {
-    catalog:variantCatalog(), Date:class extends Date { static now() { return time.now(); } },
+    catalog:entries, Date:class extends Date { static now() { return time.now(); } },
     setTimeout:time.schedule, clearTimeout:time.cancel,
     document:{ hidden:false, addEventListener:(name, fn) => events.set(name, fn), removeEventListener:(name) => events.delete(name), querySelector:() => streaming ? {} : null },
   });
@@ -724,6 +725,48 @@ function rotationRuntime(saved) {
   time.advance(0);
   return { ...harness, time, events, actions:section.inject({ sync() {} }), snapshot:() => snapshot, streaming:(value) => { streaming = value; }, setThemes:(themes) => { snapshot = { ...snapshot, themes }; }, dispose:() => { for (const fn of cleanups.reverse()) fn?.(); } };
 }
+
+test("wallpaper motion follows the scene and scheme, stays scoped to its family, and falls back when hidden", () => {
+  const entries = variantCatalog();
+  const data = (name) => "data:image/webp;base64," + Buffer.from(name).toString("base64");
+  const spec = (name) => ({ mask:data(name), glowA:{ mode:"beacon", period:4, intensity:0.75, dim:0.68 } });
+  entries[0].wallpaperMotion = {
+    original:{ light:spec("original-motion-mask-light"), dark:spec("original-motion-mask-dark") },
+    rain:{ light:spec("rain-motion-mask-light"), dark:spec("rain-motion-mask-dark") },
+  };
+  const runtime = rotationRuntime({ version:7, selected:{ family:"naruto", mode:"light", style:"vivid" } }, entries);
+  const override = () => [...runtime.nodes].find((node) => node.id === "dsh-theme-decoration-overrides");
+  const motionKey = () => runtime.document.body["data-dsh-themes-motion-key"];
+  try {
+    assert.equal(runtime.api.readPref().wallpaperMotion, "motion");
+    assert.equal(motionKey(), "naruto:original:light");
+    runtime.actions.saveDraft({ ...runtime.api.readPref(), wallpaperMotion:"still" });
+    assert.equal(motionKey(), undefined);
+    runtime.actions.saveDraft({ ...runtime.api.readPref(), wallpaperMotion:"motion" });
+    assert.equal(motionKey(), "naruto:original:light");
+    const current = runtime.api.readPref();
+    runtime.actions.saveDraft({ ...current, mode:"dark", artwork:{ ...current.artwork, variant:"rain" } });
+    assert.equal(motionKey(), "naruto:rain:dark");
+
+    runtime.document.hidden = true;
+    runtime.events.get("visibilitychange")();
+    assert.match(override().textContent, /rain-dark.webp/);
+    assert.equal(motionKey(), undefined);
+    runtime.document.hidden = false;
+    runtime.events.get("visibilitychange")();
+    assert.equal(motionKey(), "naruto:rain:dark");
+
+    runtime.actions.saveDraft({ ...runtime.api.readPref(), character:false });
+    assert.match(override().textContent, /--dsw-pack-wallpaper:none!important/);
+    assert.equal(motionKey(), undefined);
+    runtime.actions.applyDraft({ family:"gundam", ...runtime.api.settingsFor("gundam"), mode:"dark" });
+    assert.equal(runtime.api.readPref().wallpaperMotion, undefined);
+    assert.equal(motionKey(), undefined);
+    assert.equal(load(runtime.raw(), false, {}, { catalog:entries }).api.settingsFor("naruto").wallpaperMotion, "motion");
+  } finally {
+    runtime.dispose();
+  }
+});
 
 test("preview cancellation restores unsaved controls and retains global changes that were automatically saved", () => {
   const runtime = rotationRuntime({ version:6, selected:{ family:"naruto", mode:"dark", style:"vivid" }, appearance:{ props:false, character:false, headerRange:"title" } });
