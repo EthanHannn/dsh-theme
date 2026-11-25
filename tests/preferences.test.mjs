@@ -20,7 +20,7 @@ function load(saved, unavailable = false, reactApi = {}, browser = {}) {
   const document = { body, head:body, createElement:() => ({ isConnected:false, setAttribute() {}, remove() { this.isConnected = false; nodes.delete(this); } }) };
   const source = readFileSync(new URL("../lib/client.tpl.js", import.meta.url), "utf8")
     .replace("__CATALOG__", JSON.stringify(browser.catalog ?? catalog))
-    .replace("    exports.CATALOG = CATALOG;", "    Object.assign(exports, { readPref, writePref, readDocument, appearanceFor, settingsFor, writeSettings, writeFamilyArtwork, normalizeDocument, parseSkin, resolveSkin, filterCatalog, writeLibrarySettings, writeFavorites, toggleFavorite, writeRotation, orderRotationSelection, nextInPool, rotationProgram, createRotationClock, artworkTokensFor, artworkDecorFor, artworkVariantsFor, ThemeSection, ThemeRotationPicker, ThemeCollections });");
+    .replace("    exports.CATALOG = CATALOG;", "    Object.assign(exports, { BUILTIN_LIST_MULTI, BUILTIN_LIST_FAVORITES, readPref, writePref, readDocument, appearanceFor, settingsFor, writeSettings, writeFamilyArtwork, normalizeDocument, parseSkin, resolveSkin, filterCatalog, writeLibrarySettings, writeFavorites, toggleFavorite, writeRotation, resolveRotationPool, orderRotationSelection, nextInPool, rotationProgram, createRotationClock, artworkTokensFor, artworkDecorFor, artworkVariantsFor, ThemeSection, ThemeRotationPicker, ThemeCollections });");
   const window = { matchMedia:() => ({ matches:false, addEventListener() {}, removeEventListener() {} }), localStorage:{ getItem:() => raw, setItem:(_, value) => { if (unavailable) throw Error("blocked"); raw = value; } }, __ModuleLoader__:{ load:({ factory }) => { api = factory((id) => id === "react" ? reactApi : ({ defineStore:(value) => value })); } } };
   Object.assign(window, browser.window);
   Object.assign(document, browser.document);
@@ -37,7 +37,7 @@ test("legacy clarity migrates to its family and survives default selection", () 
   assert.equal(api.readPref().wallpaper, "full");
   assert.equal(api.appearanceFor("gundam").wallpaper, "full");
   api.writePref(api.readPref());
-  assert.equal(JSON.parse(raw()).version, 7);
+  assert.equal(JSON.parse(raw()).version, 8);
   api.writePref(null);
   assert.equal(api.readPref(), null);
   assert.equal(api.appearanceFor("naruto").wallpaper, "full");
@@ -224,10 +224,10 @@ test("legacy fine controls migrate from the selected family and remain stable af
     const saved = { version, selected:{ family:"naruto", mode:"dark", style:"vivid" }, families:{ naruto:{ mode:"dark", header:false, character:false, props:false, pal:false }, gundam:{ header:true, character:true, props:true, pal:true } } };
     const { api, raw } = load(JSON.stringify(saved));
     const doc = api.readDocument();
-    assert.equal(doc.version, 7);
+    assert.equal(doc.version, 8);
     assert.deepEqual(JSON.parse(JSON.stringify(doc.appearance)), { header:false, character:false, props:false, pal:false, headerRange:"extend" });
     assert.deepEqual(JSON.parse(JSON.stringify(api.normalizeDocument(doc))), JSON.parse(JSON.stringify(doc)));
-    assert.equal(JSON.parse(raw()).version, 7);
+    assert.equal(JSON.parse(raw()).version, 8);
     const restored = load(raw()).api;
     restored.writePref({ family:"gundam", mode:"light", style:"vivid" });
     assert.equal(restored.readPref().character, false);
@@ -338,7 +338,7 @@ test("Star Rail legacy entries retain their selected scene, mode and collection 
       assert.equal(api.readPref().wallpaper, "soft");
       assert.equal(api.readPref().artwork.variant, variant);
       assert.deepEqual(Array.from(api.readDocument().favorites), ["hsr-express", "hsr-express-minimal"]);
-      assert.deepEqual(Array.from(api.readDocument().rotation.pool), ["hsr-express"]);
+      assert.deepEqual(Array.from(api.resolveRotationPool(api.readDocument())), ["hsr-express"]);
       assert.deepEqual(Array.from(api.artworkVariantsFor("hsr-express"), (scene) => scene.id), ["original", "hunters-after-hours", "firefly-promise", "luofu-leisure"]);
       assert.equal(load(raw(), false, {}, { catalog:entries }).api.readPref().artwork.variant, variant);
     }
@@ -390,7 +390,7 @@ test("sibling collections migrate every retired entrance and its minimal pair", 
         assert.equal(api.readPref().header, false);
         assert.equal(api.readPref().artwork.variant, variant);
         assert.deepEqual(Array.from(api.readDocument().favorites), [target, minimal]);
-        assert.deepEqual(Array.from(api.readDocument().rotation.pool), [target, "naruto"]);
+        assert.deepEqual(Array.from(api.resolveRotationPool(api.readDocument())), [target, "naruto"]);
         assert.equal(load(raw(), false, {}, { catalog:entries }).api.readPref().artwork.variant, variant);
       }
       const saved = { version:7, selected:{ family:`${source}-minimal`, mode:"dark", style:"minimal" }, favorites:[`${source}-minimal`] };
@@ -415,7 +415,7 @@ test("merged families preserve the active scene, decoration choices, favorites a
   assert.equal(api.readPref().artwork.interval, 15);
   assert.deepEqual(Array.from(api.readPref().artwork.pool), ["rain", "original"]);
   assert.deepEqual(Array.from(doc.favorites), ["naruto", "gundam"]);
-  assert.deepEqual(Array.from(doc.rotation.pool), ["naruto", "gundam"]);
+  assert.deepEqual(Array.from(api.resolveRotationPool(doc)), ["naruto", "gundam"]);
   assert.equal(doc.rotation.order, "random");
   assert.equal(doc.rotation.interval, 30);
   assert.equal(Object.hasOwn(doc.families, "old-rain"), false);
@@ -473,7 +473,7 @@ test("inactive merged entries cannot replace current settings and a collapsed th
   assert.equal(api.readDocument().rotation.enabled, true);
   assert.equal(api.rotationProgram(api.readDocument()), null);
   assert.equal(api.readDocument().rotation.interval, 60);
-  assert.deepEqual(Array.from(api.readDocument().rotation.pool), ["naruto"]);
+  assert.deepEqual(Array.from(api.resolveRotationPool(api.readDocument())), ["naruto"]);
   for (const malformed of [{ favorites:"old-rain" }, { rotation:{ pool:123 } }]) assert.doesNotThrow(() => api.normalizeDocument(malformed));
 });
 
@@ -510,7 +510,7 @@ test("v3 migration defaults multi-artwork rotation on and scopes artwork to its 
   assert.equal(api.readPref().artwork.enabled, true);
   assert.equal(api.readPref().artwork.interval, 5);
   api.writeRotation({ enabled:true, pool:["naruto", "naruto", "missing", "gundam"], interval:1, order:"random" });
-  assert.deepEqual(Array.from(api.readDocument().rotation.pool), ["naruto", "gundam"]);
+  assert.deepEqual(Array.from(api.resolveRotationPool(api.readDocument())), ["naruto", "gundam"]);
   api.writeSettings({ ...api.readPref(), artwork:{ enabled:true, variant:"rain", pool:["original", "rain", "gundam"], interval:5 } });
   const restored = load(raw(), false, {}, { catalog:variantCatalog() }).api;
   assert.equal(restored.readPref().artwork.variant, "rain");
@@ -689,7 +689,7 @@ test("artwork-only rotation keeps the per-family interval without theme boundari
 
 test("v6 rotation configs migrate to on-schedule mode while new configs default to full cycle", () => {
   const legacy = load(JSON.stringify({ version:6, selected:{ family:"naruto", mode:"dark", style:"vivid" }, rotation:{ enabled:true, pool:["naruto", "gundam"], interval:30 } })).api;
-  assert.equal(legacy.readDocument().version, 7);
+  assert.equal(legacy.readDocument().version, 8);
   assert.equal(legacy.readDocument().rotation.mode, "fixed");
   legacy.writeRotation({ ...legacy.readDocument().rotation, mode:"cycle" });
   assert.equal(legacy.readDocument().rotation.mode, "cycle");
@@ -1037,7 +1037,7 @@ function elementRenderer() {
 test("v4 migration preserves global controls, family artwork, and rotation while adding an independent empty library", () => {
   const saved = { version:4, selected:{ family:"naruto", mode:"dark", style:"vivid" }, library:{ showMinimal:false }, families:{ naruto:{ mode:"dark", props:false, artwork:{ variant:"rain", enabled:true, pool:["original", "rain"], interval:5 } } }, rotation:{ enabled:true, pool:["gundam", "naruto"], interval:60, order:"random" } };
   const { api, raw } = load(JSON.stringify(saved), false, {}, { catalog:variantCatalog() });
-  assert.equal(api.readDocument().version, 7);
+  assert.equal(api.readDocument().version, 8);
   assert.equal(api.readDocument().favorites.length, 0);
   assert.equal(api.readDocument().library.tab, "all");
   api.writeLibrarySettings({ tab:"favorites" });
@@ -1050,7 +1050,7 @@ test("v4 migration preserves global controls, family artwork, and rotation while
   assert.equal(restored.readPref().props, false);
   assert.equal(restored.readPref().artwork.variant, "rain");
   assert.equal(restored.readPref().artwork.enabled, true);
-  assert.deepEqual(Array.from(restored.readDocument().rotation.pool), ["gundam", "naruto"]);
+  assert.deepEqual(Array.from(restored.resolveRotationPool(restored.readDocument())), ["gundam", "naruto"]);
   assert.equal(restored.readDocument().rotation.enabled, true);
   assert.equal(restored.readDocument().rotation.interval, 60);
 });
@@ -1062,14 +1062,14 @@ test("favorites normalize stable IDs, survive unrelated saves, and never constra
   api.writeRotation({ enabled:true, pool:["gundam", "naruto"], interval:5 });
   api.toggleFavorite("naruto");
   assert.deepEqual(Array.from(api.readDocument().favorites), ["slate"]);
-  assert.deepEqual(Array.from(api.readDocument().rotation.pool), ["gundam", "naruto"]);
+  assert.deepEqual(Array.from(api.resolveRotationPool(api.readDocument())), ["gundam", "naruto"]);
   api.toggleFavorite("gundam");
   api.writeLibrarySettings({ tab:"favorites" });
   api.writeSettings({ family:"gundam", mode:"light", wallpaper:"soft" });
   api.writePref(null);
   const restored = load(raw()).api;
   assert.deepEqual(Array.from(restored.readDocument().favorites), ["slate", "gundam"]);
-  assert.deepEqual(Array.from(restored.readDocument().rotation.pool), ["gundam", "naruto"]);
+  assert.deepEqual(Array.from(restored.resolveRotationPool(restored.readDocument())), ["gundam", "naruto"]);
   assert.equal(restored.readDocument().rotation.enabled, true);
   assert.equal(restored.readPref(), null);
   assert.equal(restored.appearanceFor("naruto").props, false);
@@ -1117,7 +1117,8 @@ test("the independent favorites tab supports preview and apply without configuri
   tree = render();
   renderer.find(tree, (node) => node.props.className === "dsh-theme-apply").props.onClick();
   assert.equal(applied.family, "naruto");
-  assert.equal(api.readDocument().rotation.pool.length, 0);
+  assert.equal(api.readDocument().rotation.lists.length, 0);
+  assert.equal(api.readDocument().rotation.activeList, api.BUILTIN_LIST_MULTI);
   assert.equal(api.readDocument().rotation.enabled, false);
   renderer.find(tree, (node) => node.props.type === "search").props.onChange({ target:{ value:"naruto" } });
   tree = render();
@@ -1136,7 +1137,7 @@ test("rotation picker mixes favorites and other themes, keeps hidden selections,
   api.writeRotation({ pool:["gundam"], enabled:false });
   let tab = "all";
   let cancelled = false;
-  const props = { rotation:api.readDocument().rotation, get tab() { return tab; }, onTabChange:(value) => { tab = value; }, onCancel:() => { cancelled = true; }, onSave:(pool) => api.writeRotation({ ...api.readDocument().rotation, pool }), text:(zh) => zh, t:(key) => key };
+  const props = { rotation:api.readDocument().rotation, get tab() { return tab; }, onTabChange:(value) => { tab = value; }, onCancel:() => { cancelled = true; }, onSave:(pool) => api.writeRotation({ ...api.readDocument().rotation, lists:[{ id:"list-1", name:"", pool }], activeList:"list-1" }), text:(zh) => zh, t:(key) => key };
   const render = () => renderer.render(api.ThemeRotationPicker, props);
   const checkbox = (tree, label) => renderer.find(tree, (node) => node.props.type === "checkbox" && node.props["aria-label"] === `轮换 ${label}`);
   let tree = render();
@@ -1155,9 +1156,9 @@ test("rotation picker mixes favorites and other themes, keeps hidden selections,
   renderer.find(tree, (node) => node.props.type === "search").props.onChange({ target:{ value:"naruto" } });
   tree = render();
   assert.equal(renderer.all(tree, (node) => node.props.type === "checkbox").length, 1);
-  assert.deepEqual(Array.from(api.readDocument().rotation.pool), ["gundam"]);
+  assert.deepEqual(Array.from(api.resolveRotationPool(api.readDocument())), ["gundam"]);
   renderer.find(tree, (node) => node.type === "button" && node.children[0] === "完成选择").props.onClick();
-  assert.deepEqual(Array.from(api.readDocument().rotation.pool), ["gundam", "naruto", "slate"]);
+  assert.deepEqual(Array.from(api.resolveRotationPool(api.readDocument())), ["gundam", "naruto", "slate"]);
   assert.deepEqual(Array.from(api.readDocument().favorites), ["naruto"]);
   const before = JSON.stringify(api.readDocument());
   checkbox(tree, "family.naruto").props.onChange({ target:{ checked:false } });
@@ -1189,18 +1190,19 @@ test("artwork panel configures rotation-pool themes in place without switching t
   const { api, raw } = load(JSON.stringify(saved), false, renderer.reactApi, { catalog:entries });
   const props = { draft:{ family:"naruto", ...api.settingsFor("naruto") }, update() {}, nextTheme() {}, text:(zh) => zh, t:(key) => key };
   const render = () => renderer.render(api.ThemeCollections, props);
+  const tab = (tree, id) => renderer.find(tree, (node) => node.props?.role === "tab" && node.props.id?.endsWith(`-${id}`));
   let tree = render();
-  // 合并面板：只有一个「轮换」下拉，内含主题轮换与同主题图片两节。
+  // 方案 A：单一「轮换」下拉，顶部双页签切换「主题轮换」与「同主题图片」。
   const collections = renderer.all(tree, (node) => node.props?.className === "dsh-theme-collection");
   assert.equal(collections.length, 1);
-  const sides = renderer.all(tree, (node) => node.props?.className === "dsh-theme-rotation-side");
-  assert.deepEqual(sides.map((side) => side.props["aria-label"]), ["主题轮换", "同主题图片"]);
-  // 顶部总开关控制主题栏显隐，插图栏开关单独标注；主题侧不再重复渲染开关。
-  assert.ok(renderer.find(tree, (node) => node.props?.role === "switch" && node.children?.[0]?.children?.[0] === "主题轮换"));
-  assert.ok(renderer.find(tree, (node) => node.props?.role === "switch" && node.children?.[0]?.children?.[0] === "自动轮换图片"));
-  assert.equal(renderer.find(tree, (node) => node.props?.role === "switch" && node.children?.[0]?.children?.[0] === "自动轮换主题"), undefined);
+  assert.ok(tab(tree, "themes"));
+  assert.ok(tab(tree, "artwork"));
+  assert.ok(renderer.find(tree, (node) => node.props?.role === "switch" && node.children?.[0]?.children?.[0] === "开启主题轮换"));
   assert.ok(renderer.find(tree, (node) => node.type === "option" && node.children?.[0] === "播完再换"));
-  // 默认跟随预览主题 naruto。
+  // 切到「同主题图片」页签：默认跟随预览主题 naruto，可切到当前播单里的 gundam。
+  tab(tree, "artwork").props.onClick();
+  tree = render();
+  assert.ok(renderer.find(tree, (node) => node.props?.role === "switch" && node.children?.[0]?.children?.[0] === "自动轮换图片"));
   assert.ok(renderer.find(tree, (node) => node.type === "button" && node.children[0] === "雨景"));
   const familySelect = renderer.find(tree, (node) => node.type === "select" && (node.children ?? []).some((child) => child.props?.value === "gundam"));
   familySelect.props.onChange({ target:{ value:"gundam" } });
@@ -1224,25 +1226,25 @@ test("artwork panel configures rotation-pool themes in place without switching t
   const restored = load(raw(), false, renderer.reactApi, { catalog:entries }).api;
   assert.equal(restored.readDocument().families.gundam.artwork.variant, "field");
   assert.deepEqual(Array.from(restored.readDocument().families.gundam.artwork.pool), ["original"]);
-  // 主题轮换关闭后，配置下拉收起，面板回到只配置当前主题。
+  // 主题轮换关闭后，配置下拉收起，插图页签回到只配置当前主题。
   api.writeRotation({ ...api.readDocument().rotation, enabled:false });
-  const offTree = renderer.render(api.ThemeCollections, { ...props, draft:{ family:"naruto", ...api.settingsFor("naruto") } });
-  assert.equal(renderer.find(offTree, (node) => node.type === "select" && (node.children ?? []).some((child) => child.props?.value === "gundam")), undefined);
-  assert.ok(renderer.find(offTree, (node) => node.type === "button" && node.children[0] === "雨景"));
-  // 主题轮换关闭后主题栏整体不渲染，只剩总开关与插图栏。
-  const offSides = renderer.all(offTree, (node) => node.props?.className === "dsh-theme-rotation-side");
-  assert.deepEqual(offSides.map((side) => side.props["aria-label"]), ["同主题图片"]);
-  const masterSwitch = renderer.find(offTree, (node) => node.props?.role === "switch" && node.children?.[0]?.children?.[0] === "主题轮换");
+  const offArtTree = renderer.render(api.ThemeCollections, { ...props, draft:{ family:"naruto", ...api.settingsFor("naruto") } });
+  assert.equal(renderer.find(offArtTree, (node) => node.type === "select" && (node.children ?? []).some((child) => child.props?.value === "gundam")), undefined);
+  assert.ok(renderer.find(offArtTree, (node) => node.type === "button" && node.children[0] === "雨景"));
+  assert.ok(renderer.find(offArtTree, (node) => node.type === "option" && node.children?.[0] === "按列表"));
+  // 切回主题轮换页签：播单仍然可查看整理，但底部播法参数收起；打开总开关后重新出现。
+  tab(offArtTree, "themes").props.onClick();
+  const offThemeTree = renderer.render(api.ThemeCollections, { ...props, draft:{ family:"naruto", ...api.settingsFor("naruto") } });
+  const masterSwitch = renderer.find(offThemeTree, (node) => node.props?.role === "switch" && node.children?.[0]?.children?.[0] === "开启主题轮换");
   assert.ok(masterSwitch);
   assert.equal(masterSwitch.props["aria-checked"], false);
-  assert.equal(renderer.find(offTree, (node) => node.type === "button" && node.children[0] === "选择轮换主题"), undefined);
-  assert.equal(renderer.find(offTree, (node) => node.type === "option" && node.children?.[0] === "播完再换"), undefined);
-  assert.ok(renderer.find(offTree, (node) => node.type === "option" && node.children?.[0] === "按列表"));
-  // 打开总开关：主题栏出现，配置下拉也带回轮换池主题。
+  assert.equal(renderer.find(offThemeTree, (node) => node.type === "option" && node.children?.[0] === "播完再换"), undefined);
   masterSwitch.props.onClick();
-  const onTree = renderer.render(api.ThemeCollections, { ...props, draft:{ family:"naruto", ...api.settingsFor("naruto") } });
-  assert.equal(renderer.all(onTree, (node) => node.props?.className === "dsh-theme-rotation-side").length, 2);
-  assert.ok(renderer.find(onTree, (node) => node.type === "select" && (node.children ?? []).some((child) => child.props?.value === "gundam")));
+  const onThemeTree = renderer.render(api.ThemeCollections, { ...props, draft:{ family:"naruto", ...api.settingsFor("naruto") } });
+  assert.ok(renderer.find(onThemeTree, (node) => node.type === "option" && node.children?.[0] === "播完再换"));
+  tab(onThemeTree, "artwork").props.onClick();
+  const onArtTree = renderer.render(api.ThemeCollections, { ...props, draft:{ family:"naruto", ...api.settingsFor("naruto") } });
+  assert.ok(renderer.find(onArtTree, (node) => node.type === "select" && (node.children ?? []).some((child) => child.props?.value === "gundam")));
 });
 
 test("section follows the saved selection when preference events precede the host store update", () => {
@@ -1510,4 +1512,133 @@ test("picking the default appearance hands the preference back", () => {
   flush();
   assert.equal(api.readPref(), null);
   assert.equal(snapshot.preference, "system");
+});
+
+test("v8 multi-playlist supports built-in multi-artwork, favorites, custom lists, and merged migration", () => {
+  const entries = mergedCatalog();
+  entries[1].artworks = [{ id:"field", names:{ zh:"原野", en:"Field" }, modes:{ light:{}, dark:{} } }];
+  const saved = {
+    version:8,
+    selected:{ family:"naruto", mode:"dark", style:"vivid" },
+    favorites:["gundam", "naruto"],
+    rotation:{
+      enabled:true,
+      activeList:"list-gundam",
+      mode:"cycle",
+      interval:15,
+      order:"sequence",
+      lists:[
+        { id:"list-doro", name:"咕嘎和 Doro", pool:["old-rain", "naruto"] },
+        { id:"list-gundam", name:"高达", pool:["gundam", "slate"] },
+      ],
+    },
+  };
+  const { api, raw } = load(JSON.stringify(saved), false, {}, { catalog:entries });
+  const doc = api.readDocument();
+  assert.equal(doc.version, 8);
+  // 合并旧入口会同步归并所有自定义列表的 pool。
+  assert.deepEqual(Array.from(doc.rotation.lists[0].pool), ["naruto"]);
+  assert.deepEqual(Array.from(doc.rotation.lists[1].pool), ["gundam", "slate"]);
+  assert.deepEqual(Array.from(api.resolveRotationPool(doc)), ["gundam", "slate"]);
+  // 内置「全部多图」动态解析当前目录中的多图主题。
+  assert.deepEqual(Array.from(api.resolveRotationPool(doc, api.BUILTIN_LIST_MULTI)), ["naruto", "gundam"]);
+  // 内置「我的收藏」按最近收藏在前顺序动态解析。
+  assert.deepEqual(Array.from(api.resolveRotationPool(doc, api.BUILTIN_LIST_FAVORITES)), ["naruto", "gundam"]);
+  api.toggleFavorite("slate");
+  assert.deepEqual(Array.from(api.resolveRotationPool(api.readDocument(), api.BUILTIN_LIST_FAVORITES)), ["slate", "naruto", "gundam"]);
+  // 切换到内置「全部多图」播单并持久化，共用播法/间隔/顺序。
+  api.writeRotation({ ...api.readDocument().rotation, activeList:api.BUILTIN_LIST_MULTI });
+  const restored = load(raw(), false, {}, { catalog:entries }).api;
+  assert.equal(restored.readDocument().rotation.activeList, api.BUILTIN_LIST_MULTI);
+  assert.equal(restored.readDocument().rotation.interval, 15);
+  assert.deepEqual(Array.from(restored.resolveRotationPool(restored.readDocument())), ["naruto", "gundam"]);
+});
+
+test("switching playlists while rotation is enabled immediately activates the new playlist when needed", () => {
+  const renderer = elementRenderer();
+  const entries = variantCatalog();
+  entries[1].artworks = [{ id:"field", names:{ zh:"原野", en:"Field" }, modes:{ light:{}, dark:{} } }];
+  const saved = {
+    version:8,
+    selected:{ family:"naruto", mode:"dark", style:"vivid" },
+    favorites:["slate", "gundam"],
+    rotation:{
+      enabled:true,
+      activeList:"list-a",
+      mode:"cycle",
+      interval:30,
+      order:"sequence",
+      lists:[
+        { id:"list-a", name:"列表A", pool:["naruto", "slate"] },
+        { id:"list-b", name:"列表B", pool:["gundam", "slate"] },
+      ],
+    },
+  };
+  const { api } = load(JSON.stringify(saved), false, renderer.reactApi, { catalog:entries });
+  const activated = [];
+  let currentFamily = "naruto";
+  const render = () => renderer.render(api.ThemeCollections, {
+    draft:{ family:currentFamily, ...api.settingsFor(currentFamily), mode:"dark" },
+    update() {},
+    nextTheme() {},
+    text:(zh) => zh,
+    t:(key) => key,
+    onActivateTheme:(id) => { activated.push(id); currentFamily = id; },
+  });
+  const pill = (tree, label) => renderer.find(tree, (node) => node.props?.className === "dsh-theme-playlist-pill" && node.children?.[0]?.children?.[0] === label);
+  let tree = render();
+  // 当前在 naruto，不在「列表B」里：点击「列表B」立刻切到其第一项 gundam。
+  pill(tree, "列表B").props.onClick();
+  assert.equal(api.readDocument().rotation.activeList, "list-b");
+  assert.deepEqual(activated, ["gundam"]);
+  // 当前已在 gundam，在「全部多图」([naruto, gundam]) 里：切换播单不重复跳转。
+  tree = render();
+  pill(tree, "全部多图").props.onClick();
+  assert.equal(api.readDocument().rotation.activeList, api.BUILTIN_LIST_MULTI);
+  assert.deepEqual(activated, ["gundam"]);
+  // 关闭轮换后切到「列表A」：只切播单不强制改主题。
+  api.writeRotation({ ...api.readDocument().rotation, enabled:false });
+  tree = render();
+  pill(tree, "列表A").props.onClick();
+  assert.equal(api.readDocument().rotation.activeList, "list-a");
+  assert.deepEqual(activated, ["gundam"]);
+});
+
+test("ThemeCollections creates, renames, and deletes custom rotation lists inline", () => {
+  const renderer = elementRenderer();
+  const { api } = load(null, false, renderer.reactApi, { catalog:variantCatalog() });
+  const props = { draft:{ family:"naruto", ...api.settingsFor("naruto"), mode:"light" }, update() {}, nextTheme() {}, text:(zh) => zh, t:(key) => key, onActivateTheme() {} };
+  const render = () => renderer.render(api.ThemeCollections, props);
+  const btn = (tree, label) => renderer.find(tree, (node) => node.type === "button" && node.children?.[0] === label);
+  let tree = render();
+  // 新建自定义播单：输入名称 + 勾选两款主题 + 创建。
+  btn(tree, "+ 新建列表").props.onClick();
+  tree = render();
+  const nameInput = renderer.find(tree, (node) => node.type === "input" && node.props.type === "text");
+  nameInput.props.onChange({ target:{ value:"高达" } });
+  const check = (t, label) => renderer.find(t, (node) => node.props?.type === "checkbox" && node.props["aria-label"] === `轮换 ${label}`);
+  check(tree, "family.naruto").props.onChange({ target:{ checked:true } });
+  tree = render();
+  check(tree, "family.gundam").props.onChange({ target:{ checked:true } });
+  tree = render();
+  btn(tree, "创建列表").props.onClick();
+  assert.equal(api.readDocument().rotation.lists.length, 1);
+  assert.equal(api.readDocument().rotation.lists[0].name, "高达");
+  assert.deepEqual(Array.from(api.readDocument().rotation.lists[0].pool), ["naruto", "gundam"]);
+  assert.equal(api.readDocument().rotation.activeList, api.readDocument().rotation.lists[0].id);
+  // 内联重命名。
+  tree = render();
+  btn(tree, "重命名").props.onClick();
+  tree = render();
+  renderer.find(tree, (node) => node.type === "input" && node.props["aria-label"] === "重命名列表").props.onChange({ target:{ value:"机甲合集" } });
+  tree = render();
+  btn(tree, "保存").props.onClick();
+  assert.equal(api.readDocument().rotation.lists[0].name, "机甲合集");
+  // 内联二次确认删除，删除后回退内置「全部多图」。
+  tree = render();
+  btn(tree, "删除").props.onClick();
+  tree = render();
+  btn(tree, "确认删除").props.onClick();
+  assert.equal(api.readDocument().rotation.lists.length, 0);
+  assert.equal(api.readDocument().rotation.activeList, api.BUILTIN_LIST_MULTI);
 });

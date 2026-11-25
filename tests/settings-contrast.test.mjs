@@ -48,6 +48,8 @@ test("settings control text stays readable across every skin and interaction sta
     ["card metadata hover", "--dsw-alias-label-secondary", propertyToken(".dsh-theme-page button:hover:not(:disabled)", "background")],
     ["rotation panel", propertyToken(".dsh-theme-collection-panel", "color"), propertyToken(".dsh-theme-collection-panel", "background")],
     ["rotation helper text", propertyToken(".dsh-theme-collection-note", "color"), propertyToken(".dsh-theme-collection-panel", "background")],
+    ["rotation help popover", propertyToken(".dsh-theme-rotation-help", "color"), propertyToken(".dsh-theme-rotation-help", "background")],
+    ["rotation playlist pill", propertyToken(".dsh-theme-page .dsh-theme-playlist-pill", "color"), propertyToken(".dsh-theme-page .dsh-theme-playlist-pill", "background")],
     ["rotation select", propertyToken(".dsh-theme-page select", "color"), propertyToken(".dsh-theme-page select", "background")],
     ...[".dsh-theme-collection > summary", ".dsh-theme-collection > summary:hover", ".dsh-theme-page select:hover"]
       .map((selector) => [selector, propertyToken(selector, "color"), propertyToken(selector, "background")]),
