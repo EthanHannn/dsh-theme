@@ -24,7 +24,7 @@
 
 [王者荣耀 · 云阙长歌](#theme-101) · [王者荣耀 · 花月幻境](#theme-102) · [王者荣耀 · 破晓机动](#theme-103) · [王者荣耀 · 孙悟空 · 无相](#theme-104)
 
-[王者荣耀 · 貂蝉 · 花间舞梦 · 2 组场景](#theme-9) · [魔兽世界 · 4 组场景](#theme-10) · [炉石传说 · 4 组场景](#theme-38) · [王者荣耀 · 青莲剑仙](#theme-40) · [英雄联盟 · 九尾妖狐](#theme-41) · [英雄联盟 · 爆爆火花](#theme-42) · [我的世界](#theme-43) · [守望先锋 · 4 组场景](#theme-45) · [英雄联盟 · 艾欧尼亚茶会](#theme-59) · [英雄联盟 · 德玛西亚巡礼](#theme-60) · [原神 · 枫丹茶会](#theme-81) · [原神 · 净善书庭](#theme-82) · [原神 · 鸣神花信](#theme-83) · [崩坏：星穹铁道 · 四组场景](#theme-84) · [绝区零 · 六分街委托](#theme-90) · [绝区零 · 维多利亚茶歇](#theme-91) · [绝区零 · 六课雪夜](#theme-92) · [黑神话：悟空 · 山河四劫 · 4 组场景](#theme-93) · [黑神话：悟空 · 天命西行 · 4 组场景](#theme-94)
+[王者荣耀 · 貂蝉 · 花间舞梦 · 2 组场景](#theme-9) · [魔兽世界 · 4 组场景](#theme-10) · [炉石传说 · 4 组场景](#theme-38) · [王者荣耀 · 青莲剑仙](#theme-40) · [英雄联盟 · 4 组场景](#theme-41) · [我的世界](#theme-43) · [守望先锋 · 4 组场景](#theme-45) · [原神 · 枫丹茶会](#theme-81) · [原神 · 净善书庭](#theme-82) · [原神 · 鸣神花信](#theme-83) · [崩坏：星穹铁道 · 四组场景](#theme-84) · [绝区零 · 六分街委托](#theme-90) · [绝区零 · 维多利亚茶歇](#theme-91) · [绝区零 · 六课雪夜](#theme-92) · [黑神话：悟空 · 山河四劫 · 4 组场景](#theme-93) · [黑神话：悟空 · 天命西行 · 4 组场景](#theme-94)
 
 **其他**
 
@@ -499,20 +499,15 @@
 | [![王者荣耀 · 青莲剑仙 · 浅色](40-hok-li-bai-light.webp)](40-hok-li-bai-light.webp) | [![王者荣耀 · 青莲剑仙 · 深色](40-hok-li-bai-dark.webp)](40-hok-li-bai-dark.webp) |
 
 <a name="theme-41"></a>
-
-## 英雄联盟 · 九尾妖狐
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![英雄联盟 · 九尾妖狐 · 浅色](41-lol-ahri-light.webp)](41-lol-ahri-light.webp) | [![英雄联盟 · 九尾妖狐 · 深色](41-lol-ahri-dark.webp)](41-lol-ahri-dark.webp) |
-
 <a name="theme-42"></a>
+<a name="theme-59"></a>
+<a name="theme-60"></a>
 
-## 英雄联盟 · 爆爆火花
+## 英雄联盟
 
-| 浅色 | 深色 |
-| --- | --- |
-| [![英雄联盟 · 爆爆火花 · 浅色](42-lol-jinx-light.webp)](42-lol-jinx-light.webp) | [![英雄联盟 · 爆爆火花 · 深色](42-lol-jinx-dark.webp)](42-lol-jinx-dark.webp) |
+艾欧尼亚灵境、双城霓虹、德玛西亚荣光、极北炉光四组全新独立浅深场景，移除旧版四套单图壁纸并将原「艾欧尼亚茶会」「爆爆火花」「德玛西亚巡礼」入口分别迁入对应场景。统一采用象牙羊皮纸、符文海克斯蓝与鎏金配色，主图、无人物横幅与左下角物件随场景切换，共用海克斯卷宗文件夹与阿狸、金克丝、拉克丝、布隆四款侧栏伙伴。
+
+[![英雄联盟 · 四组浅深正式主图总览](41-lol-artworks.webp)](41-lol-artworks.webp)
 
 <a name="theme-43"></a>
 
@@ -599,23 +594,6 @@
 | 海滨冰站 | [![海滨冰站 · 浅色](58-dragon-ball-sweets-boardwalk-ice-light.webp)](58-dragon-ball-sweets-boardwalk-ice-light.webp) | [![海滨冰站 · 深色](58-dragon-ball-sweets-boardwalk-ice-dark.webp)](58-dragon-ball-sweets-boardwalk-ice-dark.webp) |
 | 胶囊烘焙实验 | [![胶囊烘焙实验 · 浅色](58-dragon-ball-sweets-capsule-baking-light.webp)](58-dragon-ball-sweets-capsule-baking-light.webp) | [![胶囊烘焙实验 · 深色](58-dragon-ball-sweets-capsule-baking-dark.webp)](58-dragon-ball-sweets-capsule-baking-dark.webp) |
 | 破坏神下午茶 | [![破坏神下午茶 · 浅色](58-dragon-ball-sweets-divine-tea-light.webp)](58-dragon-ball-sweets-divine-tea-light.webp) | [![破坏神下午茶 · 深色](58-dragon-ball-sweets-divine-tea-dark.webp)](58-dragon-ball-sweets-divine-tea-dark.webp) |
-
-<a name="theme-59"></a>
-
-## 英雄联盟 · 艾欧尼亚茶会
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![英雄联盟 · 艾欧尼亚茶会 · 浅色](59-lol-ionia-light.webp)](59-lol-ionia-light.webp) | [![英雄联盟 · 艾欧尼亚茶会 · 深色](59-lol-ionia-dark.webp)](59-lol-ionia-dark.webp) |
-
-<a name="theme-60"></a>
-
-## 英雄联盟 · 德玛西亚巡礼
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![英雄联盟 · 德玛西亚巡礼 · 浅色](60-lol-demacia-light.webp)](60-lol-demacia-light.webp) | [![英雄联盟 · 德玛西亚巡礼 · 深色](60-lol-demacia-dark.webp)](60-lol-demacia-dark.webp) |
-
 
 <a name="theme-63"></a>
 

@@ -71,7 +71,7 @@
 | [灌篮高手 · 4 组场景](docs/screenshots/README.md#theme-35) | [![灌篮高手 · 篮板课 · 浅色](docs/screenshots/35-slam-dunk-light.webp)](docs/screenshots/35-slam-dunk-light.webp) | [![灌篮高手 · 篮板课 · 深色](docs/screenshots/35-slam-dunk-dark.webp)](docs/screenshots/35-slam-dunk-dark.webp) |
 | [游戏王 · 决斗之魂](docs/screenshots/README.md#theme-37) | [![游戏王 · 决斗之魂 · 浅色](docs/screenshots/37-yu-gi-oh-light.webp)](docs/screenshots/37-yu-gi-oh-light.webp) | [![游戏王 · 决斗之魂 · 深色](docs/screenshots/37-yu-gi-oh-dark.webp)](docs/screenshots/37-yu-gi-oh-dark.webp) |
 | [炉石传说 · 4 组场景](docs/screenshots/README.md#theme-38) | [![炉石传说 · 旅店炉火 · 浅色](docs/screenshots/38-hearthstone-jaina-light.webp)](docs/screenshots/38-hearthstone-jaina-light.webp) | [![炉石传说 · 旅店炉火 · 深色](docs/screenshots/38-hearthstone-jaina-dark.webp)](docs/screenshots/38-hearthstone-jaina-dark.webp) |
-| [英雄联盟 · 艾欧尼亚茶会](docs/screenshots/README.md#theme-59) | [![英雄联盟 · 艾欧尼亚茶会 · 浅色](docs/screenshots/59-lol-ionia-light.webp)](docs/screenshots/59-lol-ionia-light.webp) | [![英雄联盟 · 艾欧尼亚茶会 · 深色](docs/screenshots/59-lol-ionia-dark.webp)](docs/screenshots/59-lol-ionia-dark.webp) |
+| [英雄联盟 · 4 组场景](docs/screenshots/README.md#theme-41) | [![英雄联盟 · 四组正式主图总览](docs/screenshots/41-lol-artworks.webp)](docs/screenshots/41-lol-artworks.webp) | [![英雄联盟 · 四组正式主图总览](docs/screenshots/41-lol-artworks.webp)](docs/screenshots/41-lol-artworks.webp) |
 | [我的世界](docs/screenshots/README.md#theme-43) | [![我的世界 · 浅色](docs/screenshots/43-minecraft-light.webp)](docs/screenshots/43-minecraft-light.webp) | [![我的世界 · 深色](docs/screenshots/43-minecraft-dark.webp)](docs/screenshots/43-minecraft-dark.webp) |
 | [守望先锋 · 4 组场景](docs/screenshots/README.md#theme-45) | [![守望先锋 · 国王大道闪现 · 浅色](docs/screenshots/45-overwatch-tracer-light.webp)](docs/screenshots/45-overwatch-tracer-light.webp) | [![守望先锋 · 国王大道闪现 · 深色](docs/screenshots/45-overwatch-tracer-dark.webp)](docs/screenshots/45-overwatch-tracer-dark.webp) |
 | [间谍过家家 · 福杰一家](docs/screenshots/README.md#theme-66) | [![间谍过家家 · 福杰一家 · 浅色](docs/screenshots/66-spy-family-forgers-light.webp)](docs/screenshots/66-spy-family-forgers-light.webp) | [![间谍过家家 · 福杰一家 · 深色](docs/screenshots/66-spy-family-forgers-dark.webp)](docs/screenshots/66-spy-family-forgers-dark.webp) |
@@ -232,8 +232,6 @@ Linux 可在安装包所在目录执行 `sha256sum -c SHA256SUMS.txt`；macOS �
 - **高达 · 巴巴托斯**：白甲 / 骨架蓝 / 火星砂岩，第四形态的持锤待命、太刀近战、机库整备、滑膛炮出击，共四组浅深场景。原持锤组保留；新增六幅独立主图及无角色横幅、物件和短句，随场景一起切换。
 - **我叫MT · 联盟日记**：联盟值日生、联盟补给站，共 2 组场景，统一阅读配色并联动整套配图。
 - **我叫MT · 美屡的林间手札**：林地米白 / 苔绿 / 猎装棕，美屡的观察、巡林与夜间手札。
-- **英雄联盟 · 德玛西亚巡礼**：德玛西亚石白 / 王室蓝 / 香槟金，拉克丝、盖伦、嘉文四世、奎因与华洛同行。
-- **英雄联盟 · 艾欧尼亚茶会**：茶白 / 艾欧尼亚玉绿 / 绯红，阿狸、亚索、艾瑞莉娅与阿卡丽的四人茶会。
 - **高达 · 独角兽觉醒**：独角兽白 / 精神感应框架红 / 机库夜蓝，独角兽模式与毁灭模式的日夜变身。
 - **高达 · 自由与正义**：装甲白 / 翼蓝 / 关节金 / 正义绯红，强袭自由与无限正义双机同行。
 - **七龙珠 · 甜点日常**采用草莓粉、奶油金与暮色李紫。四组可切换场景为布欧甜点屋、海滨冰站、胶囊烘焙实验与破坏神下午茶。
@@ -285,8 +283,7 @@ Linux 可在安装包所在目录执行 `sha256sum -c SHA256SUMS.txt`；macOS �
 - **魔兽世界**：辛多雷绯红 / 奥术金 / 暖羊皮纸统一阅读配色，收录血精灵、矮人、兽人战士、牛头人德鲁伊四组完整场景，主图、横幅、左下物件、文件夹、侧栏角色与语录同步切换；旧独立入口的偏好、收藏和轮换名单自动归并。
 - **守望先锋**：暖白陶瓷 / 战术天蓝 / 守望琥珀橙统一阅读配色，重制国王大道闪现、花村樱下、直布罗陀整备、荣耀与守望四组独立浅深场景；主图、无人物横幅、左下物件、战术文件夹开合与四位侧栏角色（猎空、天使、温斯顿、堡垒与妮妮）同步联动，旧入口自动迁入。
 - **炉石传说**：暖羊皮纸 / 炉石法力蓝 / 旅店铜金统一阅读配色，重制旅店炉火、冰霜咏唱、冰冠王座、寻宝奇兵四组独立浅深场景；主图、无人物横幅、左下物件、文件夹开合与四位侧栏角色（哈斯、吉安娜、巫妖王、芬利爵士）同步联动，旧入口自动迁入。
-- **英雄联盟 · 九尾妖狐**：阿狸 / 绯红与象牙白 / 九尾与狐灵。
-- **英雄联盟 · 爆爆火花**：金克丝 / 蓝紫与荧粉 / 鱼骨头与维修工具箱。
+- **英雄联盟**：象牙羊皮纸 / 符文海克斯蓝 / 鎏金统一阅读配色，重制艾欧尼亚灵境、双城霓虹、德玛西亚荣光、极北炉光四组独立浅深场景；主图、无人物横幅、左下物件、海克斯文件夹开合与四位侧栏角色（阿狸、金克丝、拉克丝、布隆与魄罗）同步联动，旧版四独立入口自动迁入对应场景。
 - **王者荣耀 · 青莲剑仙**：李白「青莲剑仙」原皮 / 白衣红纹与青铜酒葫芦。
 - **王者荣耀 · 貂蝉 · 花间舞梦**：绝世舞姬、馥梦繁花，共 2 组场景，统一阅读配色并联动整套配图。
 - **王者荣耀 · 云阙长歌**：云白 / 青蓝 / 羽金，李白「凤求凰」、韩信「白龙吟」、诸葛亮「武陵仙君」、百里守约「朱雀志」四人群像。
