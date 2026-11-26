@@ -6,6 +6,11 @@ export default {
   kin: "hok-diao-chan",
   legacyFamilies: [
     { id: "hok-diaochan-fumeng-minimal" },
+    { id: "hok-moonlit-bloom-minimal" },
+    { id: "hok-li-bai-minimal" },
+    { id: "hok-cloud-reverie-minimal" },
+    { id: "hok-wukong-wuxiang-minimal" },
+    { id: "hok-dawn-strike-minimal" },
   ],
   styles: ["minimal"],
   light: family.light,

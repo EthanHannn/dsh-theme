@@ -22,9 +22,7 @@
 
 **游戏**
 
-[王者荣耀 · 云阙长歌](#theme-101) · [王者荣耀 · 花月幻境](#theme-102) · [王者荣耀 · 破晓机动](#theme-103) · [王者荣耀 · 孙悟空 · 无相](#theme-104)
-
-[王者荣耀 · 貂蝉 · 花间舞梦 · 2 组场景](#theme-9) · [魔兽世界 · 4 组场景](#theme-10) · [炉石传说 · 4 组场景](#theme-38) · [王者荣耀 · 青莲剑仙](#theme-40) · [英雄联盟 · 4 组场景](#theme-41) · [我的世界](#theme-43) · [守望先锋 · 4 组场景](#theme-45) · [原神 · 枫丹茶会](#theme-81) · [原神 · 净善书庭](#theme-82) · [原神 · 鸣神花信](#theme-83) · [崩坏：星穹铁道 · 四组场景](#theme-84) · [绝区零 · 六分街委托](#theme-90) · [绝区零 · 维多利亚茶歇](#theme-91) · [绝区零 · 六课雪夜](#theme-92) · [黑神话：悟空 · 山河四劫 · 4 组场景](#theme-93) · [黑神话：悟空 · 天命西行 · 4 组场景](#theme-94)
+[王者荣耀 · 4 组场景](#theme-9) · [魔兽世界 · 4 组场景](#theme-10) · [炉石传说 · 4 组场景](#theme-38) · [英雄联盟 · 4 组场景](#theme-41) · [我的世界](#theme-43) · [守望先锋 · 4 组场景](#theme-45) · [原神 · 枫丹茶会](#theme-81) · [原神 · 净善书庭](#theme-82) · [原神 · 鸣神花信](#theme-83) · [崩坏：星穹铁道 · 四组场景](#theme-84) · [绝区零 · 六分街委托](#theme-90) · [绝区零 · 维多利亚茶歇](#theme-91) · [绝区零 · 六课雪夜](#theme-92) · [黑神话：悟空 · 山河四劫 · 4 组场景](#theme-93) · [黑神话：悟空 · 天命西行 · 4 组场景](#theme-94)
 
 **其他**
 
@@ -182,15 +180,18 @@
 | [![火影忍者 · 第七班 · 浅色](08-naruto-light.webp)](08-naruto-light.webp) | [![火影忍者 · 第七班 · 深色](08-naruto-dark.webp)](08-naruto-dark.webp) |
 
 <a name="theme-9"></a>
+<a name="theme-40"></a>
+<a name="theme-101"></a>
+<a name="theme-102"></a>
+<a name="theme-103"></a>
+<a name="theme-104"></a>
+<a name="theme-105"></a>
 
-## 王者荣耀 · 貂蝉 · 花间舞梦
+## 王者荣耀
 
-绝世舞姬、馥梦繁花合为一个主题，共 2 组浅深配图。沿用原有主图、动作与角色造型，统一使用原主入口的阅读配色；主图、物件、无人物横幅、文件夹、侧栏角色与语录随场景切换。旧入口的当前场景、明暗模式、收藏和轮换名单自动迁移。
+长安花月、青莲剑影、齐天云梦、机关破晓四组全新独立浅深场景，移除旧版六套分散壁纸并将全部历史入口自动迁入对应场景。统一采用盛唐暖宣纸、绛紫、青莲天青与鎏金配色，主图、无人物横幅与左下角物件随场景切换，共用盛唐锦匣文件夹与貂蝉、李白、孙悟空、鲁班七号四款侧栏伙伴。
 
-| 场景 | 浅色 | 深色 |
-| --- | --- | --- |
-| 绝世舞姬 | [![王者荣耀 · 貂蝉 · 花间舞梦 · 绝世舞姬 · 浅色](09-hok-diao-chan-light.webp)](09-hok-diao-chan-light.webp) | [![王者荣耀 · 貂蝉 · 花间舞梦 · 绝世舞姬 · 深色](09-hok-diao-chan-dark.webp)](09-hok-diao-chan-dark.webp) |
-| <a name="theme-105"></a>馥梦繁花 | [![王者荣耀 · 貂蝉 · 花间舞梦 · 馥梦繁花 · 浅色](09-hok-diao-chan-fragrant-dream-light.webp)](09-hok-diao-chan-fragrant-dream-light.webp) | [![王者荣耀 · 貂蝉 · 花间舞梦 · 馥梦繁花 · 深色](09-hok-diao-chan-fragrant-dream-dark.webp)](09-hok-diao-chan-fragrant-dream-dark.webp) |
+[![王者荣耀 · 四组浅深正式主图总览](09-hok-artworks.webp)](09-hok-artworks.webp)
 
 <a name="theme-10"></a>
 
@@ -489,14 +490,6 @@
 <a name="theme-39"></a>
 
 [![炉石传说 · 四组浅深正式主图总览](38-hearthstone-artworks.webp)](38-hearthstone-artworks.webp)
-
-<a name="theme-40"></a>
-
-## 王者荣耀 · 青莲剑仙
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![王者荣耀 · 青莲剑仙 · 浅色](40-hok-li-bai-light.webp)](40-hok-li-bai-light.webp) | [![王者荣耀 · 青莲剑仙 · 深色](40-hok-li-bai-dark.webp)](40-hok-li-bai-dark.webp) |
 
 <a name="theme-41"></a>
 <a name="theme-42"></a>
@@ -827,47 +820,6 @@
 | 盘丝岭 | [![盘丝岭 · 俯身拨开蛛丝](94-wukong-destined-journey-webbed-hollow-light.webp)](94-wukong-destined-journey-webbed-hollow-light.webp) | [![盘丝岭 · 洞底仰视百足虫](94-wukong-destined-journey-webbed-hollow-dark.webp)](94-wukong-destined-journey-webbed-hollow-dark.webp) |
 
 [查看八幅正式主图](94-wukong-destined-journey-artworks.webp)
-
-<a name="theme-101"></a>
-
-## 王者荣耀 · 云阙长歌
-
-李白「凤求凰」、韩信「白龙吟」、诸葛亮「武陵仙君」、百里守约「朱雀志」。云白、青蓝与羽金，明暗款分别描绘出行前的相聚与月下休憩。
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![王者荣耀 · 云阙长歌 · 浅色](101-hok-cloud-reverie-light.webp)](101-hok-cloud-reverie-light.webp) | [![王者荣耀 · 云阙长歌 · 深色](101-hok-cloud-reverie-dark.webp)](101-hok-cloud-reverie-dark.webp) |
-
-<a name="theme-102"></a>
-
-## 王者荣耀 · 花月幻境
-
-貂蝉「仲夏夜之梦」、瑶「遇见神鹿」、大乔「白鹤梁神女」、公孙离「祈雪灵祝」。玉绿、月白与蝶紫，明暗款分别描绘花间相伴与月夜小聚。
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![王者荣耀 · 花月幻境 · 浅色](102-hok-moonlit-bloom-light.webp)](102-hok-moonlit-bloom-light.webp) | [![王者荣耀 · 花月幻境 · 深色](102-hok-moonlit-bloom-dark.webp)](102-hok-moonlit-bloom-dark.webp) |
-
-<a name="theme-103"></a>
-
-## 王者荣耀 · 破晓机动
-
-孙尚香「末日机甲」、赵云「引擎之心」、孙悟空「零号·赤焰」、铠「绛天战甲」。钢蓝、银白与赤橙，明暗款分别描绘晨光集结与机甲夜巡。
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![王者荣耀 · 破晓机动 · 浅色](103-hok-dawn-strike-light.webp)](103-hok-dawn-strike-light.webp) | [![王者荣耀 · 破晓机动 · 深色](103-hok-dawn-strike-dark.webp)](103-hok-dawn-strike-dark.webp) |
-
-<a name="theme-104"></a>
-
-## 王者荣耀 · 孙悟空 · 无相
-
-以孙悟空无双限定皮肤「无相」为造型参考，保留白色鬃毛、鎏金冠饰、米白长袍、淡紫衣摆和莲花金箍棒。明暗款分别呈现金莲晨光与墨金夜境，并配有两款悟空侧栏伙伴。[官方皮肤介绍](https://www.taptap.cn/moment/754831784436304136)。
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![王者荣耀 · 孙悟空 · 无相 · 浅色](104-hok-wukong-wuxiang-light.webp)](104-hok-wukong-wuxiang-light.webp) | [![王者荣耀 · 孙悟空 · 无相 · 深色](104-hok-wukong-wuxiang-dark.webp)](104-hok-wukong-wuxiang-dark.webp) |
-
 
 <a name="theme-116"></a>
 

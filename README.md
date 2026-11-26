@@ -56,7 +56,7 @@
 | [我叫MT · 部落冒险](docs/screenshots/README.md#theme-26) | [![我叫MT · 部落冒险 · 浅色](docs/screenshots/26-i-am-mt-light.webp)](docs/screenshots/26-i-am-mt-light.webp) | [![我叫MT · 部落冒险 · 深色](docs/screenshots/26-i-am-mt-dark.webp)](docs/screenshots/26-i-am-mt-dark.webp) |
 | [电锯人 · 人间愿望](docs/screenshots/README.md#theme-13) | [![电锯人 · 人间愿望 · 浅色](docs/screenshots/13-chainsaw-light.webp)](docs/screenshots/13-chainsaw-light.webp) | [![电锯人 · 人间愿望 · 深色](docs/screenshots/13-chainsaw-dark.webp)](docs/screenshots/13-chainsaw-dark.webp) |
 | [火影忍者 · 第七班](docs/screenshots/README.md#theme-8) | [![火影忍者 · 第七班 · 浅色](docs/screenshots/08-naruto-light.webp)](docs/screenshots/08-naruto-light.webp) | [![火影忍者 · 第七班 · 深色](docs/screenshots/08-naruto-dark.webp)](docs/screenshots/08-naruto-dark.webp) |
-| [王者荣耀 · 云阙长歌](docs/screenshots/README.md#theme-101) | [![王者荣耀 · 云阙长歌 · 浅色](docs/screenshots/101-hok-cloud-reverie-light.webp)](docs/screenshots/101-hok-cloud-reverie-light.webp) | [![王者荣耀 · 云阙长歌 · 深色](docs/screenshots/101-hok-cloud-reverie-dark.webp)](docs/screenshots/101-hok-cloud-reverie-dark.webp) |
+| [王者荣耀 · 4 组场景](docs/screenshots/README.md#theme-9) | [![王者荣耀 · 四组正式主图总览](docs/screenshots/09-hok-artworks.webp)](docs/screenshots/09-hok-artworks.webp) | [![王者荣耀 · 四组正式主图总览](docs/screenshots/09-hok-artworks.webp)](docs/screenshots/09-hok-artworks.webp) |
 | [魔兽世界 · 4 组场景](docs/screenshots/README.md#theme-10) | [![魔兽世界 · 血精灵 · 浅色](docs/screenshots/10-wow-blood-elf-light.webp)](docs/screenshots/10-wow-blood-elf-light.webp) | [![魔兽世界 · 血精灵 · 深色](docs/screenshots/10-wow-blood-elf-dark.webp)](docs/screenshots/10-wow-blood-elf-dark.webp) |
 | [死神 · 千本樱](docs/screenshots/README.md#theme-11) | [![死神 · 千本樱 · 浅色](docs/screenshots/11-bleach-senbonzakura-light.webp)](docs/screenshots/11-bleach-senbonzakura-light.webp) | [![死神 · 千本樱 · 深色](docs/screenshots/11-bleach-senbonzakura-dark.webp)](docs/screenshots/11-bleach-senbonzakura-dark.webp) |
 | [阿拉蕾 · 企鹅村 · 4 组场景](docs/screenshots/README.md#theme-18) | [![阿拉蕾 · 企鹅村 · 浅色](docs/screenshots/18-dr-slump-light.webp)](docs/screenshots/18-dr-slump-light.webp) | [![阿拉蕾 · 企鹅村 · 深色](docs/screenshots/18-dr-slump-dark.webp)](docs/screenshots/18-dr-slump-dark.webp) |
@@ -284,10 +284,7 @@ Linux 可在安装包所在目录执行 `sha256sum -c SHA256SUMS.txt`；macOS �
 - **守望先锋**：暖白陶瓷 / 战术天蓝 / 守望琥珀橙统一阅读配色，重制国王大道闪现、花村樱下、直布罗陀整备、荣耀与守望四组独立浅深场景；主图、无人物横幅、左下物件、战术文件夹开合与四位侧栏角色（猎空、天使、温斯顿、堡垒与妮妮）同步联动，旧入口自动迁入。
 - **炉石传说**：暖羊皮纸 / 炉石法力蓝 / 旅店铜金统一阅读配色，重制旅店炉火、冰霜咏唱、冰冠王座、寻宝奇兵四组独立浅深场景；主图、无人物横幅、左下物件、文件夹开合与四位侧栏角色（哈斯、吉安娜、巫妖王、芬利爵士）同步联动，旧入口自动迁入。
 - **英雄联盟**：象牙羊皮纸 / 符文海克斯蓝 / 鎏金统一阅读配色，重制艾欧尼亚灵境、双城霓虹、德玛西亚荣光、极北炉光四组独立浅深场景；主图、无人物横幅、左下物件、海克斯文件夹开合与四位侧栏角色（阿狸、金克丝、拉克丝、布隆与魄罗）同步联动，旧版四独立入口自动迁入对应场景。
-- **王者荣耀 · 青莲剑仙**：李白「青莲剑仙」原皮 / 白衣红纹与青铜酒葫芦。
-- **王者荣耀 · 貂蝉 · 花间舞梦**：绝世舞姬、馥梦繁花，共 2 组场景，统一阅读配色并联动整套配图。
-- **王者荣耀 · 云阙长歌**：云白 / 青蓝 / 羽金，李白「凤求凰」、韩信「白龙吟」、诸葛亮「武陵仙君」、百里守约「朱雀志」四人群像。
-- **王者荣耀 · 花月幻境**：玉绿 / 月白 / 蝶紫，貂蝉「仲夏夜之梦」、瑶「遇见神鹿」、大乔「白鹤梁神女」、公孙离「祈雪灵祝」四人群像。
+- **王者荣耀**：盛唐暖宣纸 / 绛紫 / 青莲天青与鎏金统一阅读配色，重制长安花月、青莲剑影、齐天云梦、机关破晓四组独立浅深场景；主图、无人物横幅、左下物件、盛唐锦匣文件夹开合与四位侧栏角色（貂蝉、李白、孙悟空、鲁班七号）同步联动，旧版六独立入口自动迁入对应场景。
 - **游戏王 · 决斗之魂**：游戏与黑魔导 / 游戏与海马 / 双人决斗场景。
 - **阿拉蕾 · 企鹅村**：阿拉蕾与则卷千兵卫 / 企鹅村 / 明黄与葡萄紫。
 - **EVA · 初号机 · 觉醒**：紫色装甲 / 荧绿信号 / 第三新东京市。
