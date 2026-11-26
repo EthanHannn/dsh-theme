@@ -3,7 +3,7 @@ import family from "./wow-dwarf.mjs";
 // Share the base palette; vivid surface overrides and artwork stay with the parent.
 export default {
   id: "wow-dwarf-minimal",
-  names: { zh: "魔兽世界·矮人·简约", en: "WoW Dwarf · Minimal" },
+  names: { zh: `${family.names.zh} · 简约`, en: `${family.names.en} · Minimal` },
   kin: "wow-dwarf",
   styles: ["minimal"],
   light: family.light,

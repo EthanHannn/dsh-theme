@@ -5,7 +5,7 @@ const family = createVividFamily({
   "id": "overwatch-mercy",
   "signaturePrefix": "col2",
   "names": {
-    "zh": "守望先锋·守护天使",
+    "zh": "守望先锋 · 守护天使",
     "en": "Overwatch · Guardian Angel",
   },
   "phrases": {

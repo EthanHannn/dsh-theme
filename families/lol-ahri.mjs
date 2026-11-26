@@ -5,7 +5,7 @@ const family = createVividFamily({
   "id": "lol-ahri",
   "signaturePrefix": "col5",
   "names": {
-    "zh": "英雄联盟·九尾妖狐",
+    "zh": "英雄联盟 · 九尾妖狐",
     "en": "League of Legends · Nine-Tailed Fox",
   },
   "phrases": {

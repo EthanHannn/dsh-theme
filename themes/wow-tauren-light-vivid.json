@@ -1,6 +1,6 @@
 {
   "id": "wow-tauren-light-vivid",
-  "name": "WoW Tauren Druid Light",
+  "name": "World of Warcraft · Tauren Druid Light",
   "colorScheme": "light",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #F4E8D2 50%, #EADFC9)",

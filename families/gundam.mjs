@@ -15,7 +15,7 @@
 
 export default {
   id: "gundam",
-  names: { zh: "高达·RX-78-2", en: "Gundam · RX-78-2" },
+  names: { zh: "高达 · RX-78-2", en: "Gundam · RX-78-2" },
   originalArtworkNames: { zh: "元祖待命", en: "RX-78-2 Standing By" },
   artworks: [
     {

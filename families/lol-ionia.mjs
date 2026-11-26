@@ -5,7 +5,7 @@ const family = createVividFamily({
   "id": "lol-ionia",
   "signaturePrefix": "lol-ionia",
   "names": {
-    "zh": "英雄联盟·艾欧尼亚茶会",
+    "zh": "英雄联盟 · 艾欧尼亚茶会",
     "en": "League of Legends · Ionia Tea Gathering",
   },
   "phrases": {

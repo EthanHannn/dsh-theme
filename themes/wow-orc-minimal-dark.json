@@ -1,6 +1,6 @@
 {
   "id": "wow-orc-minimal-dark",
-  "name": "WoW Orc Warrior · Minimal Dark",
+  "name": "World of Warcraft · Orc Warrior · Minimal Dark",
   "colorScheme": "dark",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #EAEBD9 50%, #D0D1C1)",

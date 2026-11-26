@@ -5,7 +5,7 @@ const family = createVividFamily({
   "id": "eva-unit-02",
   "signaturePrefix": "ev2",
   "names": {
-    "zh": "EVA·二号机·烈焰",
+    "zh": "EVA · 二号机 · 烈焰",
     "en": "Evangelion · Unit-02 · Crimson"
   },
   "phrases": {

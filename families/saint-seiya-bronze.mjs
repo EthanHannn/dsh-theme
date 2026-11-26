@@ -4,7 +4,7 @@ const family = createVividFamily({
   id: "saint-seiya-bronze",
   signaturePrefix: "ssb",
   names: {
-    zh: "圣斗士·天马流星",
+    zh: "圣斗士 · 天马流星",
     en: "Saint Seiya · Pegasus Meteor"
   },
   phrases: {

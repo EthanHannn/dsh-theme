@@ -5,7 +5,7 @@ const family = createVividFamily({
   "id": "hearthstone-jaina",
   "signaturePrefix": "col3",
   "names": {
-    "zh": "炉石传说·冰霜法师",
+    "zh": "炉石传说 · 冰霜法师",
     "en": "Hearthstone · Frost Mage",
   },
   "phrases": {

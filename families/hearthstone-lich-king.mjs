@@ -5,7 +5,7 @@ const family = createVividFamily({
   "id": "hearthstone-lich-king",
   "signaturePrefix": "col4",
   "names": {
-    "zh": "炉石传说·冰冠王座",
+    "zh": "炉石传说 · 冰冠王座",
     "en": "Hearthstone · Frozen Throne",
   },
   "phrases": {

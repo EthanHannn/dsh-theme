@@ -5,7 +5,7 @@ const family = createVividFamily({
   "id": "conan-osaka",
   "signaturePrefix": "conan-osaka",
   "names": {
-    "zh": "名侦探柯南·大阪同行",
+    "zh": "名侦探柯南 · 大阪同行",
     "en": "Detective Conan · Osaka Companions",
   },
   "phrases": {

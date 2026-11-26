@@ -2,10 +2,7 @@ import family from "./dr-slump.mjs";
 
 export default {
   "id": "dr-slump-minimal",
-  "names": {
-    "zh": "阿拉蕾 · 企鹅村 · 简约",
-    "en": "Dr. Slump · Penguin Village · Minimal",
-  },
+  names: { zh: `${family.names.zh} · 简约`, en: `${family.names.en} · Minimal` },
   "kin": "dr-slump",
   "styles": [
     "minimal",

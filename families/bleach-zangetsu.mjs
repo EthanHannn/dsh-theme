@@ -5,7 +5,7 @@ const family = createVividFamily({
   "id": "bleach-zangetsu",
   "signaturePrefix": "blz",
   "names": {
-    "zh": "死神·斩月",
+    "zh": "死神 · 斩月",
     "en": "Bleach · Zangetsu"
   },
   "phrases": {

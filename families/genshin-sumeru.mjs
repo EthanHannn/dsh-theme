@@ -5,7 +5,7 @@ const family = createVividFamily({
   "id": "genshin-sumeru",
   "signaturePrefix": "genshin-sumeru",
   "names": {
-    "zh": "原神·净善书庭",
+    "zh": "原神 · 净善书庭",
     "en": "Genshin Impact · Sanctuary of Pages",
   },
   "phrases": {

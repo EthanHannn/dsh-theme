@@ -4,7 +4,7 @@ const family = createVividFamily({
   id: "saint-seiya-gold",
   signaturePrefix: "ssg",
   names: {
-    zh: "圣斗士·黄金十二宫",
+    zh: "圣斗士 · 黄金十二宫",
     en: "Saint Seiya · Golden Sanctuary"
   },
   phrases: {

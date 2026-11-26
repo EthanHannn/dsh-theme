@@ -5,7 +5,7 @@ const family = createVividFamily({
   "id": "lol-demacia",
   "signaturePrefix": "lol-demacia",
   "names": {
-    "zh": "英雄联盟·德玛西亚巡礼",
+    "zh": "英雄联盟 · 德玛西亚巡礼",
     "en": "League of Legends · Demacia Companions",
   },
   "phrases": {

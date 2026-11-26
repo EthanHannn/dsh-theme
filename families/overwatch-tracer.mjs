@@ -5,7 +5,7 @@ const family = createVividFamily({
   "id": "overwatch-tracer",
   "signaturePrefix": "col1",
   "names": {
-    "zh": "守望先锋·时间跃迁",
+    "zh": "守望先锋 · 时间跃迁",
     "en": "Overwatch · Chronal Blink",
   },
   "phrases": {

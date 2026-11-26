@@ -2,7 +2,7 @@ import family from "./lol-demacia.mjs";
 
 export default {
   id: "lol-demacia-minimal",
-  names: { zh: "英雄联盟·德玛西亚巡礼·简约", en: "League of Legends · Demacia Companions · Minimal" },
+  names: { zh: `${family.names.zh} · 简约`, en: `${family.names.en} · Minimal` },
   kin: "lol-demacia",
   styles: ["minimal"],
   light: family.light,

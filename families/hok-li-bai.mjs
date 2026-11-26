@@ -7,7 +7,7 @@ const family = createVividFamily({
   "id": "hok-li-bai",
   "signaturePrefix": "col7",
   "names": {
-    "zh": "王者荣耀·青莲剑仙",
+    "zh": "王者荣耀 · 青莲剑仙",
     "en": "Honor of Kings · Azure Lotus",
   },
   "phrases": {

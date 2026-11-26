@@ -4,7 +4,7 @@ import { createVividFamily } from "./create-vivid-family.js";
 const family = createVividFamily({
   id: "kimetsu-hashira",
   signaturePrefix: "kmh",
-  names: { zh: "鬼灭之刃·柱之誓约", en: "Demon Slayer · Hashira Oath" },
+  names: { zh: "鬼灭之刃 · 柱之誓约", en: "Demon Slayer · Hashira Oath" },
   phrases: {
     // Imagined ensemble and original mood lines, not quotations from the work.
     zh: [

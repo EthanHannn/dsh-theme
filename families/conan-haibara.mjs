@@ -4,7 +4,7 @@ import { createVividFamily } from "./create-vivid-family.js";
 const family = createVividFamily({
   id: "conan-haibara",
   signaturePrefix: "haibara",
-  names: { zh: "灰原哀·琥珀微光", en: "Ai Haibara · Amber Quiet" },
+  names: { zh: "名侦探柯南 · 灰原哀 · 琥珀微光", en: "Detective Conan · Ai Haibara · Amber Quiet" },
   phrases: {
     // Original lines for the coffee, research and kitten companions, in order.
     zh: [

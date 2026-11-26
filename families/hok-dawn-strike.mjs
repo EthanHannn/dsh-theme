@@ -8,7 +8,7 @@ const family = createVividFamily({
   id: "hok-dawn-strike",
   signaturePrefix: "hok-dawn-strike",
   names: {
-    zh: "王者荣耀·破晓机动",
+    zh: "王者荣耀 · 破晓机动",
     en: "Honor of Kings · Dawn Strike",
   },
   phrases: {

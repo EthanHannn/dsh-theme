@@ -5,7 +5,7 @@ import { createVividFamily } from "./create-vivid-family.js";
 const family = createVividFamily({
   id: "team-guy",
   signaturePrefix: "tgy",
-  names: { zh: "火影忍者·凯班", en: "Naruto · Team Guy" },
+  names: { zh: "火影忍者 · 凯班", en: "Naruto · Team Guy" },
   phrases: {
     zh: [
       ["小李：负重绑好了，开始修行！", "小李：青春就是永不言弃！", "小李：今天也要稳稳地前进一步！"],

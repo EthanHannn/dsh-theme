@@ -8,7 +8,7 @@ const family = createVividFamily({
   id: "hok-moonlit-bloom",
   signaturePrefix: "hok-moonlit-bloom",
   names: {
-    zh: "王者荣耀·花月幻境",
+    zh: "王者荣耀 · 花月幻境",
     en: "Honor of Kings · Moonlit Bloom",
   },
   phrases: {

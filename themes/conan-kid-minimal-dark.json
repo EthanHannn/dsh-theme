@@ -1,6 +1,6 @@
 {
   "id": "conan-kid-minimal-dark",
-  "name": "Kaito Kid · Moonlit Calling Card · Minimal Dark",
+  "name": "Detective Conan · Kaito Kid · Moonlit Calling Card · Minimal Dark",
   "colorScheme": "dark",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #E9EFFC 50%, #CFD5E3)",

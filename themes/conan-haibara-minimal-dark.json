@@ -1,6 +1,6 @@
 {
   "id": "conan-haibara-minimal-dark",
-  "name": "Ai Haibara · Amber Quiet · Minimal Dark",
+  "name": "Detective Conan · Ai Haibara · Amber Quiet · Minimal Dark",
   "colorScheme": "dark",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #E6EEE7 50%, #CCD5CF)",

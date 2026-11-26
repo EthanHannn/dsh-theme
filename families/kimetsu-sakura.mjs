@@ -4,7 +4,7 @@ import { createVividFamily } from "./create-vivid-family.js";
 const family = createVividFamily({
   id: "kimetsu-sakura",
   signaturePrefix: "kms",
-  names: { zh: "鬼灭之刃·樱庭恋歌", en: "Demon Slayer · Sakura Hearts" },
+  names: { zh: "鬼灭之刃 · 樱庭恋歌", en: "Demon Slayer · Sakura Hearts" },
   phrases: {
     // Original mood lines, matching Mitsuri / Obanai / Shinobu / Kanao pals.
     zh: [

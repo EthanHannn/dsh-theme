@@ -5,7 +5,7 @@ const family = createVividFamily({
   "id": "dragon-ball-family",
   "signaturePrefix": "dragon-ball-family",
   "names": {
-    "zh": "七龙珠·包子山家书",
+    "zh": "七龙珠 · 包子山家书",
     "en": "Dragon Ball · Mount Paozu Family",
   },
   "phrases": {

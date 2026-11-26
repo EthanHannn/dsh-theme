@@ -8,8 +8,8 @@ const family = createVividFamily({
   id: "hok-wukong-wuxiang",
   signaturePrefix: "hok-wukong-wuxiang",
   names: {
-    zh: "王者荣耀·孙悟空·无相",
-    en: "Honor of Kings · Wukong: Wuxiang",
+    zh: "王者荣耀 · 孙悟空 · 无相",
+    en: "Honor of Kings · Wukong · Wuxiang",
   },
   phrases: {
     zh: [

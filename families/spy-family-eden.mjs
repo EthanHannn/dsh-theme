@@ -5,7 +5,7 @@ const family = createVividFamily({
   "id": "spy-family-eden",
   "signaturePrefix": "spy-family-eden",
   "names": {
-    "zh": "间谍过家家·伊甸星光",
+    "zh": "间谍过家家 · 伊甸星光",
     "en": "Spy x Family · Eden Stars",
   },
   "phrases": {

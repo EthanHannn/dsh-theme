@@ -47,43 +47,43 @@
 | [咕嘎和 Doro · 中东土豪 · 金穗绿洲](docs/screenshots/README.md#theme-123) | [![咕嘎和 Doro · 中东土豪 · 金穗绿洲 · 浅色](docs/screenshots/123-doro-oasis-gold-light.webp)](docs/screenshots/123-doro-oasis-gold-light.webp) | [![咕嘎和 Doro · 中东土豪 · 金穗绿洲 · 深色](docs/screenshots/123-doro-oasis-gold-dark.webp)](docs/screenshots/123-doro-oasis-gold-dark.webp) |
 | [咕嘎和 Doro · 厨师 · 暖锅小馆](docs/screenshots/README.md#theme-124) | [![咕嘎和 Doro · 厨师 · 暖锅小馆 · 浅色](docs/screenshots/124-doro-chef-hearth-light.webp)](docs/screenshots/124-doro-chef-hearth-light.webp) | [![咕嘎和 Doro · 厨师 · 暖锅小馆 · 深色](docs/screenshots/124-doro-chef-hearth-dark.webp)](docs/screenshots/124-doro-chef-hearth-dark.webp) |
 | [咕嘎和 Doro · 剑仙 · 云岫剑庐](docs/screenshots/README.md#theme-129) | [![咕嘎和 Doro · 剑仙 · 云岫剑庐 · 浅色](docs/screenshots/129-doro-sword-cloud-retreat-light.webp)](docs/screenshots/129-doro-sword-cloud-retreat-light.webp) | [![咕嘎和 Doro · 剑仙 · 云岫剑庐 · 深色](docs/screenshots/129-doro-sword-cloud-retreat-dark.webp)](docs/screenshots/129-doro-sword-cloud-retreat-dark.webp) |
-| [名侦探柯南·米花协奏](docs/screenshots/README.md#theme-4) | [![名侦探柯南·米花协奏 · 浅色](docs/screenshots/04-conan-ensemble-light.webp)](docs/screenshots/04-conan-ensemble-light.webp) | [![名侦探柯南·米花协奏 · 深色](docs/screenshots/04-conan-ensemble-dark.webp)](docs/screenshots/04-conan-ensemble-dark.webp) |
+| [名侦探柯南 · 米花协奏](docs/screenshots/README.md#theme-4) | [![名侦探柯南 · 米花协奏 · 浅色](docs/screenshots/04-conan-ensemble-light.webp)](docs/screenshots/04-conan-ensemble-light.webp) | [![名侦探柯南 · 米花协奏 · 深色](docs/screenshots/04-conan-ensemble-dark.webp)](docs/screenshots/04-conan-ensemble-dark.webp) |
 | [吉伊卡哇 · 小小生活（烘焙小队）](docs/screenshots/README.md#theme-55) | [![吉伊卡哇 · 小小生活（烘焙小队） · 浅色](docs/screenshots/03-chiikawa-picnic-bakery-light.webp)](docs/screenshots/03-chiikawa-picnic-bakery-light.webp) | [![吉伊卡哇 · 小小生活（烘焙小队） · 深色](docs/screenshots/03-chiikawa-picnic-bakery-dark.webp)](docs/screenshots/03-chiikawa-picnic-bakery-dark.webp) |
 | [胆大党 · 怪奇同盟（灵能交锋）](docs/screenshots/README.md#theme-79) | [![胆大党 · 怪奇同盟（灵能交锋） · 浅色](docs/screenshots/78-dandadan-afterschool-awakening-light.webp)](docs/screenshots/78-dandadan-afterschool-awakening-light.webp) | [![胆大党 · 怪奇同盟（灵能交锋） · 深色](docs/screenshots/78-dandadan-afterschool-awakening-dark.webp)](docs/screenshots/78-dandadan-afterschool-awakening-dark.webp) |
 | [七龙珠 · 龟仙流夏日](docs/screenshots/README.md#theme-19) | [![七龙珠 · 龟仙流夏日 · 浅色](docs/screenshots/19-dragon-ball-kame-light.webp)](docs/screenshots/19-dragon-ball-kame-light.webp) | [![七龙珠 · 龟仙流夏日 · 深色](docs/screenshots/19-dragon-ball-kame-dark.webp)](docs/screenshots/19-dragon-ball-kame-dark.webp) |
-| [EVA·初号机·觉醒](docs/screenshots/README.md#theme-6) | [![EVA·初号机·觉醒 · 浅色](docs/screenshots/06-eva-unit-01-light.webp)](docs/screenshots/06-eva-unit-01-light.webp) | [![EVA·初号机·觉醒 · 深色](docs/screenshots/06-eva-unit-01-dark.webp)](docs/screenshots/06-eva-unit-01-dark.webp) |
+| [EVA · 初号机 · 觉醒](docs/screenshots/README.md#theme-6) | [![EVA · 初号机 · 觉醒 · 浅色](docs/screenshots/06-eva-unit-01-light.webp)](docs/screenshots/06-eva-unit-01-light.webp) | [![EVA · 初号机 · 觉醒 · 深色](docs/screenshots/06-eva-unit-01-dark.webp)](docs/screenshots/06-eva-unit-01-dark.webp) |
 | [葬送的芙莉莲](docs/screenshots/README.md#theme-7) | [![葬送的芙莉莲 · 浅色](docs/screenshots/07-frieren-light.webp)](docs/screenshots/07-frieren-light.webp) | [![葬送的芙莉莲 · 深色](docs/screenshots/07-frieren-dark.webp)](docs/screenshots/07-frieren-dark.webp) |
 | [我叫MT · 部落冒险](docs/screenshots/README.md#theme-26) | [![我叫MT · 部落冒险 · 浅色](docs/screenshots/26-i-am-mt-light.webp)](docs/screenshots/26-i-am-mt-light.webp) | [![我叫MT · 部落冒险 · 深色](docs/screenshots/26-i-am-mt-dark.webp)](docs/screenshots/26-i-am-mt-dark.webp) |
 | [电锯人 · 人间愿望](docs/screenshots/README.md#theme-13) | [![电锯人 · 人间愿望 · 浅色](docs/screenshots/13-chainsaw-light.webp)](docs/screenshots/13-chainsaw-light.webp) | [![电锯人 · 人间愿望 · 深色](docs/screenshots/13-chainsaw-dark.webp)](docs/screenshots/13-chainsaw-dark.webp) |
-| [火影忍者·第七班](docs/screenshots/README.md#theme-8) | [![火影忍者·第七班 · 浅色](docs/screenshots/08-naruto-light.webp)](docs/screenshots/08-naruto-light.webp) | [![火影忍者·第七班 · 深色](docs/screenshots/08-naruto-dark.webp)](docs/screenshots/08-naruto-dark.webp) |
-| [王者荣耀·云阙长歌](docs/screenshots/README.md#theme-101) | [![王者荣耀·云阙长歌 · 浅色](docs/screenshots/101-hok-cloud-reverie-light.webp)](docs/screenshots/101-hok-cloud-reverie-light.webp) | [![王者荣耀·云阙长歌 · 深色](docs/screenshots/101-hok-cloud-reverie-dark.webp)](docs/screenshots/101-hok-cloud-reverie-dark.webp) |
-| [魔兽世界·血精灵](docs/screenshots/README.md#theme-10) | [![魔兽世界·血精灵 · 浅色](docs/screenshots/10-wow-blood-elf-light.webp)](docs/screenshots/10-wow-blood-elf-light.webp) | [![魔兽世界·血精灵 · 深色](docs/screenshots/10-wow-blood-elf-dark.webp)](docs/screenshots/10-wow-blood-elf-dark.webp) |
-| [死神·千本樱](docs/screenshots/README.md#theme-11) | [![死神·千本樱 · 浅色](docs/screenshots/11-bleach-senbonzakura-light.webp)](docs/screenshots/11-bleach-senbonzakura-light.webp) | [![死神·千本樱 · 深色](docs/screenshots/11-bleach-senbonzakura-dark.webp)](docs/screenshots/11-bleach-senbonzakura-dark.webp) |
+| [火影忍者 · 第七班](docs/screenshots/README.md#theme-8) | [![火影忍者 · 第七班 · 浅色](docs/screenshots/08-naruto-light.webp)](docs/screenshots/08-naruto-light.webp) | [![火影忍者 · 第七班 · 深色](docs/screenshots/08-naruto-dark.webp)](docs/screenshots/08-naruto-dark.webp) |
+| [王者荣耀 · 云阙长歌](docs/screenshots/README.md#theme-101) | [![王者荣耀 · 云阙长歌 · 浅色](docs/screenshots/101-hok-cloud-reverie-light.webp)](docs/screenshots/101-hok-cloud-reverie-light.webp) | [![王者荣耀 · 云阙长歌 · 深色](docs/screenshots/101-hok-cloud-reverie-dark.webp)](docs/screenshots/101-hok-cloud-reverie-dark.webp) |
+| [魔兽世界 · 血精灵](docs/screenshots/README.md#theme-10) | [![魔兽世界 · 血精灵 · 浅色](docs/screenshots/10-wow-blood-elf-light.webp)](docs/screenshots/10-wow-blood-elf-light.webp) | [![魔兽世界 · 血精灵 · 深色](docs/screenshots/10-wow-blood-elf-dark.webp)](docs/screenshots/10-wow-blood-elf-dark.webp) |
+| [死神 · 千本樱](docs/screenshots/README.md#theme-11) | [![死神 · 千本樱 · 浅色](docs/screenshots/11-bleach-senbonzakura-light.webp)](docs/screenshots/11-bleach-senbonzakura-light.webp) | [![死神 · 千本樱 · 深色](docs/screenshots/11-bleach-senbonzakura-dark.webp)](docs/screenshots/11-bleach-senbonzakura-dark.webp) |
 | [阿拉蕾 · 企鹅村 · 4 组场景](docs/screenshots/README.md#theme-18) | [![阿拉蕾 · 企鹅村 · 浅色](docs/screenshots/18-dr-slump-light.webp)](docs/screenshots/18-dr-slump-light.webp) | [![阿拉蕾 · 企鹅村 · 深色](docs/screenshots/18-dr-slump-dark.webp)](docs/screenshots/18-dr-slump-dark.webp) |
 | [小林家的龙女仆](docs/screenshots/README.md#theme-21) | [![小林家的龙女仆 · 浅色](docs/screenshots/21-dragon-maid-light.webp)](docs/screenshots/21-dragon-maid-light.webp) | [![小林家的龙女仆 · 深色](docs/screenshots/21-dragon-maid-dark.webp)](docs/screenshots/21-dragon-maid-dark.webp) |
-| [高达·自由与正义](docs/screenshots/README.md#theme-51) | [![高达·自由与正义 · 浅色](docs/screenshots/51-gundam-seed-light.webp)](docs/screenshots/51-gundam-seed-light.webp) | [![高达·自由与正义 · 深色](docs/screenshots/51-gundam-seed-dark.webp)](docs/screenshots/51-gundam-seed-dark.webp) |
+| [高达 · 自由与正义](docs/screenshots/README.md#theme-51) | [![高达 · 自由与正义 · 浅色](docs/screenshots/51-gundam-seed-light.webp)](docs/screenshots/51-gundam-seed-light.webp) | [![高达 · 自由与正义 · 深色](docs/screenshots/51-gundam-seed-dark.webp)](docs/screenshots/51-gundam-seed-dark.webp) |
 | [超能力女儿 · 4 组场景](docs/screenshots/README.md#theme-25) | [![超能力女儿 · 新田家的日常 · 浅色](docs/screenshots/25-hinamatsuri-light.webp)](docs/screenshots/25-hinamatsuri-light.webp) | [![超能力女儿 · 新田家的日常 · 深色](docs/screenshots/25-hinamatsuri-dark.webp)](docs/screenshots/25-hinamatsuri-dark.webp) |
-| [鬼灭之刃·羁绊同行](docs/screenshots/README.md#theme-27) | [![鬼灭之刃·羁绊同行 · 浅色](docs/screenshots/27-kimetsu-bonds-light.webp)](docs/screenshots/27-kimetsu-bonds-light.webp) | [![鬼灭之刃·羁绊同行 · 深色](docs/screenshots/27-kimetsu-bonds-dark.webp)](docs/screenshots/27-kimetsu-bonds-dark.webp) |
+| [鬼灭之刃 · 羁绊同行](docs/screenshots/README.md#theme-27) | [![鬼灭之刃 · 羁绊同行 · 浅色](docs/screenshots/27-kimetsu-bonds-light.webp)](docs/screenshots/27-kimetsu-bonds-light.webp) | [![鬼灭之刃 · 羁绊同行 · 深色](docs/screenshots/27-kimetsu-bonds-dark.webp)](docs/screenshots/27-kimetsu-bonds-dark.webp) |
 | [夏目友人帐 · 四场景](docs/screenshots/README.md#theme-30) | [![夏目友人帐 · 浅色](docs/screenshots/30-natsume-light.webp)](docs/screenshots/30-natsume-light.webp) | [![夏目友人帐 · 深色](docs/screenshots/30-natsume-dark.webp)](docs/screenshots/30-natsume-dark.webp) |
 | [海贼王 · 4 组场景](docs/screenshots/README.md#theme-31) | [![海贼王 · 桑尼号出航 · 浅色](docs/screenshots/31-one-piece-light.webp)](docs/screenshots/31-one-piece-light.webp) | [![海贼王 · 桑尼号出航 · 深色](docs/screenshots/31-one-piece-dark.webp)](docs/screenshots/31-one-piece-dark.webp) |
-| [圣斗士·天马流星](docs/screenshots/README.md#theme-32) | [![圣斗士·天马流星 · 浅色](docs/screenshots/32-saint-seiya-bronze-light.webp)](docs/screenshots/32-saint-seiya-bronze-light.webp) | [![圣斗士·天马流星 · 深色](docs/screenshots/32-saint-seiya-bronze-dark.webp)](docs/screenshots/32-saint-seiya-bronze-dark.webp) |
+| [圣斗士 · 天马流星](docs/screenshots/README.md#theme-32) | [![圣斗士 · 天马流星 · 浅色](docs/screenshots/32-saint-seiya-bronze-light.webp)](docs/screenshots/32-saint-seiya-bronze-light.webp) | [![圣斗士 · 天马流星 · 深色](docs/screenshots/32-saint-seiya-bronze-dark.webp)](docs/screenshots/32-saint-seiya-bronze-dark.webp) |
 | [蜡笔小新 · 春日部日常（春日部探险队）](docs/screenshots/README.md#theme-61) | [![蜡笔小新 · 春日部日常（春日部探险队） · 浅色](docs/screenshots/34-shinchan-exploration-team-light.webp)](docs/screenshots/34-shinchan-exploration-team-light.webp) | [![蜡笔小新 · 春日部日常（春日部探险队） · 深色](docs/screenshots/34-shinchan-exploration-team-dark.webp)](docs/screenshots/34-shinchan-exploration-team-dark.webp) |
 | [灌篮高手 · 4 组场景](docs/screenshots/README.md#theme-35) | [![灌篮高手 · 篮板课 · 浅色](docs/screenshots/35-slam-dunk-light.webp)](docs/screenshots/35-slam-dunk-light.webp) | [![灌篮高手 · 篮板课 · 深色](docs/screenshots/35-slam-dunk-dark.webp)](docs/screenshots/35-slam-dunk-dark.webp) |
-| [游戏王·决斗之魂](docs/screenshots/README.md#theme-37) | [![游戏王·决斗之魂 · 浅色](docs/screenshots/37-yu-gi-oh-light.webp)](docs/screenshots/37-yu-gi-oh-light.webp) | [![游戏王·决斗之魂 · 深色](docs/screenshots/37-yu-gi-oh-dark.webp)](docs/screenshots/37-yu-gi-oh-dark.webp) |
-| [炉石传说·冰冠王座](docs/screenshots/README.md#theme-39) | [![炉石传说·冰冠王座 · 浅色](docs/screenshots/39-hearthstone-lich-king-light.webp)](docs/screenshots/39-hearthstone-lich-king-light.webp) | [![炉石传说·冰冠王座 · 深色](docs/screenshots/39-hearthstone-lich-king-dark.webp)](docs/screenshots/39-hearthstone-lich-king-dark.webp) |
-| [英雄联盟·艾欧尼亚茶会](docs/screenshots/README.md#theme-59) | [![英雄联盟·艾欧尼亚茶会 · 浅色](docs/screenshots/59-lol-ionia-light.webp)](docs/screenshots/59-lol-ionia-light.webp) | [![英雄联盟·艾欧尼亚茶会 · 深色](docs/screenshots/59-lol-ionia-dark.webp)](docs/screenshots/59-lol-ionia-dark.webp) |
+| [游戏王 · 决斗之魂](docs/screenshots/README.md#theme-37) | [![游戏王 · 决斗之魂 · 浅色](docs/screenshots/37-yu-gi-oh-light.webp)](docs/screenshots/37-yu-gi-oh-light.webp) | [![游戏王 · 决斗之魂 · 深色](docs/screenshots/37-yu-gi-oh-dark.webp)](docs/screenshots/37-yu-gi-oh-dark.webp) |
+| [炉石传说 · 冰冠王座](docs/screenshots/README.md#theme-39) | [![炉石传说 · 冰冠王座 · 浅色](docs/screenshots/39-hearthstone-lich-king-light.webp)](docs/screenshots/39-hearthstone-lich-king-light.webp) | [![炉石传说 · 冰冠王座 · 深色](docs/screenshots/39-hearthstone-lich-king-dark.webp)](docs/screenshots/39-hearthstone-lich-king-dark.webp) |
+| [英雄联盟 · 艾欧尼亚茶会](docs/screenshots/README.md#theme-59) | [![英雄联盟 · 艾欧尼亚茶会 · 浅色](docs/screenshots/59-lol-ionia-light.webp)](docs/screenshots/59-lol-ionia-light.webp) | [![英雄联盟 · 艾欧尼亚茶会 · 深色](docs/screenshots/59-lol-ionia-dark.webp)](docs/screenshots/59-lol-ionia-dark.webp) |
 | [我的世界](docs/screenshots/README.md#theme-43) | [![我的世界 · 浅色](docs/screenshots/43-minecraft-light.webp)](docs/screenshots/43-minecraft-light.webp) | [![我的世界 · 深色](docs/screenshots/43-minecraft-dark.webp)](docs/screenshots/43-minecraft-dark.webp) |
-| [守望先锋·时间跃迁](docs/screenshots/README.md#theme-45) | [![守望先锋·时间跃迁 · 浅色](docs/screenshots/45-overwatch-tracer-light.webp)](docs/screenshots/45-overwatch-tracer-light.webp) | [![守望先锋·时间跃迁 · 深色](docs/screenshots/45-overwatch-tracer-dark.webp)](docs/screenshots/45-overwatch-tracer-dark.webp) |
+| [守望先锋 · 时间跃迁](docs/screenshots/README.md#theme-45) | [![守望先锋 · 时间跃迁 · 浅色](docs/screenshots/45-overwatch-tracer-light.webp)](docs/screenshots/45-overwatch-tracer-light.webp) | [![守望先锋 · 时间跃迁 · 深色](docs/screenshots/45-overwatch-tracer-dark.webp)](docs/screenshots/45-overwatch-tracer-dark.webp) |
 | [间谍过家家 · 福杰一家](docs/screenshots/README.md#theme-66) | [![间谍过家家 · 福杰一家 · 浅色](docs/screenshots/66-spy-family-forgers-light.webp)](docs/screenshots/66-spy-family-forgers-light.webp) | [![间谍过家家 · 福杰一家 · 深色](docs/screenshots/66-spy-family-forgers-dark.webp)](docs/screenshots/66-spy-family-forgers-dark.webp) |
 | [哆啦A梦 · 奇妙同行](docs/screenshots/README.md#theme-69) | [![哆啦A梦 · 奇妙同行 · 浅色](docs/screenshots/69-doraemon-pocket-light.webp)](docs/screenshots/69-doraemon-pocket-light.webp) | [![哆啦A梦 · 奇妙同行 · 深色](docs/screenshots/69-doraemon-pocket-dark.webp)](docs/screenshots/69-doraemon-pocket-dark.webp) |
-| [咒术回战·一年级集结](docs/screenshots/README.md#theme-72) | [![咒术回战·一年级集结 · 浅色](docs/screenshots/72-jujutsu-first-years-light.webp)](docs/screenshots/72-jujutsu-first-years-light.webp) | [![咒术回战·一年级集结 · 深色](docs/screenshots/72-jujutsu-first-years-dark.webp)](docs/screenshots/72-jujutsu-first-years-dark.webp) |
+| [咒术回战 · 一年级集结](docs/screenshots/README.md#theme-72) | [![咒术回战 · 一年级集结 · 浅色](docs/screenshots/72-jujutsu-first-years-light.webp)](docs/screenshots/72-jujutsu-first-years-light.webp) | [![咒术回战 · 一年级集结 · 深色](docs/screenshots/72-jujutsu-first-years-dark.webp)](docs/screenshots/72-jujutsu-first-years-dark.webp) |
 | [咒术回战 · 咒缘纪事](docs/screenshots/README.md#theme-73) | [![咒术回战 · 咒缘纪事 · 浅色](docs/screenshots/73-jujutsu-school-days-light.webp)](docs/screenshots/73-jujutsu-school-days-light.webp) | [![咒术回战 · 咒缘纪事 · 深色](docs/screenshots/73-jujutsu-school-days-dark.webp)](docs/screenshots/73-jujutsu-school-days-dark.webp) |
-| [咒术回战·同窗并肩](docs/screenshots/README.md#theme-74) | [![咒术回战·同窗并肩 · 浅色](docs/screenshots/74-jujutsu-classmates-light.webp)](docs/screenshots/74-jujutsu-classmates-light.webp) | [![咒术回战·同窗并肩 · 深色](docs/screenshots/74-jujutsu-classmates-dark.webp)](docs/screenshots/74-jujutsu-classmates-dark.webp) |
+| [咒术回战 · 同窗并肩](docs/screenshots/README.md#theme-74) | [![咒术回战 · 同窗并肩 · 浅色](docs/screenshots/74-jujutsu-classmates-light.webp)](docs/screenshots/74-jujutsu-classmates-light.webp) | [![咒术回战 · 同窗并肩 · 深色](docs/screenshots/74-jujutsu-classmates-dark.webp)](docs/screenshots/74-jujutsu-classmates-dark.webp) |
 | [咒术回战 · 无量空处](docs/screenshots/README.md#theme-134) | [![咒术回战 · 无量空处 · 浅色](docs/screenshots/134-jujutsu-infinite-void-light.webp)](docs/screenshots/134-jujutsu-infinite-void-light.webp) | [![咒术回战 · 无量空处 · 深色](docs/screenshots/134-jujutsu-infinite-void-dark.webp)](docs/screenshots/134-jujutsu-infinite-void-dark.webp) |
 | [角落小伙伴 · 角落慢时光](docs/screenshots/README.md#theme-75) | [![角落小伙伴 · 角落慢时光 · 浅色](docs/screenshots/75-sumikko-teahouse-light.webp)](docs/screenshots/75-sumikko-teahouse-light.webp) | [![角落小伙伴 · 角落慢时光 · 深色](docs/screenshots/75-sumikko-teahouse-dark.webp)](docs/screenshots/75-sumikko-teahouse-dark.webp) |
-| [原神·净善书庭](docs/screenshots/README.md#theme-82) | [![原神·净善书庭 · 浅色](docs/screenshots/82-genshin-sumeru-light.webp)](docs/screenshots/82-genshin-sumeru-light.webp) | [![原神·净善书庭 · 深色](docs/screenshots/82-genshin-sumeru-dark.webp)](docs/screenshots/82-genshin-sumeru-dark.webp) |
+| [原神 · 净善书庭](docs/screenshots/README.md#theme-82) | [![原神 · 净善书庭 · 浅色](docs/screenshots/82-genshin-sumeru-light.webp)](docs/screenshots/82-genshin-sumeru-light.webp) | [![原神 · 净善书庭 · 深色](docs/screenshots/82-genshin-sumeru-dark.webp)](docs/screenshots/82-genshin-sumeru-dark.webp) |
 | [崩坏：星穹铁道 · 四组场景](docs/screenshots/README.md#theme-84) | [![崩坏：星穹铁道 · 列车晨光 · 浅色](docs/screenshots/84-hsr-express-light.webp)](docs/screenshots/84-hsr-express-light.webp) | [![崩坏：星穹铁道 · 列车晨光 · 深色](docs/screenshots/84-hsr-express-dark.webp)](docs/screenshots/84-hsr-express-dark.webp) |
-| [绝区零·六分街委托](docs/screenshots/README.md#theme-90) | [![绝区零·六分街委托 · 浅色](docs/screenshots/90-zzz-sixth-street-light.webp)](docs/screenshots/90-zzz-sixth-street-light.webp) | [![绝区零·六分街委托 · 深色](docs/screenshots/90-zzz-sixth-street-dark.webp)](docs/screenshots/90-zzz-sixth-street-dark.webp) |
+| [绝区零 · 六分街委托](docs/screenshots/README.md#theme-90) | [![绝区零 · 六分街委托 · 浅色](docs/screenshots/90-zzz-sixth-street-light.webp)](docs/screenshots/90-zzz-sixth-street-light.webp) | [![绝区零 · 六分街委托 · 深色](docs/screenshots/90-zzz-sixth-street-dark.webp)](docs/screenshots/90-zzz-sixth-street-dark.webp) |
 | [黑神话：悟空 · 山河四劫 · 4 组场景](docs/screenshots/README.md#theme-93) | [![黑风山 · 浅色](docs/screenshots/93-wukong-four-trials-light.webp)](docs/screenshots/93-wukong-four-trials-light.webp) | [![黑风山 · 深色](docs/screenshots/93-wukong-four-trials-dark.webp)](docs/screenshots/93-wukong-four-trials-dark.webp) |
 | [黑神话：悟空 · 天命西行 · 4 组场景](docs/screenshots/README.md#theme-94) | [![土地庙上香 · 浅色](docs/screenshots/94-wukong-destined-journey-light.webp)](docs/screenshots/94-wukong-destined-journey-light.webp) | [![林间对阵广智 · 深色](docs/screenshots/94-wukong-destined-journey-dark.webp)](docs/screenshots/94-wukong-destined-journey-dark.webp) |
 | [JOJO · 星尘远征](docs/screenshots/README.md#theme-137) | [![JOJO · 星尘远征 · 浅色](docs/screenshots/137-jojo-stardust-crusaders-light.webp)](docs/screenshots/137-jojo-stardust-crusaders-light.webp) | [![JOJO · 星尘远征 · 深色](docs/screenshots/137-jojo-stardust-crusaders-dark.webp)](docs/screenshots/137-jojo-stardust-crusaders-dark.webp) |
@@ -213,43 +213,43 @@ Linux 可在安装包所在目录执行 `sha256sum -c SHA256SUMS.txt`；macOS �
 
 - **黑神话：悟空 · 山河四劫**：石灰米白 / 炭墨 / 古铜金。广智、黄风大圣、黄眉与四妹各有独立的浅深场景，主图、无人物横幅、物件和侧栏角色随场景切换。
 - **黑神话：悟空 · 天命西行**：苔灰 / 松墨 / 铜金。天命人行经黑风山、黄风岭、小西天和盘丝岭，四组各有独立浅深场景。
-- **绝区零·六课雪夜**：雪雾蓝 / 制服黑 / 樱粉，星见雅、月城柳与苍角的巡逻小憩。
-- **绝区零·维多利亚茶歇**：银灰 / 茶点米白 / 莓红，艾莲、莱卡恩与丽娜的家政茶歇。
-- **绝区零·六分街委托**：荧光青柠 / 胶片灰 / 委托粉，妮可、安比与比利的六分街日常。
+- **绝区零 · 六课雪夜**：雪雾蓝 / 制服黑 / 樱粉，星见雅、月城柳与苍角的巡逻小憩。
+- **绝区零 · 维多利亚茶歇**：银灰 / 茶点米白 / 莓红，艾莲、莱卡恩与丽娜的家政茶歇。
+- **绝区零 · 六分街委托**：荧光青柠 / 胶片灰 / 委托粉，妮可、安比与比利的六分街日常。
 - **崩坏：星穹铁道**：列车蓝 / 相片粉 / 黄铜金，包含列车晨光、星核夜话、萤火之约、罗浮闲局四组浅深场景；新增景元与彦卿对弈及景元倚榻听雀，保留原三套配图与旧入口迁移。
-- **原神·鸣神花信**：藤紫 / 樱花粉 / 神社朱红，雷电影与八重神子的鸣神茶歇。
-- **原神·净善书庭**：草叶绿 / 象牙白 / 书页金，纳西妲、艾尔海森与卡维的林间书庭。
-- **原神·枫丹茶会**：水蓝 / 奶油白 / 剧场金，芙宁娜与那维莱特的枫丹茶歇。
+- **原神 · 鸣神花信**：藤紫 / 樱花粉 / 神社朱红，雷电影与八重神子的鸣神茶歇。
+- **原神 · 净善书庭**：草叶绿 / 象牙白 / 书页金，纳西妲、艾尔海森与卡维的林间书庭。
+- **原神 · 枫丹茶会**：水蓝 / 奶油白 / 剧场金，芙宁娜与那维莱特的枫丹茶歇。
 - **胆大党 · 怪奇同盟**：放学怪谈、灵能交锋、夜巡同盟，共 3 组场景，统一阅读配色并联动整套配图。
 - **角落小伙伴 · 角落慢时光**：暖茶小憩、面包房值日、雨窗来信，共 3 组场景，统一阅读配色并联动整套配图。
-- **咒术回战·同窗并肩**：训练场苔绿 / 乙骨白 / 木质暖金，乙骨、真希、狗卷与熊猫的同窗四人组。
+- **咒术回战 · 同窗并肩**：训练场苔绿 / 乙骨白 / 木质暖金，乙骨、真希、狗卷与熊猫的同窗四人组。
 - **咒术回战 · 咒缘纪事**：象牙白 / 灰蓝 / 绛红，高专盛夏、殊途回声、纯爱共战、诅咒王座四组浅深独立场景。
-- **咒术回战·一年级集结**：制服藏蓝 / 虎杖珊瑚红 / 高专石灰，虎杖、伏黑、钉崎与五条的四人竖向海报。
+- **咒术回战 · 一年级集结**：制服藏蓝 / 虎杖珊瑚红 / 高专石灰，虎杖、伏黑、钉崎与五条的四人竖向海报。
 - **哆啦A梦 · 奇妙同行**：口袋蓝 / 铜锣烧暖金 / 任意门粉，收录口袋奇遇、放学约定、星空航路、海底探险四组浅深场景，整套配图随场景切换。
-- **间谍过家家·伊甸星光**：学院米白 / 砖红 / 星章金，阿尼亚、达米安与贝姬的星章、折纸、温室与庭院点心四组校园故事，浅深配套整组轮换。
+- **间谍过家家 · 伊甸星光**：学院米白 / 砖红 / 星章金，阿尼亚、达米安与贝姬的星章、折纸、温室与庭院点心四组校园故事，浅深配套整组轮换。
 - **间谍过家家 · 福杰一家**：福杰家的休息日、月下密语，共 2 组场景，统一阅读配色并联动整套配图。
-- **高达·ν高达**：珍珠白 / 深海军蓝 / 黄铜金 / 微光绿，ν高达与单侧浮游炮的高挑站姿，浅深轨道船坞呼应。
+- **高达 · ν高达**：珍珠白 / 深海军蓝 / 黄铜金 / 微光绿，ν高达与单侧浮游炮的高挑站姿，浅深轨道船坞呼应。
 - **高达 · 巴巴托斯**：白甲 / 骨架蓝 / 火星砂岩，第四形态的持锤待命、太刀近战、机库整备、滑膛炮出击，共四组浅深场景。原持锤组保留；新增六幅独立主图及无角色横幅、物件和短句，随场景一起切换。
 - **我叫MT · 联盟日记**：联盟值日生、联盟补给站，共 2 组场景，统一阅读配色并联动整套配图。
-- **我叫MT·美屡的林间手札**：林地米白 / 苔绿 / 猎装棕，美屡的观察、巡林与夜间手札。
-- **英雄联盟·德玛西亚巡礼**：德玛西亚石白 / 王室蓝 / 香槟金，拉克丝、盖伦、嘉文四世、奎因与华洛同行。
-- **英雄联盟·艾欧尼亚茶会**：茶白 / 艾欧尼亚玉绿 / 绯红，阿狸、亚索、艾瑞莉娅与阿卡丽的四人茶会。
-- **高达·独角兽觉醒**：独角兽白 / 精神感应框架红 / 机库夜蓝，独角兽模式与毁灭模式的日夜变身。
-- **高达·自由与正义**：装甲白 / 翼蓝 / 关节金 / 正义绯红，强袭自由与无限正义双机同行。
+- **我叫MT · 美屡的林间手札**：林地米白 / 苔绿 / 猎装棕，美屡的观察、巡林与夜间手札。
+- **英雄联盟 · 德玛西亚巡礼**：德玛西亚石白 / 王室蓝 / 香槟金，拉克丝、盖伦、嘉文四世、奎因与华洛同行。
+- **英雄联盟 · 艾欧尼亚茶会**：茶白 / 艾欧尼亚玉绿 / 绯红，阿狸、亚索、艾瑞莉娅与阿卡丽的四人茶会。
+- **高达 · 独角兽觉醒**：独角兽白 / 精神感应框架红 / 机库夜蓝，独角兽模式与毁灭模式的日夜变身。
+- **高达 · 自由与正义**：装甲白 / 翼蓝 / 关节金 / 正义绯红，强袭自由与无限正义双机同行。
 - **七龙珠 · 甜点日常**采用草莓粉、奶油金与暮色李紫。四组可切换场景为布欧甜点屋、海滨冰站、胶囊烘焙实验与破坏神下午茶。
-- **七龙珠·包子山家书**：山野鼠尾草绿 / 饭盒竹色 / 道服橙，悟空、琪琪、悟饭与悟天的家庭日常。
-- **名侦探柯南·大阪同行**：运河青 / 章鱼烧暖棕 / 夕照橙，柯南、平次、和叶与小兰的街头旅程。
+- **七龙珠 · 包子山家书**：山野鼠尾草绿 / 饭盒竹色 / 道服橙，悟空、琪琪、悟饭与悟天的家庭日常。
+- **名侦探柯南 · 大阪同行**：运河青 / 章鱼烧暖棕 / 夕照橙，柯南、平次、和叶与小兰的街头旅程。
 - **吉伊卡哇 · 小小生活**：草原野餐、星夜漫游、烘焙小队、雨后来信，共 4 组场景，统一阅读配色并联动整套配图。
 - **名侦探柯南 · 月下谜踪**：月下追踪、宝石谜夜、轨道追迹、钟楼暗号，共 4 组浅深场景；原有两组保留，新增滑板追踪、站台取证、短梯解谜与石栏读函，主图、无人物横幅、物件及短句随场景切换。
-- **灰原哀·琥珀微光**：鼠尾草绿 / 茶棕 / 琥珀与深夜青。
-- **怪盗基德·月白预告**：象牙白 / 宝石蓝 / 月光银。
-- **名侦探柯南·米花协奏**：侦探蓝 / 领结红 / 月光银。
+- **名侦探柯南 · 灰原哀 · 琥珀微光**：鼠尾草绿 / 茶棕 / 琥珀与深夜青。
+- **名侦探柯南 · 怪盗基德 · 月白预告**：象牙白 / 宝石蓝 / 月光银。
+- **名侦探柯南 · 米花协奏**：侦探蓝 / 领结红 / 月光银。
 - **七龙珠 · 龟仙流夏日**：海沫青 / 道服橙 / 珊瑚粉；海岛修行、龟壳晨练、海边垂钓、西瓜小憩四组配图，可切换或轮换。
-- **七龙珠·金焰并肩**：护甲蓝 / 超赛金 / 深靛紫。
-- **七龙珠·神龙奇旅**：神龙翡翠 / 四星琥珀 / 地图纸色。
-- **高达·RX-78-2**：装甲白、高达蓝、红色与明黄。包含元祖待命、白色基地出击、Side 7 初醒、赤色彗星相遇四组浅深场景。
+- **七龙珠 · 金焰并肩**：护甲蓝 / 超赛金 / 深靛紫。
+- **七龙珠 · 神龙奇旅**：神龙翡翠 / 四星琥珀 / 地图纸色。
+- **高达 · RX-78-2**：装甲白、高达蓝、红色与明黄。包含元祖待命、白色基地出击、Side 7 初醒、赤色彗星相遇四组浅深场景。
 - **电锯人 · 人间愿望**：衬衫白 / 冷灰蓝 / 制服黑 / 暗红；面包与梦、吵闹归途、午夜放映、雨中偶遇、锯刃破晓五组独立浅深场景。
-- **电锯人·玛奇玛**：象牙白、绯红与墨黑，搭配玛奇玛角色插画。
+- **电锯人 · 玛奇玛**：象牙白、绯红与墨黑，搭配玛奇玛角色插画。
 - **蜡笔小新 · 春日部日常**：动感日常、野原家的周末、春日部探险队，共 3 组场景，统一阅读配色并联动整套配图。
 - **葬送的芙莉莲**：羊皮纸 / 魔力蓝青 / 记忆金 / 森林绿。
 - **芙莉莲·月下旅人**：蓝青与金色，搭配芙莉莲持杖旅行插画。
@@ -275,35 +275,35 @@ Linux 可在安装包所在目录执行 `sha256sum -c SHA256SUMS.txt`；macOS �
 - **咕嘎和 Doro · 植物大战僵尸 · 香蒲雨池**：戴夫 Doro 雨后在小池轻放折叶舟，入夜坐到岸边替香蒲擦干雨珠。叶舟夹打开藏着水纹航线，岸边的小托盘从备舟变成收舟，青瓷、湿石和叶脉贯穿整套。
 - **咕嘎和 Doro · 植物大战僵尸 · 植物小食铺**：咖啡唤醒站、玉米黄油坊、冰瓜凉饮铺，共 3 组场景，统一阅读配色并联动整套配图。
 - **海贼王**：海洋蓝 / 海贼红 / 阳光金 / 暖羊皮纸，路飞、索隆、山治三人组与航海长卷。
-- **火影忍者·第七班**：查克拉橙 / 木叶蓝 / 暖纸色。
-- **火影忍者·凯班**：连体衣绿 / 旗袍粉 / 绑腿橙。
-- **鬼灭之刃·羁绊同行**：青瓷绿 / 藤紫 / 月夜青。
-- **鬼灭之刃·柱之誓约**：象牙白 / 绯红 / 深靛蓝。
-- **鬼灭之刃·樱庭恋歌**：樱粉 / 叶绿 / 夜梅紫。
+- **火影忍者 · 第七班**：查克拉橙 / 木叶蓝 / 暖纸色。
+- **火影忍者 · 凯班**：连体衣绿 / 旗袍粉 / 绑腿橙。
+- **鬼灭之刃 · 羁绊同行**：青瓷绿 / 藤紫 / 月夜青。
+- **鬼灭之刃 · 柱之誓约**：象牙白 / 绯红 / 深靛蓝。
+- **鬼灭之刃 · 樱庭恋歌**：樱粉 / 叶绿 / 夜梅紫。
 - **灌篮高手**：湘北红 / 球场琥珀 / 黑白，流川枫与海边球场。
 - **我的世界**：草方块绿 / 钻石青 / 土棕 / 火把琥珀，Steve、苦力怕与方块世界。
-- **魔兽世界·血精灵**：辛多雷绯红 / 奥术金 / 翡翠绿 / 深紫，永歌森林与法术刃。
-- **魔兽世界·牛头人德鲁伊**：莫高雷赭石 / 图腾青 / 皮革棕 / 篝火金。
-- **魔兽世界·兽人战士**：部落红 / 兽人绿 / 铁灰 / 杜隆塔尔橙。
-- **守望先锋·时间跃迁**：猎空经典造型 / 橙色与时间蓝 / 招呼与闪回瞬间。
-- **守望先锋·守护天使**：天使白金装甲 / 医疗翼 / 飞行与检修场景。
-- **炉石传说·冰霜法师**：吉安娜 / 冰蓝与金色 / 施法与冰鸟阅读。
-- **炉石传说·冰冠王座**：巫妖王 / 寒冰钢铁 / 霜之哀伤与冰封王座。
-- **英雄联盟·九尾妖狐**：阿狸 / 绯红与象牙白 / 九尾与狐灵。
-- **英雄联盟·爆爆火花**：金克丝 / 蓝紫与荧粉 / 鱼骨头与维修工具箱。
-- **王者荣耀·青莲剑仙**：李白「青莲剑仙」原皮 / 白衣红纹与青铜酒葫芦。
+- **魔兽世界 · 血精灵**：辛多雷绯红 / 奥术金 / 翡翠绿 / 深紫，永歌森林与法术刃。
+- **魔兽世界 · 牛头人德鲁伊**：莫高雷赭石 / 图腾青 / 皮革棕 / 篝火金。
+- **魔兽世界 · 兽人战士**：部落红 / 兽人绿 / 铁灰 / 杜隆塔尔橙。
+- **守望先锋 · 时间跃迁**：猎空经典造型 / 橙色与时间蓝 / 招呼与闪回瞬间。
+- **守望先锋 · 守护天使**：天使白金装甲 / 医疗翼 / 飞行与检修场景。
+- **炉石传说 · 冰霜法师**：吉安娜 / 冰蓝与金色 / 施法与冰鸟阅读。
+- **炉石传说 · 冰冠王座**：巫妖王 / 寒冰钢铁 / 霜之哀伤与冰封王座。
+- **英雄联盟 · 九尾妖狐**：阿狸 / 绯红与象牙白 / 九尾与狐灵。
+- **英雄联盟 · 爆爆火花**：金克丝 / 蓝紫与荧粉 / 鱼骨头与维修工具箱。
+- **王者荣耀 · 青莲剑仙**：李白「青莲剑仙」原皮 / 白衣红纹与青铜酒葫芦。
 - **王者荣耀 · 貂蝉 · 花间舞梦**：绝世舞姬、馥梦繁花，共 2 组场景，统一阅读配色并联动整套配图。
-- **王者荣耀·云阙长歌**：云白 / 青蓝 / 羽金，李白「凤求凰」、韩信「白龙吟」、诸葛亮「武陵仙君」、百里守约「朱雀志」四人群像。
-- **王者荣耀·花月幻境**：玉绿 / 月白 / 蝶紫，貂蝉「仲夏夜之梦」、瑶「遇见神鹿」、大乔「白鹤梁神女」、公孙离「祈雪灵祝」四人群像。
-- **游戏王·决斗之魂**：游戏与黑魔导 / 游戏与海马 / 双人决斗场景。
-- **阿拉蕾·企鹅村**：阿拉蕾与则卷千兵卫 / 企鹅村 / 明黄与葡萄紫。
-- **EVA·初号机·觉醒**：紫色装甲 / 荧绿信号 / 第三新东京市。
-- **EVA·二号机·烈焰**：绯红装甲 / 橙色胸甲 / 海上舰队。
-- **死神·斩月**：黑崎一护 / 橙金与墨蓝 / 空座町月夜。
-- **死神·千本樱**：白哉与露琪亚 / 樱粉与冰蓝 / 尸魂界庭院。
-- **圣斗士·天马流星**：银蓝 / 青铜五人 / 星夜流星。
-- **圣斗士·黄金十二宫**：象牙金 / 圣域深紫 / 黄金圣衣。
-- **魔兽世界·矮人**：锻炉琥珀 / 山地蓝 / 铜须红 / 钢铁灰。
+- **王者荣耀 · 云阙长歌**：云白 / 青蓝 / 羽金，李白「凤求凰」、韩信「白龙吟」、诸葛亮「武陵仙君」、百里守约「朱雀志」四人群像。
+- **王者荣耀 · 花月幻境**：玉绿 / 月白 / 蝶紫，貂蝉「仲夏夜之梦」、瑶「遇见神鹿」、大乔「白鹤梁神女」、公孙离「祈雪灵祝」四人群像。
+- **游戏王 · 决斗之魂**：游戏与黑魔导 / 游戏与海马 / 双人决斗场景。
+- **阿拉蕾 · 企鹅村**：阿拉蕾与则卷千兵卫 / 企鹅村 / 明黄与葡萄紫。
+- **EVA · 初号机 · 觉醒**：紫色装甲 / 荧绿信号 / 第三新东京市。
+- **EVA · 二号机 · 烈焰**：绯红装甲 / 橙色胸甲 / 海上舰队。
+- **死神 · 斩月**：黑崎一护 / 橙金与墨蓝 / 空座町月夜。
+- **死神 · 千本樱**：白哉与露琪亚 / 樱粉与冰蓝 / 尸魂界庭院。
+- **圣斗士 · 天马流星**：银蓝 / 青铜五人 / 星夜流星。
+- **圣斗士 · 黄金十二宫**：象牙金 / 圣域深紫 / 黄金圣衣。
+- **魔兽世界 · 矮人**：锻炉琥珀 / 山地蓝 / 铜须红 / 钢铁灰。
 - **我叫MT · 部落冒险**：赭黄 / 副本紫 / 治疗青，五组浅深配图「林间追猎、猎手较量、营地插曲、遗迹探路、原版劣人与呆贼」在同一主题内切换；新增场景仅含劣人、呆贼、美屡与沐丝，原版作为第五组保留。
 - **小林家的龙女仆**：龙尾绿 / 龙焰橙 / 女仆藏青 / 奶油粉，托尔与暖厨房。
 
@@ -322,7 +322,7 @@ Linux 可在安装包所在目录执行 `sha256sum -c SHA256SUMS.txt`；macOS �
 
 </details>
 
-每组均有简约版，在主题列表中与对应氛围版相邻。青灰、冷墨、绯影、青瓷、蜜蜡、蓝染和抹茶分别对应高达·RX-78-2、电锯人 · 人间愿望、玛奇玛、葬送的芙莉莲、蜡笔小新 · 春日部日常、超能力女儿和夏目友人帐；其余简约版使用对应主题名称加“简约”标识。
+每组均有简约版，在主题列表中与对应氛围版相邻。青灰、冷墨、绯影、青瓷、蜜蜡、蓝染和抹茶分别对应高达 · RX-78-2、电锯人 · 人间愿望、玛奇玛、葬送的芙莉莲、蜡笔小新 · 春日部日常、超能力女儿和夏目友人帐；其余简约版使用对应主题名称加“简约”标识。
 
 ## 卸载
 

@@ -3,7 +3,7 @@ import { createVividFamily } from "./create-vivid-family.js";
 export default createVividFamily({
   id: "wow-orc",
   signaturePrefix: "wor",
-  names: { zh: "魔兽世界·兽人战士", en: "WoW Orc Warrior" },
+  names: { zh: "魔兽世界 · 兽人战士", en: "World of Warcraft · Orc Warrior" },
   phrases: {
     zh: [
       ["力量与荣耀！", "为了部落！"],

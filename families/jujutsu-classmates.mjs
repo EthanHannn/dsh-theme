@@ -5,7 +5,7 @@ const family = createVividFamily({
   "id": "jujutsu-classmates",
   "signaturePrefix": "jujutsu-classmates",
   "names": {
-    "zh": "咒术回战·同窗并肩",
+    "zh": "咒术回战 · 同窗并肩",
     "en": "Jujutsu Kaisen · Classmates United",
   },
   "phrases": {

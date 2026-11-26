@@ -1,6 +1,6 @@
 {
   "id": "conan-kid-light-vivid",
-  "name": "Kaito Kid · Moonlit Calling Card Light",
+  "name": "Detective Conan · Kaito Kid · Moonlit Calling Card Light",
   "colorScheme": "light",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #F7F8FC 50%, #EDEEF3)",

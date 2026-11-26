@@ -5,7 +5,7 @@ const family = createVividFamily({
   "id": "zzz-section-six",
   "signaturePrefix": "zzz-section-six",
   "names": {
-    "zh": "绝区零·六课雪夜",
+    "zh": "绝区零 · 六课雪夜",
     "en": "Zenless Zone Zero · Section Six Snowfall",
   },
   "phrases": {

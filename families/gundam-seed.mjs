@@ -5,7 +5,7 @@ const family = createVividFamily({
   "id": "gundam-seed",
   "signaturePrefix": "gundam-seed",
   "names": {
-    "zh": "高达·自由与正义",
+    "zh": "高达 · 自由与正义",
     "en": "Gundam · Freedom and Justice",
   },
   "phrases": {

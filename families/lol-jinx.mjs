@@ -5,7 +5,7 @@ const family = createVividFamily({
   "id": "lol-jinx",
   "signaturePrefix": "col6",
   "names": {
-    "zh": "英雄联盟·爆爆火花",
+    "zh": "英雄联盟 · 爆爆火花",
     "en": "League of Legends · Loose Cannon",
   },
   "phrases": {

@@ -4,7 +4,7 @@ import { createVividFamily } from "./create-vivid-family.js";
 export default createVividFamily({
   id: "naruto",
   signaturePrefix: "nrt",
-  names: { zh: "火影忍者·第七班", en: "Naruto · Team Seven" },
+  names: { zh: "火影忍者 · 第七班", en: "Naruto · Team Seven" },
   phrases: {
     zh: [
       ["鸣人：说到做到，这就是我的忍道！", "鸣人：准备好了，一起上吧！", "鸣人：这次也一定能做到！"],

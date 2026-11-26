@@ -4,7 +4,7 @@ import { createVividFamily } from "./create-vivid-family.js";
 const family = createVividFamily({
   id: "dragon-ball-quest",
   signaturePrefix: "dragonquest",
-  names: { zh: "七龙珠·神龙奇旅", en: "Dragon Ball · A Wish Beyond the Hills" },
+  names: { zh: "七龙珠 · 神龙奇旅", en: "Dragon Ball · A Wish Beyond the Hills" },
   phrases: {
     // 角色短句依次对应悟空、布尔玛、雅木茶、乌龙、普尔与神龙。
     zh: [

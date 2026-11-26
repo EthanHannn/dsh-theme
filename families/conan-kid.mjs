@@ -4,7 +4,7 @@ import { createVividFamily } from "./create-vivid-family.js";
 const family = createVividFamily({
   id: "conan-kid",
   signaturePrefix: "kaito",
-  names: { zh: "怪盗基德·月白预告", en: "Kaito Kid · Moonlit Calling Card" },
+  names: { zh: "名侦探柯南 · 怪盗基德 · 月白预告", en: "Detective Conan · Kaito Kid · Moonlit Calling Card" },
   phrases: {
     // Original lines matched to the hat-tip, dove and card-flourish companions.
     zh: [

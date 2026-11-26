@@ -1,6 +1,6 @@
 {
   "id": "wow-orc-light-vivid",
-  "name": "WoW Orc Warrior Light",
+  "name": "World of Warcraft · Orc Warrior Light",
   "colorScheme": "light",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #EEE9D6 50%, #E4E0CD)",

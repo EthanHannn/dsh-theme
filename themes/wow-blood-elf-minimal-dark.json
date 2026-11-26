@@ -1,6 +1,6 @@
 {
   "id": "wow-blood-elf-minimal-dark",
-  "name": "WoW Blood Elf · Minimal Dark",
+  "name": "World of Warcraft · Blood Elf · Minimal Dark",
   "colorScheme": "dark",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #F6E7D4 50%, #DBCDBD)",

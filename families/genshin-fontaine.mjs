@@ -5,7 +5,7 @@ const family = createVividFamily({
   "id": "genshin-fontaine",
   "signaturePrefix": "genshin-fontaine",
   "names": {
-    "zh": "原神·枫丹茶会",
+    "zh": "原神 · 枫丹茶会",
     "en": "Genshin Impact · Fontaine Tea Hour",
   },
   "phrases": {

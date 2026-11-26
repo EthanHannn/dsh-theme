@@ -5,7 +5,7 @@ const family = createVividFamily({
   "id": "yu-gi-oh",
   "signaturePrefix": "col9",
   "names": {
-    "zh": "游戏王·决斗之魂",
+    "zh": "游戏王 · 决斗之魂",
     "en": "Yu-Gi-Oh! · Heart of the Duel",
   },
   "phrases": {

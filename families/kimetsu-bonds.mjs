@@ -4,7 +4,7 @@ import { createVividFamily } from "./create-vivid-family.js";
 const family = createVividFamily({
   id: "kimetsu-bonds",
   signaturePrefix: "kmb",
-  names: { zh: "鬼灭之刃·羁绊同行", en: "Demon Slayer · Bonds" },
+  names: { zh: "鬼灭之刃 · 羁绊同行", en: "Demon Slayer · Bonds" },
   phrases: {
     // Original character-inspired lines; order matches the four pal assets.
     zh: [

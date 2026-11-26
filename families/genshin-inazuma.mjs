@@ -5,7 +5,7 @@ const family = createVividFamily({
   "id": "genshin-inazuma",
   "signaturePrefix": "genshin-inazuma",
   "names": {
-    "zh": "原神·鸣神花信",
+    "zh": "原神 · 鸣神花信",
     "en": "Genshin Impact · Narukami Petals",
   },
   "phrases": {

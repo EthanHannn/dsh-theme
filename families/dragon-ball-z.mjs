@@ -4,7 +4,7 @@ import { createVividFamily } from "./create-vivid-family.js";
 const family = createVividFamily({
   id: "dragon-ball-z",
   signaturePrefix: "zwarriors",
-  names: { zh: "七龙珠·金焰并肩", en: "Dragon Ball · Golden Resolve" },
+  names: { zh: "七龙珠 · 金焰并肩", en: "Dragon Ball · Golden Resolve" },
   phrases: {
     // Original lines: Goku, Vegeta, Gohan, Piccolo, Future Trunks.
     zh: [

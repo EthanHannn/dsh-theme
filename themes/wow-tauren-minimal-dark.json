@@ -1,6 +1,6 @@
 {
   "id": "wow-tauren-minimal-dark",
-  "name": "WoW Tauren Druid · Minimal Dark",
+  "name": "World of Warcraft · Tauren Druid · Minimal Dark",
   "colorScheme": "dark",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #EFE5D3 50%, #D5CCBB)",

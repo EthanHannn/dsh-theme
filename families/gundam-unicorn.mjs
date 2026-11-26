@@ -5,7 +5,7 @@ const family = createVividFamily({
   "id": "gundam-unicorn",
   "signaturePrefix": "gundam-unicorn",
   "names": {
-    "zh": "高达·独角兽觉醒",
+    "zh": "高达 · 独角兽觉醒",
     "en": "Gundam · Unicorn Awakening",
   },
   "phrases": {

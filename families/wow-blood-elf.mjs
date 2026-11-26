@@ -3,7 +3,7 @@ import { createVividFamily } from "./create-vivid-family.js";
 export default createVividFamily({
   id: "wow-blood-elf",
   signaturePrefix: "wbe",
-  names: { zh: "魔兽世界·血精灵", en: "WoW Blood Elf" },
+  names: { zh: "魔兽世界 · 血精灵", en: "World of Warcraft · Blood Elf" },
   phrases: {
     zh: [
       ["为了辛多雷的荣耀。", "太阳之井的光芒仍在。"],

@@ -2,7 +2,7 @@ import family from "./chiikawa-picnic.mjs";
 
 export default {
   id: "chiikawa-picnic-minimal",
-  names: { zh: "吉伊卡哇 · 小小生活 · 简约", en: "Chiikawa · Little Everyday Moments · Minimal" },
+  names: { zh: `${family.names.zh} · 简约`, en: `${family.names.en} · Minimal` },
   kin: "chiikawa-picnic",
   legacyFamilies: [
     { id: "chiikawa-stargaze-minimal" },

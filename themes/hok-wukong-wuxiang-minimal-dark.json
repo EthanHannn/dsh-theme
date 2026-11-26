@@ -1,6 +1,6 @@
 {
   "id": "hok-wukong-wuxiang-minimal-dark",
-  "name": "Honor of Kings · Wukong: Wuxiang · Minimal Dark",
+  "name": "Honor of Kings · Wukong · Wuxiang · Minimal Dark",
   "colorScheme": "dark",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #F7EFDF 50%, #DDD6C7)",

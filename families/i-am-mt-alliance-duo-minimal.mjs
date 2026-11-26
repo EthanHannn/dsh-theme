@@ -2,7 +2,7 @@ import family from "./i-am-mt-alliance-duo.mjs";
 
 export default {
   id: "i-am-mt-alliance-duo-minimal",
-  names: { zh: "我叫MT · 联盟日记 · 简约", en: "I Am MT · Alliance Diaries · Minimal" },
+  names: { zh: `${family.names.zh} · 简约`, en: `${family.names.en} · Minimal` },
   kin: "i-am-mt-alliance-duo",
   legacyFamilies: [
     { id: "i-am-mt-alliance-camp-minimal" },

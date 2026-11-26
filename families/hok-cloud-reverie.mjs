@@ -8,7 +8,7 @@ const family = createVividFamily({
   id: "hok-cloud-reverie",
   signaturePrefix: "hok-cloud-reverie",
   names: {
-    zh: "王者荣耀·云阙长歌",
+    zh: "王者荣耀 · 云阙长歌",
     en: "Honor of Kings · Cloudside Ballad",
   },
   phrases: {

@@ -2,7 +2,7 @@ import family from "./gundam-seed.mjs";
 
 export default {
   id: "gundam-seed-minimal",
-  names: { zh: "高达·自由与正义·简约", en: "Gundam · Freedom and Justice · Minimal" },
+  names: { zh: `${family.names.zh} · 简约`, en: `${family.names.en} · Minimal` },
   kin: "gundam-seed",
   styles: ["minimal"],
   light: family.light,

@@ -3,7 +3,7 @@ import { createVividFamily } from "./create-vivid-family.js";
 export default createVividFamily({
   id: "wow-dwarf",
   signaturePrefix: "wdw",
-  names: { zh: "魔兽世界·矮人", en: "WoW Dwarf" },
+  names: { zh: "魔兽世界 · 矮人", en: "World of Warcraft · Dwarf" },
   phrases: {
     zh: [
       ["为卡兹莫丹而战！", "先来一杯，再上战场。"],

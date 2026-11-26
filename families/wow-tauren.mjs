@@ -3,7 +3,7 @@ import { createVividFamily } from "./create-vivid-family.js";
 export default createVividFamily({
   id: "wow-tauren",
   signaturePrefix: "wta",
-  names: { zh: "魔兽世界·牛头人德鲁伊", en: "WoW Tauren Druid" },
+  names: { zh: "魔兽世界 · 牛头人德鲁伊", en: "World of Warcraft · Tauren Druid" },
   phrases: {
     zh: [
       ["愿大地母亲护佑你。", "聆听风与草木的低语。"],

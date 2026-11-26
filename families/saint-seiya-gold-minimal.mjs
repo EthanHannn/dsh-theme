@@ -2,10 +2,7 @@ import family from "./saint-seiya-gold.mjs";
 
 export default {
   id: "saint-seiya-gold-minimal",
-  names: {
-    zh: "圣斗士·黄金十二宫·简约",
-    en: "Saint Seiya · Golden Sanctuary · Minimal"
-  },
+  names: { zh: `${family.names.zh} · 简约`, en: `${family.names.en} · Minimal` },
   kin: "saint-seiya-gold",
   styles: [
     "minimal"

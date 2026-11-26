@@ -5,7 +5,7 @@ const family = createVividFamily({
   "id": "i-am-mt-huntress",
   "signaturePrefix": "i-am-mt-huntress",
   "names": {
-    "zh": "我叫MT·美屡的林间手札",
+    "zh": "我叫MT · 美屡的林间手札",
     "en": "I Am MT · Huntress Field Notes",
   },
   "phrases": {

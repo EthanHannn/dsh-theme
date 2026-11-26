@@ -2,7 +2,7 @@ import family from "./sumikko-teahouse.mjs";
 
 export default {
   id: "sumikko-teahouse-minimal",
-  names: { zh: "角落小伙伴 · 角落慢时光 · 简约", en: "Sumikko Gurashi · Cozy Corner Days · Minimal" },
+  names: { zh: `${family.names.zh} · 简约`, en: `${family.names.en} · Minimal` },
   kin: "sumikko-teahouse",
   legacyFamilies: [
     { id: "sumikko-bakery-minimal" },

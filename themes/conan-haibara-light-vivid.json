@@ -1,6 +1,6 @@
 {
   "id": "conan-haibara-light-vivid",
-  "name": "Ai Haibara · Amber Quiet Light",
+  "name": "Detective Conan · Ai Haibara · Amber Quiet Light",
   "colorScheme": "light",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #F6F7F1 50%, #ECEEE8)",

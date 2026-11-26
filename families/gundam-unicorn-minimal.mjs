@@ -2,7 +2,7 @@ import family from "./gundam-unicorn.mjs";
 
 export default {
   id: "gundam-unicorn-minimal",
-  names: { zh: "高达·独角兽觉醒·简约", en: "Gundam · Unicorn Awakening · Minimal" },
+  names: { zh: `${family.names.zh} · 简约`, en: `${family.names.en} · Minimal` },
   kin: "gundam-unicorn",
   styles: ["minimal"],
   light: family.light,
