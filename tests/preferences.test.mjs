@@ -366,6 +366,7 @@ test("sibling collections migrate every retired entrance and its minimal pair", 
     ["doro-pvz-coffee-wakeup", [["doro-pvz-kernel-butter", "kernel-butter"], ["doro-pvz-winter-melon", "winter-melon"]]],
     ["guga-cozy", [["doro-happy", "strawberry-day"]]],
     ["wow-blood-elf", [["wow-dwarf", "dwarf"], ["wow-orc", "orc"], ["wow-tauren", "tauren"]]],
+    ["hearthstone-jaina", [["hearthstone-lich-king", "frozen-throne"]]],
   ];
   for (const [target, sources, minimal = `${target}-minimal`] of groups) {
     const families = await Promise.all([target, minimal].map(async (id) => (await import(`../families/${id}.mjs`)).default));
