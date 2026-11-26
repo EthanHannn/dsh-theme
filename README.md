@@ -73,7 +73,7 @@
 | [炉石传说 · 4 组场景](docs/screenshots/README.md#theme-38) | [![炉石传说 · 旅店炉火 · 浅色](docs/screenshots/38-hearthstone-jaina-light.webp)](docs/screenshots/38-hearthstone-jaina-light.webp) | [![炉石传说 · 旅店炉火 · 深色](docs/screenshots/38-hearthstone-jaina-dark.webp)](docs/screenshots/38-hearthstone-jaina-dark.webp) |
 | [英雄联盟 · 艾欧尼亚茶会](docs/screenshots/README.md#theme-59) | [![英雄联盟 · 艾欧尼亚茶会 · 浅色](docs/screenshots/59-lol-ionia-light.webp)](docs/screenshots/59-lol-ionia-light.webp) | [![英雄联盟 · 艾欧尼亚茶会 · 深色](docs/screenshots/59-lol-ionia-dark.webp)](docs/screenshots/59-lol-ionia-dark.webp) |
 | [我的世界](docs/screenshots/README.md#theme-43) | [![我的世界 · 浅色](docs/screenshots/43-minecraft-light.webp)](docs/screenshots/43-minecraft-light.webp) | [![我的世界 · 深色](docs/screenshots/43-minecraft-dark.webp)](docs/screenshots/43-minecraft-dark.webp) |
-| [守望先锋 · 时间跃迁](docs/screenshots/README.md#theme-45) | [![守望先锋 · 时间跃迁 · 浅色](docs/screenshots/45-overwatch-tracer-light.webp)](docs/screenshots/45-overwatch-tracer-light.webp) | [![守望先锋 · 时间跃迁 · 深色](docs/screenshots/45-overwatch-tracer-dark.webp)](docs/screenshots/45-overwatch-tracer-dark.webp) |
+| [守望先锋 · 4 组场景](docs/screenshots/README.md#theme-45) | [![守望先锋 · 国王大道闪现 · 浅色](docs/screenshots/45-overwatch-tracer-light.webp)](docs/screenshots/45-overwatch-tracer-light.webp) | [![守望先锋 · 国王大道闪现 · 深色](docs/screenshots/45-overwatch-tracer-dark.webp)](docs/screenshots/45-overwatch-tracer-dark.webp) |
 | [间谍过家家 · 福杰一家](docs/screenshots/README.md#theme-66) | [![间谍过家家 · 福杰一家 · 浅色](docs/screenshots/66-spy-family-forgers-light.webp)](docs/screenshots/66-spy-family-forgers-light.webp) | [![间谍过家家 · 福杰一家 · 深色](docs/screenshots/66-spy-family-forgers-dark.webp)](docs/screenshots/66-spy-family-forgers-dark.webp) |
 | [哆啦A梦 · 奇妙同行](docs/screenshots/README.md#theme-69) | [![哆啦A梦 · 奇妙同行 · 浅色](docs/screenshots/69-doraemon-pocket-light.webp)](docs/screenshots/69-doraemon-pocket-light.webp) | [![哆啦A梦 · 奇妙同行 · 深色](docs/screenshots/69-doraemon-pocket-dark.webp)](docs/screenshots/69-doraemon-pocket-dark.webp) |
 | [咒术回战 · 一年级集结](docs/screenshots/README.md#theme-72) | [![咒术回战 · 一年级集结 · 浅色](docs/screenshots/72-jujutsu-first-years-light.webp)](docs/screenshots/72-jujutsu-first-years-light.webp) | [![咒术回战 · 一年级集结 · 深色](docs/screenshots/72-jujutsu-first-years-dark.webp)](docs/screenshots/72-jujutsu-first-years-dark.webp) |
@@ -283,8 +283,7 @@ Linux 可在安装包所在目录执行 `sha256sum -c SHA256SUMS.txt`；macOS �
 - **灌篮高手**：湘北红 / 球场琥珀 / 黑白，流川枫与海边球场。
 - **我的世界**：草方块绿 / 钻石青 / 土棕 / 火把琥珀，Steve、苦力怕与方块世界。
 - **魔兽世界**：辛多雷绯红 / 奥术金 / 暖羊皮纸统一阅读配色，收录血精灵、矮人、兽人战士、牛头人德鲁伊四组完整场景，主图、横幅、左下物件、文件夹、侧栏角色与语录同步切换；旧独立入口的偏好、收藏和轮换名单自动归并。
-- **守望先锋 · 时间跃迁**：猎空经典造型 / 橙色与时间蓝 / 招呼与闪回瞬间。
-- **守望先锋 · 守护天使**：天使白金装甲 / 医疗翼 / 飞行与检修场景。
+- **守望先锋**：暖白陶瓷 / 战术天蓝 / 守望琥珀橙统一阅读配色，重制国王大道闪现、花村樱下、直布罗陀整备、荣耀与守望四组独立浅深场景；主图、无人物横幅、左下物件、战术文件夹开合与四位侧栏角色（猎空、天使、温斯顿、堡垒与妮妮）同步联动，旧入口自动迁入。
 - **炉石传说**：暖羊皮纸 / 炉石法力蓝 / 旅店铜金统一阅读配色，重制旅店炉火、冰霜咏唱、冰冠王座、寻宝奇兵四组独立浅深场景；主图、无人物横幅、左下物件、文件夹开合与四位侧栏角色（哈斯、吉安娜、巫妖王、芬利爵士）同步联动，旧入口自动迁入。
 - **英雄联盟 · 九尾妖狐**：阿狸 / 绯红与象牙白 / 九尾与狐灵。
 - **英雄联盟 · 爆爆火花**：金克丝 / 蓝紫与荧粉 / 鱼骨头与维修工具箱。
