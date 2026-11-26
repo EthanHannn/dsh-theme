@@ -57,7 +57,7 @@
 | [电锯人 · 人间愿望](docs/screenshots/README.md#theme-13) | [![电锯人 · 人间愿望 · 浅色](docs/screenshots/13-chainsaw-light.webp)](docs/screenshots/13-chainsaw-light.webp) | [![电锯人 · 人间愿望 · 深色](docs/screenshots/13-chainsaw-dark.webp)](docs/screenshots/13-chainsaw-dark.webp) |
 | [火影忍者 · 第七班](docs/screenshots/README.md#theme-8) | [![火影忍者 · 第七班 · 浅色](docs/screenshots/08-naruto-light.webp)](docs/screenshots/08-naruto-light.webp) | [![火影忍者 · 第七班 · 深色](docs/screenshots/08-naruto-dark.webp)](docs/screenshots/08-naruto-dark.webp) |
 | [王者荣耀 · 云阙长歌](docs/screenshots/README.md#theme-101) | [![王者荣耀 · 云阙长歌 · 浅色](docs/screenshots/101-hok-cloud-reverie-light.webp)](docs/screenshots/101-hok-cloud-reverie-light.webp) | [![王者荣耀 · 云阙长歌 · 深色](docs/screenshots/101-hok-cloud-reverie-dark.webp)](docs/screenshots/101-hok-cloud-reverie-dark.webp) |
-| [魔兽世界 · 血精灵](docs/screenshots/README.md#theme-10) | [![魔兽世界 · 血精灵 · 浅色](docs/screenshots/10-wow-blood-elf-light.webp)](docs/screenshots/10-wow-blood-elf-light.webp) | [![魔兽世界 · 血精灵 · 深色](docs/screenshots/10-wow-blood-elf-dark.webp)](docs/screenshots/10-wow-blood-elf-dark.webp) |
+| [魔兽世界 · 4 组场景](docs/screenshots/README.md#theme-10) | [![魔兽世界 · 血精灵 · 浅色](docs/screenshots/10-wow-blood-elf-light.webp)](docs/screenshots/10-wow-blood-elf-light.webp) | [![魔兽世界 · 血精灵 · 深色](docs/screenshots/10-wow-blood-elf-dark.webp)](docs/screenshots/10-wow-blood-elf-dark.webp) |
 | [死神 · 千本樱](docs/screenshots/README.md#theme-11) | [![死神 · 千本樱 · 浅色](docs/screenshots/11-bleach-senbonzakura-light.webp)](docs/screenshots/11-bleach-senbonzakura-light.webp) | [![死神 · 千本樱 · 深色](docs/screenshots/11-bleach-senbonzakura-dark.webp)](docs/screenshots/11-bleach-senbonzakura-dark.webp) |
 | [阿拉蕾 · 企鹅村 · 4 组场景](docs/screenshots/README.md#theme-18) | [![阿拉蕾 · 企鹅村 · 浅色](docs/screenshots/18-dr-slump-light.webp)](docs/screenshots/18-dr-slump-light.webp) | [![阿拉蕾 · 企鹅村 · 深色](docs/screenshots/18-dr-slump-dark.webp)](docs/screenshots/18-dr-slump-dark.webp) |
 | [小林家的龙女仆](docs/screenshots/README.md#theme-21) | [![小林家的龙女仆 · 浅色](docs/screenshots/21-dragon-maid-light.webp)](docs/screenshots/21-dragon-maid-light.webp) | [![小林家的龙女仆 · 深色](docs/screenshots/21-dragon-maid-dark.webp)](docs/screenshots/21-dragon-maid-dark.webp) |
@@ -282,9 +282,7 @@ Linux 可在安装包所在目录执行 `sha256sum -c SHA256SUMS.txt`；macOS �
 - **鬼灭之刃 · 樱庭恋歌**：樱粉 / 叶绿 / 夜梅紫。
 - **灌篮高手**：湘北红 / 球场琥珀 / 黑白，流川枫与海边球场。
 - **我的世界**：草方块绿 / 钻石青 / 土棕 / 火把琥珀，Steve、苦力怕与方块世界。
-- **魔兽世界 · 血精灵**：辛多雷绯红 / 奥术金 / 翡翠绿 / 深紫，永歌森林与法术刃。
-- **魔兽世界 · 牛头人德鲁伊**：莫高雷赭石 / 图腾青 / 皮革棕 / 篝火金。
-- **魔兽世界 · 兽人战士**：部落红 / 兽人绿 / 铁灰 / 杜隆塔尔橙。
+- **魔兽世界**：辛多雷绯红 / 奥术金 / 暖羊皮纸统一阅读配色，收录血精灵、矮人、兽人战士、牛头人德鲁伊四组完整场景，主图、横幅、左下物件、文件夹、侧栏角色与语录同步切换；旧独立入口的偏好、收藏和轮换名单自动归并。
 - **守望先锋 · 时间跃迁**：猎空经典造型 / 橙色与时间蓝 / 招呼与闪回瞬间。
 - **守望先锋 · 守护天使**：天使白金装甲 / 医疗翼 / 飞行与检修场景。
 - **炉石传说 · 冰霜法师**：吉安娜 / 冰蓝与金色 / 施法与冰鸟阅读。
@@ -303,7 +301,6 @@ Linux 可在安装包所在目录执行 `sha256sum -c SHA256SUMS.txt`；macOS �
 - **死神 · 千本樱**：白哉与露琪亚 / 樱粉与冰蓝 / 尸魂界庭院。
 - **圣斗士 · 天马流星**：银蓝 / 青铜五人 / 星夜流星。
 - **圣斗士 · 黄金十二宫**：象牙金 / 圣域深紫 / 黄金圣衣。
-- **魔兽世界 · 矮人**：锻炉琥珀 / 山地蓝 / 铜须红 / 钢铁灰。
 - **我叫MT · 部落冒险**：赭黄 / 副本紫 / 治疗青，五组浅深配图「林间追猎、猎手较量、营地插曲、遗迹探路、原版劣人与呆贼」在同一主题内切换；新增场景仅含劣人、呆贼、美屡与沐丝，原版作为第五组保留。
 - **小林家的龙女仆**：龙尾绿 / 龙焰橙 / 女仆藏青 / 奶油粉，托尔与暖厨房。
 

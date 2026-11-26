@@ -24,7 +24,7 @@
 
 [王者荣耀 · 云阙长歌](#theme-101) · [王者荣耀 · 花月幻境](#theme-102) · [王者荣耀 · 破晓机动](#theme-103) · [王者荣耀 · 孙悟空 · 无相](#theme-104)
 
-[王者荣耀 · 貂蝉 · 花间舞梦 · 2 组场景](#theme-9) · [魔兽世界 · 血精灵](#theme-10) · [炉石传说 · 冰霜法师](#theme-38) · [炉石传说 · 冰冠王座](#theme-39) · [王者荣耀 · 青莲剑仙](#theme-40) · [英雄联盟 · 九尾妖狐](#theme-41) · [英雄联盟 · 爆爆火花](#theme-42) · [我的世界](#theme-43) · [守望先锋 · 守护天使](#theme-44) · [守望先锋 · 时间跃迁](#theme-45) · [魔兽世界 · 矮人](#theme-46) · [魔兽世界 · 兽人战士](#theme-47) · [魔兽世界 · 牛头人德鲁伊](#theme-48) · [英雄联盟 · 艾欧尼亚茶会](#theme-59) · [英雄联盟 · 德玛西亚巡礼](#theme-60) · [原神 · 枫丹茶会](#theme-81) · [原神 · 净善书庭](#theme-82) · [原神 · 鸣神花信](#theme-83) · [崩坏：星穹铁道 · 四组场景](#theme-84) · [绝区零 · 六分街委托](#theme-90) · [绝区零 · 维多利亚茶歇](#theme-91) · [绝区零 · 六课雪夜](#theme-92) · [黑神话：悟空 · 山河四劫 · 4 组场景](#theme-93) · [黑神话：悟空 · 天命西行 · 4 组场景](#theme-94)
+[王者荣耀 · 貂蝉 · 花间舞梦 · 2 组场景](#theme-9) · [魔兽世界 · 4 组场景](#theme-10) · [炉石传说 · 冰霜法师](#theme-38) · [炉石传说 · 冰冠王座](#theme-39) · [王者荣耀 · 青莲剑仙](#theme-40) · [英雄联盟 · 九尾妖狐](#theme-41) · [英雄联盟 · 爆爆火花](#theme-42) · [我的世界](#theme-43) · [守望先锋 · 守护天使](#theme-44) · [守望先锋 · 时间跃迁](#theme-45) · [英雄联盟 · 艾欧尼亚茶会](#theme-59) · [英雄联盟 · 德玛西亚巡礼](#theme-60) · [原神 · 枫丹茶会](#theme-81) · [原神 · 净善书庭](#theme-82) · [原神 · 鸣神花信](#theme-83) · [崩坏：星穹铁道 · 四组场景](#theme-84) · [绝区零 · 六分街委托](#theme-90) · [绝区零 · 维多利亚茶歇](#theme-91) · [绝区零 · 六课雪夜](#theme-92) · [黑神话：悟空 · 山河四劫 · 4 组场景](#theme-93) · [黑神话：悟空 · 天命西行 · 4 组场景](#theme-94)
 
 **其他**
 
@@ -194,11 +194,16 @@
 
 <a name="theme-10"></a>
 
-## 魔兽世界 · 血精灵
+## 魔兽世界
 
-| 浅色 | 深色 |
-| --- | --- |
-| [![魔兽世界 · 血精灵 · 浅色](10-wow-blood-elf-light.webp)](10-wow-blood-elf-light.webp) | [![魔兽世界 · 血精灵 · 深色](10-wow-blood-elf-dark.webp)](10-wow-blood-elf-dark.webp) |
+血精灵、矮人、兽人战士、牛头人德鲁伊合为一个主题，共 4 组浅深完整场景。主图、左下物件、无角色横幅、文件夹、侧栏角色与双语语录同步切换，统一采用暖羊皮纸与辛多雷绯红阅读配色；旧独立入口的选择、收藏与轮换名单自动迁移。
+
+| 场景 | 浅色 | 深色 |
+| --- | --- | --- |
+| 血精灵 | [![魔兽世界 · 血精灵 · 浅色](10-wow-blood-elf-light.webp)](10-wow-blood-elf-light.webp) | [![魔兽世界 · 血精灵 · 深色](10-wow-blood-elf-dark.webp)](10-wow-blood-elf-dark.webp) |
+| <a name="theme-46"></a>矮人 | [![魔兽世界 · 矮人 · 浅色](46-wow-dwarf-light.webp)](46-wow-dwarf-light.webp) | [![魔兽世界 · 矮人 · 深色](46-wow-dwarf-dark.webp)](46-wow-dwarf-dark.webp) |
+| <a name="theme-47"></a>兽人战士 | [![魔兽世界 · 兽人战士 · 浅色](47-wow-orc-light.webp)](47-wow-orc-light.webp) | [![魔兽世界 · 兽人战士 · 深色](47-wow-orc-dark.webp)](47-wow-orc-dark.webp) |
+| <a name="theme-48"></a>牛头人德鲁伊 | [![魔兽世界 · 牛头人德鲁伊 · 浅色](48-wow-tauren-light.webp)](48-wow-tauren-light.webp) | [![魔兽世界 · 牛头人德鲁伊 · 深色](48-wow-tauren-dark.webp)](48-wow-tauren-dark.webp) |
 
 <a name="theme-11"></a>
 
@@ -538,30 +543,6 @@
 | 浅色 | 深色 |
 | --- | --- |
 | [![守望先锋 · 时间跃迁 · 浅色](45-overwatch-tracer-light.webp)](45-overwatch-tracer-light.webp) | [![守望先锋 · 时间跃迁 · 深色](45-overwatch-tracer-dark.webp)](45-overwatch-tracer-dark.webp) |
-
-<a name="theme-46"></a>
-
-## 魔兽世界 · 矮人
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![魔兽世界 · 矮人 · 浅色](46-wow-dwarf-light.webp)](46-wow-dwarf-light.webp) | [![魔兽世界 · 矮人 · 深色](46-wow-dwarf-dark.webp)](46-wow-dwarf-dark.webp) |
-
-<a name="theme-47"></a>
-
-## 魔兽世界 · 兽人战士
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![魔兽世界 · 兽人战士 · 浅色](47-wow-orc-light.webp)](47-wow-orc-light.webp) | [![魔兽世界 · 兽人战士 · 深色](47-wow-orc-dark.webp)](47-wow-orc-dark.webp) |
-
-<a name="theme-48"></a>
-
-## 魔兽世界 · 牛头人德鲁伊
-
-| 浅色 | 深色 |
-| --- | --- |
-| [![魔兽世界 · 牛头人德鲁伊 · 浅色](48-wow-tauren-light.webp)](48-wow-tauren-light.webp) | [![魔兽世界 · 牛头人德鲁伊 · 深色](48-wow-tauren-dark.webp)](48-wow-tauren-dark.webp) |
 
 <a name="theme-49"></a>
 

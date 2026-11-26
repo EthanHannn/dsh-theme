@@ -175,7 +175,7 @@
     "--dsw-alias-label-primary-inverted": "#FAFAF2",
     "--dsw-specific-sidebar-fill": "#DFE6D9",
     "--dsw-specific-sidebar-nav-item-active": "rgba(50, 108, 88, 0.16)",
-    "--dsw-specific-sidebar-nav-item-active-accent": "#326C58",
+    "--dsw-specific-sidebar-nav-item-active-accent": "color-mix(in srgb, #326C58 14%, transparent)",
     "--dsw-specific-sidebar-nav-item-hover": "rgba(50, 108, 88, 0.08)",
     "--dsw-specific-bubble": "#E4E6DA",
     "--dsw-specific-bubble-highlight": "#E5E7DF",

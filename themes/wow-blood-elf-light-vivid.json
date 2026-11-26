@@ -1,6 +1,6 @@
 {
   "id": "wow-blood-elf-light-vivid",
-  "name": "World of Warcraft · Blood Elf Light",
+  "name": "World of Warcraft Light",
   "colorScheme": "light",
   "tokens": {
     "--dsw-static-neutral-bluish-50": "color-mix(in srgb, #FFF3DD 50%, #F5E9D4)",
@@ -175,7 +175,7 @@
     "--dsw-alias-label-primary-inverted": "#FFF3DD",
     "--dsw-specific-sidebar-fill": "#EFD6C0",
     "--dsw-specific-sidebar-nav-item-active": "rgba(158, 47, 61, 0.16)",
-    "--dsw-specific-sidebar-nav-item-active-accent": "#9E2F3D",
+    "--dsw-specific-sidebar-nav-item-active-accent": "color-mix(in srgb, #9E2F3D 14%, transparent)",
     "--dsw-specific-sidebar-nav-item-hover": "rgba(158, 47, 61, 0.08)",
     "--dsw-specific-bubble": "#EADBC4",
     "--dsw-specific-bubble-highlight": "#EBDFCC",
