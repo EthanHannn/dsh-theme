@@ -493,6 +493,14 @@ JOBS = [
     ("i-am-mt-banner-dark-src-provider", "i-am-mt-classic-duo-banner-dark", 6.0, 0.50),
     ("dragon-maid-banner-light-src-provider", "dragon-maid-banner-light", 6.0, 0.50),
     ("dragon-maid-banner-dark-src-provider", "dragon-maid-banner-dark", 6.0, 0.50),
+    ("wow-azeroth-chronicles-20261126/s1-banner-stack", "wow-azeroth-chronicles-banner-light", 6.0, 0.25),
+    ("wow-azeroth-chronicles-20261126/s1-banner-stack", "wow-azeroth-chronicles-banner-dark", 6.0, 0.75),
+    ("wow-azeroth-chronicles-20261126/s2-banner-stack", "wow-azeroth-chronicles-dalaran-spire-banner-light", 6.0, 0.25),
+    ("wow-azeroth-chronicles-20261126/s2-banner-stack", "wow-azeroth-chronicles-dalaran-spire-banner-dark", 6.0, 0.75),
+    ("wow-azeroth-chronicles-20261126/s3-banner-stack", "wow-azeroth-chronicles-pandaria-mist-banner-light", 6.0, 0.25),
+    ("wow-azeroth-chronicles-20261126/s3-banner-stack", "wow-azeroth-chronicles-pandaria-mist-banner-dark", 6.0, 0.75),
+    ("wow-azeroth-chronicles-20261126/s4-banner-stack", "wow-azeroth-chronicles-stormwind-wings-banner-light", 6.0, 0.25),
+    ("wow-azeroth-chronicles-20261126/s4-banner-stack", "wow-azeroth-chronicles-stormwind-wings-banner-dark", 6.0, 0.75),
 ]
 
 # Banners bake their horizontal edge dissolves into the pixels instead of
@@ -932,6 +940,14 @@ BAKED_HORIZONTAL_FADES = {
     "i-am-mt-banner-dark": ("#191411", 0.25, 0.90),
     "dragon-maid-banner-light": ("#FCEEDD", 0.25, 0.90),
     "dragon-maid-banner-dark": ("#131820", 0.25, 0.90),
+    "wow-azeroth-chronicles-banner-light": ("#ECEAE3", 0.25, 0.90),
+    "wow-azeroth-chronicles-banner-dark": ("#151D2B", 0.25, 0.90),
+    "wow-azeroth-chronicles-dalaran-spire-banner-light": ("#ECEAE3", 0.25, 0.90),
+    "wow-azeroth-chronicles-dalaran-spire-banner-dark": ("#151D2B", 0.25, 0.90),
+    "wow-azeroth-chronicles-pandaria-mist-banner-light": ("#ECEAE3", 0.25, 0.90),
+    "wow-azeroth-chronicles-pandaria-mist-banner-dark": ("#151D2B", 0.25, 0.90),
+    "wow-azeroth-chronicles-stormwind-wings-banner-light": ("#ECEAE3", 0.25, 0.90),
+    "wow-azeroth-chronicles-stormwind-wings-banner-dark": ("#151D2B", 0.25, 0.90),
 }
 
 MAX_WIDTH = 1400
